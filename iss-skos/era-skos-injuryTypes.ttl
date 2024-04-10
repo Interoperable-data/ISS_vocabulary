@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-int: <http://data.europa.eu/949/iss/concepts/injury-types/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-int:InjuryTypes a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Injury Types"@en ;
+    skos:prefLabel "Injury Types"@en ;
+    dct:title "Concept scheme grouping injury types"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+iss-int:Death  rdf:type  skos:Concept ;         skos:inScheme  iss-int:InjuryTypes;         skos:topConceptOf iss-int:InjuryTypes;
+        skos:prefLabel  "Death" .
+
+iss-int:SeriousInjury
+        rdf:type        skos:Concept ;         skos:inScheme  iss-int:InjuryTypes;         skos:topConceptOf iss-int:InjuryTypes;
+        skos:prefLabel  "Serious injury" .
+
+iss-int:MinorInjury
+        rdf:type        skos:Concept ;         skos:inScheme  iss-int:InjuryTypes;         skos:topConceptOf iss-int:InjuryTypes;
+        skos:prefLabel  "Minor Injury"@en .
+
+iss-int:AbbreviatedInjuryScaleGreaterOrEqualToThree
+        rdf:type        skos:Concept ;         skos:inScheme  iss-int:InjuryTypes;         skos:topConceptOf iss-int:InjuryTypes;
+        skos:prefLabel  "Abbreviated Injury Scale >=3"@en .
+
+iss-int:AbbreviatedInjuryScaleLessThanThree
+        rdf:type        skos:Concept ;         skos:inScheme  iss-int:InjuryTypes;         skos:topConceptOf iss-int:InjuryTypes;
+        skos:prefLabel  "Abbreviated Injury Scale <3"@en .

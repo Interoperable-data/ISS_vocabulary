@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-toc: <http://data.europa.eu/949/iss/concepts/transport-operation-categories/> .
+@prefix iss-enc: <http://data.europa.eu/949/iss/concepts/entity-categories/> .
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-toc:TransportOperationCategories a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Transport Operation Categories"@en ;
+    skos:prefLabel "Transport Operation Categories"@en ;
+    dct:title "Concept scheme grouping transport operation categories"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+
+iss-toc:RU1  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "RU-1" ;
+        skos:broader     iss-enc:RailwayUndertaking ;
+        skos:definition  "Railway Undertaking, operating passenger trains.".
+
+
+iss-toc:RU2  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;
+    skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "RU-2" ;
+        skos:broader     iss-enc:RailwayUndertaking ;
+        skos:definition  "Railway Undertaking, operating high speed passenger trains." .
+
+iss-toc:RU3  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "RU-3" ;
+        skos:broader     iss-enc:RailwayUndertaking ;
+        skos:definition  "Railway Undertaking, operating &nbsp;freight trains." .
+
+iss-toc:RU4  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "RU-4" ;
+        skos:broader     iss-enc:RailwayUndertaking ;
+        skos:definition  "Railway Undertaking, operating dangerous goods freight trains." .
+
+iss-toc:RU5  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "RU-5" ;
+        skos:broader     iss-enc:RailwayUndertaking ;
+        skos:definition  "Railway Undertaking, operating terminals." .
+
+
+
+iss-toc:IM1  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "IM-1" ;
+        skos:broader     iss-enc:InfrastructureManager ;
+        skos:definition  "Infrastructure Manager, operating railway lines (including sidings and stations operations)." .
+
+iss-toc:IM2  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "IM-2" ;
+        skos:broader     iss-enc:InfrastructureManager ;
+        skos:definition  "Infrastructure Manager, operating terminals (including shunting yards)." .
+

@@ -1,0 +1,1231 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-wac: <http://data.europa.eu/949/iss/concepts/ambient-conditions/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-wac:AmbientConditions a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Weather Ambient Conditions"@en ;
+    skos:prefLabel "Weather Ambient Conditions"@en ;
+    dct:title "Concept scheme grouping weather ambient conditions"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+iss-wac:Dry  rdf:type  skos:Concept ;         
+        skos:inScheme iss-wac:AmbientConditions;
+        skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "Dry" .
+
+iss-wac:Clear  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "Clear" .
+
+iss-wac:Fog  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "Fog" .
+
+iss-wac:Mist  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "Mist" .
+
+iss-wac:Smog  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "Smog" .
+
+iss-wac:Rain  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "Rain" .
+
+iss-wac:Snow  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "Snow" .
+
+iss-wac:Sleet  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "Sleet" .
+
+iss-wac:Hail  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "Hail" .
+
+iss-wac:HighWinds
+        rdf:type        skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "High winds" .
+
+iss-wac:Storm  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "Storm" .
+
+iss-wac:Lightnings
+        rdf:type        skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "Lightnings" .
+
+iss-wac:UnknownWeatherCondition
+        rdf:type        skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "Unknown Weather Condition"@en .
+
+iss-wac:OtherWeatherCondition
+        rdf:type        skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
+        skos:prefLabel  "Other Weather Condition" .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-enc: <http://data.europa.eu/949/iss/concepts/entity-categories/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-enc:EntityCategories a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Entity Categories"@en ;
+    skos:prefLabel "Entity Categories"@en ;
+    dct:title "Concept scheme grouping entity categories"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+iss-enc:NationalEntity
+        rdf:type        skos:Concept ;          skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
+        skos:prefLabel  "National Entity" .
+
+iss-enc:OtherEntities
+        rdf:type        skos:Concept ;        skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
+        skos:prefLabel  "Other Entities" ;
+        skos:altLabel   "OENT" .
+
+iss-enc:NaturalPerson
+        rdf:type        skos:Concept ;         skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
+        skos:prefLabel  "Natural Person" .
+
+iss-enc:EuropeanBody
+        rdf:type        skos:Concept ;          skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
+        skos:prefLabel  "European Body" .
+
+iss-enc:RailwaySectorOrganization
+        rdf:type        skos:Concept ;          skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
+        skos:prefLabel  "Railway sector organization" .
+
+iss-enc:RailwaySectorCompany
+        rdf:type        skos:Concept ;         skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
+        skos:prefLabel  "Railway sector Company" .
+
+iss-enc:EntityInChargeOfMaintenance
+        rdf:type         skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel   "Entity in Charge of Maintenance" ;   
+        skos:broader     iss-enc:RailwaySectorCompany ;
+        skos:definition  "Entity in Charge of Maintenance, as defined in Article 3, point (20) of Directive (EU) 2016/798 and certified in accordance with Article 3 of Implementing Regulation (EU) 2019/779." .
+
+iss-enc:MaintenanceWorkshop
+        rdf:type         skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel   "Maintenance Workshop" ; 
+        skos:broader     iss-enc:RailwaySectorCompany ;
+        skos:definition  "Maintenance Workshop (MWS) performing the functions defined in Article 14(3), points (b), (c) and (d) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+
+iss-enc:ECM  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel   "ECM" ; 
+        skos:broader     iss-enc:EntityInChargeOfMaintenance ;
+        skos:definition  "Entity in Charge of Maintenance, as defined in Article 3, point (20) of Directive (EU) 2016/798 and certified in accordance with Article 3 of Implementing Regulation (EU) 2019/779." .
+
+iss-enc:ECMB  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories; skos:inScheme iss-enc:EntityCategories; 
+        skos:prefLabel   "ECM-b" ;
+        skos:broader     iss-enc:EntityInChargeOfMaintenance ;
+        skos:definition  "Entity in Charge of Maintenance outsourcing the function provided for in Article 14(3), point (b) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+
+iss-enc:ECMC  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories; 
+        skos:prefLabel   "ECM-c" ;
+        skos:broader     iss-enc:EntityInChargeOfMaintenance ;
+        skos:definition  "Entity in Charge of Maintenance outsourcing the function defined in Article 14(3), point (c) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+
+iss-enc:ECMD  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories; 
+        skos:prefLabel   "ECM-d" ;
+        skos:broader     iss-enc:EntityInChargeOfMaintenance ;
+        skos:definition  "Entity in Charge of Maintenance outsourcing the function defined in Article 14(3), point (d) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+
+iss-enc:MWS  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel   "MWS" ;
+        skos:broader     iss-enc:MaintenanceWorkshop ;
+        skos:definition  "Maintenance Workshop (MWS) performing the functions defined in Article 14(3), points (b), (c) and (d) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+
+iss-enc:MWSB  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel   "MWS-b" ;
+        skos:broader     iss-enc:MaintenanceWorkshop ;
+        skos:definition  "Maintenance Workshop (MWS) performing the function defined in Article 14(3), point (b) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+
+iss-enc:MWSC  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel   "MWS-c" ;
+        skos:broader     iss-enc:MaintenanceWorkshop ;
+        skos:definition  "Maintenance Workshop (MWS) performing the function defined in Article 14(3), point (c) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+
+iss-enc:MWSD  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel   "MWS-d" ;
+        skos:broader     iss-enc:MaintenanceWorkshop ;
+        skos:definition  "Maintenance Workshop (MWS) performing the function defined in Article 14(3), point (d) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+
+iss-enc:RailwayUndertaking  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel  "RU" ;
+        skos:broader    iss-enc:RailwaySectorCompany .
+
+iss-enc:InfrastructureManager  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel  "IM" ;
+        skos:broader    iss-enc:RailwaySectorCompany .
+
+
+iss-enc:NAT  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel  "NAT" ;
+        skos:broader    iss-enc:NationalEntity .
+
+iss-enc:NSA  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel   "NSA" ;
+        skos:broader     iss-enc:NationalEntity ;
+        skos:definition  "National safety authority, as defined in Article 3, point (7) of Directive (EU) 2016/798." .
+
+iss-enc:TDGCA  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel   "TDG CA" ;
+        skos:broader     iss-enc:NationalEntity ;
+        skos:definition  "Transport of Dangerous Goods Competent Authority, as referred to in section 1.8.5.1 of RID." .
+
+iss-enc:NIB  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel   "NIB" ;
+        skos:broader     iss-enc:NationalEntity ;
+        skos:definition  "National investigating body provided for in Article 22 of Directive (EU) 2016/798." .
+
+iss-enc:NPER  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel  "NPER" ;
+        skos:broader    iss-enc:NaturalPerson .
+
+iss-enc:EU  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel  "EU" ;
+        skos:broader    iss-enc:EuropeanBody .
+
+iss-enc:EC  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel  "EC" ;
+        skos:broader    iss-enc:EuropeanBody .
+
+iss-enc:ERA  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel  "ERA" ;
+        skos:broader    iss-enc:EuropeanBody .
+
+iss-enc:RB  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel  "Representative Body" ;
+        skos:broader    iss-enc:RailwaySectorOrganization ;
+        skos:altLabel   "RB" .
+
+iss-enc:SORG  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
+        skos:prefLabel  "SORG" ;
+        skos:broader    iss-enc:RailwaySectorOrganization .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-indgt: <http://data.europa.eu/949/iss/concepts/injury-dg-types/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-indgt:InjuryDGTypes a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Injury DG Types"@en ;
+    skos:prefLabel "Injury DG Types"@en ;
+    dct:title "Concept scheme grouping injury DG types"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+iss-indgt:Traumatic
+        rdf:type        skos:Concept ;         skos:inScheme iss-indgt:InjuryDGTypes;        skos:topConceptOf iss-indgt:InjuryDGTypes;
+        skos:prefLabel  "Traumatic" .
+
+iss-indgt:Intoxicated
+        rdf:type        skos:Concept ;         skos:inScheme iss-indgt:InjuryDGTypes;         skos:topConceptOf iss-indgt:InjuryDGTypes;
+        skos:prefLabel  "Intoxicated" .
+
+iss-indgt:Burned  rdf:type  skos:Concept ;         skos:inScheme iss-indgt:InjuryDGTypes;         skos:topConceptOf iss-indgt:InjuryDGTypes;
+        skos:prefLabel  "Burned" .
+
+iss-indgt:Radiation
+        rdf:type        skos:Concept ;         skos:inScheme iss-indgt:InjuryDGTypes;         skos:topConceptOf iss-indgt:InjuryDGTypes;
+        skos:prefLabel  "Radiation" .@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-int: <http://data.europa.eu/949/iss/concepts/injury-types/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-int:InjuryTypes a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Injury Types"@en ;
+    skos:prefLabel "Injury Types"@en ;
+    dct:title "Concept scheme grouping injury types"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+iss-int:Death  rdf:type  skos:Concept ;         skos:inScheme  iss-int:InjuryTypes;         skos:topConceptOf iss-int:InjuryTypes;
+        skos:prefLabel  "Death" .
+
+iss-int:SeriousInjury
+        rdf:type        skos:Concept ;         skos:inScheme  iss-int:InjuryTypes;         skos:topConceptOf iss-int:InjuryTypes;
+        skos:prefLabel  "Serious injury" .
+
+iss-int:MinorInjury
+        rdf:type        skos:Concept ;         skos:inScheme  iss-int:InjuryTypes;         skos:topConceptOf iss-int:InjuryTypes;
+        skos:prefLabel  "Minor Injury"@en .
+
+iss-int:AbbreviatedInjuryScaleGreaterOrEqualToThree
+        rdf:type        skos:Concept ;         skos:inScheme  iss-int:InjuryTypes;         skos:topConceptOf iss-int:InjuryTypes;
+        skos:prefLabel  "Abbreviated Injury Scale >=3"@en .
+
+iss-int:AbbreviatedInjuryScaleLessThanThree
+        rdf:type        skos:Concept ;         skos:inScheme  iss-int:InjuryTypes;         skos:topConceptOf iss-int:InjuryTypes;
+        skos:prefLabel  "Abbreviated Injury Scale <3"@en .@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-lct: <http://data.europa.eu/949/iss/concepts/level-crossing-types/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-lct:LevelCrossingTypes a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Level Crossing Types"@en ;
+    skos:prefLabel "Level Crossing Types"@en ;
+    dct:title "Concept scheme grouping level crossing types"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+iss-lct:InATunnel
+        rdf:type        skos:Concept ;         skos:inScheme iss-lct:LevelCrossingTypes;         skos:topConceptOf iss-lct:LevelCrossingTypes;
+        skos:prefLabel  "In a tunnel"@en .
+
+iss-lct:OnABridge
+        rdf:type        skos:Concept ;         skos:inScheme iss-lct:LevelCrossingTypes;         skos:topConceptOf iss-lct:LevelCrossingTypes;
+        skos:prefLabel  "On a bridge" .
+
+iss-lct:AtALevelCrossing
+        rdf:type        skos:Concept ;         skos:inScheme iss-lct:LevelCrossingTypes;         skos:topConceptOf iss-lct:LevelCrossingTypes;
+        skos:prefLabel  "At a level-crossing" .
+
+iss-lct:OtherLocation
+        rdf:type        skos:Concept ;         skos:inScheme iss-lct:LevelCrossingTypes;         skos:topConceptOf iss-lct:LevelCrossingTypes;
+        skos:prefLabel  "Other location" .@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-lic: <http://data.europa.eu/949/iss/concepts/light-conditions/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-lic:LightConditions a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Light Conditions"@en ;
+    skos:prefLabel "Light Conditions"@en ;
+    dct:title "Concept scheme grouping light conditions"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+iss-lic:Daylight
+        rdf:type        skos:Concept ;         skos:inScheme iss-lic:LightConditions;         skos:topConceptOf iss-lic:LightConditions;
+        skos:prefLabel  "Daylight" .
+
+iss-lic:Twilight
+        rdf:type        skos:Concept ;         skos:inScheme iss-lic:LightConditions;         skos:topConceptOf iss-lic:LightConditions;
+        skos:prefLabel  "Twilight"@en .
+
+iss-lic:Darkness
+        rdf:type        skos:Concept ;         skos:inScheme iss-lic:LightConditions;         skos:topConceptOf iss-lic:LightConditions;
+        skos:prefLabel  "Darkness" .
+
+iss-lic:LightLit
+        rdf:type        skos:Concept ;         skos:inScheme iss-lic:LightConditions;         skos:topConceptOf iss-lic:LightConditions;
+        skos:prefLabel  "Light Lit" .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-lod: <http://data.europa.eu/949/iss/concepts/location-details/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-lod:LocationDetails a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "LocationDetails"@en ;
+    skos:prefLabel "LocationDetails"@en ;
+    dct:title "Concept scheme grouping location details"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+iss-lod:InATunnel
+        rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
+        skos:prefLabel  "In a tunnel"@en .
+
+iss-lod:OnABridge
+        rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
+        skos:prefLabel  "On a bridge" .
+
+iss-lod:AtALevelCrossing
+        rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
+        skos:prefLabel  "At a level-crossing" .
+
+iss-lod:OtherLocation
+        rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
+        skos:prefLabel  "Other location" .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-ntt: <http://data.europa.eu/949/iss/concepts/notification-types/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-ntt:NotificationTypes a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Notification Types"@en ;
+    skos:prefLabel "Notification Types"@en ;
+    dct:title "Concept scheme grouping notification types"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+iss-ntt:NotificationType
+        rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
+        skos:prefLabel  "Other Notification" .
+
+iss-ntt:Alert  rdf:type  skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
+        skos:prefLabel  "Alert" .
+
+iss-ntt:Administration
+        rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
+        skos:prefLabel  "Administrative request" .
+
+iss-ntt:JNSRequest
+        rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
+        skos:prefLabel  "Joint Network Secretariat" .
+
+iss-ntt:SharingRequestGeneric
+        rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
+        skos:prefLabel  "Sharing request type (generic)" .
+
+iss-ntt:Publication
+        rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
+        skos:prefLabel  "Publication" .
+
+iss-ntt:PredefinedNotification
+        rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
+        skos:prefLabel  "Predefined Notification" .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-pec: <http://data.europa.eu/949/iss/concepts/person-categories/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-pec:PersonCategories a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Person Categories"@en ;
+    skos:prefLabel "Person Categories"@en ;
+    dct:title "Concept scheme grouping person categories"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+iss-pec:Passenger
+        rdf:type        skos:Concept ;         skos:inScheme iss-pec:PersonCategories;         skos:topConceptOf iss-pec:PersonCategories;
+        skos:prefLabel  "Passenger" .
+
+iss-pec:Employee
+        rdf:type        skos:Concept ;         skos:inScheme iss-pec:PersonCategories;         skos:topConceptOf iss-pec:PersonCategories;
+        skos:prefLabel  "Employee" .
+
+iss-pec:Trespasser
+        rdf:type        skos:Concept ;         skos:inScheme iss-pec:PersonCategories;         skos:topConceptOf iss-pec:PersonCategories;
+        skos:prefLabel  "Trespasser" .
+
+iss-pec:OtherHumanCategory
+        rdf:type        skos:Concept ;         skos:inScheme iss-pec:PersonCategories;         skos:topConceptOf iss-pec:PersonCategories;
+        skos:prefLabel  "Other human category" .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-rs: <http://data.europa.eu/949/iss/concepts/record-statuses/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-rs:RecordStatuses a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Record Statuses"@en ;
+    skos:prefLabel "Record Statuses"@en ;
+    dct:title "Concept scheme grouping notification types"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+iss-rs:New  rdf:type  skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
+        skos:prefLabel  "New" .
+
+iss-rs:Draft  rdf:type  skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
+        skos:prefLabel  "Draft" .
+
+iss-rs:Updated  rdf:type  skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
+        skos:prefLabel  "Updated" .
+
+iss-rs:Corrected
+        rdf:type        skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
+        skos:prefLabel  "Corrected" .
+
+iss-rs:Validated
+        rdf:type        skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
+        skos:prefLabel  "Validated" .
+
+iss-rs:Archived
+        rdf:type        skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
+        skos:prefLabel  "Archived" .
+
+iss-rs:Submitted
+        rdf:type        skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
+        skos:prefLabel  "Submitted" .@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-rt: <http://data.europa.eu/949/iss/concepts/record-types/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-rt:RecordTypes a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Record Statuses"@en ;
+    skos:prefLabel "Record Statuses"@en ;
+    dct:title "Concept scheme grouping record types"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+iss-rt:SimpleReport
+        rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
+        skos:prefLabel  "Simple Report Safety Related Event" .
+
+iss-rt:DetailedReport
+        rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
+        skos:prefLabel  "Detailed Report Safety Related Event" .
+
+iss-rt:DetailedReportTDG
+        rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
+        skos:prefLabel  "Detailed Report (TDG)" .
+
+iss-rt:Document
+        rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
+        skos:prefLabel  "Document" .
+
+iss-rt:OccurrenceScenario
+        rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
+        skos:prefLabel  "Occurrence Scenario" .
+
+iss-rt:Notification
+        rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
+        skos:prefLabel  "Notification" .
+
+iss-rt:FailureOfRiskControlMeasure
+        rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
+        skos:prefLabel  "Failure Of Risk Control Measure" .
+
+iss-rt:RiskControlMeasure
+        rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
+        skos:prefLabel  "Risk Control Measure" .
+
+iss-rt:VolumeOfOperation
+        rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
+        skos:prefLabel  "Volume of Operation" .
+
+iss-rt:SafetyLevel
+        rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
+        skos:prefLabel  "Safety Level" .
+
+iss-rt:SafetyPerformanceSelfEstimation
+        rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
+        skos:prefLabel  "Safety Performance Self Estimation" .
+
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-repr: <http://data.europa.eu/949/iss/concepts/reporting-reasons/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-repr:ReortingReasons a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Reporting Reasons"@en ;
+    skos:prefLabel "Reporting Reasons"@en ;
+    dct:title "Concept scheme grouping reporting reasons"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+iss-repr:OperatorInvolved
+        rdf:type        skos:Concept; skos:inScheme iss-repr:ReportingReasons;         skos:topConceptOf iss-repr:ReportingReasons;
+        skos:prefLabel  "Operator Involved" .
+
+iss-repr:InterestedParty
+        rdf:type        skos:Concept; skos:inScheme iss-repr:ReportingReasons;         skos:topConceptOf iss-repr:ReportingReasons;
+        skos:prefLabel  "Interested Party" .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-rsvdt: <http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-damage-types/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-rsvdt:RollingStockVehicleDamageTypes a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Rolling Stock Vehicle Damage Types"@en ;
+    skos:prefLabel "Rolling Stock Vehicle Damage Types"@en ;
+    dct:title "Concept scheme grouping rolling stock vehicle damage types"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+iss-rsvdt:Overturned  rdf:type  skos:Concept ;         skos:inScheme iss-rsvdt:RollingStockVehicleDamageTypes;    skos:topConceptOf iss-rsvdt:RollingStockVehicleDamageTypes;
+        skos:prefLabel  "Overturned" .
+
+iss-rsvdt:Damaged  rdf:type  skos:Concept ;         skos:inScheme iss-rsvdt:RollingStockVehicleDamageTypes;    skos:topConceptOf iss-rsvdt:RollingStockVehicleDamageTypes;
+        skos:prefLabel  "Damaged" .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-rsvt: <http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-types/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-rsvt:RollingStockVehicleTypes a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Rolling Stock Vehicle Types"@en ;
+    skos:prefLabel "Rolling Stock Vehicle Types"@en ;
+    dct:title "Concept scheme grouping rolling stock vehicle types"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+iss-rsvt:Coaches  rdf:type  skos:Concept ;         skos:inScheme iss-rsvt:RollingStockVehicleTypes;    skos:topConceptOf iss-rsvt:RollingStockVehicleTypes;
+        skos:prefLabel  "Coaches" .
+
+iss-rsvt:Wagons  rdf:type  skos:Concept ;         skos:inScheme iss-rsvt:RollingStockVehicleTypes;    skos:topConceptOf iss-rsvt:RollingStockVehicleTypes;
+        skos:prefLabel  "Wagons" .
+
+iss-rsvt:Locomotive
+        rdf:type        skos:Concept ;         skos:inScheme iss-rsvt:RollingStockVehicleTypes;    skos:topConceptOf iss-rsvt:RollingStockVehicleTypes;
+        skos:prefLabel  "Locomotive" .
+
+iss-rsvt:EMU  rdf:type  skos:Concept ;         skos:inScheme iss-rsvt:RollingStockVehicleTypes;    skos:topConceptOf iss-rsvt:RollingStockVehicleTypes;
+        skos:prefLabel  "EMU" .
+
+iss-rsvt:DMU  rdf:type  skos:Concept ;         skos:inScheme iss-rsvt:RollingStockVehicleTypes;    skos:topConceptOf iss-rsvt:RollingStockVehicleTypes;
+        skos:prefLabel  "DMU" .@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-set: <http://data.europa.eu/949/iss/concepts/safety-event-types/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-set:SafetyEventTypes a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Safety Event Types"@en ;
+    skos:prefLabel "Safety Event Types"@en ;
+    dct:title "Concept scheme grouping safety event types"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+
+iss-set:CategoryAEvents
+        rdf:type        skos:Concept ;         skos:inScheme iss-set:SafetyEventTypes;         skos:topConceptOf iss-set:SafetyEventTypes;
+        skos:prefLabel  "Category A Event" .
+        
+
+iss-set:CategoryBEvent
+        rdf:type        skos:Concept ;         skos:inScheme iss-set:SafetyEventTypes;         skos:topConceptOf iss-set:SafetyEventTypes;
+        skos:prefLabel  "Category B Event" .
+        
+iss-set:CategoryCEvent
+        rdf:type        skos:Concept ;         skos:inScheme iss-set:SafetyEventTypes;         skos:topConceptOf iss-set:SafetyEventTypes;
+        skos:prefLabel  "Category C Event" .
+        @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-tot: <http://data.europa.eu/949/iss/concepts/topography-types/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-tot:TopographyTypes a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Topography Types"@en ;
+    skos:prefLabel "Topography Types"@en ;
+    dct:title "Concept scheme grouping topography types"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+iss-tot:GradientOrIncline  rdf:type  skos:Concept ;         skos:inScheme iss-tot:TopographyTypes;    skos:topConceptOf iss-tot:TopographyTypes;
+        skos:prefLabel  "Gradient/incline" .
+
+iss-tot:BridgeOrUnderpass  rdf:type  skos:Concept ;         skos:inScheme iss-tot:TopographyTypes;    skos:topConceptOf iss-tot:TopographyTypes;
+        skos:prefLabel  "Bridge/underpass" .
+
+iss-tot:Tunnel  rdf:type  skos:Concept ;         skos:inScheme iss-tot:TopographyTypes;    skos:topConceptOf iss-tot:TopographyTypes;
+        skos:prefLabel  "Tunnel" .
+
+iss-tot:Crossing  rdf:type  skos:Concept ;         skos:inScheme iss-tot:TopographyTypes;    skos:topConceptOf iss-tot:TopographyTypes;
+        skos:prefLabel  "Crossing" .
+
+
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-tsc: <http://data.europa.eu/949/iss/concepts/track-surface-conditions/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-tsc:TrackSurfaceConditions a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Track Surface Conditions"@en ;
+    skos:prefLabel "Track Surface Conditions"@en ;
+    dct:title "Concept scheme grouping track surface conditions"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+iss-tsc:Slippery
+        rdf:type        skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
+        skos:prefLabel  "Slippery" .
+
+iss-tsc:Leaves  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
+        skos:prefLabel  "Leaves" .
+
+iss-tsc:Slush  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
+        skos:prefLabel  "Slush" .
+
+iss-tsc:Frost  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
+        skos:prefLabel  "Frost" .
+
+iss-tsc:Ice  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
+        skos:prefLabel  "Ice" .
+
+iss-tsc:Wet  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
+        skos:prefLabel  "Wet" .
+
+iss-tsc:Damp  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
+        skos:prefLabel  "Damp" .
+
+iss-tsc:Flooded  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
+        skos:prefLabel  "Flooded" .
+
+iss-tsc:UnknownTrackSurfaceCondition
+        rdf:type        skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
+        skos:prefLabel  "Unknown Track Surface Condition" .
+
+iss-tsc:OtherTrackSurfaceCondition
+        rdf:type        skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
+        skos:prefLabel  "Other Track Surface Condition" .@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-tmt: <http://data.europa.eu/949/iss/concepts/train-movement-types/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-tmt:TrainMovementTypes a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Train Movement Types"@en ;
+    skos:prefLabel "Train Movement Types"@en ;
+    dct:title "Concept scheme grouping train movement types"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+iss-tmt:Carrying
+        rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
+        skos:prefLabel  "Carrying-Moving" .
+
+iss-tmt:Stationary
+        rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
+        skos:prefLabel  "Carrying-Stationary" .
+
+iss-tmt:Shunting
+        rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
+        skos:prefLabel  "Shunting" .
+
+iss-tmt:OtherTypeOfMovement
+        rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
+        skos:prefLabel  "Other type of movement" .
+
+iss-tmt:Loading
+        rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
+        skos:prefLabel  "Loading" .
+
+iss-tmt:Unloading
+        rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
+        skos:prefLabel  "Unloading" .
+
+iss-tmt:Filling  rdf:type  skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
+        skos:prefLabel  "Filling" .
+
+iss-tmt:Emptying
+        rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
+        skos:prefLabel  "Emptying"@en .@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-toc: <http://data.europa.eu/949/iss/concepts/transport-operation-categories/> .
+@prefix iss-enc: <http://data.europa.eu/949/iss/concepts/entity-categories/> .
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-toc:TransportOperationCategories a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Transport Operation Categories"@en ;
+    skos:prefLabel "Transport Operation Categories"@en ;
+    dct:title "Concept scheme grouping transport operation categories"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+
+iss-toc:RU1  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "RU-1" ;
+        skos:broader     iss-enc:RailwayUndertaking ;
+        skos:definition  "Railway Undertaking, operating passenger trains.".
+
+
+iss-toc:RU2  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;
+    skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "RU-2" ;
+        skos:broader     iss-enc:RailwayUndertaking ;
+        skos:definition  "Railway Undertaking, operating high speed passenger trains." .
+
+iss-toc:RU3  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "RU-3" ;
+        skos:broader     iss-enc:RailwayUndertaking ;
+        skos:definition  "Railway Undertaking, operating &nbsp;freight trains." .
+
+iss-toc:RU4  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "RU-4" ;
+        skos:broader     iss-enc:RailwayUndertaking ;
+        skos:definition  "Railway Undertaking, operating dangerous goods freight trains." .
+
+iss-toc:RU5  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "RU-5" ;
+        skos:broader     iss-enc:RailwayUndertaking ;
+        skos:definition  "Railway Undertaking, operating terminals." .
+
+
+
+iss-toc:IM1  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "IM-1" ;
+        skos:broader     iss-enc:InfrastructureManager ;
+        skos:definition  "Infrastructure Manager, operating railway lines (including sidings and stations operations)." .
+
+iss-toc:IM2  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
+        skos:prefLabel   "IM-2" ;
+        skos:broader     iss-enc:InfrastructureManager ;
+        skos:definition  "Infrastructure Manager, operating terminals (including shunting yards)." .
+

@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-lod: <http://data.europa.eu/949/iss/concepts/location-details/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-lod:LocationDetails a skos:ConceptScheme ; 
+    dct:issued "2024-04-04"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "LocationDetails"@en ;
+    skos:prefLabel "LocationDetails"@en ;
+    dct:title "Concept scheme grouping location details"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+iss-lod:InATunnel
+        rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
+        skos:prefLabel  "In a tunnel"@en .
+
+iss-lod:OnABridge
+        rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
+        skos:prefLabel  "On a bridge" .
+
+iss-lod:AtALevelCrossing
+        rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
+        skos:prefLabel  "At a level-crossing" .
+
+iss-lod:OtherLocation
+        rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
+        skos:prefLabel  "Other location" .
