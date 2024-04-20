@@ -37,7 +37,7 @@ iss-lic:LightConditions a skos:ConceptScheme ;
 #################################################################
 iss-lic:Daylight
         rdf:type        skos:Concept ;         skos:inScheme iss-lic:LightConditions;         skos:topConceptOf iss-lic:LightConditions;
-        skos:prefLabel  "Daylight" .
+        skos:prefLabel  "Day light"@en .
 
 iss-lic:Twilight
         rdf:type        skos:Concept ;         skos:inScheme iss-lic:LightConditions;         skos:topConceptOf iss-lic:LightConditions;
@@ -45,8 +45,8 @@ iss-lic:Twilight
 
 iss-lic:Darkness
         rdf:type        skos:Concept ;         skos:inScheme iss-lic:LightConditions;         skos:topConceptOf iss-lic:LightConditions;
-        skos:prefLabel  "Darkness" .
+        skos:prefLabel  "Darkness"@en .
 
 iss-lic:LightLit
         rdf:type        skos:Concept ;         skos:inScheme iss-lic:LightConditions;         skos:topConceptOf iss-lic:LightConditions;
-        skos:prefLabel  "Light Lit" .
+        skos:prefLabel  "Light Lit"@en .
