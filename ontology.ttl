@@ -1108,8 +1108,8 @@ This description is consistent with properties reported in accordance with RID 1
                    rdfs:label "type of train movement"@en .
 
 
-###  http://data.europa.eu/949/iss/transportOperationCtegory
-:transportOperationCtegory rdf:type owl:ObjectProperty ;
+###  http://data.europa.eu/949/iss/transportOperationCategory
+:transportOperationCategory rdf:type owl:ObjectProperty ;
                            rdfs:domain :SafetyLevelPerTypeOfOperation ,
                                        :SimpleReportSafetyRelatedEvent ;
                            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
