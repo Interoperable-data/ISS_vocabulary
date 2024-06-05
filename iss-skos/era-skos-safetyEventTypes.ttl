@@ -37,7 +37,7 @@ iss-set:SafetyEventTypes a skos:ConceptScheme ;
 #################################################################
 
 
-iss-set:CategoryAEvents
+iss-set:CategoryAEvent
         rdf:type        skos:Concept ;         skos:inScheme iss-set:SafetyEventTypes;         skos:topConceptOf iss-set:SafetyEventTypes;
         skos:prefLabel  "Category A Event" .
         
