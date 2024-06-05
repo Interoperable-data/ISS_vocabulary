@@ -37,33 +37,33 @@ iss-tsc:TrackSurfaceConditions a skos:ConceptScheme ;
 #################################################################
 iss-tsc:Slippery
         rdf:type        skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
-        skos:prefLabel  "Slippery" .
+        skos:prefLabel  "Slippery"@en .
 
 iss-tsc:Leaves  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
-        skos:prefLabel  "Leaves" .
+        skos:prefLabel  "Leaves"@en .
 
 iss-tsc:Slush  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
-        skos:prefLabel  "Slush" .
+        skos:prefLabel  "Slush"@en .
 
 iss-tsc:Frost  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
-        skos:prefLabel  "Frost" .
+        skos:prefLabel  "Frost"@en .
 
 iss-tsc:Ice  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
-        skos:prefLabel  "Ice" .
+        skos:prefLabel  "Ice"@en .
 
 iss-tsc:Wet  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
-        skos:prefLabel  "Wet" .
+        skos:prefLabel  "Wet"@en .
 
 iss-tsc:Damp  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
-        skos:prefLabel  "Damp" .
+        skos:prefLabel  "Damp"@en .
 
 iss-tsc:Flooded  rdf:type  skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
-        skos:prefLabel  "Flooded" .
+        skos:prefLabel  "Flooded"@en .
 
 iss-tsc:UnknownTrackSurfaceCondition
         rdf:type        skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
-        skos:prefLabel  "Unknown Track Surface Condition" .
+        skos:prefLabel  "Unknown Track Surface Condition"@en .
 
 iss-tsc:OtherTrackSurfaceCondition
         rdf:type        skos:Concept ;         skos:inScheme iss-tsc:TrackSurfaceConditions;         skos:topConceptOf iss-tsc:TrackSurfaceConditions;
-        skos:prefLabel  "Other Track Surface Condition" .
+        skos:prefLabel  "Other Track Surface Condition"@en .

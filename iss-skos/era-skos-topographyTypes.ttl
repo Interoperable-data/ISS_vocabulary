@@ -37,16 +37,16 @@ iss-tot:TopographyTypes a skos:ConceptScheme ;
 #################################################################
 
 iss-tot:GradientOrIncline  rdf:type  skos:Concept ;         skos:inScheme iss-tot:TopographyTypes;    skos:topConceptOf iss-tot:TopographyTypes;
-        skos:prefLabel  "Gradient/incline" .
+        skos:prefLabel  "Gradient/incline"@en .
 
 iss-tot:BridgeOrUnderpass  rdf:type  skos:Concept ;         skos:inScheme iss-tot:TopographyTypes;    skos:topConceptOf iss-tot:TopographyTypes;
-        skos:prefLabel  "Bridge/underpass" .
+        skos:prefLabel  "Bridge/underpass"@en .
 
 iss-tot:Tunnel  rdf:type  skos:Concept ;         skos:inScheme iss-tot:TopographyTypes;    skos:topConceptOf iss-tot:TopographyTypes;
-        skos:prefLabel  "Tunnel" .
+        skos:prefLabel  "Tunnel"@en .
 
 iss-tot:Crossing  rdf:type  skos:Concept ;         skos:inScheme iss-tot:TopographyTypes;    skos:topConceptOf iss-tot:TopographyTypes;
-        skos:prefLabel  "Crossing" .
+        skos:prefLabel  "Crossing"@en .
 
 
 

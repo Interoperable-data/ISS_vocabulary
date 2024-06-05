@@ -39,42 +39,42 @@ iss-wac:AmbientConditions a skos:ConceptScheme ;
 iss-wac:Dry  rdf:type  skos:Concept ;         
         skos:inScheme iss-wac:AmbientConditions;
         skos:topConceptOf iss-wac:AmbientConditions;
-        skos:prefLabel  "Dry" .
+        skos:prefLabel  "Dry"@en.
 
 iss-wac:Clear  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
-        skos:prefLabel  "Clear" .
+        skos:prefLabel  "Clear"@en .
 
 iss-wac:Fog  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
-        skos:prefLabel  "Fog" .
+        skos:prefLabel  "Fog"@en .
 
 iss-wac:Mist  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
-        skos:prefLabel  "Mist" .
+        skos:prefLabel  "Mist"@en .
 
 iss-wac:Smog  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
-        skos:prefLabel  "Smog" .
+        skos:prefLabel  "Smog"@en .
 
 iss-wac:Rain  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
-        skos:prefLabel  "Rain" .
+        skos:prefLabel  "Rain"@en .
 
 iss-wac:Snow  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
-        skos:prefLabel  "Snow" .
+        skos:prefLabel  "Snow"@en .
 
 iss-wac:Sleet  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
-        skos:prefLabel  "Sleet" .
+        skos:prefLabel  "Sleet"@en .
 
 iss-wac:Hail  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
-        skos:prefLabel  "Hail" .
+        skos:prefLabel  "Hail"@en .
 
 iss-wac:HighWinds
         rdf:type        skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
-        skos:prefLabel  "High winds" .
+        skos:prefLabel  "High winds"@en .
 
 iss-wac:Storm  rdf:type  skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
-        skos:prefLabel  "Storm" .
+        skos:prefLabel  "Storm"@en .
 
 iss-wac:Lightnings
         rdf:type        skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
-        skos:prefLabel  "Lightnings" .
+        skos:prefLabel  "Lightnings"@en .
 
 iss-wac:UnknownWeatherCondition
         rdf:type        skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
@@ -82,5 +82,5 @@ iss-wac:UnknownWeatherCondition
 
 iss-wac:OtherWeatherCondition
         rdf:type        skos:Concept ;         skos:inScheme iss-wac:AmbientConditions;         skos:topConceptOf iss-wac:AmbientConditions;
-        skos:prefLabel  "Other Weather Condition" .
+        skos:prefLabel  "Other Weather Condition"@en .
 

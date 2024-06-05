@@ -41,12 +41,12 @@ iss-lod:InATunnel
 
 iss-lod:OnABridge
         rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
-        skos:prefLabel  "On a bridge" .
+        skos:prefLabel  "On a bridge"@en .
 
 iss-lod:AtALevelCrossing
         rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
-        skos:prefLabel  "At a level-crossing" .
+        skos:prefLabel  "At a level-crossing"@en .
 
 iss-lod:OtherLocation
         rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
-        skos:prefLabel  "Other location" .
+        skos:prefLabel  "Other location"@en .

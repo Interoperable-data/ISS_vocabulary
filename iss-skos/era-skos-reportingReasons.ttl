@@ -38,9 +38,9 @@ iss-repr:ReortingReasons a skos:ConceptScheme ;
 
 iss-repr:OperatorInvolved
         rdf:type        skos:Concept; skos:inScheme iss-repr:ReportingReasons;         skos:topConceptOf iss-repr:ReportingReasons;
-        skos:prefLabel  "Operator Involved" .
+        skos:prefLabel  "Operator Involved"@en .
 
 iss-repr:InterestedParty
         rdf:type        skos:Concept; skos:inScheme iss-repr:ReportingReasons;         skos:topConceptOf iss-repr:ReportingReasons;
-        skos:prefLabel  "Interested Party" .
+        skos:prefLabel  "Interested Party"@en .
 

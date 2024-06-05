@@ -40,39 +40,39 @@ iss-toc:TransportOperationCategories a skos:ConceptScheme ;
 iss-toc:RU1  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
         skos:prefLabel   "RU-1" ;
         skos:broader     iss-enc:RailwayUndertaking ;
-        skos:definition  "Railway Undertaking, operating passenger trains.".
+        skos:definition  "Railway Undertaking, operating passenger trains."@en.
 
 
 iss-toc:RU2  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;
     skos:topConceptOf iss-toc:TransportOperationCategories;
         skos:prefLabel   "RU-2" ;
         skos:broader     iss-enc:RailwayUndertaking ;
-        skos:definition  "Railway Undertaking, operating high speed passenger trains." .
+        skos:definition  "Railway Undertaking, operating high speed passenger trains."@en .
 
 iss-toc:RU3  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
         skos:prefLabel   "RU-3" ;
         skos:broader     iss-enc:RailwayUndertaking ;
-        skos:definition  "Railway Undertaking, operating &nbsp;freight trains." .
+        skos:definition  "Railway Undertaking, operating &nbsp;freight trains."@en .
 
 iss-toc:RU4  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
         skos:prefLabel   "RU-4" ;
         skos:broader     iss-enc:RailwayUndertaking ;
-        skos:definition  "Railway Undertaking, operating dangerous goods freight trains." .
+        skos:definition  "Railway Undertaking, operating dangerous goods freight trains."@en .
 
 iss-toc:RU5  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
         skos:prefLabel   "RU-5" ;
         skos:broader     iss-enc:RailwayUndertaking ;
-        skos:definition  "Railway Undertaking, operating terminals." .
+        skos:definition  "Railway Undertaking, operating terminals."@en .
 
 
 
 iss-toc:IM1  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
         skos:prefLabel   "IM-1" ;
         skos:broader     iss-enc:InfrastructureManager ;
-        skos:definition  "Infrastructure Manager, operating railway lines (including sidings and stations operations)." .
+        skos:definition  "Infrastructure Manager, operating railway lines (including sidings and stations operations)."@en .
 
 iss-toc:IM2  rdf:type  skos:Concept ;         skos:inScheme iss-toc:TransportOperationCategories;         skos:topConceptOf iss-toc:TransportOperationCategories;
         skos:prefLabel   "IM-2" ;
         skos:broader     iss-enc:InfrastructureManager ;
-        skos:definition  "Infrastructure Manager, operating terminals (including shunting yards)." .
+        skos:definition  "Infrastructure Manager, operating terminals (including shunting yards)."@en .
 

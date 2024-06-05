@@ -38,15 +38,15 @@ iss-indgt:InjuryDGTypes a skos:ConceptScheme ;
 
 iss-indgt:Traumatic
         rdf:type        skos:Concept ;         skos:inScheme iss-indgt:InjuryDGTypes;        skos:topConceptOf iss-indgt:InjuryDGTypes;
-        skos:prefLabel  "Traumatic" .
+        skos:prefLabel  "Traumatic"@en .
 
 iss-indgt:Intoxicated
         rdf:type        skos:Concept ;         skos:inScheme iss-indgt:InjuryDGTypes;         skos:topConceptOf iss-indgt:InjuryDGTypes;
-        skos:prefLabel  "Intoxicated" .
+        skos:prefLabel  "Intoxicated"@en .
 
 iss-indgt:Burned  rdf:type  skos:Concept ;         skos:inScheme iss-indgt:InjuryDGTypes;         skos:topConceptOf iss-indgt:InjuryDGTypes;
-        skos:prefLabel  "Burned" .
+        skos:prefLabel  "Burned"@en .
 
 iss-indgt:Radiation
         rdf:type        skos:Concept ;         skos:inScheme iss-indgt:InjuryDGTypes;         skos:topConceptOf iss-indgt:InjuryDGTypes;
-        skos:prefLabel  "Radiation" .
+        skos:prefLabel  "Radiation"@en .
