@@ -37,16 +37,16 @@ iss-pec:PersonCategories a skos:ConceptScheme ;
 #################################################################
 iss-pec:Passenger
         rdf:type        skos:Concept ;         skos:inScheme iss-pec:PersonCategories;         skos:topConceptOf iss-pec:PersonCategories;
-        skos:prefLabel  "Passenger" .
+        skos:prefLabel  "Passenger"@en .
 
 iss-pec:Employee
         rdf:type        skos:Concept ;         skos:inScheme iss-pec:PersonCategories;         skos:topConceptOf iss-pec:PersonCategories;
-        skos:prefLabel  "Employee" .
+        skos:prefLabel  "Employee"@en .
 
 iss-pec:Trespasser
         rdf:type        skos:Concept ;         skos:inScheme iss-pec:PersonCategories;         skos:topConceptOf iss-pec:PersonCategories;
-        skos:prefLabel  "Trespasser" .
+        skos:prefLabel  "Trespasser"@en .
 
 iss-pec:OtherHumanCategory
         rdf:type        skos:Concept ;         skos:inScheme iss-pec:PersonCategories;         skos:topConceptOf iss-pec:PersonCategories;
-        skos:prefLabel  "Other human category" .
+        skos:prefLabel  "Other human category"@en .

@@ -37,46 +37,46 @@ iss-rt:RecordTypes a skos:ConceptScheme ;
 #################################################################
 iss-rt:SimpleReport
         rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
-        skos:prefLabel  "Simple Report Safety Related Event" .
+        skos:prefLabel  "Simple Report Safety Related Event"@en .
 
 iss-rt:DetailedReport
         rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
-        skos:prefLabel  "Detailed Report Safety Related Event" .
+        skos:prefLabel  "Detailed Report Safety Related Event"@en .
 
 iss-rt:DetailedReportTDG
         rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
-        skos:prefLabel  "Detailed Report (TDG)" .
+        skos:prefLabel  "Detailed Report (TDG)"@en .
 
 iss-rt:Document
         rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
-        skos:prefLabel  "Document" .
+        skos:prefLabel  "Document"@en .
 
 iss-rt:OccurrenceScenario
         rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
-        skos:prefLabel  "Occurrence Scenario" .
+        skos:prefLabel  "Occurrence Scenario"@en .
 
 iss-rt:Notification
         rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
-        skos:prefLabel  "Notification" .
+        skos:prefLabel  "Notification"@en .
 
 iss-rt:FailureOfRiskControlMeasure
         rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
-        skos:prefLabel  "Failure Of Risk Control Measure" .
+        skos:prefLabel  "Failure Of Risk Control Measure"@en .
 
 iss-rt:RiskControlMeasure
         rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
-        skos:prefLabel  "Risk Control Measure" .
+        skos:prefLabel  "Risk Control Measure"@en .
 
 iss-rt:VolumeOfOperation
         rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
-        skos:prefLabel  "Volume of Operation" .
+        skos:prefLabel  "Volume of Operation"@en .
 
 iss-rt:SafetyLevel
         rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
-        skos:prefLabel  "Safety Level" .
+        skos:prefLabel  "Safety Level"@en .
 
 iss-rt:SafetyPerformanceSelfEstimation
         rdf:type        skos:Concept ;         skos:inScheme iss-rt:RecordTypes;       skos:topConceptOf iss-rt:RecordTypes;
-        skos:prefLabel  "Safety Performance Self Estimation" .
+        skos:prefLabel  "Safety Performance Self Estimation"@en .
 
 

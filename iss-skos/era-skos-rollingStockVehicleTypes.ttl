@@ -37,17 +37,17 @@ iss-rsvt:RollingStockVehicleTypes a skos:ConceptScheme ;
 #################################################################
 
 iss-rsvt:Coaches  rdf:type  skos:Concept ;         skos:inScheme iss-rsvt:RollingStockVehicleTypes;    skos:topConceptOf iss-rsvt:RollingStockVehicleTypes;
-        skos:prefLabel  "Coaches" .
+        skos:prefLabel  "Coaches"@en .
 
 iss-rsvt:Wagons  rdf:type  skos:Concept ;         skos:inScheme iss-rsvt:RollingStockVehicleTypes;    skos:topConceptOf iss-rsvt:RollingStockVehicleTypes;
-        skos:prefLabel  "Wagons" .
+        skos:prefLabel  "Wagons"@en .
 
 iss-rsvt:Locomotive
         rdf:type        skos:Concept ;         skos:inScheme iss-rsvt:RollingStockVehicleTypes;    skos:topConceptOf iss-rsvt:RollingStockVehicleTypes;
-        skos:prefLabel  "Locomotive" .
+        skos:prefLabel  "Locomotive"@en .
 
 iss-rsvt:EMU  rdf:type  skos:Concept ;         skos:inScheme iss-rsvt:RollingStockVehicleTypes;    skos:topConceptOf iss-rsvt:RollingStockVehicleTypes;
-        skos:prefLabel  "EMU" .
+        skos:prefLabel  "EMU"@en .
 
 iss-rsvt:DMU  rdf:type  skos:Concept ;         skos:inScheme iss-rsvt:RollingStockVehicleTypes;    skos:topConceptOf iss-rsvt:RollingStockVehicleTypes;
-        skos:prefLabel  "DMU" .
+        skos:prefLabel  "DMU"@en .

@@ -37,11 +37,11 @@ iss-int:InjuryTypes a skos:ConceptScheme ;
 #################################################################
 
 iss-int:Death  rdf:type  skos:Concept ;         skos:inScheme  iss-int:InjuryTypes;         skos:topConceptOf iss-int:InjuryTypes;
-        skos:prefLabel  "Death" .
+        skos:prefLabel  "Death"@en .
 
 iss-int:SeriousInjury
         rdf:type        skos:Concept ;         skos:inScheme  iss-int:InjuryTypes;         skos:topConceptOf iss-int:InjuryTypes;
-        skos:prefLabel  "Serious injury" .
+        skos:prefLabel  "Serious injury"@en .
 
 iss-int:MinorInjury
         rdf:type        skos:Concept ;         skos:inScheme  iss-int:InjuryTypes;         skos:topConceptOf iss-int:InjuryTypes;

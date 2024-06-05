@@ -38,131 +38,131 @@ iss-enc:EntityCategories a skos:ConceptScheme ;
 
 iss-enc:NationalEntity
         rdf:type        skos:Concept ;          skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
-        skos:prefLabel  "National Entity" .
+        skos:prefLabel  "National Entity"@en .
 
 iss-enc:OtherEntities
         rdf:type        skos:Concept ;        skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
-        skos:prefLabel  "Other Entities" ;
-        skos:altLabel   "OENT" .
+        skos:prefLabel  "Other Entities"@en ;
+        skos:altLabel   "OENT"@en .
 
 iss-enc:NaturalPerson
         rdf:type        skos:Concept ;         skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
-        skos:prefLabel  "Natural Person" .
+        skos:prefLabel  "Natural Person"@en .
 
 iss-enc:EuropeanBody
         rdf:type        skos:Concept ;          skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
-        skos:prefLabel  "European Body" .
+        skos:prefLabel  "European Body"@en .
 
 iss-enc:RailwaySectorOrganization
         rdf:type        skos:Concept ;          skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
-        skos:prefLabel  "Railway sector organization" .
+        skos:prefLabel  "Railway sector organization"@en .
 
 iss-enc:RailwaySectorCompany
         rdf:type        skos:Concept ;         skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
-        skos:prefLabel  "Railway sector Company" .
+        skos:prefLabel  "Railway sector Company"@en .
 
 iss-enc:EntityInChargeOfMaintenance
         rdf:type         skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel   "Entity in Charge of Maintenance" ;   
+        skos:prefLabel   "Entity in Charge of Maintenance"@en ;   
         skos:broader     iss-enc:RailwaySectorCompany ;
-        skos:definition  "Entity in Charge of Maintenance, as defined in Article 3, point (20) of Directive (EU) 2016/798 and certified in accordance with Article 3 of Implementing Regulation (EU) 2019/779." .
+        skos:definition  "Entity in Charge of Maintenance, as defined in Article 3, point (20) of Directive (EU) 2016/798 and certified in accordance with Article 3 of Implementing Regulation (EU) 2019/779."@en .
 
 iss-enc:MaintenanceWorkshop
         rdf:type         skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel   "Maintenance Workshop" ; 
+        skos:prefLabel   "Maintenance Workshop"@en ; 
         skos:broader     iss-enc:RailwaySectorCompany ;
-        skos:definition  "Maintenance Workshop (MWS) performing the functions defined in Article 14(3), points (b), (c) and (d) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+        skos:definition  "Maintenance Workshop (MWS) performing the functions defined in Article 14(3), points (b), (c) and (d) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779."@en .
 
 iss-enc:ECM  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel   "ECM" ; 
+        skos:prefLabel   "ECM"@en ; 
         skos:broader     iss-enc:EntityInChargeOfMaintenance ;
-        skos:definition  "Entity in Charge of Maintenance, as defined in Article 3, point (20) of Directive (EU) 2016/798 and certified in accordance with Article 3 of Implementing Regulation (EU) 2019/779." .
+        skos:definition  "Entity in Charge of Maintenance, as defined in Article 3, point (20) of Directive (EU) 2016/798 and certified in accordance with Article 3 of Implementing Regulation (EU) 2019/779."@en .
 
 iss-enc:ECMB  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories; skos:inScheme iss-enc:EntityCategories; 
-        skos:prefLabel   "ECM-b" ;
+        skos:prefLabel   "ECM-b"@en ;
         skos:broader     iss-enc:EntityInChargeOfMaintenance ;
-        skos:definition  "Entity in Charge of Maintenance outsourcing the function provided for in Article 14(3), point (b) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+        skos:definition  "Entity in Charge of Maintenance outsourcing the function provided for in Article 14(3), point (b) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779."@en .
 
 iss-enc:ECMC  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories; 
-        skos:prefLabel   "ECM-c" ;
+        skos:prefLabel   "ECM-c"@en ;
         skos:broader     iss-enc:EntityInChargeOfMaintenance ;
-        skos:definition  "Entity in Charge of Maintenance outsourcing the function defined in Article 14(3), point (c) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+        skos:definition  "Entity in Charge of Maintenance outsourcing the function defined in Article 14(3), point (c) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779."@en .
 
 iss-enc:ECMD  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories; 
-        skos:prefLabel   "ECM-d" ;
+        skos:prefLabel   "ECM-d"@en ;
         skos:broader     iss-enc:EntityInChargeOfMaintenance ;
-        skos:definition  "Entity in Charge of Maintenance outsourcing the function defined in Article 14(3), point (d) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+        skos:definition  "Entity in Charge of Maintenance outsourcing the function defined in Article 14(3), point (d) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779."@en .
 
 iss-enc:MWS  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel   "MWS" ;
+        skos:prefLabel   "MWS"@en ;
         skos:broader     iss-enc:MaintenanceWorkshop ;
-        skos:definition  "Maintenance Workshop (MWS) performing the functions defined in Article 14(3), points (b), (c) and (d) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+        skos:definition  "Maintenance Workshop (MWS) performing the functions defined in Article 14(3), points (b), (c) and (d) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779."@en .
 
 iss-enc:MWSB  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel   "MWS-b" ;
+        skos:prefLabel   "MWS-b"@en ;
         skos:broader     iss-enc:MaintenanceWorkshop ;
-        skos:definition  "Maintenance Workshop (MWS) performing the function defined in Article 14(3), point (b) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+        skos:definition  "Maintenance Workshop (MWS) performing the function defined in Article 14(3), point (b) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779."@en .
 
 iss-enc:MWSC  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel   "MWS-c" ;
+        skos:prefLabel   "MWS-c"@en ;
         skos:broader     iss-enc:MaintenanceWorkshop ;
-        skos:definition  "Maintenance Workshop (MWS) performing the function defined in Article 14(3), point (c) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+        skos:definition  "Maintenance Workshop (MWS) performing the function defined in Article 14(3), point (c) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779."@en .
 
 iss-enc:MWSD  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel   "MWS-d" ;
+        skos:prefLabel   "MWS-d"@en ;
         skos:broader     iss-enc:MaintenanceWorkshop ;
-        skos:definition  "Maintenance Workshop (MWS) performing the function defined in Article 14(3), point (d) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779." .
+        skos:definition  "Maintenance Workshop (MWS) performing the function defined in Article 14(3), point (d) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779."@en .
 
 iss-enc:RailwayUndertaking  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel  "RU" ;
+        skos:prefLabel  "RU"@en ;
         skos:broader    iss-enc:RailwaySectorCompany .
 
 iss-enc:InfrastructureManager  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel  "IM" ;
+        skos:prefLabel  "IM"@en ;
         skos:broader    iss-enc:RailwaySectorCompany .
 
 
 iss-enc:NAT  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel  "NAT" ;
+        skos:prefLabel  "NAT"@en ;
         skos:broader    iss-enc:NationalEntity .
 
 iss-enc:NSA  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel   "NSA" ;
+        skos:prefLabel   "NSA"@en ;
         skos:broader     iss-enc:NationalEntity ;
         skos:definition  "National safety authority, as defined in Article 3, point (7) of Directive (EU) 2016/798." .
 
 iss-enc:TDGCA  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel   "TDG CA" ;
+        skos:prefLabel   "TDG CA"@en ;
         skos:broader     iss-enc:NationalEntity ;
         skos:definition  "Transport of Dangerous Goods Competent Authority, as referred to in section 1.8.5.1 of RID." .
 
 iss-enc:NIB  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel   "NIB" ;
+        skos:prefLabel   "NIB"@en ;
         skos:broader     iss-enc:NationalEntity ;
         skos:definition  "National investigating body provided for in Article 22 of Directive (EU) 2016/798." .
 
 iss-enc:NPER  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel  "NPER" ;
+        skos:prefLabel  "NPER"@en ;
         skos:broader    iss-enc:NaturalPerson .
 
 iss-enc:EU  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel  "EU" ;
+        skos:prefLabel  "EU"@en ;
         skos:broader    iss-enc:EuropeanBody .
 
 iss-enc:EC  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel  "EC" ;
+        skos:prefLabel  "EC"@en ;
         skos:broader    iss-enc:EuropeanBody .
 
 iss-enc:ERA  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel  "ERA" ;
+        skos:prefLabel  "ERA"@en ;
         skos:broader    iss-enc:EuropeanBody .
 
 iss-enc:RB  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel  "Representative Body" ;
+        skos:prefLabel  "Representative Body"@en ;
         skos:broader    iss-enc:RailwaySectorOrganization ;
         skos:altLabel   "RB" .
 
 iss-enc:SORG  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel  "SORG" ;
+        skos:prefLabel  "SORG"@en ;
         skos:broader    iss-enc:RailwaySectorOrganization .
 

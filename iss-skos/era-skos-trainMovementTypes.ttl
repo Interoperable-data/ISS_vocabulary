@@ -37,30 +37,30 @@ iss-tmt:TrainMovementTypes a skos:ConceptScheme ;
 #################################################################
 iss-tmt:Carrying
         rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Carrying-Moving" .
+        skos:prefLabel  "Carrying-Moving"@en .
 
 iss-tmt:Stationary
         rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Carrying-Stationary" .
+        skos:prefLabel  "Carrying-Stationary"@en .
 
 iss-tmt:Shunting
         rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Shunting" .
+        skos:prefLabel  "Shunting"@en .
 
 iss-tmt:OtherTypeOfMovement
         rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Other type of movement" .
+        skos:prefLabel  "Other type of movement"@en .
 
 iss-tmt:Loading
         rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Loading" .
+        skos:prefLabel  "Loading"@en .
 
 iss-tmt:Unloading
         rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Unloading" .
+        skos:prefLabel  "Unloading"@en .
 
 iss-tmt:Filling  rdf:type  skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Filling" .
+        skos:prefLabel  "Filling"@en .
 
 iss-tmt:Emptying
         rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;

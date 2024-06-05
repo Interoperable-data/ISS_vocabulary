@@ -41,12 +41,12 @@ iss-lct:InATunnel
 
 iss-lct:OnABridge
         rdf:type        skos:Concept ;         skos:inScheme iss-lct:LevelCrossingTypes;         skos:topConceptOf iss-lct:LevelCrossingTypes;
-        skos:prefLabel  "On a bridge" .
+        skos:prefLabel  "On a bridge"@en .
 
 iss-lct:AtALevelCrossing
         rdf:type        skos:Concept ;         skos:inScheme iss-lct:LevelCrossingTypes;         skos:topConceptOf iss-lct:LevelCrossingTypes;
-        skos:prefLabel  "At a level-crossing" .
+        skos:prefLabel  "At a level-crossing"@en .
 
 iss-lct:OtherLocation
         rdf:type        skos:Concept ;         skos:inScheme iss-lct:LevelCrossingTypes;         skos:topConceptOf iss-lct:LevelCrossingTypes;
-        skos:prefLabel  "Other location" .
+        skos:prefLabel  "Other location"@en .

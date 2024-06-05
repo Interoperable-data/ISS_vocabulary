@@ -38,28 +38,28 @@ iss-ntt:NotificationTypes a skos:ConceptScheme ;
 
 iss-ntt:NotificationType
         rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
-        skos:prefLabel  "Other Notification" .
+        skos:prefLabel  "Other Notification"@en .
 
 iss-ntt:Alert  rdf:type  skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
-        skos:prefLabel  "Alert" .
+        skos:prefLabel  "Alert"@en .
 
 iss-ntt:Administration
         rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
-        skos:prefLabel  "Administrative request" .
+        skos:prefLabel  "Administrative request"@en .
 
 iss-ntt:JNSRequest
         rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
-        skos:prefLabel  "Joint Network Secretariat" .
+        skos:prefLabel  "Joint Network Secretariat"@en .
 
 iss-ntt:SharingRequestGeneric
         rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
-        skos:prefLabel  "Sharing request type (generic)" .
+        skos:prefLabel  "Sharing request type (generic)"@en .
 
 iss-ntt:Publication
         rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
-        skos:prefLabel  "Publication" .
+        skos:prefLabel  "Publication"@en .
 
 iss-ntt:PredefinedNotification
         rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
-        skos:prefLabel  "Predefined Notification" .
+        skos:prefLabel  "Predefined Notification"@en .
 
