@@ -24,8 +24,8 @@ iss-lod:LocationDetails a skos:ConceptScheme ;
     dct:issued "2024-04-04"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
-    rdfs:label "LocationDetails"@en ;
-    skos:prefLabel "LocationDetails"@en ;
+    rdfs:label "Location Details"@en ;
+    skos:prefLabel "Location Details"@en ;
     dct:title "Concept scheme grouping location details"@en .
 
 
