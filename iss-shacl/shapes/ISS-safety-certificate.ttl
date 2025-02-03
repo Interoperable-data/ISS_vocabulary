@@ -1,0 +1,40 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/>  .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/>.
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:SafetyCertificateShape
+	a sh:NodeShape ;
+    sh:targetClass iss:SafetyCertificate.
+
+iss-sh:SafetyCertificateShape sh:property iss-sh:CertificateEndDate, iss-sh:CertificateStartDate .
+
+iss-sh:CertificateStartDate
+  era:scope "local" ;
+  sh:datatype xsd:date ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:certificateStartDate ;
+  era:affectedClass iss:SafetyCertificate ;
+  sh:path iss:certificateStartDate ;
+  sh:message "certificateStartDate: Each safety certificate may have certificateStartDate that is a date. This error is due to having a value that is not a date." ;
+  sh:severity sh:violation .
+
+iss-sh:CertificateEndDate
+  era:scope "local" ;
+  era:affectedProperty iss:certificateEndDate ;
+  sh:severity sh:violation ;
+  sh:path iss:certificateEndDate ;
+  era:affectedClass iss:SafetyCertificate ;
+  sh:datatype xsd:date ;
+  sh:message "certificateEndDate: Each safety certificate may have certificateEndDate that is a date. This error is due to having a value that is not a date." .
+
+
+
+
+

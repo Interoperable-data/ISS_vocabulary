@@ -1,0 +1,38 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/>  .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/>.
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+
+iss-sh:SafetyLevelShape
+	a sh:NodeShape ;
+    sh:targetClass iss:SafetyLevel.
+
+iss-sh:SafetyLevelShape sh:property iss-sh:HasSafetyLevelPerTypeOfOperation, iss-sh:HasSafetyLevelPerEventType .
+
+iss-sh:HasSafetyLevelPerTypeOfOperation
+  a sh:PropertyShape ;
+  sh:message "hasSafetyLevelPerTypeOfOperation: The safety level has a hasSafetyLevelPerTypeOfOperation that must be a SafetyLevelPerTypeOfOperation." ;
+  era:affectedProperty iss:hasSafetyLevelPerTypeOfOperation ;
+  sh:path iss:hasSafetyLevelPerTypeOfOperation ;
+  sh:class iss:SafetyLevelPerTypeOfOperation ;
+  sh:severity sh:violation ;
+  era:scope "local" ;
+  era:affectedClass iss:SafetyLevel .
+
+iss-sh:HasSafetyLevelPerEventType
+  era:scope "local" ;
+  sh:severity sh:violation ;
+  sh:message "hasSafetyLevelPerEventType: The safety level has a hasSafetyLevelPerEventType that must be a SafetyLevelPerEventType." ;
+  sh:class iss:SafetyLevelPerEventType ;
+  era:affectedProperty iss:hasSafetyLevelPerEventType ;
+  sh:path iss:hasSafetyLevelPerEventType ;
+  a sh:PropertyShape ;
+  era:affectedClass iss:SafetyLevel .
+

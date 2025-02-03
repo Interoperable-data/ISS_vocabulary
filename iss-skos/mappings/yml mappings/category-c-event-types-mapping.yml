@@ -1,0 +1,24 @@
+prefixes:
+  rdf: "http://wwww3org/1999/02/22-rdf-syntax-ns#" 
+  rdfs: "http://wwww3org/2000/01/rdf-schema#" 
+  owl: "http://wwww3org/2002/07/owl#" 
+  xsd: "http://wwww3org/2001/XMLSchema#" 
+  dct: "http://purlorg/dc/terms/" 
+  skos: "http://wwww3org/2004/02/skos/core#" 
+  cc: "http://creativecommonsorg/ns#" 
+  iss-set: "http://data.europa.eu/949/iss/concepts/safety-event-types/" 
+
+sources:
+  category-c-event-types-source: ['category-c-event-types-source.csv~csv']
+mappings:
+  mapping-category-c-event-types:
+    sources:
+      - category-c-event-types-source
+    s: "http://data.europa.eu/949/iss/concepts/safety-event-types/$(Id)"
+    po:
+      - [skos:notation, $(Code), xsd:token]
+      - [skos:prefLabel,$(Name),en~lang]
+      - [skos:definition,$(Definition),en~lang]
+      - [skos:broader, iss-set:$(Broader)]
+      - [a, skos:Concept]
+      - [skos:inScheme, iss-set:SafetyEventTypes]

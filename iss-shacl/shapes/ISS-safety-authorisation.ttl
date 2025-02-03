@@ -1,0 +1,198 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/>  .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/>.
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:SafetyAuthorisationShape
+	a sh:NodeShape ;
+    sh:targetClass iss:SafetyAuthorisation.
+
+iss-sh:SafetyAuthorisationShape sh:property iss-sh:Network, iss-sh:Scope, iss-sh:ValidityPeriodEndDate, iss-sh:ValidityPeriodStartDate.
+
+iss-sh:SafetyAuthorisationShape sh:property iss-sh:AssessmentPeriodEndDateSA, iss-sh:AssessmentPeriodStartDateSA, iss-sh:ReferencePeriodEndDateSA, iss-sh:ReferencePeriodStartDateSA .
+
+iss-sh:Scope
+  sh:datatype xsd:string ;
+  era:affectedProperty iss:scope ;
+  era:scope "local" ;
+  era:affectedClass iss:SafetyAuthorisation ;
+  sh:message "scope: Each safety authorisation may have scope that is a string. This error is due to having a value that is not a string." ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  sh:path iss:scope .
+
+iss-sh:ValidityPeriodStartDate
+  era:affectedClass iss:SafetyAuthorisation ;
+  sh:datatype xsd:date ;
+  era:scope "local" ;
+  sh:path iss:validityPeriodStartDate ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  sh:message "validityPeriodStartDate: Each safety authorisation may have validityPeriodStartDate that is a date. This error is due to having a value that is not a date." ;
+  era:affectedProperty iss:validityPeriodStartDate .
+
+iss-sh:ValidityPeriodEndDate
+  era:affectedProperty iss:validityPeriodEndDate ;
+  era:affectedClass iss:SafetyAuthorisation ;
+  era:scope "local" ;
+  sh:datatype xsd:date ;
+  a sh:PropertyShape ;
+  sh:path iss:validityPeriodEndDate ;
+  sh:message "validityPeriodEndDate: Each safety authorisation may have validityPeriodEndDate that is a date. This error is due to having a value that is not a date." ;
+  sh:severity sh:violation .
+
+iss-sh:Network
+  sh:message "network: Each safety authorisation may have network that is a string. This error is due to having a value that is not a string." ;
+  sh:datatype xsd:string ;
+  era:scope "local" ;
+  era:affectedProperty iss:network ;
+  a sh:PropertyShape ;
+  era:affectedClass iss:SafetyAuthorisation ;
+  sh:severity sh:violation ;
+  sh:path iss:network .
+
+iss-sh:AssessmentPeriodEndDateSA
+  era:affectedProperty iss:assessmentPeriodEndDate ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  sh:severity sh:violation ;
+  sh:datatype xsd:date ;
+  sh:path iss:assessmentPeriodEndDate ;
+  a sh:PropertyShape ;
+  era:scope "local" ;
+  sh:message "assesmentPeriodEndDate: Each safety authorisation may have assessmentPeriodEndDate that is a date. This error is due to having a value that is not a date." .
+
+iss-sh:AssessmentPeriodStartDateSA
+  sh:severity sh:violation ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  sh:datatype xsd:date ;
+  era:affectedProperty iss:assessmentPeriodStartDate ;
+  sh:message "assessmentPeriodStartDate: Each safety authorisation may have assessmentPeriodStartDate that is a date. This error is due to having a value that is not a date." ;
+  a sh:PropertyShape ;
+  era:scope "local" ;
+  sh:path iss:assessmentPeriodStartDate .
+
+iss-sh:ReferencePeriodStartDateSA
+  sh:path iss:referencePeriodStartDate ;
+  sh:message "referencePeriodStartDate: Each safety authorisation may have referencePeriodStartDate that is a date. This error is due to having a value that is not a date." ;
+  era:scope "local" ;
+  era:affectedProperty iss:referencePeriodStartDate ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  a sh:PropertyShape ;
+  sh:datatype xsd:date .
+
+iss-sh:ReferencePeriodEndDateSA
+  sh:path iss:referencePeriodEndDate ;
+  era:scope "local" ;
+  era:affectedProperty iss:referencePeriodEndDate ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  sh:message "referencePeriodEndDate: Each safety authorisation may have referencePeriodEndDate that is a date. This error is due to having a value that is not a date." ;
+  sh:datatype xsd:date .
+
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/>  .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/>.
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:SafetyAuthorisationShape
+	a sh:NodeShape ;
+    sh:targetClass iss:SafetyAuthorisation.
+
+iss-sh:SafetyAuthorisationShape sh:property iss-sh:Network, iss-sh:Scope, iss-sh:ValidityPeriodEndDate, iss-sh:ValidityPeriodStartDate.
+
+iss-sh:SafetyAuthorisationShape sh:property iss-sh:AssessmentPeriodEndDateSA, iss-sh:AssessmentPeriodStartDateSA, iss-sh:ReferencePeriodEndDateSA, iss-sh:ReferencePeriodStartDateSA .
+
+iss-sh:Scope
+  sh:datatype xsd:string ;
+  era:affectedProperty iss:scope ;
+  era:scope "local" ;
+  era:affectedClass iss:SafetyAuthorisation ;
+  sh:message "scope: Each safety authorisation may have scope that is a string. This error is due to having a value that is not a string." ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  sh:path iss:scope .
+
+iss-sh:ValidityPeriodStartDate
+  era:affectedClass iss:SafetyAuthorisation ;
+  sh:datatype xsd:date ;
+  era:scope "local" ;
+  sh:path iss:validityPeriodStartDate ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  sh:message "validityPeriodStartDate: Each safety authorisation may have validityPeriodStartDate that is a date. This error is due to having a value that is not a date." ;
+  era:affectedProperty iss:validityPeriodStartDate .
+
+iss-sh:ValidityPeriodEndDate
+  era:affectedProperty iss:validityPeriodEndDate ;
+  era:affectedClass iss:SafetyAuthorisation ;
+  era:scope "local" ;
+  sh:datatype xsd:date ;
+  a sh:PropertyShape ;
+  sh:path iss:validityPeriodEndDate ;
+  sh:message "validityPeriodEndDate: Each safety authorisation may have validityPeriodEndDate that is a date. This error is due to having a value that is not a date." ;
+  sh:severity sh:violation .
+
+iss-sh:Network
+  sh:message "network: Each safety authorisation may have network that is a string. This error is due to having a value that is not a string." ;
+  sh:datatype xsd:string ;
+  era:scope "local" ;
+  era:affectedProperty iss:network ;
+  a sh:PropertyShape ;
+  era:affectedClass iss:SafetyAuthorisation ;
+  sh:severity sh:violation ;
+  sh:path iss:network .
+
+iss-sh:AssessmentPeriodEndDateSA
+  era:affectedProperty iss:assessmentPeriodEndDate ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  sh:severity sh:violation ;
+  sh:datatype xsd:date ;
+  sh:path iss:assessmentPeriodEndDate ;
+  a sh:PropertyShape ;
+  era:scope "local" ;
+  sh:message "assesmentPeriodEndDate: Each safety authorisation may have assessmentPeriodEndDate that is a date. This error is due to having a value that is not a date." .
+
+iss-sh:AssessmentPeriodStartDateSA
+  sh:severity sh:violation ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  sh:datatype xsd:date ;
+  era:affectedProperty iss:assessmentPeriodStartDate ;
+  sh:message "assessmentPeriodStartDate: Each safety authorisation may have assessmentPeriodStartDate that is a date. This error is due to having a value that is not a date." ;
+  a sh:PropertyShape ;
+  era:scope "local" ;
+  sh:path iss:assessmentPeriodStartDate .
+
+iss-sh:ReferencePeriodStartDateSA
+  sh:path iss:referencePeriodStartDate ;
+  sh:message "referencePeriodStartDate: Each safety authorisation may have referencePeriodStartDate that is a date. This error is due to having a value that is not a date." ;
+  era:scope "local" ;
+  era:affectedProperty iss:referencePeriodStartDate ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  a sh:PropertyShape ;
+  sh:datatype xsd:date .
+
+iss-sh:ReferencePeriodEndDateSA
+  sh:path iss:referencePeriodEndDate ;
+  era:scope "local" ;
+  era:affectedProperty iss:referencePeriodEndDate ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  sh:message "referencePeriodEndDate: Each safety authorisation may have referencePeriodEndDate that is a date. This error is due to having a value that is not a date." ;
+  sh:datatype xsd:date .
+

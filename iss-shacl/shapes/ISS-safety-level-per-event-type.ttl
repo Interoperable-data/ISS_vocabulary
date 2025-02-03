@@ -1,0 +1,149 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/>  .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/>.
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:SeveritySafetyLevelPriorAssessmentPeriodSKOSSLE
+  sh:severity sh:violation ;
+  sh:message "severitySafetyLevelPriorAssessmentPeriod: The instance of SafetyLevelPerEventType has a severitySafetyLevelPriorAssessmentPeriod value that is not a SKOS concept." ;
+  sh:class skos:Concept ;
+  sh:property iss-sh:SeveritySafetyLevelPriorAssessmentPeriodSKOSinSchemeSLE ;
+  sh:path iss:severitySafetyLevelPriorAssessmentPeriod ;
+  a sh:PropertyShape ;
+  era:affectedClass iss:SafetyLevelPerEventType ;
+  era:scope "local" ;
+  era:affectedProperty iss:severitySafetyLevelPriorAssessmentPeriod ;
+  rdfs:comment """The severity is Intensity of harm.
+The severity is estimated by the exposure of vulnerabilities to hazardous areas."""@en .
+
+iss-sh:SafetyLevelScoreSKOSinSchemeSLE
+  sh:path skos:inScheme ;
+  sh:severity sh:violation ;
+  era:scope "local" ;
+  a sh:PropertyShape ;
+  sh:message "safetyLevelScore: The instance of SafetyLevelPerEventType has a safetyLevelScore value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels." ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
+  era:affectedProperty iss:safetyLevelScore ;
+  era:affectedClass iss:SafetyLevelPerEventType .
+
+iss-sh:FrequencySafetyLevelSameAsAssessedPeriodSKOSSLE
+  sh:class skos:Concept ;
+  era:affectedProperty iss:frequencySafetyLevelSameAsAssessedPeriod ;
+  sh:severity sh:violation ;
+  sh:property iss-sh:FrequencySafetyLevelSameAsAssessedPeriodSKOSinSchemeSLE ;
+  era:affectedClass iss:SafetyLevelPerEventType ;
+  sh:message "frequencySafetyLevelSameAsAssessedPeriod: The instance of SafetyLevelPerEventType has a frequencySafetyLevelSameAsAssessedPeriod value that is not a SKOS concept." ;
+  a sh:PropertyShape ;
+  rdfs:comment """Frequency is the number of pre-defined type of occurrences divided by a given normaliser.
+Typical normalisers can be, for example, year, volume of transport (number
+of tons, number of tons/km) or number of predefined operations."""@en ;
+  era:scope "local" ;
+  sh:path iss:frequencySafetyLevelSameAsAssessedPeriod .
+
+iss-sh:SafetyLevelScoreSKOSSLE
+  sh:message "safetyLevelScore: The instance of SafetyLevelPerEventType has a safetyLevelScore value that is not a SKOS concept." ;
+  a sh:PropertyShape ;
+  sh:class skos:Concept ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:SafetyLevelPerEventType ;
+  era:affectedProperty iss:safetyLevelScore ;
+  sh:path iss:safetyLevelScore ;
+  era:scope "local" ;
+  sh:property iss-sh:SafetyLevelScoreSKOSinSchemeSLE .
+
+iss-sh:SafetyEventTypeSKOSinSchemeSLE
+  era:affectedProperty iss:safetyEventType ;
+  sh:severity sh:violation ;
+  era:scope "local" ;
+  sh:path skos:inScheme ;
+  sh:message "safetyEventType: The instance of SafetyLevelPerEventType has a safetyEventType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes." ;
+  era:affectedClass iss:SafetyLevelPerEventType ;
+  a sh:PropertyShape ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> .
+
+iss-sh:FrequencySafetyLevelPriorAssessedPeriodSKOSSLE
+  sh:class skos:Concept ;
+  era:affectedProperty iss:frequencySafetyLevelPriorAssessedPeriod ;
+  sh:severity sh:violation ;
+  sh:message "frequencySafetyLevelPriorAssessedPeriod: The instance of SafetyLevelPerEventType has a frequencySafetyLevelPriorAssessedPeriod value that is not a SKOS concept." ;
+  sh:property iss-sh:FrequencySafetyLevelPriorAssessedPeriodSKOSinSchemeSLE ;
+  era:affectedClass iss:SafetyLevelPerEventType ;
+  a sh:PropertyShape ;
+  rdfs:comment """Frequency is the number of pre-defined type of occurrences divided by a given normaliser.
+Typical normalisers can be, for example, year, volume of transport (number
+of tons, number of tons/km) or number of predefined operations."""@en ;
+  era:scope "local" ;
+  sh:path iss:frequencySafetyLevelPriorAssessedPeriod .
+
+iss-sh:SeveritySafetyLevelPriorAssessmentPeriodSKOSinSchemeSLE
+  era:affectedProperty iss:severitySafetyLevelPriorAssessmentPeriod ;
+  sh:severity sh:violation ;
+  sh:message "severitySafetyLevelPriorAssessmentPeriod: The instance of SafetyLevelPerEventType has a severitySafetyLevelPriorAssessmentPeriod value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels." ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
+  era:scope "local" ;
+  sh:path skos:inScheme ;
+  era:affectedClass iss:SafetyLevelPerEventType ;
+  a sh:PropertyShape .
+
+iss-sh:FrequencySafetyLevelPriorAssessedPeriodSKOSinSchemeSLE
+  era:affectedProperty iss:frequencySafetyLevelPriorAssessedPeriod ;
+  sh:severity sh:violation ;
+  era:scope "local" ;
+  a sh:PropertyShape ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
+  era:affectedClass iss:SafetyLevelPerEventType ;
+  sh:path skos:inScheme ;
+  sh:message "frequencySafetyLevelPriorAssessedPeriod: The instance of SafetyLevelPerEventType has a frequencySafetyLevelPriorAssessedPeriod value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels." .
+
+iss-sh:FrequencySafetyLevelSameAsAssessedPeriodSKOSinSchemeSLE
+  sh:severity sh:violation ;
+  era:affectedProperty iss:frequencySafetyLevelSameAsAssessedPeriod ;
+  era:scope "local" ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
+  sh:path skos:inScheme ;
+  sh:message "frequencySafetyLevelSameAsAssessedPeriod: The instance of SafetyLevelPerEventType has a frequencySafetyLevelSameAsAssessedPeriod value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels." ;
+  era:affectedClass iss:SafetyLevelPerEventType ;
+  a sh:PropertyShape .
+
+iss-sh:SafetyEventTypeSKOSSLE
+  a sh:PropertyShape ;
+  sh:class skos:Concept ;
+  era:affectedClass iss:SafetyLevelPerEventType ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:safetyEventType ;
+  sh:path iss:safetyEventType ;
+  sh:message "safetyEventType: The instance of SafetyLevelPerEventType has a safetyEventType value that is not a SKOS concept." ;
+  era:scope "local" ;
+  sh:property iss-sh:SafetyEventTypeSKOSinSchemeSLE ;
+  rdfs:comment "'safety event type' or ‘event type’ means an event identified by an event name and an event code as defined in  CDR (EU) xxx/2024, Annex I, Part C, Appendix 1."@en .
+
+iss-sh:SeveritySafetyLevelDuringAssessmentPeriodSKOSSLE
+  sh:class skos:Concept ;
+  a sh:PropertyShape ;
+  rdfs:comment """The severity is Intensity of harm.
+The severity is estimated by the exposure of vulnerabilities to hazardous areas."""@en ;
+  sh:message "severitySafetyLevelDuringAssessmentPeriod: The instance of SafetyLevelPerEventType has a severitySafetyLevelDuringAssessmentPeriod value that is not a SKOS concept." ;
+  era:affectedClass iss:SafetyLevelPerEventType ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:severitySafetyLevelDuringAssessmentPeriod ;
+  era:scope "local" ;
+  sh:path iss:severitySafetyLevelDuringAssessmentPeriod ;
+  sh:property iss-sh:SeveritySafetyLevelDuringAssessmentPeriodSKOSinSchemeSLE .
+
+iss-sh:SeveritySafetyLevelDuringAssessmentPeriodSKOSinSchemeSLE
+  sh:severity sh:violation ;
+  era:scope "local" ;
+  era:affectedProperty iss:severitySafetyLevelDuringAssessmentPeriod ;
+  a sh:PropertyShape ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
+  sh:message "severitySafetyLevelDuringAssessmentPeriod: The instance of SafetyLevelPerEventType has a severitySafetyLevelDuringAssessmentPeriod value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels." ;
+  sh:path skos:inScheme ;
+  era:affectedClass iss:SafetyLevelPerEventType .
+
+iss-sh:SafetyLevelPerEventTypeShape sh:property iss-sh:FrequencySafetyLevelPriorAssessedPeriodSKOSSLE, iss-sh:FrequencySafetyLevelSameAsAssessedPeriodSKOSSLE, iss-sh:SeveritySafetyLevelPriorAssessmentPeriodSKOSSLE, iss-sh:SafetyLevelScoreSKOSSLE, iss-sh:SafetyEventTypeSKOSSLE, iss-sh:SeveritySafetyLevelDuringAssessmentPeriodSKOSSLE .

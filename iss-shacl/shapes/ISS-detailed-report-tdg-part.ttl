@@ -1,0 +1,500 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:DetailedReportTdgPartShape
+	a sh:NodeShape ;
+    sh:targetClass iss:DetailedReportTdgPart.
+
+
+iss-sh:DetailedReportTdgPartShape sh:property iss-sh:EstimatedQuantityLossProduct, iss-sh:MeanContainmentMaterial, iss-sh:TdgCompanyFaxNumber, iss-sh:TdgCompanyTelephone, iss-sh:TdgEvnNumberVagon, iss-sh:TdgTotalNumberDeaths, iss-sh:PackingGroup, iss-sh:TdgAdditionalOccurrenceDescription, iss-sh:TdgClass, iss-sh:TdgCompanyAddress, iss-sh:TdgTotalNumberInjuries, iss-sh:UnNumber, iss-sh:OccurrenceRegion.
+
+iss-sh:DetailedReportTdgPartShape sh:property iss-sh:VehicleInvolved, iss-sh:Temperature, iss-sh:OccurrenceDetailsNarrative .
+
+iss-sh:Temperature 
+  sh:severity sh:violation ;
+  rdfs:comment "Temperature."@en ;
+  sh:path iss:temperature ;
+  a sh:PropertyShape ;
+  sh:message "temperature: Each detailed report TDG part may have temperaure that is a float. This error is due to having a value that is not a float." ;
+  era:affectedProperty iss:temperature;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:datatype xsd:float .
+
+iss-sh:OccurrenceDetailsNarrative a sh:PropertyShape;
+  era:affectedProperty iss:occurrenceDetailsNarrative;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  rdfs:comment """Free text (optional), Only to be used if needed for better understanding of the reported dataset. Taken from Annexes ISC-2022-00728_2023-07."""@en;
+  sh:path iss:occurrenceDetailsNarrative;
+  sh:datatype xsd:string;
+  sh:severity sh:violation;
+  sh:message "occurrenceDetailsNarrative: Each detailed report TDG part may have occurrenceDetailsNarrative that is a string. This error is due to having a value that is not a string." .
+
+iss-sh:TdgTotalNumberInjuries
+  sh:path iss:tdgTotalNumberInjuries ;
+  sh:datatype xsd:integer ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:tdgTotalNumberInjuries ;
+  sh:message "tdgTotalNumberInjuries: Each detailed report TDG part may have tdgTotalNumberInjuries that is an integer. This error is due to having a value that is not an integer." ;
+  era:affectedClass iss:DetailedReportTdgPart ;
+  a sh:PropertyShape ;
+  era:scope "local" .
+
+
+iss-sh:TdgEvnNumberVagon
+  era:scope "local" ;
+  era:affectedClass iss:DetailedReportTdgPart ;
+  sh:severity sh:violation ;
+  sh:datatype xsd:string ;
+  era:affectedProperty iss:tdgEvnNumberVagon ;
+  a sh:PropertyShape ;
+  sh:path iss:tdgEvnNumberVagon ;
+  sh:message "tdgEvnNumberVagon: Each detailed report TDG part may have tdgEvnNumberVagon that is a string. This error is due to having a value that is not a string." .
+
+
+iss-sh:TdgTotalNumberDeaths
+  era:scope "local" ;
+  era:affectedClass iss:DetailedReportTdgPart ;
+  sh:severity sh:violation ;
+  sh:datatype xsd:integer ;
+  era:affectedProperty iss:tdgTotalNumberDeaths ;
+  sh:message "tdgTotalNumberDeaths: Each detailed report TDG part may have tdgTotalNumberDeaths that is an integer. This error is due to having a value that is not an integer." ;
+  a sh:PropertyShape ;
+  sh:path iss:tdgTotalNumberDeaths .
+
+iss-sh:MeanContainmentMaterial
+  sh:message "meanContainmentMaterial: Each detailed report TDG part may have meanContainmentMaterial that is a string. This error is due to having a value that is not a string." ;
+  era:scope "local" ;
+  sh:severity sh:violation ;
+  sh:path iss:meanContainmentMaterial ;
+  sh:datatype xsd:string ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:meanContainmentMaterial ;
+  era:affectedClass iss:DetailedReportTdgPart .
+
+iss-sh:UnNumber
+  sh:datatype xsd:string ;
+  sh:path iss:unNumber ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:unNumber ;
+  era:affectedClass iss:DetailedReportTdgPart ;
+  sh:message "unNumber: Each detailed report TDG part may have unNumber that is a string. This error is due to having a value that is not a string." ;
+  a sh:PropertyShape ;
+  era:scope "local" .
+
+iss-sh:TdgCompanyFaxNumber
+  era:scope "local" ;
+  era:affectedClass iss:DetailedReportTdgPart ;
+  sh:severity sh:violation ;
+  sh:datatype xsd:string ;
+  era:affectedProperty iss:tdgCompanyFaxNumber ;
+  a sh:PropertyShape ;
+  sh:path iss:tdgCompanyFaxNumber ;
+  sh:message "tdgCompanyFaxNumber: Each detailed report TDG part may have tdgCompanyFaxNumber that is a string. This error is due to having a value that is not a string." .
+
+iss-sh:TdgCompanyTelephone
+  era:scope "local" ;
+  era:affectedClass iss:DetailedReportTdgPart ;
+  sh:severity sh:violation ;
+  sh:datatype xsd:string ;
+  era:affectedProperty iss:tdgCompanyTelephone ;
+  a sh:PropertyShape ;
+  sh:message "tdgCompanyTelephone: Each detailed report TDG part may have tdgCompanyTelephone that is a string. This error is due to having a value that is not a string." ;
+  sh:path iss:tdgCompanyTelephone .
+
+iss-sh:TdgClass
+  era:scope "local" ;
+  sh:datatype xsd:string ;
+  era:affectedClass iss:DetailedReportTdgPart ;
+  sh:severity sh:violation ;
+  sh:message "tdgClass: Each detailed report TDG part may have tdgClass that is a string. This error is due to having a value that is not a string." ;
+  era:affectedProperty iss:tdgClass ;
+  sh:path iss:tdgClass ;
+  a sh:PropertyShape .
+
+iss-sh:TdgAdditionalOccurrenceDescription
+  sh:datatype xsd:anyURI ;
+  era:scope "local" ;
+  era:affectedClass iss:DetailedReportTdgPart ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:tdgAdditionalOccurrenceDescription ;
+  a sh:PropertyShape ;
+  sh:message "tdgAdditionalOccurrenceDescription: Each detailed report TDG part may have tdgAdditionalOccurrenceDescription that is a anyURI. This error is due to having a value that is not a anyURI." ;
+  sh:path iss:tdgAdditionalOccurrenceDescription .
+
+iss-sh:TdgCompanyAddress
+  era:scope "local" ;
+  sh:datatype xsd:string ;
+  era:affectedClass iss:DetailedReportTdgPart ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:tdgCompanyAddress ;
+  sh:message "tdgCompanyAddress: Each detailed report TDG part may have tdgCompanyAddress that is a string. This error is due to having a value that is not a string." ;
+  sh:path iss:tdgCompanyAddress ;
+  a sh:PropertyShape .
+
+iss-sh:PackingGroup
+  era:scope "local" ;
+  sh:path iss:packingGroup ;
+  sh:datatype xsd:string ;
+  era:affectedClass iss:DetailedReportTdgPart ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  sh:message "packingGroup: Each detailed report TDG part may have packingGroup that is a string. This error is due to having a value that is not a string." ;
+  era:affectedProperty iss:packingGroup .
+
+iss-sh:OccurrenceRegion
+  era:scope "local" ;
+  sh:path iss:occurrenceRegion ;
+  sh:datatype xsd:string ;
+  era:affectedClass iss:DetailedReportTdgPart ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  sh:message "occurrenceRegion: Each detailed report TDG part may have occurrenceRegion that is a string. This error is due to having a value that is not a string." ;
+  era:affectedProperty iss:occurrenceRegion .
+
+
+iss-sh:DetailedReportTdgPartShape sh:property iss-sh:OccurrenceDateTime .
+iss-sh:OccurrenceDateTime a sh:PropertyShape;
+  era:affectedProperty iss:occurrenceDateTime;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path iss:occurrenceDateTime;
+  sh:datatype xsd:dateTime;
+  sh:severity sh:violation;
+  sh:message "occurrenceDateTime: Each detailed report TDG part may have occurrenceDateTime that is a dateTime. This error is due to having a value that is not a dateTime." .
+
+iss-sh:DetailedReportTdgPartShape sh:property iss-sh:OccurrenceTownOrCity .
+iss-sh:OccurrenceTownOrCity a sh:PropertyShape;
+  era:affectedProperty iss:occurrenceTownOrCity;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path iss:occurrenceTownOrCity;
+  sh:datatype xsd:string;
+  sh:severity sh:violation;
+  sh:message "occurrenceTownOrCity: Each detailed report TDG part may have occurrenceTownOrCity that is a string. This error is due to having a value that is not a string.". 
+
+iss-sh:DetailedReportTdgPartShape sh:property iss-sh:OccurrenceDepartment .
+iss-sh:OccurrenceDepartment a sh:PropertyShape;
+  era:affectedProperty iss:occurrenceDepartment;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path iss:occurrenceDepartment;
+  sh:datatype xsd:string;
+  sh:severity sh:violation;
+  sh:message "occurrenceDepartment: Each detailed report TDG part may have occurrenceDepartment that is a string. This error is due to having a value that is not a string.".
+
+iss-sh:DetailedReportTdgPartShape sh:property iss-sh:DeemedCausesNarrative.
+iss-sh:DeemedCausesNarrative a sh:PropertyShape;
+  era:affectedProperty iss:deemedCausesNarrative;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  rdfs:comment """Free text (optional), Only to be used if needed for better understanding of the reported dataset.
+Taken from Annexes ISC-2022-00728_2023-07."""@en;
+  sh:path iss:deemedCausesNarrative;
+  sh:datatype xsd:string;
+  sh:severity sh:violation;
+  sh:message "deemedCausesNarrative: Each detailed report TDG part may have deemedCausesNarrative that is a string. This error is due to having a value that is not a string." .
+
+iss-sh:DetailedReportTdgPartShape sh:property iss-sh:OccurrenceDetailsNarrative.
+iss-sh:OccurrenceDetailsNarrative a sh:PropertyShape;
+  era:affectedProperty iss:occurrenceDetailsNarrative;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  rdfs:comment """Free text (optional), Only to be used if needed for better understanding of the reported dataset. Taken from Annexes ISC-2022-00728_2023-07."""@en;
+  sh:path iss:occurrenceDetailsNarrative;
+  sh:datatype xsd:string;
+  sh:severity sh:violation;
+  sh:message "occurrenceDetailsNarrative: Each detailed report TDG part may have occurrenceDetailsNarrative that is a string. This error is due to having a value that is not a string." .
+
+iss-sh:DetailedReportTdgPartShape sh:property iss-sh:OccurrenceConsequencesNarrative .
+iss-sh:OccurrenceConsequencesNarrative a sh:PropertyShape;
+  era:affectedProperty iss:occurrenceConsequencesNarrative;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  rdfs:comment """Free text (optional), Only to be used if needed for better understanding of the reported dataset.
+Taken from Annexes ISC-2022-00728_2023-07."""@en;
+  sh:path iss:occurrenceConsequencesNarrative;
+  sh:datatype xsd:string;
+  sh:severity sh:violation;
+  sh:message "occurrenceConsequencesNarrative: Each detailed report TDG part may have occurrenceConsequencesNarrative that is a string. This error is due to having a value that is not a string." .
+
+# (TODO) Convert to SPARQL constraint for checking the infrastructure object in RINF KG
+# iss-sh:DetailedReportTdgPartShape sh:property iss-sh:LocationRINF .
+# iss-sh:LocationRINF a sh:PropertyShape;
+  #era:affectedProperty iss:locationRINF;
+  #era:affectedClass iss:DetailedReportTdgPart;
+  #era:scope "local";
+  #rdfs:comment "Relates the safety related event with the location in the RINF infrastructure."@en;
+  #sh:path iss:locationRINF;
+  #sh:class era:InfrastructureObject;
+  #sh:severity sh:violation;
+  #sh:message "locationRINF: The detailed report TDG part has a locationRINF that must be a InfrastructureObject." .
+
+
+
+iss-sh:EstimatedQuantityLossProduct
+  era:affectedProperty iss:estimatedQuantityLossProduct ;
+  era:scope "local" ;
+  sh:message "estimatedQuantityLossProduct: Each detailed report TDG part may have estimatedQuantityLossProduct that is a float. This error is due to having a value that is not a float." ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  sh:datatype xsd:float ;
+  sh:path iss:estimatedQuantityLossProduct ;
+  era:affectedClass iss:DetailedReportTdgPart .
+
+iss-sh:VehicleInvolved
+  sh:path iss:vehicleInvolved ;
+  a sh:PropertyShape ;
+  era:scope "local" ;
+  sh:message "vehicleInvolved: The detailed report (TDG part) has a vehicleInvolved that must be a Vehicle." ;
+  era:affectedClass iss:DetailedReportTdgPart ;
+  era:affectedProperty iss:vehicleInvolved ;
+  sh:severity sh:violation ;
+  sh:class era:Vehicle .
+
+iss-sh:DetailedReportTdgPartShape sh:property iss-sh:HumanConsequencesPerPersonCategory .
+iss-sh:HumanConsequencesPerPersonCategory a sh:PropertyShape;
+  era:affectedProperty iss:humanConsequencesPerPersonCategory;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  rdfs:comment "Relates the safety related event with the class that represents human consequences (victims) per person category (passengers, trespassers, employees, others)."@en;
+  sh:path iss:humanConsequencesPerPersonCategory;
+  sh:class iss:HumanConsequencesPerPersonCategory;
+  sh:severity sh:violation;
+  sh:message "humanConsequencesPerPersonCategory: The detailed report (TDG part) has a humanConsequencesPerPersonCategory that must be a HumanConsequencesPerPersonCategory." .
+
+# SKOS
+iss-sh:DetailedReportTdgPartShape sh:property iss-sh:AuthoritiesInvolvementSKOS, iss-sh:DamageLevelSKOS,
+    iss-sh:LossOfProductSKOS, iss-sh:MeansContainmentSKOS, iss-sh:MeansContainmentFailureTypeSKOS,
+    iss-sh:TdgLocationSKOS, iss-sh:TdgOccurrenceCauseSKOS, iss-sh:TopographySKOS, iss-sh:WeatherConditionSKOS,
+    iss-sh:OperationalCauseSKOS, iss-sh:CountryOfOccurrenceSKOS .
+
+iss-sh:AuthoritiesInvolvementSKOS a sh:PropertyShape;
+  era:affectedProperty iss:authoritiesInvolvement;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  rdfs:comment "Indication that authorities had to intervene to mitigate the consequences of an occurrence."@en;
+  sh:path iss:authoritiesInvolvement;
+  sh:class skos:Concept;
+  sh:property iss-sh:AuthoritiesInvolvementSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "authoritiesInvolvement: The instance of DetailedReportTdgPart has a authoritiesInvolvement value that is not a SKOS concept." .
+
+iss-sh:AuthoritiesInvolvementSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:authoritiesInvolvement;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/authorities-involvement-types/AuthoritiesInvolvementTypes>;
+  sh:severity sh:violation;
+  sh:message "authoritiesInvolvement: The instance of DetailedReportTdgPart has a authoritiesInvolvement value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/authorities-involvement-types/AuthoritiesInvolvementTypes." .
+
+iss-sh:CountryOfOccurrenceSKOS a sh:PropertyShape;
+  era:affectedProperty iss:countryOfOccurrence;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  rdfs:comment "Country where the safety related event occurred."@en;
+  sh:path iss:countryOfOccurrence;
+  sh:class skos:Concept;
+  sh:property iss-sh:CountryOfOccurrenceSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "countryOfOccurrence: The instance of DetailedReportTdgPart has a countryOfOccurrence value that is not a SKOS concept." .
+
+iss-sh:CountryOfOccurrenceSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:countryOfOccurrence;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://publications.europa.eu/resource/authority/country>;
+  sh:severity sh:violation;
+  sh:message "countryOfOccurrence: The instance of DetailedReportTdgPart has a countryOfOccurrence value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://publications.europa.eu/resource/authority/country." .
+
+iss-sh:DamageLevelSKOS a sh:PropertyShape;
+  era:affectedProperty iss:damageLevel;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path iss:damageLevel;
+  sh:class skos:Concept;
+  sh:property iss-sh:DamageLevelSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "damageLevel: The instance of DetailedReportTdgPart has a damageLevel value that is not a SKOS concept." .
+
+iss-sh:DamageLevelSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:damageLevel;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/damage-levels/DamageLevels>;
+  sh:severity sh:violation;
+  sh:message "damageLevel: The instance of DetailedReportTdgPart has a damageLevel value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/damage-levels/DamageLevels." .
+
+iss-sh:LossOfProductSKOS a sh:PropertyShape;
+  era:affectedProperty iss:lossOfProduct;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  rdfs:comment "Relates to occurrences with dangerous goods involvement, in which a loss of containment of the dangerous substance (loss of product) occurred."@en;
+  sh:path iss:lossOfProduct;
+  sh:class skos:Concept;
+  sh:property iss-sh:LossOfProductSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "lossOfProduct: The instance of DetailedReportTdgPart has a lossOfProduct value that is not a SKOS concept." .
+
+iss-sh:LossOfProductSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:lossOfProduct;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/product-losss-types/ProductLossTypes>;
+  sh:severity sh:violation;
+  sh:message "lossOfProduct: The instance of DetailedReportTdgPart has a lossOfProduct value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/product-losss-types/ProductLossTypes." .
+
+iss-sh:MeansContainmentSKOS a sh:PropertyShape;
+  era:affectedProperty iss:meansContainment;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  rdfs:comment "Type of contianment of a dangerous good substance, in accordance with the list of applicable types defined in RID."@en;
+  sh:path iss:meansContainment;
+  sh:class skos:Concept;
+  sh:property iss-sh:MeansContainmentSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "meansContainment: The instance of DetailedReportTdgPart has a meansContainment value that is not a SKOS concept." .
+
+iss-sh:MeansContainmentSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:meansContainment;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/means-of-containment-types/MeansOfContainmentTypes>;
+  sh:severity sh:violation;
+  sh:message "meansContainment: The instance of DetailedReportTdgPart has a meansContainment value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/means-of-containment-types/MeansOfContainmentTypes." .
+
+iss-sh:MeansContainmentFailureTypeSKOS a sh:PropertyShape;
+  era:affectedProperty iss:meansContainmentFailureType;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  rdfs:comment "Type of failure of the dangerous goods containment leading to the loss of containment, in accordance witht he applicable list of failure defined in RID."@en;
+  sh:path iss:meansContainmentFailureType;
+  sh:class skos:Concept;
+  sh:property iss-sh:MeansContainmentFailureTypeSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "meansContainmentFailureType: The instance of DetailedReportTdgPart has a meansContainmentFailureType value that is not a SKOS concept." .
+
+iss-sh:MeansContainmentFailureTypeSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:meansContainmentFailureType;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/means-containment-failure-types/MeansContainmentFailureTypes>;
+  sh:severity sh:violation;
+  sh:message "meansContainmentFailureType: The instance of DetailedReportTdgPart has a meansContainmentFailureType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/means-containment-failure-types/MeansContainmentFailureTypes." .
+
+iss-sh:OperationalCauseSKOS a sh:PropertyShape;
+  era:affectedProperty iss:operationalCause;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path iss:operationalCause;
+  sh:class skos:Concept;
+  sh:property iss-sh:OperationalCauseSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "operationalCause: The instance of DetailedReportTdgPart has a operationalCause value that is not a SKOS concept." .
+
+iss-sh:OperationalCauseSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:operationalCause;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/cause-types/CauseTypes>;
+  sh:severity sh:violation;
+  sh:message "operationalCause: The instance of DetailedReportTdgPart has a operationalCause value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/cause-types/CauseTypes." .
+
+iss-sh:TdgLocationSKOS a sh:PropertyShape;
+  era:affectedProperty iss:tdgLocation;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path iss:tdgLocation;
+  sh:class skos:Concept;
+  sh:property iss-sh:TdgLocationSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "tdgLocation: The instance of DetailedReportTdgPart has a tdgLocation value that is not a SKOS concept." .
+
+iss-sh:TdgLocationSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:tdgLocation;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/tdg-location-types/TdgLocationTypes>;
+  sh:severity sh:violation;
+  sh:message "tdgLocation: The instance of DetailedReportTdgPart has a tdgLocation value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/tdg-location-types/TdgLocationTypes." .
+
+iss-sh:TdgOccurrenceCauseSKOS a sh:PropertyShape;
+  era:affectedProperty iss:tdgOccurrenceCause;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path iss:tdgOccurrenceCause;
+  sh:class skos:Concept;
+  sh:property iss-sh:TdgOccurrenceCauseSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "tdgOccurrenceCause: The instance of DetailedReportTdgPart has a tdgOccurrenceCause value that is not a SKOS concept." .
+
+iss-sh:TdgOccurrenceCauseSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:tdgOccurrenceCause;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/tdg-occurrence-causes/TDGOccurrenceCauses>;
+  sh:severity sh:violation;
+  sh:message "tdgOccurrenceCause: The instance of DetailedReportTdgPart has a tdgOccurrenceCause value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/tdg-occurrence-causes/TDGOccurrenceCauses." .
+
+iss-sh:TopographySKOS a sh:PropertyShape;
+  era:affectedProperty iss:topography;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  rdfs:comment "Qualitative description of the topography at the time and location of an occurrence."@en;
+  sh:path iss:topography;
+  sh:class skos:Concept;
+  sh:property iss-sh:TopographySKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "topography: The instance of DetailedReportTdgPart has a topography value that is not a SKOS concept." .
+
+iss-sh:TopographySKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:topography;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/topography-types/TopographyTypes>;
+  sh:severity sh:violation;
+  sh:message "topography: The instance of DetailedReportTdgPart has a topography value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/topography-types/TopographyTypes." .
+
+iss-sh:WeatherConditionSKOS a sh:PropertyShape;
+  era:affectedProperty iss:weatherCondition;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  rdfs:comment "Ambient condition and air temperature at the time and location of an occurrence."@en;
+  sh:path iss:weatherCondition;
+  sh:class skos:Concept;
+  sh:property iss-sh:WeatherConditionSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "weatherCondition: The instance of DetailedReportTdgPart has a weatherCondition value that is not a SKOS concept." .
+
+iss-sh:WeatherConditionSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:weatherCondition;
+  era:affectedClass iss:DetailedReportTdgPart;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/weather-conditions/WeatherConditions>;
+  sh:severity sh:violation;
+  sh:message "weatherCondition: The instance of DetailedReportTdgPart has a weatherCondition value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/weather-conditions/WeatherConditions." .
+
+# iss-sh:LineKilometerPoint: Currenlty range is LineReference (ERA ontology 3.0). Pending definition of range according to ERA ontology 3.1
+
+
+

@@ -1,0 +1,90 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+
+iss-sh:RecommendationItemShape
+	a sh:NodeShape ;
+    sh:targetClass iss:RecommendationItem.
+
+iss-sh:RecommendationItemShape sh:property iss-sh:RecommendationTitle, iss-sh:RecommendationId, iss-sh:RecommendationIssued, iss-sh:RecommendationStartDate, iss-sh:RecommendationText .
+
+iss-sh:RecommendationIssued
+  era:affectedProperty iss:recommendationIssued ;
+  sh:message "recommendationIssued: Each recommendation may have recommendationIssued that is a date. This error is due to having a value that is not a date." ;
+  sh:path iss:recommendationIssued ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  era:scope "local" ;
+  era:affectedClass iss:RecommendationItem ;
+  sh:datatype xsd:date .
+
+
+iss-sh:RecommendationId
+  sh:message "recommendationId: Each recommendation may have recommendationId that is a string. This error is due to having a value that is not a string." ;
+  era:affectedProperty iss:recommendationId ;
+  sh:path iss:recommendationId ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  era:scope "local" ;
+  era:affectedClass iss:RecommendationItem ;
+  sh:datatype xsd:string .
+
+iss-sh:RecommendationTitle
+  sh:datatype xsd:string ;
+  sh:severity sh:violation ;
+  era:scope "local" ;
+  era:affectedProperty iss:recommendationTitle ;
+  era:affectedClass iss:RecommendationItem ;
+  a sh:PropertyShape ;
+  sh:path iss:recommendationTitle ;
+  sh:message "recommendationTitle: Each recommendation may have recommendationTitle that is a string. This error is due to having a value that is not a string." .
+
+iss-sh:RecommendationStartDate
+  sh:datatype xsd:date ;
+  sh:message "recommendationStartDate: Each recommendation may have recommendationStartDate that is a date. This error is due to having a value that is not a date." ;
+  sh:path iss:recommendationStartDate ;
+  a sh:PropertyShape ;
+  era:scope "local" ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:RecommendationItem ;
+  era:affectedProperty iss:recommendationStartDate .
+
+iss-sh:RecommendationText
+  sh:message "recommendationText: Each recommendation may have recommendationText that is a string. This error is due to having a value that is not a string." ;
+  sh:path iss:recommendationText ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  era:scope "local" ;
+  era:affectedClass iss:RecommendationItem ;
+  sh:datatype xsd:string ;
+  era:affectedProperty iss:recommendationText .
+
+# SKOS
+iss-sh:RecommendationItemShape sh:property iss-sh:HasRecommendationLanguageSKOS .
+
+iss-sh:HasRecommendationLanguageSKOS a sh:PropertyShape;
+  era:affectedProperty iss:hasRecommendationLanguage;
+  era:affectedClass iss:RecommendationItem;
+  era:scope "local";
+  sh:path iss:hasRecommendationLanguage;
+  sh:class skos:Concept;
+  sh:property iss-sh:HasRecommendationLanguageSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "hasRecommendationLanguage: The instance of RecommendationItem has a hasRecommendationLanguage value that is not a SKOS concept." .
+
+iss-sh:HasRecommendationLanguageSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:hasRecommendationLanguage;
+  era:affectedClass iss:RecommendationItem;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <https://publications.europa.eu/resource/authority/language>;
+  sh:severity sh:violation;
+  sh:message "hasRecommendationLanguage: The instance of RecommendationItem has a hasRecommendationLanguage value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: https://publications.europa.eu/resource/authority/language." .

@@ -1,0 +1,48 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:InputOrGateShape
+	a sh:NodeShape ;
+    sh:targetClass iss:InputOrGate.
+
+iss-sh:InputOrGateShape sh:property iss-sh:InputOrGateBuildingBlock .
+
+iss-sh:InputOrGateBuildingBlock
+  sh:message "inputOrGateBuildingBlock: The input Or gate has a inputOrGateBuildingBlock that must be a OccurrenceScenarioBuildingBlock." ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:inputOrGateBuildingBlock ;
+  sh:class iss:OccurrenceScenarioBuildingBlock ;
+  sh:path iss:inputOrGateBuildingBlock ;
+  era:affectedClass iss:InputOrGate ;
+  sh:severity sh:violation ;
+  era:scope "local" .
+
+# SKOS
+iss-sh:InputOrGateShape sh:property iss-sh:InputOrGateEventSKOS .
+
+iss-sh:InputOrGateEventSKOS a sh:PropertyShape;
+  era:affectedProperty iss:inputOrGateEvent;
+  era:affectedClass iss:InputOrGate;
+  era:scope "local";
+  sh:path iss:inputOrGateEvent;
+  sh:class skos:Concept;
+  sh:property iss-sh:InputOrGateEventSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "inputOrGateEvent: The instance of InputOrGate has a inputOrGateEvent value that is not a SKOS concept." .
+
+iss-sh:InputOrGateEventSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:inputOrGateEvent;
+  era:affectedClass iss:InputOrGate;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes>;
+  sh:severity sh:violation;
+  sh:message "inputOrGateEvent: The instance of InputOrGate has a inputOrGateEvent value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes." .

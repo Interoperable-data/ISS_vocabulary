@@ -24,8 +24,12 @@
 <dd><a href="https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.6.1">https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.6.1</a></dd>
 <dt>Previous version:</dt>
 <dd><a href="https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.6.0">https://git.fpfis.eu/datateam/ERA/era-vocabulary/-/releases/v2.6.0</a></dd>-->
+<dt>Latest release:</dt>
+<dd>2025-01-14</dd>
+<dt>Initial release:</dt>
+<dd>2023-09-20</dd>
 <dt>Version:</dt>
-<dd>v1.0.0 (released on 2023-04-09)</dd>
+<dd>v1.0.0</dd>
 
 <dt>Publisher:</dt>
 <dd><a href="https://www.era.europa.eu/">European Union Agency for Railways</a></dd>
@@ -63,9 +67,9 @@ This list of concepts will continously be updated with new versions of the vocab
 <tbody>
   <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/ambient-conditions/AmbientConditions" target="_blank">AmbientConditions</a></td>
-    <td><a href="./era-skos-AmbientConditions.ttl" target="_blank">era-skos-AmbientConditions.ttl</a></td>
+    <td><a href="./era-skos-ambientConditions.ttl" target="_blank">era-skos-ambientConditions.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/ambientCondition" target="_blank">iss:ambientCondition</a> </td>   
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Fambient-conditions%2FAmbientConditions%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Fambient-conditions%2FAmbientConditions%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>
     <!-- 
       SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
@@ -75,16 +79,29 @@ This list of concepts will continously be updated with new versions of the vocab
       }
       -->
   </tr>
-<tr>
-    <td><a href="http://data.europa.eu/949/iss/concepts/entity-categories/EntityCategories" target="_blank">EntityCategories</a></td>
-    <td><a href="./era-skos-EntityCategories.ttl" target="_blank">era-skos-EntityCategories.ttl</a></td>
-    <td><a href="http://www.w3.org/ns/org#classification" target="_blank">org:classification</a><BR/>  
-    <a href="http://data.europa.eu/949/iss/reportingEntityRole" target="_blank">iss:reportingEntityRole</a> </td>    
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Fentity-categories%2FEntityCategories%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>
+    <tr>
+    <td><a href="http://data.europa.eu/949/iss/concepts/contributing-factors/ContributingFactors" target="_blank">ContributingFactors</a></td>
+    <td><a href="./era-skos-contributingFactors.ttl" target="_blank">era-skos-contributingFactors.ttl</a></td>
+    <td><a href="http://data.europa.eu/949/iss/contributingFactor" target="_blank">iss:contributingFactor</a> </td>   
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Fcontributing-factors%2FContributingFactors%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>
     <!-- 
       SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
-      ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/entity-categories/EntityCategories> .
+      ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/contributing-factors/ContributingFactors> .
+      ?skosConcept skos:prefLabel ?prefLabel.
+      OPTIONAL {?skosConcept skos:altLabel ?altLabel}
+      }
+      -->
+  </tr>
+<tr>
+    <td><a href="http://data.europa.eu/949/concepts/organisation-roles/OrgRoles" target="_blank">OrgRoles</a></td>
+    <td><a href="./era-skos-orgRoles.ttl" target="_blank">era-skos-orgRoles.ttl</a></td>
+    <td><a href="http://data.europa.eu/949/hasOrganisationRole" target="_blank">era:hasOrganisationRole</a></td>    
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fconcepts%2Forganisation-roles%2FOrgRoles%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>
+    <!-- 
+      SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+      {
+      ?skosConcept skos:inScheme <http://data.europa.eu/949/concepts/organisation-roles/OrgRoles> .
       ?skosConcept skos:prefLabel ?prefLabel.
       OPTIONAL {?skosConcept skos:altLabel ?altLabel}
       }
@@ -93,9 +110,9 @@ This list of concepts will continously be updated with new versions of the vocab
     
     <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/injury-dg-types/InjuryDGTypes" target="_blank">InjuryDGTypes</a></td>
-    <td><a href="./era-skos-InjuryDGTypes.ttl" target="_blank">era-skos-InjuryDGTypes.ttl</a></td>
+    <td><a href="./era-skos-injuryDGTypes.ttl" target="_blank">era-skos-injuryDGTypes.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/injuryTdgType" target="_blank">iss:injuryTdgType</a> </td>   
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Finjury-dg-types%2FInjuryDGTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Finjury-dg-types%2FInjuryDGTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     
     <!--        
       SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
@@ -107,9 +124,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
     <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/injury-types/InjuryTypes" target="_blank">InjuryTypes</a></td>
-    <td><a href="./era-skos-InjuryTypes.ttl" target="_blank">era-skos-InjuryTypes.ttl</a></td>
+    <td><a href="./era-skos-injuryTypes.ttl" target="_blank">era-skos-injuryTypes.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/injuryType" target="_blank">iss:injuryType</a> </td>   
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Finjury-types%2FInjuryTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Finjury-types%2FInjuryTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/injury-types/InjuryTypes> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -118,9 +135,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
     <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/level-crossing-types/LevelCrossingTypes" target="_blank">LevelCrossingTypes</a></td>
-    <td><a href="./era-skos-InjuryTypes.ttl" target="_blank">era-skos-LevelCrossingTypes.ttl</a></td>
+    <td><a href="./era-skos-levelCrossingTypes.ttl" target="_blank">era-skos-levelCrossingTypes.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/levelCrossingType" target="_blank">iss:levelCrossingType</a> </td>   
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Flevel-crossing-types%2FLevelCrossingTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Flevel-crossing-types%2FLevelCrossingTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>
     <!-- 
       SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
@@ -132,9 +149,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
     <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/light-conditions/LightConditions" target="_blank">LightConditions</a></td>
-    <td><a href="./era-skos-LightConditions.ttl" target="_blank">era-skos-LightConditions.ttl</a></td>
+    <td><a href="./era-skos-lightConditions.ttl" target="_blank">era-skos-lightConditions.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/lightCondition" target="_blank">iss:lightCondition</a> </td> 
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Flight-conditions%2FLightConditions%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Flight-conditions%2FLightConditions%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/light-conditions/LightConditions> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -143,9 +160,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
     <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/location-details/LocationDetails" target="_blank">LocationDetails</a></td>
-    <td><a href="./era-skos-LocationDetails.ttl" target="_blank">era-skos-LocationDetails.ttl</a></td>
+    <td><a href="./era-skos-locationDetails.ttl" target="_blank">era-skos-locationDetails.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/locationDetails" target="_blank">iss:locationDetails</a> </td> 
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Flocation-details%2FLocationDetails%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Flocation-details%2FLocationDetails%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/location-details/LocationDetails> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -155,9 +172,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
     <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/notification-types/NotificationTypes" target="_blank">NotificationTypes</a></td>
-    <td><a href="./era-skos-NotificationTypes.ttl" target="_blank">era-skos-NotificationTypes.ttl</a></td>
+    <td><a href="./era-skos-notificationTypes.ttl" target="_blank">era-skos-notificationTypes.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/notificationType" target="_blank">iss:notificationType</a> </td> 
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Fnotification-types%2FNotificationTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Fnotification-types%2FNotificationTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/notification-types/NotificationTypes> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -166,9 +183,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
     <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/person-categories/PersonCategories" target="_blank">PersonCategories</a></td>
-    <td><a href="./era-skos-PersonCategories.ttl" target="_blank">era-skos-PersonCategories.ttl</a></td>
+    <td><a href="./era-skos-personCategories.ttl" target="_blank">era-skos-personCategories.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/personCategory" target="_blank">iss:personCategory</a> </td> 
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Fperson-categories%2FPersonCategories%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Fperson-categories%2FPersonCategories%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/person-categories/PersonCategories> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -178,9 +195,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
     <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/record-statuses/RecordStatuses" target="_blank">RecordStatuses</a></td>
-    <td><a href="./era-skos-RecordStatuses.ttl" target="_blank">era-skos-RecordStatuses.ttl</a></td>
+    <td><a href="./era-skos-recordStatuses.ttl" target="_blank">era-skos-recordStatuses.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/recordStatus" target="_blank">iss:recordStatus</a> </td> 
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Frecord-statuses%2FRecordStatuses%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Frecord-statuses%2FRecordStatuses%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/record-statuses/RecordStatuses> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -189,9 +206,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
      <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/record-types/RecordTypes" target="_blank">RecordTypes</a></td>
-    <td><a href="./era-skos-RecordTypes.ttl" target="_blank">era-skos-RecordTypes.ttl</a></td>
+    <td><a href="./era-skos-recordTypes.ttl" target="_blank">era-skos-recordTypes.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/recordType" target="_blank">iss:recordType</a> </td> 
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Frecord-types%2FRecordTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Frecord-types%2FRecordTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/record-types/RecordTypes> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -201,9 +218,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
      <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/reporting-reasons/ReportingReasons" target="_blank">ReportingReasons</a></td>
-    <td><a href="./era-skos-ReportingReasons.ttl" target="_blank">era-skos-ReportingReasons.ttl</a></td>
+    <td><a href="./era-skos-reportingReasons.ttl" target="_blank">era-skos-reportingReasons.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/reportingReason" target="_blank">iss:reportingReason</a> </td> 
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Freporting-reasons%2FReportingReasons%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Freporting-reasons%2FReportingReasons%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/reporting-reasons/ReportingReasons> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -212,9 +229,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
      <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-damage-types/RollingStockVehicleDamageTypes" target="_blank">RollingStockVehicleDamageTypes</a></td>
-    <td><a href="./era-skos-RollingStockVehicleDamageTypes.ttl" target="_blank">era-skos-RollingStockVehicleDamageTypes.ttl</a></td>
+    <td><a href="./era-skos-rollingStockVehicleDamageTypes.ttl" target="_blank">era-skos-rollingStockVehicleDamageTypes.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/rollingStockVehicleDamageType" target="_blank">iss:rollingStockVehicleDamageType</a> </td> 
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Frolling-stock-vehicle-damage-types%2FRollingStockVehicleDamageTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Frolling-stock-vehicle-damage-types%2FRollingStockVehicleDamageTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-damage-types/RollingStockVehicleDamageTypes> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -223,9 +240,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
      <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-types/RollingStockVehicleTypes" target="_blank">RollingStockVehicleTypes</a></td>
-    <td><a href="./era-skos-RollingStockVehicleTypes.ttl" target="_blank">era-skos-RollingStockVehicleTypes.ttl</a></td>
+    <td><a href="./era-skos-rollingStockVehicleTypes.ttl" target="_blank">era-skos-rollingStockVehicleTypes.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/rollingStockVehicleType" target="_blank">iss:rollingStockVehicleType</a> </td> 
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Frolling-stock-vehicle-types%2FRollingStockVehicleTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Frolling-stock-vehicle-types%2FRollingStockVehicleTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-types/RollingStockVehicleTypes> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -235,7 +252,7 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
     <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes" target="_blank">SafetyEventTypes</a></td>
-    <td><a href="./era-skos-SafetyEventTypes.ttl" target="_blank">era-skos-SafetyEventTypes.ttl</a></td>
+    <td><a href="./era-skos-safetyEventTypes.ttl" target="_blank">era-skos-safetyEventTypes.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/safetyEventType" target="_blank">iss:safetyEventType</a><BR/>
         <a href="http://data.europa.eu/949/iss/causeOfReportedEventType" target="_blank">iss:causeOfReportedEventType</a><BR/>
         <a href="http://data.europa.eu/949/iss/inputAndGate" target="_blank">iss:inputAndGate</a><BR/>
@@ -245,7 +262,7 @@ This list of concepts will continously be updated with new versions of the vocab
         <a href="http://data.europa.eu/949/iss/preventsEventOccurrence" target="_blank">iss:preventsEventOccurrence</a><BR/>
         <a href="http://data.europa.eu/949/iss/resultFailureRiskControlMeasure" target="_blank">iss:resultFailureRiskControlMeasure</a>   <BR/>       
         </td>   
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Fsafety-event-types%2FSafetyEventTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Fsafety-event-types%2FSafetyEventTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>
     <!-- 
       SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
@@ -255,11 +272,25 @@ This list of concepts will continously be updated with new versions of the vocab
       }
       -->
   </tr>
+    <tr>
+    <td><a href="http://data.europa.eu/949/iss/concepts/systemic-factors/SystemicFactors" target="_blank">SystemicFactors</a></td>
+    <td><a href="./era-skos-systemicFactors.ttl" target="_blank">era-skos-systemicFactors.ttl</a></td>
+    <td><a href="http://data.europa.eu/949/iss/systemicFactor" target="_blank">iss:systemicFactor</a> </td>   
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Fsystemic-factors%2FSystemicFactors%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>
+    <!-- 
+      SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+      {
+      ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/systemic-factors/SystemicFactors> .
+      ?skosConcept skos:prefLabel ?prefLabel.
+      OPTIONAL {?skosConcept skos:altLabel ?altLabel}
+      }
+      -->
+  </tr>
       <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/topography-types/TopographyTypes" target="_blank">TopographyTypes</a></td>
-    <td><a href="./era-skos-TopographyTypes.ttl" target="_blank">era-skos-TopographyTypes.ttl</a></td>
+    <td><a href="./era-skos-topographyTypes.ttl" target="_blank">era-skos-topographyTypes.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/topography" target="_blank">iss:topography</a> </td> 
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Ftopography-types%2FTopographyTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Ftopography-types%2FTopographyTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/topography-types/TopographyTypes> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -268,9 +299,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
      <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/track-surface-conditions/TrackSurfaceConditions" target="_blank">TrackSurfaceConditions</a></td>
-    <td><a href="./era-skos-TrackSurfaceConditions.ttl" target="_blank">era-skos-TrackSurfaceConditions.ttl</a></td>
+    <td><a href="./era-skos-trackSurfaceConditions.ttl" target="_blank">era-skos-trackSurfaceConditions.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/trackSurfaceCondition" target="_blank">iss:trackSurfaceCondition</a> </td> 
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Ftrack-surface-conditions%2FTrackSurfaceConditions%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Ftrack-surface-conditions%2FTrackSurfaceConditions%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/track-surface-conditions/TrackSurfaceConditions> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -279,9 +310,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
     <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/train-movement-types/TrainMovementTypes" target="_blank">TrainMovementTypes</a></td>
-    <td><a href="./era-skos-TrainMovementTypes.ttl" target="_blank">era-skos-TrainMovementTypes.ttl</a></td>
+    <td><a href="./era-skos-trainMovementTypes.ttl" target="_blank">era-skos-trainMovementTypes.ttl</a></td>
     <td><a href="http://data.europa.eu/949/iss/trainMovementType" target="_blank">iss:trainMovementType</a> </td> 
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Ftrain-movement-types%2FTrainMovementTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Ftrain-movement-types%2FTrainMovementTypes%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/train-movement-types/TrainMovementTypes> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -290,9 +321,9 @@ This list of concepts will continously be updated with new versions of the vocab
   </tr>
     <tr>
     <td><a href="http://data.europa.eu/949/iss/concepts/transport-operation-categories/TransportOperationCategories" target="_blank">TransportOperationCategories</a></td>
-    <td><a href="./era-skos-TransportOperationCategories.ttl" target="_blank">era-skos-TransportOperationCategories.ttl</a></td>
-    <td><a href="http://data.europa.eu/949/iss/transportOperationCtegory" target="_blank">iss:transportOperationCtegory</a> </td> 
-    <td><a href="https://test.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Ftransport-operation-categories%2FTransportOperationCategories%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
+    <td><a href="./era-skos-transportOperationCategories.ttl" target="_blank">era-skos-transportOperationCategories.ttl</a></td>
+    <td><a href="http://data.europa.eu/949/iss/transportOperationCtegory" target="_blank">iss:transportOperationCategory</a> </td> 
+    <td><a href="https://uat.virtuoso.ecdp.tech.ec.europa.eu/sparql?default-graph-uri=http%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fgraph%2Fdev%2Fskos&query=SELECT+DISTINCT+%3FskosConcept+%3FprefLabel+%3FaltLabel+WHERE%0D%0A++++++%7B%0D%0A++++++%3FskosConcept+skos%3AinScheme+%3Chttp%3A%2F%2Fdata.europa.eu%2F949%2Fiss%2Fconcepts%2Ftransport-operation-categories%2FTransportOperationCategories%3E+.%0D%0A++++++%3FskosConcept+skos%3AprefLabel+%3FprefLabel.%0D%0A++++++OPTIONAL+%7B%3FskosConcept+skos%3AaltLabel+%3FaltLabel%7D%0D%0A++++++%7D%0D%0A%0D%0A&should-sponge=&format=text%2Fhtml&timeout=30000" target="_blank">link</a></td>     <!--        SELECT DISTINCT ?skosConcept ?prefLabel ?altLabel WHERE
       {
       ?skosConcept skos:inScheme <http://data.europa.eu/949/iss/concepts/transport-operation-categories/TransportOperationCategories> .
       ?skosConcept skos:prefLabel ?prefLabel.
@@ -303,6 +334,173 @@ This list of concepts will continously be updated with new versions of the vocab
     
 </tbody>
 </table>
+	<h2>SKOS Concept Schemes under development</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>SKOS Concept Scheme ---</th>
+            <th>Source (in RDF Turtle) ---</th>
+            <th>ISS ontology property</th>
+          </tr>
+        </thead>
+
+        <body>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/applicableRiskControlMeasureFunction"
+                target="_blank">iss:applicableRiskControlMeasureFunction</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/authoritiesInvolvement"
+                target="_blank">iss:authoritiesInvolvement</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/damageLevel"
+                target="_blank">iss:damageLevel</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/documentAccess"
+                target="_blank">iss:documentAccess</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/documentStatus"
+                target="_blank">iss:documentStatus</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/documentType"
+                target="_blank">iss:documentType</a></td>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/estimatedLevelDamage"
+                target="_blank">iss:estimatedLevelDamage</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/frequencySafetyLevelPriorAssessedPeriod"
+                target="_blank">iss:frequencySafetyLevelPriorAssessedPeriod</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/frequencySafetyLevelSameAsAssessedPeriod"
+                target="_blank">iss:frequencySafetyLevelSameAsAssessedPeriod</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/hasRecommendationType" target="_blank">iss:hasRecommendationType</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/lossOfProduct" target="_blank">iss:lossOfProduct</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/meansContainment" target="_blank">iss:meansContainment</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/meansContainmentFailureType" target="_blank">iss:meansContainmentFailureType</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/operationalCause" target="_blank">iss:operationalCause</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/riskControlMeasureFunction"
+                target="_blank">iss:riskControlMeasureFunction</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/riskControlMeasureType"
+                target="_blank">iss:riskControlMeasureType</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/riskControlMeasureFunction"
+                target="_blank">iss:riskControlMeasureFunction</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/safetyLevelScore"
+                target="_blank">iss:safetyLevelScore</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/safetyMaturityLevel"
+                target="_blank">iss:safetyMaturityLevel</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/safetyPerformanceArea"
+                target="_blank">iss:safetyPerformanceArea</a></td>
+	      </tr>
+			<tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/safetyPerformanceSelfEstimationElement"
+                target="_blank">iss:safetyPerformanceSelfEstimationElement</a></td>
+	      </tr>
+			<tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/safetyPerformanceSelfEstimationElementNumber"
+                target="_blank">iss:safetyPerformanceSelfEstimationElementNumber</a></td>
+	      </tr>
+			
+			<tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/severitySafetyLevelDuringAssessmentPeriod"
+                target="_blank">iss:severitySafetyLevelDuringAssessmentPeriod</a></td>
+	      </tr>
+		  
+			<tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/severitySafetyLevelPriorAssessmentPeriod"
+                target="_blank">iss:severitySafetyLevelPriorAssessmentPeriod</a></td>
+	      </tr>
+	
+			<tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/safetyPerformanceSelfEstimationElementNumber"
+                target="_blank">iss:safetyPerformanceSelfEstimationElementNumber</a></td>
+	      </tr>
+			<tr>
+            <td></td>
+            <td></td>
+            <td><a href="http://data.europa.eu/949/iss/tdgLocation"
+                target="_blank">iss:tdgLocation</a></td>
+	      </tr>
+        </body>
+      </table>
+
     </span>
 
 

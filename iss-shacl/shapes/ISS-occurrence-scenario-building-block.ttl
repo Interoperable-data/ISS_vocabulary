@@ -1,0 +1,74 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/>  .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/>.
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:OccurrenceScenarioBuildingBlockShape 
+    a sh:NodeShape ;
+    sh:targetClass iss:OccurrenceScenarioBuildingBlock.
+
+iss-sh:OccurrenceScenarioBuildingBlockShape sh:property iss-sh:BuildingBlockNarrative.
+iss-sh:BuildingBlockNarrative a sh:PropertyShape;
+  era:affectedProperty iss:buildingBlockNarrative;
+  era:affectedClass iss:OccurrenceScenarioBuildingBlock;
+  era:scope "local";
+  rdfs:comment "Building block narrative"@en ;
+  sh:path iss:buildingBlockNarrative;
+  sh:datatype xsd:string;
+  sh:severity sh:violation;
+  sh:message "buildingBlockNarrative: Each occurrence scenario building block may have buildingBlockNarrative that is a string. This error is due to having a value that is not a string.".
+
+iss-sh:OccurrenceScenarioBuildingBlockShape sh:property iss-sh:HasContributingSystemicFactor, iss-sh:HasFailedRiskControlMeasure, iss-sh:InputAndgate, iss-sh:InputOrGate .
+
+iss-sh:HasContributingSystemicFactor
+  era:affectedProperty iss:hasContributingSystemicFactor ;
+  sh:severity sh:violation ;
+  sh:message "hasContributingSystemicFactor: The occurrence scenario building block has a hasContributingSystemicFactor that must be a ContributingSystemicFactor." ;
+  a sh:PropertyShape ;
+  era:affectedClass iss:OccurrenceScenarioBuildingBlock ;
+  rdfs:comment "Relates the occurrence scenario building block with its contributing and systemic factors"@en ;
+  sh:path iss:hasContributingSystemicFactor ;
+  sh:class iss:ContributingSystemicFactor ;
+  era:scope "local" .
+
+iss-sh:InputOrGate
+  sh:path iss:inputOrGate ;
+  sh:severity sh:violation ;
+  sh:message "inputOrGate: The occurrence scenario building block has a inputOrGate that must be a InputOrGate." ;
+  sh:class era:InputOrGate ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:inputOrGate ;
+  era:scope "local" ;
+  rdfs:comment "Input to the OR gate of a building block."@en ;
+  era:affectedClass iss:OccurrenceScenarioBuildingBlock .
+
+iss-sh:InputAndgate
+  rdfs:comment "Input to the AND gate of a building block."@en ;
+  sh:class era:InputAndGate ;
+  sh:path iss:inputAndgate ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  era:affectedClass iss:OccurrenceScenarioBuildingBlock ;
+  sh:message "inputAndgate: The occurrence scenario building block has a inputAndgate that must be a InputAndGate." ;
+  era:scope "local" ;
+  era:affectedProperty iss:inputAndgate .
+
+iss-sh:HasFailedRiskControlMeasure
+  era:affectedProperty iss:hasFailedRiskControlMeasure ;
+  sh:severity sh:violation ;
+  rdfs:comment "Relates the occurrence scenario bulding block with the information on the failed risk control measure."@en ;
+  a sh:PropertyShape ;
+  era:affectedClass iss:OccurrenceScenarioBuildingBlock ;
+  sh:path iss:hasFailedRiskControlMeasure ;
+  sh:message "hasFailedRiskControlMeasure: The occurrence scenario building block has a hasFailedRiskControlMeasure that must be a FailedRiskControlMeasure." ;
+  sh:class iss:FailedRiskControlMeasure ;
+  era:scope "local" .
+
+
+

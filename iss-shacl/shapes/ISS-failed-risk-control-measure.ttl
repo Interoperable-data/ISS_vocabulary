@@ -1,0 +1,166 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:FailedRiskControlMeasureShape
+	a sh:NodeShape ;
+    sh:targetClass iss:FailedRiskControlMeasure.
+
+iss-sh:FailedRiskControlMeasureShape sh:property iss-sh:FailedRiskControlMeasureText, iss-sh:FailureMode, iss-sh:FailureAnalysis, iss-sh:PositionFailedRiskControlMeasure .
+
+iss-sh:FailedRiskControlMeasureShape sh:property iss-sh:CorrespondsToRiskControlMeasure, iss-sh:FailedInBlock .
+
+iss-sh:PositionFailedRiskControlMeasure
+  sh:severity sh:violation ;
+  era:scope "local" ;
+  era:affectedClass iss:FailedRiskControlMeasure ;
+  sh:message "positionFailedRiskControlMeasure: Each failed risk control measure may have positionFailedRiskControlMeasure that is an integer. This error is due to having a value that is not an integer." ;
+  a sh:PropertyShape ;
+  sh:datatype xsd:integer ;
+  sh:path iss:positionFailedRiskControlMeasure ;
+  era:affectedProperty iss:positionFailedRiskControlMeasure .
+
+iss-sh:FailedRiskControlMeasureText
+  sh:path iss:failedRiskControlMeasureText ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  era:scope "local" ;
+  era:affectedClass iss:FailedRiskControlMeasure ;
+  era:affectedProperty iss:failedRiskControlMeasureText ;
+  sh:datatype xsd:string ;
+  sh:message "failedRiskControlMeasureText: Each failed risk control measure may have failedRiskControlMeasureText that is a string. This error is due to having a value that is not a string." .
+
+iss-sh:FailureMode
+  sh:message "failureMode: Each failed risk control measure may have failureMode that is a string. This error is due to having a value that is not a string." ;
+  a sh:PropertyShape ;
+  era:scope "local" ;
+  sh:path iss:failureMode ;
+  era:affectedProperty iss:failureMode ;
+  era:affectedClass iss:FailedRiskControlMeasure ;
+  sh:severity sh:violation ;
+  sh:datatype xsd:string .
+
+iss-sh:FailureAnalysis
+  sh:path iss:failureAnalysis ;
+  a sh:PropertyShape ;
+  era:scope "local" ;
+  era:affectedClass iss:FailedRiskControlMeasure ;
+  sh:severity sh:violation ;
+  sh:datatype xsd:string ;
+  era:affectedProperty iss:failureAnalysis ;
+  sh:message "failureAnalysis: Each failed risk control measure may have failureAnalysis that is a string. This error is due to having a value that is not a string." .
+
+iss-sh:CorrespondsToRiskControlMeasure
+  sh:message "correspondsToRiskControlMeasure: The failed risk control measure has a correspondsToRiskControlMeasure that must be a RiskControlMeasure." ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:FailedRiskControlMeasure ;
+  a sh:PropertyShape ;
+  sh:class iss:RiskControlMeasure ;
+  rdfs:comment "Relates the failed risk control measure information with the corresponding risk control measure."@en ;
+  era:scope "local" ;
+  sh:path iss:correspondsToRiskControlMeasure ;
+  era:affectedProperty iss:correspondsToRiskControlMeasure .
+
+iss-sh:FailedInBlock
+  era:affectedClass iss:FailedRiskControlMeasure ;
+  sh:severity sh:violation ;
+  rdfs:comment "Relates the failed safety measure information with the corresponding occurrence scenario building block."@en ;
+  a sh:PropertyShape ;
+  sh:class iss:OccurrenceScenarioBuildingBlock ;
+  sh:path iss:failedInBlock ;
+  era:scope "local" ;
+  sh:message "failedInBlock: The failed risk control measure has a failedInBlock that must be a OccurrenceScenarioBuildingBlock." ;
+  era:affectedProperty iss:failedInBlock .
+
+# SKOS
+iss-sh:FailedRiskControlMeasureShape sh:property iss-sh:CausalEventTypeSKOS, iss-sh:ResultFailedRiskControlMeasureSKOS,
+    iss-sh:ContributingFactorSKOS, iss-sh:SystemicFactorSKOS .
+
+iss-sh:CausalEventTypeSKOS a sh:PropertyShape;
+  era:affectedProperty iss:causalEventType;
+  era:affectedClass iss:FailedRiskControlMeasure;
+  era:scope "local";
+  sh:path iss:causalEventType;
+  sh:class skos:Concept;
+  sh:property iss-sh:CausalEventTypeSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "causalEventType: The instance of FailedRiskControlMeasure has a causalEventType value that is not a SKOS concept." .
+
+iss-sh:CausalEventTypeSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:causalEventType;
+  era:affectedClass iss:FailedRiskControlMeasure;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes>;
+  sh:severity sh:violation;
+  sh:message "causalEventType: The instance of FailedRiskControlMeasure has a causalEventType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes." .
+
+iss-sh:ContributingFactorSKOS a sh:PropertyShape;
+  era:affectedProperty iss:contributingFactor;
+  era:affectedClass iss:FailedRiskControlMeasure;
+  era:scope "local";
+  rdfs:comment """‘contributing factor’ means a contributing factor as defined in Article 2, point (2) of Commission Implementing Regulation (EU) 2020/5721, i.e means any action, omission, event or condition that affects an occurrence by increasing its likelihood, accelerating the effect in time or increasing the severity of the consequences, but the elimination of which would not have prevented the occurrence.
+
+In the context of CDR (EU) 2024/xxxx, applicable list of contributing factors is defined in Annex I, Part C, Appendix 2."""@en;
+  sh:path iss:contributingFactor;
+  sh:class skos:Concept;
+  sh:property iss-sh:ContributingFactorSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "contributingFactor: The instance of FailedRiskControlMeasure has a contributingFactor value that is not a SKOS concept." .
+
+iss-sh:ContributingFactorSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:contributingFactor;
+  era:affectedClass iss:FailedRiskControlMeasure;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/contributing-factors/ContributingFactors>;
+  sh:severity sh:violation;
+  sh:message "contributingFactor: The instance of FailedRiskControlMeasure has a contributingFactor value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/contributing-factors/ContributingFactors." .
+
+iss-sh:ResultFailedRiskControlMeasureSKOS a sh:PropertyShape;
+  era:affectedProperty iss:resultFailedRiskControlMeasure;
+  era:affectedClass iss:FailedRiskControlMeasure;
+  era:scope "local";
+  rdfs:comment "List of possible resulting safety related events in case a given risk control measure fails to operate as planned."@en;
+  sh:path iss:resultFailedRiskControlMeasure;
+  sh:class skos:Concept;
+  sh:property iss-sh:ResultFailedRiskControlMeasureSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "resultFailedRiskControlMeasure: The instance of FailedRiskControlMeasure has a resultFailedRiskControlMeasure value that is not a SKOS concept." .
+
+iss-sh:ResultFailedRiskControlMeasureSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:resultFailedRiskControlMeasure;
+  era:affectedClass iss:FailedRiskControlMeasure;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes>;
+  sh:severity sh:violation;
+  sh:message "resultFailedRiskControlMeasure: The instance of FailedRiskControlMeasure has a resultFailedRiskControlMeasure value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes." .
+
+iss-sh:SystemicFactorSKOS a sh:PropertyShape;
+  era:affectedProperty iss:systemicFactor;
+  era:affectedClass iss:FailedRiskControlMeasure;
+  era:scope "local";
+  rdfs:comment "Systemic factors applicable to a given occurrence or to the failure of a risk control measure in accordance with the applicable list of factors defined in CDR (EU) 2024/xxxx, Annex I, Part C, Appendix 3."@en;
+  sh:path iss:systemicFactor;
+  sh:class skos:Concept;
+  sh:property iss-sh:SystemicFactorSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "systemicFactor: The instance of FailedRiskControlMeasure has a systemicFactor value that is not a SKOS concept." .
+
+iss-sh:SystemicFactorSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:systemicFactor;
+  era:affectedClass iss:FailedRiskControlMeasure;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/systemic-factors/SystemicFactors>;
+  sh:severity sh:violation;
+  sh:message "systemicFactor: The instance of FailedRiskControlMeasure has a systemicFactor value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/systemic-factors/SystemicFactors." .
+

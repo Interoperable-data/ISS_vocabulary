@@ -1,0 +1,93 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:SafetyPerformanceSelfEstimationPerAreaShape
+	a sh:NodeShape ;
+    sh:targetClass iss:SafetyPerformanceSelfEstimationPerArea.
+
+iss-sh:SafetyPerformanceSelfEstimationPerAreaShape sh:property iss-sh:SafetyResultPerArea.
+
+iss-sh:SafetyResultPerArea
+  sh:path iss:safetyResultPerArea ;
+  sh:message "safetyResultPerArea: Each safety performance self estimation per area may have a safety result per area that is a float. This error is due to having a value that is not a float." ;
+  rdfs:comment """Safety result per area."""@en ;
+  sh:datatype xsd:float ;
+  era:scope "local" ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimationPerArea ;
+  era:affectedProperty iss:safetyResultPerArea .
+
+iss-sh:SafetyPerformanceselfEstimationPerArea sh:property iss-sh:RiskControlMeasureRequired, iss-sh:SafetyPerformanceSelfEstimationPerElement .
+
+iss-sh:SafetyPerformanceSelfEstimationPerElement
+  sh:severity sh:violation ;
+  sh:path iss:safetyPerformanceSelfEstimationPerElement ;
+  a sh:PropertyShape ;
+  sh:message "safetyPerformanceSelfEstimationPerElement: The safety performance self-estimation per area has a safetyPerformanceSelfEstimationPerElement that must be a SafetyPerformanceSelfEstimationPerElement." ;
+  era:affectedClass iss:SafetyPerformanceselfEstimationPerArea ;
+  era:affectedProperty iss:safetyPerformanceSelfEstimationPerElement ;
+  sh:class iss:SafetyPerformanceSelfEstimationPerElement ;
+  era:scope "local" .
+
+iss-sh:RiskControlMeasureRequired
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  sh:class iss:RiskControlMeasure ;
+  sh:path iss:riskControlMeasureRequired ;
+  era:affectedClass iss:SafetyPerformanceselfEstimationPerArea ;
+  sh:message "riskControlMeasureRequired: The safety performance self-estimation per area has a riskControlMeasureRequired that must be a RiskControlMeasure." ;
+  era:affectedProperty iss:riskControlMeasureRequired ;
+  era:scope "local" .
+
+# SKOS
+iss-sh:SafetyMaturityLevelSKOSinScheme
+  era:affectedClass iss:SafetyPerformanceSelfEstimationPerArea ;
+  era:affectedProperty iss:safetyMaturityLevel ;
+  sh:message "safetyMaturityLevel: The instance of SafetyPerformanceSelfEstimationPerArea has a safetyMaturityLevel value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/maturity-levels/MaturityLevels." ;
+  sh:severity sh:violation ;
+  era:scope "local" ;
+  sh:path skos:inScheme ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/maturity-levels/MaturityLevels> ;
+  a sh:PropertyShape .
+
+iss-sh:SafetyPerformanceSelfEstimationPerAreaShape sh:property iss-sh:SafetyPerformanceAreaSKOS, iss-sh:SafetyMaturityLevelSKOS .
+iss-sh:SafetyMaturityLevelSKOS
+  sh:class skos:Concept ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:safetyMaturityLevel ;
+  sh:path iss:safetyMaturityLevel ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimationPerArea ;
+  sh:property iss-sh:SafetyMaturityLevelSKOSinScheme ;
+  era:scope "local" ;
+  sh:message "safetyMaturityLevel: The instance of SafetyPerformanceSelfEstimationPerArea has a safetyMaturityLevel value that is not a SKOS concept." .
+
+iss-sh:SafetyPerformanceAreaSKOS
+  sh:message "safetyPerformanceArea: The instance of SafetyPerformanceSelfEstimationPerArea has a safetyPerformanceArea value that is not a SKOS concept." ;
+  era:affectedProperty iss:safetyPerformanceArea ;
+  a sh:PropertyShape ;
+  sh:path iss:safetyPerformanceArea ;
+  era:scope "local" ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimationPerArea ;
+  sh:severity sh:violation ;
+  sh:property iss-sh:SafetyPerformanceAreaSKOSinScheme ;
+  sh:class skos:Concept .
+
+iss-sh:SafetyPerformanceAreaSKOSinScheme
+  sh:message "safetyPerformanceArea: The instance of SafetyPerformanceSelfEstimationPerArea has a safetyPerformanceArea value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-performance-areas/SafetyPerformanceAreas." ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:safetyPerformanceArea ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-performance-areas/SafetyPerformanceAreas> ;
+  era:scope "local" ;
+  sh:path skos:inScheme ;
+  a sh:PropertyShape ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimationPerArea .

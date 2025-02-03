@@ -1,0 +1,236 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:VolumeOfOperationShape
+	a sh:NodeShape ;
+    sh:targetClass iss:VolumeOfOperation.
+
+iss-sh:VolumeOfOperationShape sh:property iss-sh:NumberPassengerTrainKilometersHighSpeedService, iss-sh:NumberPassengerTrainKilometers, iss-sh:NumberDGRailwayVehiclesProcessedTerminals, iss-sh:NumberRailwayVehiclesProcessedFreightTerminals, iss-sh:NumberOperatedTerminals, iss-sh:NumberOperatedTrackKilometers, iss-sh:NumberOperatingHoursTerminals, iss-sh:NumberPassengerKilometers, iss-sh:ReportingPeriodStartDateVO, iss-sh:NumberRailwayVehiclesProcessedTerminals, iss-sh:NumberTotalTrainKilometers, iss-sh:NumberTrackKilometersOperatedTerminals, iss-sh:ReportingPeriodEndDateVO, iss-sh:NumberDGRailwayVehiclesProcessedFreightTerminals, iss-sh:NumberFreightTonKilometers, iss-sh:NumberFreightTrainKilometers, iss-sh:NumberLineKilometers, iss-sh:NumberDGFreightTonKilometers, iss-sh:NumberDGFreightTrainKilometers .
+
+iss-sh:NumberRailwayVehiclesProcessedFreightTerminals
+  era:affectedClass iss:VolumeOfOperation ;
+  sh:message "numberRailwayVehiclesProcessedFreightTerminals: Each volume of operation may have numberRailwayVehiclesProcessedFreightTerminals that is an integer. This error is due to having a value that is not an integer." ;
+  sh:datatype xsd:integer ;
+  sh:path iss:numberRailwayVehiclesProcessedFreightTerminals ;
+  era:affectedProperty iss:numberRailwayVehiclesProcessedFreightTerminals ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  era:scope "local" .
+
+iss-sh:NumberPassengerTrainKilometers
+  era:scope "local" ;
+  sh:path iss:numberPassengerTrainKilometers ;
+  sh:message "numberPassengerTrainKilometers: Each volume of operation may have numberPassengerTrainKilometers that is a float. This error is due to having a value that is not a float." ;
+  era:affectedProperty iss:numberPassengerTrainKilometers ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  sh:datatype xsd:float ;
+  era:affectedClass iss:VolumeOfOperation .
+
+iss-sh:NumberDGRailwayVehiclesProcessedTerminals
+  era:affectedClass iss:VolumeOfOperation ;
+  sh:message "numberDGRailwayVehiclesProcessedTerminals: Each volume of operation may have numberDGRailwayVehiclesProcessedTerminals that is an integer. This error is due to having a value that is not an integer." ;
+  sh:datatype xsd:integer ;
+  sh:path iss:numberDGRailwayVehiclesProcessedTerminals ;
+  era:affectedProperty iss:numberDGRailwayVehiclesProcessedTerminals ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  era:scope "local" .
+
+iss-sh:NumberOperatingHoursTerminals
+  era:scope "local" ;
+  sh:datatype xsd:integer ;
+  era:affectedClass iss:VolumeOfOperation ;
+  sh:path iss:numberOperatingHoursTerminals ;
+  era:affectedProperty iss:numberOperatingHoursTerminals ;
+  sh:message "numberOperatingHoursTerminals: Each volume of operation may have numberOperatingHoursTerminals that is an integer. This error is due to having a value that is not an integer." ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation .
+
+iss-sh:NumberOperatedTrackKilometers
+  sh:datatype xsd:integer ;
+  era:affectedClass iss:VolumeOfOperation ;
+  era:scope "local" ;
+  sh:path iss:numberOperatedTrackKilometers ;
+  sh:message "numberOperatedTrackKilometers: Each volume of operation may have numberOperatedTrackKilometers that is an integer. This error is due to having a value that is not an integer." ;
+  era:affectedProperty iss:numberOperatedTrackKilometers ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation .
+
+iss-sh:NumberPassengerKilometers
+  era:scope "local" ;
+  era:affectedClass iss:VolumeOfOperation ;
+  sh:message "numberPassengerKilometers: Each volume of operation may have numberPassengerKilometers that is a float. This error is due to having a value that is not a float." ;
+  sh:path iss:numberPassengerKilometers ;
+  era:affectedProperty iss:numberPassengerKilometers ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  sh:datatype xsd:float .
+
+iss-sh:NumberOperatedTerminals
+  sh:datatype xsd:integer ;
+  era:scope "local" ;
+  era:affectedClass iss:VolumeOfOperation ;
+  sh:path iss:numberOperatedTerminals ;
+  era:affectedProperty iss:numberOperatedTerminals ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  sh:message "numberOperatedTerminals: Each volume of operation may have numberOperatedTerminals that is an integer. This error is due to having a value that is not an integer." .
+
+iss-sh:ReportingPeriodStartDateVO
+  sh:datatype xsd:date ;
+  sh:path iss:reportingPeriodStartDate ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:reportingPeriodStartDate ;
+  sh:message "reportingPeriodStartDate: Each volume of operation may have reportingPeriodStartDate that is a date. This error is due to having a value that is not a date." ;
+  era:scope "local" ;
+  era:affectedClass iss:VolumeOfOperation ;
+  a sh:PropertyShape .
+
+iss-sh:NumberLineKilometers
+  sh:message "numberLineKilometers: Each volume of operation may have numberLineKilometers that is a float. This error is due to having a value that is not a float." ;
+  era:scope "local" ;
+  era:affectedClass iss:VolumeOfOperation ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:numberLineKilometers ;
+  sh:path iss:numberLineKilometers ;
+  a sh:PropertyShape ;
+  sh:datatype xsd:float .
+
+iss-sh:NumberFreightTrainKilometers
+  era:scope "local" ;
+  era:affectedClass iss:VolumeOfOperation ;
+  sh:message "numberFreightTrainKilometers: Each volume of operation may have numberFreightTrainKilometers that is a float. This error is due to having a value that is not a float." ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:numberFreightTrainKilometers ;
+  sh:path iss:numberFreightTrainKilometers ;
+  a sh:PropertyShape ;
+  sh:datatype xsd:float .
+
+iss-sh:NumberFreightTonKilometers
+  era:affectedClass iss:VolumeOfOperation ;
+  era:scope "local" ;
+  sh:message "numberFreightTonKilometers: Each volume of operation may have numberFreightTonKilometers that is a float. This error is due to having a value that is not a float." ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:numberFreightTonKilometers ;
+  a sh:PropertyShape ;
+  sh:path iss:numberFreightTonKilometers ;
+  sh:datatype xsd:float .
+
+iss-sh:NumberTotalTrainKilometers
+  sh:message "numberTotalTrainKilometers: Each volume of operation may have numberTotalTrainKilometers that is a float. This error is due to having a value that is not a float." ;
+  sh:datatype xsd:float ;
+  sh:path iss:numberTotalTrainKilometers ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:numberTotalTrainKilometers ;
+  a sh:PropertyShape ;
+  era:affectedClass iss:VolumeOfOperation ;
+  era:scope "local" .
+
+iss-sh:NumberTrackKilometersOperatedTerminals
+  sh:datatype xsd:float;
+  sh:path iss:numberTrackKilometersOperatedTerminals ;
+  sh:message "numberTrackKilometersOperatedTerminals: Each volume of operation may have numberTrackKilometersOperatedTerminals that is a float. This error is due to having a value that is not a float." ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:numberTrackKilometersOperatedTerminals ;
+  a sh:PropertyShape ;
+  era:scope "local" ;
+  era:affectedClass iss:VolumeOfOperation .
+
+iss-sh:NumberDGRailwayVehiclesProcessedFreightTerminals
+  era:affectedClass iss:VolumeOfOperation ;
+  era:scope "local" ;
+  sh:message "numberDGRailwayVehiclesProcessedFreightTerminals: Each volume of operation may have numberDGRailwayVehiclesProcessedFreightTerminals that is an integer. This error is due to having a value that is not an integer." ;
+  sh:severity sh:violation ;
+  sh:path iss:numberDGRailwayVehiclesProcessedFreightTerminals ;
+  era:affectedProperty iss:numberDGRailwayVehiclesProcessedFreightTerminals ;
+  a sh:PropertyShape ;
+  sh:datatype xsd:integer .
+
+iss-sh:NumberRailwayVehiclesProcessedTerminals
+  sh:message "numberRailwayVehiclesProcessedTerminals: Each volume of operation may have numberRailwayVehiclesProcessedTerminals that is an integer. This error is due to having a value that is not an integer." ;
+  sh:path iss:numberRailwayVehiclesProcessedTerminals ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:numberRailwayVehiclesProcessedTerminals ;
+  a sh:PropertyShape ;
+  sh:datatype xsd:integer ;
+  era:affectedClass iss:VolumeOfOperation ;
+  era:scope "local" .
+
+iss-sh:ReportingPeriodEndDateVO
+  sh:datatype xsd:date ;
+  sh:message "reportingPeriodEndDate: Each volume of operation may have reportingPeriodEndDate that is a date. This error is due to having a value that is not a date." ;
+  sh:path iss:reportingPeriodEndDate ;
+  era:affectedProperty iss:reportingPeriodEndDate ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  era:scope "local" ;
+  era:affectedClass iss:VolumeOfOperation .
+
+iss-sh:NumberDGFreightTonKilometers
+  era:scope "local" ;
+  era:affectedClass iss:VolumeOfOperation ;
+  sh:message "numberDGFreightTonKilometers: Each volume of operation may have numberDGFreightTonKilometers that is a float. This error is due to having a value that is not a float." ;
+  sh:severity sh:violation ;
+  sh:path iss:numberDGFreightTonKilometers ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:numberDGFreightTonKilometers ;
+  sh:datatype xsd:float .
+
+iss-sh:NumberDGFreightTrainKilometers
+  era:scope "local" ;
+  era:affectedClass iss:VolumeOfOperation ;
+  sh:severity sh:violation ;
+  sh:path iss:numberDGFreightTrainKilometers ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:numberDGFreightTrainKilometers ;
+  sh:datatype xsd:float ;
+  sh:message "numberDGFreightTrainKilometers: Each volume of operation may have numberDGFreightTrainKilometers that is a float. This error is due to having a value that is not a float." .
+
+iss-sh:NumberPassengerTrainKilometersHighSpeedService
+  sh:path iss:numberPassengerTrainKilometersHighSpeedService ;
+  era:affectedProperty iss:numberPassengerTrainKilometersHighSpeedService ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  sh:message "numberPassengerTrainKilometersHighSpeedService: Each volume of operation may have numberPassengerTrainKilometersHighSpeedService that is a float. This error is due to having a value that is not a float." ;
+  sh:datatype xsd:float ;
+  era:affectedClass iss:VolumeOfOperation ;
+  era:scope "local" .
+
+# SKOS
+
+iss-sh:CountryOfOperationSKOSinScheme
+  era:affectedProperty iss:countryOfOperation ;
+  sh:path skos:inScheme ;
+  sh:severity sh:violation ;
+  sh:hasValue <http://publications.europa.eu/resource/authority/country> ;
+  era:affectedClass iss:VolumeOfOperation ;
+  era:scope "local" ;
+  a sh:PropertyShape ;
+  sh:message "countryOfOperation: The instance of VolumeOfOperation has a countryOfOperation value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://publications.europa.eu/resource/authority/country." .
+
+iss-sh:CountryOfOperationSKOS
+  era:affectedClass iss:VolumeOfOperation ;
+  sh:path iss:countryOfOperation ;
+  sh:class skos:Concept ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  sh:message "countryOfOperation: The instance of VolumeOfOperation has a countryOfOperation value that is not a SKOS concept." ;
+  sh:property iss-sh:CountryOfOperationSKOSinScheme ;
+  rdfs:comment """Country(ies) in which the railway operator operates.
+
+For Railway Undertakings, it corresponds to the list of countries applicable in accordance with the applicable (in force) safety certificate(s).
+
+For Infrastructure managers it coresponds to the list of countries applicable in accordance with the applicable (in force) safety authorisation(s)."""@en ;
+  era:scope "local" ;
+  era:affectedProperty iss:countryOfOperation .
+
+iss-sh:VolumeOfOperationShape sh:property iss-sh:CountryOfOperationSKOS .

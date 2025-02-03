@@ -37,8 +37,8 @@ iss-rsvdt:RollingStockVehicleDamageTypes a skos:ConceptScheme ;
 #################################################################
 
 iss-rsvdt:Overturned  rdf:type  skos:Concept ;         skos:inScheme iss-rsvdt:RollingStockVehicleDamageTypes;    skos:topConceptOf iss-rsvdt:RollingStockVehicleDamageTypes;
-        skos:prefLabel  "Overturned" .
+        skos:prefLabel  "Overturned"@en .
 
 iss-rsvdt:Damaged  rdf:type  skos:Concept ;         skos:inScheme iss-rsvdt:RollingStockVehicleDamageTypes;    skos:topConceptOf iss-rsvdt:RollingStockVehicleDamageTypes;
-        skos:prefLabel  "Damaged" .
+        skos:prefLabel  "Damaged"@en .
 

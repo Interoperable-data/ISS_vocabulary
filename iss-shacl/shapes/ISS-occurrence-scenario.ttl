@@ -1,0 +1,41 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/>  .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/>.
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:OccurrenceScenarioShape 
+    a sh:NodeShape ;
+    sh:targetClass iss:OccurrenceScenario.
+
+iss-sh:OccurrenceScenarioShape sh:property iss-sh:OccurrenceScenarioNarrative.
+iss-sh:OccurrenceScenarioNarrative a sh:PropertyShape;
+  era:affectedProperty iss:occurrenceScenarioNarrative;
+  era:affectedClass iss:OccurrenceScenario;
+  era:scope "local";
+  rdfs:comment "Occurrence scenario narrative"@en ;
+  sh:path iss:occurrenceScenarioNarrative;
+  sh:datatype xsd:string;
+  sh:severity sh:violation;
+  sh:message "occurrenceScenarioNarrative: Each occurrence scenario may have occurrenceScenarioNarrative that is a string. This error is due to having a value that is not a string." .
+
+iss-sh:OccurrenceScenarioShape sh:property iss-sh:HasOccurrenceScenarioBlock .
+
+
+iss-sh:HasOccurrenceScenarioBlock
+  era:affectedClass iss:OccurrenceScenario ;
+  era:scope "local" ;
+  sh:class iss:OccurrenceScenarioBuildingBlock ;
+  era:affectedProperty iss:hasOccurrenceScenarioBlock ;
+  sh:path iss:hasOccurrenceScenarioBlock ;
+  rdfs:comment "Relates the occurrence scenario with its building blocks."@en ;
+  a sh:PropertyShape ;
+  sh:message "hasOccurrenceScenarioBlock: The occurrence scenario has a hasOccurrenceScenarioBlock that must be a OccurrenceScenarioBuildingBlock." ;
+  sh:severity sh:violation .
+
+

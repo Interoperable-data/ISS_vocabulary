@@ -1,0 +1,71 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:RollingStockDamagePerVehicleTypeShape 
+    a sh:NodeShape ;
+    sh:targetClass iss:RollingStockDamagePerVehicleType.
+
+iss-sh:RollingStockDamagePerVehicleTypeShape sh:property iss-sh:NumberOfVehicles.
+iss-sh:NumberOfVehicles a sh:PropertyShape;
+  era:affectedProperty iss:numberOfVehicles;
+  era:affectedClass iss:RollingStockDamagePerVehicleType;
+  era:scope "local";
+  rdfs:comment "Number of vehicles"@en ;
+  sh:path iss:numberOfVehicles;
+  sh:datatype xsd:integer;
+  sh:severity sh:violation;
+  sh:message "numberOfVehicles: Each rolling stock damage per vehicle type may have numberOfVehicles that is an integer. This error is due to having a value that is not an integer." .
+
+# SKOS
+iss-sh:RollingStockVehicleTypeSKOS
+  era:affectedProperty iss:rollingStockVehicleType ;
+  sh:class skos:Concept ;
+  era:affectedClass iss:RollingStockDamagePerVehicleType ;
+  sh:path iss:rollingStockVehicleType ;
+  sh:message "rollingStockVehicleType: The instance of RollingStockDamagePerVehicleType has a rollingStockVehicleType value that is not a SKOS concept." ;
+  sh:severity sh:violation ;
+  era:scope "local" ;
+  sh:property iss-sh:RollingStockVehicleTypeSKOSinScheme ;
+  a sh:PropertyShape .
+
+iss-sh:RollingStockVehicleTypeSKOSinScheme
+  a sh:PropertyShape ;
+  era:scope "local" ;
+  sh:message "rollingStockVehicleType: The instance of RollingStockDamagePerVehicleType has a rollingStockVehicleType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-types/RollingStockVehicleTypes." ;
+  era:affectedClass iss:RollingStockDamagePerVehicleType ;
+  sh:severity sh:violation ;
+  sh:path skos:inScheme ;
+  era:affectedProperty iss:rollingStockVehicleType ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-types/RollingStockVehicleTypes> .
+
+iss-sh:RollingStockVehicleDamageTypeSKOSinScheme
+  era:scope "local" ;
+  era:affectedClass iss:RollingStockDamagePerVehicleType ;
+  sh:path skos:inScheme ;
+  sh:severity sh:violation ;
+  sh:message "rollingStockVehicleDamageType: The instance of RollingStockDamagePerVehicleType has a rollingStockVehicleDamageType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-damage-types/RollingStockVehicleDamageTypes." ;
+  era:affectedProperty iss:rollingStockVehicleDamageType ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-damage-types/RollingStockVehicleDamageTypes> ;
+  a sh:PropertyShape .
+
+iss-sh:RollingStockVehicleDamageTypeSKOS
+  sh:severity sh:violation ;
+  era:scope "local" ;
+  sh:path iss:rollingStockVehicleDamageType ;
+  sh:class skos:Concept ;
+  era:affectedProperty iss:rollingStockVehicleDamageType ;
+  sh:message "rollingStockVehicleDamageType: The instance of RollingStockDamagePerVehicleType has a rollingStockVehicleDamageType value that is not a SKOS concept." ;
+  era:affectedClass iss:RollingStockDamagePerVehicleType ;
+  sh:property iss-sh:RollingStockVehicleDamageTypeSKOSinScheme ;
+  a sh:PropertyShape .
+
+iss-sh:RollingStockDamagePerVehicleTypeShape sh:property iss-sh:RollingStockVehicleDamageTypeSKOS, iss-sh:RollingStockVehicleTypeSKOS .
+

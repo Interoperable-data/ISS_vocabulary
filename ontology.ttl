@@ -16,10 +16,15 @@
 <http://data.europa.eu/949/iss> rdf:type owl:Ontology ;
                                  cc:license "https://creativecommons.org/licenses/by/4.0/" ;
                                  dct:contributor "Emmanuel Ruffin" ,
+                                                 "Jean-François Demoutiez" ,
                                                  "Marina Aguado" ;
                                  dct:created "2023-09-20" ;
                                  dct:creator "Edna Ruckhaus" ,
                                              "Oscar Corcho" ;
+                                 dct:modified "2024-09-10"^^xsd:date ,
+                                              "2025-01-13"^^xsd:date ,
+                                              "2025-01-22"^^xsd:date ,
+                                              "2025-01-27"^^xsd:date ;
                                  dct:publisher "European Railway Agency (ERA)" ;
                                  dct:title "ISS vocabulary"@en ;
                                  rdfs:comment "This is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways (https://www.era.europa.eu/). It represents the concepts and relationships linked to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation (hereinafter the ‘CSM’ or ‘CSM ASLP)."@en ;
@@ -85,6 +90,10 @@ dct:created rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/creator
 dct:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/isReplacedBy
+dct:isReplacedBy rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/modified
@@ -161,6 +170,58 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  http://data.europa.eu/949/hasOrganisationRole
+era:hasOrganisationRole rdf:type owl:ObjectProperty ,
+                                 owl:FunctionalProperty ;
+                        rdfs:domain era:OrganisationRole ;
+                        rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                        era:inSkosConceptScheme <http://data.europa.eu/949/concepts/organisation-roles/OrgRoles> ;
+                        dct:created "2024-06-03"^^xsd:date ;
+                        rdfs:comment "Relates the Organisation role instance (the role played by an Organisation) with the specific role in the taxonomy of organisation roles."@en ;
+                        rdfs:isDefinedBy era: ;
+                        rdfs:label "has organisation role"@en .
+
+
+###  http://data.europa.eu/949/notApplicable
+era:notApplicable rdf:type owl:ObjectProperty ;
+                  dct:created "2021-09-13"^^xsd:date ;
+                  dct:modified "2021-09-13"^^xsd:date ;
+                  rdfs:comment "Reference to a property that is not applicable."@en ;
+                  rdfs:isDefinedBy era: ;
+                  rdfs:label "Not applicable"@en ;
+                  vs:term_status "unstable" .
+
+
+###  http://data.europa.eu/949/notYetAvailable
+era:notYetAvailable rdf:type owl:ObjectProperty ;
+                    dct:created "2021-09-13"^^xsd:date ;
+                    dct:modified "2023-10-11"^^xsd:date ;
+                    rdfs:comment "Reference to a property that is not provided."@en ;
+                    rdfs:isDefinedBy era: ;
+                    rdfs:label "Not provided"@en ;
+                    vs:term_status "unstable" .
+
+
+###  http://data.europa.eu/949/role
+era:role rdf:type owl:ObjectProperty ;
+         owl:inverseOf era:roleOf ;
+         rdfs:domain era:Body ;
+         rdfs:range era:OrganisationRole ;
+         dct:created "2024-06-03"^^xsd:date ;
+         rdfs:comment "Indicates the relationship of a Body to the organisation roles that it can play."@en ;
+         rdfs:isDefinedBy era: ;
+         rdfs:label "role"@en .
+
+
+###  http://data.europa.eu/949/roleOf
+era:roleOf rdf:type owl:ObjectProperty ;
+           rdfs:domain era:OrganisationRole ;
+           rdfs:range era:Body ;
+           dct:created "2024-09-10"^^xsd:date ;
+           rdfs:comment "Indicates the corresponding Body that plays a certain organisation role."@en ;
+           rdfs:label "role of"@en .
+
+
 ###  http://data.europa.eu/949/iss/ambientCondition
 :ambientCondition rdf:type owl:ObjectProperty ;
                   rdfs:domain :DetailedReportSafetyRelatedEvent ;
@@ -194,6 +255,16 @@ xsd:date rdf:type rdfs:Datatype .
                         rdfs:label "involvement of authorities"@en .
 
 
+###  http://data.europa.eu/949/iss/causalEventType
+:causalEventType rdf:type owl:ObjectProperty ;
+                 rdfs:domain :FailedRiskControlMeasure ;
+                 rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                 era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> ;
+                 dct:created "2024-07-08"^^xsd:date ;
+                 rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                 rdfs:label "causal event type"@en .
+
+
 ###  http://data.europa.eu/949/iss/causeOfReportedEventType
 :causeOfReportedEventType rdf:type owl:ObjectProperty ;
                           rdfs:domain :SimpleReportSafetyRelatedEvent ;
@@ -205,11 +276,20 @@ xsd:date rdf:type rdfs:Datatype .
                           rdfs:label "cause of the event type reported"@en .
 
 
+###  http://data.europa.eu/949/iss/concernedBy
+:concernedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Recommendation ;
+             rdfs:range :SafetyRelatedEvent ;
+             dct:created "2024-07-08"^^xsd:date ;
+             rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+             rdfs:label "concerned by"@en .
+
+
 ###  http://data.europa.eu/949/iss/contributingFactor
 :contributingFactor rdf:type owl:ObjectProperty ;
                     rdfs:domain [ rdf:type owl:Class ;
-                                  owl:unionOf ( :FailureOfRiskControlMeasure
-                                                :OccurrenceScenarioBuildingBlock
+                                  owl:unionOf ( :ContributingSystemicFactor
+                                                :FailedRiskControlMeasure
                                               )
                                 ] ;
                     rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -224,7 +304,7 @@ In the context of CDR (EU) 2024/xxxx, applicable list of contributing factors is
 
 ###  http://data.europa.eu/949/iss/correspondsToRiskControlMeasure
 :correspondsToRiskControlMeasure rdf:type owl:ObjectProperty ;
-                                 rdfs:domain :FailureOfRiskControlMeasure ;
+                                 rdfs:domain :FailedRiskControlMeasure ;
                                  rdfs:range :RiskControlMeasure ;
                                  dct:created "2023-09-30"^^xsd:date ;
                                  rdfs:comment "Relates the failed risk control measure information with the corresponding risk control measure."@en ;
@@ -296,7 +376,7 @@ For Infrastructure managers it coresponds to the list of countries applicable in
 :documentLanguage rdf:type owl:ObjectProperty ;
                   rdfs:domain :Document ;
                   rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                  era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/document-languages/DocumentLanguages> ;
+                  era:inSkosConceptScheme <https://publications.europa.eu/resource/authority/language> ;
                   dct:created "2023-09-30"^^xsd:date ;
                   rdfs:comment "Language(s) in which the document is available."@en ;
                   rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -346,10 +426,10 @@ Not ot confuse with the ICT format of the digital document."""@en ;
                          rdfs:label "evidence reference record"@en .
 
 
-###  http://data.europa.eu/949/iss/failedinBlock
-:failedinBlock rdf:type owl:ObjectProperty ;
+###  http://data.europa.eu/949/iss/failedInBlock
+:failedInBlock rdf:type owl:ObjectProperty ;
                owl:inverseOf :hasFailedRiskControlMeasure ;
-               rdfs:domain :FailureOfRiskControlMeasure ;
+               rdfs:domain :FailedRiskControlMeasure ;
                rdfs:range :OccurrenceScenarioBuildingBlock ;
                dct:created "2023-09-30"^^xsd:date ;
                rdfs:comment "Relates the failed safety measure information with the corresponding occurrence scenario building block."@en ;
@@ -359,7 +439,11 @@ Not ot confuse with the ICT format of the digital document."""@en ;
 
 ###  http://data.europa.eu/949/iss/frequencySafetyLevelPriorAssessedPeriod
 :frequencySafetyLevelPriorAssessedPeriod rdf:type owl:ObjectProperty ;
-                                         rdfs:domain :SafetyLevelPerTypeOfOperation ;
+                                         rdfs:domain [ rdf:type owl:Class ;
+                                                       owl:unionOf ( :SafetyLevelPerEventType
+                                                                     :SafetyLevelPerTypeOfOperation
+                                                                   )
+                                                     ] ;
                                          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
                                          era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
                                          dct:created "2023-09-30"^^xsd:date ;
@@ -372,7 +456,11 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
 
 ###  http://data.europa.eu/949/iss/frequencySafetyLevelSameAsAssessedPeriod
 :frequencySafetyLevelSameAsAssessedPeriod rdf:type owl:ObjectProperty ;
-                                          rdfs:domain :SafetyLevelPerTypeOfOperation ;
+                                          rdfs:domain [ rdf:type owl:Class ;
+                                                        owl:unionOf ( :SafetyLevelPerEventType
+                                                                      :SafetyLevelPerTypeOfOperation
+                                                                    )
+                                                      ] ;
                                           rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
                                           era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
                                           dct:created "2023-09-30"^^xsd:date ;
@@ -383,24 +471,35 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
                                           rdfs:label "frequency safety level same as assessed period"@en .
 
 
+###  http://data.europa.eu/949/iss/hasContributingSystemicFactor
+:hasContributingSystemicFactor rdf:type owl:ObjectProperty ;
+                               rdfs:domain :OccurrenceScenarioBuildingBlock ;
+                               rdfs:range :ContributingSystemicFactor ;
+                               dct:created "2024-07-08"^^xsd:date ;
+                               rdfs:comment "Relates the occurrence scenario building block with its contributing and systemic factors"@en ;
+                               rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                               rdfs:label "has contributing or systemic factor"@en .
+
+
 ###  http://data.europa.eu/949/iss/hasFailedRiskControlMeasure
 :hasFailedRiskControlMeasure rdf:type owl:ObjectProperty ;
                              rdfs:domain :OccurrenceScenarioBuildingBlock ;
-                             rdfs:range :FailureOfRiskControlMeasure ;
+                             rdfs:range :FailedRiskControlMeasure ;
                              dct:created "2023-09-30"^^xsd:date ;
                              rdfs:comment "Relates the occurrence scenario bulding block with the information on the failed risk control measure."@en ;
                              rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                              rdfs:label "has failed risk control measure"@en .
 
 
-###  http://data.europa.eu/949/iss/hasInfoInRecordVersion
-:hasInfoInRecordVersion rdf:type owl:ObjectProperty ;
-                        rdfs:domain :RecordVersion ;
-                        rdfs:range :InfoInRecordVersion ;
-                        dct:created "2023-09-30"^^xsd:date ;
-                        rdfs:comment "Relates a record version with the information it contains."@en ;
-                        rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                        rdfs:label "has information in record version"@en .
+###  http://data.europa.eu/949/iss/hasInfoInRecord
+:hasInfoInRecord rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Record ;
+                 rdfs:range :InfoRecord ;
+                 dct:created "2023-09-30"^^xsd:date ;
+                 dct:modified "2024-09-10"^^xsd:date ;
+                 rdfs:comment "Relates a record with the information it contains."@en ;
+                 rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                 rdfs:label "has information in record"@en .
 
 
 ###  http://data.europa.eu/949/iss/hasOccurrenceScenario
@@ -423,13 +522,41 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
                             rdfs:label "has occurrence scenario building block"@en .
 
 
+###  http://data.europa.eu/949/iss/hasRecommendationItem
+:hasRecommendationItem rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Recommendation ;
+                       rdfs:range :RecommendationItem ;
+                       dct:created "2024-07-08"^^xsd:date ;
+                       rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                       rdfs:label "has recommendation item"@en .
+
+
+###  http://data.europa.eu/949/iss/hasRecommendationLanguage
+:hasRecommendationLanguage rdf:type owl:ObjectProperty ;
+                           rdfs:domain :RecommendationItem ;
+                           rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                           era:inSkosConceptScheme <https://publications.europa.eu/resource/authority/language> ;
+                           dct:created "2024-07-08"^^xsd:date ;
+                           rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                           rdfs:label "has recommendation language"@en .
+
+
+###  http://data.europa.eu/949/iss/hasRecommendationType
+:hasRecommendationType rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Recommendation ;
+                       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                       era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/recommendation-types/RecommendationTypes> ;
+                       dct:created "2024-07-08"^^xsd:date ;
+                       rdfs:label "has recommendation type"@en .
+
+
 ###  http://data.europa.eu/949/iss/hasRecordAttachment
 :hasRecordAttachment rdf:type owl:ObjectProperty ;
-                     rdfs:domain :RecordVersion ;
+                     rdfs:domain :Record ;
                      rdfs:range :RecordAttachment ;
                      dct:created "2023-09-30"^^xsd:date ;
-                     rdfs:comment """Relates the record version that is being reported with files (e.g. documents, images, videoa) that are attachments to the record.
-."""@en ;
+                     dct:modified "2024-09-10"^^xsd:date ;
+                     rdfs:comment "Relates the record that is being reported with files (e.g. documents, images, videos) that are attachments to the record."@en ;
                      rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                      rdfs:label "has record attachment"@en .
 
@@ -439,9 +566,11 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
                   rdfs:domain :Record ;
                   rdfs:range :RecordVersion ;
                   dct:created "2023-09-30"^^xsd:date ;
+                  dct:modified "2024-09-10"^^xsd:date ;
                   rdfs:comment "Relates a record with its versions."@en ;
                   rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                  rdfs:label "has record version"@en .
+                  rdfs:label "has record version"@en ;
+                  owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://data.europa.eu/949/iss/hasRiskControlMeasureFunction
@@ -456,7 +585,7 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
 
 ###  http://data.europa.eu/949/iss/hasSafetyAuthorisation
 :hasSafetyAuthorisation rdf:type owl:ObjectProperty ;
-                        rdfs:domain :Entity ;
+                        rdfs:domain era:Body ;
                         rdfs:range :SafetyAuthorisation ;
                         dct:created "2023-09-30"^^xsd:date ;
                         rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -465,7 +594,7 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
 
 ###  http://data.europa.eu/949/iss/hasSafetyCertificate
 :hasSafetyCertificate rdf:type owl:ObjectProperty ;
-                      rdfs:domain :Entity ;
+                      rdfs:domain era:Body ;
                       rdfs:range :SafetyCertificate ;
                       dct:created "2023-09-30"^^xsd:date ;
                       rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -541,10 +670,29 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
             rdfs:label "injury type"@en .
 
 
+###  http://data.europa.eu/949/iss/inputAndGateBuildingBlock
+:inputAndGateBuildingBlock rdf:type owl:ObjectProperty ;
+                           rdfs:domain :InputAndGate ;
+                           rdfs:range :OccurrenceScenarioBuildingBlock ;
+                           dct:created "2025-01-14"^^xsd:date ;
+                           rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                           rdfs:label "input And gate building block"@en .
+
+
+###  http://data.europa.eu/949/iss/inputAndGateEvent
+:inputAndGateEvent rdf:type owl:ObjectProperty ;
+                   rdfs:domain :InputAndGate ;
+                   rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                   era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> ;
+                   dct:created "2025-01-14"^^xsd:date ;
+                   rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                   rdfs:label "input And gate event"@en .
+
+
 ###  http://data.europa.eu/949/iss/inputAndgate
 :inputAndgate rdf:type owl:ObjectProperty ;
               rdfs:domain :OccurrenceScenarioBuildingBlock ;
-              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+              rdfs:range :InputAndGate ;
               era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> ;
               dct:created "2023-09-30"^^xsd:date ;
               rdfs:comment "Input to the AND gate of a building block."@en ;
@@ -555,18 +703,37 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
 ###  http://data.europa.eu/949/iss/inputOrGate
 :inputOrGate rdf:type owl:ObjectProperty ;
              rdfs:domain :OccurrenceScenarioBuildingBlock ;
-             rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+             rdfs:range :InputOrGate ;
              dct:created "2023-09-30"^^xsd:date ;
              rdfs:comment "Input to the OR gate of a building block."@en ;
              rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
              rdfs:label "input OR gate"@en .
 
 
+###  http://data.europa.eu/949/iss/inputOrGateBuildingBlock
+:inputOrGateBuildingBlock rdf:type owl:ObjectProperty ;
+                          rdfs:domain :InputOrGate ;
+                          rdfs:range :OccurrenceScenarioBuildingBlock ;
+                          dct:created "2025-01-14"^^xsd:date ;
+                          rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                          rdfs:label "input Or gate building block"@en .
+
+
+###  http://data.europa.eu/949/iss/inputOrGateEvent
+:inputOrGateEvent rdf:type owl:ObjectProperty ;
+                  rdfs:domain :InputOrGate ;
+                  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                  era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> ;
+                  dct:created "2025-01-14"^^xsd:date ;
+                  rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                  rdfs:label "input Or gate event"@en .
+
+
 ###  http://data.europa.eu/949/iss/introducesThreatOfEventOccurrence
 :introducesThreatOfEventOccurrence rdf:type owl:ObjectProperty ;
                                    rdfs:domain :RiskControlMeasure ;
                                    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                   era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/event-types/EventTypes> ;
+                                   era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> ;
                                    dct:created "2023-09-30"^^xsd:date ;
                                    rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                                    rdfs:label "introduces threat of event occurrence"@en .
@@ -605,7 +772,7 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
 :levelCrossingType rdf:type owl:ObjectProperty ;
                    rdfs:domain :DetailedReportSafetyRelatedEvent ;
                    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                   era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/level/crossing-types/LevelCrossingTypes> ;
+                   era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/level-crossing-types/LevelCrossingTypes> ;
                    dct:created "2023-09-30"^^xsd:date ;
                    rdfs:comment "Type of level crossing in accordance with the applicable list of types."@en ;
                    rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -630,6 +797,7 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
                                                 :SimpleReportSafetyRelatedEvent
                                               )
                                 ] ;
+                    rdfs:range era:LineReference ;
                     dct:created "2023-09-30"^^xsd:date ;
                     rdfs:comment "Relates the safety related event with the railway location (kilometer) relative to a railway line."@en ;
                     rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -654,6 +822,7 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
                                           :SimpleReportSafetyRelatedEvent
                                         )
                           ] ;
+              rdfs:range era:InfrastructureObject ;
               dct:created "2023-09-30"^^xsd:date ;
               rdfs:comment "Relates the safety related event with the location in the RINF infrastructure."@en ;
               rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -704,6 +873,16 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
                 rdfs:label "mitigates event"@en .
 
 
+###  http://data.europa.eu/949/iss/nextRecord
+:nextRecord rdf:type owl:ObjectProperty ;
+            owl:inverseOf :previousRecord ;
+            rdfs:domain :Record ;
+            rdfs:range :Record ;
+            dct:created "2024-09-10"^^xsd:date ;
+            rdfs:comment "next record"@en ;
+            rdfs:isDefinedBy <http://data.europa.eu/949/iss> .
+
+
 ###  http://data.europa.eu/949/iss/notificationType
 :notificationType rdf:type owl:ObjectProperty ;
                   rdfs:domain :Notification ;
@@ -722,7 +901,7 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
                                             :Record
                                           )
                             ] ;
-                rdfs:range :Entity ;
+                rdfs:range era:OrganisationRole ;
                 dct:created "2023-09-30"^^xsd:date ;
                 rdfs:comment "ISS registered entity to which the notification is addressed."@en ;
                 rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -733,7 +912,7 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
 ###  http://data.europa.eu/949/iss/notifyingEntity
 :notifyingEntity rdf:type owl:ObjectProperty ;
                  rdfs:domain :Record ;
-                 rdfs:range :Entity ;
+                 rdfs:range era:OrganisationRole ;
                  dct:created "2023-09-30"^^xsd:date ;
                  rdfs:comment """In the case of detailed report, for indirect channel only; entity notifying the report on behalf the reporting entity.
 Taken from Detailed Report.xlsx template."""@en ;
@@ -741,24 +920,14 @@ Taken from Detailed Report.xlsx template."""@en ;
                  rdfs:label "notifying entity"@en .
 
 
-###  http://data.europa.eu/949/iss/notifyingReporter
-:notifyingReporter rdf:type owl:ObjectProperty ;
-                   rdfs:domain :Record ;
-                   rdfs:range :Entity ;
-                   dct:created "2023-09-30"^^xsd:date ;
-                   rdfs:comment "ISS registered User issuing a notification on behalf a registered Entity."@en ;
-                   rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                   rdfs:label "reporting entity"@en .
-
-
-###  http://data.europa.eu/949/iss/operational_cause
-:operational_cause rdf:type owl:ObjectProperty ;
-                   rdfs:domain :DetailedReportTdgPart ;
-                   rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                   era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/cause-types/CauseTypes> ;
-                   dct:created "2023-09-30"^^xsd:date ;
-                   rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                   rdfs:label "operational cause"@en .
+###  http://data.europa.eu/949/iss/operationalCause
+:operationalCause rdf:type owl:ObjectProperty ;
+                  rdfs:domain :DetailedReportTdgPart ;
+                  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                  era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/cause-types/CauseTypes> ;
+                  dct:created "2023-09-30"^^xsd:date ;
+                  rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                  rdfs:label "operational cause"@en .
 
 
 ###  http://data.europa.eu/949/iss/outputEvent
@@ -781,7 +950,7 @@ Taken from Detailed Report.xlsx template."""@en ;
                                           )
                             ] ;
                 rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                era:inSkosConceptScheme "http://data.europa.eu/949/iss/concepts/person-categories/PersonCategories" ;
+                era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/person-categories/PersonCategories> ;
                 dct:created "2023-09-30"^^xsd:date ;
                 rdfs:comment "Category of person in accordance with the Directive (EU) 2016/798 which is victim of an occurrence."@en ;
                 rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -797,6 +966,13 @@ Taken from Detailed Report.xlsx template."""@en ;
                          rdfs:comment "Indicate that a risk control measure is able to prevent the listed event(s)."@en ;
                          rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                          rdfs:label "prevents event occurrence"@en .
+
+
+###  http://data.europa.eu/949/iss/previousRecord
+:previousRecord rdf:type owl:ObjectProperty ;
+                dct:created "2024-10-09"^^xsd:date ;
+                rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                rdfs:label "previous record"@en .
 
 
 ###  http://data.europa.eu/949/iss/recordStatus
@@ -825,15 +1001,27 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
             rdfs:label "record type"@en .
 
 
+###  http://data.europa.eu/949/iss/reportingEntity
+:reportingEntity rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Record ;
+                 rdfs:range era:OrganisationRole ;
+                 dct:created "2023-09-30"^^xsd:date ;
+                 rdfs:comment "ISS registered User issuing a notification on behalf a registered Entity."@en ;
+                 rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                 rdfs:label "reporting entity"@en .
+
+
 ###  http://data.europa.eu/949/iss/reportingEntityRole
 :reportingEntityRole rdf:type owl:ObjectProperty ;
                      rdfs:domain :Record ;
                      rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
                      era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/entity-categories/EntityCategories> ;
                      dct:created "2023-09-30"^^xsd:date ;
+                     dct:isReplacedBy era:hasOrganisationRole ;
                      rdfs:comment "Role of the Entity when reporting a record in accordance with the applicable roles and applicable registration process defined by CDR (EU) 2024/xxxx, Annex IV, Part C ."@en ;
                      rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                     rdfs:label "reporting entity role"@en .
+                     rdfs:label "reporting entity role"@en ;
+                     owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://data.europa.eu/949/iss/reportingReason
@@ -847,15 +1035,15 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
                  rdfs:label "reporting reason"@en .
 
 
-###  http://data.europa.eu/949/iss/resultFailureRiskControlMeasure
-:resultFailureRiskControlMeasure rdf:type owl:ObjectProperty ;
-                                 rdfs:domain :FailureOfRiskControlMeasure ;
-                                 rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                 era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> ;
-                                 dct:created "2023-09-30"^^xsd:date ;
-                                 rdfs:comment "List of possible resulting safety related events in case a given risk control measure fails to operate as planned."@en ;
-                                 rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                                 rdfs:label "can be the result of failure of a risk control measure"@en .
+###  http://data.europa.eu/949/iss/resultFailedRiskControlMeasure
+:resultFailedRiskControlMeasure rdf:type owl:ObjectProperty ;
+                                rdfs:domain :FailedRiskControlMeasure ;
+                                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> ;
+                                dct:created "2023-09-30"^^xsd:date ;
+                                rdfs:comment "List of possible resulting safety related events in case a given risk control measure fails to operate as planned."@en ;
+                                rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                                rdfs:label "can be the result of failure of a risk control measure"@en .
 
 
 ###  http://data.europa.eu/949/iss/riskControlMeasureFunction
@@ -871,7 +1059,7 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
 
 ###  http://data.europa.eu/949/iss/riskControlMeasureRequired
 :riskControlMeasureRequired rdf:type owl:ObjectProperty ;
-                            rdfs:domain :SafetyPerformanceselfEstimationPerArea ;
+                            rdfs:domain :SafetyPerformanceSelfEstimationPerArea ;
                             rdfs:range :RiskControlMeasure ;
                             dct:created "2023-09-30"^^xsd:date ;
                             rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -916,7 +1104,7 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
                                            )
                              ] ;
                  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                 era:inSkosConceptScheme "http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes" ;
+                 era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> ;
                  dct:created "2023-09-30"^^xsd:date ;
                  rdfs:comment "'safety event type' or ‘event type’ means an event identified by an event name and an event code as defined in  CDR (EU) xxx/2024, Annex I, Part C, Appendix 1."@en ;
                  rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -936,7 +1124,7 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
 
 ###  http://data.europa.eu/949/iss/safetyMaturityLevel
 :safetyMaturityLevel rdf:type owl:ObjectProperty ;
-                     rdfs:domain :SafetyPerformanceselfEstimationPerArea ;
+                     rdfs:domain :SafetyPerformanceSelfEstimationPerArea ;
                      rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
                      era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/maturity-levels/MaturityLevels> ;
                      dct:created "2023-09-30"^^xsd:date ;
@@ -946,7 +1134,7 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
 
 ###  http://data.europa.eu/949/iss/safetyPerformanceArea
 :safetyPerformanceArea rdf:type owl:ObjectProperty ;
-                       rdfs:domain :SafetyPerformanceselfEstimationPerArea ;
+                       rdfs:domain :SafetyPerformanceSelfEstimationPerArea ;
                        rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
                        era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-performance-areas/SafetyPerformanceAreas> ;
                        dct:created "2023-09-30"^^xsd:date ;
@@ -977,7 +1165,7 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
 ###  http://data.europa.eu/949/iss/safetyPerformanceSelfEstimationPerArea
 :safetyPerformanceSelfEstimationPerArea rdf:type owl:ObjectProperty ;
                                         rdfs:domain :SafetyPerformanceSelfEstimation ;
-                                        rdfs:range :SafetyPerformanceselfEstimationPerArea ;
+                                        rdfs:range :SafetyPerformanceSelfEstimationPerArea ;
                                         dct:created "2023-09-30"^^xsd:date ;
                                         rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                                         rdfs:label "safety performance self-estimation per area"@en .
@@ -985,7 +1173,7 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
 
 ###  http://data.europa.eu/949/iss/safetyPerformanceSelfEstimationPerElement
 :safetyPerformanceSelfEstimationPerElement rdf:type owl:ObjectProperty ;
-                                           rdfs:domain :SafetyPerformanceselfEstimationPerArea ;
+                                           rdfs:domain :SafetyPerformanceSelfEstimationPerArea ;
                                            rdfs:range :SafetyPerformanceSelfEstimationPerElement ;
                                            dct:created "2023-09-30"^^xsd:date ;
                                            rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -994,8 +1182,13 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
 
 ###  http://data.europa.eu/949/iss/severitySafetyLevelDuringAssessmentPeriod
 :severitySafetyLevelDuringAssessmentPeriod rdf:type owl:ObjectProperty ;
-                                           rdfs:domain :SafetyLevelPerTypeOfOperation ;
+                                           rdfs:domain [ rdf:type owl:Class ;
+                                                         owl:unionOf ( :SafetyLevelPerEventType
+                                                                       :SafetyLevelPerTypeOfOperation
+                                                                     )
+                                                       ] ;
                                            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                           era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
                                            dct:created "2023-09-30"^^xsd:date ;
                                            rdfs:comment """The severity is Intensity of harm.
 The severity is estimated by the exposure of vulnerabilities to hazardous areas."""@en ;
@@ -1005,7 +1198,11 @@ The severity is estimated by the exposure of vulnerabilities to hazardous areas.
 
 ###  http://data.europa.eu/949/iss/severitySafetyLevelPriorAssessmentPeriod
 :severitySafetyLevelPriorAssessmentPeriod rdf:type owl:ObjectProperty ;
-                                          rdfs:domain :SafetyLevelPerTypeOfOperation ;
+                                          rdfs:domain [ rdf:type owl:Class ;
+                                                        owl:unionOf ( :SafetyLevelPerEventType
+                                                                      :SafetyLevelPerTypeOfOperation
+                                                                    )
+                                                      ] ;
                                           rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
                                           era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
                                           dct:created "2023-09-30"^^xsd:date ;
@@ -1018,8 +1215,8 @@ The severity is estimated by the exposure of vulnerabilities to hazardous areas.
 ###  http://data.europa.eu/949/iss/systemicFactor
 :systemicFactor rdf:type owl:ObjectProperty ;
                 rdfs:domain [ rdf:type owl:Class ;
-                              owl:unionOf ( :FailureOfRiskControlMeasure
-                                            :OccurrenceScenarioBuildingBlock
+                              owl:unionOf ( :ContributingSystemicFactor
+                                            :FailedRiskControlMeasure
                                           )
                             ] ;
                 rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
@@ -1038,6 +1235,15 @@ The severity is estimated by the exposure of vulnerabilities to hazardous areas.
                   rdfs:comment "Record that is the subject of the notification."@en ;
                   rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                   rdfs:label "targeted document"@en .
+
+
+###  http://data.europa.eu/949/iss/targetedRecord
+:targetedRecord rdf:type owl:ObjectProperty ;
+                rdfs:domain :Notification ;
+                rdfs:range :Record ;
+                dct:created "2024-09-10"^^xsd:date ;
+                rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                rdfs:label "targeted record"@en .
 
 
 ###  http://data.europa.eu/949/iss/tdgLocation
@@ -1110,13 +1316,13 @@ This description is consistent with properties reported in accordance with RID 1
 
 ###  http://data.europa.eu/949/iss/transportOperationCategory
 :transportOperationCategory rdf:type owl:ObjectProperty ;
-                           rdfs:domain :SafetyLevelPerTypeOfOperation ,
-                                       :SimpleReportSafetyRelatedEvent ;
-                           rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                           era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/operation-types/TransportOperationCategories> ;
-                           dct:created "2023-09-30"^^xsd:date ;
-                           rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                           rdfs:label "transport operation category"@en .
+                            rdfs:domain :SafetyLevelPerTypeOfOperation ,
+                                        :SimpleReportSafetyRelatedEvent ;
+                            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                            era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/transport-operation-categories/TransportOperationCategories> ;
+                            dct:created "2023-09-30"^^xsd:date ;
+                            rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                            rdfs:label "transport operation category"@en .
 
 
 ###  http://data.europa.eu/949/iss/vehicleInvolved
@@ -1141,12 +1347,6 @@ This description is consistent with properties reported in accordance with RID 1
                   rdfs:comment "Ambient condition and air temperature at the time and location of an occurrence."@en ;
                   rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                   rdfs:label "weather condition"@en .
-
-
-###  http://www.w3.org/2002/07/owl#topObjectProperty
-owl:topObjectProperty rdfs:domain :SafetyLevelPerTypeOfOperation ;
-                      rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                      era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#location
@@ -1174,7 +1374,6 @@ The precision of the reference point shall be better than 0.001 for long and lat
 org:classification rdf:type owl:ObjectProperty ;
                    rdfs:domain org:Organization ;
                    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                   era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/entity-categories/EntityCategories> ;
                    dct:created "2023-09-30"^^xsd:date ;
                    rdfs:comment "Indica una classificazione per questa Organization all'interno di un qualche schema di classificazione. Alcuni vocabolari potrebbero voler specializzare questa proprietà per avere un codominio corrispondente a uno specifico `skos:ConceptScheme`. Si noti che la presenza di questa proprietà è ancora in fase di discussione e potrebbe  essere revisionata o rimossa."@it ,
                                 "Indicates a classification for this Organization within some classification scheme. Extension vocabularies may wish to specialize this property to have a range corresponding to a specific `skos:ConceptScheme`. This property is under discussion and may be revised or removed - in many cases organizations are best categorized by defining a sub-class hierarchy in an extension vocabulary."@en ,
@@ -1182,8 +1381,7 @@ org:classification rdf:type owl:ObjectProperty ;
                                 "Ordenación jerárquica que se hace de una organización dentro de un esquema de clasificación. Es posible que algunos vocabularios especifiquen esta propiedad de forma que el rango se corresponda con un `skos:ConceptScheme` específico. La conveniencia de incluir esta propiedad se está debatiendo y puede que se revise o elimine (en muchos casos las organizaciones se clasifican mejor si se define una jerarquía de subclases en un vocabulario aparte)"@es ,
                                 """ある分類表内のこの組織に対する分類を示します。
 アプリケーションがorg:Organizationのサブクラスを組織的なカテゴリーを表わす手段として定義することも許容されることに注意してください。"""@ja ;
-                   rdfs:isDefinedBy <http://data.europa.eu/949/iss> ,
-                                    <http://www.w3.org/ns/org> ;
+                   rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
                    rdfs:label "classification"@en ,
                               "classification"@fr ,
                               "classificazione"@it ,
@@ -1219,6 +1417,16 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
                                <http://data.europa.eu/949/iss> ;
               rdfs:label "Kilometer"@en ;
               vs:term_status "stable" .
+
+
+###  http://data.europa.eu/949/organisationCode
+era:organisationCode rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf dct:identifier ;
+                     rdfs:domain era:OrganisationRole ;
+                     rdfs:range xsd:string ;
+                     dct:created "2024-06-03"^^xsd:date ;
+                     rdfs:comment "Four alpha-numeric code allocated by ERA to a body. It represent's the IM code in RINF."@en ;
+                     rdfs:label "organisation code" .
 
 
 ###  http://data.europa.eu/949/iss/additionalExplanationResourcesManagement
@@ -1276,17 +1484,17 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
                                          rdfs:label "air temperature and ambient condition narrative"@en .
 
 
-###  http://data.europa.eu/949/iss/assesmentPeriodEndDate
-:assesmentPeriodEndDate rdf:type owl:DatatypeProperty ;
-                        rdfs:domain [ rdf:type owl:Class ;
-                                      owl:unionOf ( :SafetyAuthorisation
-                                                    :SafetyPerformanceSelfEstimation
-                                                  )
-                                    ] ;
-                        rdfs:range xsd:date ;
-                        dct:created "2023-09-30"^^xsd:date ;
-                        rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                        rdfs:label "assessment period end date"@en .
+###  http://data.europa.eu/949/iss/assessmentPeriodEndDate
+:assessmentPeriodEndDate rdf:type owl:DatatypeProperty ;
+                         rdfs:domain [ rdf:type owl:Class ;
+                                       owl:unionOf ( :SafetyAuthorisation
+                                                     :SafetyPerformanceSelfEstimation
+                                                   )
+                                     ] ;
+                         rdfs:range xsd:date ;
+                         dct:created "2023-09-30"^^xsd:date ;
+                         rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                         rdfs:label "assessment period end date"@en .
 
 
 ###  http://data.europa.eu/949/iss/assessmentPeriodStartDate
@@ -1300,6 +1508,15 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
                            dct:created "2023-09-30"^^xsd:date ;
                            rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                            rdfs:label "assessment period start date"@en .
+
+
+###  http://data.europa.eu/949/iss/buildingBlockNarrative
+:buildingBlockNarrative rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :OccurrenceScenarioBuildingBlock ;
+                        rdfs:range xsd:string ;
+                        dct:created "2024-07-08"^^xsd:date ;
+                        rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                        rdfs:seeAlso "building block narrative"@en .
 
 
 ###  http://data.europa.eu/949/iss/cargoNumber
@@ -1346,6 +1563,15 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
                                dct:created "2023-09-30"^^xsd:date ;
                                rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                                rdfs:label "reporting contact ID for the occurrence context"@en .
+
+
+###  http://data.europa.eu/949/iss/contributingSystemicFactorNarrative
+:contributingSystemicFactorNarrative rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain :ContributingSystemicFactor ;
+                                     rdfs:range xsd:string ;
+                                     dct:created "2024-07-08"^^xsd:date ;
+                                     rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                                     rdfs:label "contributing systemic factor narrative"@en .
 
 
 ###  http://data.europa.eu/949/iss/damageEnvironmentNarrative
@@ -1526,22 +1752,31 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
                                         rdfs:label "exact location of occurrence - positioning norm applied"@en .
 
 
-###  http://data.europa.eu/949/iss/faillureMode
-:faillureMode rdf:type owl:DatatypeProperty ;
-              rdfs:domain :FailureOfRiskControlMeasure ;
-              rdfs:range xsd:string ;
-              dct:created "2023-09-30"^^xsd:date ;
-              rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-              rdfs:label "failure mode"@en .
+###  http://data.europa.eu/949/iss/failedRiskControlMeasureText
+:failedRiskControlMeasureText rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :FailedRiskControlMeasure ;
+                              rdfs:range xsd:string ;
+                              dct:created "2024-07-08"^^xsd:date ;
+                              rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                              rdfs:label "Failed risk control measure text"@en .
 
 
 ###  http://data.europa.eu/949/iss/failureAnalysis
 :failureAnalysis rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :FailureOfRiskControlMeasure ;
+                 rdfs:domain :FailedRiskControlMeasure ;
                  rdfs:range xsd:string ;
                  dct:created "2023-09-30"^^xsd:date ;
                  rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                  rdfs:label "failure analysis"@en .
+
+
+###  http://data.europa.eu/949/iss/failureMode
+:failureMode rdf:type owl:DatatypeProperty ;
+             rdfs:domain :FailedRiskControlMeasure ;
+             rdfs:range xsd:string ;
+             dct:created "2023-09-30"^^xsd:date ;
+             rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+             rdfs:label "failure mode"@en .
 
 
 ###  http://data.europa.eu/949/iss/frequencyProbabilityDuringAssessmentPeriod
@@ -1560,7 +1795,6 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
 :frequencyProbabilityPriorAssessmentPeriod rdf:type owl:DatatypeProperty ;
                                            rdfs:domain :SafetyLevelPerTypeOfOperation ;
                                            rdfs:range xsd:float ;
-                                           era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
                                            dct:created "2023-09-30"^^xsd:date ;
                                            rdfs:comment """Frequency is the number of pre-defined type of occurrences divided by a given normaliser.
 Typical normalisers can be, for example, year, volume of transport (number
@@ -1569,20 +1803,20 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
                                            rdfs:label "frequency probability prior to assessment period"@en .
 
 
-###  http://data.europa.eu/949/iss/generalOcurrenceNarrative
-:generalOcurrenceNarrative rdf:type owl:DatatypeProperty ;
-                           rdfs:domain :SimpleReportSafetyRelatedEvent ;
-                           rdfs:range xsd:string ;
-                           dct:created "2023-09-30"^^xsd:date ;
-                           rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                           rdfs:label "occurrence narrative (general)"@en .
+###  http://data.europa.eu/949/iss/generalOccurrenceNarrative
+:generalOccurrenceNarrative rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :SimpleReportSafetyRelatedEvent ;
+                            rdfs:range xsd:string ;
+                            dct:created "2023-09-30"^^xsd:date ;
+                            rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                            rdfs:label "occurrence narrative (general)"@en .
 
 
 ###  http://data.europa.eu/949/iss/isADangerousGoodsEvent
 :isADangerousGoodsEvent rdf:type owl:DatatypeProperty ;
                         rdfs:domain :SimpleReportSafetyRelatedEvent ;
                         rdfs:range xsd:boolean ;
-                        <http://purl.org/dc/elements/1.1/date> "2023-10-25"^^xsd:date ;
+                        dct:created "2023-10-25"^^xsd:date ;
                         rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                         rdfs:label "is a dangerous goods event"@en .
 
@@ -1641,6 +1875,15 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
                           rdfs:comment "Free text in accordance with Appendix D – General Part, section 3.2."@en ;
                           rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                           rdfs:label "location details narrative"@en .
+
+
+###  http://data.europa.eu/949/iss/locationName
+:locationName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :SimpleReportSafetyRelatedEvent ;
+              rdfs:range xsd:string ;
+              dct:created "2024-09-10"^^xsd:date ;
+              rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+              rdfs:label "location name"@en .
 
 
 ###  http://data.europa.eu/949/iss/meanContainmentMaterial
@@ -1721,6 +1964,15 @@ vulnerabilities."""@en ;
                      rdfs:label "notification message"@en .
 
 
+###  http://data.europa.eu/949/iss/notifiedContactId
+:notifiedContactId rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Notification ;
+                   rdfs:range xsd:string ;
+                   dct:created "2024-07-08"^^xsd:date ;
+                   rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                   rdfs:label "notified contact id"@en .
+
+
 ###  http://data.europa.eu/949/iss/numberAndSpeedNarrative
 :numberAndSpeedNarrative rdf:type owl:DatatypeProperty ;
                          rdfs:domain :DetailedReportSafetyRelatedEvent ;
@@ -1737,7 +1989,7 @@ vulnerabilities."""@en ;
                               rdfs:range xsd:float ;
                               dct:created "2023-09-30"^^xsd:date ;
                               rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                              rdfs:label "number of DG freight ton kilometers"@en .
+                              rdfs:label "number of Dangerous Goods freight ton-kilometers"@en .
 
 
 ###  http://data.europa.eu/949/iss/numberDGFreightTrainKilometers
@@ -1746,7 +1998,7 @@ vulnerabilities."""@en ;
                                 rdfs:range xsd:float ;
                                 dct:created "2023-09-30"^^xsd:date ;
                                 rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                                rdfs:label "number of DG freight train kilometers"@en .
+                                rdfs:label "number of Dangerous Goods freight train-kilometers"@en .
 
 
 ###  http://data.europa.eu/949/iss/numberDGRailwayVehiclesProcessedFreightTerminals
@@ -1755,7 +2007,16 @@ vulnerabilities."""@en ;
                                                   rdfs:range xsd:integer ;
                                                   dct:created "2023-09-30"^^xsd:date ;
                                                   rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                                                  rdfs:label "number of DG railway vehicles processed freight terminals"@en .
+                                                  rdfs:label "number of dangerous goods railway vehicles processed in freight terminals"@en .
+
+
+###  http://data.europa.eu/949/iss/numberDGRailwayVehiclesProcessedTerminals
+:numberDGRailwayVehiclesProcessedTerminals rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain :VolumeOfOperation ;
+                                           rdfs:range xsd:integer ;
+                                           dct:created "2023-09-30"^^xsd:date ;
+                                           rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                                           rdfs:label "number of dangerous goods railway vehicles processed in terminals"@en .
 
 
 ###  http://data.europa.eu/949/iss/numberDelayedFreightTrains
@@ -1782,7 +2043,7 @@ vulnerabilities."""@en ;
                             rdfs:range xsd:float ;
                             dct:created "2023-09-30"^^xsd:date ;
                             rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                            rdfs:label "number of freight ton kilometers"@en .
+                            rdfs:label "number of freight ton-kilometers"@en .
 
 
 ###  http://data.europa.eu/949/iss/numberFreightTrainKilometers
@@ -1791,7 +2052,7 @@ vulnerabilities."""@en ;
                               rdfs:range xsd:float ;
                               dct:created "2023-09-30"^^xsd:date ;
                               rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                              rdfs:label "number of freight train kilometers"@en .
+                              rdfs:label "number of freight train-kilometers"@en .
 
 
 ###  http://data.europa.eu/949/iss/numberLineKilometers
@@ -1800,7 +2061,7 @@ vulnerabilities."""@en ;
                       rdfs:range xsd:float ;
                       dct:created "2023-09-30"^^xsd:date ;
                       rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                      rdfs:label "number of line kilometers"@en .
+                      rdfs:label "number of Line-kilometers"@en .
 
 
 ###  http://data.europa.eu/949/iss/numberOfVehicles
@@ -1836,7 +2097,7 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
                                rdfs:range xsd:integer ;
                                dct:created "2023-09-30"^^xsd:date ;
                                rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                               rdfs:label "number of operated track kilometers"@en .
+                               rdfs:label "number Track-kilometers operated"@en .
 
 
 ###  http://data.europa.eu/949/iss/numberOperatingHoursTerminals
@@ -1845,7 +2106,7 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
                                rdfs:range xsd:integer ;
                                dct:created "2023-09-30"^^xsd:date ;
                                rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                               rdfs:label "number of operating hours terminals"@en .
+                               rdfs:label "number of operating hours in terminals"@en .
 
 
 ###  http://data.europa.eu/949/iss/numberPassengerKilometers
@@ -1854,16 +2115,7 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
                            rdfs:range xsd:float ;
                            dct:created "2023-09-30"^^xsd:date ;
                            rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                           rdfs:label "number of passenger kilometers"@en .
-
-
-###  http://data.europa.eu/949/iss/numberPassengerKilometersHighSpeedService
-:numberPassengerKilometersHighSpeedService rdf:type owl:DatatypeProperty ;
-                                           rdfs:domain :VolumeOfOperation ;
-                                           rdfs:range xsd:float ;
-                                           dct:created "2023-09-30"^^xsd:date ;
-                                           rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                                           rdfs:label "number of passenger kilometers high speed service"@en .
+                           rdfs:label "number of passenger kilometers (optional)"@en .
 
 
 ###  http://data.europa.eu/949/iss/numberPassengerTrainKilometers
@@ -1872,16 +2124,16 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
                                 rdfs:range xsd:float ;
                                 dct:created "2023-09-30"^^xsd:date ;
                                 rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                                rdfs:label "number of passenger train kilometers"@en .
+                                rdfs:label "number of passenger train-kilometers"@en .
 
 
-###  http://data.europa.eu/949/iss/numberRailwayVehiclesDGProcessedTerminals
-:numberRailwayVehiclesDGProcessedTerminals rdf:type owl:DatatypeProperty ;
-                                           rdfs:domain :VolumeOfOperation ;
-                                           rdfs:range xsd:integer ;
-                                           dct:created "2023-09-30"^^xsd:date ;
-                                           rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                                           rdfs:label "number of railway vehicles DG processed terminals"@en .
+###  http://data.europa.eu/949/iss/numberPassengerTrainKilometersHighSpeedService
+:numberPassengerTrainKilometersHighSpeedService rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain :VolumeOfOperation ;
+                                                rdfs:range xsd:float ;
+                                                dct:created "2023-09-30"^^xsd:date ;
+                                                rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                                                rdfs:label "number of passenger kilometers with high speed service"@en .
 
 
 ###  http://data.europa.eu/949/iss/numberRailwayVehiclesProcessedFreightTerminals
@@ -1890,7 +2142,7 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
                                                 rdfs:range xsd:integer ;
                                                 dct:created "2023-09-30"^^xsd:date ;
                                                 rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                                                rdfs:label "number of railway vehicles processed freight terminals"@en .
+                                                rdfs:label "number of railway vehicles processed in freight terminals"@en .
 
 
 ###  http://data.europa.eu/949/iss/numberRailwayVehiclesProcessedTerminals
@@ -1899,7 +2151,7 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
                                          rdfs:range xsd:integer ;
                                          dct:created "2023-09-30"^^xsd:date ;
                                          rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                                         rdfs:label "number of railway vehicles processed terminals"@en .
+                                         rdfs:label "number of railway vehicles processed in terminals"@en .
 
 
 ###  http://data.europa.eu/949/iss/numberSwitchesPointsDamaged
@@ -1923,11 +2175,10 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
 ###  http://data.europa.eu/949/iss/numberTrackKilometersOperatedTerminals
 :numberTrackKilometersOperatedTerminals rdf:type owl:DatatypeProperty ;
                                         rdfs:domain :VolumeOfOperation ;
-                                        rdfs:range xsd:float ,
-                                                   xsd:integer ;
+                                        rdfs:range xsd:float ;
                                         dct:created "2023-09-30"^^xsd:date ;
                                         rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                                        rdfs:label "number of track kilometers operated terminals"@en .
+                                        rdfs:label "number of Track-kilometers operated in terminals"@en .
 
 
 ###  http://data.europa.eu/949/iss/numberWagonsCarryingDangerousGoods
@@ -2063,17 +2314,17 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
                  rdfs:label "occurrence title"@en .
 
 
-###  http://data.europa.eu/949/iss/ocurrenceTownOrCity
-:ocurrenceTownOrCity rdf:type owl:DatatypeProperty ;
-                     rdfs:domain [ rdf:type owl:Class ;
-                                   owl:unionOf ( :DetailedReportTdgPart
-                                                 :SimpleReportSafetyRelatedEvent
-                                               )
-                                 ] ;
-                     rdfs:range xsd:string ;
-                     dct:created "2023-09-30"^^xsd:date ;
-                     rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                     rdfs:label "occurrence town or city"@en .
+###  http://data.europa.eu/949/iss/occurrenceTownOrCity
+:occurrenceTownOrCity rdf:type owl:DatatypeProperty ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( :DetailedReportTdgPart
+                                                  :SimpleReportSafetyRelatedEvent
+                                                )
+                                  ] ;
+                      rdfs:range xsd:string ;
+                      dct:created "2023-09-30"^^xsd:date ;
+                      rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                      rdfs:label "occurrence town or city"@en .
 
 
 ###  http://data.europa.eu/949/iss/overallResult
@@ -2096,11 +2347,63 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
 
 ###  http://data.europa.eu/949/iss/positionFailedRiskControlMeasure
 :positionFailedRiskControlMeasure rdf:type owl:DatatypeProperty ;
-                                  rdfs:domain :FailureOfRiskControlMeasure ;
+                                  rdfs:domain :FailedRiskControlMeasure ;
                                   rdfs:range xsd:integer ;
                                   dct:created "2023-09-30"^^xsd:date ;
                                   rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                                   rdfs:label "position failed risk control measure"@en .
+
+
+###  http://data.europa.eu/949/iss/recommendationEndDate
+:recommendationEndDate rdf:type owl:DatatypeProperty ;
+                       dct:created "2024-07-08"^^xsd:date ;
+                       rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                       rdfs:label "recommendation end date"@en .
+
+
+###  http://data.europa.eu/949/iss/recommendationId
+:recommendationId rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :RecommendationItem ;
+                  rdfs:range xsd:string ;
+                  dct:created "2024-07-08"^^xsd:date ;
+                  rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                  rdfs:label "recommendation id"@en .
+
+
+###  http://data.europa.eu/949/iss/recommendationIssued
+:recommendationIssued rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :RecommendationItem ;
+                      rdfs:range xsd:date ;
+                      dct:created "2024-07-08"^^xsd:date ;
+                      rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                      rdfs:label "recommendation issued"@en .
+
+
+###  http://data.europa.eu/949/iss/recommendationStartDate
+:recommendationStartDate rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :RecommendationItem ;
+                         rdfs:range xsd:date ;
+                         dct:created "2024-07-08"^^xsd:date ;
+                         rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                         rdfs:label "recommendation start date"@en .
+
+
+###  http://data.europa.eu/949/iss/recommendationText
+:recommendationText rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :RecommendationItem ;
+                    rdfs:range xsd:string ;
+                    dct:created "2024-07-08"^^xsd:date ;
+                    rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                    rdfs:label "recommendation text"@en .
+
+
+###  http://data.europa.eu/949/iss/recommendationTitle
+:recommendationTitle rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :RecommendationItem ;
+                     rdfs:range xsd:string ;
+                     dct:created "2024-07-08"^^xsd:date ;
+                     rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                     rdfs:label "recommendation title"@en .
 
 
 ###  http://data.europa.eu/949/iss/recordDatetime
@@ -2132,9 +2435,10 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
 
 ###  http://data.europa.eu/949/iss/recordVersionNumber
 :recordVersionNumber rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :RecordVersion ;
+                     rdfs:domain :Record ;
                      rdfs:range xsd:string ;
                      dct:created "2023-09-30"^^xsd:date ;
+                     dct:modified "2024-09-10"^^xsd:date ;
                      rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                      rdfs:label "record version number"@en .
 
@@ -2165,24 +2469,6 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
                           rdfs:label "reference period start date"@en .
 
 
-###  http://data.europa.eu/949/iss/reportingContactEmail
-:reportingContactEmail rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :Record ;
-                       rdfs:range xsd:string ;
-                       dct:created "2023-10-25"^^xsd:date ;
-                       rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                       rdfs:label "reporting contact email"@en .
-
-
-###  http://data.europa.eu/949/iss/reportingContactFax
-:reportingContactFax rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :DetailedReportTdgPart ;
-                     rdfs:range xsd:string ;
-                     dct:created "2023-10-25"^^xsd:date ;
-                     rdfs:comment "tdg reporting contact fax"@en ;
-                     rdfs:isDefinedBy <http://data.europa.eu/949/iss> .
-
-
 ###  http://data.europa.eu/949/iss/reportingContactId
 :reportingContactId rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf dct:identifier ;
@@ -2201,15 +2487,6 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
                                              dct:created "2023-09-30"^^xsd:date ;
                                              rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                                              rdfs:label "reporting contact ID for the Occurrence consequences"@en .
-
-
-###  http://data.europa.eu/949/iss/reportingContactName
-:reportingContactName rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Record ;
-                      rdfs:range xsd:string ;
-                      dct:created "2023-10-25" ;
-                      rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                      rdfs:label "reporting contact name"@en .
 
 
 ###  http://data.europa.eu/949/iss/reportingPeriodEndDate
@@ -2331,7 +2608,7 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
 
 ###  http://data.europa.eu/949/iss/safetyResultPerArea
 :safetyResultPerArea rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :SafetyPerformanceselfEstimationPerArea ;
+                     rdfs:domain :SafetyPerformanceSelfEstimationPerArea ;
                      rdfs:range xsd:float ;
                      dct:created "2023-09-30"^^xsd:date ;
                      rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -2360,7 +2637,6 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
 :severityProbabilityDuringAssessmentPeriod rdf:type owl:DatatypeProperty ;
                                            rdfs:domain :SafetyLevelPerTypeOfOperation ;
                                            rdfs:range xsd:float ;
-                                           era:inSkosConceptScheme <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
                                            dct:created "2023-09-30"^^xsd:date ;
                                            rdfs:comment """The severity is Intensity of harm.
 The severity is estimated by the exposure of vulnerabilities to hazardous areas."""@en ;
@@ -2377,6 +2653,15 @@ The severity is estimated by the exposure of vulnerabilities to hazardous areas.
 The severity is estimated by the exposure of vulnerabilities to hazardous areas."""@en ;
                                           rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                                           rdfs:label "severity probability prior to assessment period"@en .
+
+
+###  http://data.europa.eu/949/iss/sharingDeadline
+:sharingDeadline rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Notification ;
+                 rdfs:range xsd:date ;
+                 dct:created "2024-07-08"^^xsd:date ;
+                 rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                 rdfs:label "sharing deadline"@en .
 
 
 ###  http://data.europa.eu/949/iss/soilPollution
@@ -2607,11 +2892,20 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
           rdfs:label "UN number"@en .
 
 
+###  http://data.europa.eu/949/iss/validationDeadline
+:validationDeadline rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Notification ;
+                    rdfs:range xsd:date ;
+                    dct:created "2024-07-08"^^xsd:date ;
+                    rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                    rdfs:label "validation deadline"@en .
+
+
 ###  http://data.europa.eu/949/iss/validityPeriodEndDate
 :validityPeriodEndDate rdf:type owl:DatatypeProperty ;
                        rdfs:domain :SafetyAuthorisation ;
                        rdfs:range xsd:date ;
-                       dct:created "29023-09-30"^^xsd:date ;
+                       dct:created "2023-09-30"^^xsd:date ;
                        rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                        rdfs:label "validity period end date"@en .
 
@@ -2688,6 +2982,19 @@ gsp:hasSerialization rdf:type owl:DatatypeProperty .
 #    Classes
 #################################################################
 
+###  http://data.europa.eu/949/Body
+era:Body rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Class ;
+                           owl:unionOf ( org:Organization
+                                         <http://xmlns.com/foaf/0.1/Person>
+                                       )
+                         ] ;
+         owl:disjointWith era:OrganisationRole ;
+         dct:created "2024-06-03"^^xsd:date ;
+         rdfs:comment "Is an organisation or a physical person"@en ;
+         rdfs:label "Body"@en .
+
+
 ###  http://data.europa.eu/949/Feature
 era:Feature rdf:type owl:Class ;
             rdfs:isDefinedBy <http://data.europa.eu/949> ;
@@ -2718,6 +3025,12 @@ era:LineReference rdf:type owl:Class ;
                   <http://www.w3.org/2004/02/skos/core#altLabel> "Linear reference" .
 
 
+###  http://data.europa.eu/949/OrganisationRole
+era:OrganisationRole rdf:type owl:Class ;
+                     rdfs:comment "Represents an n-ary relationship between a Body and a role"@en ;
+                     rdfs:label "Organisation Role"@en .
+
+
 ###  http://data.europa.eu/949/Vehicle
 era:Vehicle rdf:type owl:Class ;
             dct:created "2020-11-22"^^xsd:date ;
@@ -2728,9 +3041,16 @@ era:Vehicle rdf:type owl:Class ;
             vs:term_status "stable" .
 
 
+###  http://data.europa.eu/949/iss/ContributingSystemicFactor
+:ContributingSystemicFactor rdf:type owl:Class ;
+                            dct:created "2024-07-08"^^xsd:date ;
+                            rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                            rdfs:label "Contributing and Systemic factors"@en .
+
+
 ###  http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent
 :DetailedReportSafetyRelatedEvent rdf:type owl:Class ;
-                                  rdfs:subClassOf :InfoInRecordVersion ;
+                                  rdfs:subClassOf :InfoRecord ;
                                   dct:created "2023-09-30"^^xsd:date ;
                                   rdfs:comment "Report on an occurrence as defined in CDR (EU) 2024/xxxx, Annex I, Part A."@en ;
                                   rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -2740,7 +3060,7 @@ era:Vehicle rdf:type owl:Class ;
 
 ###  http://data.europa.eu/949/iss/DetailedReportTdgPart
 :DetailedReportTdgPart rdf:type owl:Class ;
-                       rdfs:subClassOf :InfoInRecordVersion ;
+                       rdfs:subClassOf :InfoRecord ;
                        dct:created "2023-09-30"^^xsd:date ;
                        rdfs:comment "Supplement to an occurrence detailed report when the occurrence is involving the transport of dangerous goods in accordance with RID 1.8.5."@en ;
                        rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -2749,7 +3069,7 @@ era:Vehicle rdf:type owl:Class ;
 
 ###  http://data.europa.eu/949/iss/Document
 :Document rdf:type owl:Class ;
-          rdfs:subClassOf :InfoInRecordVersion ;
+          rdfs:subClassOf :InfoRecord ;
           dct:created "2023-09-30"^^xsd:date ;
           rdfs:comment """Any form of document whose type is specified by a document type.
 
@@ -2762,16 +3082,19 @@ In the context of CDR (EU) 2024/xxxx, it is used to comply with the requirements
 :Entity rdf:type owl:Class ;
         rdfs:subClassOf org:Organization ;
         dct:created "2023-09-30"^^xsd:date ;
-        rdfs:isDefinedBy <http://data.europa.eu/949/iss> .
+        dct:isReplacedBy era:Body ;
+        dct:modified "2024-09-10"^^xsd:date ;
+        rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+        owl:deprecated "true"^^xsd:boolean .
 
 
-###  http://data.europa.eu/949/iss/FailureOfRiskControlMeasure
-:FailureOfRiskControlMeasure rdf:type owl:Class ;
-                             rdfs:subClassOf :InfoInRecordVersion ;
-                             dct:created "2023-09-30"^^xsd:date ;
-                             rdfs:comment "A risk control measure which did not operate as planned whose failure can be described in accordance with CDR (EU) 2024/xxxx Annex I, Part B, section 6.3."@en ;
-                             rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                             rdfs:label "Failed risk control measure"@en .
+###  http://data.europa.eu/949/iss/FailedRiskControlMeasure
+:FailedRiskControlMeasure rdf:type owl:Class ;
+                          rdfs:subClassOf :InfoRecord ;
+                          dct:created "2023-09-30"^^xsd:date ;
+                          rdfs:comment "A risk control measure which did not operate as planned whose failure can be described in accordance with CDR (EU) 2024/xxxx Annex I, Part B, section 6.3."@en ;
+                          rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                          rdfs:label "Failed risk control measure"@en .
 
 
 ###  http://data.europa.eu/949/iss/HumanConsequencesPerPersonCategory
@@ -2791,16 +3114,31 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
                                      rdfs:label "Human consequences per injury type"@en .
 
 
-###  http://data.europa.eu/949/iss/InfoInRecordVersion
-:InfoInRecordVersion rdf:type owl:Class ;
-                     dct:created "2023-09-30"^^xsd:date ;
-                     rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                     rdfs:label "Information in record version"@en .
+###  http://data.europa.eu/949/iss/InfoRecord
+:InfoRecord rdf:type owl:Class ;
+            dct:created "2023-09-30"^^xsd:date ;
+            dct:modified "2024-09-10"^^xsd:date ;
+            rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+            rdfs:label "Information in record"@en .
+
+
+###  http://data.europa.eu/949/iss/InputAndGate
+:InputAndGate rdf:type owl:Class ;
+              dct:created "2025-01-14"^^xsd:date ;
+              rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+              rdfs:label "Input And Gate"@en .
+
+
+###  http://data.europa.eu/949/iss/InputOrGate
+:InputOrGate rdf:type owl:Class ;
+             dct:created "2025-01-14"^^xsd:date ;
+             rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+             rdfs:label "Input Or Gate"@en .
 
 
 ###  http://data.europa.eu/949/iss/Notification
 :Notification rdf:type owl:Class ;
-              rdfs:subClassOf :InfoInRecordVersion ;
+              rdfs:subClassOf :InfoRecord ;
               dct:created "2023-09-30"^^xsd:date ;
               rdfs:comment "A communication of data and information between two or more entities which can be performed with the Information Sharing System in accordance with CDR (EU) 2024/xxxx  using the dataset defined in Annex IV, part D."@en ;
               rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -2809,7 +3147,7 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en ;
 
 ###  http://data.europa.eu/949/iss/OccurrenceScenario
 :OccurrenceScenario rdf:type owl:Class ;
-                    rdfs:subClassOf :InfoInRecordVersion ;
+                    rdfs:subClassOf :InfoRecord ;
                     dct:created "2023-09-30"^^xsd:date ;
                     rdfs:comment """Description of the combination of events leading to an ocuurrence.
 
@@ -2843,6 +3181,21 @@ Bluiding blocks shall be used to compose the description of an occurrence scenar
                                  rdfs:label "Occurrence scenario building block"@en .
 
 
+###  http://data.europa.eu/949/iss/Recommendation
+:Recommendation rdf:type owl:Class ;
+                rdfs:subClassOf :InfoRecord ;
+                dct:created <http://data.europa.eu/949/iss> ,
+                            "2024-07-08"^^xsd:date ;
+                rdfs:label "Recommendation"@en .
+
+
+###  http://data.europa.eu/949/iss/RecommendationItem
+:RecommendationItem rdf:type owl:Class ;
+                    dct:created "2024-07-08"^^xsd:date ;
+                    rdfs:isDefinedBy "http://data.europa.eu/949"@en ;
+                    rdfs:label "Recommendation item"@en .
+
+
 ###  http://data.europa.eu/949/iss/Record
 :Record rdf:type owl:Class ;
         dct:created "2023-09-30"^^xsd:date ;
@@ -2863,13 +3216,15 @@ Bluiding blocks shall be used to compose the description of an occurrence scenar
 ###  http://data.europa.eu/949/iss/RecordVersion
 :RecordVersion rdf:type owl:Class ;
                dct:created "2023-09-30"^^xsd:date ;
+               dct:modified "2024-09-10"^^xsd:date ;
                rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-               rdfs:label "Record version"@en .
+               rdfs:label "Record version"@en ;
+               owl:deprecated "true"^^xsd:boolean .
 
 
 ###  http://data.europa.eu/949/iss/RiskControlMeasure
 :RiskControlMeasure rdf:type owl:Class ;
-                    rdfs:subClassOf :InfoInRecordVersion ;
+                    rdfs:subClassOf :InfoRecord ;
                     dct:created "2023-09-30"^^xsd:date ;
                     rdfs:comment "'Risk control measure’ or ‘RCM’ means one of the safety measures as defined in Article 3, second paragraph, point (10) of Commission Implementing Regulation (EU) No 402/2013."@en ;
                     rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -2912,7 +3267,7 @@ The CDR (EU) 2024/xxxx defines the applicable functions as following:
 
 ###  http://data.europa.eu/949/iss/SafetyLevel
 :SafetyLevel rdf:type owl:Class ;
-             rdfs:subClassOf :InfoInRecordVersion ;
+             rdfs:subClassOf :InfoRecord ;
              dct:created "2023-09-30"^^xsd:date ;
              rdfs:comment "‘safety level’ means a level of safety risks as estimated and assessed by the methods set out in Part A of the Annex  III of  CDR (EU) 2024/xxxx"@en ;
              rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -2935,11 +3290,19 @@ The CDR (EU) 2024/xxxx defines the applicable functions as following:
 
 ###  http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation
 :SafetyPerformanceSelfEstimation rdf:type owl:Class ;
-                                 rdfs:subClassOf :InfoInRecordVersion ;
+                                 rdfs:subClassOf :InfoRecord ;
                                  dct:created "2023-09-30"^^xsd:date ;
                                  rdfs:comment "Self-estimation of safety performance of an Entity reported with the dataset applicable in accordance with CDR (EU) 2024/xxxx, Annex II, Part B."@en ;
                                  rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
                                  rdfs:label "Safety performance self-estimation"@en .
+
+
+###  http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerArea
+:SafetyPerformanceSelfEstimationPerArea rdf:type owl:Class ;
+                                        dct:created "2023-09-30"^^xsd:date ;
+                                        rdfs:comment "Safety performance self-estimation per area (Plan, Do, Check, Act) in accordance with CDR (EU) 2024/xxxx, Annex II, part C."@en ;
+                                        rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
+                                        rdfs:label "Safety performance self-estimation per area"@en .
 
 
 ###  http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerElement
@@ -2950,14 +3313,6 @@ The CDR (EU) 2024/xxxx defines the applicable functions as following:
                                            rdfs:label "Safety performance self-estimation per element"@en .
 
 
-###  http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea
-:SafetyPerformanceselfEstimationPerArea rdf:type owl:Class ;
-                                        dct:created "2023-09-30"^^xsd:date ;
-                                        rdfs:comment "Safety performance self-estimation per area (Plan, Do, Check, Act) in accordance with CDR (EU) 2024/xxxx, Annex II, part C."@en ;
-                                        rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
-                                        rdfs:label "Safety performance self-estimation per area"@en .
-
-
 ###  http://data.europa.eu/949/iss/SafetyRelatedEvent
 :SafetyRelatedEvent rdf:type owl:Class ;
                     owl:equivalentClass [ rdf:type owl:Class ;
@@ -2966,7 +3321,7 @@ The CDR (EU) 2024/xxxx defines the applicable functions as following:
                                                         :SimpleReportSafetyRelatedEvent
                                                       )
                                         ] ;
-                    rdfs:subClassOf :InfoInRecordVersion ;
+                    rdfs:subClassOf :InfoRecord ;
                     dct:created "2023-09-30"^^xsd:date ;
                     rdfs:comment """Equivalent to Occurrence.
 
@@ -2978,7 +3333,7 @@ In the context of CDR (EU) 2024/xxxx, the features of an Occurrence/safety relat
 
 ###  http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent
 :SimpleReportSafetyRelatedEvent rdf:type owl:Class ;
-                                rdfs:subClassOf :InfoInRecordVersion ;
+                                rdfs:subClassOf :InfoRecord ;
                                 dct:created "2023-09-30"^^xsd:date ;
                                 rdfs:comment "‘occurrence’ means a safety relevant event, incident or accident"@en ;
                                 rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
@@ -2988,7 +3343,7 @@ In the context of CDR (EU) 2024/xxxx, the features of an Occurrence/safety relat
 
 ###  http://data.europa.eu/949/iss/VolumeOfOperation
 :VolumeOfOperation rdf:type owl:Class ;
-                   rdfs:subClassOf :InfoInRecordVersion ;
+                   rdfs:subClassOf :InfoRecord ;
                    dct:created "2023-09-30"^^xsd:date ;
                    rdfs:comment """Volume of operation of railway operators over a defined period of tme.
 
@@ -3171,6 +3526,11 @@ org:Organization rdf:type owl:Class ;
 
 ###  http://xmlns.com/foaf/0.1/Agent
 <http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> .
 
 
 [ dct:created "2023-09-30"^^xsd:date ;

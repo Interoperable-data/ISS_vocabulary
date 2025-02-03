@@ -1,0 +1,91 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:HumanConsequencesPerPersonCategoryShape 
+    a sh:NodeShape ;
+    sh:targetClass iss:HumanConsequencesPerPersonCategory.
+
+iss-sh:HumanConsequencesPerPersonCategoryShape sh:property iss-sh:NumberOfVictims .
+iss-sh:NumberOfVictims
+  sh:datatype xsd:integer ;
+  sh:severity sh:violation ;
+  sh:path iss:numberOfVictims ;
+  era:affectedProperty iss:numberOfVictims;
+  era:affectedClass iss:HumanConsequencesPerPersonCategory;
+  era:scope "local";
+  rdfs:comment """Total number of persons for the occurrence.
+Taken from Annexes ISC-2022-00728_2023-07."""@en ;
+  a sh:PropertyShape ;
+  sh:message "numberOfVictims: Each human consequences per person category may have numberOfVictims that is an integer. This error is due to having a value that is not an integer." .
+
+# SKOS
+iss-sh:HumanConsequencesPerPersonCategoryShape sh:property iss-sh:InjuryTdgTypeSKOS,
+    iss-sh:InjuryTypeSKOS, iss-sh:PersonCategorySKOS .
+
+iss-sh:InjuryTdgTypeSKOS a sh:PropertyShape;
+  era:affectedProperty iss:injuryTdgType;
+  era:affectedClass iss:HumanConsequencesPerPersonCategory;
+  era:scope "local";
+  rdfs:comment "Type of injury relating to human exposure to dangerous goods substances and associated dangerous phenomena."@en;
+  sh:path iss:injuryTdgType;
+  sh:class skos:Concept;
+  sh:property iss-sh:InjuryTdgTypeSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "injuryTdgType: The instance of HumanConsequencesPerPersonCategory has a injuryTdgType value that is not a SKOS concept." .
+
+iss-sh:InjuryTdgTypeSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:injuryTdgType;
+  era:affectedClass iss:HumanConsequencesPerPersonCategory;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/injury-DG-types/InjuryDGTypes>;
+  sh:severity sh:violation;
+  sh:message "injuryTdgType: The instance of HumanConsequencesPerPersonCategory has a injuryTdgType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/injury-DG-types/InjuryDGTypes." .
+
+iss-sh:InjuryTypeSKOS a sh:PropertyShape;
+  era:affectedProperty iss:injuryType;
+  era:affectedClass iss:HumanConsequencesPerPersonCategory;
+  era:scope "local";
+  rdfs:comment "Type of injury in accordance with Directive (EU) 2016/798 and in accordance with the Abreviated Injuriy Scale (AIS)."@en;
+  sh:path iss:injuryType;
+  sh:class skos:Concept;
+  sh:property iss-sh:InjuryTypeSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "injuryType: The instance of HumanConsequencesPerPersonCategory has a injuryType value that is not a SKOS concept." .
+
+iss-sh:InjuryTypeSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:injuryType;
+  era:affectedClass iss:HumanConsequencesPerPersonCategory;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/injury-types/InjuryTypes>;
+  sh:severity sh:violation;
+  sh:message "injuryType: The instance of HumanConsequencesPerPersonCategory has a injuryType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/injury-types/InjuryTypes." .
+
+iss-sh:PersonCategorySKOS a sh:PropertyShape;
+  era:affectedProperty iss:personCategory;
+  era:affectedClass iss:HumanConsequencesPerPersonCategory;
+  era:scope "local";
+  rdfs:comment "Category of person in accordance with the Directive (EU) 2016/798 which is victim of an occurrence."@en;
+  sh:path iss:personCategory;
+  sh:class skos:Concept;
+  sh:property iss-sh:PersonCategorySKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "personCategory: The instance of HumanConsequencesPerPersonCategory has a personCategory value that is not a SKOS concept." .
+
+iss-sh:PersonCategorySKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:personCategory;
+  era:affectedClass iss:HumanConsequencesPerPersonCategory;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/person-categories/PersonCategories>;
+  sh:severity sh:violation;
+  sh:message "personCategory: The instance of HumanConsequencesPerPersonCategory has a personCategory value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/person-categories/PersonCategories." .

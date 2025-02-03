@@ -1,0 +1,275 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@prefix iss-sf: <http://data.europa.eu/949/iss/concepts/systemic-factors/> .
+
+
+
+
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
+
+
+iss-sf:SystemicFactors a skos:ConceptScheme ; 
+    dct:issued "2024-08-29"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
+    rdfs:label "Systemic Conditions"@en ;
+    skos:prefLabel "Systemic Factors"@en ;
+    dct:title "Concept scheme grouping systemic factors applicable to an occurrence"@en .
+
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
+
+iss-sf:SF-1 a skos:Concept;
+  skos:definition "Category with systemic factors that set and maintain the direction in which all the staff are engaged in achieving the organisation�s objectives."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Leadership"@en;
+  skos:topConceptOf iss-sf:SystemicFactors .
+
+iss-sf:SF-1-0 a skos:Concept;
+  skos:broader iss-sf:SF-1;
+  skos:definition "Any systemic factor falling within the category �Leadership�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.1.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other leadership"@en .
+
+iss-sf:SF-1-1 a skos:Concept;
+  skos:broader iss-sf:SF-1;
+  skos:definition "Refers to the need for leaders at all levels to establish unity of purpose and create the conditions of people�s engagement; enabling an organisation to align its strategies; policies; processes and resources to achieve its objectives. You can think of leadership as a relationship through which one person influences the behaviour or actions of other people. And the same when taken at the level of an organisation: influencing how it evolves; develops; etc. In order to manage an organisation effectively and efficiently; it is important to respect and involve all people at all levels: it will facilitate the commitment of people in achieving the organisations� objectives. In the context of a safety management system; leaders shall also demonstrate their own commitment to safety; promoting a positive safety culture; ensuring that the safety risks are under control and the resources needed are made available."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.1.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Leadership and commitment"@en .
+
+iss-sf:SF-1-2 a skos:Concept;
+  skos:broader iss-sf:SF-1;
+  skos:definition "Refers to an official single document describing and communicating the organisation�s safety commitments and principles (ex. legal requirements; continual improvement); together with a series of described practices to actively implement them in the daily operations. This document is established by Top management; appropriate to the organisation's type and extent of railway operations; approved by the organisation's chief executive (or a representative(s) of the Top-management); communicated and made available to all staff. It provides a framework for setting safety objectives and evaluating the organisation's safety performance against these objectives. It has to be maintained in accordance with the business strategy and the evaluation of the safety performance of the organisation."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.1.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Safety Policy"@en .
+
+iss-sf:SF-1-3 a skos:Concept;
+  skos:broader iss-sf:SF-1;
+  skos:definition "Refers to the safety-related tasks; and decision-making powers that are assigned to different individuals or groups within the organisation. These have to be defined at all levels; documented and communicated. The organisation shall ensure that staff with delegated responsibilities for safety-related tasks have the authority; competence and appropriate resources to perform their activities. It also covers the allocation of roles to business functions outside the organisation; where appropriate."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.1.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Organizational roles, responsibilities, accountabilities and authorities"@en .
+
+iss-sf:SF-1-4 a skos:Concept;
+  skos:broader iss-sf:SF-1;
+  skos:definition "Refers to the organisation�s facilitation of the consultation of staff by providing the methods and means for involving staff; recording staff's opinion and providing feedback. Staff; their representatives and external interested parties; as appropriate and where relevant; shall be consulted in developing; maintaining and improving the safety management system in the relevant parts for which they are responsible; including the safety aspects of operational procedures."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.1.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Consultation of staff and other parties"@en .
+
+iss-sf:SF-2 a skos:Concept;
+  skos:definition "Category with systemic factors that identify risks and opportunities; establish safety objectives and identify processes and measures necessary to deliver results in accordance with the organisation�s safety policy."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Planning"@en;
+  skos:topConceptOf iss-sf:SystemicFactors .
+
+iss-sf:SF-2-0 a skos:Concept;
+  skos:broader iss-sf:SF-2;
+  skos:definition "Any systemic factor falling within the category �Planning�; but not covered by any of the sub-categories coded above.  A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.2.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other planning"@en .
+
+iss-sf:SF-2-1 a skos:Concept;
+  skos:broader iss-sf:SF-2;
+  skos:definition "Refers to the steps taken to identify; evaluate; and manage all the operational; organisational and technical risks relevant to the type; extent and area of operations carried out by the organisation. It includes the appropriate risk control measures to eliminate or minimize the risks. It includes the continual monitoring of the risk control measures that have been implemented; and the review of their effectiveness. It includes an effective communication to ensure that all stakeholders are aware of the risks and the measures that have been implemented to manage them. It covers the need to determine; provide and sustain a safe working environment (linked to Directive 89/391/EEC). It also covers the potential safety risks before the implementation of a change; in accordance with the Regulation (EU) 402/2013."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.2.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Actions to address risks"@en .
+
+iss-sf:SF-2-2 a skos:Concept;
+  skos:broader iss-sf:SF-2;
+  skos:definition "Refers to the need to establish safety objectives for relevant functions at relevant levels to maintain and; where reasonably practicable; to improve its safety performance. The safety objectives shall be consistent with the safety policy; be linked to the priority risks; be measurable; be revised; be communicated; etc. Plans are needed to describe how the organisation will achieve its safety objectives; and to describe how this is to be monitored."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.2.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Safety objectives and planning"@en .
+
+iss-sf:SF-3 a skos:Concept;
+  skos:definition "Category with systemic factors that provide the necessary supports for the establishment; implementation; maintenance and continual improvement of the whole safety management system; incl. the management of the safety-related tasks."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Support"@en;
+  skos:topConceptOf iss-sf:SystemicFactors .
+
+iss-sf:SF-3-0 a skos:Concept;
+  skos:broader iss-sf:SF-3;
+  skos:definition "Any systemic factor falling within the category �Support�; but not covered by any of the sub-categories coded above.  A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.3.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other support"@en .
+
+iss-sf:SF-3-1 a skos:Concept;
+  skos:broader iss-sf:SF-3;
+  skos:definition "Refers to all the resources; including competent staff and effective and useable equipment; needed for the establishment; implementation; maintenance and continual improvement of the safety management system.  The organisation also ensures that the necessary resources are provided to its staff to carry out their daily activities safely. This also includes staffing; equipment and documentation. It also refers to all the processes the organisation put in place to identify and provide the adequate resources in time in accordance with safety objectives and planning."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.3.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Resources"@en .
+
+iss-sf:SF-3-2 a skos:Concept;
+  skos:broader iss-sf:SF-3;
+  skos:definition "Refers to the dedicated management system in place to manage the ability of staff to perform activities to the standards expected in employment; with a combination of practical and thinking skills; experience and knowledge. Competency means the skills (technical; functional and non-technical) and underpinning knowledge that enable someone to demonstrate a certain level of competence. A competence management system covers the identification of the competencies required for safety-related tasks; the selection principles (basic educational level; psychological and physical fitness required); the initial training; experience and qualification; and the ongoing training and periodic update of existing competencies; the periodic assessment of competence and checks of psychological and physical; fitness; to ensure that qualifications and skills are maintained over time. It also includes any specific training in relevant parts of the safety management system in order to deliver safety-related tasks. The organisation shall provide training and all the records; regularly review; audit; and change the training when necessary. Back to work arrangements shall also be in place."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.3.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Competence"@en .
+
+iss-sf:SF-3-3 a skos:Concept;
+  skos:broader iss-sf:SF-3;
+  skos:definition "Refers both what is awareness and how it is organised. Awareness is attained when staff understand their responsibilities and how their actions contribute to the achievement of the organisation�s objectives. It is organised by the top management who shall ensure that they and their staff having a role that affects safety are aware of the relevance; importance and consequences of their activities and how they contribute to the correct application and the effectiveness of the safety management system; including the achievement of safety objectives."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.3.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Awareness"@en .
+
+iss-sf:SF-3-4 a skos:Concept;
+  skos:broader iss-sf:SF-3;
+  skos:definition "Refers to the safety related information at different levels; communicated at the right time and to the right people including the external interested parties; with adequate channels; and with several quality criteria (relevant; complete; understandable; understood; etc.). It includes the management of this activity with the identification; receipt; processing; etc. of safety-related information."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.3.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Information and communication"@en .
+
+iss-sf:SF-3-5 a skos:Concept;
+  skos:broader iss-sf:SF-3;
+  skos:definition "Refers to all the safety-related information required to be created; controlled; updated and maintained by an organisation; its formats; and the media on which it is contained. It concerns the description of the safety management system: processes and activities related to safety of rail operations and associated responsibilities; their interaction; the description of how they are implemented; including all contractual arrangements; etc. It also concerns the submission of an annual safety report to the relevant authorities."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.3.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Documented information"@en .
+
+iss-sf:SF-3-6 a skos:Concept;
+  skos:broader iss-sf:SF-3;
+  skos:definition "Refers to a systematic approach to integrating human and organisational factors within the safety management system. It includes the development of a strategy and the use of expertise and recognised methods from the field of human and organisational factors. It includes addressing the risks associated with the design and use of equipment; tasks; working conditions and organisational arrangements; taking into account human capabilities as well as limitations; and the influences on human performance. The human and organisational factors are all the human performance characteristics and organisational aspects that must be considered to ensure the lifelong safety and effectiveness of a system or organisation."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.3.6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Integration of human and organizational factors"@en .
+
+iss-sf:SF-4 a skos:Concept;
+  skos:definition "Category with systemic factors that develop; implement and apply the processes and measures as planned; in accordance with the organisation�s safety policy and the organisation�s objectives."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Operation"@en;
+  skos:topConceptOf iss-sf:SystemicFactors .
+
+iss-sf:SF-4-0 a skos:Concept;
+  skos:broader iss-sf:SF-4;
+  skos:definition "Any systemic factor falling within the category �Operation�; but not covered by any of the sub-categories coded above.  A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.4.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other operation"@en .
+
+iss-sf:SF-4-1 a skos:Concept;
+  skos:broader iss-sf:SF-4;
+  skos:definition "Refers to the ultimate aim to plan safe operation: the relevant processes of the safety management system should support the control of operational risks including making sure that staff understand their roles; the risks they face; what the control measures are and that they have the appropriate competence and training to perform their tasks; consistently with the applicable procedures for the service to be delivered; in normal; degraded and emergency conditions.. It also specifically refers to the assurance that the vehicles or the infrastructure is/are operated safely in accordance with the applicable requirements under different operating conditions (i.e. normal; degraded and emergency); including the use of assets for testing purposes (e.g. testing of running behaviours of vehicles before authorisation is granted) and in exceptional circumstances."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.4.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Operational planning and control"@en .
+
+iss-sf:SF-4-2 a skos:Concept;
+  skos:broader iss-sf:SF-4;
+  skos:definition "Refers to the approach used by an organisation to ensure that physical assets remain safe; fit-for-purpose; and commercially viable from design and construction; throughout its life cycle; to decommissioning; and fulfil the human factors requirements in all phases of its life cycle. It also covers where relevant the supply of maintenance; the control of information and communication for the safe management of the assets within the organisation or with external entities; and the traceability of all necessary information."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.4.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Asset Management"@en .
+
+iss-sf:SF-4-3 a skos:Concept;
+  skos:broader iss-sf:SF-4;
+  skos:definition "Refers to the identification and control safety risks arising from outsourced activities; including operations or cooperation with contractors; partners and suppliers. It includes the need for defining the criteria for the selection of the contractors; partners and suppliers and the contract requirements they have to meet. It also includes the need for monitoring the safety performance of all activities and operations of contractors; partners and suppliers to ensure that they comply with the requirements set out in the contract; and their awareness of safety risks they have for the organisation's operations."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.4.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Contractors, partners and suppliers"@en .
+
+iss-sf:SF-4-4 a skos:Concept;
+  skos:broader iss-sf:SF-4;
+  skos:definition "Refers to the need for an organisation to implement and control the changes it makes to the safety management system to maintain or improve the safety performance. This includes decisions at the different stages of the change management and the subsequent review of safety risks."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.4.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Management of change"@en .
+
+iss-sf:SF-4-5 a skos:Concept;
+  skos:broader iss-sf:SF-4;
+  skos:definition "Refers to the identification of the emergency situations and associated timely measures to be taken to manage them and to re-establish normal operating conditions. It includes all the plans; information and alerts being prepared; updated and continuously available; by internal and other external interested parties. It includes that tests or simulation regularly made; among other to ensure that competent staff are in charge with adequate communication and language skills; and to ensure a rapid and efficient coordination between all RUs; IMs and emergency services."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.4.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Emergency management"@en .
+
+iss-sf:SF-5 a skos:Concept;
+  skos:definition "A category of systemic factors that allow the monitoring and auditing of implemented processes in relation to objectives; planning and resources; and the reporting of their results; thus making managerial review possible."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Performance evaluation"@en;
+  skos:topConceptOf iss-sf:SystemicFactors .
+
+iss-sf:SF-5-0 a skos:Concept;
+  skos:broader iss-sf:SF-5;
+  skos:definition "Any systemic factor falling within the category �Performance evaluation�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.5.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other performance evaluation"@en .
+
+iss-sf:SF-5-1 a skos:Concept;
+  skos:broader iss-sf:SF-5;
+  skos:definition "Refers to the arrangements put in place by railway undertakings; infrastructure managers or entities in charge of maintenance to check if their management system is correctly applied and effective. When it is not the case; the organisation shall identify; implement and evaluate the effectiveness of the corrective measures. It shall also regularly monitor at all levels within the organisation the performance of safety-related tasks and intervene if these tasks are not being properly performed."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.5.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Monitoring"@en .
+
+iss-sf:SF-5-2 a skos:Concept;
+  skos:broader iss-sf:SF-5;
+  skos:definition "Refers to the independent; impartial and transparent way of collecting and analysing information for the purpose of an organisation's control activities. It is a systematic and documented process for obtaining audit evidence and evaluating it objectively to determine the extent to which the audit criteria are fulfilled. Among other requirements; the organisation needs to put in place a schedule of planned audits; an identification � selection � and training of competent auditors; and for each audit an identification of the need for corrective or improvement measures and their completion and effectiveness."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.5.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Internal auditing"@en .
+
+iss-sf:SF-5-3 a skos:Concept;
+  skos:broader iss-sf:SF-5;
+  skos:definition "Refers to a specific and regular series of top management activities which consist in reviewing the continuing adequacy and effectiveness of the safety management system. It needs among others to consider the outputs of previous review; the changing internal and external contexts; the organisation�s safety performance; and any recommendations for improvement. Based on the outputs of its management review; the top management shall take overall responsibility for the planning and implementation of needed changes to the safety management system."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.5.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Management review"@en .
+
+iss-sf:SF-6 a skos:Concept;
+  skos:definition "Category with systemic factors that makes recurrent the activities enhancing the safety performance and ensuring an improvement of the safety management system."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Improvement"@en;
+  skos:topConceptOf iss-sf:SystemicFactors .
+
+iss-sf:SF-6-0 a skos:Concept;
+  skos:broader iss-sf:SF-6;
+  skos:definition "Any systemic factor falling within the category �Improvement�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.6.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other improvement"@en .
+
+iss-sf:SF-6-1 a skos:Concept;
+  skos:broader iss-sf:SF-6;
+  skos:definition "Refers to the organisation's use of investigation information to review risk assessment; to learn lessons to improve safety and; where appropriate; to take corrective and/or improvement action. This includes the need to report; record; investigate and analyse to determine the causes of accidents and incidents related to the organisation's railway operations. These causes refer to causal factors; contributing factors and systemic factors. This factor also refers to the evaluation and implementation (if appropriate or mandated) of recommendations from the national safety authority; the national investigating body; and from other industry/internal investigations; or relevant reports from other interested parties such as railway undertakings; infrastructure managers; entities in charge of maintenance and railway vehicle keepers."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.6.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Learning from accidents and incidents"@en .
+
+iss-sf:SF-6-2 a skos:Concept;
+  skos:broader iss-sf:SF-6;
+  skos:definition "Refers to three series of activities in the context of a safety management system. First; the organisation shall continually improve the adequacy and effectiveness of its safety management system. Second; the organisation shall provide means to motivating staff and other interested parties to be active in improving safety as part of its organisational learning. And third; it shall provide a strategy to continually improve its safety culture; relying on the use of expertise and recognised methods to identify behavioural issues affecting the different parts of the safety management system and to put in place measures to address these."@en;
+  skos:inScheme iss-sf:SystemicFactors;
+  skos:notation "SF.6.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Continual improvement"@en .
