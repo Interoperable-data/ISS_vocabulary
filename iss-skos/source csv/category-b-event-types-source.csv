@@ -1,0 +1,81 @@
+Id,Code,Name,Definition,Broader
+B-1,B.1,Operation failures,An operation failure event falling within the B.1 sub-categories for which detailed information is not (yet) available.,B
+B-1-1,B.1.1,Failure to operate the infrastructure,A failure to operate the infrastructure falling within the B.1.1 sub-categories for which detailed information is not (yet) available.,B-1
+B-1-1-1,B.1.1.1,Improper routing,Any occasion when a train/vehicle is directed on a route that was not planned.,B-1-1
+B-1-1-2,B.1.1.2,On track plant incorrectly outside possession,On track machine(s) or other object(s) used during infrastructure activities positioned outside the authorised area,B-1-1
+B-1-1-3,B.1.1.3,Pushed switch,Any occasion when a switch in a wrong position is run over in trailing direction (converging points) unintentionally.,B-1-1
+B-1-1-4,B.1.1.4,Long stop in tunnel,Any occasion when a passenger train is stopped in a tunnel for more than 10 minutes. Stops in underground stations should be excluded.,B-1-1
+B-1-1-0,B.1.1.0,Other failure to operate the infrastructure,"Any occasion falling within the category ‘failure to operate the infrastructure’, but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply. ",B-1-1
+B-1-2,B.1.2,Failure to operate a train or rail vehicle,A failure to operate a train or rail vehicle falling within the B.1.2 sub-categories for which detailed information is not (yet) available.,B-1
+B-1-2-1,B.1.2.1,Signal passed at danger with passing of a danger point,Any occasion when any part of a train or rail vehicle proceeds beyond its authorised movement and travels beyond the danger point.,B-1-2
+B-1-2-2,B.1.2.2,Signal passed at danger without passing a danger point,Any occasion when any part of a train or rail vehicle proceeds beyond its authorised movement but does not travel beyond the danger point,B-1-2
+B-1-2-3,B.1.2.3,Runaway,Any uncontrolled movement of a train or rail vehicle over a distance of at least one meter.,B-1-2
+B-1-2-4,B.1.2.4,Over-speeding,Any occasion when a train runs with a speed higher than the maximum authorized speed or design speed.,B-1-2
+B-1-2-5,B.1.2.5,Loading irregularity,Any situation in which goods are improperly loaded (not in accordance with the applicable safety requirements),B-1-2
+B-1-2-6,B.1.2.6,Train composition Failure,Any situation in which a train composition does not respect the applicable safety requirements. It excludes all events already covered by other category B events (e.g. 'Brake not correctly set for load’ or ‘Failure of the braking system’).,B-1-2
+B-1-2-7,B.1.2.7,Train available for boarding or alignment outside platform,When this situation is taking place unintentionally or without specific RU procedure to be followed,B-1-2
+B-1-2-8,B.1.2.8,Person entrapment in door,,B-1-2
+B-1-2-9,B.1.2.9,Train running with open door,Any situation in which a train departs or runs with an unsupervised open door,B-1-2
+B-1-2-10,B.1.2.10,Long stop in tunnel,Any occasion when a passenger train is stopped in a tunnel for more than 10 minutes. Stops in underground stations should be excluded.,B-1-2
+B-1-2-11,B.1.2.11,Severe brake,Any situation in which a brake application by the driver is exceeding applicable limits,B-1-2
+B-1-2-12,B.1.2.12,Brake not correctly set for load,,B-1-2
+B-1-2-0,B.1.2.0,Other failure to operate a train or rail vehicle,"Any occasion falling within the category ‘failure to operate a train or rail vehicle’, but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply.",B-1-2
+B-1-0,B.1.0,Other un-coded operation failure,"Any occasion falling within the category 'operation failures', but not covered by the categories ‘failure to operate the infrastructure’ and ‘failure to operate a train or rail vehicle’. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply.",B-1
+B-2,B.2,Technical Failure of the rolling stock,A technical failure of the rolling stock falling within the B.2 sub-categories for which detailed information is not (yet) available.,B
+B-2-1,B.2.1,Failure of the wheelset,A failure of the wheelset falling within the B.2.1 sub-categories for which detailed information is not (yet) available.,B-2
+B-2-1-1,B.2.1.1,Broken wheel on rolling stock,A crack/defect affecting the wheel and exceeding the applicable limits.  Note: this category excludes broken wheels resulting from hot wheels,B-2-1
+B-2-1-2,B.2.1.2,Broken axle on rolling stock,A crack/defect affecting the axle and exceeding the applicable limits.  Note: this category excludes broken axles resulting from hot axles boxes.,B-2-1
+B-2-1-3,B.2.1.3,Hot axle box and/or hot wheel,Any situation in which the axle and/or the wheel temperature goes outside  the defined range for normal operations (including when it results in damage to the wheel or axle).,B-2-1
+B-2-1-4,B.2.1.4,Failure of the bogie ,Any situation in which a failure of the bogie is detected. Note: this category excludes failure of the suspension system.,B-2-1
+B-2-1-5,B.2.1.5,Suspension system failure,,B-2-1
+B-2-1-0,B.2.1.0,Other failure of the wheelset,"Any occasion falling within the category ‘failure of the wheelset’, but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply.",B-2-1
+B-2-2,B.2.2,Failure of the braking system, A failure of the braking system event falling within the B.2.2 sub-categories for which detailed information is not (yet) available.,B2
+B-2-2-1,B.2.2.1,Brake not operating with the planned performance,,B-2-2
+B-2-2-0,B.2.2.0,Other failure of the braking system,"Any occasion falling within the category ‘failure of the braking system’, but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply.",B-2-2
+B-2-0,B.2.0,Other failures of the rolling stock,Other failure of the rolling stock falling within the B.2.0 sub-categories for which detailed information is not (yet) available.,B-2
+B-2-0-1,B.2.0.1,Wrong side signalling (on-board) failure,"Any technical failure of a signalling system (on-board), resulting in signalling a safety related information less restrictive than that demanded. ",B-2-0
+B-2-0-2,B.2.0.2,Odometry error,Any technical failure of the on-board system to estimate changes in train position over time,B-2-0
+B-2-0-3,B.2.0.3,Train detection equipment failure (on-board),,B-2-0
+B-2-0-4,B.2.0.4,Losing of rolling stock parts,Any situation when a rolling stock part detaches and falls on the ground.,B-2-0
+B-2-0-5,B.2.0.5,Traction motor failure (electrical),,B-2-0
+B-2-0-6,B.2.0.6,Diesel engine failure,,B-2-0
+B-2-0-7,B.2.0.7,Coupling failure,Any situation in which the railway vehicles detach as a result of a technical .failure.,B-2-0
+B-2-0-8,B.2.0.8,Doors failure,Any situation involving a technical malfunctioning of the doors,B-2-0
+B-2-0-9,B.2.0.9,Loss of ventilation,"Any situation involving a technical malfunctioning of the on-board ventilation system.  Note: for example, a loss of ventilation in a train compromising fire management plan, potentially leading to victims or damage",B-2-0
+B-2-0-10,B.2.0.10,Twisted underframe,,B-2-0
+B-2-0-0,B.2.0.0,Other un-coded technical failure of the rolling stock,"Any occasion falling within the category ‘technical failure of the rolling stock ', but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply.",B-2-0
+B-3,B.3,Technical Failure of the infrastructure,A technical failure of the infrastructure falling within the B.3 sub-categories for which detailed information is not (yet) available.,B
+B-3-1,B.3.1,Failure of the track,A failure of the track falling within the B.3.1 sub-categories for which detailed information is not (yet) available.,B-3
+B-3-1-1,B.3.1.1,Broken rail,"Any rail which is separated in two or more pieces, or any rail from which a piece of metal becomes detached, causing a gap of more than 50 mm in length and more than 10 mm in depth on the running surface.",B-3-1
+B-3-1-2,B.3.1.2,Track buckle and other track misalignment,"Any fault related to the continuum and the geometry of track, requiring track to be placed out of service or immediate restriction of permitted speed",B-3-1
+B-3-1-2-1,B.3.1.2.1,Gauge spread,,B-3-1-2
+B-3-1-2-2,B.3.1.2.2,Track twist,,B-3-1-2
+B-3-1-2-3,B.3.1.2.3,Improper rail fastening and joints,,B-3-1-2
+B-3-1-2-0,B.3.1.2.0,Other track buckle and track misalignment,,B-3-1-2
+B-3-1-3,B.3.1.3,Wrong side signalling (infrastructure) failure,"Any technical failure of a signalling system (infrastructure), resulting in signalling safety related information less restrictive than that demanded. ",B-3-1
+B-3-1-4,B.3.1.4,Switch and crossing failure,,B-3-1
+B-3-1-5,B.3.1.5,Failure of the level crossing equipment,Any occasion when a train or rail vehicle passes over a level crossing with lower protection level than required.,B-3-1
+B-3-1-0,B.3.1.0,Other failure of the track,"Any occasion falling within the category ‘failure of the track’, but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply.",B-3-1
+B-3-2,B.3.2,Structures failure, A structures failure event falling within the B.3.2 sub-categories for which detailed information is not (yet) available.,B-3
+B-3-2-1,B.3.2.1,Tunnel failure,,B-3-2
+B-3-2-2,B.3.2.2,Viaduct failure,,B-3-2
+B-3-2-3,B.3.2.3,Culvert failures,,B-3-2
+B-3-2-4,B.3.2.4,Rail bridge structural failure,,B-3-2
+B-3-2-5,B.3.2.5,Over line bridge (e.g. pedestrian) failure,,B-3-2
+B-3-2-6,B.3.2.6,Station (building) Structure failure,,B-3-2
+B-3-2-7,B.3.2.7,Platform failure,,B-3-2
+B-3-2-8,B.3.2.8,Disorder of earthworks/embankment failure,,B-3-2
+B-3-2-0,B.3.2.0,Other structures failure,"Any occasion falling within the category ‘structures failure’, but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply.",B-3-2
+B-3-0,B.3.0,Other failures of the infrastructure,Other failure of the infrastructure falling within the B.3.0 sub-categories for which detailed information is not (yet) available.,B-3
+B-3-0-1,B.3.0.1,Power supply equipment failure,,B-3-0
+B-3-0-2,B.3.0.2,Train detection equipment failure (trackside),,B-3-0
+B-3-0-3,B.3.0.3,Overhead contact line failure,,B-3-0
+B-3-0-4,B.3.0.4,Loss of ventilation,"Any situation involving a technical malfunctioning of the ventilation system in a tunnel or in a station. Note: for example, a loss of tunnel ventilation compromising fire management plan, potentially leading to victims or damage",B-3-0
+B-3-0-0,B.3.0.0,Other un-coded technical failure of the infrastructure,"Any occasion falling within the category ‘technical failure of the infrastructure’, but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply.",B-3-0
+B-0,B.0,Other category B event types, Other category B event falling within the B.0 sub-categories for which detailed information is not (yet) available.,B
+B-0-1,B.0.1,Fire in proximity of rail infrastructure,"Any occasion in which a fire is taking place in proximity of rail infrastructure, affecting the integrity of the infrastructure or the operations.",B-0
+B-0-2,B.0.2,Unauthorised presence of staff/employees on railway system,Any occasion in which the unauthorised presence of staff/employees (i.e. not in accordance with the applicable requirements) is detected. This also includes sub-contractor staff.,B-0
+B-0-3,B.0.3,Unauthorised presence of other third parties on the railway system,Any occasion in which the unauthorised presence of third parties on the railway system (i.e. not in accordance with the applicable requirements) is detected.,B-0
+B-0-4,B.0.4,Improper or incautious use of authorised passages between platforms in the stations,Any occasion in which the improper or incautious use by persons of authorised passages between platforms in the stations is detected,B-0
+B-0-5,B.0.5,Dangerous goods incidents not related to another type B event,"Any incident involving dangerous goods to be reported in accordance with section 1.8.5 of ‘RID’ (as referred to in Annex II.1 to Directive 2008/68/EC, as amended) and not covered by another type B event.",B-0
+B-0-0,B.0.0,Other  un-coded category B event types,Any other category B event type not covered by any of the category or sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply.,B-0

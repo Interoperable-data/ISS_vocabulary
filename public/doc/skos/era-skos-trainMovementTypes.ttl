@@ -22,6 +22,7 @@
 
 iss-tmt:TrainMovementTypes a skos:ConceptScheme ; 
     dct:issued "2024-04-04"^^xsd:date ;
+    dct:modified "2024-09-03"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
     rdfs:label "Train Movement Types"@en ;
@@ -37,30 +38,26 @@ iss-tmt:TrainMovementTypes a skos:ConceptScheme ;
 #################################################################
 iss-tmt:Carrying
         rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Carrying-Moving" .
+        skos:prefLabel  "Carrying-Moving"@en .
 
 iss-tmt:Stationary
         rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Carrying-Stationary" .
+        skos:prefLabel  "Carrying-Stationary"@en .
 
 iss-tmt:Shunting
         rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Shunting" .
-
-iss-tmt:OtherTypeOfMovement
-        rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Other type of movement" .
+        skos:prefLabel  "Shunting"@en .
 
 iss-tmt:Loading
         rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Loading" .
+        skos:prefLabel  "Loading"@en .
 
 iss-tmt:Unloading
         rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Unloading" .
+        skos:prefLabel  "Unloading"@en .
 
 iss-tmt:Filling  rdf:type  skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;
-        skos:prefLabel  "Filling" .
+        skos:prefLabel  "Filling"@en .
 
 iss-tmt:Emptying
         rdf:type        skos:Concept ;         skos:inScheme iss-tmt:TrainMovementTypes;         skos:topConceptOf iss-tmt:TrainMovementTypes;

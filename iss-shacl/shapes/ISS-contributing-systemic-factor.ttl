@@ -1,0 +1,72 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:ContributingSystemicFactorShape 
+    a sh:NodeShape ;
+    sh:targetClass iss:ContributingSystemicFactor.
+
+iss-sh:ContributingSystemicFactorShape sh:property iss-sh:ContributingSystemicFactorNarrative.
+
+iss-sh:ContributingSystemicFactorNarrative a sh:PropertyShape;
+  era:affectedProperty iss:contributingSystemicFactorNarrative;
+  era:affectedClass iss:ContributingSystemicFactor;
+  era:scope "local";
+  rdfs:comment "Contributing systemic factor narrative"@en ;
+  sh:path iss:contributingSystemicFactorNarrative;
+  sh:datatype xsd:string;
+  sh:severity sh:violation;
+  sh:message "contributingSystemicFactorNarrative: Each contributing or systemic factor instance may have contributingSystemicFactorNarrative that is a string. This error is due to having a value that is not a string."@en .
+
+# SKOS
+iss-sh:ContributingSystemicFactorShape sh:property iss-sh:ContributingFactorSKOS,
+    iss-sh:SystemicFactorSKOS .
+
+iss-sh:ContributingFactorSKOS a sh:PropertyShape;
+  era:affectedProperty iss:contributingFactor;
+  era:affectedClass iss:ContributingSystemicFactor;
+  era:scope "local";
+  rdfs:comment """‘contributing factor’ means a contributing factor as defined in Article 2, point (2) of Commission Implementing Regulation (EU) 2020/5721, i.e means any action, omission, event or condition that affects an occurrence by increasing its likelihood, accelerating the effect in time or increasing the severity of the consequences, but the elimination of which would not have prevented the occurrence.
+
+In the context of CDR (EU) 2024/xxxx, applicable list of contributing factors is defined in Annex I, Part C, Appendix 2."""@en;
+  sh:path iss:contributingFactor;
+  sh:class skos:Concept;
+  sh:property iss-sh:ContributingFactorSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "contributingFactor: The instance of ContributingSystemicFactor has a contributingFactor value that is not a SKOS concept."@en .
+
+iss-sh:ContributingFactorSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:contributingFactor;
+  era:affectedClass iss:ContributingSystemicFactor;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/contributing-factors/ContributingFactors>;
+  sh:severity sh:violation;
+  sh:message "contributingFactor: The instance of ContributingSystemicFactor has a contributingFactor value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/contributing-factors/ContributingFactors."@en .
+
+iss-sh:SystemicFactorSKOS a sh:PropertyShape;
+  era:affectedProperty iss:systemicFactor;
+  era:affectedClass iss:ContributingSystemicFactor;
+  era:scope "local";
+  rdfs:comment "Systemic factors applicable to a given occurrence or to the failure of a risk control measure in accordance with the applicable list of factors defined in CDR (EU) 2024/xxxx, Annex I, Part C, Appendix 3."@en;
+  sh:path iss:systemicFactor;
+  sh:class skos:Concept;
+  sh:property iss-sh:SystemicFactorSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "systemicFactor: The instance of ContributingSystemicFactor has a systemicFactor value that is not a SKOS concept."@en .
+
+iss-sh:SystemicFactorSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:systemicFactor;
+  era:affectedClass iss:ContributingSystemicFactor;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/systemic-factors/SystemicFactors>;
+  sh:severity sh:violation;
+  sh:message "systemicFactor: The instance of ContributingSystemicFactor has a systemicFactor value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/systemic-factors/SystemicFactors."@en .

@@ -1,0 +1,321 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:RiskControlMeasureShape
+	a sh:NodeShape ;
+    sh:targetClass iss:RiskControlMeasure.
+
+iss-sh:RiskControlMeasureShape sh:property iss-sh:RiskControlMeasureName, iss-sh:SupportingDocumentEffectedEffectiveness, iss-sh:SupportingDocumentMeasuringMonitoring, iss-sh:SupportingDocumentResourcesManagement, iss-sh:RiskAnalysis, iss-sh:RiskControlMeasureAim, iss-sh:RiskControlMeasureExpectedEffectiveness, iss-sh:RiskControlMeasureId, iss-sh:AdditionalExplanationRiskControlMeasureThreats, iss-sh:ResourcesMaintenance, iss-sh:ResourcesOperation, iss-sh:ResourcesSettingUp, iss-sh:MeasuringMonitoring, iss-sh:AdditionalExplanationResourcesManagement, iss-sh:AdditionalExplanationRiskControlMeasureEffectedEffectiveness, iss-sh:AdditionalExplanationRiskControlMeasureNormalFunctioning .
+
+iss-sh:RiskControlMeasureExpectedEffectiveness
+  sh:message "riskControlMeasureExpectedEffectiveness: Each risk control measure may have riskControlMeasureExpectedEffectiveness that is a float. This error is due to having a value that is not a float."@en;
+  era:affectedClass iss:RiskControlMeasure ;
+  sh:datatype xsd:float ;
+  era:scope "local";
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:riskControlMeasureExpectedEffectiveness ;
+  sh:path iss:riskControlMeasureExpectedEffectiveness .
+
+iss-sh:RiskAnalysis
+  sh:datatype xsd:string ;
+  sh:path iss:riskAnalysis ;
+  era:affectedClass iss:RiskControlMeasure ;
+  sh:message "riskAnalysis: Each risk control measure may have riskAnalysis that is a string. This error is due to having a value that is not a string."@en;
+  era:scope "local";
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:riskAnalysis .
+
+iss-sh:ResourcesSettingUp
+  sh:path iss:resourcesSettingUp ;
+  era:affectedClass iss:RiskControlMeasure ;
+  era:scope "local";
+  sh:message "resourcesSettingUp: Each risk control measure may have resourcesSettingUp that is a float. This error is due to having a value that is not a float."@en;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:resourcesSettingUp ;
+  sh:severity sh:violation ;
+  sh:datatype xsd:float .
+
+iss-sh:RiskControlMeasureAim
+  sh:path iss:riskControlMeasureAim ;
+  era:affectedClass iss:RiskControlMeasure ;
+  sh:message "riskControlMeasureAim: Each risk control measure may have riskControlMeasureAim that is a string. This error is due to having a value that is not a string."@en;
+  era:scope "local";
+  sh:severity sh:violation ;
+  era:affectedProperty iss:riskControlMeasureAim ;
+  a sh:PropertyShape ;
+  sh:datatype xsd:string .
+
+iss-sh:ResourcesOperation
+  sh:path iss:resourcesOperation ;
+  era:affectedClass iss:RiskControlMeasure ;
+  era:scope "local";
+  sh:message "resourcesOperation: Each risk control measure may have resourcesOperation that is a float. This error is due to having a value that is not a float."@en;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:resourcesOperation ;
+  sh:severity sh:violation ;
+  sh:datatype xsd:float .
+
+iss-sh:RiskControlMeasureId
+  era:affectedClass iss:RiskControlMeasure ;
+  sh:message "riskControlMeasureId: Each risk control measure may have riskControlMeasureId that is a string. This error is due to having a value that is not a string."@en;
+  era:scope "local";
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:riskControlMeasureId ;
+  sh:datatype xsd:string ;
+  sh:path iss:riskControlMeasureId .
+
+iss-sh:SupportingDocumentMeasuringMonitoring
+  sh:message "supportingDocumentMeasuringMonitoring: Each risk control measure may have supportingDocumentMeasuringMonitoring that is a anyURI. This error is due to having a value that is not a anyURI."@en;
+  era:affectedClass iss:RiskControlMeasure ;
+  era:scope "local";
+  sh:datatype xsd:anyURI ;
+  sh:path iss:supportingDocumentMeasuringMonitoring ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:supportingDocumentMeasuringMonitoring ;
+  a sh:PropertyShape .
+
+iss-sh:RiskControlMeasureName
+  sh:datatype xsd:string ;
+  sh:path iss:riskControlMeasureName ;
+  era:affectedClass iss:RiskControlMeasure ;
+  era:scope "local";
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:riskControlMeasureName ;
+  sh:message "riskControlMeasureName: Each risk control measure may have riskControlMeasureName that is a string. This error is due to having a value that is not a string"@en.
+
+iss-sh:MeasuringMonitoring
+  sh:message "measuringMonitoring: Each risk control measure may have measuringMonitoring that is a string. This error is due to having a value that is not a string."@en;
+  sh:datatype xsd:string ;
+  era:affectedProperty iss:measuringMonitoring ;
+  era:affectedClass iss:RiskControlMeasure ;
+  a sh:PropertyShape ;
+  sh:path iss:measuringMonitoring ;
+  rdfs:comment "Description of leading and/or lagging indicators"@en ;
+  era:scope "local";
+  sh:severity sh:violation .
+
+iss-sh:SupportingDocumentEffectedEffectiveness
+  sh:message "supportingDocumentEffectedEffectiveness: Each risk control measure may have supportingDocumentEffectedEffectiveness that is a anyURI. This error is due to having a value that is not a anyURI."@en;
+  sh:datatype xsd:anyURI ;
+  era:affectedClass iss:RiskControlMeasure ;
+  era:scope "local";
+  sh:severity sh:violation ;
+  era:affectedProperty iss:supportingDocumentEffectedEffectiveness ;
+  a sh:PropertyShape ;
+  sh:path iss:supportingDocumentEffectedEffectiveness .
+
+iss-sh:AdditionalExplanationRiskControlMeasureNormalFunctioning
+  sh:datatype xsd:string ;
+  era:affectedClass iss:RiskControlMeasure ;
+  era:affectedProperty iss:additionalExplanationRiskControlMeasureNormalFunctioning ;
+  a sh:PropertyShape ;
+  sh:message "additionalExplanationRiskControlMeasureNormalFunctioning: Each risk control measure may have additionalExplanationRiskControlMeasureNormalFunctioning that is a string. This error is due to having a value that is not a string."@en;
+  era:scope "local";
+  sh:path iss:additionalExplanationRiskControlMeasureNormalFunctioning ;
+  sh:severity sh:violation .
+
+iss-sh:AdditionalExplanationRiskControlMeasureEffectedEffectiveness
+  sh:datatype xsd:string ;
+  era:affectedClass iss:RiskControlMeasure ;
+  era:affectedProperty iss:additionalExplanationRiskControlMeasureEffectedEffectiveness ;
+  a sh:PropertyShape ;
+  era:scope "local";
+  sh:message "additionalExplanationRiskControlMeasureEffectedEffectiveness: Each risk control measure may have additionalExplanationRiskControlMeasureEffectedEffectiveness that is a string. This error is due to having a value that is not a string."@en;
+  sh:path iss:additionalExplanationRiskControlMeasureEffectedEffectiveness ;
+  sh:severity sh:violation .
+
+iss-sh:SupportingDocumentResourcesManagement
+  era:affectedClass iss:RiskControlMeasure ;
+  era:scope "local";
+  sh:datatype xsd:anyURI ;
+  sh:path iss:supportingDocumentResourcesManagement ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:supportingDocumentResourcesManagement ;
+  sh:message "supportingDocumentResourcesManagement: Each risk control measure may have supportingDocumentResourcesManagement that is a anyURI. This error is due to having a value that is not a anyURI."@en;
+  a sh:PropertyShape .
+
+iss-sh:AdditionalExplanationResourcesManagement
+  sh:datatype xsd:string ;
+  era:affectedClass iss:RiskControlMeasure ;
+  era:affectedProperty iss:additionalExplanationResourcesManagement ;
+  a sh:PropertyShape ;
+  era:scope "local";
+  sh:path iss:additionalExplanationResourcesManagement ;
+  sh:message "additionalExplanationResourcesManagement: Each risk control measure may have additionalExplanationResourcesManagement that is a string. This error is due to having a value that is not a string."@en;
+  sh:severity sh:violation .
+
+iss-sh:AdditionalExplanationRiskControlMeasureThreats
+  sh:message "additionalExplanationRiskControlMeasureThreats: Each risk control measure may have additionalExplanationRiskControlMeasureThreats that is a string. This error is due to having a value that is not a string."@en;
+  era:affectedProperty iss:additionalExplanationRiskControlMeasureThreats ;
+  sh:datatype xsd:string ;
+  era:affectedClass iss:RiskControlMeasure ;
+  era:scope "local";
+  a sh:PropertyShape ;
+  sh:path iss:additionalExplanationRiskControlMeasureThreats ;
+  sh:severity sh:violation .
+
+iss-sh:ResourcesMaintenance
+  era:affectedClass iss:RiskControlMeasure ;
+  era:scope "local";
+  a sh:PropertyShape ;
+  sh:message "resourcesMaintenance: Each risk control measure may have resourcesMaintenance that is a float. This error is due to having a value that is not a float."@en;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:resourcesMaintenance ;
+  sh:path iss:resourcesMaintenance ;
+  sh:datatype xsd:float .
+
+iss-sh:RiskControlMeasure sh:property iss-sh:HasRiskControlMeasureFunction .
+
+iss-sh:HasRiskControlMeasureFunction
+  sh:class iss:RiskControlMeasureFunction ;
+  sh:path iss:hasRiskControlMeasureFunction ;
+  era:scope "local";
+  era:affectedClass iss:RiskControlMeasure ;
+  era:affectedProperty iss:hasRiskControlMeasureFunction ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  sh:message "hasRiskControlMeasureFunction: The risk control measure has a hasRiskControlMeasureFunction that must be a RiskControlMeasureFunction."@en;
+  rdfs:comment "Relates the risk control mesure with the risk control measure functions."@en .
+
+# SKOS
+iss-sh:IntroducesThreatToNewEventSKOS
+  era:affectedClass iss:RiskControlMeasure ;
+  era:affectedProperty iss:introducesThreatToNewEvent ;
+  era:scope "local";
+  sh:path iss:introducesThreatToNewEvent ;
+  a sh:PropertyShape ;
+  sh:property iss-sh:IntroducesThreatToNewEventSKOSinScheme ;
+  sh:message "introducesThreatToNewEvent: The instance of RiskControlMeasure has a introducesThreatToNewEvent value that is not a SKOS concept."@en;
+  sh:severity sh:violation ;
+  sh:class skos:Concept .
+
+iss-sh:IntroducesThreatOfEventOccurrenceSKOSinScheme
+  era:scope "local";
+  a sh:PropertyShape ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> ;
+  era:affectedProperty iss:introducesThreatOfEventOccurrence ;
+  sh:message "introducesThreatOfEventOccurrence: The instance of RiskControlMeasure has a introducesThreatOfEventOccurrence value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes."@en;
+  sh:severity sh:violation ;
+  era:affectedClass iss:RiskControlMeasure ;
+  sh:path skos:inScheme .
+
+iss-sh:RiskControlMeasureFunctionSKOSinScheme
+  era:affectedProperty iss:riskControlMeasureFunction ;
+  sh:message "riskControlMeasureFunction: The instance of RiskControlMeasure has a riskControlMeasureFunction value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-measure-function-types/RiskControlMeasureFunctionTypes."@en;
+  era:scope "local";
+  a sh:PropertyShape ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-measure-function-types/RiskControlMeasureFunctionTypes> ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:RiskControlMeasure ;
+  sh:path skos:inScheme .
+
+iss-sh:IntroducesThreatToNewEventSKOSinScheme
+  era:scope "local";
+  a sh:PropertyShape ;
+  sh:message "introducesThreatToNewEvent: The instance of RiskControlMeasure has a introducesThreatToNewEvent value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes."@en;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> ;
+  era:affectedProperty iss:introducesThreatToNewEvent ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:RiskControlMeasure ;
+  sh:path skos:inScheme .
+
+iss-sh:RiskControlMeasureTypeSKOSinScheme
+  era:affectedClass iss:RiskControlMeasure ;
+  sh:path skos:inScheme ;
+  a sh:PropertyShape ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-measure-types/RiskControlMeasureTypes> ;
+  era:affectedProperty iss:riskControlMeasureType ;
+  sh:severity sh:violation ;
+  sh:message "riskControlMeasureType: The instance of RiskControlMeasure has a riskControlMeasureType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-measure-types/RiskControlMeasureTypes."@en;
+  era:scope "local".
+
+iss-sh:RiskControlMeasureFunctionSKOS
+  era:scope "local";
+  sh:property iss-sh:RiskControlMeasureFunctionSKOSinScheme ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:riskControlMeasureFunction ;
+  sh:class skos:Concept ;
+  sh:message "riskControlMeasureFunction: The instance of RiskControlMeasure has a riskControlMeasureFunction value that is not a SKOS concept."@en;
+  era:affectedClass iss:RiskControlMeasure ;
+  sh:path iss:riskControlMeasureFunction ;
+  rdfs:comment "RCM functions applied by an RCM in accordance with the applicable list of functions."@en ;
+  a sh:PropertyShape .
+
+iss-sh:PreventsEventOccurrenceSKOSinScheme
+  a sh:PropertyShape ;
+  era:scope "local";
+  sh:message "preventsEventOccurrence: The instance of RiskControlMeasure has a preventsEventOccurrence value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes."@en;
+  era:affectedProperty iss:preventsEventOccurrence ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:RiskControlMeasure ;
+  sh:path skos:inScheme .
+
+iss-sh:IntroducesThreatOfEventOccurrenceSKOS
+  era:affectedClass iss:RiskControlMeasure ;
+  era:affectedProperty iss:introducesThreatOfEventOccurrence ;
+  sh:message "introducesThreatOfEventOccurrence: The instance of RiskControlMeasure has a introducesThreatOfEventOccurrence value that is not a SKOS concept."@en;
+  a sh:PropertyShape ;
+  sh:path iss:introducesThreatOfEventOccurrence ;
+  era:scope "local";
+  sh:property iss-sh:IntroducesThreatOfEventOccurrenceSKOSinScheme ;
+  sh:severity sh:violation ;
+  sh:class skos:Concept .
+
+iss-sh:MitigatesEventSKOSinScheme
+  sh:path skos:inScheme ;
+  era:affectedProperty iss:mitigatesEvent ;
+  era:affectedClass iss:RiskControlMeasure ;
+  era:scope "local";
+  sh:message "mitigatesEvent: The instance of RiskControlMeasure has a mitigatesEvent value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes."@en;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> .
+
+iss-sh:PreventsEventOccurrenceSKOS
+  era:scope "local";
+  era:affectedProperty iss:preventsEventOccurrence ;
+  sh:property iss-sh:PreventsEventOccurrenceSKOSinScheme ;
+  sh:class skos:Concept ;
+  sh:severity sh:violation ;
+  sh:message "preventsEventOccurrence: The instance of RiskControlMeasure has a preventsEventOccurrence value that is not a SKOS concept."@en;
+  sh:path iss:preventsEventOccurrence ;
+  a sh:PropertyShape ;
+  rdfs:comment "Indicate that a risk control measure is able to prevent the listed event(s)."@en ;
+  era:affectedClass iss:RiskControlMeasure .
+
+iss-sh:RiskControlMeasureShape sh:property iss-sh:IntroducesThreatOfEventOccurrenceSKOS, iss-sh:IntroducesThreatToNewEventSKOS, iss-sh:RiskControlMeasureFunctionSKOS, iss-sh:RiskControlMeasureTypeSKOS, iss-sh:PreventsEventOccurrenceSKOS, iss-sh:MitigatesEventSKOS .
+iss-sh:MitigatesEventSKOS
+  sh:class skos:Concept ;
+  era:scope "local";
+  sh:message "mitigatesEvent: The instance of RiskControlMeasure has a mitigatesEvent value that is not a SKOS concept."@en;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  era:affectedClass iss:RiskControlMeasure ;
+  era:affectedProperty iss:mitigatesEvent ;
+  rdfs:comment "Indicate that a risk control measure mitigates the impact of an occurrence."@en ;
+  sh:property iss-sh:MitigatesEventSKOSinScheme ;
+  sh:path iss:mitigatesEvent .
+
+iss-sh:RiskControlMeasureTypeSKOS
+  sh:property iss-sh:RiskControlMeasureTypeSKOSinScheme ;
+  era:affectedProperty iss:riskControlMeasureType ;
+  sh:severity sh:violation ;
+  sh:class skos:Concept ;
+  era:affectedClass iss:RiskControlMeasure ;
+  sh:path iss:riskControlMeasureType ;
+  a sh:PropertyShape ;
+  sh:message "riskControlMeasureType: The instance of RiskControlMeasure has a riskControlMeasureType value that is not a SKOS concept."@en;
+  era:scope "local".

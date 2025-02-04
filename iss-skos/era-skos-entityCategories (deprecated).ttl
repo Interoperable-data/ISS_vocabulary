@@ -22,6 +22,7 @@
 
 iss-enc:EntityCategories a skos:ConceptScheme ; 
     dct:issued "2024-04-04"^^xsd:date ;
+    dct:modified "2024-09-03"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
     rdfs:label "Entity Categories"@en ;
@@ -39,11 +40,6 @@ iss-enc:EntityCategories a skos:ConceptScheme ;
 iss-enc:NationalEntity
         rdf:type        skos:Concept ;          skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
         skos:prefLabel  "National Entity"@en .
-
-iss-enc:OtherEntities
-        rdf:type        skos:Concept ;        skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
-        skos:prefLabel  "Other Entities"@en ;
-        skos:altLabel   "OENT"@en .
 
 iss-enc:NaturalPerson
         rdf:type        skos:Concept ;         skos:inScheme iss-enc:EntityCategories;         skos:topConceptOf iss-enc:EntityCategories;
@@ -63,20 +59,19 @@ iss-enc:RailwaySectorCompany
 
 iss-enc:EntityInChargeOfMaintenance
         rdf:type         skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel   "Entity in Charge of Maintenance"@en ;   
-        skos:broader     iss-enc:RailwaySectorCompany ;
-        skos:definition  "Entity in Charge of Maintenance, as defined in Article 3, point (20) of Directive (EU) 2016/798 and certified in accordance with Article 3 of Implementing Regulation (EU) 2019/779."@en .
+        skos:prefLabel   "Entity in Charge of Maintenance" ;   
+        skos:broader     iss-enc:RailwaySectorCompany ; .
 
 iss-enc:MaintenanceWorkshop
         rdf:type         skos:Concept ; skos:inScheme iss-enc:EntityCategories;
-        skos:prefLabel   "Maintenance Workshop"@en ; 
+        skos:prefLabel   "Maintenance Workshop" ; 
         skos:broader     iss-enc:RailwaySectorCompany ;
         skos:definition  "Maintenance Workshop (MWS) performing the functions defined in Article 14(3), points (b), (c) and (d) of Directive (EU) 2016/798 in accordance with Article 9 of Implementing Regulation (EU) 2019/779."@en .
 
 iss-enc:ECM  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
         skos:prefLabel   "ECM"@en ; 
         skos:broader     iss-enc:EntityInChargeOfMaintenance ;
-        skos:definition  "Entity in Charge of Maintenance, as defined in Article 3, point (20) of Directive (EU) 2016/798 and certified in accordance with Article 3 of Implementing Regulation (EU) 2019/779."@en .
+        skos:definition  "Entity in Charge of Maintenance, as defined in Article 3, point (20) of Directive (EU) 2016/798 and certified in accordance with Article 3 of Implementing Regulation (EU) 2019/779."@en.
 
 iss-enc:ECMB  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories; skos:inScheme iss-enc:EntityCategories; 
         skos:prefLabel   "ECM-b"@en ;
@@ -129,17 +124,17 @@ iss-enc:NAT  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
 iss-enc:NSA  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
         skos:prefLabel   "NSA"@en ;
         skos:broader     iss-enc:NationalEntity ;
-        skos:definition  "National safety authority, as defined in Article 3, point (7) of Directive (EU) 2016/798." .
+        skos:definition  "National safety authority, as defined in Article 3, point (7) of Directive (EU) 2016/798."@en .
 
 iss-enc:TDGCA  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
         skos:prefLabel   "TDG CA"@en ;
         skos:broader     iss-enc:NationalEntity ;
-        skos:definition  "Transport of Dangerous Goods Competent Authority, as referred to in section 1.8.5.1 of RID." .
+        skos:definition  "Transport of Dangerous Goods Competent Authority, as referred to in section 1.8.5.1 of RID."@en .
 
 iss-enc:NIB  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
         skos:prefLabel   "NIB"@en ;
         skos:broader     iss-enc:NationalEntity ;
-        skos:definition  "National investigating body provided for in Article 22 of Directive (EU) 2016/798." .
+        skos:definition  "National investigating body provided for in Article 22 of Directive (EU) 2016/798."@en .
 
 iss-enc:NPER  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
         skos:prefLabel  "NPER"@en ;
@@ -160,7 +155,7 @@ iss-enc:ERA  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
 iss-enc:RB  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
         skos:prefLabel  "Representative Body"@en ;
         skos:broader    iss-enc:RailwaySectorOrganization ;
-        skos:altLabel   "RB" .
+        skos:altLabel   "RB"@en .
 
 iss-enc:SORG  rdf:type  skos:Concept ; skos:inScheme iss-enc:EntityCategories;
         skos:prefLabel  "SORG"@en ;

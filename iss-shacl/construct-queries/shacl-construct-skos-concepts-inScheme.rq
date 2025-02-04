@@ -1,0 +1,73 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX iss: <http://data.europa.eu/949/iss/>
+PREFIX iss-sh: <http://data.europa.eu/949/iss/shapes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#> 
+PREFIX era: <http://data.europa.eu/949/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX list: <http://jena.apache.org/ARQ/list#>
+
+construct {
+    iss-sh:HumanConsequencesPerPersonCategoryShape sh:property ?shapeUri .
+    ?shapeUri a sh:PropertyShape ;
+			era:affectedProperty ?property;
+		    era:affectedClass iss:HumanConsequencesPerPersonCategory;
+    		era:scope "local";
+    		rdfs:comment ?comment ;
+    		sh:path ?property ;
+    		sh:class skos:Concept ;
+    		sh:property ?inSchemeShapeUri ;
+            sh:severity sh:violation;
+    		sh:message ?message.
+    ?inSchemeShapeUri a sh:PropertyShape;
+			era:affectedProperty ?property;
+		    era:affectedClass iss:HumanConsequencesPerPersonCategory;
+    		era:scope "local";
+    		sh:path skos:inScheme;
+    		sh:hasValue ?scheme;
+			sh:severity sh:violation;
+    		sh:message ?schemeMessage.
+}
+#select * 
+where { GRAPH <http://data.europa.eu/949/iss/graph/dev/ontology> {
+    ?property a owl:ObjectProperty ;
+        rdfs:range skos:Concept;
+    	era:inSkosConceptScheme ?scheme.
+    {?property rdfs:domain iss:HumanConsequencesPerPersonCategory.}
+    UNION
+    {?property rdfs:domain [owl:unionOf (?other1 iss:HumanConsequencesPerPersonCategory)].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (iss:HumanConsequencesPerPersonCategory ?other2)].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (iss:HumanConsequencesPerPersonCategory ?other3 ?another1)].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (?other4 iss:HumanConsequencesPerPersonCategory ?another2 )].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (?other5 ?another3 iss:HumanConsequencesPerPersonCategory)].}    
+    OPTIONAL {?property rdfs:comment ?comment.}
+    BIND( URI(CONCAT("http://data.europa.eu/949/iss/shapes/",
+                UCASE(SUBSTR(REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),1,1)),
+                SUBSTR(REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),2),
+    			"SKOS"
+            		)
+        	  ) AS ?shapeUri)
+    BIND( URI(CONCAT(STR(?shapeUri),"inScheme")) AS ?inSchemeShapeUri)    
+    BIND( STRLANG(CONCAT(
+            REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),
+            ": The instance of HumanConsequencesPerPersonCategory has a ",
+            REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),
+            " value that is not a SKOS concept."),"en"
+        		) AS ?message)
+	BIND( STRLANG(CONCAT(
+            REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),
+            ": The instance of HumanConsequencesPerPersonCategory has a ",
+            REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),
+            " value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: ",
+            STR(?scheme),
+			"."),"en"
+        		) AS ?schemeMessage)
+    FILTER NOT EXISTS {?property owl:deprecated "true"^^xsd:boolean}
+  }.}
+                

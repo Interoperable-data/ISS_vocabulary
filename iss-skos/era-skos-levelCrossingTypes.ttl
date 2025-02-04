@@ -22,6 +22,7 @@
 
 iss-lct:LevelCrossingTypes a skos:ConceptScheme ; 
     dct:issued "2024-04-04"^^xsd:date ;
+    dct:modified "2024-09-03"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
     rdfs:label "Level Crossing Types"@en ;
@@ -35,18 +36,23 @@ iss-lct:LevelCrossingTypes a skos:ConceptScheme ;
 #    Concept instances
 #
 #################################################################
-iss-lct:InATunnel
+iss-lct:ActiveLevelCrossingManual
         rdf:type        skos:Concept ;         skos:inScheme iss-lct:LevelCrossingTypes;         skos:topConceptOf iss-lct:LevelCrossingTypes;
-        skos:prefLabel  "In a tunnel"@en .
+        skos:prefLabel  "Active level crossing - manual"@en .
 
-iss-lct:OnABridge
+iss-lct:ActiveLevelCrossingRailSideProtected
         rdf:type        skos:Concept ;         skos:inScheme iss-lct:LevelCrossingTypes;         skos:topConceptOf iss-lct:LevelCrossingTypes;
-        skos:prefLabel  "On a bridge"@en .
+        skos:prefLabel  "Active level crossing - rail-side protected "@en .
 
-iss-lct:AtALevelCrossing
+iss-lct:PassiveLevelCrossing
         rdf:type        skos:Concept ;         skos:inScheme iss-lct:LevelCrossingTypes;         skos:topConceptOf iss-lct:LevelCrossingTypes;
-        skos:prefLabel  "At a level-crossing"@en .
+        skos:prefLabel  "Passive level crossing"@en .
 
-iss-lct:OtherLocation
+iss-lct:ActiveLevelCrossingAutomaticUserSideProtection
         rdf:type        skos:Concept ;         skos:inScheme iss-lct:LevelCrossingTypes;         skos:topConceptOf iss-lct:LevelCrossingTypes;
-        skos:prefLabel  "Other location"@en .
+        skos:prefLabel  "Active level crossing - automatic with user-side protection"@en .
+
+iss-lct:ActiveLevelCrossingAutomaticUserSideWarning
+        rdf:type        skos:Concept ;         skos:inScheme iss-lct:LevelCrossingTypes;         skos:topConceptOf iss-lct:LevelCrossingTypes;
+        skos:prefLabel  "Active level crossing - automatic with user-side warning"@en .
+

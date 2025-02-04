@@ -1,0 +1,100 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/>  .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/>.
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+
+iss-sh:SafetyPerformanceSelfEstimationShape
+	a sh:NodeShape ;
+    sh:targetClass iss:SafetyPerformanceSelfEstimation.
+
+
+
+iss-sh:SafetyPerformanceSelfEstimationShape sh:property iss-sh:ReferencePeriodEndDate, iss-sh:ReferencePeriodStartDate, iss-sh:OverallResult, iss-sh:SelfEstimationNarrative, iss-sh:AssessmentPeriodEndDate, iss-sh:AssessmentPeriodStartDate .
+
+
+
+iss-sh:SelfEstimationNarrative
+  sh:severity sh:violation ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  era:affectedProperty iss:selfEstimationNarrative ;
+  sh:datatype xsd:string ;
+  sh:path iss:selfEstimationNarrative ;
+  a sh:PropertyShape ;
+  sh:message "selfEstimationNarrative: Each safety performance self-estimation may have selfEstimationNarrative that is a string. This error is due to having a value that is not a string."@en;
+  era:scope "local".
+
+iss-sh:OverallResult
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  sh:severity sh:violation ;
+  sh:path iss:overallResult ;
+  sh:datatype xsd:float ;
+  sh:message "overallResult: Each safety performance self-estimation may have overallResult that is a float. This error is due to having a value that is not a float."@en;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:overallResult ;
+  era:scope "local".
+
+iss-sh:AssessmentPeriodEndDate
+  era:affectedProperty iss:assessmentPeriodEndDate ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  sh:severity sh:violation ;
+  sh:datatype xsd:date ;
+  sh:path iss:assessmentPeriodEndDate ;
+  a sh:PropertyShape ;
+  era:scope "local";
+  sh:message "assesmentPeriodEndDate: Each safety performance self-estimation may have assessmentPeriodEndDate that is a date. This error is due to having a value that is not a date."@en.
+
+iss-sh:AssessmentPeriodStartDate
+  sh:severity sh:violation ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  sh:datatype xsd:date ;
+  era:affectedProperty iss:assessmentPeriodStartDate ;
+  sh:message "assessmentPeriodStartDate: Each safety performance self-estimation may have assessmentPeriodStartDate that is a date. This error is due to having a value that is not a date."@en;
+  a sh:PropertyShape ;
+  era:scope "local";
+  sh:path iss:assessmentPeriodStartDate .
+
+iss-sh:ReferencePeriodStartDate
+  sh:path iss:referencePeriodStartDate ;
+  sh:message "referencePeriodStartDate: Each safety authorisation may have referencePeriodStartDate that is a date. This error is due to having a value that is not a date."@en;
+  era:scope "local";
+  era:affectedProperty iss:referencePeriodStartDate ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  a sh:PropertyShape ;
+  sh:datatype xsd:date .
+
+iss-sh:ReferencePeriodEndDate
+  sh:path iss:referencePeriodEndDate ;
+  era:scope "local";
+  era:affectedProperty iss:referencePeriodEndDate ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  sh:message "referencePeriodEndDate: Each safety authorisation may have referencePeriodEndDate that is a date. This error is due to having a value that is not a date."@en;
+  sh:datatype xsd:date .
+
+
+
+
+
+iss-sh:SafetyPerformanceSelfEstimationShape sh:property iss-sh:SafetyPerformanceSelfEstimationPerArea .
+
+iss-sh:SafetyPerformanceSelfEstimationPerArea
+  a sh:PropertyShape ;
+  era:scope "local";
+  sh:severity sh:violation ;
+  sh:message "safetyPerformanceSelfEstimationPerArea: The safety performance self-estimation has a safetyPerformanceSelfEstimationPerArea that must be a SafetyPerformanceSelfEstimationPerArea."@en;
+  era:affectedProperty iss:safetyPerformanceSelfEstimationPerArea ;
+  sh:path iss:safetyPerformanceSelfEstimationPerArea ;
+  sh:class iss:SafetyPerformanceSelfEstimationPerArea ;
+  era:affectedClass iss:SafetyPerformanceSelfEstimation .
+
+
+

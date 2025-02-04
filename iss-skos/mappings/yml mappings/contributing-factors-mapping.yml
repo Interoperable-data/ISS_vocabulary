@@ -1,0 +1,25 @@
+prefixes:
+  rdf: "http://wwww3org/1999/02/22-rdf-syntax-ns#" 
+  rdfs: "http://wwww3org/2000/01/rdf-schema#" 
+  owl: "http://wwww3org/2002/07/owl#" 
+  xsd: "http://wwww3org/2001/XMLSchema#" 
+  dct: "http://purlorg/dc/terms/" 
+  skos: "http://wwww3org/2004/02/skos/core#" 
+  cc: "http://creativecommonsorg/ns#" 
+  iss-cf: "http://data.europa.eu/949/iss/concepts/contributing-factors/" 
+
+sources:
+  contributing-factors-source: ['contributing-factors-source.csv~csv']
+mappings:
+  mapping-contributing-factors:
+    sources:
+      - contributing-factors-source
+    s: "http://data.europa.eu/949/iss/concepts/contributing-factors/$(Id)"
+    po:
+      - [skos:notation, $(Code), xsd:token]
+      - [skos:prefLabel,$(Name),en~lang]
+      - [skos:definition,$(Definition),en~lang]
+      - [skos:broader, iss-cf:$(Broader)]
+      - [skos:topConceptOf, iss-cf:$(TopConceptOf)]
+      - [a, skos:Concept]
+      - [skos:inScheme, iss-cf:ContributingFactors]

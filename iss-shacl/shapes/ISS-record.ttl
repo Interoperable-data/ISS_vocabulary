@@ -1,0 +1,365 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+
+iss-sh:RecordShape
+	a sh:NodeShape ;
+    sh:targetClass iss:Record.
+
+iss-sh:RecordShape sh:property iss-sh:NotificationLegalBasis, iss-sh:RecordDatetime, iss-sh:RecordId, iss-sh:RecordTitle, iss-sh:ReportingContactId .
+
+iss-sh:NotificationLegalBasis
+  era:affectedProperty iss:notificationLegalBasis ;
+  sh:datatype xsd:string ;
+  a sh:PropertyShape ;
+  sh:path iss:notificationLegalBasis ;
+  era:affectedClass iss:Record ;
+  sh:message "notificationLegalBasis: Each record may have notificationLegalBasis that is a string. This error is due to having a value that is not a string."@en;
+  sh:severity sh:violation ;
+  era:scope "local" .
+
+iss-sh:ReportingContactId
+  a sh:PropertyShape ;
+  era:affectedProperty iss:reportingContactId ;
+  sh:datatype xsd:string ;
+  sh:severity sh:violation ;
+  sh:path iss:reportingContactId ;
+  sh:message "reportingContactId: Each record may have reportingContactId that is a string. This error is due to having a value that is not a string."@en;
+  era:affectedClass iss:Record ;
+  era:scope "local" .
+
+iss-sh:RecordTitle
+  sh:message "recordTitle: Each record may have recordTitle that is a string. This error is due to having a value that is not a string."@en;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:recordTitle ;
+  era:scope "local";
+  era:affectedClass iss:Record ;
+  a sh:PropertyShape ;
+  sh:datatype xsd:string ;
+  sh:path iss:recordTitle .
+
+iss-sh:RecordId
+  sh:path iss:recordId ;
+  sh:severity sh:violation ;
+  era:scope "local";
+  era:affectedProperty iss:recordId ;
+  era:affectedClass iss:Record ;
+  a sh:PropertyShape ;
+  sh:message "recordId: Each record may have recordId that is a string. This error is due to having a value that is not a string."@en;
+  sh:datatype xsd:string .
+
+iss-sh:RecordDatetime
+  sh:datatype xsd:dateTime ;
+  era:affectedClass iss:Record ;
+  era:scope "local";
+  a sh:PropertyShape ;
+  era:affectedProperty iss:recordDatetime ;
+  sh:message "recordDatetime: Each record may have recordDatetime that is a dateTime. This error is due to having a value that is not a dateTime."@en;
+  sh:path iss:recordDatetime ;
+  sh:severity sh:violation .
+
+iss-sh:Record sh:property iss-sh:NextRecord, iss-sh:NotifyingEntity, iss-sh:ReportingEntity, iss-sh:NotifiedEntity, iss-sh:HasInfoInRecord, iss-sh:HasRecordAttachment,  iss-sh:IsRelatedToRecord .
+
+iss-sh:ReportingEntity
+  era:affectedClass iss:Record ;
+  era:affectedProperty iss:reportingEntity ;
+  sh:severity sh:violation ;
+  sh:message "reportingEntity: The record has a reportingEntity that must be an Organisation Role."@en;
+  rdfs:comment "ISS registered User issuing a notification on behalf a registered Entity."@en ;
+  sh:class era:OrganisationRole ;
+  sh:path iss:notifyingReporter ;
+  a sh:PropertyShape ;
+  era:scope "local" .
+
+iss-sh:NotifiedEntity
+  sh:severity sh:violation ;
+  sh:class era:OrganisationRole ;
+  sh:path iss:notifiedEntity ;
+  a sh:PropertyShape ;
+  era:scope "local";
+  era:affectedClass iss:Record ;
+  sh:message "notifiedEntity: The record has a notifiedEntity that must be an Organisation Role."@en;
+  rdfs:comment "ISS registered entity to which the notification is addressed."@en ;
+  era:affectedProperty iss:notifiedEntity .
+
+iss-sh:HasInfoInRecord
+  sh:message "hasInfoInRecord: The record has a hasInfoInRecord that must be a InfoRecord."@en;
+  era:scope "local";
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  rdfs:comment "Relates a record with the information it contains."@en ;
+  era:affectedClass iss:Record ;
+  sh:path iss:hasInfoInRecord ;
+  sh:class iss:InfoRecord ;
+  era:affectedProperty iss:hasInfoInRecord .
+
+
+iss-sh:HasRecordAttachment
+  sh:message "hasRecordAttachment: The record has a hasRecordAttachment that must be a RecordAttachment."@en;
+  era:affectedProperty iss:hasRecordAttachment ;
+  era:scope "local";
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  sh:path iss:hasRecordAttachment ;
+  era:affectedClass iss:Record ;
+  sh:class iss:RecordAttachment ;
+  rdfs:comment "Relates the record that is being reported with files (e.g. documents, images, videos) that are attachments to the record."@en .
+
+iss-sh:IsRelatedToRecord
+  era:scope "local";
+  sh:message "isRelatedToRecord: The record has a isRelatedToRecord that must be a Record."@en;
+  rdfs:comment "Reference to a record."@en ;
+  sh:severity sh:violation ;
+  sh:path iss:isRelatedToRecord ;
+  a sh:PropertyShape ;
+  sh:class iss:Record ;
+  era:affectedClass iss:Record ;
+  era:affectedProperty iss:isRelatedToRecord .
+
+iss-sh:NotifyingEntity
+  era:affectedProperty iss:notifyingEntity ;
+  sh:path iss:notifyingEntity ;
+  rdfs:comment """In the case of detailed report, for indirect channel only; entity notifying the report on behalf the reporting entity.
+Taken from Detailed Report.xlsx template."""@en ;
+  a sh:PropertyShape ;
+  sh:class era:OrganisationRole ;
+  sh:message "notifyingEntity: The record has a notifyingEntity that must be an OrganisationRole."@en;
+  era:affectedClass iss:Record ;
+  sh:severity sh:violation ;
+  era:scope "local" .
+
+
+iss-sh:NextRecord
+  sh:message "nextRecord: The record has a nextRecord that must be a Record."@en;
+  a sh:PropertyShape ;
+  sh:path iss:nextRecord ;
+  era:affectedClass iss:Record ;
+  sh:class iss:Record ;
+  era:scope "local";
+  rdfs:comment "next record"@en ;
+  sh:severity sh:violation ;
+  era:affectedProperty iss:nextRecord .
+
+# SKOS 
+iss-sh:ReportingReasonSKOS
+  sh:severity sh:violation ;
+  era:affectedClass iss:Record ;
+  sh:class skos:Concept ;
+  era:affectedProperty iss:reportingReason ;
+  sh:message "reportingReason: The instance of Record has a reportingReason value that is not a SKOS concept."@en;
+  a sh:PropertyShape ;
+  sh:property iss-sh:ReportingReasonSKOSinScheme ;
+  sh:path iss:reportingReason ;
+  rdfs:comment "Legal basis applicable for the reported record."@en ;
+  era:scope "local" .
+
+iss-sh:RecordStatusSKOSinScheme
+  sh:message "recordStatus: The instance of Record has a recordStatus value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/record-statuses/RecordStatuses."@en;
+  sh:severity sh:violation ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/record-statuses/RecordStatuses> ;
+  era:scope "local";
+  era:affectedProperty iss:recordStatus ;
+  era:affectedClass iss:Record ;
+  a sh:PropertyShape ;
+  sh:path skos:inScheme .
+
+iss-sh:ReportingReasonSKOSinScheme
+  era:affectedProperty iss:reportingReason ;
+  era:scope "local";
+  sh:message "reportingReason: The instance of Record has a reportingReason value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/reporting-reasons/ReportingReasons."@en;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/reporting-reasons/ReportingReasons> ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:Record ;
+  a sh:PropertyShape ;
+  sh:path skos:inScheme .
+
+iss-sh:RecordStatusSKOS
+  sh:path iss:recordStatus ;
+  era:scope "local";
+  sh:severity sh:violation ;
+  sh:property iss-sh:RecordStatusSKOSinScheme ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:recordStatus ;
+  rdfs:comment """This parameter shows the level of validity of the recorded information, as following: New, Updated, Submitted, Validated, Corrected. Only the applicable statuses for the record type can be selected.
+
+The status 'Validated' can be selected only if all the mandatory fields have been filled-out.
+
+The status 'Corrected' is an exception treatment applicable after 'Vlidation' or upon the notification of a justified request."""@en ;
+  sh:message "recordStatus: The instance of Record has a recordStatus value that is not a SKOS concept."@en;
+  era:affectedClass iss:Record ;
+  sh:class skos:Concept .
+
+iss-sh:RecordShape sh:property iss-sh:RecordStatusSKOS, iss-sh:RecordTypeSKOS, iss-sh:ReportingReasonSKOS .
+iss-sh:RecordTypeSKOS
+  sh:property iss-sh:RecordTypeSKOSinScheme ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  rdfs:comment "Applicable type of record in accordance with the applicable ISS version."@en ;
+  era:affectedProperty iss:recordType ;
+  sh:message "recordType: The instance of Record has a recordType value that is not a SKOS concept."@en;
+  era:affectedClass iss:Record ;
+  sh:path iss:recordType ;
+  sh:class skos:Concept ;
+  era:scope "local" .
+
+iss-sh:RecordTypeSKOSinScheme
+  era:scope "local";
+  era:affectedProperty iss:recordType ;
+  era:affectedClass iss:Record ;
+  sh:message "recordType: The instance of Record has a recordType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/record-types/RecordTypes."@en;
+  a sh:PropertyShape ;
+  sh:path skos:inScheme ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/record-types/RecordTypes> ;
+  sh:severity sh:violation .
+
+iss-sh:ReportingReasonSKOS
+  sh:severity sh:violation ;
+  era:affectedClass iss:Record ;
+  sh:class skos:Concept ;
+  era:affectedProperty iss:reportingReason ;
+  sh:message "reportingReason: The instance of Record has a reportingReason value that is not a SKOS concept."@en;
+  a sh:PropertyShape ;
+  sh:property iss-sh:ReportingReasonSKOSinScheme ;
+  sh:path iss:reportingReason ;
+  rdfs:comment "Legal basis applicable for the reported record."@en ;
+  era:scope "local" .
+
+iss-sh:RecordStatusSKOSinScheme
+  sh:message "recordStatus: The instance of Record has a recordStatus value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/record-statuses/RecordStatuses."@en;
+  sh:severity sh:violation ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/record-statuses/RecordStatuses> ;
+  era:scope "local";
+  era:affectedProperty iss:recordStatus ;
+  era:affectedClass iss:Record ;
+  a sh:PropertyShape ;
+  sh:path skos:inScheme .
+
+iss-sh:ReportingReasonSKOSinScheme
+  era:affectedProperty iss:reportingReason ;
+  era:scope "local";
+  sh:message "reportingReason: The instance of Record has a reportingReason value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/reporting-reasons/ReportingReasons."@en;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/reporting-reasons/ReportingReasons> ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:Record ;
+  a sh:PropertyShape ;
+  sh:path skos:inScheme .
+
+iss-sh:RecordStatusSKOS
+  sh:path iss:recordStatus ;
+  era:scope "local";
+  sh:severity sh:violation ;
+  sh:property iss-sh:RecordStatusSKOSinScheme ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:recordStatus ;
+  rdfs:comment """This parameter shows the level of validity of the recorded information, as following: New, Updated, Submitted, Validated, Corrected. Only the applicable statuses for the record type can be selected.
+
+The status 'Validated' can be selected only if all the mandatory fields have been filled-out.
+
+The status 'Corrected' is an exception treatment applicable after 'Vlidation' or upon the notification of a justified request."""@en ;
+  sh:message "recordStatus: The instance of Record has a recordStatus value that is not a SKOS concept."@en;
+  era:affectedClass iss:Record ;
+  sh:class skos:Concept .
+
+iss-sh:RecordShape sh:property iss-sh:RecordStatusSKOS, iss-sh:RecordTypeSKOS, iss-sh:ReportingReasonSKOS .
+iss-sh:RecordTypeSKOS
+  sh:property iss-sh:RecordTypeSKOSinScheme ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  rdfs:comment "Applicable type of record in accordance with the applicable ISS version."@en ;
+  era:affectedProperty iss:recordType ;
+  sh:message "recordType: The instance of Record has a recordType value that is not a SKOS concept."@en;
+  era:affectedClass iss:Record ;
+  sh:path iss:recordType ;
+  sh:class skos:Concept ;
+  era:scope "local" .
+
+iss-sh:RecordTypeSKOSinScheme
+  era:scope "local";
+  era:affectedProperty iss:recordType ;
+  era:affectedClass iss:Record ;
+  sh:message "recordType: The instance of Record has a recordType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/record-types/RecordTypes."@en;
+  a sh:PropertyShape ;
+  sh:path skos:inScheme ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/record-types/RecordTypes> ;
+  sh:severity sh:violation .
+
+iss-sh:ReportingReasonSKOS
+  sh:severity sh:violation ;
+  era:affectedClass iss:Record ;
+  sh:class skos:Concept ;
+  era:affectedProperty iss:reportingReason ;
+  sh:message "reportingReason: The instance of Record has a reportingReason value that is not a SKOS concept."@en;
+  a sh:PropertyShape ;
+  sh:property iss-sh:ReportingReasonSKOSinScheme ;
+  sh:path iss:reportingReason ;
+  rdfs:comment "Legal basis applicable for the reported record."@en ;
+  era:scope "local" .
+
+iss-sh:RecordStatusSKOSinScheme
+  sh:message "recordStatus: The instance of Record has a recordStatus value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/record-statuses/RecordStatuses."@en;
+  sh:severity sh:violation ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/record-statuses/RecordStatuses> ;
+  era:scope "local";
+  era:affectedProperty iss:recordStatus ;
+  era:affectedClass iss:Record ;
+  a sh:PropertyShape ;
+  sh:path skos:inScheme .
+
+iss-sh:ReportingReasonSKOSinScheme
+  era:affectedProperty iss:reportingReason ;
+  era:scope "local";
+  sh:message "reportingReason: The instance of Record has a reportingReason value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/reporting-reasons/ReportingReasons."@en;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/reporting-reasons/ReportingReasons> ;
+  sh:severity sh:violation ;
+  era:affectedClass iss:Record ;
+  a sh:PropertyShape ;
+  sh:path skos:inScheme .
+
+iss-sh:RecordStatusSKOS
+  sh:path iss:recordStatus ;
+  era:scope "local";
+  sh:severity sh:violation ;
+  sh:property iss-sh:RecordStatusSKOSinScheme ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:recordStatus ;
+  rdfs:comment """This parameter shows the level of validity of the recorded information, as following: New, Updated, Submitted, Validated, Corrected. Only the applicable statuses for the record type can be selected.
+
+The status 'Validated' can be selected only if all the mandatory fields have been filled-out.
+
+The status 'Corrected' is an exception treatment applicable after 'Vlidation' or upon the notification of a justified request."""@en ;
+  sh:message "recordStatus: The instance of Record has a recordStatus value that is not a SKOS concept."@en;
+  era:affectedClass iss:Record ;
+  sh:class skos:Concept .
+
+iss-sh:RecordShape sh:property iss-sh:RecordStatusSKOS, iss-sh:RecordTypeSKOS, iss-sh:ReportingReasonSKOS .
+iss-sh:RecordTypeSKOS
+  sh:property iss-sh:RecordTypeSKOSinScheme ;
+  a sh:PropertyShape ;
+  sh:severity sh:violation ;
+  rdfs:comment "Applicable type of record in accordance with the applicable ISS version."@en ;
+  era:affectedProperty iss:recordType ;
+  sh:message "recordType: The instance of Record has a recordType value that is not a SKOS concept."@en;
+  era:affectedClass iss:Record ;
+  sh:path iss:recordType ;
+  sh:class skos:Concept ;
+  era:scope "local" .
+
+iss-sh:RecordTypeSKOSinScheme
+  era:scope "local";
+  era:affectedProperty iss:recordType ;
+  era:affectedClass iss:Record ;
+  sh:message "recordType: The instance of Record has a recordType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/record-types/RecordTypes."@en;
+  a sh:PropertyShape ;
+  sh:path skos:inScheme ;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/record-types/RecordTypes> ;
+  sh:severity sh:violation .
+
+  

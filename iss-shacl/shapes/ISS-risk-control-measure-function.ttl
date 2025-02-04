@@ -1,0 +1,61 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:RiskControlMeasureFunctionShape
+	a sh:NodeShape ;
+    sh:targetClass iss:RiskControlMeasureFunction.
+
+iss-sh:RiskControlMeasureFunctionShape sh:property iss-sh:RiskControlMeasureFunctionDescription, iss-sh:RiskControlMeasureFunctionName .
+
+iss-sh:RiskControlMeasureFunctionName
+  sh:severity sh:violation ;
+  sh:path iss:riskControlMeasureFunctionName ;
+  era:scope "local";
+  sh:datatype xsd:string ;
+  a sh:PropertyShape ;
+  era:affectedClass iss:RiskControlMeasureFunction ;
+  era:affectedProperty iss:riskControlMeasureFunctionName ;
+  sh:message "riskControlMeasureFunctionName: Each risk control measure function may have riskControlMeasureFunctionName that is a string. This error is due to having a value that is not a string."@en.
+
+iss-sh:RiskControlMeasureFunctionDescription
+  sh:message "riskControlMeasureFunctionDescription: Each risk control measure function may have riskControlMeasureFunctionDescription that is a string. This error is due to having a value that is not a string."@en;
+  sh:severity sh:violation ;
+  era:scope "local";
+  a sh:PropertyShape ;
+  sh:path iss:riskControlMeasureFunctionDescription ;
+  era:affectedClass iss:RiskControlMeasureFunction ;
+  era:affectedProperty iss:riskControlMeasureFunctionDescription ;
+  sh:datatype xsd:string .
+
+# SKOS
+iss-sh:ApplicableRiskControlMeasureFunctionSKOSinScheme
+  sh:severity sh:violation ;
+  era:affectedProperty iss:applicableRiskControlMeasureFunction ;
+  era:scope "local";
+  era:affectedClass iss:RiskControlMeasureFunction ;
+  sh:path skos:inScheme ;
+  sh:message "applicableRiskControlMeasureFunction: The instance of RiskControlMeasureFunction has a applicableRiskControlMeasureFunction value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/applicable-safety-measure-functions/ApplicableRiskControlMeasureFunction."@en;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/applicable-safety-measure-functions/ApplicableRiskControlMeasureFunction> ;
+  a sh:PropertyShape .
+
+iss-sh:ApplicableRiskControlMeasureFunctionSKOS
+  era:affectedProperty iss:applicableRiskControlMeasureFunction ;
+  sh:property iss-sh:ApplicableRiskControlMeasureFunctionSKOSinScheme ;
+  sh:path iss:applicableRiskControlMeasureFunction ;
+  rdfs:comment "RCM Functions which are covered by a given risk control measure."@en ;
+  sh:class skos:Concept ;
+  a sh:PropertyShape ;
+  era:scope "local";
+  era:affectedClass iss:RiskControlMeasureFunction ;
+  sh:severity sh:violation ;
+  sh:message "applicableRiskControlMeasureFunction: The instance of RiskControlMeasureFunction has a applicableRiskControlMeasureFunction value that is not a SKOS concept."@en.
+
+iss-sh:RiskControlMeasureFunctionShape sh:property iss-sh:ApplicableRiskControlMeasureFunctionSKOS .

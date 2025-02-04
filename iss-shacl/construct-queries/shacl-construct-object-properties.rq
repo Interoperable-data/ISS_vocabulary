@@ -1,0 +1,53 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX iss: <http://data.europa.eu/949/iss/>
+PREFIX iss-sh: <http://data.europa.eu/949/iss/shapes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#> 
+PREFIX era: <http://data.europa.eu/949/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+construct {
+    iss-sh:SimpleReportSafetyRelatedEventShape sh:property ?shapeUri .
+    ?shapeUri a sh:PropertyShape ;
+			era:affectedProperty ?property;
+		    era:affectedClass iss:SimpleReportSafetyRelatedEvent;
+    		era:scope "local";
+    		rdfs:comment ?comment ;
+            sh:path ?property;
+            sh:class ?range;
+            sh:severity sh:violation;
+    		sh:message ?message.
+}
+#select * 
+where { GRAPH <http://data.europa.eu/949/iss/graph/dev/ontology> {
+    ?property a owl:ObjectProperty ;
+        rdfs:range ?range.
+    {?property rdfs:domain iss:SimpleReportSafetyRelatedEvent.}
+    UNION
+    {?property rdfs:domain [owl:unionOf (?other1 iss:SimpleReportSafetyRelatedEvent)].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (iss:SimpleReportSafetyRelatedEvent ?other2)].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (iss:SimpleReportSafetyRelatedEvent ?other3 ?another1)].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (?other4 iss:SimpleReportSafetyRelatedEvent ?another2 )].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (?other5 ?another3 iss:SimpleReportSafetyRelatedEvent)].}   
+        
+    OPTIONAL {?property rdfs:comment ?comment.}
+    BIND( URI(CONCAT("http://data.europa.eu/949/iss/shapes/",
+                UCASE(SUBSTR(REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),1,1)),
+                SUBSTR(REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),2)
+            		)
+        	  ) AS ?shapeUri)
+    BIND( STRLANG(CONCAT(
+            REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),
+            ": The simple report safety related event has a ",
+            REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),
+            " that must be a ",
+            REPLACE(STR(?range), ".*(\\/|#){1}(\\w*)","$2"),
+			"."), "en" ) AS ?message)
+    FILTER(?range != skos:Concept)
+    FILTER NOT EXISTS {?property owl:deprecated "true"^^xsd:boolean}
+  }. }

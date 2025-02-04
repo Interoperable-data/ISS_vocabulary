@@ -22,6 +22,8 @@
 
 iss-set:SafetyEventTypes a skos:ConceptScheme ; 
     dct:issued "2024-04-04"^^xsd:date ;
+    dct:modified "2024-08-29"^^xsd:date ;
+    dct:modified "2024-09-03"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
     rdfs:label "Safety Event Types"@en ;
@@ -37,18 +39,1593 @@ iss-set:SafetyEventTypes a skos:ConceptScheme ;
 #################################################################
 
 
-iss-set:CategoryAEvent
+iss-set:A
         rdf:type        skos:Concept ;         skos:inScheme iss-set:SafetyEventTypes;         skos:topConceptOf iss-set:SafetyEventTypes;
         skos:prefLabel  "Category A Event"@en .
         
 
-iss-set:CategoryBEvent
+iss-set:B
         rdf:type        skos:Concept ;         skos:inScheme iss-set:SafetyEventTypes;         skos:topConceptOf iss-set:SafetyEventTypes;
         skos:prefLabel  "Category B Event"@en .
         
-iss-set:CategoryCEvent
+iss-set:C
         rdf:type        skos:Concept ;         skos:inScheme iss-set:SafetyEventTypes;         skos:topConceptOf iss-set:SafetyEventTypes;
-
         skos:prefLabel  "Category C Event"@en .
-        
+   
+iss-set:A-0 a skos:Concept;
+  skos:broader iss-set:A;
+  skos:definition "Any accident other than a collision; derailment; level crossing accident; an accident to person involving rolling stock in motion or a fire in rolling stock; falling within the A.0 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other accident"@en .
+
+iss-set:A-0-0 a skos:Concept;
+  skos:broader iss-set:A0;
+  skos:definition "Any other accident falling within the category �other accident�; but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A0.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other"@en .
+
+iss-set:A-0-1 a skos:Concept;
+  skos:broader iss-set:A0;
+  skos:definition "Any accident caused by electric current passing through the body."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A0.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Electric shock"@en .
+
+iss-set:A-0-2 a skos:Concept;
+  skos:broader iss-set:A0;
+  skos:definition "Any accident caused by cargo/freight falling from a height; including during loading and unloading operations."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A0.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Cargo/freight falling from a height"@en .
+
+iss-set:A-0-3 a skos:Concept;
+  skos:broader iss-set:A0;
+  skos:definition "Any accident involving dangerous goods to be reported in accordance with section 1.8.5 of �RID� (as referred to in Annex II.1 to Directive 2008/68/EC; as amended) and not covered by another type A event."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A0.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Dangerous goods accident not related to another type A event"@en .
+
+iss-set:A-1 a skos:Concept;
+  skos:broader iss-set:A;
+  skos:definition "A collision event falling within the A.1 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Collisions"@en .
+
+iss-set:A-1-0 a skos:Concept;
+  skos:broader iss-set:A1;
+  skos:definition "Any other accident falling within the category �collisions�; but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A1.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other collision type"@en .
+
+iss-set:A-1-1 a skos:Concept;
+  skos:broader iss-set:A1;
+  skos:definition "A front to front; front to end or a side collision between a part of a train and a part of another train or rail vehicle; or with shunting rolling stock."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A1.1 "^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Collision of train with a train/rail vehicle"@en .
+
+iss-set:A1-2 a skos:Concept;
+  skos:broader iss-set:A1;
+  skos:definition "A collision between a part of a train and objects fixed or temporarily present on or near the track (except at level crossings if lost by a crossing vehicle or user); including collision with overhead contact lines."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A1.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Collision of train with obstacle within the clearance gauge"@en .
+
+iss-set:A1-3 a skos:Concept;
+  skos:broader iss-set:A1;
+  skos:definition "Same as A1.1 but concerning more rail vehicles not forming a train."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A1.3 "^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Collision of one or more rail vehicles with another rail vehicle"@en .
+
+iss-set:A1-4 a skos:Concept;
+  skos:broader iss-set:A1;
+  skos:definition "Same as A1.2 but concerning one or more rail vehicles not forming a train."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A1.4 "^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Collision of one or more rail vehicles with obstacle within the clearance gauge"@en .
+
+iss-set:A-2 a skos:Concept;
+  skos:broader iss-set:A;
+  skos:definition "A derailment event falling within the A.2 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Derailments"@en .
+
+iss-set:A2-0 a skos:Concept;
+  skos:broader iss-set:A2;
+  skos:definition "Any other accident falling within the category �derailments�; but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A2.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other derailment type"@en .
+
+iss-set:A2-1 a skos:Concept;
+  skos:broader iss-set:A2;
+  skos:definition "Any case in which at least one wheel of a train leaves the rails."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A2.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Derailment of train"@en .
+
+iss-set:A-2-2 a skos:Concept;
+  skos:broader iss-set:A2;
+  skos:definition "Same as A2.1 but concerning one or more rail vehicles not forming a train."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A2.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Derailment of one or more rail vehicles"@en .
+
+iss-set:A-3 a skos:Concept;
+  skos:broader iss-set:A;
+  skos:definition " A level crossing accident falling within the A.3 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Level Crossing Accident"@en .
+
+iss-set:A-3-0 a skos:Concept;
+  skos:broader iss-set:A3;
+  skos:definition "Any other accident falling within the category �level crossing accident�; but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A3.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other level crossing accident"@en .
+
+iss-set:A-3-1 a skos:Concept;
+  skos:broader iss-set:A3;
+  skos:definition " A level crossing accident involving a train and falling within the A.3.1 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A3.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Level Crossing Accident involving a train"@en .
+
+iss-set:A-3-1-1 a skos:Concept;
+  skos:broader iss-set:A3-1;
+  skos:definition "Any accident at level crossings involving at least one train and crossing pedestrians. Note: pedestrians also include people crossing with bicycles (or other similar small vehicles normally allowed on pedestrian/bike paths)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A3.1.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Level Crossing Accident involving a train and pedestrians"@en .
+
+iss-set:A-3-1-2 a skos:Concept;
+  skos:broader iss-set:A3-1;
+  skos:definition "Any accident at level crossings involving at least one train and one or more crossing vehicles or objects temporarily present on or near the track if lost by a crossing vehicle or user."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A3.1.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Level Crossing Accident involving a train and crossing vehicles"@en .
+
+iss-set:A3-2 a skos:Concept;
+  skos:broader iss-set:A3;
+  skos:definition "Any accident at level crossings involving one or more rail vehicles and one or more crossing vehicles; crossing users such as pedestrians or objects temporarily present on or near the track if lost by a crossing vehicle or user."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A3.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Level Crossing Accident involving one or more rail vehicles"@en .
+
+iss-set:A-4 a skos:Concept;
+  skos:broader iss-set:A;
+  skos:definition " An accident to persons involving rolling stock in motion falling within the A.4 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Accidents to persons involving rolling stock in motion"@en .
+
+iss-set:A-4-0 a skos:Concept;
+  skos:broader iss-set:A4;
+  skos:definition "Any other accident falling within the category �accidents to persons involving rolling stock in motion�; but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A4.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other accidents to persons involving rolling stock in motion"@en .
+
+iss-set:A-4-1 a skos:Concept;
+  skos:broader iss-set:A4;
+  skos:definition "Accidents to one or more persons who are either hit by a train or by an object attached to; or that has become detached from the train; this includes persons who fall from trains as well as persons who fall or are hit by loose objects when travelling on board trains."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A4.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Accidents to persons involving a train in motion"@en .
+
+iss-set:A-4-2 a skos:Concept;
+  skos:broader iss-set:A4;
+  skos:definition "Accidents to one or more persons who are either hit by a railway vehicle or by an object attached to; or that has become detached from the vehicle; this includes persons who fall from railway vehicles as well as persons who fall or are hit by loose objects when travelling on board vehicles."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A4.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Accidents to persons involving rail vehicle in motion"@en .
+
+iss-set:A-5 a skos:Concept;
+  skos:broader iss-set:A;
+  skos:definition "A fire (or explosion) in rolling stock (including its load) event falling within the A.5 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Fire (or explosion) in rolling stock"@en .
+
+iss-set:A-5-0 a skos:Concept;
+  skos:broader iss-set:A5;
+  skos:definition "Any other accident falling within the category �fire (or explosion) in rolling stock� (including its load); but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A5.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Others fire (or explosion) in rolling stock"@en .
+
+iss-set:A-5-1 a skos:Concept;
+  skos:broader iss-set:A5;
+  skos:definition "A fire or explosion that occurs in a train (including its load)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A5.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Fire (or explosion) in a train"@en .
+
+iss-set:A-5-2 a skos:Concept;
+  skos:broader iss-set:A5;
+  skos:definition "A fire or explosion that occurs in a rail vehicle (including its load)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A5.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Fire (or explosion) involving one or more rail vehicles"@en .
+
+iss-set:A-6 a skos:Concept;
+  skos:broader iss-set:A;
+  skos:definition "A suicide or attempted suicide falling within the A.6 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Suicides and attempted suicides (voluntary reporting)"@en .
+
+iss-set:A-6-1 a skos:Concept;
+  skos:broader iss-set:A6;
+  skos:definition "An act to deliberately injure oneself resulting in death; as recorded and classified by the competent national authority."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A6.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Suicide (voluntary reporting)"@en .
+
+iss-set:A-6-2 a skos:Concept;
+  skos:broader iss-set:A6;
+  skos:definition "An act to deliberately injure oneself resulting in serious injury; as recorded and classified by the competent national authority."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "A6.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Attempted suicide (voluntary reporting)"@en .
+
+iss-set:B-0 a skos:Concept;
+  skos:broader iss-set:B;
+  skos:definition " Other category B event falling within the B.0 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other category B event types"@en .
+
+iss-set:B-0-0 a skos:Concept;
+  skos:broader iss-set:B-0;
+  skos:definition "Any other category B event type not covered by any of the category or sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.0.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other  un-coded category B event types"@en .
+
+iss-set:B-0-1 a skos:Concept;
+  skos:broader iss-set:B-0;
+  skos:definition "Any occasion in which a fire is taking place in proximity of rail infrastructure, affecting the integrity of the infrastructure or the operations."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.0.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Fire in proximity of rail infrastructure"@en .
+
+iss-set:B-0-2 a skos:Concept;
+  skos:broader iss-set:B-0;
+  skos:definition "Any occasion in which the unauthorised presence of staff/employees (i.e. not in accordance with the applicable requirements) is detected. This also includes sub-contractor staff."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.0.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Unauthorised presence of staff/employees on railway system"@en .
+
+iss-set:B-0-3 a skos:Concept;
+  skos:broader iss-set:B-0;
+  skos:definition "Any occasion in which the unauthorised presence of third parties on the railway system (i.e. not in accordance with the applicable requirements) is detected."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.0.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Unauthorised presence of other third parties on the railway system"@en .
+
+iss-set:B-0-4 a skos:Concept;
+  skos:broader iss-set:B-0;
+  skos:definition "Any occasion in which the improper or incautious use by persons of authorised passages between platforms in the stations is detected"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.0.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Improper or incautious use of authorised passages between platforms in the stations"@en .
+
+iss-set:B-0-5 a skos:Concept;
+  skos:broader iss-set:B-0;
+  skos:definition "Any incident involving dangerous goods to be reported in accordance with section 1.8.5 of �RID� (as referred to in Annex II.1 to Directive 2008/68/EC, as amended) and not covered by another type B event."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.0.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Dangerous goods incidents not related to another type B event"@en .
+
+iss-set:B-1 a skos:Concept;
+  skos:broader iss-set:B;
+  skos:definition "An operation failure event falling within the B.1 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Operation failures"@en .
+
+iss-set:B-1-0 a skos:Concept;
+  skos:broader iss-set:B-1;
+  skos:definition "Any occasion falling within the category 'operation failures', but not covered by the categories �failure to operate the infrastructure� and �failure to operate a train or rail vehicle�. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other un-coded operation failure"@en .
+
+iss-set:B-1-1 a skos:Concept;
+  skos:broader iss-set:B-1;
+  skos:definition "A failure to operate the infrastructure falling within the B.1.1 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Failure to operate the infrastructure"@en .
+
+iss-set:B-1-1-0 a skos:Concept;
+  skos:broader iss-set:B-1-1;
+  skos:definition "Any occasion falling within the category �failure to operate the infrastructure�, but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply. "@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.1.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other failure to operate the infrastructure"@en .
+
+iss-set:B-1-1-1 a skos:Concept;
+  skos:broader iss-set:B-1-1;
+  skos:definition "Any occasion when a train/vehicle is directed on a route that was not planned."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.1.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Improper routing"@en .
+
+iss-set:B-1-1-2 a skos:Concept;
+  skos:broader iss-set:B-1-1;
+  skos:definition "On track machine(s) or other object(s) used during infrastructure activities positioned outside the authorised area"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.1.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "On track plant incorrectly outside possession"@en .
+
+iss-set:B-1-1-3 a skos:Concept;
+  skos:broader iss-set:B-1-1;
+  skos:definition "Any occasion when a switch in a wrong position is run over in trailing direction (converging points) unintentionally."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.1.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Pushed switch"@en .
+
+iss-set:B-1-1-4 a skos:Concept;
+  skos:broader iss-set:B-1-1;
+  skos:definition "Any occasion when a passenger train is stopped in a tunnel for more than 10 minutes. Stops in underground stations should be excluded."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.1.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Long stop in tunnel"@en .
+
+iss-set:B-1-2 a skos:Concept;
+  skos:broader iss-set:B-1;
+  skos:definition "A failure to operate a train or rail vehicle falling within the B.1.2 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Failure to operate a train or rail vehicle"@en .
+
+iss-set:B-1-2-0 a skos:Concept;
+  skos:broader iss-set:B-1-2;
+  skos:definition "Any occasion falling within the category �failure to operate a train or rail vehicle�, but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other failure to operate a train or rail vehicle"@en .
+
+iss-set:B-1-2-1 a skos:Concept;
+  skos:broader iss-set:B-1-2;
+  skos:definition "Any occasion when any part of a train or rail vehicle proceeds beyond its authorised movement and travels beyond the danger point."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Signal passed at danger with passing of a danger point"@en .
+
+iss-set:B-1-2-10 a skos:Concept;
+  skos:broader iss-set:B-1-2;
+  skos:definition "Any occasion when a passenger train is stopped in a tunnel for more than 10 minutes. Stops in underground stations should be excluded."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2.10"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Long stop in tunnel"@en .
+
+iss-set:B-1-2-11 a skos:Concept;
+  skos:broader iss-set:B-1-2;
+  skos:definition "Any situation in which a brake application by the driver is exceeding applicable limits"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2.11"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Severe brake"@en .
+
+iss-set:B-1-2-12 a skos:Concept;
+  skos:broader iss-set:B-1-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2.12"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Brake not correctly set for load"@en .
+
+iss-set:B-1-2-2 a skos:Concept;
+  skos:broader iss-set:B-1-2;
+  skos:definition "Any occasion when any part of a train or rail vehicle proceeds beyond its authorised movement but does not travel beyond the danger point"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Signal passed at danger without passing a danger point"@en .
+
+iss-set:B-1-2-3 a skos:Concept;
+  skos:broader iss-set:B-1-2;
+  skos:definition "Any uncontrolled movement of a train or rail vehicle over a distance of at least one meter."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Runaway"@en .
+
+iss-set:B-1-2-4 a skos:Concept;
+  skos:broader iss-set:B-1-2;
+  skos:definition "Any occasion when a train runs with a speed higher than the maximum authorized speed or design speed."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Over-speeding"@en .
+
+iss-set:B-1-2-5 a skos:Concept;
+  skos:broader iss-set:B-1-2;
+  skos:definition "Any situation in which goods are improperly loaded (not in accordance with the applicable safety requirements)"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Loading irregularity"@en .
+
+iss-set:B-1-2-6 a skos:Concept;
+  skos:broader iss-set:B-1-2;
+  skos:definition "Any situation in which a train composition does not respect the applicable safety requirements. It excludes all events already covered by other category B events (e.g. 'Brake not correctly set for load� or �Failure of the braking system�)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2.6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Train composition Failure"@en .
+
+iss-set:B-1-2-7 a skos:Concept;
+  skos:broader iss-set:B-1-2;
+  skos:definition "When this situation is taking place unintentionally or without specific RU procedure to be followed"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2.7"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Train available for boarding or alignment outside platform"@en .
+
+iss-set:B-1-2-8 a skos:Concept;
+  skos:broader iss-set:B-1-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2.8"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Person entrapment in door"@en .
+
+iss-set:B-1-2-9 a skos:Concept;
+  skos:broader iss-set:B-1-2;
+  skos:definition "Any situation in which a train departs or runs with an unsupervised open door"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.1.2.9"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Train running with open door"@en .
+
+iss-set:B-2 a skos:Concept;
+  skos:broader iss-set:B;
+  skos:definition "A technical failure of the rolling stock falling within the B.2 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Technical Failure of the rolling stock"@en .
+
+iss-set:B-2-0 a skos:Concept;
+  skos:broader iss-set:B-2;
+  skos:definition "Other failure of the rolling stock falling within the B.2.0 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other failures of the rolling stock"@en .
+
+iss-set:B-2-0-0 a skos:Concept;
+  skos:broader iss-set:B-2-0;
+  skos:definition "Any occasion falling within the category �technical failure of the rolling stock ', but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.0.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other un-coded technical failure of the rolling stock"@en .
+
+iss-set:B-2-0-1 a skos:Concept;
+  skos:broader iss-set:B-2-0;
+  skos:definition "Any technical failure of a signalling system (on-board), resulting in signalling a safety related information less restrictive than that demanded. "@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.0.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Wrong side signalling (on-board) failure"@en .
+
+iss-set:B-2-0-10 a skos:Concept;
+  skos:broader iss-set:B-2-0;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.0.10"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Twisted underframe"@en .
+
+iss-set:B-2-0-2 a skos:Concept;
+  skos:broader iss-set:B-2-0;
+  skos:definition "Any technical failure of the on-board system to estimate changes in train position over time"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.0.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Odometry error"@en .
+
+iss-set:B-2-0-3 a skos:Concept;
+  skos:broader iss-set:B-2-0;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.0.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Train detection equipment failure (on-board)"@en .
+
+iss-set:B-2-0-4 a skos:Concept;
+  skos:broader iss-set:B-2-0;
+  skos:definition "Any situation when a rolling stock part detaches and falls on the ground."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.0.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Losing of rolling stock parts"@en .
+
+iss-set:B-2-0-5 a skos:Concept;
+  skos:broader iss-set:B-2-0;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.0.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Traction motor failure (electrical)"@en .
+
+iss-set:B-2-0-6 a skos:Concept;
+  skos:broader iss-set:B-2-0;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.0.6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Diesel engine failure"@en .
+
+iss-set:B-2-0-7 a skos:Concept;
+  skos:broader iss-set:B-2-0;
+  skos:definition "Any situation in which the railway vehicles detach as a result of a technical .failure."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.0.7"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Coupling failure"@en .
+
+iss-set:B-2-0-8 a skos:Concept;
+  skos:broader iss-set:B-2-0;
+  skos:definition "Any situation involving a technical malfunctioning of the doors"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.0.8"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Doors failure"@en .
+
+iss-set:B-2-0-9 a skos:Concept;
+  skos:broader iss-set:B-2-0;
+  skos:definition "Any situation involving a technical malfunctioning of the on-board ventilation system.  Note: for example, a loss of ventilation in a train compromising fire management plan, potentially leading to victims or damage"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.0.9"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Loss of ventilation"@en .
+
+iss-set:B-2-1 a skos:Concept;
+  skos:broader iss-set:B-2;
+  skos:definition "A failure of the wheelset falling within the B.2.1 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Failure of the wheelset"@en .
+
+iss-set:B-2-1-0 a skos:Concept;
+  skos:broader iss-set:B-2-1;
+  skos:definition "Any occasion falling within the category �failure of the wheelset�, but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.1.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other failure of the wheelset"@en .
+
+iss-set:B-2-1-1 a skos:Concept;
+  skos:broader iss-set:B-2-1;
+  skos:definition "A crack/defect affecting the wheel and exceeding the applicable limits.  Note: this category excludes broken wheels resulting from hot wheels"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.1.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Broken wheel on rolling stock"@en .
+
+iss-set:B-2-1-2 a skos:Concept;
+  skos:broader iss-set:B-2-1;
+  skos:definition "A crack/defect affecting the axle and exceeding the applicable limits.  Note: this category excludes broken axles resulting from hot axles boxes."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.1.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Broken axle on rolling stock"@en .
+
+iss-set:B-2-1-3 a skos:Concept;
+  skos:broader iss-set:B-2-1;
+  skos:definition "Any situation in which the axle and/or the wheel temperature goes outside  the defined range for normal operations (including when it results in damage to the wheel or axle)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.1.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Hot axle box and/or hot wheel"@en .
+
+iss-set:B-2-1-4 a skos:Concept;
+  skos:broader iss-set:B-2-1;
+  skos:definition "Any situation in which a failure of the bogie is detected. Note: this category excludes failure of the suspension system."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.1.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Failure of the bogie "@en .
+
+iss-set:B-2-1-5 a skos:Concept;
+  skos:broader iss-set:B-2-1;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.1.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Suspension system failure"@en .
+
+iss-set:B-2-2 a skos:Concept;
+  skos:broader iss-set:B2;
+  skos:definition " A failure of the braking system event falling within the B.2.2 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Failure of the braking system"@en .
+
+iss-set:B-2-2-0 a skos:Concept;
+  skos:broader iss-set:B-2-2;
+  skos:definition "Any occasion falling within the category �failure of the braking system�, but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.2.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other failure of the braking system"@en .
+
+iss-set:B-2-2-1 a skos:Concept;
+  skos:broader iss-set:B-2-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.2.2.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Brake not operating with the planned performance"@en .
+
+iss-set:B-3 a skos:Concept;
+  skos:broader iss-set:B;
+  skos:definition "A technical failure of the infrastructure falling within the B.3 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Technical Failure of the infrastructure"@en .
+
+iss-set:B-3-0 a skos:Concept;
+  skos:broader iss-set:B-3;
+  skos:definition "Other failure of the infrastructure falling within the B.3.0 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other failures of the infrastructure"@en .
+
+iss-set:B-3-0-0 a skos:Concept;
+  skos:broader iss-set:B-3-0;
+  skos:definition "Any occasion falling within the category �technical failure of the infrastructure�, but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.0.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other un-coded technical failure of the infrastructure"@en .
+
+iss-set:B-3-0-1 a skos:Concept;
+  skos:broader iss-set:B-3-0;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.0.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Power supply equipment failure"@en .
+
+iss-set:B-3-0-2 a skos:Concept;
+  skos:broader iss-set:B-3-0;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.0.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Train detection equipment failure (trackside)"@en .
+
+iss-set:B-3-0-3 a skos:Concept;
+  skos:broader iss-set:B-3-0;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.0.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Overhead contact line failure"@en .
+
+iss-set:B-3-0-4 a skos:Concept;
+  skos:broader iss-set:B-3-0;
+  skos:definition "Any situation involving a technical malfunctioning of the ventilation system in a tunnel or in a station. Note: for example, a loss of tunnel ventilation compromising fire management plan, potentially leading to victims or damage"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.0.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Loss of ventilation"@en .
+
+iss-set:B-3-1 a skos:Concept;
+  skos:broader iss-set:B-3;
+  skos:definition "A failure of the track falling within the B.3.1 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Failure of the track"@en .
+
+iss-set:B-3-1-0 a skos:Concept;
+  skos:broader iss-set:B-3-1;
+  skos:definition "Any occasion falling within the category �failure of the track�, but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.1.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other failure of the track"@en .
+
+iss-set:B-3-1-1 a skos:Concept;
+  skos:broader iss-set:B-3-1;
+  skos:definition "Any rail which is separated in two or more pieces, or any rail from which a piece of metal becomes detached, causing a gap of more than 50 mm in length and more than 10 mm in depth on the running surface."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.1.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Broken rail"@en .
+
+iss-set:B-3-1-2 a skos:Concept;
+  skos:broader iss-set:B-3-1;
+  skos:definition "Any fault related to the continuum and the geometry of track, requiring track to be placed out of service or immediate restriction of permitted speed"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.1.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Track buckle and other track misalignment"@en .
+
+iss-set:B-3-1-2-0 a skos:Concept;
+  skos:broader iss-set:B-3-1-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.1.2.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other track buckle and track misalignment"@en .
+
+iss-set:B-3-1-2-1 a skos:Concept;
+  skos:broader iss-set:B-3-1-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.1.2.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Gauge spread"@en .
+
+iss-set:B-3-1-2-2 a skos:Concept;
+  skos:broader iss-set:B-3-1-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.1.2.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Track twist"@en .
+
+iss-set:B-3-1-2-3 a skos:Concept;
+  skos:broader iss-set:B-3-1-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.1.2.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Improper rail fastening and joints"@en .
+
+iss-set:B-3-1-3 a skos:Concept;
+  skos:broader iss-set:B-3-1;
+  skos:definition "Any technical failure of a signalling system (infrastructure), resulting in signalling safety related information less restrictive than that demanded. "@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.1.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Wrong side signalling (infrastructure) failure"@en .
+
+iss-set:B-3-1-4 a skos:Concept;
+  skos:broader iss-set:B-3-1;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.1.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Switch and crossing failure"@en .
+
+iss-set:B-3-1-5 a skos:Concept;
+  skos:broader iss-set:B-3-1;
+  skos:definition "Any occasion when a train or rail vehicle passes over a level crossing with lower protection level than required."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.1.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Failure of the level crossing equipment"@en .
+
+iss-set:B-3-2 a skos:Concept;
+  skos:broader iss-set:B-3;
+  skos:definition " A structures failure event falling within the B.3.2 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Structures failure"@en .
+
+iss-set:B-3-2-0 a skos:Concept;
+  skos:broader iss-set:B-3-2;
+  skos:definition "Any occasion falling within the category �structures failure�, but not covered by the subcategories above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.2.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other structures failure"@en .
+
+iss-set:B-3-2-1 a skos:Concept;
+  skos:broader iss-set:B-3-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.2.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Tunnel failure"@en .
+
+iss-set:B-3-2-2 a skos:Concept;
+  skos:broader iss-set:B-3-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.2.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Viaduct failure"@en .
+
+iss-set:B-3-2-3 a skos:Concept;
+  skos:broader iss-set:B-3-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.2.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Culvert failures"@en .
+
+iss-set:B-3-2-4 a skos:Concept;
+  skos:broader iss-set:B-3-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.2.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Rail bridge structural failure"@en .
+
+iss-set:B-3-2-5 a skos:Concept;
+  skos:broader iss-set:B-3-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.2.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Over line bridge (e.g. pedestrian) failure"@en .
+
+iss-set:B-3-2-6 a skos:Concept;
+  skos:broader iss-set:B-3-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.2.6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Station (building) Structure failure"@en .
+
+iss-set:B-3-2-7 a skos:Concept;
+  skos:broader iss-set:B-3-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.2.7"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Platform failure"@en .
+
+iss-set:B-3-2-8 a skos:Concept;
+  skos:broader iss-set:B-3-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "B.3.2.8"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Disorder of earthworks/embankment failure"@en .
+
+iss-set:C-0 a skos:Concept;
+  skos:broader iss-set:C;
+  skos:definition "Any other category C event type not covered by any of the category or sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other un-coded category C event types"@en .
+
+iss-set:C-1 a skos:Concept;
+  skos:broader iss-set:C;
+  skos:definition "An event falling within the C.1 sub-categories for which detailed information is not (yet) available. This category covers both human and technical variations"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Railway system performance"@en .
+
+iss-set:C-1-1 a skos:Concept;
+  skos:broader iss-set:C-1;
+  skos:definition "An event falling within the C.1.1 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "To provide power for train (or vehicle) operations in normal operations, or situations where there are disruptions or engineering work"@en .
+
+iss-set:C-1-1-0 a skos:Concept;
+  skos:broader iss-set:C-1-1;
+  skos:definition "Any variation falling within the category �to provide power for train (or vehicle) operations in normal operations; or situations where there are disruptions or engineering work�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.1.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other"@en .
+
+iss-set:C-1-1-1 a skos:Concept;
+  skos:broader iss-set:C-1-1;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring continuity at handover so that the incoming and outgoing controllers in the control room have a similar understanding of a situation."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.1.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Take up power control duties'"@en .
+
+iss-set:C-1-1-2 a skos:Concept;
+  skos:broader iss-set:C-1-1;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of assessing the status of power sources in order to ensure that they are safe and available to provide optimum power to train services."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.1.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Monitor power'"@en .
+
+iss-set:C-1-1-3 a skos:Concept;
+  skos:broader iss-set:C-1-1;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of maintaining the smooth provision of traction supply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.1.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Provision of traction supply'"@en .
+
+iss-set:C-1-1-4 a skos:Concept;
+  skos:broader iss-set:C-1-1;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that the power supply provision is achieved without any abnormality and ensuring continuity despite irregularities. The controller needs to identify and prioritise irregularity as presented as alarms via control systems."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.1.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Detect irregularity'"@en .
+
+iss-set:C-1-1-5 a skos:Concept;
+  skos:broader iss-set:C-1-1;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that track isolations are conducted in a safe and timely manner. "@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.1.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Agreement of isolation'"@en .
+
+iss-set:C-1-1-6 a skos:Concept;
+  skos:broader iss-set:C-1-1;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of enabling the power supply to be switched off to safeguard staff or others who may be in the vicinity of electrical power conductors. This also includes to specifically confirm with trackwork when/where they will have formal control of the line; and manage isolation accordingly"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.1.6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Formal agreement for control of the line'"@en .
+
+iss-set:C-1-1-7 a skos:Concept;
+  skos:broader iss-set:C-1-1;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of cutting off the electrical power in a specific location; for an agreed period of time; in circumstances where work or third parties intervention is to be carried out in the vicinity of the electrical power sources and there is a risk of injury to staff"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.1.7"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Apply isolation'"@en .
+
+iss-set:C-1-1-8 a skos:Concept;
+  skos:broader iss-set:C-1-1;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of returning power at a specific location at the completion of the work or after an incident."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.1.8"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Return of power / remove isolation'"@en .
+
+iss-set:C-1-10 a skos:Concept;
+  skos:broader iss-set:C-1;
+  skos:definition "An event falling within the C.1.10 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.10"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "To Install a structural subsystem"@en .
+
+iss-set:C-1-10-0 a skos:Concept;
+  skos:broader iss-set:C-1-10;
+  skos:definition "Any variation falling within the category �to install a structural subsystem�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.10.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other"@en .
+
+iss-set:C-1-10-1 a skos:Concept;
+  skos:broader iss-set:C-1-10;
+  skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) manufacture the subsystems and components; b) establish and apply safety-centred assurance arrangements."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.10.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Manufacture'"@en .
+
+iss-set:C-1-10-2 a skos:Concept;
+  skos:broader iss-set:C-1-10;
+  skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) assemble and install the integrated system; total combination of subsystems and components required to form the complete system; b) demonstrate that integrated system; subsystems and components work together as defined by the interfaces; c) demonstrate that integrated system; subsystems and components meet their safety requirements; d) initiate system support arrangements."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.10.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Integration'"@en .
+
+iss-set:C-1-10-3 a skos:Concept;
+  skos:broader iss-set:C-1-10;
+  skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) confirm by examination and provision of objective evidence that the system under consideration in combination with its Safety-Related Application Conditions complies with the safety requirements; b) confirm or update the safety case for the system under consideration; according to the results of the validation."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.10.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Validate (incl. safety acceptance and commissioning)'"@en .
+
+iss-set:C-1-10-4 a skos:Concept;
+  skos:broader iss-set:C-1-10;
+  skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) assess compliance of the total combination of subsystems; components; their interfaces and Safety-Related Application Conditions with the overall safety requirements; b) accept the system for entry into service."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.10.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Accept system (incl. entry in service)'"@en .
+
+iss-set:C-1-10-5 a skos:Concept;
+  skos:broader iss-set:C-1-10;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of controlling safety implication of system decommissioning and disposal tasks."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.10.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function �Decommissioning�"@en .
+
+iss-set:C-1-2 a skos:Concept;
+  skos:broader iss-set:C-1;
+  skos:definition "An event falling within the C.1.2 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "To respond to incidents and occurrences, including arrangements for safety and initiation of remedial actions"@en .
+
+iss-set:C-1-2-0 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation falling within the category �to respond to incidents and occurrences; including arrangements for safety and initiation of remedial actions�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other"@en .
+
+iss-set:C-1-2-1 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of enabling staff to achieve timely and accurate detection of irregularities or an incident; minimising the response time and harm to passengers or staff."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Detect irregularity'"@en .
+
+iss-set:C-1-2-10 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring safety while re-planning traffic flow after an incident or other disruption."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.10"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Re-planning train service'"@en .
+
+iss-set:C-1-2-11 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that passengers are safe in their current location; or that they can be moved safely to another location (e.g. calculate trade-off between remaining in vehicle and evacuation)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.11"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Ensure passenger and personnel safety'"@en .
+
+iss-set:C-1-2-12 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that an incident cause and any secondary damage is rectified."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.12"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Rectifying the incident'"@en .
+
+iss-set:C-1-2-13 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that evidence is preserved for future detection; diagnosis and prevention."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.13"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Protect evidence'"@en .
+
+iss-set:C-1-2-2 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of initiating on-the-ground incident response and containment."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Conduct immediate mitigation, containment'"@en .
+
+iss-set:C-1-2-3 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of identifying the most relevant and current information and establish a shared understanding of the incident; the location and potential implications of the incident; across all relevant operational staff."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Gather and communicate incident information'"@en .
+
+iss-set:C-1-2-4 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of protecting an area from traffic movement and power; in order to maintain safety during an incident or unexpected event."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Protect incident/event area'"@en .
+
+iss-set:C-1-2-5 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of exchanging information; in order to establish a shared understanding between different parties (of location and timing of work and protection; in case of remedial actions) through communication and documentation."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Verify work arrangements'"@en .
+
+iss-set:C-1-2-6 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of monitoring the locations of trains and supply of power to specific parts of the network."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Ensure status of infrastructure'"@en .
+
+iss-set:C-1-2-7 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of transferring the control of an agreed part of the railway line for movement of traffic or other activities (requiring shared understanding of location and responsibilities). It covers also the return of the line for normal operational use."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.7"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Formal agreement for control of the line'"@en .
+
+iss-set:C-1-2-8 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of minimising the time delay in response to an incident. "@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.8"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Coordinating failure and incident response'"@en .
+
+iss-set:C-1-2-9 a skos:Concept;
+  skos:broader iss-set:C-1-2;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of anticipating delays and being proactive in decision making."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.2.9"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Anticipate delay'"@en .
+
+iss-set:C-1-3 a skos:Concept;
+  skos:broader iss-set:C-1;
+  skos:definition "An event falling within the C.1.3 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "To maintain, repair and extend the infrastructure"@en .
+
+iss-set:C-1-3-0 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation falling within the category �to maintain; repair and extend the infrastructure�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other"@en .
+
+iss-set:C-1-3-1 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of identifying what engineering works are needed; in order to prioritise and determine the arrangements for carrying them out. "@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Identify engineering work requirements'"@en .
+
+iss-set:C-1-3-10 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring safe movement of engineering trains; machines and plant on the track; within and outside areas that are protected for work. "@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.10"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Using trains, plant and machinery for engineering work'"@en .
+
+iss-set:C-1-3-11 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of preparing the site of work for return to operational use; including all relevant checks on the work and integrity of the railway and removal of all protection in readiness for transfer of the site back to the control of operational staff."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.11"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Close down site on completion of work'"@en .
+
+iss-set:C-1-3-12 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that work and workers are supervised in a range of different circumstances. "@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.12"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Supervision of teams and individuals'"@en .
+
+iss-set:C-1-3-13 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of completing a wide range of work items during the trackside work; in a changing work environment; with various influencing factors and pressures."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.13"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Carrying out trackside work'"@en .
+
+iss-set:C-1-3-2 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of establishing a sufficient period of time; potentially free from train movements; to carry out the proposed engineering work."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Establish network access'"@en .
+
+iss-set:C-1-3-3 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of producing detailed work plans for the successful completion of the work."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Formulate work plans'"@en .
+
+iss-set:C-1-3-4 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that appropriate resources (people; equipment; materials; plant) are available for the completion of the work that is required."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Allocate resources'"@en .
+
+iss-set:C-1-3-5 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of transferring the control of the line (i) from the control of the signaller to the engineering function for the purpose of engineering work; (ii) from the engineering function back to the signaller at the completion of the work; to return the railway to operational use."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Formal agreement for control of the line'"@en .
+
+iss-set:C-1-3-6 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of exchanging information; in order to establish a shared understanding between different parties on the work arrangements; local circumstances and operational context of the work."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Verify work arrangements'"@en .
+
+iss-set:C-1-3-7 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of protecting the work area from trains and power sources in order to maintain safety (through signalling; isolation; physical barriers; or human barriers."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.7"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Protect work area'"@en .
+
+iss-set:C-1-3-8 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of supplying materials; tools; equipment to the site of work; in a timely manner; with minimal interference to the work at the site; other work sites in the vicinity or other train services."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.8"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Supply of resources to work site�"@en .
+
+iss-set:C-1-3-9 a skos:Concept;
+  skos:broader iss-set:C-1-3;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of identifying site related hazards and setting up safe systems of working to minimise the risk of injury to staff and impacts on the operational train service.  "@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.3.9"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Establish safe working environment'"@en .
+
+iss-set:C-1-4 a skos:Concept;
+  skos:broader iss-set:C-1;
+  skos:definition "An event falling within the C.1.4 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "To operate a train in normal operational situations and situations where disruption or problems occur"@en .
+
+iss-set:C-1-4-0 a skos:Concept;
+  skos:broader iss-set:C-1-4;
+  skos:definition "Any variation falling within the category �to operate a train in normal operational situations and situations where disruption or problems occur�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.4.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other"@en .
+
+iss-set:C-1-4-1 a skos:Concept;
+  skos:broader iss-set:C-1-4;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of confirming that there is authority to proceed (typically given through the signaller though may be given by other members of staff; e.g. during engineering)"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.4.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Ensure authority'"@en .
+
+iss-set:C-1-4-10 a skos:Concept;
+  skos:broader iss-set:C-1-4;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of enabling safe stabling of a vehicle (train needs to be stopped at an appropriate place in an appropriate condition)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.4.10"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Stabling of vehicles'"@en .
+
+iss-set:C-1-4-11 a skos:Concept;
+  skos:broader iss-set:C-1-4;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that passengers are safe and kept informed of relevant safety information on their journey (applicable to passenger services during driver only operation; or in conjunction with train crew; it includes door operation)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.4.11"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Provide information and support to passengers'"@en .
+
+iss-set:C-1-4-3 a skos:Concept;
+  skos:broader iss-set:C-1-4;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of despatching a train from the platform; safely and on-time."@en,
+    "Any variation leading to the non or partial achievement of the goal of ensuring movements at a speed that is safe for the vehicle in the current conditions and in accordance with the timetable."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.4.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Despatch train'"@en, "Variation in function 'Maintain appropriate speed'"@en .
+
+iss-set:C-1-4-4 a skos:Concept;
+  skos:broader iss-set:C-1-4;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that the integrity is maintained for the train and the load; without any detached vehicles (greater relevance for freight trains and loco-hauled passenger services)"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.4.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Ensure train integrity and load integrity on journey'"@en .
+
+iss-set:C-1-4-5 a skos:Concept;
+  skos:broader iss-set:C-1-4;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of bringing the train to a safe standpoint; either in a planned or unplanned manner."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.4.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Stopping train'"@en .
+
+iss-set:C-1-4-6 a skos:Concept;
+  skos:broader iss-set:C-1-4;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of achieving safe and timely operation of control systems (includes responding to automatic warning system and train protection warning system and may also involve interaction with ERTMS)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.4.6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Management of train control systems'"@en .
+
+iss-set:C-1-4-7 a skos:Concept;
+  skos:broader iss-set:C-1-4;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that the infrastructure is open and safe for own use and for others (e.g. identifying faults such as signal failures or line blockages on own or adjacent track)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.4.7"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Ensure status of infrastructure'"@en .
+
+iss-set:C-1-4-8 a skos:Concept;
+  skos:broader iss-set:C-1-4;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of operating level crossings manually on site; to maintain separation between road and rail traffic."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.4.8"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Operate level crossing'"@en .
+
+iss-set:C-1-4-9 a skos:Concept;
+  skos:broader iss-set:C-1-4;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of alerting people to potential risks from trains."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.4.9"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Warnings to other rail users'"@en .
+
+iss-set:C-1-5 a skos:Concept;
+  skos:broader iss-set:C-1;
+  skos:definition "An event falling within the C.1.5 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "To control train movements in all operational circumstances"@en .
+
+iss-set:C-1-5-0 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation falling within the category �to control train movements in all operational circumstances�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other"@en .
+
+iss-set:C-1-5-1 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of developing an understanding of the area that will be under the signallers� control and assure staff awareness of relevant information on change of control of train movement duties."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Take up control of train movement duties'"@en .
+
+iss-set:C-1-5-10 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of imposing speed restrictions in a number of operating scenarios."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.10"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Manage implementation of emergency / temporary speed restrictions'"@en .
+
+iss-set:C-1-5-11 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of assimilating and sharing incoming information so that relevant staff have a common understanding of the network and the control of traffic."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.11"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Gather and communicate information'"@en .
+
+iss-set:C-1-5-12 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of controlling level crossings; to separate road and rail traffic; ensure safety of the public and safety of the railway service."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.12"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Control level crossing'"@en .
+
+iss-set:C-1-5-13 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that a second person (e.g. team member) can have an overview of the status of the system and the decisions/actions of individuals who are controlling the system (so that a team member can provide support if necessary; also supervisors)"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.13"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Supervision of teams and individuals'"@en .
+
+iss-set:C-1-5-2 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of responding to scenarios that require the handing over of responsibility for the control of movements (could include engineering; or to regional control centre)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Handover of responsibility'"@en .
+
+iss-set:C-1-5-3 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of obtaining; recalling and regularly updating information; to maintain an accurate overview of the railway system status."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Monitor rail network'"@en .
+
+iss-set:C-1-5-4 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of giving permission to the operator of a train (or rail vehicle) to move within the infrastructure."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Authorise train movements'"@en .
+
+iss-set:C-1-5-5 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of responding to scenarios that require trains to be re-routed or travel to a different (unplanned) destination."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Route / re-route passenger or freight service'"@en .
+
+iss-set:C-1-5-6 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of keeping track of/recording train movements; in order to help updating a person's awareness of a situation; location; traffic; delays and disruptions and providing formal documentation of relevant details"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Record train movements'"@en .
+
+iss-set:C-1-5-7 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of anticipating and being proactive regarding decision making; in order to minimise time pressure and ensure decision making is effective."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.7"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Anticipate delays or poor traffic flow'"@en .
+
+iss-set:C-1-5-8 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of managing train movements in circumstances in which they fall outside of typical or routine patterns (includes scenarios such as requiring train to pass signal at danger; movements not protected by standard safety systems or train rescue)"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.8"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Deal with irregular train movements'"@en .
+
+iss-set:C-1-5-9 a skos:Concept;
+  skos:broader iss-set:C-1-5;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of enabling operational staff to identify operational characteristics of a train.  This is achieved through provision of an identification number; which may need to be entered or altered in signalling / control systems in certain scenarios"@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.5.9"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Provide train identification'"@en .
+
+iss-set:C-1-6 a skos:Concept;
+  skos:broader iss-set:C-1;
+  skos:definition "An event falling within the C.1.6 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "To prepare trains for service"@en .
+
+iss-set:C-1-6-0 a skos:Concept;
+  skos:broader iss-set:C-1-6;
+  skos:definition "Any variation falling within the category �to prepare trains for service�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.6.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other"@en .
+
+iss-set:C-1-6-1 a skos:Concept;
+  skos:broader iss-set:C-1-6;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that the correct vehicle configuration has been built (can apply to any type of vehicle (loco hauled; EMU; DMU) and to passenger or freight)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.6.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Assembling vehicle formation'"@en .
+
+iss-set:C-1-6-2 a skos:Concept;
+  skos:broader iss-set:C-1-6;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that the train is ready for service (checking by those responsible for vehicle; e.g. driver; particularly doors to ensure ready for service)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.6.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Preparation of vehicles'"@en .
+
+iss-set:C-1-6-3 a skos:Concept;
+  skos:broader iss-set:C-1-6;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of confirming that drivers are aware of service requirements and conditions that can affect service (drivers need to understand local or temporary operating conditions)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.6.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Take up driving duties'"@en .
+
+iss-set:C-1-6-4 a skos:Concept;
+  skos:broader iss-set:C-1-6;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring safe and efficient loading of freight."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.6.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Loading of freight'"@en .
+
+iss-set:C-1-7 a skos:Concept;
+  skos:broader iss-set:C-1;
+  skos:definition "An event falling within the C.1.7 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.7"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "To support passenger movements and well-being at stations"@en .
+
+iss-set:C-1-7-0 a skos:Concept;
+  skos:broader iss-set:C-1-7;
+  skos:definition "Any variation falling within the category �to support passenger movements and well-being at stations�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.7.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other"@en .
+
+iss-set:C-1-7-1 a skos:Concept;
+  skos:broader iss-set:C-1-7;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of preparing the station and provide a clean and safe environment for passengers."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.7.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'to support preparing stations for use by passengers'"@en .
+
+iss-set:C-1-7-2 a skos:Concept;
+  skos:broader iss-set:C-1-7;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of facilitating timely despatch of the train by assisting passengers (platform-train interface can be hazardous particularly for mobility impaired and / or high capacity / short dwell-time stations)."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.7.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'to support assisting passengers'"@en .
+
+iss-set:C-1-7-3 a skos:Concept;
+  skos:broader iss-set:C-1-7;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of maintaining safe movement of crowds in a range of operational circumstances. "@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.7.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'to support control of crowds'"@en .
+
+iss-set:C-1-8 a skos:Concept;
+  skos:broader iss-set:C-1;
+  skos:definition "An event falling within the C.1.8 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.8"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "To check, inspect, maintain and repair rolling stock for service"@en .
+
+iss-set:C-1-8-0 a skos:Concept;
+  skos:broader iss-set:C-1-8;
+  skos:definition "Any variation falling within the category �to check; inspect maintain and repair rolling stock for service�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.8.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other"@en .
+
+iss-set:C-1-8-1 a skos:Concept;
+  skos:broader iss-set:C-1-8;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of determining the work that is needed."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.8.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Identify rolling stock maintenance/repair requirements'"@en .
+
+iss-set:C-1-8-2 a skos:Concept;
+  skos:broader iss-set:C-1-8;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that appropriate resources (people; equipment; materials; plant) are available for inspection/maintenance/repair of rolling stock."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.8.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Allocate resources'"@en .
+
+iss-set:C-1-8-3 a skos:Concept;
+  skos:broader iss-set:C-1-8;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of preparing to undertake inspection/maintenance/repair of rolling stock (it includes for example dismantling to gain access for inspection; lifting and recovery of rolling stock). It also includes returning rolling stock after inspections/maintenance/repair."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.8.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Prepare rolling stock for inspection/intervention and return rolling stock after inspections/intervention'"@en .
+
+iss-set:C-1-8-4 a skos:Concept;
+  skos:broader iss-set:C-1-8;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of carrying out inspection of rolling stock. "@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.8.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Inspect rolling stock'"@en .
+
+iss-set:C-1-8-5 a skos:Concept;
+  skos:broader iss-set:C-1-8;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that appropriate action is taken on the basis of findings from an inspection. "@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.8.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Handover of responsibility'"@en .
+
+iss-set:C-1-8-6 a skos:Concept;
+  skos:broader iss-set:C-1-8;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of installing components onto rolling stock."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.8.6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Installation of components onto vehicles normally in service'"@en .
+
+iss-set:C-1-8-7 a skos:Concept;
+  skos:broader iss-set:C-1-8;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of undertaking maintenance/repair of components on rolling stock. "@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.8.7"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Maintenance/repair of components on vehicles normally in service'"@en .
+
+iss-set:C-1-8-8 a skos:Concept;
+  skos:broader iss-set:C-1-8;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of undertaking service of rolling stock. This includes fuelling; cleaning; restocking of consumables; providing water; examination; emptying of controlled emissions e.g. toilets; loading/unloading of commodities for vehicles."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.8.8"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Servicing of rolling stock'"@en .
+
+iss-set:C-1-9 a skos:Concept;
+  skos:broader iss-set:C-1;
+  skos:definition "An event falling within the C.1.9 sub-categories for which detailed information is not (yet) available."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.9"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "To design a structural subsystem"@en .
+
+iss-set:C-1-9-0 a skos:Concept;
+  skos:broader iss-set:C-1-9;
+  skos:definition "Any variation falling within the category �to design a structural subsystem�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.9.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other"@en .
+
+iss-set:C-1-9-1 a skos:Concept;
+  skos:broader iss-set:C-1-9;
+  skos:definition "Any variation leading to the non or partial achievement of the goal of developing a sufficient understanding of the system to ensure a proper performance of all subsequent safety life cycle activities."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.9.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Define scope and purpose'"@en .
+
+iss-set:C-1-9-2 a skos:Concept;
+  skos:broader iss-set:C-1-9;
+  skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) define the system; its mission profile and b) its boundary; c) establish the operational requirements influencing its characteristics; d) define the functions to be provided by the system; e) define the scope of system risk analysis; f) the initial Safety plan and g) the organisation for safety management of the system."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.9.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Establish system definition and application conditions '"@en .
+
+iss-set:C-1-9-3 a skos:Concept;
+  skos:broader iss-set:C-1-9;
+  skos:definition "Any variation leading to the non or partial achievement of the goals of the function:  a) identify and classify hazards associated with the system; b) select risk acceptance principles (RAP); c) define and apply risk acceptance criteria (RAC); d) assess risks; e) establish a process for on-going risk management."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.9.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Identify risks'"@en .
+
+iss-set:C-1-9-4 a skos:Concept;
+  skos:broader iss-set:C-1-9;
+  skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) specify the overall safety requirements for the system under consideration; b) specify the overall demonstration process and criteria for acceptance of safety of the system; c) provide a comprehensive and identified set of requirements for the subsequent life cycle phases; d) specify necessary monitoring requirements according to the process for analysing operation and maintenance performance arranged in the Safety Plan."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.9.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Specify system requirements'"@en .
+
+iss-set:C-1-9-5 a skos:Concept;
+  skos:broader iss-set:C-1-9;
+  skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) apportion the system safety requirements to the designated subsystems and/or components; b) design subsystems and components that work together as a system which fulfils the required functions at the system level; c) describe the safety requirements and specify the interfaces for all subsystems and components derived from the safety requirements; d) define the acceptance criteria to demonstrate fulfilment of the safety requirements for the system; subsystem; equipment in subsequent lifecycle phases; e) identify and evaluate the significance of the interactions between the subsystems."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.1.9.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Variation in function 'Apportion system requirements (sub-system and component level)'"@en .
+
+iss-set:C-2 a skos:Concept;
+  skos:broader iss-set:C;
+  skos:definition "An event falling within the C.2 sub-categories for which detailed information is not (yet) available. Note: This category of event and its subtypes are allowed to be used as Category B events in the case there is no other possibility to describe properly the scenario which took place."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "External events - Environmental"@en .
+
+iss-set:C-2-0 a skos:Concept;
+  skos:broader iss-set:C-2;
+  skos:definition "Any variation falling within the category �External events - Environmental�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.2.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other external events - Environmental"@en .
+
+iss-set:C-2-1 a skos:Concept;
+  skos:broader iss-set:C-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.2.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Earthquake"@en .
+
+iss-set:C-2-2 a skos:Concept;
+  skos:broader iss-set:C-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.2.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Flooding"@en .
+
+iss-set:C-2-3 a skos:Concept;
+  skos:broader iss-set:C-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.2.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Landslide"@en .
+
+iss-set:C-2-4 a skos:Concept;
+  skos:broader iss-set:C-2;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.2.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Vegetation"@en .
+
+iss-set:C-3 a skos:Concept;
+  skos:broader iss-set:C;
+  skos:definition "An event falling within the C.3 sub-categories for which detailed information is not (yet) available. Note: This category of event and its subtypes are allowed to be used as Category B events in the case there is no other possibility to describe properly the scenario which took place."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "External events - Security"@en .
+
+iss-set:C-3-0 a skos:Concept;
+  skos:broader iss-set:C-3;
+  skos:definition "Any variation falling within the category �External events - Environmental�; but not covered by any of the sub-categories coded above. A reporting of information in accordance with section 3.3 of Appendix A - Part C shall apply."@en;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.3.0"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Other external events - Security"@en .
+
+iss-set:C-3-1 a skos:Concept;
+  skos:broader iss-set:C-3;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.3.1"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Terrorism"@en .
+
+iss-set:C-3-2 a skos:Concept;
+  skos:broader iss-set:C-3;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.3.2"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Assault"@en .
+
+iss-set:C-3-3 a skos:Concept;
+  skos:broader iss-set:C-3;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.3.3"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Theft"@en .
+
+iss-set:C-3-4 a skos:Concept;
+  skos:broader iss-set:C-3;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.3.4"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Arson"@en .
+
+iss-set:C-3-5 a skos:Concept;
+  skos:broader iss-set:C-3;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.3.5"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Vandalism"@en .
+
+iss-set:C-3-6 a skos:Concept;
+  skos:broader iss-set:C-3;
+  skos:inScheme iss-set:SafetyEventTypes;
+  skos:notation "C.3.6"^^<http://www.w3.org/2001/XMLSchema#token>;
+  skos:prefLabel "Cyber attack"@en .
 

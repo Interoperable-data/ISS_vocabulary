@@ -22,6 +22,7 @@
 
 iss-lod:LocationDetails a skos:ConceptScheme ; 
     dct:issued "2024-04-04"^^xsd:date ;
+    dct:modified "2024-09-03"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
     rdfs:label "LocationDetails"@en ;
@@ -41,12 +42,9 @@ iss-lod:InATunnel
 
 iss-lod:OnABridge
         rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
-        skos:prefLabel  "On a bridge" .
+        skos:prefLabel  "On a bridge"@en .
 
 iss-lod:AtALevelCrossing
         rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
-        skos:prefLabel  "At a level-crossing" .
+        skos:prefLabel  "At a level-crossing"@en .
 
-iss-lod:OtherLocation
-        rdf:type        skos:Concept ;         skos:inScheme iss-lod:LocationDetails;         skos:topConceptOf iss-lod:LocationDetails;
-        skos:prefLabel  "Other location" .

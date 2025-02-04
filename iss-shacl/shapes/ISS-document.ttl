@@ -1,0 +1,143 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:DocumentShape
+	a sh:NodeShape ;
+    sh:targetClass iss:Document.
+
+iss-sh:DocumentShape sh:property iss-sh:DocumentVersion, iss-sh:DocumentCopyright, iss-sh:DocumentId, iss-sh:DocumentTitle .
+
+iss-sh:DocumentCopyright
+  sh:datatype xsd:string ;
+  era:scope "local"@en ;
+  sh:path iss:documentCopyright ;
+  era:affectedProperty iss:documentCopyright ;
+  a sh:PropertyShape ;
+  sh:message "documentCopyright: Each document may have documentCopyright that is a string. This error is due to having a value that is not a string."@en ;
+  era:affectedClass iss:Document ;
+  sh:severity sh:violation .
+
+iss-sh:DocumentVersion
+  sh:severity sh:violation ;
+  era:affectedClass iss:Document ;
+  sh:message "documentVersion: Each document may have documentVersion that is a string. This error is due to having a value that is not a string."@en ;
+  a sh:PropertyShape ;
+  sh:path iss:documentVersion ;
+  era:affectedProperty iss:documentVersion ;
+  sh:datatype xsd:string ;
+  era:scope "local"@en.
+
+iss-sh:DocumentTitle
+  sh:severity sh:violation ;
+  era:affectedProperty iss:documentTitle ;
+  sh:message "documentTitle: Each document may have documentTitle that is a string. This error is due to having a value that is not a string."@en ;
+  sh:path iss:documentTitle ;
+  era:affectedClass iss:Document ;
+  a sh:PropertyShape ;
+  sh:datatype xsd:string ;
+  era:scope "local"@en.
+
+iss-sh:DocumentId
+  era:affectedProperty iss:documentId ;
+  sh:path iss:documentId ;
+  sh:severity sh:violation ;
+  sh:message "documentId: Each document may have documentId that is a string. This error is due to having a value that is not a string."@en ;
+  a sh:PropertyShape ;
+  era:affectedClass iss:Document ;
+  era:scope "local"@en ;
+  sh:datatype xsd:string .
+
+# SKOS
+iss-sh:DocumentShape sh:property iss-sh:DocumentAccessSKOS, iss-sh:DocumentLanguageSKOS,
+    iss-sh:DocumentStatusSKOS, iss-sh:DocumentTypeSKOS .
+
+iss-sh:DocumentAccessSKOS a sh:PropertyShape;
+  era:affectedProperty iss:documentAccess;
+  era:affectedClass iss:Document;
+  era:scope "local";
+  sh:path iss:documentAccess;
+  sh:class skos:Concept;
+  sh:property iss-sh:DocumentAccessSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "documentAccess: The instance of Document has a documentAccess value that is not a SKOS concept."@en.
+
+iss-sh:DocumentAccessSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:documentAccess;
+  era:affectedClass iss:Document;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/document-accesses/DocumentAccesses>;
+  sh:severity sh:violation;
+  sh:message "documentAccess: The instance of Document has a documentAccess value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/document-accesses/DocumentAccesses."@en.
+
+iss-sh:DocumentLanguageSKOS a sh:PropertyShape;
+  era:affectedProperty iss:documentLanguage;
+  era:affectedClass iss:Document;
+  era:scope "local";
+  rdfs:comment "Language(s) in which the document is available."@en;
+  sh:path iss:documentLanguage;
+  sh:class skos:Concept;
+  sh:property iss-sh:DocumentLanguageSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "documentLanguage: The instance of Document has a documentLanguage value that is not a SKOS concept."@en.
+
+iss-sh:DocumentLanguageSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:documentLanguage;
+  era:affectedClass iss:Document;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <https://publications.europa.eu/resource/authority/language>;
+  sh:severity sh:violation;
+  sh:message "documentLanguage: The instance of Document has a documentLanguage value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: https://publications.europa.eu/resource/authority/language."@en.
+
+iss-sh:DocumentStatusSKOS a sh:PropertyShape;
+  era:affectedProperty iss:documentStatus;
+  era:affectedClass iss:Document;
+  era:scope "local";
+  rdfs:comment "Language(s) in which the document is available."@en;
+  sh:path iss:documentStatus;
+  sh:class skos:Concept;
+  sh:property iss-sh:DocumentStatusSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "documentStatus: The instance of Document has a documentStatus value that is not a SKOS concept."@en.
+
+iss-sh:DocumentStatusSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:documentStatus;
+  era:affectedClass iss:Document;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/document-statuses/DocumentStatuses>;
+  sh:severity sh:violation;
+  sh:message "documentStatus: The instance of Document has a documentStatus value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/document-statuses/DocumentStatuses."@en.
+
+iss-sh:DocumentTypeSKOS a sh:PropertyShape;
+  era:affectedProperty iss:documentType;
+  era:affectedClass iss:Document;
+  era:scope "local";
+  rdfs:comment """Type of document (e.g. report, note, e-mail...).
+
+Not to confuse with the ICT format of the digital document."""@en;
+  sh:path iss:documentType;
+  sh:class skos:Concept;
+  sh:property iss-sh:DocumentTypeSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "documentType: The instance of Document has a documentType value that is not a SKOS concept."@en.
+
+iss-sh:DocumentTypeSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:documentType;
+  era:affectedClass iss:Document;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/document-types/DocumentTypes>;
+  sh:severity sh:violation;
+  sh:message "documentType: The instance of Document has a documentType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/document-types/DocumentTypes."@en.
+
+

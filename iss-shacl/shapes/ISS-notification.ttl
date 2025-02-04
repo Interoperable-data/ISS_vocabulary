@@ -1,0 +1,134 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:NotificationShape
+	a sh:NodeShape ;
+    sh:targetClass iss:Notification.
+
+iss-sh:NotificationShape sh:property iss-sh:NotificationLegalBasis, iss-sh:NotificationMessage, iss-sh:NotifiedContactId, iss-sh:SharingDeadline, iss-sh:ValidationDeadline, iss-sh:ReportingPeriodEndDate .
+
+iss-sh:ReportingPeriodStartDate
+  sh:datatype xsd:date ;
+  sh:message "reportingPeriodStartDate: Each notification may have reportingPeriodStartDate that is a date. This error is due to having a value that is not a date."@en;
+  sh:path iss:reportingPeriodStartDate ;
+  era:affectedProperty iss:reportingPeriodStartDate ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  era:scope "local"@en;
+  era:affectedClass iss:Notification .
+
+iss-sh:ReportingPeriodEndDate
+  sh:datatype xsd:date ;
+  sh:message "reportingPeriodEndDate: Each notification may have reportingPeriodEndDate that is a date. This error is due to having a value that is not a date."@en;
+  sh:path iss:reportingPeriodEndDate ;
+  era:affectedProperty iss:reportingPeriodEndDate ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape ;
+  era:scope "local"@en;
+  era:affectedClass iss:Notification .
+
+
+iss-sh:NotificationLegalBasis
+  era:affectedProperty iss:notificationLegalBasis ;
+  sh:message "notificationLegalBasis: Each notification may have notificationLegalBasis that is a string. This error is due to having a value that is not a string."@en;
+  sh:datatype xsd:string ;
+  a sh:PropertyShape ;
+  sh:path iss:notificationLegalBasis ;
+  era:affectedClass iss:Notification ;
+  sh:severity sh:violation ;
+  era:scope "local"@en .
+
+iss-sh:SharingDeadline
+  era:affectedClass iss:Notification ;
+  sh:message "sharingDeadline: Each notification may have sharingDeadline that is a date. This error is due to having a value that is not a date."@en;
+  era:affectedProperty iss:sharingDeadline ;
+  era:scope "local"@en;
+  sh:datatype xsd:date ;
+  sh:path iss:sharingDeadline ;
+  sh:severity sh:violation ;
+  a sh:PropertyShape .
+
+iss-sh:ValidationDeadline
+  sh:path iss:validationDeadline ;
+  era:affectedClass iss:Notification ;
+  era:affectedProperty iss:validationDeadline ;
+  sh:datatype xsd:date ;
+  era:scope "local"@en;
+  sh:severity sh:violation ;
+  sh:message "validationDeadline: Each notification may have validationDeadline that is a date. This error is due to having a value that is not a date."@en;
+  a sh:PropertyShape .
+
+iss-sh:NotifiedContactId
+  sh:severity sh:violation ;
+  sh:datatype xsd:string ;
+  sh:path iss:notifiedContactId ;
+  sh:message "notifiedContactId: Each notification may have notifiedContactId that is a string. This error is due to having a value that is not a string."@en;
+  a sh:PropertyShape ;
+  era:scope "local"@en;
+  era:affectedProperty iss:notifiedContactId ;
+  era:affectedClass iss:Notification .
+
+iss-sh:NotificationMessage
+  era:affectedProperty iss:notificationMessage ;
+  sh:severity sh:violation ;
+  sh:datatype xsd:string ;
+  sh:path iss:notificationMessage ;
+  a sh:PropertyShape ;
+  era:scope "local"@en;
+  sh:message "notificationMessage: Each notification may have notificationMessage that is a string. This error is due to having a value that is not a string."@en;
+  era:affectedClass iss:Notification .
+
+iss-sh:NotificationShape sh:property iss-sh:TargetedDocument, iss-sh:TargetedRecord .
+
+
+iss-sh:TargetedRecord
+  era:affectedClass iss:Notification ;
+  era:affectedProperty iss:targetedRecord ;
+  era:scope "local"@en;
+  sh:class iss:Record ;
+  sh:severity sh:violation ;
+  sh:path iss:targetedRecord ;
+  a sh:PropertyShape ;
+  sh:message "targetedRecord: The notification has a targetedRecord that must be a Record."@en .
+
+iss-sh:TargetedDocument
+  era:scope "local"@en;
+  era:affectedProperty iss:targetedDocument ;
+  sh:message "targetedDocument: The notification has a targetedDocument that must be a Document."@en;
+  sh:class iss:Document ;
+  rdfs:comment "Record that is the subject of the notification."@en ;
+  sh:path iss:targetedDocument ;
+  a sh:PropertyShape ;
+  era:affectedClass iss:Notification ;
+  sh:severity sh:violation .
+
+# SKOS
+iss-sh:NotificationShape sh:property iss-sh:NotificationTypeSKOS .
+
+iss-sh:NotificationTypeSKOS a sh:PropertyShape;
+  era:affectedProperty iss:notificationType;
+  era:affectedClass iss:Notification;
+  era:scope "local";
+  rdfs:comment "Type of notification in accordance with the ISS applicable types."@en;
+  sh:path iss:notificationType;
+  sh:class skos:Concept;
+  sh:property iss-sh:NotificationTypeSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "notificationType: The instance of Notification has a notificationType value that is not a SKOS concept."@en .
+
+iss-sh:NotificationTypeSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:notificationType;
+  era:affectedClass iss:Notification;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/notification-types/NotificationTypes>;
+  sh:severity sh:violation;
+  sh:message "notificationType: The instance of Notification has a notificationType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/notification-types/NotificationTypes."@en .

@@ -1,0 +1,53 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX iss: <http://data.europa.eu/949/iss/>
+PREFIX iss-sh: <http://data.europa.eu/949/iss/shapes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#> 
+PREFIX era: <http://data.europa.eu/949/>
+
+construct {
+    iss-sh:SimpleReportSafetyRelatedEventShape sh:property ?shapeUri .
+    ?shapeUri a sh:PropertyShape ;
+			era:affectedProperty ?property;
+		    era:affectedClass iss:SimpleReportSafetyRelatedEvent;
+    		era:scope "local";
+    		rdfs:comment ?comment ;
+            sh:path ?property;
+            sh:datatype ?range;
+            sh:severity sh:violation;
+    		sh:message ?message.
+}
+#select * 
+where { GRAPH <http://data.europa.eu/949/iss/graph/dev/ontology> {
+    ?property a owl:DatatypeProperty ;
+        rdfs:range ?range.
+    {?property rdfs:domain iss:SimpleReportSafetyRelatedEvent.}
+    UNION
+    {?property rdfs:domain [owl:unionOf (?other1 iss:SimpleReportSafetyRelatedEvent)].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (iss:SimpleReportSafetyRelatedEvent ?other2)].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (iss:SimpleReportSafetyRelatedEvent ?other3 ?another1)].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (?other4 iss:SimpleReportSafetyRelatedEvent ?another2 )].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (?other5 ?another3 iss:SimpleReportSafetyRelatedEvent)].}    
+    
+    OPTIONAL {?property rdfs:comment ?comment.}
+    BIND( URI(CONCAT("http://data.europa.eu/949/iss/shapes/",
+                UCASE(SUBSTR(STRAFTER(STR(?property),"http://data.europa.eu/949/iss/"),1,1)),
+                SUBSTR(STRAFTER(STR(?property),"http://data.europa.eu/949/iss/"),2)
+            		)
+        	  ) AS ?shapeUri)
+    BIND( STRLANG(CONCAT(
+            STRAFTER(STR(?property),"http://data.europa.eu/949/iss/"),
+            ": Each simple report safety related event may have ",
+            STRAFTER(STR(?property),"http://data.europa.eu/949/iss/"),
+            " that is a ",
+            STRAFTER(STR(?range),"http://www.w3.org/2001/XMLSchema#"),
+            ". This error is due to having a value that is not a ",
+            STRAFTER(STR(?range),"http://www.w3.org/2001/XMLSchema#"),
+            "."), "en") AS ?message)
+    FILTER NOT EXISTS {?property owl:deprecated "true"^^xsd:boolean}
+  }.}

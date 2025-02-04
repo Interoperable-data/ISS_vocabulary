@@ -1,0 +1,50 @@
+@prefix iss-sh: <http://data.europa.eu/949/iss/shapes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iss: <http://data.europa.eu/949/iss/> .
+@prefix era: <http://data.europa.eu/949/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+
+iss-sh:InputAndGateShape
+	a sh:NodeShape ;
+    sh:targetClass iss:InputAndGate.
+
+iss-sh:InputAndGateShape sh:property iss-sh:InputAndGateBuildingBlock .
+
+iss-sh:InputAndGateBuildingBlock
+  sh:message "inputAndGateBuildingBlock: The input And gate has a inputAndGateBuildingBlock that must be a OccurrenceScenarioBuildingBlock."@en ;
+  a sh:PropertyShape ;
+  era:affectedProperty iss:inputAndGateBuildingBlock ;
+  sh:class iss:OccurrenceScenarioBuildingBlock ;
+  sh:path iss:inputAndGateBuildingBlock ;
+  era:affectedClass iss:InputAndGate ;
+  sh:severity sh:violation ;
+  era:scope "local".
+
+iss-sh:InputAndGateShape sh:property iss-sh:InputAndGateBuildingBlock .
+
+# SKOS
+iss-sh:InputAndGateShape sh:property iss-sh:InputAndGateEventSKOS .
+
+iss-sh:InputAndGateEventSKOS a sh:PropertyShape;
+  era:affectedProperty iss:inputAndGateEvent;
+  era:affectedClass iss:InputAndGate;
+  era:scope "local";
+  sh:path iss:inputAndGateEvent;
+  sh:class skos:Concept;
+  sh:property iss-sh:InputAndGateEventSKOSinScheme;
+  sh:severity sh:violation;
+  sh:message "inputAndGateEvent: The instance of InputAndGate has a inputAndGateEvent value that is not a SKOS concept."@en.
+
+iss-sh:InputAndGateEventSKOSinScheme a sh:PropertyShape;
+  era:affectedProperty iss:inputAndGateEvent;
+  era:affectedClass iss:InputAndGate;
+  era:scope "local";
+  sh:path skos:inScheme;
+  sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes>;
+  sh:severity sh:violation;
+  sh:message "inputAndGateEvent: The instance of InputAndGate has a inputAndGateEvent value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes."@en.

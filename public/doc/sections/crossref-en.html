@@ -6,6 +6,13 @@ This section provides details for each class and property defined by ISS vocabul
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
+         <a href="#http://data.europa.eu/949/Body" title="http://data.europa.eu/949/Body">Body</a>
+      </li>
+      <li>
+         <a href="#ContributingSystemicFactor"
+            title="http://data.europa.eu/949/iss/ContributingSystemicFactor">Contributing and Systemic factors</a>
+      </li>
+      <li>
          <a href="#http://www.opengis.net/ont/sf#Curve" title="http://www.opengis.net/ont/sf#Curve">Curve</a>
       </li>
       <li>
@@ -25,8 +32,8 @@ This section provides details for each class and property defined by ISS vocabul
          </a>
       </li>
       <li>
-         <a href="#FailureOfRiskControlMeasure"
-            title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
+         <a href="#FailedRiskControlMeasure"
+            title="http://data.europa.eu/949/iss/FailedRiskControlMeasure">Failed risk control measure</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/Feature" title="http://data.europa.eu/949/Feature">Feature</a>
@@ -55,11 +62,16 @@ This section provides details for each class and property defined by ISS vocabul
             title="http://data.europa.eu/949/iss/HumanConsequencesPerPersonCategory">Human consequences per person category</a>
       </li>
       <li>
-         <a href="#InfoInRecordVersion"
-            title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+         <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
       </li>
       <li>
          <a href="#http://data.europa.eu/949/InfrastructureObject" title="http://data.europa.eu/949/InfrastructureObject">Infrastructure object</a>
+      </li>
+      <li>
+         <a href="#InputAndGate" title="http://data.europa.eu/949/iss/InputAndGate">Input And Gate</a>
+      </li>
+      <li>
+         <a href="#InputOrGate" title="http://data.europa.eu/949/iss/InputOrGate">Input Or Gate</a>
       </li>
       <li>
          <a href="#Notification" title="http://data.europa.eu/949/iss/Notification">Notification</a>
@@ -73,7 +85,15 @@ This section provides details for each class and property defined by ISS vocabul
             title="http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock">Occurrence scenario building block</a>
       </li>
       <li>
+         <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
+      </li>
+      <li>
          <a href="#http://www.w3.org/ns/org#Organization" title="http://www.w3.org/ns/org#Organization">Organization</a>
+      </li>
+      <li>
+         <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">
+            <span>person</span>
+         </a>
       </li>
       <li>
          <a href="#http://www.opengis.net/ont/sf#Point" title="http://www.opengis.net/ont/sf#Point">Point</a>
@@ -83,6 +103,13 @@ This section provides details for each class and property defined by ISS vocabul
       </li>
       <li>
          <a href="#http://data.europa.eu/949/LineReference" title="http://data.europa.eu/949/LineReference">Railway location</a>
+      </li>
+      <li>
+         <a href="#Recommendation" title="http://data.europa.eu/949/iss/Recommendation">Recommendation</a>
+      </li>
+      <li>
+         <a href="#RecommendationItem"
+            title="http://data.europa.eu/949/iss/RecommendationItem">Recommendation item</a>
       </li>
       <li>
          <a href="#Record" title="http://data.europa.eu/949/iss/Record">Record</a>
@@ -128,8 +155,8 @@ This section provides details for each class and property defined by ISS vocabul
             title="http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimation">Safety performance self-estimation</a>
       </li>
       <li>
-         <a href="#SafetyPerformanceselfEstimationPerArea"
-            title="http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea">Safety performance self-estimation per area</a>
+         <a href="#SafetyPerformanceSelfEstimationPerArea"
+            title="http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerArea">Safety performance self-estimation per area</a>
       </li>
       <li>
          <a href="#SafetyPerformanceSelfEstimationPerElement"
@@ -157,6 +184,68 @@ This section provides details for each class and property defined by ISS vocabul
          <a href="#VolumeOfOperation" title="http://data.europa.eu/949/iss/VolumeOfOperation">Volume of operation</a>
       </li>
    </ul>
+   <div class="entity" id="http://data.europa.eu/949/Body">
+      <h3>Body<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/Body</p>
+      <div class="comment">
+         <span class="markdown">Is an organisation or a physical person</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasSafetyAuthorisation"
+               title="http://data.europa.eu/949/iss/hasSafetyAuthorisation">has safety authorisation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSafetyCertificate"
+               title="http://data.europa.eu/949/iss/hasSafetyCertificate">has safety certificate</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/role" title="http://data.europa.eu/949/role">role</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/949/roleOf" title="http://data.europa.eu/949/roleOf">role of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ContributingSystemicFactor">
+      <h3>Contributing and Systemic factors<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/ContributingSystemicFactor</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#contributingSystemicFactorNarrative"
+               title="http://data.europa.eu/949/iss/contributingSystemicFactorNarrative">contributing systemic factor narrative</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasContributingSystemicFactor"
+               title="http://data.europa.eu/949/iss/hasContributingSystemicFactor">has contributing or systemic factor</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://www.opengis.net/ont/sf#Curve">
       <h3>Curve<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -213,8 +302,7 @@ A Curve is defined as topologically closed, that is, it contains its endpoints f
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#InfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+            <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -234,10 +322,8 @@ A Curve is defined as topologically closed, that is, it contains its endpoints f
                title="http://data.europa.eu/949/iss/meansContainmentFailureType">means of containment failure type</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#meanContainmentMaterial"
                title="http://data.europa.eu/949/iss/meanContainmentMaterial">means of containment material</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#operational_cause" title="http://data.europa.eu/949/iss/operational_cause">operational cause</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#operationalCause" title="http://data.europa.eu/949/iss/operationalCause">operational cause</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#packingGroup" title="http://data.europa.eu/949/iss/packingGroup">packing group</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#reportingContactFax"
-               title="http://data.europa.eu/949/iss/reportingContactFax">reporting contact fax</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#tdgAdditionalOccurrenceDescription"
                title="http://data.europa.eu/949/iss/tdgAdditionalOccurrenceDescription">supporting document resources management</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#tdgClass" title="http://data.europa.eu/949/iss/tdgClass">tdg class</a>
@@ -280,8 +366,7 @@ A Curve is defined as topologically closed, that is, it contains its endpoints f
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#InfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+            <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -393,8 +478,7 @@ In the context of CDR (EU) 2024/xxxx, it is used to comply with the requirements
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#InfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+            <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -431,36 +515,25 @@ In the context of CDR (EU) 2024/xxxx, it is used to comply with the requirements
             <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
          </dd>
       </dl>
+      <dl>
+         <dt>Is deprecated</dt>
+         <dd>true</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#http://www.w3.org/ns/org#Organization" title="http://www.w3.org/ns/org#Organization">Organization</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasSafetyAuthorisation"
-               title="http://data.europa.eu/949/iss/hasSafetyAuthorisation">has safety authorisation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasSafetyCertificate"
-               title="http://data.europa.eu/949/iss/hasSafetyCertificate">has safety certificate</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#notifiedEntity" title="http://data.europa.eu/949/iss/notifiedEntity">notified entity</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#notifyingEntity" title="http://data.europa.eu/949/iss/notifyingEntity">notifying entity</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#notifyingReporter" title="http://data.europa.eu/949/iss/notifyingReporter">reporting entity</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
       </dl>
    </div>
-   <div class="entity" id="FailureOfRiskControlMeasure">
+   <div class="entity" id="FailedRiskControlMeasure">
       <h3>Failed risk control measure<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/FailureOfRiskControlMeasure</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/FailedRiskControlMeasure</p>
       <div class="comment">
          <span class="markdown">A risk control measure which did not operate as planned whose failure can be described in accordance with CDR (EU) 2024/xxxx Annex I, Part B, section 6.3.</span>
       </div>
@@ -473,19 +546,21 @@ In the context of CDR (EU) 2024/xxxx, it is used to comply with the requirements
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#InfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+            <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#resultFailureRiskControlMeasure"
-               title="http://data.europa.eu/949/iss/resultFailureRiskControlMeasure">can be the result of failure of a risk control measure</a>
+            <a href="#failedRiskControlMeasureText"
+               title="http://data.europa.eu/949/iss/failedRiskControlMeasureText">Failed risk control measure text</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#resultFailedRiskControlMeasure"
+               title="http://data.europa.eu/949/iss/resultFailedRiskControlMeasure">can be the result of failure of a risk control measure</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#causalEventType" title="http://data.europa.eu/949/iss/causalEventType">causal event type</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#correspondsToRiskControlMeasure"
                title="http://data.europa.eu/949/iss/correspondsToRiskControlMeasure">corresponds to risk control measure</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#failedinBlock" title="http://data.europa.eu/949/iss/failedinBlock">failed in block</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#failedInBlock" title="http://data.europa.eu/949/iss/failedInBlock">failed in block</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#failureAnalysis" title="http://data.europa.eu/949/iss/failureAnalysis">failure analysis</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#faillureMode" title="http://data.europa.eu/949/iss/faillureMode">failure mode</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#failureMode" title="http://data.europa.eu/949/iss/failureMode">failure mode</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#positionFailedRiskControlMeasure"
                title="http://data.europa.eu/949/iss/positionFailedRiskControlMeasure">position failed risk control measure</a>
             <sup class="type-dp" title="data property">dp</sup>
@@ -767,13 +842,13 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
          </dd>
       </dl>
    </div>
-   <div class="entity" id="InfoInRecordVersion">
-      <h3>Information in record version<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="InfoRecord">
+      <h3>Information in record<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/InfoInRecordVersion</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/InfoRecord</p>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -788,11 +863,12 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
             <sup class="type-c" title="class">c</sup>, <a href="#DetailedReportSafetyRelatedEvent"
                title="http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent">Detailed report of the safety related event</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Document" title="http://data.europa.eu/949/iss/Document">Document</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#FailureOfRiskControlMeasure"
-               title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FailedRiskControlMeasure"
+               title="http://data.europa.eu/949/iss/FailedRiskControlMeasure">Failed risk control measure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Notification" title="http://data.europa.eu/949/iss/Notification">Notification</a>
             <sup class="type-c" title="class">c</sup>, <a href="#OccurrenceScenario"
                title="http://data.europa.eu/949/iss/OccurrenceScenario">Occurrence scenario</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Recommendation" title="http://data.europa.eu/949/iss/Recommendation">Recommendation</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RiskControlMeasure"
                title="http://data.europa.eu/949/iss/RiskControlMeasure">Risk control measure</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SafetyLevel" title="http://data.europa.eu/949/iss/SafetyLevel">Safety level</a>
@@ -807,8 +883,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasInfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/hasInfoInRecordVersion">has information in record version</a>
+            <a href="#hasInfoInRecord" title="http://data.europa.eu/949/iss/hasInfoInRecord">has information in record</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -836,6 +911,67 @@ A feature that belongs to the infrastructure can be abstracted (hasAbstraction) 
             <a href="#http://data.europa.eu/949/Feature" title="http://data.europa.eu/949/Feature">Feature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#locationRINF" title="http://data.europa.eu/949/iss/locationRINF">location in RINF</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InputAndGate">
+      <h3>Input And Gate<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/InputAndGate</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#inputAndGateBuildingBlock"
+               title="http://data.europa.eu/949/iss/inputAndGateBuildingBlock">input And gate building block</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inputAndGateEvent" title="http://data.europa.eu/949/iss/inputAndGateEvent">input And gate event</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#inputAndgate" title="http://data.europa.eu/949/iss/inputAndgate">input AND gate</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InputOrGate">
+      <h3>Input Or Gate<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/InputOrGate</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#inputOrGateBuildingBlock"
+               title="http://data.europa.eu/949/iss/inputOrGateBuildingBlock">input Or gate building block</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inputOrGateEvent" title="http://data.europa.eu/949/iss/inputOrGateEvent">input Or gate event</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#inputOrGate" title="http://data.europa.eu/949/iss/inputOrGate">input OR gate</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="Notification">
@@ -857,8 +993,7 @@ A feature that belongs to the infrastructure can be abstracted (hasAbstraction) 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#InfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+            <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -868,8 +1003,13 @@ A feature that belongs to the infrastructure can be abstracted (hasAbstraction) 
             <sup class="type-dp" title="data property">dp</sup>, <a href="#notificationMessage"
                title="http://data.europa.eu/949/iss/notificationMessage">notification message</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#notificationType" title="http://data.europa.eu/949/iss/notificationType">notification type</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#targetedDocument" title="http://data.europa.eu/949/iss/targetedDocument">targeted document</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-op" title="object property">op</sup>, <a href="#notifiedContactId" title="http://data.europa.eu/949/iss/notifiedContactId">notified contact id</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#sharingDeadline" title="http://data.europa.eu/949/iss/sharingDeadline">sharing deadline</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#targetedDocument" title="http://data.europa.eu/949/iss/targetedDocument">targeted document</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#targetedRecord" title="http://data.europa.eu/949/iss/targetedRecord">targeted record</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#validationDeadline"
+               title="http://data.europa.eu/949/iss/validationDeadline">validation deadline</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -894,8 +1034,7 @@ In the context of CDR (EU) 2024/xxxx the reporting of occurrence scenarios shall
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#InfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+            <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -937,7 +1076,11 @@ Bluiding blocks shall be used to compose the description of an occurrence scenar
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasFailedRiskControlMeasure"
+            <a href="#buildingBlockNarrative"
+               title="http://data.europa.eu/949/iss/buildingBlockNarrative">building block narrative</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasContributingSystemicFactor"
+               title="http://data.europa.eu/949/iss/hasContributingSystemicFactor">has contributing or systemic factor</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFailedRiskControlMeasure"
                title="http://data.europa.eu/949/iss/hasFailedRiskControlMeasure">has failed risk control measure</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#inputAndgate" title="http://data.europa.eu/949/iss/inputAndgate">input AND gate</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#inputOrGate" title="http://data.europa.eu/949/iss/inputOrGate">input OR gate</a>
@@ -946,10 +1089,47 @@ Bluiding blocks shall be used to compose the description of an occurrence scenar
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#failedinBlock" title="http://data.europa.eu/949/iss/failedinBlock">failed in block</a>
+            <a href="#failedInBlock" title="http://data.europa.eu/949/iss/failedInBlock">failed in block</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasOccurrenceScenarioBlock"
                title="http://data.europa.eu/949/iss/hasOccurrenceScenarioBlock">has occurrence scenario building block</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inputAndGateBuildingBlock"
+               title="http://data.europa.eu/949/iss/inputAndGateBuildingBlock">input And gate building block</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inputOrGateBuildingBlock"
+               title="http://data.europa.eu/949/iss/inputOrGateBuildingBlock">input Or gate building block</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/OrganisationRole">
+      <h3>Organisation Role<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/OrganisationRole</p>
+      <div class="comment">
+         <span class="markdown">Represents an n-ary relationship between a Body and a role</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/949/hasOrganisationRole" title="http://data.europa.eu/949/hasOrganisationRole">has organisation role</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/organisationCode" title="http://data.europa.eu/949/organisationCode">organisation code</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://data.europa.eu/949/roleOf" title="http://data.europa.eu/949/roleOf">role of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#notifiedEntity" title="http://data.europa.eu/949/iss/notifiedEntity">notified entity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#notifyingEntity" title="http://data.europa.eu/949/iss/notifyingEntity">notifying entity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#reportingEntity" title="http://data.europa.eu/949/iss/reportingEntity">reporting entity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/role" title="http://data.europa.eu/949/role">role</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#http://data.europa.eu/949/Body" title="http://data.europa.eu/949/Body">Body</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -989,6 +1169,23 @@ Bluiding blocks shall be used to compose the description of an occurrence scenar
          <dd>
             <a href="#http://www.w3.org/ns/org#classification" title="http://www.w3.org/ns/org#classification">classification</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://xmlns.com/foaf/0.1/Person">
+      <h3>person<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://xmlns.com/foaf/0.1/Person</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://xmlns.com/foaf/0.1/Agent"
+               target="_blank"
+               title="http://xmlns.com/foaf/0.1/Agent">agent</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -1075,6 +1272,71 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <a href="#http://data.europa.eu/949/kilometer" title="http://data.europa.eu/949/kilometer">Kilometer</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#lineKilometerPoint"
+               title="http://data.europa.eu/949/iss/lineKilometerPoint">line kilometer point</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Recommendation">
+      <h3>Recommendation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/Recommendation</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#concernedBy" title="http://data.europa.eu/949/iss/concernedBy">concerned by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRecommendationItem"
+               title="http://data.europa.eu/949/iss/hasRecommendationItem">has recommendation item</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRecommendationType"
+               title="http://data.europa.eu/949/iss/hasRecommendationType">has recommendation type</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RecommendationItem">
+      <h3>Recommendation item<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/RecommendationItem</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://data.europa.eu/949/iss/</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasRecommendationLanguage"
+               title="http://data.europa.eu/949/iss/hasRecommendationLanguage">has recommendation language</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#recommendationId" title="http://data.europa.eu/949/iss/recommendationId">recommendation id</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#recommendationIssued"
+               title="http://data.europa.eu/949/iss/recommendationIssued">recommendation issued</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#recommendationStartDate"
+               title="http://data.europa.eu/949/iss/recommendationStartDate">recommendation start date</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#recommendationText"
+               title="http://data.europa.eu/949/iss/recommendationText">recommendation text</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#recommendationTitle"
+               title="http://data.europa.eu/949/iss/recommendationTitle">recommendation title</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasRecommendationItem"
+               title="http://data.europa.eu/949/iss/hasRecommendationItem">has recommendation item</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="Record">
@@ -1096,8 +1358,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasRecordVersion" title="http://data.europa.eu/949/iss/hasRecordVersion">has record version</a>
+            <a href="#hasInfoInRecord" title="http://data.europa.eu/949/iss/hasInfoInRecord">has information in record</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRecordAttachment"
+               title="http://data.europa.eu/949/iss/hasRecordAttachment">has record attachment</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasRecordVersion" title="http://data.europa.eu/949/iss/hasRecordVersion">has record version</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isRelatedToRecord" title="http://data.europa.eu/949/iss/isRelatedToRecord">is related to record</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#nextRecord" title="http://data.europa.eu/949/iss/nextRecord">next record</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#notificationLegalBasis"
                title="http://data.europa.eu/949/iss/notificationLegalBasis">notification legal basis</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#notifyingEntity" title="http://data.europa.eu/949/iss/notifyingEntity">notifying entity</a>
@@ -1106,13 +1372,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-dp" title="data property">dp</sup>, <a href="#recordStatus" title="http://data.europa.eu/949/iss/recordStatus">record status</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#recordTitle" title="http://data.europa.eu/949/iss/recordTitle">record title</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#recordType" title="http://data.europa.eu/949/iss/recordType">record type</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#reportingContactId"
+            <sup class="type-op" title="object property">op</sup>, <a href="#recordVersionNumber"
+               title="http://data.europa.eu/949/iss/recordVersionNumber">record version number</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#reportingContactId"
                title="http://data.europa.eu/949/iss/reportingContactId">reporting contact ID</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#reportingContactEmail"
-               title="http://data.europa.eu/949/iss/reportingContactEmail">reporting contact email</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#reportingContactName"
-               title="http://data.europa.eu/949/iss/reportingContactName">reporting contact name</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#notifyingReporter" title="http://data.europa.eu/949/iss/notifyingReporter">reporting entity</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#reportingEntity" title="http://data.europa.eu/949/iss/reportingEntity">reporting entity</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#reportingEntityRole"
                title="http://data.europa.eu/949/iss/reportingEntityRole">reporting entity role</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#reportingReason" title="http://data.europa.eu/949/iss/reportingReason">reporting reason</a>
@@ -1121,6 +1385,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dt>is in range of</dt>
          <dd>
             <a href="#isRelatedToRecord" title="http://data.europa.eu/949/iss/isRelatedToRecord">is related to record</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#nextRecord" title="http://data.europa.eu/949/iss/nextRecord">next record</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#targetedRecord" title="http://data.europa.eu/949/iss/targetedRecord">targeted record</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1170,17 +1436,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
          </dd>
       </dl>
+      <dl>
+         <dt>Is deprecated</dt>
+         <dd>true</dd>
+      </dl>
       <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasInfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/hasInfoInRecordVersion">has information in record version</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasRecordAttachment"
-               title="http://data.europa.eu/949/iss/hasRecordAttachment">has record attachment</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#recordVersionNumber"
-               title="http://data.europa.eu/949/iss/recordVersionNumber">record version number</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#hasRecordVersion" title="http://data.europa.eu/949/iss/hasRecordVersion">has record version</a>
@@ -1207,8 +1467,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#InfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+            <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -1422,8 +1681,7 @@ The CDR (EU) 2024/xxxx defines the applicable functions as following:
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#InfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+            <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -1483,20 +1741,12 @@ The CDR (EU) 2024/xxxx defines the applicable functions as following:
                title="http://data.europa.eu/949/iss/frequencyProbabilityDuringAssessmentPeriod">frequency probability during assessment period</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#frequencyProbabilityPriorAssessmentPeriod"
                title="http://data.europa.eu/949/iss/frequencyProbabilityPriorAssessmentPeriod">frequency probability prior to assessment period</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#frequencySafetyLevelPriorAssessedPeriod"
-               title="http://data.europa.eu/949/iss/frequencySafetyLevelPriorAssessedPeriod">frequency safety level prior to the assessed period</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#frequencySafetyLevelSameAsAssessedPeriod"
-               title="http://data.europa.eu/949/iss/frequencySafetyLevelSameAsAssessedPeriod">frequency safety level same as assessed period</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#severityProbabilityDuringAssessmentPeriod"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#severityProbabilityDuringAssessmentPeriod"
                title="http://data.europa.eu/949/iss/severityProbabilityDuringAssessmentPeriod">severity probability during assessment period</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#severityProbabilityPriorAssessmentPeriod"
                title="http://data.europa.eu/949/iss/severityProbabilityPriorAssessmentPeriod">severity probability prior to assessment period</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#severitySafetyLevelDuringAssessmentPeriod"
-               title="http://data.europa.eu/949/iss/severitySafetyLevelDuringAssessmentPeriod">severity safety level during the assessment period</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#severitySafetyLevelPriorAssessmentPeriod"
-               title="http://data.europa.eu/949/iss/severitySafetyLevelPriorAssessmentPeriod">severity safety level prior to the assessment period</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#transportOperationCtegory"
-               title="http://data.europa.eu/949/iss/transportOperationCtegory">transport operation category</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#transportOperationCategory"
+               title="http://data.europa.eu/949/iss/transportOperationCategory">transport operation category</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -1526,8 +1776,7 @@ The CDR (EU) 2024/xxxx defines the applicable functions as following:
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#InfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+            <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -1541,13 +1790,13 @@ The CDR (EU) 2024/xxxx defines the applicable functions as following:
          </dd>
       </dl>
    </div>
-   <div class="entity" id="SafetyPerformanceselfEstimationPerArea">
+   <div class="entity" id="SafetyPerformanceSelfEstimationPerArea">
       <h3>Safety performance self-estimation per area<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerArea</p>
       <div class="comment">
          <span class="markdown">Safety performance self-estimation per area (Plan, Do, Check, Act) in accordance with CDR (EU) 2024/xxxx, Annex II, part C.</span>
       </div>
@@ -1652,9 +1901,13 @@ In the context of CDR (EU) 2024/xxxx, the features of an Occurrence/safety relat
          </dd>
          <dt>has super-classes</dt>
          <dd>
-            <a href="#InfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+            <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#concernedBy" title="http://data.europa.eu/949/iss/concernedBy">concerned by</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -1677,8 +1930,7 @@ In the context of CDR (EU) 2024/xxxx, the features of an Occurrence/safety relat
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#InfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+            <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -1694,7 +1946,8 @@ In the context of CDR (EU) 2024/xxxx, the features of an Occurrence/safety relat
                title="http://data.europa.eu/949/iss/isADangerousGoodsEvent">is a dangerous goods event</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#location"
                title="http://www.w3.org/2003/01/geo/wgs84_pos#location">location</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#numberWagonsInvolvedInOccurrence"
+            <sup class="type-op" title="object property">op</sup>, <a href="#locationName" title="http://data.europa.eu/949/iss/locationName">location name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberWagonsInvolvedInOccurrence"
                title="http://data.europa.eu/949/iss/numberWagonsInvolvedInOccurrence">number of TDG Wagons Involved in the occurrence</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberWagonsCarryingDangerousGoods"
                title="http://data.europa.eu/949/iss/numberWagonsCarryingDangerousGoods">number of wagons carrying Dangerous Goods in the train</a>
@@ -1703,13 +1956,13 @@ In the context of CDR (EU) 2024/xxxx, the features of an Occurrence/safety relat
                title="http://data.europa.eu/949/iss/occurrenceContextNarrative">occurrence context narrative</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#occcurrenceLocationNarrative"
                title="http://data.europa.eu/949/iss/occcurrenceLocationNarrative">occurrence location narrative</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#generalOcurrenceNarrative"
-               title="http://data.europa.eu/949/iss/generalOcurrenceNarrative">occurrence narrative (general)</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#generalOccurrenceNarrative"
+               title="http://data.europa.eu/949/iss/generalOccurrenceNarrative">occurrence narrative (general)</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#occurrenceTitle" title="http://data.europa.eu/949/iss/occurrenceTitle">occurrence title</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#humanConsequencesTotalPerInjuryType"
                title="http://data.europa.eu/949/iss/humanConsequencesTotalPerInjuryType">total human consequences per injury type</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#transportOperationCtegory"
-               title="http://data.europa.eu/949/iss/transportOperationCtegory">transport operation category</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#transportOperationCategory"
+               title="http://data.europa.eu/949/iss/transportOperationCategory">transport operation category</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1832,47 +2085,46 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#InfoInRecordVersion"
-               title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+            <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#countryOfOperation" title="http://data.europa.eu/949/iss/countryOfOperation">country of operation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#numberDGFreightTonKilometers"
-               title="http://data.europa.eu/949/iss/numberDGFreightTonKilometers">number of DG freight ton kilometers</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#numberOperatedTrackKilometers"
+               title="http://data.europa.eu/949/iss/numberOperatedTrackKilometers">number Track-kilometers operated</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberDGFreightTonKilometers"
+               title="http://data.europa.eu/949/iss/numberDGFreightTonKilometers">number of Dangerous Goods freight ton-kilometers</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberDGFreightTrainKilometers"
-               title="http://data.europa.eu/949/iss/numberDGFreightTrainKilometers">number of DG freight train kilometers</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberDGRailwayVehiclesProcessedFreightTerminals"
-               title="http://data.europa.eu/949/iss/numberDGRailwayVehiclesProcessedFreightTerminals">number of DG railway vehicles processed freight terminals</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberFreightTonKilometers"
-               title="http://data.europa.eu/949/iss/numberFreightTonKilometers">number of freight ton kilometers</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberFreightTrainKilometers"
-               title="http://data.europa.eu/949/iss/numberFreightTrainKilometers">number of freight train kilometers</a>
+               title="http://data.europa.eu/949/iss/numberDGFreightTrainKilometers">number of Dangerous Goods freight train-kilometers</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberLineKilometers"
-               title="http://data.europa.eu/949/iss/numberLineKilometers">number of line kilometers</a>
+               title="http://data.europa.eu/949/iss/numberLineKilometers">number of Line-kilometers</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberTrackKilometersOperatedTerminals"
+               title="http://data.europa.eu/949/iss/numberTrackKilometersOperatedTerminals">number of Track-kilometers operated in terminals</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberDGRailwayVehiclesProcessedFreightTerminals"
+               title="http://data.europa.eu/949/iss/numberDGRailwayVehiclesProcessedFreightTerminals">number of dangerous goods railway vehicles processed in freight terminals</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberDGRailwayVehiclesProcessedTerminals"
+               title="http://data.europa.eu/949/iss/numberDGRailwayVehiclesProcessedTerminals">number of dangerous goods railway vehicles processed in terminals</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberFreightTonKilometers"
+               title="http://data.europa.eu/949/iss/numberFreightTonKilometers">number of freight ton-kilometers</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberFreightTrainKilometers"
+               title="http://data.europa.eu/949/iss/numberFreightTrainKilometers">number of freight train-kilometers</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberOperatedTerminals"
                title="http://data.europa.eu/949/iss/numberOperatedTerminals">number of operated terminals</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberOperatedTrackKilometers"
-               title="http://data.europa.eu/949/iss/numberOperatedTrackKilometers">number of operated track kilometers</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberOperatingHoursTerminals"
-               title="http://data.europa.eu/949/iss/numberOperatingHoursTerminals">number of operating hours terminals</a>
+               title="http://data.europa.eu/949/iss/numberOperatingHoursTerminals">number of operating hours in terminals</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberPassengerKilometers"
-               title="http://data.europa.eu/949/iss/numberPassengerKilometers">number of passenger kilometers</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberPassengerKilometersHighSpeedService"
-               title="http://data.europa.eu/949/iss/numberPassengerKilometersHighSpeedService">number of passenger kilometers high speed service</a>
+               title="http://data.europa.eu/949/iss/numberPassengerKilometers">number of passenger kilometers (optional)</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberPassengerTrainKilometersHighSpeedService"
+               title="http://data.europa.eu/949/iss/numberPassengerTrainKilometersHighSpeedService">number of passenger kilometers with high speed service</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberPassengerTrainKilometers"
-               title="http://data.europa.eu/949/iss/numberPassengerTrainKilometers">number of passenger train kilometers</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberRailwayVehiclesDGProcessedTerminals"
-               title="http://data.europa.eu/949/iss/numberRailwayVehiclesDGProcessedTerminals">number of railway vehicles DG processed terminals</a>
+               title="http://data.europa.eu/949/iss/numberPassengerTrainKilometers">number of passenger train-kilometers</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberRailwayVehiclesProcessedFreightTerminals"
-               title="http://data.europa.eu/949/iss/numberRailwayVehiclesProcessedFreightTerminals">number of railway vehicles processed freight terminals</a>
+               title="http://data.europa.eu/949/iss/numberRailwayVehiclesProcessedFreightTerminals">number of railway vehicles processed in freight terminals</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberRailwayVehiclesProcessedTerminals"
-               title="http://data.europa.eu/949/iss/numberRailwayVehiclesProcessedTerminals">number of railway vehicles processed terminals</a>
+               title="http://data.europa.eu/949/iss/numberRailwayVehiclesProcessedTerminals">number of railway vehicles processed in terminals</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#numberTotalTrainKilometers"
                title="http://data.europa.eu/949/iss/numberTotalTrainKilometers">number of total train kilometers</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#numberTrackKilometersOperatedTerminals"
-               title="http://data.europa.eu/949/iss/numberTrackKilometersOperatedTerminals">number of track kilometers operated terminals</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -1890,8 +2142,11 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
             title="http://data.europa.eu/949/iss/applicableRiskControlMeasureFunction">applicable risk control measure function</a>
       </li>
       <li>
-         <a href="#resultFailureRiskControlMeasure"
-            title="http://data.europa.eu/949/iss/resultFailureRiskControlMeasure">can be the result of failure of a risk control measure</a>
+         <a href="#resultFailedRiskControlMeasure"
+            title="http://data.europa.eu/949/iss/resultFailedRiskControlMeasure">can be the result of failure of a risk control measure</a>
+      </li>
+      <li>
+         <a href="#causalEventType" title="http://data.europa.eu/949/iss/causalEventType">causal event type</a>
       </li>
       <li>
          <a href="#causeOfReportedEventType"
@@ -1899,6 +2154,9 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
       </li>
       <li>
          <a href="#http://www.w3.org/ns/org#classification" title="http://www.w3.org/ns/org#classification">classification</a>
+      </li>
+      <li>
+         <a href="#concernedBy" title="http://data.europa.eu/949/iss/concernedBy">concerned by</a>
       </li>
       <li>
          <a href="#contributingFactor" title="http://data.europa.eu/949/iss/contributingFactor">contributing factor</a>
@@ -1942,7 +2200,7 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
             title="http://data.europa.eu/949/iss/evidenceReferenceRecord">evidence reference record</a>
       </li>
       <li>
-         <a href="#failedinBlock" title="http://data.europa.eu/949/iss/failedinBlock">failed in block</a>
+         <a href="#failedInBlock" title="http://data.europa.eu/949/iss/failedInBlock">failed in block</a>
       </li>
       <li>
          <a href="#frequencySafetyLevelPriorAssessedPeriod"
@@ -1953,12 +2211,15 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
             title="http://data.europa.eu/949/iss/frequencySafetyLevelSameAsAssessedPeriod">frequency safety level same as assessed period</a>
       </li>
       <li>
+         <a href="#hasContributingSystemicFactor"
+            title="http://data.europa.eu/949/iss/hasContributingSystemicFactor">has contributing or systemic factor</a>
+      </li>
+      <li>
          <a href="#hasFailedRiskControlMeasure"
             title="http://data.europa.eu/949/iss/hasFailedRiskControlMeasure">has failed risk control measure</a>
       </li>
       <li>
-         <a href="#hasInfoInRecordVersion"
-            title="http://data.europa.eu/949/iss/hasInfoInRecordVersion">has information in record version</a>
+         <a href="#hasInfoInRecord" title="http://data.europa.eu/949/iss/hasInfoInRecord">has information in record</a>
       </li>
       <li>
          <a href="#hasOccurrenceScenario"
@@ -1967,6 +2228,21 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
       <li>
          <a href="#hasOccurrenceScenarioBlock"
             title="http://data.europa.eu/949/iss/hasOccurrenceScenarioBlock">has occurrence scenario building block</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/hasOrganisationRole" title="http://data.europa.eu/949/hasOrganisationRole">has organisation role</a>
+      </li>
+      <li>
+         <a href="#hasRecommendationItem"
+            title="http://data.europa.eu/949/iss/hasRecommendationItem">has recommendation item</a>
+      </li>
+      <li>
+         <a href="#hasRecommendationLanguage"
+            title="http://data.europa.eu/949/iss/hasRecommendationLanguage">has recommendation language</a>
+      </li>
+      <li>
+         <a href="#hasRecommendationType"
+            title="http://data.europa.eu/949/iss/hasRecommendationType">has recommendation type</a>
       </li>
       <li>
          <a href="#hasRecordAttachment"
@@ -2009,7 +2285,21 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
          <a href="#inputAndgate" title="http://data.europa.eu/949/iss/inputAndgate">input AND gate</a>
       </li>
       <li>
+         <a href="#inputAndGateBuildingBlock"
+            title="http://data.europa.eu/949/iss/inputAndGateBuildingBlock">input And gate building block</a>
+      </li>
+      <li>
+         <a href="#inputAndGateEvent" title="http://data.europa.eu/949/iss/inputAndGateEvent">input And gate event</a>
+      </li>
+      <li>
          <a href="#inputOrGate" title="http://data.europa.eu/949/iss/inputOrGate">input OR gate</a>
+      </li>
+      <li>
+         <a href="#inputOrGateBuildingBlock"
+            title="http://data.europa.eu/949/iss/inputOrGateBuildingBlock">input Or gate building block</a>
+      </li>
+      <li>
+         <a href="#inputOrGateEvent" title="http://data.europa.eu/949/iss/inputOrGateEvent">input Or gate event</a>
       </li>
       <li>
          <a href="#introducesThreatOfEventOccurrence"
@@ -2064,6 +2354,17 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
          <a href="#mitigatesEvent" title="http://data.europa.eu/949/iss/mitigatesEvent">mitigates event</a>
       </li>
       <li>
+         <a href="#nextRecord" title="http://data.europa.eu/949/iss/nextRecord">
+            <span>next record</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/notApplicable" title="http://data.europa.eu/949/notApplicable">Not applicable</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/notYetAvailable" title="http://data.europa.eu/949/notYetAvailable">Not provided</a>
+      </li>
+      <li>
          <a href="#notificationType" title="http://data.europa.eu/949/iss/notificationType">notification type</a>
       </li>
       <li>
@@ -2073,7 +2374,7 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
          <a href="#notifyingEntity" title="http://data.europa.eu/949/iss/notifyingEntity">notifying entity</a>
       </li>
       <li>
-         <a href="#operational_cause" title="http://data.europa.eu/949/iss/operational_cause">operational cause</a>
+         <a href="#operationalCause" title="http://data.europa.eu/949/iss/operationalCause">operational cause</a>
       </li>
       <li>
          <a href="#outputEvent" title="http://data.europa.eu/949/iss/outputEvent">output event</a>
@@ -2086,13 +2387,16 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
             title="http://data.europa.eu/949/iss/preventsEventOccurrence">prevents event occurrence</a>
       </li>
       <li>
+         <a href="#previousRecord" title="http://data.europa.eu/949/iss/previousRecord">previous record</a>
+      </li>
+      <li>
          <a href="#recordStatus" title="http://data.europa.eu/949/iss/recordStatus">record status</a>
       </li>
       <li>
          <a href="#recordType" title="http://data.europa.eu/949/iss/recordType">record type</a>
       </li>
       <li>
-         <a href="#notifyingReporter" title="http://data.europa.eu/949/iss/notifyingReporter">reporting entity</a>
+         <a href="#reportingEntity" title="http://data.europa.eu/949/iss/reportingEntity">reporting entity</a>
       </li>
       <li>
          <a href="#reportingEntityRole"
@@ -2112,6 +2416,12 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
       <li>
          <a href="#riskControlMeasureType"
             title="http://data.europa.eu/949/iss/riskControlMeasureType">risk control measure type</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/role" title="http://data.europa.eu/949/role">role</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/roleOf" title="http://data.europa.eu/949/roleOf">role of</a>
       </li>
       <li>
          <a href="#rollingStockVehicleDamageType"
@@ -2166,6 +2476,9 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
          <a href="#targetedDocument" title="http://data.europa.eu/949/iss/targetedDocument">targeted document</a>
       </li>
       <li>
+         <a href="#targetedRecord" title="http://data.europa.eu/949/iss/targetedRecord">targeted record</a>
+      </li>
+      <li>
          <a href="#topography" title="http://data.europa.eu/949/iss/topography">topography</a>
       </li>
       <li>
@@ -2188,8 +2501,8 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
             title="http://data.europa.eu/949/iss/tdgOccurrenceDescription">transport of dangerous goods occurrence description</a>
       </li>
       <li>
-         <a href="#transportOperationCtegory"
-            title="http://data.europa.eu/949/iss/transportOperationCtegory">transport operation category</a>
+         <a href="#transportOperationCategory"
+            title="http://data.europa.eu/949/iss/transportOperationCategory">transport operation category</a>
       </li>
       <li>
          <a href="#trainMovementType" title="http://data.europa.eu/949/iss/trainMovementType">type of train movement</a>
@@ -2269,13 +2582,13 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
          </dl>
       </div>
    </div>
-   <div class="entity" id="resultFailureRiskControlMeasure">
+   <div class="entity" id="resultFailedRiskControlMeasure">
       <h3>can be the result of failure of a risk control measure<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/resultFailureRiskControlMeasure</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/resultFailedRiskControlMeasure</p>
       <div class="comment">
          <span class="markdown">List of possible resulting safety related events in case a given risk control measure fails to operate as planned.</span>
       </div>
@@ -2289,8 +2602,39 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
+               <a href="#FailedRiskControlMeasure"
+                  title="http://data.europa.eu/949/iss/FailedRiskControlMeasure">Failed risk control measure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="causalEventType">
+      <h3>causal event type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/causalEventType</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#FailedRiskControlMeasure"
+                  title="http://data.europa.eu/949/iss/FailedRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2350,9 +2694,6 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
-            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
-         </dd>
-         <dd>
             <a href="http://www.w3.org/ns/org">http://www.w3.org/ns/org</a>
          </dd>
       </dl>
@@ -2368,6 +2709,35 @@ In the context of CDR (EU) 2024/xxxx, the volumes of operations shall be reporte
                <a href="http://www.w3.org/2004/02/skos/core#Concept"
                   target="_blank"
                   title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="concernedBy">
+      <h3>concerned by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/concernedBy</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Recommendation" title="http://data.europa.eu/949/iss/Recommendation">Recommendation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SafetyRelatedEvent"
+                  title="http://data.europa.eu/949/iss/SafetyRelatedEvent">Safety related event</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2395,12 +2765,12 @@ In the context of CDR (EU) 2024/xxxx, applicable list of contributing factors is
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
+               <a href="#ContributingSystemicFactor"
+                  title="http://data.europa.eu/949/iss/ContributingSystemicFactor">Contributing and Systemic factors</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#OccurrenceScenarioBuildingBlock"
-                  title="http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock">Occurrence scenario building block</a>
+               <a href="#FailedRiskControlMeasure"
+                  title="http://data.europa.eu/949/iss/FailedRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2433,8 +2803,8 @@ In the context of CDR (EU) 2024/xxxx, applicable list of contributing factors is
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
+               <a href="#FailedRiskControlMeasure"
+                  title="http://data.europa.eu/949/iss/FailedRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2691,7 +3061,7 @@ For Infrastructure managers it coresponds to the list of countries applicable in
       <div class="comment">
          <span class="markdown">Type of document (e.g. report, note, e-mail...).
 
-Not ot confuse with the ICT format of the digital document.</span>
+Not to confuse with the ICT format of the digital document.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2772,13 +3142,13 @@ Not ot confuse with the ICT format of the digital document.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="failedinBlock">
+   <div class="entity" id="failedInBlock">
       <h3>failed in block<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/failedinBlock</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/failedInBlock</p>
       <div class="comment">
          <span class="markdown">Relates the failed safety measure information with the corresponding occurrence scenario building block.</span>
       </div>
@@ -2792,8 +3162,8 @@ Not ot confuse with the ICT format of the digital document.</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
+               <a href="#FailedRiskControlMeasure"
+                  title="http://data.europa.eu/949/iss/FailedRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2833,6 +3203,10 @@ of tons, number of tons/km) or number of predefined operations.</span>
          <dl>
             <dt>has domain</dt>
             <dd>
+               <a href="#SafetyLevelPerEventType"
+                  title="http://data.europa.eu/949/iss/SafetyLevelPerEventType">Safety level per event type</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#SafetyLevelPerTypeOfOperation"
                   title="http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation">Safety level per type of operation</a>
                <sup class="type-c" title="class">c</sup>
@@ -2869,6 +3243,10 @@ of tons, number of tons/km) or number of predefined operations.</span>
          <dl>
             <dt>has domain</dt>
             <dd>
+               <a href="#SafetyLevelPerEventType"
+                  title="http://data.europa.eu/949/iss/SafetyLevelPerEventType">Safety level per event type</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#SafetyLevelPerTypeOfOperation"
                   title="http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation">Safety level per type of operation</a>
                <sup class="type-c" title="class">c</sup>
@@ -2878,6 +3256,39 @@ of tons, number of tons/km) or number of predefined operations.</span>
                <a href="http://www.w3.org/2004/02/skos/core#Concept"
                   target="_blank"
                   title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasContributingSystemicFactor">
+      <h3>has contributing or systemic factor<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/hasContributingSystemicFactor</p>
+      <div class="comment">
+         <span class="markdown">Relates the occurrence scenario building block with its contributing and systemic factors</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OccurrenceScenarioBuildingBlock"
+                  title="http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock">Occurrence scenario building block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ContributingSystemicFactor"
+                  title="http://data.europa.eu/949/iss/ContributingSystemicFactor">Contributing and Systemic factors</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2909,27 +3320,27 @@ of tons, number of tons/km) or number of predefined operations.</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
+               <a href="#FailedRiskControlMeasure"
+                  title="http://data.europa.eu/949/iss/FailedRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#failedinBlock" title="http://data.europa.eu/949/iss/failedinBlock">failed in block</a>
+               <a href="#failedInBlock" title="http://data.europa.eu/949/iss/failedInBlock">failed in block</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasInfoInRecordVersion">
-      <h3>has information in record version<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasInfoInRecord">
+      <h3>has information in record<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/hasInfoInRecordVersion</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/hasInfoInRecord</p>
       <div class="comment">
-         <span class="markdown">Relates a record version with the information it contains.</span>
+         <span class="markdown">Relates a record with the information it contains.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -2941,13 +3352,12 @@ of tons, number of tons/km) or number of predefined operations.</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#RecordVersion" title="http://data.europa.eu/949/iss/RecordVersion">Record version</a>
+               <a href="#Record" title="http://data.europa.eu/949/iss/Record">Record</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#InfoInRecordVersion"
-                  title="http://data.europa.eu/949/iss/InfoInRecordVersion">Information in record version</a>
+               <a href="#InfoRecord" title="http://data.europa.eu/949/iss/InfoRecord">Information in record</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -3019,6 +3429,126 @@ of tons, number of tons/km) or number of predefined operations.</span>
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://data.europa.eu/949/hasOrganisationRole">
+      <h3>has organisation role<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/hasOrganisationRole</p>
+      <div class="comment">
+         <span class="markdown">Relates the Organisation role instance (the role played by an Organisation) with the specific role in the taxonomy of organisation roles.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRecommendationItem">
+      <h3>has recommendation item<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/hasRecommendationItem</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Recommendation" title="http://data.europa.eu/949/iss/Recommendation">Recommendation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#RecommendationItem"
+                  title="http://data.europa.eu/949/iss/RecommendationItem">Recommendation item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRecommendationLanguage">
+      <h3>has recommendation language<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/hasRecommendationLanguage</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RecommendationItem"
+                  title="http://data.europa.eu/949/iss/RecommendationItem">Recommendation item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRecommendationType">
+      <h3>has recommendation type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/hasRecommendationType</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Recommendation" title="http://data.europa.eu/949/iss/Recommendation">Recommendation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="hasRecordAttachment">
       <h3>has record attachment<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3027,8 +3557,7 @@ of tons, number of tons/km) or number of predefined operations.</span>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/hasRecordAttachment</p>
       <div class="comment">
-         <span class="markdown">Relates the record version that is being reported with files (e.g. documents, images, videoa) that are attachments to the record.
-.</span>
+         <span class="markdown">Relates the record that is being reported with files (e.g. documents, images, videos) that are attachments to the record.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -3040,7 +3569,7 @@ of tons, number of tons/km) or number of predefined operations.</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#RecordVersion" title="http://data.europa.eu/949/iss/RecordVersion">Record version</a>
+               <a href="#Record" title="http://data.europa.eu/949/iss/Record">Record</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3066,6 +3595,10 @@ of tons, number of tons/km) or number of predefined operations.</span>
          <dd>
             <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
          </dd>
+      </dl>
+      <dl>
+         <dt>Is deprecated</dt>
+         <dd>true</dd>
       </dl>
       <div class="description">
          <dl>
@@ -3132,7 +3665,7 @@ of tons, number of tons/km) or number of predefined operations.</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Entity" title="http://data.europa.eu/949/iss/Entity">entity</a>
+               <a href="#http://data.europa.eu/949/Body" title="http://data.europa.eu/949/Body">Body</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3161,7 +3694,7 @@ of tons, number of tons/km) or number of predefined operations.</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Entity" title="http://data.europa.eu/949/iss/Entity">entity</a>
+               <a href="#http://data.europa.eu/949/Body" title="http://data.europa.eu/949/Body">Body</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3369,6 +3902,63 @@ of tons, number of tons/km) or number of predefined operations.</span>
             </dd>
             <dt>has range</dt>
             <dd>
+               <a href="#InputAndGate" title="http://data.europa.eu/949/iss/InputAndGate">Input And Gate</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inputAndGateBuildingBlock">
+      <h3>input And gate building block<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/inputAndGateBuildingBlock</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InputAndGate" title="http://data.europa.eu/949/iss/InputAndGate">Input And Gate</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#OccurrenceScenarioBuildingBlock"
+                  title="http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock">Occurrence scenario building block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inputAndGateEvent">
+      <h3>input And gate event<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/inputAndGateEvent</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InputAndGate" title="http://data.europa.eu/949/iss/InputAndGate">Input And Gate</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
                <a href="http://www.w3.org/2004/02/skos/core#Concept"
                   target="_blank"
                   title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
@@ -3399,6 +3989,63 @@ of tons, number of tons/km) or number of predefined operations.</span>
             <dd>
                <a href="#OccurrenceScenarioBuildingBlock"
                   title="http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock">Occurrence scenario building block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InputOrGate" title="http://data.europa.eu/949/iss/InputOrGate">Input Or Gate</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inputOrGateBuildingBlock">
+      <h3>input Or gate building block<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/inputOrGateBuildingBlock</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InputOrGate" title="http://data.europa.eu/949/iss/InputOrGate">Input Or Gate</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#OccurrenceScenarioBuildingBlock"
+                  title="http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock">Occurrence scenario building block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inputOrGateEvent">
+      <h3>input Or gate event<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/inputOrGateEvent</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InputOrGate" title="http://data.europa.eu/949/iss/InputOrGate">Input Or Gate</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -3665,6 +4312,11 @@ of tons, number of tons/km) or number of predefined operations.</span>
                   title="http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent">Simple report of the safety related event</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/LineReference" title="http://data.europa.eu/949/LineReference">Railway location</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -3767,6 +4419,11 @@ The precision of the reference point shall be better than 0.001 for long and lat
                <span class="logic">or</span> 
                <a href="#SimpleReportSafetyRelatedEvent"
                   title="http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent">Simple report of the safety related event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/InfrastructureObject" title="http://data.europa.eu/949/InfrastructureObject">Infrastructure object</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -3908,6 +4565,84 @@ The precision of the reference point shall be better than 0.001 for long and lat
          </dl>
       </div>
    </div>
+   <div class="entity" id="nextRecord">
+      <h3>next record<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/nextRecord</p>
+      <div class="comment">
+         <span class="markdown">next record</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Record" title="http://data.europa.eu/949/iss/Record">Record</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Record" title="http://data.europa.eu/949/iss/Record">Record</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#previousRecord" title="http://data.europa.eu/949/iss/previousRecord">previous record</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/notApplicable">
+      <h3>Not applicable<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/notApplicable</p>
+      <div class="comment">
+         <span class="markdown">Reference to a property that is not applicable.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>unstable</dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/notYetAvailable">
+      <h3>Not provided<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/notYetAvailable</p>
+      <div class="comment">
+         <span class="markdown">Reference to a property that is not provided.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>unstable</dd>
+      </dl>
+   </div>
    <div class="entity" id="notificationType">
       <h3>notification type<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -3969,7 +4704,7 @@ The precision of the reference point shall be better than 0.001 for long and lat
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Entity" title="http://data.europa.eu/949/iss/Entity">entity</a>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -4001,19 +4736,19 @@ Taken from Detailed Report.xlsx template.</span>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Entity" title="http://data.europa.eu/949/iss/Entity">entity</a>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
-   <div class="entity" id="operational_cause">
+   <div class="entity" id="operationalCause">
       <h3>operational cause<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/operational_cause</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/operationalCause</p>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -4146,6 +4881,29 @@ Taken from Detailed Report.xlsx template.</span>
          </dl>
       </div>
    </div>
+   <div class="entity" id="previousRecord">
+      <h3>previous record<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/previousRecord</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#nextRecord" title="http://data.europa.eu/949/iss/nextRecord">next record</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="recordStatus">
       <h3>record status<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4216,13 +4974,13 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
          </dl>
       </div>
    </div>
-   <div class="entity" id="notifyingReporter">
+   <div class="entity" id="reportingEntity">
       <h3>reporting entity<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/notifyingReporter</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/reportingEntity</p>
       <div class="comment">
          <span class="markdown">ISS registered User issuing a notification on behalf a registered Entity.</span>
       </div>
@@ -4241,7 +4999,7 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Entity" title="http://data.europa.eu/949/iss/Entity">entity</a>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -4262,6 +5020,10 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
          <dd>
             <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
          </dd>
+      </dl>
+      <dl>
+         <dt>Is deprecated</dt>
+         <dd>true</dd>
       </dl>
       <div class="description">
          <dl>
@@ -4364,8 +5126,8 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#SafetyPerformanceselfEstimationPerArea"
-                  title="http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea">Safety performance self-estimation per area</a>
+               <a href="#SafetyPerformanceSelfEstimationPerArea"
+                  title="http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerArea">Safety performance self-estimation per area</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4404,6 +5166,72 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
                   target="_blank"
                   title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/role">
+      <h3>role<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/role</p>
+      <div class="comment">
+         <span class="markdown">Indicates the relationship of a Body to the organisation roles that it can play.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/">http://data.europa.eu/949/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/Body" title="http://data.europa.eu/949/Body">Body</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/roleOf" title="http://data.europa.eu/949/roleOf">role of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/roleOf">
+      <h3>role of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/roleOf</p>
+      <div class="comment">
+         <span class="markdown">Indicates the corresponding Body that plays a certain organisation role.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/Body" title="http://data.europa.eu/949/Body">Body</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/role" title="http://data.europa.eu/949/role">role</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -4556,8 +5384,8 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#SafetyPerformanceselfEstimationPerArea"
-                  title="http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea">Safety performance self-estimation per area</a>
+               <a href="#SafetyPerformanceSelfEstimationPerArea"
+                  title="http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerArea">Safety performance self-estimation per area</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4587,8 +5415,8 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#SafetyPerformanceselfEstimationPerArea"
-                  title="http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea">Safety performance self-estimation per area</a>
+               <a href="#SafetyPerformanceSelfEstimationPerArea"
+                  title="http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerArea">Safety performance self-estimation per area</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4686,8 +5514,8 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#SafetyPerformanceselfEstimationPerArea"
-                  title="http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea">Safety performance self-estimation per area</a>
+               <a href="#SafetyPerformanceSelfEstimationPerArea"
+                  title="http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerArea">Safety performance self-estimation per area</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -4710,8 +5538,8 @@ The status 'Corrected' is an exception treatment applicable after 'Vlidation' or
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#SafetyPerformanceselfEstimationPerArea"
-                  title="http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea">Safety performance self-estimation per area</a>
+               <a href="#SafetyPerformanceSelfEstimationPerArea"
+                  title="http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerArea">Safety performance self-estimation per area</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4744,6 +5572,10 @@ The severity is estimated by the exposure of vulnerabilities to hazardous areas.
          <dl>
             <dt>has domain</dt>
             <dd>
+               <a href="#SafetyLevelPerEventType"
+                  title="http://data.europa.eu/949/iss/SafetyLevelPerEventType">Safety level per event type</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#SafetyLevelPerTypeOfOperation"
                   title="http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation">Safety level per type of operation</a>
                <sup class="type-c" title="class">c</sup>
@@ -4779,6 +5611,10 @@ The severity is estimated by the exposure of vulnerabilities to hazardous areas.
          <dl>
             <dt>has domain</dt>
             <dd>
+               <a href="#SafetyLevelPerEventType"
+                  title="http://data.europa.eu/949/iss/SafetyLevelPerEventType">Safety level per event type</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
                <a href="#SafetyLevelPerTypeOfOperation"
                   title="http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation">Safety level per type of operation</a>
                <sup class="type-c" title="class">c</sup>
@@ -4813,12 +5649,12 @@ The severity is estimated by the exposure of vulnerabilities to hazardous areas.
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
+               <a href="#ContributingSystemicFactor"
+                  title="http://data.europa.eu/949/iss/ContributingSystemicFactor">Contributing and Systemic factors</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
-               <a href="#OccurrenceScenarioBuildingBlock"
-                  title="http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock">Occurrence scenario building block</a>
+               <a href="#FailedRiskControlMeasure"
+                  title="http://data.europa.eu/949/iss/FailedRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4857,6 +5693,34 @@ The severity is estimated by the exposure of vulnerabilities to hazardous areas.
             <dt>has range</dt>
             <dd>
                <a href="#Document" title="http://data.europa.eu/949/iss/Document">Document</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="targetedRecord">
+      <h3>targeted record<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/targetedRecord</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Notification" title="http://data.europa.eu/949/iss/Notification">Notification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Record" title="http://data.europa.eu/949/iss/Record">Record</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -5061,13 +5925,13 @@ This description is consistent with properties reported in accordance with RID 1
          </dl>
       </div>
    </div>
-   <div class="entity" id="transportOperationCtegory">
+   <div class="entity" id="transportOperationCategory">
       <h3>transport operation category<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/transportOperationCtegory</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/transportOperationCategory</p>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -5228,8 +6092,8 @@ This description is consistent with properties reported in accordance with RID 1
             title="http://data.europa.eu/949/iss/airTemperatureAmbientConditionNarrative">air temperature and ambient condition narrative</a>
       </li>
       <li>
-         <a href="#assesmentPeriodEndDate"
-            title="http://data.europa.eu/949/iss/assesmentPeriodEndDate">assessment period end date</a>
+         <a href="#assessmentPeriodEndDate"
+            title="http://data.europa.eu/949/iss/assessmentPeriodEndDate">assessment period end date</a>
       </li>
       <li>
          <a href="#assessmentPeriodStartDate"
@@ -5237,6 +6101,12 @@ This description is consistent with properties reported in accordance with RID 1
       </li>
       <li>
          <a href="#http://www.opengis.net/ont/geosparql#asWKT" title="http://www.opengis.net/ont/geosparql#asWKT">asWKT asWKT</a>
+      </li>
+      <li>
+         <a href="#buildingBlockNarrative"
+            title="http://data.europa.eu/949/iss/buildingBlockNarrative">
+            <span>building block narrative</span>
+         </a>
       </li>
       <li>
          <a href="#cargoNumber" title="http://data.europa.eu/949/iss/cargoNumber">cargo number</a>
@@ -5251,6 +6121,10 @@ This description is consistent with properties reported in accordance with RID 1
       <li>
          <a href="#certificateStartDate"
             title="http://data.europa.eu/949/iss/certificateStartDate">certificate start date</a>
+      </li>
+      <li>
+         <a href="#contributingSystemicFactorNarrative"
+            title="http://data.europa.eu/949/iss/contributingSystemicFactorNarrative">contributing systemic factor narrative</a>
       </li>
       <li>
          <a href="#damageInfrastructureNarrative"
@@ -5327,10 +6201,14 @@ This description is consistent with properties reported in accordance with RID 1
             title="http://data.europa.eu/949/iss/exactLocationOccurrencePositioningNorm">exact location of occurrence - positioning norm applied</a>
       </li>
       <li>
+         <a href="#failedRiskControlMeasureText"
+            title="http://data.europa.eu/949/iss/failedRiskControlMeasureText">Failed risk control measure text</a>
+      </li>
+      <li>
          <a href="#failureAnalysis" title="http://data.europa.eu/949/iss/failureAnalysis">failure analysis</a>
       </li>
       <li>
-         <a href="#faillureMode" title="http://data.europa.eu/949/iss/faillureMode">failure mode</a>
+         <a href="#failureMode" title="http://data.europa.eu/949/iss/failureMode">failure mode</a>
       </li>
       <li>
          <a href="#frequencyProbabilityDuringAssessmentPeriod"
@@ -5372,6 +6250,9 @@ This description is consistent with properties reported in accordance with RID 1
             title="http://data.europa.eu/949/iss/locationDetailsNarrative">location details narrative</a>
       </li>
       <li>
+         <a href="#locationName" title="http://data.europa.eu/949/iss/locationName">location name</a>
+      </li>
+      <li>
          <a href="#meanContainmentMaterial"
             title="http://data.europa.eu/949/iss/meanContainmentMaterial">means of containment material</a>
       </li>
@@ -5399,8 +6280,27 @@ This description is consistent with properties reported in accordance with RID 1
             title="http://data.europa.eu/949/iss/notificationMessage">notification message</a>
       </li>
       <li>
+         <a href="#notifiedContactId" title="http://data.europa.eu/949/iss/notifiedContactId">notified contact id</a>
+      </li>
+      <li>
          <a href="#numberAndSpeedNarrative"
             title="http://data.europa.eu/949/iss/numberAndSpeedNarrative">number and speed of train/vehicle/cargo -narrative</a>
+      </li>
+      <li>
+         <a href="#numberDGFreightTonKilometers"
+            title="http://data.europa.eu/949/iss/numberDGFreightTonKilometers">number of Dangerous Goods freight ton-kilometers</a>
+      </li>
+      <li>
+         <a href="#numberDGFreightTrainKilometers"
+            title="http://data.europa.eu/949/iss/numberDGFreightTrainKilometers">number of Dangerous Goods freight train-kilometers</a>
+      </li>
+      <li>
+         <a href="#numberDGRailwayVehiclesProcessedFreightTerminals"
+            title="http://data.europa.eu/949/iss/numberDGRailwayVehiclesProcessedFreightTerminals">number of dangerous goods railway vehicles processed in freight terminals</a>
+      </li>
+      <li>
+         <a href="#numberDGRailwayVehiclesProcessedTerminals"
+            title="http://data.europa.eu/949/iss/numberDGRailwayVehiclesProcessedTerminals">number of dangerous goods railway vehicles processed in terminals</a>
       </li>
       <li>
          <a href="#numberDelayedFreightTrains"
@@ -5411,64 +6311,44 @@ This description is consistent with properties reported in accordance with RID 1
             title="http://data.europa.eu/949/iss/numberDelayedPassengerTrains">number of delayed passenger trains</a>
       </li>
       <li>
-         <a href="#numberDGFreightTonKilometers"
-            title="http://data.europa.eu/949/iss/numberDGFreightTonKilometers">number of DG freight ton kilometers</a>
-      </li>
-      <li>
-         <a href="#numberDGFreightTrainKilometers"
-            title="http://data.europa.eu/949/iss/numberDGFreightTrainKilometers">number of DG freight train kilometers</a>
-      </li>
-      <li>
-         <a href="#numberDGRailwayVehiclesProcessedFreightTerminals"
-            title="http://data.europa.eu/949/iss/numberDGRailwayVehiclesProcessedFreightTerminals">number of DG railway vehicles processed freight terminals</a>
-      </li>
-      <li>
          <a href="#numberFreightTonKilometers"
-            title="http://data.europa.eu/949/iss/numberFreightTonKilometers">number of freight ton kilometers</a>
+            title="http://data.europa.eu/949/iss/numberFreightTonKilometers">number of freight ton-kilometers</a>
       </li>
       <li>
          <a href="#numberFreightTrainKilometers"
-            title="http://data.europa.eu/949/iss/numberFreightTrainKilometers">number of freight train kilometers</a>
+            title="http://data.europa.eu/949/iss/numberFreightTrainKilometers">number of freight train-kilometers</a>
       </li>
       <li>
          <a href="#numberLineKilometers"
-            title="http://data.europa.eu/949/iss/numberLineKilometers">number of line kilometers</a>
+            title="http://data.europa.eu/949/iss/numberLineKilometers">number of Line-kilometers</a>
       </li>
       <li>
          <a href="#numberOperatedTerminals"
             title="http://data.europa.eu/949/iss/numberOperatedTerminals">number of operated terminals</a>
       </li>
       <li>
-         <a href="#numberOperatedTrackKilometers"
-            title="http://data.europa.eu/949/iss/numberOperatedTrackKilometers">number of operated track kilometers</a>
-      </li>
-      <li>
          <a href="#numberOperatingHoursTerminals"
-            title="http://data.europa.eu/949/iss/numberOperatingHoursTerminals">number of operating hours terminals</a>
+            title="http://data.europa.eu/949/iss/numberOperatingHoursTerminals">number of operating hours in terminals</a>
       </li>
       <li>
          <a href="#numberPassengerKilometers"
-            title="http://data.europa.eu/949/iss/numberPassengerKilometers">number of passenger kilometers</a>
+            title="http://data.europa.eu/949/iss/numberPassengerKilometers">number of passenger kilometers (optional)</a>
       </li>
       <li>
-         <a href="#numberPassengerKilometersHighSpeedService"
-            title="http://data.europa.eu/949/iss/numberPassengerKilometersHighSpeedService">number of passenger kilometers high speed service</a>
+         <a href="#numberPassengerTrainKilometersHighSpeedService"
+            title="http://data.europa.eu/949/iss/numberPassengerTrainKilometersHighSpeedService">number of passenger kilometers with high speed service</a>
       </li>
       <li>
          <a href="#numberPassengerTrainKilometers"
-            title="http://data.europa.eu/949/iss/numberPassengerTrainKilometers">number of passenger train kilometers</a>
-      </li>
-      <li>
-         <a href="#numberRailwayVehiclesDGProcessedTerminals"
-            title="http://data.europa.eu/949/iss/numberRailwayVehiclesDGProcessedTerminals">number of railway vehicles DG processed terminals</a>
+            title="http://data.europa.eu/949/iss/numberPassengerTrainKilometers">number of passenger train-kilometers</a>
       </li>
       <li>
          <a href="#numberRailwayVehiclesProcessedFreightTerminals"
-            title="http://data.europa.eu/949/iss/numberRailwayVehiclesProcessedFreightTerminals">number of railway vehicles processed freight terminals</a>
+            title="http://data.europa.eu/949/iss/numberRailwayVehiclesProcessedFreightTerminals">number of railway vehicles processed in freight terminals</a>
       </li>
       <li>
          <a href="#numberRailwayVehiclesProcessedTerminals"
-            title="http://data.europa.eu/949/iss/numberRailwayVehiclesProcessedTerminals">number of railway vehicles processed terminals</a>
+            title="http://data.europa.eu/949/iss/numberRailwayVehiclesProcessedTerminals">number of railway vehicles processed in terminals</a>
       </li>
       <li>
          <a href="#numberSwitchesPointsDamaged"
@@ -5484,7 +6364,7 @@ This description is consistent with properties reported in accordance with RID 1
       </li>
       <li>
          <a href="#numberTrackKilometersOperatedTerminals"
-            title="http://data.europa.eu/949/iss/numberTrackKilometersOperatedTerminals">number of track kilometers operated terminals</a>
+            title="http://data.europa.eu/949/iss/numberTrackKilometersOperatedTerminals">number of Track-kilometers operated in terminals</a>
       </li>
       <li>
          <a href="#numberOfVehicles" title="http://data.europa.eu/949/iss/numberOfVehicles">number of vehicles</a>
@@ -5495,6 +6375,10 @@ This description is consistent with properties reported in accordance with RID 1
       <li>
          <a href="#numberWagonsCarryingDangerousGoods"
             title="http://data.europa.eu/949/iss/numberWagonsCarryingDangerousGoods">number of wagons carrying Dangerous Goods in the train</a>
+      </li>
+      <li>
+         <a href="#numberOperatedTrackKilometers"
+            title="http://data.europa.eu/949/iss/numberOperatedTrackKilometers">number Track-kilometers operated</a>
       </li>
       <li>
          <a href="#occurrenceConsequencesNarrative"
@@ -5524,8 +6408,8 @@ This description is consistent with properties reported in accordance with RID 1
             title="http://data.europa.eu/949/iss/occcurrenceLocationNarrative">occurrence location narrative</a>
       </li>
       <li>
-         <a href="#generalOcurrenceNarrative"
-            title="http://data.europa.eu/949/iss/generalOcurrenceNarrative">occurrence narrative (general)</a>
+         <a href="#generalOccurrenceNarrative"
+            title="http://data.europa.eu/949/iss/generalOccurrenceNarrative">occurrence narrative (general)</a>
       </li>
       <li>
          <a href="#occurrenceRegion" title="http://data.europa.eu/949/iss/occurrenceRegion">occurrence region</a>
@@ -5538,8 +6422,11 @@ This description is consistent with properties reported in accordance with RID 1
          <a href="#occurrenceTitle" title="http://data.europa.eu/949/iss/occurrenceTitle">occurrence title</a>
       </li>
       <li>
-         <a href="#ocurrenceTownOrCity"
-            title="http://data.europa.eu/949/iss/ocurrenceTownOrCity">occurrence town or city</a>
+         <a href="#occurrenceTownOrCity"
+            title="http://data.europa.eu/949/iss/occurrenceTownOrCity">occurrence town or city</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/organisationCode" title="http://data.europa.eu/949/organisationCode">organisation code</a>
       </li>
       <li>
          <a href="#overallResult" title="http://data.europa.eu/949/iss/overallResult">overall result</a>
@@ -5550,6 +6437,29 @@ This description is consistent with properties reported in accordance with RID 1
       <li>
          <a href="#positionFailedRiskControlMeasure"
             title="http://data.europa.eu/949/iss/positionFailedRiskControlMeasure">position failed risk control measure</a>
+      </li>
+      <li>
+         <a href="#recommendationEndDate"
+            title="http://data.europa.eu/949/iss/recommendationEndDate">recommendation end date</a>
+      </li>
+      <li>
+         <a href="#recommendationId" title="http://data.europa.eu/949/iss/recommendationId">recommendation id</a>
+      </li>
+      <li>
+         <a href="#recommendationIssued"
+            title="http://data.europa.eu/949/iss/recommendationIssued">recommendation issued</a>
+      </li>
+      <li>
+         <a href="#recommendationStartDate"
+            title="http://data.europa.eu/949/iss/recommendationStartDate">recommendation start date</a>
+      </li>
+      <li>
+         <a href="#recommendationText"
+            title="http://data.europa.eu/949/iss/recommendationText">recommendation text</a>
+      </li>
+      <li>
+         <a href="#recommendationTitle"
+            title="http://data.europa.eu/949/iss/recommendationTitle">recommendation title</a>
       </li>
       <li>
          <a href="#recordDatetime" title="http://data.europa.eu/949/iss/recordDatetime">record date and time</a>
@@ -5573,16 +6483,6 @@ This description is consistent with properties reported in accordance with RID 1
             title="http://data.europa.eu/949/iss/referencePeriodStartDate">reference period start date</a>
       </li>
       <li>
-         <a href="#reportingContactEmail"
-            title="http://data.europa.eu/949/iss/reportingContactEmail">reporting contact email</a>
-      </li>
-      <li>
-         <a href="#reportingContactFax"
-            title="http://data.europa.eu/949/iss/reportingContactFax">
-            <span>reporting contact fax</span>
-         </a>
-      </li>
-      <li>
          <a href="#reportingContactId"
             title="http://data.europa.eu/949/iss/reportingContactId">reporting contact ID</a>
       </li>
@@ -5593,10 +6493,6 @@ This description is consistent with properties reported in accordance with RID 1
       <li>
          <a href="#contactIdForOccurrenceContext"
             title="http://data.europa.eu/949/iss/contactIdForOccurrenceContext">reporting contact ID for the occurrence context</a>
-      </li>
-      <li>
-         <a href="#reportingContactName"
-            title="http://data.europa.eu/949/iss/reportingContactName">reporting contact name</a>
       </li>
       <li>
          <a href="#reportingPeriodEndDate"
@@ -5663,6 +6559,9 @@ This description is consistent with properties reported in accordance with RID 1
       <li>
          <a href="#severityProbabilityPriorAssessmentPeriod"
             title="http://data.europa.eu/949/iss/severityProbabilityPriorAssessmentPeriod">severity probability prior to assessment period</a>
+      </li>
+      <li>
+         <a href="#sharingDeadline" title="http://data.europa.eu/949/iss/sharingDeadline">sharing deadline</a>
       </li>
       <li>
          <a href="#soilPollution" title="http://data.europa.eu/949/iss/soilPollution">soil pollution</a>
@@ -5754,6 +6653,10 @@ This description is consistent with properties reported in accordance with RID 1
       </li>
       <li>
          <a href="#unNumber" title="http://data.europa.eu/949/iss/unNumber">UN number</a>
+      </li>
+      <li>
+         <a href="#validationDeadline"
+            title="http://data.europa.eu/949/iss/validationDeadline">validation deadline</a>
       </li>
       <li>
          <a href="#validityPeriodEndDate"
@@ -5953,13 +6856,13 @@ This description is consistent with properties reported in accordance with RID 1
          </dl>
       </div>
    </div>
-   <div class="entity" id="assesmentPeriodEndDate">
+   <div class="entity" id="assessmentPeriodEndDate">
       <h3>assessment period end date<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/assesmentPeriodEndDate</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/assessmentPeriodEndDate</p>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -6095,6 +6998,36 @@ This description is consistent with properties reported in accordance with RID 1
          </dl>
       </div>
    </div>
+   <div class="entity" id="buildingBlockNarrative">
+      <h3>building block narrative<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/buildingBlockNarrative</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OccurrenceScenarioBuildingBlock"
+                  title="http://data.europa.eu/949/iss/OccurrenceScenarioBuildingBlock">Occurrence scenario building block</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="cargoNumber">
       <h3>cargo number<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -6209,6 +7142,36 @@ This description is consistent with properties reported in accordance with RID 1
                <a href="http://www.w3.org/2001/XMLSchema#date"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#date">date</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="contributingSystemicFactorNarrative">
+      <h3>contributing systemic factor narrative<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/contributingSystemicFactorNarrative</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ContributingSystemicFactor"
+                  title="http://data.europa.eu/949/iss/ContributingSystemicFactor">Contributing and Systemic factors</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6845,6 +7808,36 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
          </dl>
       </div>
    </div>
+   <div class="entity" id="failedRiskControlMeasureText">
+      <h3>Failed risk control measure text<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/failedRiskControlMeasureText</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#FailedRiskControlMeasure"
+                  title="http://data.europa.eu/949/iss/FailedRiskControlMeasure">Failed risk control measure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="failureAnalysis">
       <h3>failure analysis<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -6862,8 +7855,8 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
+               <a href="#FailedRiskControlMeasure"
+                  title="http://data.europa.eu/949/iss/FailedRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6875,13 +7868,13 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="faillureMode">
+   <div class="entity" id="failureMode">
       <h3>failure mode<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/faillureMode</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/failureMode</p>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -6892,8 +7885,8 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
+               <a href="#FailedRiskControlMeasure"
+                  title="http://data.europa.eu/949/iss/FailedRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -6982,11 +7975,6 @@ of tons, number of tons/km) or number of predefined operations.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/iss/isADangerousGoodsEvent</p>
-      <dl>
-         <dt>Date:
-        </dt>
-         <dd>25/10/2023</dd>
-      </dl>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -7254,6 +8242,36 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
          </dl>
       </div>
    </div>
+   <div class="entity" id="locationName">
+      <h3>location name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/locationName</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#SimpleReportSafetyRelatedEvent"
+                  title="http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent">Simple report of the safety related event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="meanContainmentMaterial">
       <h3>means of containment material<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -7469,6 +8487,35 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
          </dl>
       </div>
    </div>
+   <div class="entity" id="notifiedContactId">
+      <h3>notified contact id<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/notifiedContactId</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Notification" title="http://data.europa.eu/949/iss/Notification">Notification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="numberAndSpeedNarrative">
       <h3>number and speed of train/vehicle/cargo -narrative<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -7498,6 +8545,122 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
                <a href="http://www.w3.org/2001/XMLSchema#string"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="numberDGFreightTonKilometers">
+      <h3>number of Dangerous Goods freight ton-kilometers<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/numberDGFreightTonKilometers</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VolumeOfOperation" title="http://data.europa.eu/949/iss/VolumeOfOperation">Volume of operation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="numberDGFreightTrainKilometers">
+      <h3>number of Dangerous Goods freight train-kilometers<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/numberDGFreightTrainKilometers</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VolumeOfOperation" title="http://data.europa.eu/949/iss/VolumeOfOperation">Volume of operation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#float"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="numberDGRailwayVehiclesProcessedFreightTerminals">
+      <h3>number of dangerous goods railway vehicles processed in freight terminals<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/numberDGRailwayVehiclesProcessedFreightTerminals</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VolumeOfOperation" title="http://data.europa.eu/949/iss/VolumeOfOperation">Volume of operation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="numberDGRailwayVehiclesProcessedTerminals">
+      <h3>number of dangerous goods railway vehicles processed in terminals<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/numberDGRailwayVehiclesProcessedTerminals</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VolumeOfOperation" title="http://data.europa.eu/949/iss/VolumeOfOperation">Volume of operation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
             </dd>
          </dl>
       </div>
@@ -7562,95 +8725,8 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
          </dl>
       </div>
    </div>
-   <div class="entity" id="numberDGFreightTonKilometers">
-      <h3>number of DG freight ton kilometers<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/numberDGFreightTonKilometers</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VolumeOfOperation" title="http://data.europa.eu/949/iss/VolumeOfOperation">Volume of operation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#float"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="numberDGFreightTrainKilometers">
-      <h3>number of DG freight train kilometers<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/numberDGFreightTrainKilometers</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VolumeOfOperation" title="http://data.europa.eu/949/iss/VolumeOfOperation">Volume of operation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#float"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#float">float</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="numberDGRailwayVehiclesProcessedFreightTerminals">
-      <h3>number of DG railway vehicles processed freight terminals<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/numberDGRailwayVehiclesProcessedFreightTerminals</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VolumeOfOperation" title="http://data.europa.eu/949/iss/VolumeOfOperation">Volume of operation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#integer"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="numberFreightTonKilometers">
-      <h3>number of freight ton kilometers<sup class="type-dp" title="data property">dp</sup>
+      <h3>number of freight ton-kilometers<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -7679,7 +8755,7 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
       </div>
    </div>
    <div class="entity" id="numberFreightTrainKilometers">
-      <h3>number of freight train kilometers<sup class="type-dp" title="data property">dp</sup>
+      <h3>number of freight train-kilometers<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -7708,7 +8784,7 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
       </div>
    </div>
    <div class="entity" id="numberLineKilometers">
-      <h3>number of line kilometers<sup class="type-dp" title="data property">dp</sup>
+      <h3>number of Line-kilometers<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -7765,37 +8841,8 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
          </dl>
       </div>
    </div>
-   <div class="entity" id="numberOperatedTrackKilometers">
-      <h3>number of operated track kilometers<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/numberOperatedTrackKilometers</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VolumeOfOperation" title="http://data.europa.eu/949/iss/VolumeOfOperation">Volume of operation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#integer"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="numberOperatingHoursTerminals">
-      <h3>number of operating hours terminals<sup class="type-dp" title="data property">dp</sup>
+      <h3>number of operating hours in terminals<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -7824,7 +8871,7 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
       </div>
    </div>
    <div class="entity" id="numberPassengerKilometers">
-      <h3>number of passenger kilometers<sup class="type-dp" title="data property">dp</sup>
+      <h3>number of passenger kilometers (optional)<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -7852,13 +8899,13 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
          </dl>
       </div>
    </div>
-   <div class="entity" id="numberPassengerKilometersHighSpeedService">
-      <h3>number of passenger kilometers high speed service<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="numberPassengerTrainKilometersHighSpeedService">
+      <h3>number of passenger kilometers with high speed service<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/numberPassengerKilometersHighSpeedService</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/numberPassengerTrainKilometersHighSpeedService</p>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -7882,7 +8929,7 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
       </div>
    </div>
    <div class="entity" id="numberPassengerTrainKilometers">
-      <h3>number of passenger train kilometers<sup class="type-dp" title="data property">dp</sup>
+      <h3>number of passenger train-kilometers<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -7910,37 +8957,8 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
          </dl>
       </div>
    </div>
-   <div class="entity" id="numberRailwayVehiclesDGProcessedTerminals">
-      <h3>number of railway vehicles DG processed terminals<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/numberRailwayVehiclesDGProcessedTerminals</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#VolumeOfOperation" title="http://data.europa.eu/949/iss/VolumeOfOperation">Volume of operation</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#integer"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="numberRailwayVehiclesProcessedFreightTerminals">
-      <h3>number of railway vehicles processed freight terminals<sup class="type-dp" title="data property">dp</sup>
+      <h3>number of railway vehicles processed in freight terminals<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -7969,7 +8987,7 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
       </div>
    </div>
    <div class="entity" id="numberRailwayVehiclesProcessedTerminals">
-      <h3>number of railway vehicles processed terminals<sup class="type-dp" title="data property">dp</sup>
+      <h3>number of railway vehicles processed in terminals<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -8087,7 +9105,7 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
       </div>
    </div>
    <div class="entity" id="numberTrackKilometersOperatedTerminals">
-      <h3>number of track kilometers operated terminals<sup class="type-dp" title="data property">dp</sup>
+      <h3>number of Track-kilometers operated in terminals<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -8111,11 +9129,6 @@ In https://eur-lex.europa.eu/eli/reg_impl/2019/773/oj 2.2.2 Principal locations 
                <a href="http://www.w3.org/2001/XMLSchema#float"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#float">float</a>
-            </dd>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#integer"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
             </dd>
          </dl>
       </div>
@@ -8197,6 +9210,35 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
             <dd>
                <a href="#SimpleReportSafetyRelatedEvent"
                   title="http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent">Simple report of the safety related event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="numberOperatedTrackKilometers">
+      <h3>number Track-kilometers operated<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/numberOperatedTrackKilometers</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#VolumeOfOperation" title="http://data.europa.eu/949/iss/VolumeOfOperation">Volume of operation</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8449,13 +9491,13 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="generalOcurrenceNarrative">
+   <div class="entity" id="generalOccurrenceNarrative">
       <h3>occurrence narrative (general)<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/generalOcurrenceNarrative</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/generalOccurrenceNarrative</p>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -8573,13 +9615,13 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="ocurrenceTownOrCity">
+   <div class="entity" id="occurrenceTownOrCity">
       <h3>occurrence town or city<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/ocurrenceTownOrCity</p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/occurrenceTownOrCity</p>
       <dl class="definedBy">
          <dt>Is defined by</dt>
          <dd>
@@ -8596,6 +9638,39 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
                <span class="logic">or</span> 
                <a href="#SimpleReportSafetyRelatedEvent"
                   title="http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent">Simple report of the safety related event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/organisationCode">
+      <h3>organisation code<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/organisationCode</p>
+      <div class="comment">
+         <span class="markdown">Four alpha-numeric code allocated by ERA to a body. It represent's the IM code in RINF.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://purl.org/dc/terms/identifier"
+                  target="_blank"
+                  title="http://purl.org/dc/terms/identifier">identifier</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8684,8 +9759,8 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#FailureOfRiskControlMeasure"
-                  title="http://data.europa.eu/949/iss/FailureOfRiskControlMeasure">Failed risk control measure</a>
+               <a href="#FailedRiskControlMeasure"
+                  title="http://data.europa.eu/949/iss/FailedRiskControlMeasure">Failed risk control measure</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8693,6 +9768,170 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
                <a href="http://www.w3.org/2001/XMLSchema#integer"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="recommendationEndDate">
+      <h3>recommendation end date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/recommendationEndDate</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="recommendationId">
+      <h3>recommendation id<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/recommendationId</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RecommendationItem"
+                  title="http://data.europa.eu/949/iss/RecommendationItem">Recommendation item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="recommendationIssued">
+      <h3>recommendation issued<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/recommendationIssued</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RecommendationItem"
+                  title="http://data.europa.eu/949/iss/RecommendationItem">Recommendation item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="recommendationStartDate">
+      <h3>recommendation start date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/recommendationStartDate</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RecommendationItem"
+                  title="http://data.europa.eu/949/iss/RecommendationItem">Recommendation item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="recommendationText">
+      <h3>recommendation text<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/recommendationText</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RecommendationItem"
+                  title="http://data.europa.eu/949/iss/RecommendationItem">Recommendation item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="recommendationTitle">
+      <h3>recommendation title<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/recommendationTitle</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RecommendationItem"
+                  title="http://data.europa.eu/949/iss/RecommendationItem">Recommendation item</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -8801,7 +10040,7 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#RecordVersion" title="http://data.europa.eu/949/iss/RecordVersion">Record version</a>
+               <a href="#Record" title="http://data.europa.eu/949/iss/Record">Record</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -8877,68 +10116,6 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
                <a href="http://www.w3.org/2001/XMLSchema#date"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#date">date</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="reportingContactEmail">
-      <h3>reporting contact email<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/reportingContactEmail</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Record" title="http://data.europa.eu/949/iss/Record">Record</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="reportingContactFax">
-      <h3>reporting contact fax<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/reportingContactFax</p>
-      <div class="comment">
-         <span class="markdown">tdg reporting contact fax</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#DetailedReportTdgPart"
-                  title="http://data.europa.eu/949/iss/DetailedReportTdgPart">Detailed report (TDG part)</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -9042,35 +10219,6 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
             <dd>
                <a href="#DetailedReportSafetyRelatedEvent"
                   title="http://data.europa.eu/949/iss/DetailedReportSafetyRelatedEvent">Detailed report of the safety related event</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="reportingContactName">
-      <h3>reporting contact name<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/iss/reportingContactName</p>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
-         </dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Record" title="http://data.europa.eu/949/iss/Record">Record</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -9470,8 +10618,8 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#SafetyPerformanceselfEstimationPerArea"
-                  title="http://data.europa.eu/949/iss/SafetyPerformanceselfEstimationPerArea">Safety performance self-estimation per area</a>
+               <a href="#SafetyPerformanceSelfEstimationPerArea"
+                  title="http://data.europa.eu/949/iss/SafetyPerformanceSelfEstimationPerArea">Safety performance self-estimation per area</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -9607,6 +10755,35 @@ The severity is estimated by the exposure of vulnerabilities to hazardous areas.
                <a href="http://www.w3.org/2001/XMLSchema#float"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#float">float</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="sharingDeadline">
+      <h3>sharing deadline<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/sharingDeadline</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Notification" title="http://data.europa.eu/949/iss/Notification">Notification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
             </dd>
          </dl>
       </div>
@@ -10329,6 +11506,35 @@ Taken from Annexes ISC-2022-00728_2023-07.</span>
                <a href="http://www.w3.org/2001/XMLSchema#string"
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="validationDeadline">
+      <h3>validation deadline<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/iss/validationDeadline</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://data.europa.eu/949/iss">http://data.europa.eu/949/iss</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Notification" title="http://data.europa.eu/949/iss/Notification">Notification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#date"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#date">date</a>
             </dd>
          </dl>
       </div>

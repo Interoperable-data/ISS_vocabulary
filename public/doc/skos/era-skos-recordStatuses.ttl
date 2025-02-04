@@ -22,6 +22,7 @@
 
 iss-rs:RecordStatuses a skos:ConceptScheme ; 
     dct:issued "2024-04-04"^^xsd:date ;
+    dct:modified "2024-09-03"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
     rdfs:label "Record Statuses"@en ;
@@ -36,26 +37,24 @@ iss-rs:RecordStatuses a skos:ConceptScheme ;
 #
 #################################################################
 iss-rs:New  rdf:type  skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
-        skos:prefLabel  "New" .
+        skos:prefLabel  "New"@en .
 
-iss-rs:Draft  rdf:type  skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
-        skos:prefLabel  "Draft" .
 
 iss-rs:Updated  rdf:type  skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
-        skos:prefLabel  "Updated" .
+        skos:prefLabel  "Updated"@en .
 
 iss-rs:Corrected
         rdf:type        skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
-        skos:prefLabel  "Corrected" .
+        skos:prefLabel  "Corrected"@en .
 
 iss-rs:Validated
         rdf:type        skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
-        skos:prefLabel  "Validated" .
+        skos:prefLabel  "Validated"@en .
 
 iss-rs:Archived
         rdf:type        skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
-        skos:prefLabel  "Archived" .
+        skos:prefLabel  "Archived"@en .
 
 iss-rs:Submitted
         rdf:type        skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
-        skos:prefLabel  "Submitted" .
+        skos:prefLabel  "Submitted"@en .

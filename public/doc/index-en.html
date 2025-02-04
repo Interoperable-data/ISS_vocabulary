@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://data.europa.eu/949/iss/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://data.europa.eu/949/iss/","name":"ISS vocabulary", "headline":"This is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways (https://www.era.europa.eu/). It represents the concepts and relationships linked to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation (hereinafter the ‘CSM’ or ‘CSM ASLP).", "datePublished":"2023-09-20", "version":"v1.0.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Edna Ruckhaus"},{"@type":"Person","name":"Oscar Corcho"}], "contributor":[{"@type":"Person","name":"Emmanuel Ruffin"},{"@type":"Person","name":"Marina Aguado"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://data.europa.eu/949/iss/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://data.europa.eu/949/iss/","name":"ISS vocabulary", "headline":"This is the human and machine readable Vocabulary/Ontology governed by the European Union Agency for Railways (https://www.era.europa.eu/). It represents the concepts and relationships linked to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation (hereinafter the ‘CSM’ or ‘CSM ASLP).", "datePublished":"2023-09-20", "version":"v1.0.0", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Edna Ruckhaus"},{"@type":"Person","name":"Oscar Corcho"}], "contributor":[{"@type":"Person","name":"Emmanuel Ruffin"},{"@type":"Person","name":"Marina Aguado"},{"@type":"Person","name":"Jean-François Demoutiez"},{"@type":"Person","name":"Guislain Atemezing"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -61,7 +61,10 @@ function loadTOC(){
 <img src="resources/images/era-logo.png"/>
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>ISS vocabulary</h1>
-<h2>Release 2023-09-20</h2>
+<dt>Latest release:</dt>
+<dd>2025-01-27</dd>
+<dt>Initial release:</dt>
+<dd>2023-09-20</dd>
 
 
 <dl>
@@ -69,16 +72,20 @@ function loadTOC(){
 <dd><a href="https://data-interop.era.europa.eu/iss-vocabulary/">https://data-interop.era.europa.eu/iss-vocabulary/</a></dd> -->
 <dt>Revision:</dt>
 <dd>v1.0.0</dd>
-<dt>Authors:</dt>
+<!-- <dt>Authors:</dt>
 <dd>Edna Ruckhaus, (<a href="https://oeg.fi.upm.es/">Universidad Politécnica de Madrid</a>)</dd><dd>Oscar Corcho, (<a href="https://oeg.fi.upm.es/">Universidad Politécnica de Madrid</a>)</dd>
 
 <dt>Contributors:</dt>
-<dd>Emmanuel Ruffin, (<a href="https://www.era.europa.eu/">ERA</a>)</dd><dd>Marina Aguado, (<a href="https://www.era.europa.eu/">ERA</a>)</dd>
+<dd>Emmanuel Ruffin, (<a href="https://www.era.europa.eu/">ERA</a>)</dd><dd>Marina Aguado, (<a href="https://www.era.europa.eu/">ERA</a>)</dd>-->
 
 <dt>Publisher:</dt>
 <dd><a href="https://www.era.europa.eu/">European Union Agency for Railways</a></dd>
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd>
 <dt>Browse SKOS thesauri:</dt><dd><span><a href="./skos/index.html" target="_blank"><img src="https://img.shields.io/badge/Format-HTML-blue.svg" alt="SKOS" /></a></span></dd>
+<dt>Download SHACL shapes:</dt>
+<dd><span><a href="iss-shapes" target="_blank"><img
+src="https://img.shields.io/badge/Format-TTL-blue.svg"
+alt="SHACL Shapes TTL" /></a></span></dd>
 <dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
 </dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
 <dd>European Union Agency for Railways. ISS vocabulary. Revision: v1.0.0.</dd>
@@ -98,6 +105,11 @@ function loadTOC(){
      <div id="references"></div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p><dt>Contributors:</dt>
+The following individuals have contributed to the development process of this ontology, at different stages of the development process: 
+<dd>Edna Ruckhaus, (<a href="https://oeg.fi.upm.es/">UPM</a>)</dd><dd>Oscar Corcho, (<a href="https://oeg.fi.upm.es/">UPM</a>)</dd><dd>Emmanuel Ruffin, (<a href="https://www.era.europa.eu">ERA</a>)</dd><dd>Jean-François Demoutiez, (<a href="https://www.era.europa.eu">ERA</a>)</dd>
+<dd>Marina Aguado, (<a href="https://www.era.europa.eu">ERA</a>)</dd><dd>Guislain Atemezing, (<a href="https://www.era.europa.eu">ERA</a>)
+</p> 
 <p>
 The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
 </div>
