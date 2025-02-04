@@ -19,7 +19,7 @@ iss-sh:RecommendationShape sh:property iss-sh:ConcernedBy, iss-sh:HasRecommendat
 iss-sh:HasRecommendationItem
   era:affectedProperty iss:hasRecommendationItem ;
   era:affectedClass iss:Recommendation ;
-  sh:message "hasRecommendationItem: The recommendation has a hasRecommendationItem that must be a RecommendationItem." ;
+  sh:message "hasRecommendationItem: The recommendation has a hasRecommendationItem that must be a RecommendationItem."@en ;
   sh:severity sh:violation ;
   sh:path iss:hasRecommendationItem ;
   a sh:PropertyShape ;
@@ -29,7 +29,7 @@ iss-sh:HasRecommendationItem
 iss-sh:ConcernedBy
   sh:severity sh:violation ;
   a sh:PropertyShape ;
-  sh:message "concernedBy: The recommendation has a concernedBy that must be a SafetyRelatedEvent." ;
+  sh:message "concernedBy: The recommendation has a concernedBy that must be a SafetyRelatedEvent."@en ;
   sh:class iss:SafetyRelatedEvent ;
   era:scope "local" ;
   era:affectedProperty iss:concernedBy ;
@@ -48,7 +48,7 @@ iss-sh:HasRecommendationTypeSKOS a sh:PropertyShape;
   sh:class skos:Concept;
   sh:property iss-sh:HasRecommendationTypeSKOSinScheme;
   sh:severity sh:violation;
-  sh:message "hasRecommendationType: The instance of Recommendation has a hasRecommendationType value that is not a SKOS concept." .
+  sh:message "hasRecommendationType: The instance of Recommendation has a hasRecommendationType value that is not a SKOS concept."@en .
 
 iss-sh:HasRecommendationTypeSKOSinScheme a sh:PropertyShape;
   era:affectedProperty iss:hasRecommendationType;
@@ -57,7 +57,7 @@ iss-sh:HasRecommendationTypeSKOSinScheme a sh:PropertyShape;
   sh:path skos:inScheme;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/recommendation-types/RecommendationTypes>;
   sh:severity sh:violation;
-  sh:message "hasRecommendationType: The instance of Recommendation has a hasRecommendationType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/recommendation-types/RecommendationTypes." .
+  sh:message "hasRecommendationType: The instance of Recommendation has a hasRecommendationType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/recommendation-types/RecommendationTypes."@en .
 
 
 

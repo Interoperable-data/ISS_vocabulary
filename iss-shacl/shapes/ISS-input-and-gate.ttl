@@ -16,14 +16,14 @@ iss-sh:InputAndGateShape
 iss-sh:InputAndGateShape sh:property iss-sh:InputAndGateBuildingBlock .
 
 iss-sh:InputAndGateBuildingBlock
-  sh:message "inputAndGateBuildingBlock: The input And gate has a inputAndGateBuildingBlock that must be a OccurrenceScenarioBuildingBlock." ;
+  sh:message "inputAndGateBuildingBlock: The input And gate has a inputAndGateBuildingBlock that must be a OccurrenceScenarioBuildingBlock."@en ;
   a sh:PropertyShape ;
   era:affectedProperty iss:inputAndGateBuildingBlock ;
   sh:class iss:OccurrenceScenarioBuildingBlock ;
   sh:path iss:inputAndGateBuildingBlock ;
   era:affectedClass iss:InputAndGate ;
   sh:severity sh:violation ;
-  era:scope "local" .
+  era:scope "local".
 
 iss-sh:InputAndGateShape sh:property iss-sh:InputAndGateBuildingBlock .
 
@@ -38,7 +38,7 @@ iss-sh:InputAndGateEventSKOS a sh:PropertyShape;
   sh:class skos:Concept;
   sh:property iss-sh:InputAndGateEventSKOSinScheme;
   sh:severity sh:violation;
-  sh:message "inputAndGateEvent: The instance of InputAndGate has a inputAndGateEvent value that is not a SKOS concept." .
+  sh:message "inputAndGateEvent: The instance of InputAndGate has a inputAndGateEvent value that is not a SKOS concept."@en.
 
 iss-sh:InputAndGateEventSKOSinScheme a sh:PropertyShape;
   era:affectedProperty iss:inputAndGateEvent;
@@ -47,4 +47,4 @@ iss-sh:InputAndGateEventSKOSinScheme a sh:PropertyShape;
   sh:path skos:inScheme;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes>;
   sh:severity sh:violation;
-  sh:message "inputAndGateEvent: The instance of InputAndGate has a inputAndGateEvent value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes." .
+  sh:message "inputAndGateEvent: The instance of InputAndGate has a inputAndGateEvent value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes."@en.

@@ -605,7 +605,7 @@ For Infrastructure managers it coresponds to the list of countries applicable in
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
         <rdfs:comment xml:lang="en">Type of document (e.g. report, note, e-mail...).
 
-Not ot confuse with the ICT format of the digital document.</rdfs:comment>
+Not to confuse with the ICT format of the digital document.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">document type</rdfs:label>
     </owl:ObjectProperty>
@@ -1893,7 +1893,7 @@ This description is consistent with properties reported in accordance with RID 1
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation"/>
         <rdfs:domain rdf:resource="http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/operation-types/TransportOperationCategories"/>
+        <data:inSkosConceptScheme rdf:resource="http://data.europa.eu/949/iss/concepts/transport-operation-categories/TransportOperationCategories"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/iss"/>
         <rdfs:label xml:lang="en">transport operation category</rdfs:label>
@@ -4340,11 +4340,10 @@ A feature that belongs to the infrastructure can be abstracted (hasAbstraction) 
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-29</terms:created>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-01-29</terms:modified>
         <rdfs:comment xml:lang="en">A reference to a specific national railway line.</rdfs:comment>
-        <rdfs:comment>Railway location</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/949/"/>
         <rdfs:label xml:lang="en">Railway location</rdfs:label>
         <ns:term_status>stable</ns:term_status>
-        <skos:altLabel>Linear reference</skos:altLabel>
+        <skos:altLabel xml:lang="en">Linear reference</skos:altLabel>
     </owl:Class>
     
 

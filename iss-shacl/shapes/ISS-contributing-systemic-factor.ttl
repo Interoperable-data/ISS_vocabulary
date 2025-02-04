@@ -23,7 +23,7 @@ iss-sh:ContributingSystemicFactorNarrative a sh:PropertyShape;
   sh:path iss:contributingSystemicFactorNarrative;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "contributingSystemicFactorNarrative: Each contributing or systemic factor instance may have contributingSystemicFactorNarrative that is a string. This error is due to having a value that is not a string." .
+  sh:message "contributingSystemicFactorNarrative: Each contributing or systemic factor instance may have contributingSystemicFactorNarrative that is a string. This error is due to having a value that is not a string."@en .
 
 # SKOS
 iss-sh:ContributingSystemicFactorShape sh:property iss-sh:ContributingFactorSKOS,
@@ -40,7 +40,7 @@ In the context of CDR (EU) 2024/xxxx, applicable list of contributing factors is
   sh:class skos:Concept;
   sh:property iss-sh:ContributingFactorSKOSinScheme;
   sh:severity sh:violation;
-  sh:message "contributingFactor: The instance of ContributingSystemicFactor has a contributingFactor value that is not a SKOS concept." .
+  sh:message "contributingFactor: The instance of ContributingSystemicFactor has a contributingFactor value that is not a SKOS concept."@en .
 
 iss-sh:ContributingFactorSKOSinScheme a sh:PropertyShape;
   era:affectedProperty iss:contributingFactor;
@@ -49,7 +49,7 @@ iss-sh:ContributingFactorSKOSinScheme a sh:PropertyShape;
   sh:path skos:inScheme;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/contributing-factors/ContributingFactors>;
   sh:severity sh:violation;
-  sh:message "contributingFactor: The instance of ContributingSystemicFactor has a contributingFactor value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/contributing-factors/ContributingFactors." .
+  sh:message "contributingFactor: The instance of ContributingSystemicFactor has a contributingFactor value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/contributing-factors/ContributingFactors."@en .
 
 iss-sh:SystemicFactorSKOS a sh:PropertyShape;
   era:affectedProperty iss:systemicFactor;
@@ -60,7 +60,7 @@ iss-sh:SystemicFactorSKOS a sh:PropertyShape;
   sh:class skos:Concept;
   sh:property iss-sh:SystemicFactorSKOSinScheme;
   sh:severity sh:violation;
-  sh:message "systemicFactor: The instance of ContributingSystemicFactor has a systemicFactor value that is not a SKOS concept." .
+  sh:message "systemicFactor: The instance of ContributingSystemicFactor has a systemicFactor value that is not a SKOS concept."@en .
 
 iss-sh:SystemicFactorSKOSinScheme a sh:PropertyShape;
   era:affectedProperty iss:systemicFactor;
@@ -69,4 +69,4 @@ iss-sh:SystemicFactorSKOSinScheme a sh:PropertyShape;
   sh:path skos:inScheme;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/systemic-factors/SystemicFactors>;
   sh:severity sh:violation;
-  sh:message "systemicFactor: The instance of ContributingSystemicFactor has a systemicFactor value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/systemic-factors/SystemicFactors." .
+  sh:message "systemicFactor: The instance of ContributingSystemicFactor has a systemicFactor value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/systemic-factors/SystemicFactors."@en .

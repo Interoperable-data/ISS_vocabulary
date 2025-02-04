@@ -16,7 +16,7 @@ iss-sh:InputOrGateShape
 iss-sh:InputOrGateShape sh:property iss-sh:InputOrGateBuildingBlock .
 
 iss-sh:InputOrGateBuildingBlock
-  sh:message "inputOrGateBuildingBlock: The input Or gate has a inputOrGateBuildingBlock that must be a OccurrenceScenarioBuildingBlock." ;
+  sh:message "inputOrGateBuildingBlock: The input Or gate has a inputOrGateBuildingBlock that must be a OccurrenceScenarioBuildingBlock."@en ;
   a sh:PropertyShape ;
   era:affectedProperty iss:inputOrGateBuildingBlock ;
   sh:class iss:OccurrenceScenarioBuildingBlock ;
@@ -36,7 +36,7 @@ iss-sh:InputOrGateEventSKOS a sh:PropertyShape;
   sh:class skos:Concept;
   sh:property iss-sh:InputOrGateEventSKOSinScheme;
   sh:severity sh:violation;
-  sh:message "inputOrGateEvent: The instance of InputOrGate has a inputOrGateEvent value that is not a SKOS concept." .
+  sh:message "inputOrGateEvent: The instance of InputOrGate has a inputOrGateEvent value that is not a SKOS concept."@en .
 
 iss-sh:InputOrGateEventSKOSinScheme a sh:PropertyShape;
   era:affectedProperty iss:inputOrGateEvent;
@@ -45,4 +45,4 @@ iss-sh:InputOrGateEventSKOSinScheme a sh:PropertyShape;
   sh:path skos:inScheme;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes>;
   sh:severity sh:violation;
-  sh:message "inputOrGateEvent: The instance of InputOrGate has a inputOrGateEvent value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes." .
+  sh:message "inputOrGateEvent: The instance of InputOrGate has a inputOrGateEvent value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes."@en .

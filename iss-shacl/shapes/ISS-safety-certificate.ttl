@@ -16,23 +16,23 @@ iss-sh:SafetyCertificateShape
 iss-sh:SafetyCertificateShape sh:property iss-sh:CertificateEndDate, iss-sh:CertificateStartDate .
 
 iss-sh:CertificateStartDate
-  era:scope "local" ;
+  era:scope "local";
   sh:datatype xsd:date ;
   a sh:PropertyShape ;
   era:affectedProperty iss:certificateStartDate ;
   era:affectedClass iss:SafetyCertificate ;
   sh:path iss:certificateStartDate ;
-  sh:message "certificateStartDate: Each safety certificate may have certificateStartDate that is a date. This error is due to having a value that is not a date." ;
+  sh:message "certificateStartDate: Each safety certificate may have certificateStartDate that is a date. This error is due to having a value that is not a date."@en;
   sh:severity sh:violation .
 
 iss-sh:CertificateEndDate
-  era:scope "local" ;
+  era:scope "local";
   era:affectedProperty iss:certificateEndDate ;
   sh:severity sh:violation ;
   sh:path iss:certificateEndDate ;
   era:affectedClass iss:SafetyCertificate ;
   sh:datatype xsd:date ;
-  sh:message "certificateEndDate: Each safety certificate may have certificateEndDate that is a date. This error is due to having a value that is not a date." .
+  sh:message "certificateEndDate: Each safety certificate may have certificateEndDate that is a date. This error is due to having a value that is not a date."@en.
 
 
 

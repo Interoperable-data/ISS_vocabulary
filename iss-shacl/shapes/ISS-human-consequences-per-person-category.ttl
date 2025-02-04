@@ -24,7 +24,7 @@ iss-sh:NumberOfVictims
   rdfs:comment """Total number of persons for the occurrence.
 Taken from Annexes ISC-2022-00728_2023-07."""@en ;
   a sh:PropertyShape ;
-  sh:message "numberOfVictims: Each human consequences per person category may have numberOfVictims that is an integer. This error is due to having a value that is not an integer." .
+  sh:message "numberOfVictims: Each human consequences per person category may have numberOfVictims that is an integer. This error is due to having a value that is not an integer."@en.
 
 # SKOS
 iss-sh:HumanConsequencesPerPersonCategoryShape sh:property iss-sh:InjuryTdgTypeSKOS,
@@ -39,7 +39,7 @@ iss-sh:InjuryTdgTypeSKOS a sh:PropertyShape;
   sh:class skos:Concept;
   sh:property iss-sh:InjuryTdgTypeSKOSinScheme;
   sh:severity sh:violation;
-  sh:message "injuryTdgType: The instance of HumanConsequencesPerPersonCategory has a injuryTdgType value that is not a SKOS concept." .
+  sh:message "injuryTdgType: The instance of HumanConsequencesPerPersonCategory has a injuryTdgType value that is not a SKOS concept."@en.
 
 iss-sh:InjuryTdgTypeSKOSinScheme a sh:PropertyShape;
   era:affectedProperty iss:injuryTdgType;
@@ -48,7 +48,7 @@ iss-sh:InjuryTdgTypeSKOSinScheme a sh:PropertyShape;
   sh:path skos:inScheme;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/injury-DG-types/InjuryDGTypes>;
   sh:severity sh:violation;
-  sh:message "injuryTdgType: The instance of HumanConsequencesPerPersonCategory has a injuryTdgType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/injury-DG-types/InjuryDGTypes." .
+  sh:message "injuryTdgType: The instance of HumanConsequencesPerPersonCategory has a injuryTdgType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/injury-DG-types/InjuryDGTypes."@en.
 
 iss-sh:InjuryTypeSKOS a sh:PropertyShape;
   era:affectedProperty iss:injuryType;
@@ -59,7 +59,7 @@ iss-sh:InjuryTypeSKOS a sh:PropertyShape;
   sh:class skos:Concept;
   sh:property iss-sh:InjuryTypeSKOSinScheme;
   sh:severity sh:violation;
-  sh:message "injuryType: The instance of HumanConsequencesPerPersonCategory has a injuryType value that is not a SKOS concept." .
+  sh:message "injuryType: The instance of HumanConsequencesPerPersonCategory has a injuryType value that is not a SKOS concept."@en.
 
 iss-sh:InjuryTypeSKOSinScheme a sh:PropertyShape;
   era:affectedProperty iss:injuryType;
@@ -68,7 +68,7 @@ iss-sh:InjuryTypeSKOSinScheme a sh:PropertyShape;
   sh:path skos:inScheme;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/injury-types/InjuryTypes>;
   sh:severity sh:violation;
-  sh:message "injuryType: The instance of HumanConsequencesPerPersonCategory has a injuryType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/injury-types/InjuryTypes." .
+  sh:message "injuryType: The instance of HumanConsequencesPerPersonCategory has a injuryType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/injury-types/InjuryTypes."@en.
 
 iss-sh:PersonCategorySKOS a sh:PropertyShape;
   era:affectedProperty iss:personCategory;
@@ -79,7 +79,7 @@ iss-sh:PersonCategorySKOS a sh:PropertyShape;
   sh:class skos:Concept;
   sh:property iss-sh:PersonCategorySKOSinScheme;
   sh:severity sh:violation;
-  sh:message "personCategory: The instance of HumanConsequencesPerPersonCategory has a personCategory value that is not a SKOS concept." .
+  sh:message "personCategory: The instance of HumanConsequencesPerPersonCategory has a personCategory value that is not a SKOS concept."@en.
 
 iss-sh:PersonCategorySKOSinScheme a sh:PropertyShape;
   era:affectedProperty iss:personCategory;
@@ -88,4 +88,4 @@ iss-sh:PersonCategorySKOSinScheme a sh:PropertyShape;
   sh:path skos:inScheme;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/person-categories/PersonCategories>;
   sh:severity sh:violation;
-  sh:message "personCategory: The instance of HumanConsequencesPerPersonCategory has a personCategory value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/person-categories/PersonCategories." .
+  sh:message "personCategory: The instance of HumanConsequencesPerPersonCategory has a personCategory value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/person-categories/PersonCategories."@en.

@@ -635,8 +635,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A reference to a specific national railway line."
-  }, {
-    "@value" : "Railway location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://data.europa.eu/949/"
@@ -649,6 +647,7 @@
     "@value" : "stable"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
     "@value" : "Linear reference"
   } ]
 }, {
@@ -2333,7 +2332,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Type of document (e.g. report, note, e-mail...).\n\nNot ot confuse with the ICT format of the digital document."
+    "@value" : "Type of document (e.g. report, note, e-mail...).\n\nNot to confuse with the ICT format of the digital document."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://data.europa.eu/949/iss/Document"
@@ -6916,7 +6915,7 @@
   "@id" : "http://data.europa.eu/949/iss/transportOperationCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://data.europa.eu/949/inSkosConceptScheme" : [ {
-    "@id" : "http://data.europa.eu/949/iss/concepts/operation-types/TransportOperationCategories"
+    "@id" : "http://data.europa.eu/949/iss/concepts/transport-operation-categories/TransportOperationCategories"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",

@@ -24,9 +24,15 @@ where { GRAPH <http://data.europa.eu/949/iss/graph/dev/ontology> {
         rdfs:range ?range.
     {?property rdfs:domain iss:SimpleReportSafetyRelatedEvent.}
     UNION
-    {?property rdfs:domain [owl:unionOf (?other iss:SimpleReportSafetyRelatedEvent)].}
+    {?property rdfs:domain [owl:unionOf (?other1 iss:SimpleReportSafetyRelatedEvent)].}
     UNION
-    {?property rdfs:domain [owl:unionOf (?other ?another iss:SimpleReportSafetyRelatedEvent)].}
+    {?property rdfs:domain [owl:unionOf (iss:SimpleReportSafetyRelatedEvent ?other2)].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (iss:SimpleReportSafetyRelatedEvent ?other3 ?another1)].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (?other4 iss:SimpleReportSafetyRelatedEvent ?another2 )].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (?other5 ?another3 iss:SimpleReportSafetyRelatedEvent)].}    
     
     OPTIONAL {?property rdfs:comment ?comment.}
     BIND( URI(CONCAT("http://data.europa.eu/949/iss/shapes/",
@@ -34,7 +40,7 @@ where { GRAPH <http://data.europa.eu/949/iss/graph/dev/ontology> {
                 SUBSTR(STRAFTER(STR(?property),"http://data.europa.eu/949/iss/"),2)
             		)
         	  ) AS ?shapeUri)
-    BIND( CONCAT(
+    BIND( STRLANG(CONCAT(
             STRAFTER(STR(?property),"http://data.europa.eu/949/iss/"),
             ": Each simple report safety related event may have ",
             STRAFTER(STR(?property),"http://data.europa.eu/949/iss/"),
@@ -42,7 +48,6 @@ where { GRAPH <http://data.europa.eu/949/iss/graph/dev/ontology> {
             STRAFTER(STR(?range),"http://www.w3.org/2001/XMLSchema#"),
             ". This error is due to having a value that is not a ",
             STRAFTER(STR(?range),"http://www.w3.org/2001/XMLSchema#"),
-            "."@en
-        		) AS ?message)
+            "."), "en") AS ?message)
     FILTER NOT EXISTS {?property owl:deprecated "true"^^xsd:boolean}
   }.}

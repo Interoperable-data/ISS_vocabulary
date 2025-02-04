@@ -22,7 +22,7 @@ iss-sh:OccurrenceScenarioNarrative a sh:PropertyShape;
   sh:path iss:occurrenceScenarioNarrative;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "occurrenceScenarioNarrative: Each occurrence scenario may have occurrenceScenarioNarrative that is a string. This error is due to having a value that is not a string." .
+  sh:message "occurrenceScenarioNarrative: Each occurrence scenario may have occurrenceScenarioNarrative that is a string. This error is due to having a value that is not a string."@en .
 
 iss-sh:OccurrenceScenarioShape sh:property iss-sh:HasOccurrenceScenarioBlock .
 
@@ -35,7 +35,7 @@ iss-sh:HasOccurrenceScenarioBlock
   sh:path iss:hasOccurrenceScenarioBlock ;
   rdfs:comment "Relates the occurrence scenario with its building blocks."@en ;
   a sh:PropertyShape ;
-  sh:message "hasOccurrenceScenarioBlock: The occurrence scenario has a hasOccurrenceScenarioBlock that must be a OccurrenceScenarioBuildingBlock." ;
+  sh:message "hasOccurrenceScenarioBlock: The occurrence scenario has a hasOccurrenceScenarioBlock that must be a OccurrenceScenarioBuildingBlock."@en ;
   sh:severity sh:violation .
 
 

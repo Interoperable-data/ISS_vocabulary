@@ -22,7 +22,7 @@ iss-sh:NumberOfVehicles a sh:PropertyShape;
   sh:path iss:numberOfVehicles;
   sh:datatype xsd:integer;
   sh:severity sh:violation;
-  sh:message "numberOfVehicles: Each rolling stock damage per vehicle type may have numberOfVehicles that is an integer. This error is due to having a value that is not an integer." .
+  sh:message "numberOfVehicles: Each rolling stock damage per vehicle type may have numberOfVehicles that is an integer. This error is due to having a value that is not an integer."@en.
 
 # SKOS
 iss-sh:RollingStockVehicleTypeSKOS
@@ -30,16 +30,16 @@ iss-sh:RollingStockVehicleTypeSKOS
   sh:class skos:Concept ;
   era:affectedClass iss:RollingStockDamagePerVehicleType ;
   sh:path iss:rollingStockVehicleType ;
-  sh:message "rollingStockVehicleType: The instance of RollingStockDamagePerVehicleType has a rollingStockVehicleType value that is not a SKOS concept." ;
+  sh:message "rollingStockVehicleType: The instance of RollingStockDamagePerVehicleType has a rollingStockVehicleType value that is not a SKOS concept."@en;
   sh:severity sh:violation ;
-  era:scope "local" ;
+  era:scope "local";
   sh:property iss-sh:RollingStockVehicleTypeSKOSinScheme ;
   a sh:PropertyShape .
 
 iss-sh:RollingStockVehicleTypeSKOSinScheme
   a sh:PropertyShape ;
-  era:scope "local" ;
-  sh:message "rollingStockVehicleType: The instance of RollingStockDamagePerVehicleType has a rollingStockVehicleType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-types/RollingStockVehicleTypes." ;
+  era:scope "local";
+  sh:message "rollingStockVehicleType: The instance of RollingStockDamagePerVehicleType has a rollingStockVehicleType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-types/RollingStockVehicleTypes."@en;
   era:affectedClass iss:RollingStockDamagePerVehicleType ;
   sh:severity sh:violation ;
   sh:path skos:inScheme ;
@@ -47,22 +47,22 @@ iss-sh:RollingStockVehicleTypeSKOSinScheme
   sh:hasValue <http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-types/RollingStockVehicleTypes> .
 
 iss-sh:RollingStockVehicleDamageTypeSKOSinScheme
-  era:scope "local" ;
+  era:scope "local";
   era:affectedClass iss:RollingStockDamagePerVehicleType ;
   sh:path skos:inScheme ;
   sh:severity sh:violation ;
-  sh:message "rollingStockVehicleDamageType: The instance of RollingStockDamagePerVehicleType has a rollingStockVehicleDamageType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-damage-types/RollingStockVehicleDamageTypes." ;
+  sh:message "rollingStockVehicleDamageType: The instance of RollingStockDamagePerVehicleType has a rollingStockVehicleDamageType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-damage-types/RollingStockVehicleDamageTypes."@en;
   era:affectedProperty iss:rollingStockVehicleDamageType ;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/rolling-stock-vehicle-damage-types/RollingStockVehicleDamageTypes> ;
   a sh:PropertyShape .
 
 iss-sh:RollingStockVehicleDamageTypeSKOS
   sh:severity sh:violation ;
-  era:scope "local" ;
+  era:scope "local";
   sh:path iss:rollingStockVehicleDamageType ;
   sh:class skos:Concept ;
   era:affectedProperty iss:rollingStockVehicleDamageType ;
-  sh:message "rollingStockVehicleDamageType: The instance of RollingStockDamagePerVehicleType has a rollingStockVehicleDamageType value that is not a SKOS concept." ;
+  sh:message "rollingStockVehicleDamageType: The instance of RollingStockDamagePerVehicleType has a rollingStockVehicleDamageType value that is not a SKOS concept."@en;
   era:affectedClass iss:RollingStockDamagePerVehicleType ;
   sh:property iss-sh:RollingStockVehicleDamageTypeSKOSinScheme ;
   a sh:PropertyShape .

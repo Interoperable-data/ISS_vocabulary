@@ -352,7 +352,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/iss/documentType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/949/iss/documentType> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/document-types/DocumentTypes> .
 <http://data.europa.eu/949/iss/documentType> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/iss/documentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of document (e.g. report, note, e-mail...).\n\nNot ot confuse with the ICT format of the digital document."@en .
+<http://data.europa.eu/949/iss/documentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of document (e.g. report, note, e-mail...).\n\nNot to confuse with the ICT format of the digital document."@en .
 <http://data.europa.eu/949/iss/documentType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/documentType> <http://www.w3.org/2000/01/rdf-schema#label> "document type"@en .
 # 
@@ -1225,7 +1225,7 @@ _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/iss/transportOperationCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/SafetyLevelPerTypeOfOperation> .
 <http://data.europa.eu/949/iss/transportOperationCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/iss/SimpleReportSafetyRelatedEvent> .
 <http://data.europa.eu/949/iss/transportOperationCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://data.europa.eu/949/iss/transportOperationCategory> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/operation-types/TransportOperationCategories> .
+<http://data.europa.eu/949/iss/transportOperationCategory> <http://data.europa.eu/949/inSkosConceptScheme> <http://data.europa.eu/949/iss/concepts/transport-operation-categories/TransportOperationCategories> .
 <http://data.europa.eu/949/iss/transportOperationCategory> <http://purl.org/dc/terms/created> "2023-09-30"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/iss/transportOperationCategory> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/iss> .
 <http://data.europa.eu/949/iss/transportOperationCategory> <http://www.w3.org/2000/01/rdf-schema#label> "transport operation category"@en .
@@ -2791,11 +2791,10 @@ _:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://data.europa.eu/949/LineReference> <http://purl.org/dc/terms/created> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/LineReference> <http://purl.org/dc/terms/modified> "2021-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://data.europa.eu/949/LineReference> <http://www.w3.org/2000/01/rdf-schema#comment> "A reference to a specific national railway line."@en .
-<http://data.europa.eu/949/LineReference> <http://www.w3.org/2000/01/rdf-schema#comment> "Railway location" .
 <http://data.europa.eu/949/LineReference> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://data.europa.eu/949/> .
 <http://data.europa.eu/949/LineReference> <http://www.w3.org/2000/01/rdf-schema#label> "Railway location"@en .
 <http://data.europa.eu/949/LineReference> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
-<http://data.europa.eu/949/LineReference> <http://www.w3.org/2004/02/skos/core#altLabel> "Linear reference" .
+<http://data.europa.eu/949/LineReference> <http://www.w3.org/2004/02/skos/core#altLabel> "Linear reference"@en .
 # 
 # http://data.europa.eu/949/OrganisationRole
 <http://data.europa.eu/949/OrganisationRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

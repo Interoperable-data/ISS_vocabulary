@@ -25,9 +25,15 @@ where { GRAPH <http://data.europa.eu/949/iss/graph/dev/ontology> {
         rdfs:range ?range.
     {?property rdfs:domain iss:SimpleReportSafetyRelatedEvent.}
     UNION
-    {?property rdfs:domain [owl:unionOf (?other iss:SimpleReportSafetyRelatedEvent)].}
+    {?property rdfs:domain [owl:unionOf (?other1 iss:SimpleReportSafetyRelatedEvent)].}
     UNION
-    {?property rdfs:domain [owl:unionOf (?other ?another iss:SimpleReportSafetyRelatedEvent)].}
+    {?property rdfs:domain [owl:unionOf (iss:SimpleReportSafetyRelatedEvent ?other2)].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (iss:SimpleReportSafetyRelatedEvent ?other3 ?another1)].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (?other4 iss:SimpleReportSafetyRelatedEvent ?another2 )].}
+    UNION
+    {?property rdfs:domain [owl:unionOf (?other5 ?another3 iss:SimpleReportSafetyRelatedEvent)].}   
         
     OPTIONAL {?property rdfs:comment ?comment.}
     BIND( URI(CONCAT("http://data.europa.eu/949/iss/shapes/",
@@ -35,14 +41,13 @@ where { GRAPH <http://data.europa.eu/949/iss/graph/dev/ontology> {
                 SUBSTR(REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),2)
             		)
         	  ) AS ?shapeUri)
-    BIND( CONCAT(
+    BIND( STRLANG(CONCAT(
             REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),
             ": The simple report safety related event has a ",
             REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),
             " that must be a ",
             REPLACE(STR(?range), ".*(\\/|#){1}(\\w*)","$2"),
-			"."@en
-        		) AS ?message)
+			"."), "en" ) AS ?message)
     FILTER(?range != skos:Concept)
     FILTER NOT EXISTS {?property owl:deprecated "true"^^xsd:boolean}
   }. }

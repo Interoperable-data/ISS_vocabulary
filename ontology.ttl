@@ -402,7 +402,7 @@ For Infrastructure managers it coresponds to the list of countries applicable in
               dct:created "2023-09-30"^^xsd:date ;
               rdfs:comment """Type of document (e.g. report, note, e-mail...).
 
-Not ot confuse with the ICT format of the digital document."""@en ;
+Not to confuse with the ICT format of the digital document."""@en ;
               rdfs:isDefinedBy <http://data.europa.eu/949/iss> ;
               rdfs:label "document type"@en .
 
@@ -3017,12 +3017,11 @@ A feature that belongs to the infrastructure can be abstracted (hasAbstraction) 
 era:LineReference rdf:type owl:Class ;
                   dct:created "2021-01-29"^^xsd:date ;
                   dct:modified "2021-01-29"^^xsd:date ;
-                  rdfs:comment "A reference to a specific national railway line."@en ,
-                               "Railway location" ;
+                  rdfs:comment "A reference to a specific national railway line."@en ;
                   rdfs:isDefinedBy era: ;
                   rdfs:label "Railway location"@en ;
                   vs:term_status "stable" ;
-                  <http://www.w3.org/2004/02/skos/core#altLabel> "Linear reference" .
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "Linear reference"@en .
 
 
 ###  http://data.europa.eu/949/OrganisationRole

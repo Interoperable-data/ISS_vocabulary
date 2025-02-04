@@ -18,10 +18,10 @@ iss-sh:SafetyPerformanceSelfEstimationPerElementShape sh:property iss-sh:IsTheEl
 
 iss-sh:IsTheElementFullfiled
   sh:path iss:isTheElementFullfiled ;
-  sh:message "isTheElementFullfiled: Each safety performance self estimation per element may have an isTheElementFullfiled value that is a boolean. This error is due to having a value that is not a boolean." ;
+  sh:message "isTheElementFullfiled: Each safety performance self estimation per element may have an isTheElementFullfiled value that is a boolean. This error is due to having a value that is not a boolean."@en;
   rdfs:comment """Is the element fulfilled."""@en ;
   sh:datatype xsd:boolean ;
-  era:scope "local" ;
+  era:scope "local";
   a sh:PropertyShape ;
   sh:severity sh:violation ;
   era:affectedClass iss:SafetyPerformanceSelfEstimationPerElement ;
@@ -31,14 +31,14 @@ iss-sh:SafetyPerformanceSelfEstimationPerElement sh:property iss-sh:EvidenceRefe
 
 iss-sh:EvidenceReferenceRecord
   era:affectedProperty iss:evidenceReferenceRecord ;
-  era:scope "local" ;
+  era:scope "local";
   sh:severity sh:violation ;
   era:affectedClass iss:SafetyPerformanceSelfEstimationPerElement ;
   rdfs:comment "Relates the safety performance assessment per element with the corresponding evidence document."@en ;
   sh:class iss:Document ;
   sh:path iss:evidenceReferenceRecord ;
   a sh:PropertyShape ;
-  sh:message "evidenceReferenceRecord: The safety performance self-estimation per element has a evidenceReferenceRecord that must be a Document." .
+  sh:message "evidenceReferenceRecord: The safety performance self-estimation per element has a evidenceReferenceRecord that must be a Document."@en.
 
 # SKOS
 iss-sh:SafetyPerformanceSelfEstimationElementSKOS
@@ -46,26 +46,26 @@ iss-sh:SafetyPerformanceSelfEstimationElementSKOS
   era:affectedClass iss:SafetyPerformanceSelfEstimationPerElement ;
   a sh:PropertyShape ;
   sh:path iss:safetyPerformanceSelfEstimationElement ;
-  era:scope "local" ;
+  era:scope "local";
   sh:severity sh:violation ;
   sh:property iss-sh:SafetyPerformanceSelfEstimationElementSKOSinScheme ;
   sh:class skos:Concept ;
-  sh:message "safetyPerformanceSelfEstimationElement: The instance of SafetyPerformanceSelfEstimationPerElement has a safetyPerformanceSelfEstimationElement value that is not a SKOS concept." .
+  sh:message "safetyPerformanceSelfEstimationElement: The instance of SafetyPerformanceSelfEstimationPerElement has a safetyPerformanceSelfEstimationElement value that is not a SKOS concept."@en.
 
 iss-sh:SafetyPerformanceSelfEstimationElementNumberSKOSinScheme
   era:affectedClass iss:SafetyPerformanceSelfEstimationPerElement ;
   a sh:PropertyShape ;
   sh:severity sh:violation ;
-  era:scope "local" ;
+  era:scope "local";
   sh:path skos:inScheme ;
-  sh:message "safetyPerformanceSelfEstimationElementNumber: The instance of SafetyPerformanceSelfEstimationPerElement has a safetyPerformanceSelfEstimationElementNumber value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-element-numbers/SafetyElementNumbers." ;
+  sh:message "safetyPerformanceSelfEstimationElementNumber: The instance of SafetyPerformanceSelfEstimationPerElement has a safetyPerformanceSelfEstimationElementNumber value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-element-numbers/SafetyElementNumbers."@en;
   era:affectedProperty iss:safetyPerformanceSelfEstimationElementNumber ;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-element-numbers/SafetyElementNumbers> .
 
 iss-sh:SafetyPerformanceSelfEstimationElementSKOSinScheme
   sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-performance-assessment-elements/SafetyPerformanceAssessmentElements> ;
-  sh:message "safetyPerformanceSelfEstimationElement: The instance of SafetyPerformanceSelfEstimationPerElement has a safetyPerformanceSelfEstimationElement value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-performance-assessment-elements/SafetyPerformanceAssessmentElements." ;
-  era:scope "local" ;
+  sh:message "safetyPerformanceSelfEstimationElement: The instance of SafetyPerformanceSelfEstimationPerElement has a safetyPerformanceSelfEstimationElement value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-performance-assessment-elements/SafetyPerformanceAssessmentElements."@en;
+  era:scope "local";
   sh:path skos:inScheme ;
   sh:severity sh:violation ;
   era:affectedProperty iss:safetyPerformanceSelfEstimationElement ;
@@ -78,8 +78,8 @@ iss-sh:SafetyPerformanceSelfEstimationElementNumberSKOS
   era:affectedProperty iss:safetyPerformanceSelfEstimationElementNumber ;
   sh:path iss:safetyPerformanceSelfEstimationElementNumber ;
   a sh:PropertyShape ;
-  era:scope "local" ;
-  sh:message "safetyPerformanceSelfEstimationElementNumber: The instance of SafetyPerformanceSelfEstimationPerElement has a safetyPerformanceSelfEstimationElementNumber value that is not a SKOS concept." ;
+  era:scope "local";
+  sh:message "safetyPerformanceSelfEstimationElementNumber: The instance of SafetyPerformanceSelfEstimationPerElement has a safetyPerformanceSelfEstimationElementNumber value that is not a SKOS concept."@en;
   sh:severity sh:violation ;
   sh:property iss-sh:SafetyPerformanceSelfEstimationElementNumberSKOSinScheme .
 

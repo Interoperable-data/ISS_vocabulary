@@ -18,18 +18,18 @@ iss-sh:SafetyLevelShape sh:property iss-sh:HasSafetyLevelPerTypeOfOperation, iss
 
 iss-sh:HasSafetyLevelPerTypeOfOperation
   a sh:PropertyShape ;
-  sh:message "hasSafetyLevelPerTypeOfOperation: The safety level has a hasSafetyLevelPerTypeOfOperation that must be a SafetyLevelPerTypeOfOperation." ;
+  sh:message "hasSafetyLevelPerTypeOfOperation: The safety level has a hasSafetyLevelPerTypeOfOperation that must be a SafetyLevelPerTypeOfOperation."@en;
   era:affectedProperty iss:hasSafetyLevelPerTypeOfOperation ;
   sh:path iss:hasSafetyLevelPerTypeOfOperation ;
   sh:class iss:SafetyLevelPerTypeOfOperation ;
   sh:severity sh:violation ;
-  era:scope "local" ;
+  era:scope "local";
   era:affectedClass iss:SafetyLevel .
 
 iss-sh:HasSafetyLevelPerEventType
-  era:scope "local" ;
+  era:scope "local";
   sh:severity sh:violation ;
-  sh:message "hasSafetyLevelPerEventType: The safety level has a hasSafetyLevelPerEventType that must be a SafetyLevelPerEventType." ;
+  sh:message "hasSafetyLevelPerEventType: The safety level has a hasSafetyLevelPerEventType that must be a SafetyLevelPerEventType."@en;
   sh:class iss:SafetyLevelPerEventType ;
   era:affectedProperty iss:hasSafetyLevelPerEventType ;
   sh:path iss:hasSafetyLevelPerEventType ;

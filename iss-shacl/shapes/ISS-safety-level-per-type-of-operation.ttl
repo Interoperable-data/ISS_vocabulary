@@ -18,12 +18,12 @@ iss-sh:SafetyLevelPerTypeOfOperationShape sh:property iss-sh:FrequencyProbabilit
 
 iss-sh:FrequencyProbabilityPriorAssessmentPeriod
   sh:path iss:frequencyProbabilityPriorAssessmentPeriod ;
-  sh:message "frequencyProbabilityPriorAssessmentPeriod: Each safety level per type of operation may have frequencyProbabilityPriorAssessmentPeriod that is a float. This error is due to having a value that is not a float." ;
+  sh:message "frequencyProbabilityPriorAssessmentPeriod: Each safety level per type of operation may have frequencyProbabilityPriorAssessmentPeriod that is a float. This error is due to having a value that is not a float."@en;
   rdfs:comment """Frequency is the number of pre-defined type of occurrences divided by a given normaliser.
 Typical normalisers can be, for example, year, volume of transport (number
 of tons, number of tons/km) or number of predefined operations."""@en ;
   sh:datatype xsd:float ;
-  era:scope "local" ;
+  era:scope "local";
   a sh:PropertyShape ;
   sh:severity sh:violation ;
   era:affectedClass iss:SafetyLevelPerTypeOfOperation ;
@@ -35,8 +35,8 @@ iss-sh:FrequencyProbabilityDuringAssessmentPeriod
 Typical normalisers can be, for example, year, volume of transport (number
 of tons, number of tons/km) or number of predefined operations."""@en ;
   sh:datatype xsd:float ;
-  sh:message "frequencyProbabilityDuringAssessmentPeriod: Each safety level per type of operation may have frequencyProbabilityDuringAssessmentPeriod that is a float. This error is due to having a value that is not a float." ;
-  era:scope "local" ;
+  sh:message "frequencyProbabilityDuringAssessmentPeriod: Each safety level per type of operation may have frequencyProbabilityDuringAssessmentPeriod that is a float. This error is due to having a value that is not a float."@en;
+  era:scope "local";
   a sh:PropertyShape ;
   era:affectedClass iss:SafetyLevelPerTypeOfOperation ;
   sh:severity sh:violation ;
@@ -45,8 +45,8 @@ of tons, number of tons/km) or number of predefined operations."""@en ;
 iss-sh:SeverityProbabilityPriorAssessmentPeriod
   sh:datatype xsd:float ;
   sh:path iss:severityProbabilityPriorAssessmentPeriod ;
-  era:scope "local" ;
-  sh:message "severityProbabilityPriorAssessmentPeriod: Each safety level per type of operation may have severityProbabilityPriorAssessmentPeriod that is a float. This error is due to having a value that is not a float." ;
+  era:scope "local";
+  sh:message "severityProbabilityPriorAssessmentPeriod: Each safety level per type of operation may have severityProbabilityPriorAssessmentPeriod that is a float. This error is due to having a value that is not a float."@en;
   era:affectedProperty iss:severityProbabilityPriorAssessmentPeriod ;
   sh:severity sh:violation ;
   a sh:PropertyShape ;
@@ -57,8 +57,8 @@ The severity is estimated by the exposure of vulnerabilities to hazardous areas.
 iss-sh:SeverityProbabilityDuringAssessmentPeriod
   sh:datatype xsd:float ;
   sh:path iss:severityProbabilityDuringAssessmentPeriod ;
-  era:scope "local" ;
-  sh:message "severityProbabilityDuringAssessmentPeriod: Each safety level per type of operation may have severityProbabilityDuringAssessmentPeriod that is a float. This error is due to having a value that is not a float." ;
+  era:scope "local";
+  sh:message "severityProbabilityDuringAssessmentPeriod: Each safety level per type of operation may have severityProbabilityDuringAssessmentPeriod that is a float. This error is due to having a value that is not a float."@en;
   era:affectedProperty iss:severityProbabilityDuringAssessmentPeriod ;
   a sh:PropertyShape ;
   rdfs:comment """The severity is Intensity of harm.
@@ -74,16 +74,16 @@ iss-sh:SeveritySafetyLevelPriorAssessmentPeriodSKOS
   era:affectedClass iss:afetyLevelPerTypeOfOperation ;
   sh:path iss:everitySafetyLevelPriorAssessmentPeriod ;
   a sh:PropertyShape ;
-  era:scope "local" ;
+  era:scope "local";
   era:affectedProperty iss:everitySafetyLevelPriorAssessmentPeriod ;
   rdfs:comment """The severity is Intensity of harm.
 The severity is estimated by the exposure of vulnerabilities to hazardous areas."""@en ;
-  sh:message "severitySafetyLevelPriorAssessmentPeriod: The instance of SafetyLevelPerTypeOfOperation has a severitySafetyLevelPriorAssessmentPeriod value that is not a SKOS concept." .
+  sh:message "severitySafetyLevelPriorAssessmentPeriod: The instance of SafetyLevelPerTypeOfOperation has a severitySafetyLevelPriorAssessmentPeriod value that is not a SKOS concept."@en .
 
 iss-sh:FrequencySafetyLevelSameAsAssessedPeriodSKOS
   sh:class skos:Concept ;
   era:affectedProperty iss:frequencySafetyLevelSameAsAssessedPeriod ;
-  sh:message "frequencySafetyLevelSameAsAssessedPeriod: The instance of SafetyLevelPerTypeOfOperation has a frequencySafetyLevelSameAsAssessedPeriod value that is not a SKOS concept." ;
+  sh:message "frequencySafetyLevelSameAsAssessedPeriod: The instance of SafetyLevelPerTypeOfOperation has a frequencySafetyLevelSameAsAssessedPeriod value that is not a SKOS concept."@en;
   sh:severity sh:violation ;
   sh:property iss-sh:FrequencySafetyLevelSameAsAssessedPeriodSKOSinScheme ;
   a sh:PropertyShape ;
@@ -91,7 +91,7 @@ iss-sh:FrequencySafetyLevelSameAsAssessedPeriodSKOS
 Typical normalisers can be, for example, year, volume of transport (number
 of tons, number of tons/km) or number of predefined operations."""@en ;
   era:affectedClass iss:afetyLevelPerTypeOfOperation ;
-  era:scope "local" ;
+  era:scope "local";
   sh:path iss:frequencySafetyLevelSameAsAssessedPeriod .
 
 iss-sh:FrequencySafetyLevelPriorAssessedPeriodSKOS
@@ -104,9 +104,9 @@ iss-sh:FrequencySafetyLevelPriorAssessedPeriodSKOS
 Typical normalisers can be, for example, year, volume of transport (number
 of tons, number of tons/km) or number of predefined operations."""@en ;
   era:affectedClass iss:afetyLevelPerTypeOfOperation ;
-  era:scope "local" ;
+  era:scope "local";
   sh:path iss:frequencySafetyLevelPriorAssessedPeriod ;
-  sh:message "frequencySafetyLevelPriorAssessedPeriod: The instance of SafetyLevelPerTypeOfOperation has a frequencySafetyLevelPriorAssessedPeriod value that is not a SKOS concept." .
+  sh:message "frequencySafetyLevelPriorAssessedPeriod: The instance of SafetyLevelPerTypeOfOperation has a frequencySafetyLevelPriorAssessedPeriod value that is not a SKOS concept."@en .
 
 iss-sh:TransportOperationCategorySKOS
   sh:class skos:Concept ;
@@ -116,24 +116,24 @@ iss-sh:TransportOperationCategorySKOS
   sh:path iss:transportOperationCategory ;
   a sh:PropertyShape ;
   era:affectedClass iss:afetyLevelPerTypeOfOperation ;
-  era:scope "local" ;
-  sh:message "transportOperationCategory: The instance of SafetyLevelPerTypeOfOperation has a transportOperationCategory value that is not a SKOS concept." .
+  era:scope "local";
+  sh:message "transportOperationCategory: The instance of SafetyLevelPerTypeOfOperation has a transportOperationCategory value that is not a SKOS concept."@en .
 
 iss-sh:SeveritySafetyLevelPriorAssessmentPeriodSKOSinScheme
   era:affectedProperty iss:everitySafetyLevelPriorAssessmentPeriod ;
   sh:severity sh:violation ;
-  sh:message "severitySafetyLevelPriorAssessmentPeriod: The instance of SafetyLevelPerTypeOfOperation has a severitySafetyLevelPriorAssessmentPeriod value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels." ;
+  sh:message "severitySafetyLevelPriorAssessmentPeriod: The instance of SafetyLevelPerTypeOfOperation has a severitySafetyLevelPriorAssessmentPeriod value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels."@en;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
-  era:scope "local" ;
+  era:scope "local";
   sh:path skos:inScheme ;
   era:affectedClass iss:afetyLevelPerTypeOfOperation ;
   a sh:PropertyShape .
 
 iss-sh:FrequencySafetyLevelPriorAssessedPeriodSKOSinScheme
   era:affectedProperty iss:frequencySafetyLevelPriorAssessedPeriod ;
-  sh:message "frequencySafetyLevelPriorAssessedPeriod: The instance of SafetyLevelPerTypeOfOperation has a frequencySafetyLevelPriorAssessedPeriod value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels." ;
+  sh:message "frequencySafetyLevelPriorAssessedPeriod: The instance of SafetyLevelPerTypeOfOperation has a frequencySafetyLevelPriorAssessedPeriod value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels."@en;
   sh:severity sh:violation ;
-  era:scope "local" ;
+  era:scope "local";
   a sh:PropertyShape ;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
   era:affectedClass iss:afetyLevelPerTypeOfOperation ;
@@ -141,17 +141,17 @@ iss-sh:FrequencySafetyLevelPriorAssessedPeriodSKOSinScheme
 
 iss-sh:TransportOperationCategorySKOSinScheme
   sh:severity sh:violation ;
-  era:scope "local" ;
+  era:scope "local";
   sh:hasValue <http://data.europa.eu/949/iss/concepts/transport-operation-categories/TransportOperationCategories> ;
   sh:path skos:inScheme ;
-  sh:message "transportOperationCategory: The instance of SafetyLevelPerTypeOfOperation has a transportOperationCategory value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/operation-types/TransportOperationCategories." ;
+  sh:message "transportOperationCategory: The instance of SafetyLevelPerTypeOfOperation has a transportOperationCategory value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/operation-types/TransportOperationCategories."@en;
   era:affectedClass iss:afetyLevelPerTypeOfOperation ;
   era:affectedProperty iss:transportOperationCategory ;
   a sh:PropertyShape .
 
 iss-sh:FrequencySafetyLevelSameAsAssessedPeriodSKOSinScheme
   sh:severity sh:violation ;
-  era:scope "local" ;
+  era:scope "local";
   era:affectedProperty iss:frequencySafetyLevelSameAsAssessedPeriod ;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
   sh:path skos:inScheme ;
@@ -167,18 +167,18 @@ The severity is estimated by the exposure of vulnerabilities to hazardous areas.
   sh:severity sh:violation ;
   era:affectedClass iss:afetyLevelPerTypeOfOperation ;
   era:affectedProperty iss:everitySafetyLevelDuringAssessmentPeriod ;
-  sh:message "severitySafetyLevelDuringAssessmentPeriod: The instance of SafetyLevelPerTypeOfOperation has a severitySafetyLevelDuringAssessmentPeriod value that is not a SKOS concept." ;
-  era:scope "local" ;
+  sh:message "severitySafetyLevelDuringAssessmentPeriod: The instance of SafetyLevelPerTypeOfOperation has a severitySafetyLevelDuringAssessmentPeriod value that is not a SKOS concept."@en;
+  era:scope "local";
   sh:path iss:everitySafetyLevelDuringAssessmentPeriod ;
   sh:property iss-sh:SeveritySafetyLevelDuringAssessmentPeriodSKOSinScheme .
 
 iss-sh:SafetyLevelPerTypeOfOperationShape sh:property iss-sh:SeveritySafetyLevelPriorAssessmentPeriodSKOS, iss-sh:TransportOperationCategorySKOS, iss-sh:FrequencySafetyLevelPriorAssessedPeriodSKOS, iss-sh:FrequencySafetyLevelSameAsAssessedPeriodSKOS, iss-sh:SeveritySafetyLevelDuringAssessmentPeriodSKOS .
 iss-sh:SeveritySafetyLevelDuringAssessmentPeriodSKOSinScheme
   sh:severity sh:violation ;
-  era:scope "local" ;
+  era:scope "local";
   era:affectedProperty iss:everitySafetyLevelDuringAssessmentPeriod ;
   a sh:PropertyShape ;
-  sh:message "severitySafetyLevelDuringAssessmentPeriod: The instance of SafetyLevelPerTypeOfOperation has a severitySafetyLevelDuringAssessmentPeriod value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels." ;
+  sh:message "severitySafetyLevelDuringAssessmentPeriod: The instance of SafetyLevelPerTypeOfOperation has a severitySafetyLevelDuringAssessmentPeriod value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels."@en;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-levels/SafetyLevels> ;
   era:affectedClass iss:afetyLevelPerTypeOfOperation ;
   sh:path skos:inScheme .

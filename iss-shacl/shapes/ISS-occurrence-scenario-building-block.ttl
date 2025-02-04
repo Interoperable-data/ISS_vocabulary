@@ -22,14 +22,14 @@ iss-sh:BuildingBlockNarrative a sh:PropertyShape;
   sh:path iss:buildingBlockNarrative;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "buildingBlockNarrative: Each occurrence scenario building block may have buildingBlockNarrative that is a string. This error is due to having a value that is not a string.".
+  sh:message "buildingBlockNarrative: Each occurrence scenario building block may have buildingBlockNarrative that is a string. This error is due to having a value that is not a string."@en.
 
 iss-sh:OccurrenceScenarioBuildingBlockShape sh:property iss-sh:HasContributingSystemicFactor, iss-sh:HasFailedRiskControlMeasure, iss-sh:InputAndgate, iss-sh:InputOrGate .
 
 iss-sh:HasContributingSystemicFactor
   era:affectedProperty iss:hasContributingSystemicFactor ;
   sh:severity sh:violation ;
-  sh:message "hasContributingSystemicFactor: The occurrence scenario building block has a hasContributingSystemicFactor that must be a ContributingSystemicFactor." ;
+  sh:message "hasContributingSystemicFactor: The occurrence scenario building block has a hasContributingSystemicFactor that must be a ContributingSystemicFactor."@en ;
   a sh:PropertyShape ;
   era:affectedClass iss:OccurrenceScenarioBuildingBlock ;
   rdfs:comment "Relates the occurrence scenario building block with its contributing and systemic factors"@en ;
@@ -40,7 +40,7 @@ iss-sh:HasContributingSystemicFactor
 iss-sh:InputOrGate
   sh:path iss:inputOrGate ;
   sh:severity sh:violation ;
-  sh:message "inputOrGate: The occurrence scenario building block has a inputOrGate that must be a InputOrGate." ;
+  sh:message "inputOrGate: The occurrence scenario building block has a inputOrGate that must be a InputOrGate."@en ;
   sh:class era:InputOrGate ;
   a sh:PropertyShape ;
   era:affectedProperty iss:inputOrGate ;
@@ -55,7 +55,7 @@ iss-sh:InputAndgate
   sh:severity sh:violation ;
   a sh:PropertyShape ;
   era:affectedClass iss:OccurrenceScenarioBuildingBlock ;
-  sh:message "inputAndgate: The occurrence scenario building block has a inputAndgate that must be a InputAndGate." ;
+  sh:message "inputAndgate: The occurrence scenario building block has a inputAndgate that must be a InputAndGate."@en ;
   era:scope "local" ;
   era:affectedProperty iss:inputAndgate .
 
@@ -66,7 +66,7 @@ iss-sh:HasFailedRiskControlMeasure
   a sh:PropertyShape ;
   era:affectedClass iss:OccurrenceScenarioBuildingBlock ;
   sh:path iss:hasFailedRiskControlMeasure ;
-  sh:message "hasFailedRiskControlMeasure: The occurrence scenario building block has a hasFailedRiskControlMeasure that must be a FailedRiskControlMeasure." ;
+  sh:message "hasFailedRiskControlMeasure: The occurrence scenario building block has a hasFailedRiskControlMeasure that must be a FailedRiskControlMeasure."@en ;
   sh:class iss:FailedRiskControlMeasure ;
   era:scope "local" .
 

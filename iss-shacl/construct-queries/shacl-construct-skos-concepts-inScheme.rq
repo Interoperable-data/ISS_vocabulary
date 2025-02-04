@@ -54,19 +54,19 @@ where { GRAPH <http://data.europa.eu/949/iss/graph/dev/ontology> {
             		)
         	  ) AS ?shapeUri)
     BIND( URI(CONCAT(STR(?shapeUri),"inScheme")) AS ?inSchemeShapeUri)    
-    BIND( CONCAT(
+    BIND( STRLANG(CONCAT(
             REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),
             ": The instance of HumanConsequencesPerPersonCategory has a ",
             REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),
-            " value that is not a SKOS concept."@en
+            " value that is not a SKOS concept."),"en"
         		) AS ?message)
-	BIND( CONCAT(
+	BIND( STRLANG(CONCAT(
             REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),
             ": The instance of HumanConsequencesPerPersonCategory has a ",
             REPLACE(STR(?property), ".*(\\/|#){1}(\\w*)","$2"),
             " value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: ",
             STR(?scheme),
-			"."@en
+			"."),"en"
         		) AS ?schemeMessage)
     FILTER NOT EXISTS {?property owl:deprecated "true"^^xsd:boolean}
   }.}

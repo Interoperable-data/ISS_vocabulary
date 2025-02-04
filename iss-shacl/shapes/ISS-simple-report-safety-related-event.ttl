@@ -17,13 +17,13 @@ iss-sh:SimpleReportSafetyRelatedEventShape
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:OccurrenceRegionSR.
 iss-sh:OccurrenceRegionSR
-  era:scope "local" ;
+  era:scope "local";
   sh:path iss:occurrenceRegion ;
   sh:datatype xsd:string ;
   era:affectedClass iss:SimpleReportSafetyRelatedEvent ;
   sh:severity sh:violation ;
   a sh:PropertyShape ;
-  sh:message "occurrenceRegion: Each Simple report of the safety related event  may have occurrenceRegion that is a string. This error is due to having a value that is not a string." ;
+  sh:message "occurrenceRegion: Each Simple report of the safety related event  may have occurrenceRegion that is a string. This error is due to having a value that is not a string."@en;
   era:affectedProperty iss:occurrenceRegion .
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:DamagesForReportingEntity.
@@ -38,7 +38,7 @@ vulnerabilities."""@en ;
   sh:path iss:damagesForReportingEntity;
   sh:datatype xsd:float;
   sh:severity sh:violation;
-  sh:message "damagesForReportingEntity: Each simple report of the safety related event may have damagesForReportingEntity that is a float. This error is due to having a value that is not a float." .
+  sh:message "damagesForReportingEntity: Each simple report of the safety related event may have damagesForReportingEntity that is a float. This error is due to having a value that is not a float."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:DeemedCausesNarrativeSR.
 iss-sh:DeemedCausesNarrativeSR a sh:PropertyShape;
@@ -50,7 +50,7 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en;
   sh:path iss:deemedCausesNarrative;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "deemedCausesNarrative: Each simple report of the safety related event may have deemedCausesNarrative that is a string. This error is due to having a value that is not a string." .
+  sh:message "deemedCausesNarrative: Each simple report of the safety related event may have deemedCausesNarrative that is a string. This error is due to having a value that is not a string."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:ExactLocationOccurrencePositioningNorm.
 iss-sh:ExactLocationOccurrencePositioningNorm a sh:PropertyShape;
@@ -60,7 +60,7 @@ iss-sh:ExactLocationOccurrencePositioningNorm a sh:PropertyShape;
   sh:path iss:exactLocationOccurrencePositioningNorm;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "exactLocationOccurrencePositioningNorm: Each simple report of the safety related event may have exactLocationOccurrencePositioningNorm that is a string. This error is due to having a value that is not a string." .
+  sh:message "exactLocationOccurrencePositioningNorm: Each simple report of the safety related event may have exactLocationOccurrencePositioningNorm that is a string. This error is due to having a value that is not a string."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:GeneralOcurrenceNarrative .
 iss-sh:GeneralOcurrenceNarrative a sh:PropertyShape;
@@ -70,7 +70,7 @@ iss-sh:GeneralOcurrenceNarrative a sh:PropertyShape;
   sh:path iss:generalOcurrenceNarrative;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "generalOcurrenceNarrative: Each simple report of the safety related event may have generalOcurrenceNarrative that is a string. This error is due to having a value that is not a string." .
+  sh:message "generalOcurrenceNarrative: Each simple report of the safety related event may have generalOcurrenceNarrative that is a string. This error is due to having a value that is not a string."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:IsADangerousGoodsEvent .
 iss-sh:IsADangerousGoodsEvent a sh:PropertyShape;
@@ -80,7 +80,7 @@ iss-sh:IsADangerousGoodsEvent a sh:PropertyShape;
   sh:path iss:isADangerousGoodsEvent;
   sh:datatype xsd:boolean;
   sh:severity sh:violation;
-  sh:message "isADangerousGoodsEvent: Each simple report of the safety related event may have isADangerousGoodsEvent that is a boolean. This error is due to having a value that is not a boolean." .
+  sh:message "isADangerousGoodsEvent: Each simple report of the safety related event may have isADangerousGoodsEvent that is a boolean. This error is due to having a value that is not a boolean."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:LocationName .
 iss-sh:LocationName a sh:PropertyShape;
@@ -90,7 +90,7 @@ iss-sh:LocationName a sh:PropertyShape;
   sh:path iss:locationName;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "locationName: Each simple report of the safety related event may have locationName that is a string. This error is due to having a value that is not a string." .
+  sh:message "locationName: Each simple report of the safety related event may have locationName that is a string. This error is due to having a value that is not a string."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:MonetizedDamages .
 iss-sh:MonetizedDamages a sh:PropertyShape;
@@ -104,7 +104,7 @@ vulnerabilities."""@en ;
   sh:path iss:monetizedDamages;
   sh:datatype xsd:float;
   sh:severity sh:violation;
-  sh:message "monetizedDamages: Each simple report of the safety related event may have monetizedDamages that is a float. This error is due to having a value that is not a float." .
+  sh:message "monetizedDamages: Each simple report of the safety related event may have monetizedDamages that is a float. This error is due to having a value that is not a float."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:NumberWagonsCarryingDangerousGoods .
 iss-sh:NumberWagonsCarryingDangerousGoods a sh:PropertyShape;
@@ -114,7 +114,7 @@ iss-sh:NumberWagonsCarryingDangerousGoods a sh:PropertyShape;
   sh:path iss:numberWagonsCarryingDangerousGoods;
   sh:datatype xsd:integer;
   sh:severity sh:violation;
-  sh:message "numberWagonsCarryingDangerousGoods: Each simple report of the safety related event may have numberWagonsCarryingDangerousGoods that is a integer. This error is due to having a value that is not a integer." .
+  sh:message "numberWagonsCarryingDangerousGoods: Each simple report of the safety related event may have numberWagonsCarryingDangerousGoods that is a integer. This error is due to having a value that is not a integer."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:NumberWagonsInvolvedInOccurrence .
 iss-sh:NumberWagonsInvolvedInOccurrence a sh:PropertyShape;
@@ -124,7 +124,7 @@ iss-sh:NumberWagonsInvolvedInOccurrence a sh:PropertyShape;
   sh:path iss:numberWagonsInvolvedInOccurrence;
   sh:datatype xsd:integer;
   sh:severity sh:violation;
-  sh:message "numberWagonsInvolvedInOccurrence: Each simple report of the safety related event may have numberWagonsInvolvedInOccurrence that is a integer. This error is due to having a value that is not a integer." .
+  sh:message "numberWagonsInvolvedInOccurrence: Each simple report of the safety related event may have numberWagonsInvolvedInOccurrence that is a integer. This error is due to having a value that is not a integer."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:OcccurrenceLocationNarrative .
 iss-sh:OcccurrenceLocationNarrative a sh:PropertyShape;
@@ -134,7 +134,7 @@ iss-sh:OcccurrenceLocationNarrative a sh:PropertyShape;
   sh:path iss:occcurrenceLocationNarrative;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "occcurrenceLocationNarrative: Each simple report of the safety related event may have occcurrenceLocationNarrative that is a string. This error is due to having a value that is not a string." .
+  sh:message "occcurrenceLocationNarrative: Each simple report of the safety related event may have occcurrenceLocationNarrative that is a string. This error is due to having a value that is not a string."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:OccurrenceConsequencesNarrativeSR .
 iss-sh:OccurrenceConsequencesNarrativeSR a sh:PropertyShape;
@@ -146,7 +146,7 @@ Taken from Annexes ISC-2022-00728_2023-07."""@en;
   sh:path iss:occurrenceConsequencesNarrative;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "occurrenceConsequencesNarrative: Each simple report of the safety related event may have occurrenceConsequencesNarrative that is a string. This error is due to having a value that is not a string." .
+  sh:message "occurrenceConsequencesNarrative: Each simple report of the safety related event may have occurrenceConsequencesNarrative that is a string. This error is due to having a value that is not a string."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:OccurrenceContextNarrative .
 iss-sh:OccurrenceContextNarrative a sh:PropertyShape;
@@ -156,7 +156,7 @@ iss-sh:OccurrenceContextNarrative a sh:PropertyShape;
   sh:path iss:occurrenceContextNarrative;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "occurrenceContextNarrative: Each simple report of the safety related event may have occurrenceContextNarrative that is a string. This error is due to having a value that is not a string." .
+  sh:message "occurrenceContextNarrative: Each simple report of the safety related event may have occurrenceContextNarrative that is a string. This error is due to having a value that is not a string."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:OccurrenceDateTimeSR .
 iss-sh:OccurrenceDateTimeSR a sh:PropertyShape;
@@ -166,7 +166,7 @@ iss-sh:OccurrenceDateTimeSR a sh:PropertyShape;
   sh:path iss:occurrenceDateTime;
   sh:datatype xsd:dateTime;
   sh:severity sh:violation;
-  sh:message "occurrenceDateTime: Each simple report of the safety related event may have occurrenceDateTime that is a dateTime. This error is due to having a value that is not a dateTime." .
+  sh:message "occurrenceDateTime: Each simple report of the safety related event may have occurrenceDateTime that is a dateTime. This error is due to having a value that is not a dateTime."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:OccurrenceDepartmentSR .
 iss-sh:OccurrenceDepartmentSR a sh:PropertyShape;
@@ -176,7 +176,7 @@ iss-sh:OccurrenceDepartmentSR a sh:PropertyShape;
   sh:path iss:occurrenceDepartment;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "occurrenceDepartment: Each simple report of the safety related event may have occurrenceDepartment that is a string. This error is due to having a value that is not a string." .
+  sh:message "occurrenceDepartment: Each simple report of the safety related event may have occurrenceDepartment that is a string. This error is due to having a value that is not a string."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:OccurrenceId .
 iss-sh:OccurrenceId a sh:PropertyShape;
@@ -186,7 +186,7 @@ iss-sh:OccurrenceId a sh:PropertyShape;
   sh:path iss:occurrenceId;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "occurrenceId: Each simple report of the safety related event may have occurrenceId that is a string. This error is due to having a value that is not a string." .
+  sh:message "occurrenceId: Each simple report of the safety related event may have occurrenceId that is a string. This error is due to having a value that is not a string."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:OccurrenceTitle .
 iss-sh:OccurrenceTitle a sh:PropertyShape;
@@ -196,7 +196,7 @@ iss-sh:OccurrenceTitle a sh:PropertyShape;
   sh:path iss:occurrenceTitle;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "occurrenceTitle: Each simple report of the safety related event may have occurrenceTitle that is a string. This error is due to having a value that is not a string." .
+  sh:message "occurrenceTitle: Each simple report of the safety related event may have occurrenceTitle that is a string. This error is due to having a value that is not a string."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:OccurrenceTownOrCitySR .
 iss-sh:OccurrenceTownOrCitySR a sh:PropertyShape;
@@ -206,7 +206,7 @@ iss-sh:OccurrenceTownOrCitySR a sh:PropertyShape;
   sh:path iss:occurrenceTownOrCity;
   sh:datatype xsd:string;
   sh:severity sh:violation;
-  sh:message "occurrenceTownOrCity: Each simple report of the safety related event may have occurrenceTownOrCity that is a string. This error is due to having a value that is not a string." .
+  sh:message "occurrenceTownOrCity: Each simple report of the safety related event may have occurrenceTownOrCity that is a string. This error is due to having a value that is not a string."@en.
 
 
 
@@ -219,7 +219,7 @@ iss-sh:HumanConsequencesTotalPerInjuryType a sh:PropertyShape;
   sh:path iss:humanConsequencesTotalPerInjuryType;
   sh:class iss:HumanConsequencesTotalPerInjuryType;
   sh:severity sh:violation;
-  sh:message "humanConsequencesTotalPerInjuryType: The simple report of the safety related event has a humanConsequencesTotalPerInjuryType that must be a HumanConsequencesTotalPerInjuryType." .
+  sh:message "humanConsequencesTotalPerInjuryType: The simple report of the safety related event has a humanConsequencesTotalPerInjuryType that must be a HumanConsequencesTotalPerInjuryType."@en.
 
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:Location .
@@ -242,7 +242,7 @@ The precision of the reference point shall be better than 0.001 for long and lat
   sh:class geo:SpatialThing, sf:Geometry;
   sh:severity sh:violation;
   sh:message "location: The simple report of the safety related event has a location that must be a SpatialThing.",
-    "location: The simple report of the safety related event has a location that must be a Geometry." .
+    "location: The simple report of the safety related event has a location that must be a Geometry."@en.
 
 # (TODO) Convert to SPARQL constraint for checking the infrastructure object in RINF KG
 # iss-sh:DetailedReportTdgPartShape sh:property iss-sh:LocationRINFSR .
@@ -254,7 +254,7 @@ The precision of the reference point shall be better than 0.001 for long and lat
   #sh:path iss:locationRINF;
   #sh:class era:InfrastructureObject;
   #sh:severity sh:violation;
-  #sh:message "locationRINF: The detailed report TDG part has a locationRINF that must be a InfrastructureObject." .
+  #sh:message "locationRINF: The detailed report TDG part has a locationRINF that must be a InfrastructureObject."@en.
 
 
 
@@ -267,16 +267,16 @@ iss-sh:HumanConsequencesPerPersonCategorySR a sh:PropertyShape;
   sh:path iss:humanConsequencesPerPersonCategory;
   sh:class iss:HumanConsequencesPerPersonCategory;
   sh:severity sh:violation;
-  sh:message "humanConsequencesPerPersonCategory: The simple report of the safety related event has a humanConsequencesPerPersonCategory that must be a HumanConsequencesPerPersonCategory." .
+  sh:message "humanConsequencesPerPersonCategory: The simple report of the safety related event has a humanConsequencesPerPersonCategory that must be a HumanConsequencesPerPersonCategory."@en.
 
 # SKOS
 
 iss-sh:CauseOfReportedEventTypeSKOSinScheme
   a sh:PropertyShape ;
   era:affectedProperty iss:causeOfReportedEventType ;
-  era:scope "local" ;
+  era:scope "local";
   sh:path skos:inScheme ;
-  sh:message "causeOfReportedEventType: The instance of SimpleReportSafetyRelatedEvent has a causeOfReportedEventType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes." ;
+  sh:message "causeOfReportedEventType: The instance of SimpleReportSafetyRelatedEvent has a causeOfReportedEventType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes."@en;
   era:affectedClass iss:SimpleReportSafetyRelatedEvent ;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> ;
   sh:severity sh:violation .
@@ -284,40 +284,40 @@ iss-sh:CauseOfReportedEventTypeSKOSinScheme
 iss-sh:SafetyEventTypeSRSKOSinScheme
   era:affectedProperty iss:safetyEventType ;
   sh:severity sh:violation ;
-  era:scope "local" ;
+  era:scope "local";
   sh:path skos:inScheme ;
   era:affectedClass iss:SimpleReportSafetyRelatedEvent ;
   a sh:PropertyShape ;
-  sh:message "safetyEventType: The instance of SimpleReportSafetyRelatedEvent has a safetyEventType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes." ;
+  sh:message "safetyEventType: The instance of SimpleReportSafetyRelatedEvent has a safetyEventType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes."@en;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/safety-event-types/SafetyEventTypes> .
 
 iss-sh:CauseOfReportedEventTypeSKOS
   sh:class skos:Concept ;
   sh:severity sh:violation ;
-  era:scope "local" ;
+  era:scope "local";
   a sh:PropertyShape ;
   era:affectedClass iss:SimpleReportSafetyRelatedEvent ;
   sh:path iss:causeOfReportedEventType ;
-  sh:message "causeOfReportedEventType: The instance of SimpleReportSafetyRelatedEvent has a causeOfReportedEventType value that is not a SKOS concept." ;
+  sh:message "causeOfReportedEventType: The instance of SimpleReportSafetyRelatedEvent has a causeOfReportedEventType value that is not a SKOS concept."@en;
   sh:property iss-sh:CauseOfReportedEventTypeSKOSinScheme ;
   rdfs:comment "Applicable lists of causes, as defined in CDR (EU) 2024/xxx, Annex I, Part C, Appendix 1, Reference lists of Category B events and Category C events."@en ;
   era:affectedProperty iss:causeOfReportedEventType .
 
 iss-sh:CountryOfOccurrenceSRSKOSinScheme
   a sh:PropertyShape ;
-  era:scope "local" ;
+  era:scope "local";
   era:affectedProperty iss:countryOfOccurrence ;
   sh:path skos:inScheme ;
   era:affectedClass iss:SimpleReportSafetyRelatedEvent ;
-  sh:message "countryOfOccurrence: The instance of SimpleReportSafetyRelatedEvent has a countryOfOccurrence value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://publications.europa.eu/resource/authority/country." ;
+  sh:message "countryOfOccurrence: The instance of SimpleReportSafetyRelatedEvent has a countryOfOccurrence value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://publications.europa.eu/resource/authority/country."@en;
   sh:severity sh:violation ;
   sh:hasValue <http://publications.europa.eu/resource/authority/country> .
 
 iss-sh:TrainMovementTypeSRSKOSinScheme
   a sh:PropertyShape ;
   era:affectedProperty iss:trainMovementType ;
-  era:scope "local" ;
-  sh:message "trainMovementType: The instance of SimpleReportSafetyRelatedEvent has a trainMovementType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/train-movement-types/TrainMovementTypes." ;
+  era:scope "local";
+  sh:message "trainMovementType: The instance of SimpleReportSafetyRelatedEvent has a trainMovementType value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/train-movement-types/TrainMovementTypes."@en;
   sh:path skos:inScheme ;
   era:affectedClass iss:SimpleReportSafetyRelatedEvent ;
   sh:hasValue <http://data.europa.eu/949/iss/concepts/train-movement-types/TrainMovementTypes> ;
@@ -331,15 +331,15 @@ iss-sh:TransportOperationCategorySRSKOS
   sh:path iss:transportOperationCategory ;
   a sh:PropertyShape ;
   era:affectedClass iss:SimpleReportSafetyRelatedEvent ;
-  sh:message "transportOperationCategory: The instance of SimpleReportSafetyRelatedEvent has a transportOperationCategory value that is not a SKOS concept." ;
-  era:scope "local" .
+  sh:message "transportOperationCategory: The instance of SimpleReportSafetyRelatedEvent has a transportOperationCategory value that is not a SKOS concept."@en;
+  era:scope "local".
 
 iss-sh:TrainMovementTypeSRSKOS
   sh:path iss:trainMovementType ;
-  sh:message "trainMovementType: The instance of SimpleReportSafetyRelatedEvent has a trainMovementType value that is not a SKOS concept." ;
+  sh:message "trainMovementType: The instance of SimpleReportSafetyRelatedEvent has a trainMovementType value that is not a SKOS concept."@en;
   era:affectedClass iss:SimpleReportSafetyRelatedEvent ;
   a sh:PropertyShape ;
-  era:scope "local" ;
+  era:scope "local";
   sh:class skos:Concept ;
   era:affectedProperty iss:trainMovementType ;
   sh:severity sh:violation ;
@@ -347,21 +347,21 @@ iss-sh:TrainMovementTypeSRSKOS
 
 iss-sh:TransportOperationCategorySRSKOSinScheme
   sh:severity sh:violation ;
-  era:scope "local" ;
+  era:scope "local";
   sh:hasValue <http://data.europa.eu/949/iss/concepts/transport-operation-categories/TransportOperationCategories> ;
   sh:path skos:inScheme ;
-  sh:message "transportOperationCategory: The instance of SimpleReportSafetyRelatedEvent has a transportOperationCategory value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/transport-operation-categories/TransportOperationCategories." ;
+  sh:message "transportOperationCategory: The instance of SimpleReportSafetyRelatedEvent has a transportOperationCategory value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: http://data.europa.eu/949/iss/concepts/transport-operation-categories/TransportOperationCategories."@en;
   era:affectedClass iss:SimpleReportSafetyRelatedEvent ;
   era:affectedProperty iss:transportOperationCategory ;
   a sh:PropertyShape .
 
 iss-sh:CountryOfOccurrenceSRSKOS
-  era:scope "local" ;
+  era:scope "local";
   sh:severity sh:violation ;
   a sh:PropertyShape ;
   sh:path iss:countryOfOccurrence ;
   era:affectedClass iss:SimpleReportSafetyRelatedEvent ;
-  sh:message "countryOfOccurrence: The instance of SimpleReportSafetyRelatedEvent has a countryOfOccurrence value that is not a SKOS concept." ;
+  sh:message "countryOfOccurrence: The instance of SimpleReportSafetyRelatedEvent has a countryOfOccurrence value that is not a SKOS concept."@en;
   rdfs:comment "Country where the safety related event occurred."@en ;
   sh:property iss-sh:CountryOfOccurrenceSRSKOSinScheme ;
   era:affectedProperty iss:countryOfOccurrence ;
@@ -374,10 +374,10 @@ iss-sh:SafetyEventTypeSRSKOS
   era:affectedProperty iss:safetyEventType ;
   era:affectedClass iss:SimpleReportSafetyRelatedEvent ;
   sh:path iss:safetyEventType ;
-  era:scope "local" ;
+  era:scope "local";
   sh:property iss-sh:SafetyEventTypeSRSKOSinScheme ;
   rdfs:comment "'safety event type' or ‘event type’ means an event identified by an event name and an event code as defined in  CDR (EU) xxx/2024, Annex I, Part C, Appendix 1."@en ;
-  sh:message "safetyEventType: The instance of SimpleReportSafetyRelatedEvent has a safetyEventType value that is not a SKOS concept." .
+  sh:message "safetyEventType: The instance of SimpleReportSafetyRelatedEvent has a safetyEventType value that is not a SKOS concept."@en.
 
 iss-sh:SimpleReportSafetyRelatedEventShape sh:property iss-sh:SafetyEventTypeSRSKOS, iss-sh:TrainMovementTypeSRSKOS, iss-sh:TransportOperationCategorySRSKOS, iss-sh:CauseOfReportedEventTypeSKOS, iss-sh:CountryOfOccurrenceSRSKOS .
 

@@ -18,7 +18,7 @@ iss-sh:RecommendationItemShape sh:property iss-sh:RecommendationTitle, iss-sh:Re
 
 iss-sh:RecommendationIssued
   era:affectedProperty iss:recommendationIssued ;
-  sh:message "recommendationIssued: Each recommendation may have recommendationIssued that is a date. This error is due to having a value that is not a date." ;
+  sh:message "recommendationIssued: Each recommendation may have recommendationIssued that is a date. This error is due to having a value that is not a date."@en ;
   sh:path iss:recommendationIssued ;
   sh:severity sh:violation ;
   a sh:PropertyShape ;
@@ -28,7 +28,7 @@ iss-sh:RecommendationIssued
 
 
 iss-sh:RecommendationId
-  sh:message "recommendationId: Each recommendation may have recommendationId that is a string. This error is due to having a value that is not a string." ;
+  sh:message "recommendationId: Each recommendation may have recommendationId that is a string. This error is due to having a value that is not a string."@en ;
   era:affectedProperty iss:recommendationId ;
   sh:path iss:recommendationId ;
   a sh:PropertyShape ;
@@ -45,11 +45,11 @@ iss-sh:RecommendationTitle
   era:affectedClass iss:RecommendationItem ;
   a sh:PropertyShape ;
   sh:path iss:recommendationTitle ;
-  sh:message "recommendationTitle: Each recommendation may have recommendationTitle that is a string. This error is due to having a value that is not a string." .
+  sh:message "recommendationTitle: Each recommendation may have recommendationTitle that is a string. This error is due to having a value that is not a string."@en .
 
 iss-sh:RecommendationStartDate
   sh:datatype xsd:date ;
-  sh:message "recommendationStartDate: Each recommendation may have recommendationStartDate that is a date. This error is due to having a value that is not a date." ;
+  sh:message "recommendationStartDate: Each recommendation may have recommendationStartDate that is a date. This error is due to having a value that is not a date."@en ;
   sh:path iss:recommendationStartDate ;
   a sh:PropertyShape ;
   era:scope "local" ;
@@ -58,7 +58,7 @@ iss-sh:RecommendationStartDate
   era:affectedProperty iss:recommendationStartDate .
 
 iss-sh:RecommendationText
-  sh:message "recommendationText: Each recommendation may have recommendationText that is a string. This error is due to having a value that is not a string." ;
+  sh:message "recommendationText: Each recommendation may have recommendationText that is a string. This error is due to having a value that is not a string."@en ;
   sh:path iss:recommendationText ;
   sh:severity sh:violation ;
   a sh:PropertyShape ;
@@ -78,7 +78,7 @@ iss-sh:HasRecommendationLanguageSKOS a sh:PropertyShape;
   sh:class skos:Concept;
   sh:property iss-sh:HasRecommendationLanguageSKOSinScheme;
   sh:severity sh:violation;
-  sh:message "hasRecommendationLanguage: The instance of RecommendationItem has a hasRecommendationLanguage value that is not a SKOS concept." .
+  sh:message "hasRecommendationLanguage: The instance of RecommendationItem has a hasRecommendationLanguage value that is not a SKOS concept."@en .
 
 iss-sh:HasRecommendationLanguageSKOSinScheme a sh:PropertyShape;
   era:affectedProperty iss:hasRecommendationLanguage;
@@ -87,4 +87,4 @@ iss-sh:HasRecommendationLanguageSKOSinScheme a sh:PropertyShape;
   sh:path skos:inScheme;
   sh:hasValue <https://publications.europa.eu/resource/authority/language>;
   sh:severity sh:violation;
-  sh:message "hasRecommendationLanguage: The instance of RecommendationItem has a hasRecommendationLanguage value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: https://publications.europa.eu/resource/authority/language." .
+  sh:message "hasRecommendationLanguage: The instance of RecommendationItem has a hasRecommendationLanguage value that is not one of the predefined values and cannot be converted into a SKOS concept on this list: https://publications.europa.eu/resource/authority/language."@en .
