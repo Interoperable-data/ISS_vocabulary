@@ -22,7 +22,10 @@
 
 iss-rs:RecordStatuses a skos:ConceptScheme ; 
     dct:issued "2024-04-04"^^xsd:date ;
-    dct:modified "2024-09-03"^^xsd:date ;
+    dct:modified "2024-09-03"^^xsd:date , "2025-02-25"^^xsd:date ;
+    skos:changeNote """ 
+    - Revision 20-02-2025: Added New concept published as per business requirement
+    """@en ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
     rdfs:label "Record Statuses"@en ;
@@ -36,6 +39,9 @@ iss-rs:RecordStatuses a skos:ConceptScheme ;
 #    Concept instances
 #
 #################################################################
+iss-rs:Pulished  rdf:type  skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
+        skos:prefLabel  "Published"@en .
+
 iss-rs:New  rdf:type  skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
         skos:prefLabel  "New"@en .
 
