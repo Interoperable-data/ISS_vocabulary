@@ -11,17 +11,19 @@
 
 era-organisation-roles:OrgRoles a skos:ConceptScheme ;
 	dct:issued "2024-07-31"^^xsd:date ;
-    dct:modified "2024-09-04"^^xsd:date ;
-    dct:modified "2024-10-08"^^xsd:date ;
+    dct:modified "2024-09-04"^^xsd:date , "2024-10-07"^^xsd:date , "2024-01-14"^^xsd:date, "2025-02-20"^^xsd:date ;
    	cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "Organisation roles used in different domains at ERA"@en ;
     rdfs:label "Organisation roles"@en ;
+	skos:changeNote """ 
+      - Revision 20-02-2025: Added EU Body, ERA and EC as requested by ISS business use cases
+	"""@en ; 
     skos:prefLabel "Organisation roles"@en ;
     dct:title "Concept scheme grouping roles held by organisations"@en ;
 	skos:hasTopConcept era-organisation-roles:IM, era-organisation-roles:RU , era-organisation-roles:Owner,
 	era-organisation-roles:Keeper, era-organisation-roles:Applicant, era-organisation-roles:ECM, era-organisation-roles:Manufacturer,
     era-organisation-roles:NSA, era-organisation-roles:MWS, era-organisation-roles:NIB, era-organisation-roles:CAB, era-organisation-roles:AB,
-    era-organisation-roles:NAB, era-organisation-roles:CB, era-organisation-roles:TDGCA, era-organisation-roles:RB,
+    era-organisation-roles:NAB, era-organisation-roles:CB, era-organisation-roles:EUBody, era-organisation-roles:EC, era-organisation-roles:CB, era-organisation-roles:TDGCA, era-organisation-roles:RB,
     era-organisation-roles:SB 	;	
 		.
     
@@ -41,7 +43,7 @@ era-organisation-roles:IM-1 a skos:Concept ;
         skos:altLabel "IM-1"@en ; 
         skos:notation "IM-1"^^xsd:string ;
 		skos:broader era-organisation-roles:IM ;  
-		skos:inScheme era-organisation-roles:OrgRoles ; 
+		skos:inScheme era-organisation-roles: ; 
         .		
 
 era-organisation-roles:IM-2 a skos:Concept ;
@@ -49,7 +51,7 @@ era-organisation-roles:IM-2 a skos:Concept ;
         skos:altLabel "IM-2"@en ; 
         skos:notation "IM-2"^^xsd:string ;
 		skos:broader era-organisation-roles:IM ;  
-		skos:inScheme era-organisation-roles:OrgRoles ; 
+		skos:inScheme era-organisation-roles: ; 
         .			
 
 era-organisation-roles:RU a skos:Concept ;
@@ -65,9 +67,9 @@ era-organisation-roles:RU a skos:Concept ;
 		dct:source <http://data.europa.eu/eli/dir/2012/34/2019-01-01> ;
 		.
 era-organisation-roles:AB  a skos:Concept; 
-			skos:inScheme era-organisation-roles:OrgRoles ;
+			skos:inScheme era-organisation-roles: ;
 			skos:prefLabel "Assessment body"@en; 
-			skos:topConceptOf era-organisation-roles:OrgRoles ;
+			skos:topConceptOf era-organisation-roles: ;
 			skos:definition "An independent and competent external or internal individual, organisation or entity which undertakes investigation to provide a judgement, based on evidence, of the suitability of a system to fulfil its safety requirements"@en ;
 			dct:source <http://data.europa.eu/eli/reg_impl/2013/402/2015-08-03> ;
 			skos:altLabel "AB"@en;
@@ -75,16 +77,16 @@ era-organisation-roles:AB  a skos:Concept;
 .
 
 era-organisation-roles:RB  a skos:Concept; 
-			skos:inScheme era-organisation-roles:OrgRoles ;
+			skos:inScheme era-organisation-roles: ;
 			skos:prefLabel "Representative body"@en; 
-			skos:topConceptOf era-organisation-roles:OrgRoles ;
+			skos:topConceptOf era-organisation-roles: ;
 			skos:altLabel "RB"@en;
             skos:notation "RB"^^xsd:string .
 
 era-organisation-roles:CAB  a skos:Concept; 
-			skos:inScheme era-organisation-roles:OrgRoles ;
+			skos:inScheme era-organisation-roles: ;
 			skos:prefLabel "Conformity assessment body"@en; 
-			skos:topConceptOf era-organisation-roles:OrgRoles ;
+			skos:topConceptOf era-organisation-roles: ;
 			skos:scopeNote " as defined in Article 2 of Regulation (EC) No 765/2008"@en ;
 			skos:definition "A body that performs conformity assessment activities including calibration, testing, certification and inspection"@en ;
 			dct:source <http://data.europa.eu/eli/reg_impl/2013/402/2015-08-03>,  <http://data.europa.eu/eli/reg/2008/765/oj>, <http://data.europa.eu/eli/reg/2008/765/2021-07-16> ;
@@ -93,9 +95,9 @@ era-organisation-roles:CAB  a skos:Concept;
 .
 
 era-organisation-roles:NAB  a skos:Concept; 
-			skos:inScheme era-organisation-roles:OrgRoles ;
+			skos:inScheme era-organisation-roles: ;
 			skos:prefLabel "National accreditation body"@en; 
-			skos:topConceptOf era-organisation-roles:OrgRoles ;
+			skos:topConceptOf era-organisation-roles: ;
 			skos:scopeNote " as defined in Article 2 of Regulation (EC) No 765/2008"@en ;
 			skos:definition "The sole body in a Member State that performs accreditation with authority derived from the State"@en ;
 			dct:source <http://data.europa.eu/eli/reg/2008/765/oj> ;
@@ -103,9 +105,9 @@ era-organisation-roles:NAB  a skos:Concept;
             skos:notation "NAB"^^xsd:string .
 
 era-organisation-roles:CB  a skos:Concept; 
-			skos:inScheme era-organisation-roles:OrgRoles ;
+			skos:inScheme era-organisation-roles: ;
 			skos:prefLabel "Certification body"@en; 
-			skos:topConceptOf era-organisation-roles:OrgRoles ;
+			skos:topConceptOf era-organisation-roles: ;
 			skos:scopeNote " as defined in Article 3 of Regulation (EU) No 445/2011"@en ;
 			skos:definition "a body, designated in accordance with Article 10 of (EU) No 445/2011, responsible for the certification of entities in charge of maintenance, on the basis of the criteria in Annex II of (EU) No 445/2011"@en ;
 			dct:source <https://eur-lex.europa.eu/eli/reg/2011/445/oj> ;
@@ -114,18 +116,18 @@ era-organisation-roles:CB  a skos:Concept;
 .
 
 era-organisation-roles:TDGCA  a skos:Concept; 
-			skos:inScheme era-organisation-roles:OrgRoles ;
+			skos:inScheme era-organisation-roles: ;
 			skos:prefLabel "Transport of Dangerous Goods Competent Authority"@en; 
-			skos:topConceptOf era-organisation-roles:OrgRoles ;
+			skos:topConceptOf era-organisation-roles: ;
 			skos:scopeNote " as referred to in section 1.8.5.1 of RID"@en ;
             skos:notation "TDG CA"^^xsd:string ;
 			skos:altLabel "TDG CA"@en;
 			.
 
 era-organisation-roles:SB a skos:Concept; 
-			skos:inScheme era-organisation-roles:OrgRoles ;
+			skos:inScheme era-organisation-roles: ;
 			skos:prefLabel "Sector organisation"@en; 
-			skos:topConceptOf era-organisation-roles:OrgRoles ;
+			skos:topConceptOf era-organisation-roles: ;
 			skos:altLabel "sector body"@en;
             skos:altLabel "SB"@en;
             skos:notation "SB"^^xsd:string ;
@@ -134,7 +136,7 @@ era-organisation-roles:SB a skos:Concept;
 era-organisation-roles:RU-1 a skos:Concept ;
 		skos:prefLabel "Railway Undertaking operating passenger trains "@en ;
 		skos:broader era-organisation-roles:RU ;  
-		skos:inScheme era-organisation-roles:OrgRoles ; 
+		skos:inScheme era-organisation-roles: ; 
         skos:altLabel "RU-1"@en;
         skos:notation "RU-1"^^xsd:string ;
         .
@@ -142,7 +144,7 @@ era-organisation-roles:RU-1 a skos:Concept ;
 era-organisation-roles:RU-2 a skos:Concept ;
 		skos:prefLabel "Railway Undertaking operating high speed passenger trains "@en ;
 		skos:broader era-organisation-roles:RU ;  
-		skos:inScheme era-organisation-roles:OrgRoles ; 
+		skos:inScheme era-organisation-roles: ; 
         skos:altLabel "RU-2"@en;
         skos:notation "RU-2"^^xsd:string ;
         .
@@ -150,7 +152,7 @@ era-organisation-roles:RU-2 a skos:Concept ;
 era-organisation-roles:RU-3 a skos:Concept ;
 		skos:prefLabel "Railway Undertaking operating freight trains "@en ;
 		skos:broader era-organisation-roles:RU ;  
-		skos:inScheme era-organisation-roles:OrgRoles ; 
+		skos:inScheme era-organisation-roles: ; 
         skos:altLabel "RU-3"@en;
         skos:notation "RU-3"^^xsd:string ;
         .
@@ -158,7 +160,7 @@ era-organisation-roles:RU-3 a skos:Concept ;
 era-organisation-roles:RU-4 a skos:Concept ;
 		skos:prefLabel "Railway Undertaking operating dangerous goods freight trains"@en ;
 		skos:broader era-organisation-roles:RU ;  
-		skos:inScheme era-organisation-roles:OrgRoles ; 
+		skos:inScheme era-organisation-roles: ; 
         skos:altLabel "RU-4"@en;
         skos:notation "RU-4"^^xsd:string ;
         .
@@ -166,17 +168,17 @@ era-organisation-roles:RU-4 a skos:Concept ;
 era-organisation-roles:RU-5 a skos:Concept ;
 		skos:prefLabel "Railway Undertaking operating terminals"@en ;
 		skos:broader era-organisation-roles:RU ;  
-		skos:inScheme era-organisation-roles:OrgRoles ; 
+		skos:inScheme era-organisation-roles: ; 
         skos:altLabel "RU-5"@en;
         skos:notation "RU-5"^^xsd:string ;
         .
 
 era-organisation-roles:NIB a skos:Concept; 
 		skos:prefLabel "National investigating body"@en ; 
-		skos:inScheme era-organisation-roles:OrgRoles ;
+		skos:inScheme era-organisation-roles: ;
 		skos:altLabel "NIB"@en;
         skos:notation "NIB"^^xsd:string ;
-		skos:topConceptOf era-organisation-roles:OrgRoles ;
+		skos:topConceptOf era-organisation-roles: ;
 		skos:scopeNote "National investigating body provided for in Article 22 of Directive (EU) 2016/798 "@en ;
         dct:source <http://data.europa.eu/eli/dir/2016/798/oj> ;
   		.
@@ -212,6 +214,13 @@ era-organisation-roles:Applicant a skos:Concept;
 			
 			dct:source <http://data.europa.eu/eli/dir/2016/797/oj>,  <http://data.europa.eu/eli/dir/2016/797/2020-05-28> ;
 			.
+era-organisation-roles:Holder a skos:Concept; 
+                 skos:prefLabel "Holder"@en ;
+                 skos:topConcept era-organisation-roles:OrgRoles;
+                 skos:notation "Holder"^^xsd:string;
+                 skos:definition """A natural or legal person that has applied for and received the vehicle type authorisation, or its legal successor"""@en ;
+                 dct:source <http://data.europa.eu/eli/reg_impl/2018/545/2020-06-16> . 
+
 
 era-organisation-roles:ECM a skos:Concept;
 			  skos:inScheme era-organisation-roles:OrgRoles ; 
@@ -311,5 +320,45 @@ era-organisation-roles:NSA   a skos:Concept;
 		skos:altLabel "NSA"@en ;
         skos:scopeNote " National safety authority, as defined in Article 3, point (7) of Directive (EU) 2016/798"@en ;
 		dct:source <http://data.europa.eu/eli/dir/2016/798/2020-10-23> ;
+		.
+		
+
+era-organisation-roles:ERA a skos:Concept ;
+		skos:inScheme era-organisation-roles:OrgRoles ;	
+		skos:topConceptOf era-organisation-roles:OrgRoles ;
+		skos:notation "ERA"^^xsd:string ;
+		skos:prefLabel "European Union Agency for Railways"@en ;
+		skos:altLabel "ERA"@en ;
+		skos:definition """ 
+		The objective of the Agency shall be to contribute to the further development and effective functioning of a single European railway area without frontiers, by guaranteeing a high level of railway safety and interoperability, while improving the competitive position of the railway sector.
+		"""@en ; 
+		skos:broader era-organisation-roles:EC ;
+		dct:source <http://data.europa.eu/eli/reg/2016/796/oj> ; 
+		skos:exactMatch <http://publications.europa.eu/resource/authority/corporate-body/ERA> ;
+		.
+
+era-organisation-roles:EC a skos:Concept ;
+		skos:inScheme era-organisation-roles:OrgRoles ;	
+		skos:topConceptOf era-organisation-roles:OrgRoles ;
+		skos:notation "EC"^^xsd:string ;
+		skos:prefLabel "European Commission"@en ;
+		skos:altLabel "EC"@en ;
+		skos:definition """ 
+		The European Commission represents the common interests of the EU and is the EU’s main executive body. It uses its ‘right of initiative’ to put forward proposals for new laws, which are scrutinised and adopted by the European Parliament and the Council of the European Union.
+		"""@en ;
+		skos:narrower era-organisation-roles:ERA ;
+		skos:exactMatch <http://publications.europa.eu/resource/authority/corporate-body/EC> ;
+		.
+
+era-organisation-roles:EUBody a skos:Concept ;
+		skos:inScheme era-organisation-roles:OrgRoles ;	
+		skos:topConceptOf era-organisation-roles:OrgRoles ;
+		skos:notation "EU Body"^^xsd:string ;
+		skos:definition """ 
+		In addition to the institutions, there are a number of bodies which play specialised roles in helping the EU to fulfil its tasks. Some bodies have the task of advising the institutions (the European Economic and Social Committee, the European Committee of the Regions); others ensure that the institutions comply with EU rules and procedures (the European Ombudsman, the European Data Protection Supervisor). The European External Action Service is an external policy body that supports the EU on foreign affairs matters.
+		"""@en ; 
+		skos:prefLabel "EU Body"@en ;
+		skos:altLabel "EU Body"@en ;
+		rdfs:seeAlso "https://european-union.europa.eu/institutions-law-budget/institutions-and-bodies/types-institutions-and-bodies_en"^^xsd:anyURI ;
 		.
 		
