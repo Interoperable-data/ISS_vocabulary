@@ -1,0 +1,2611 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix lang:	<http://publications.europa.eu/resource/authority/language/> .
+@prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
+@prefix eu-pub:	<http://publications.europa.eu/resource/authority/> .
+
+## extracted from https://publications.europa.eu/webapi/rdf/sparql using CONSTRUCT query 
+## query link:  https://gist.github.com/gatemezing/b9e6efd310e7e723ed2c7a0072c91a80
+lang:GLG	rdf:type	skos:Concept .
+lang:GLG	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Galician"@en .
+lang:KIR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kyrgyz"@en .
+lang:GLA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Scottish Gaelic"@en .
+lang:BUL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bulgarian"@en .
+lang:CES	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Czech"@en .
+lang:DAN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Danish"@en .
+lang:DEU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"German"@en .
+lang:ELL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Greek"@en .
+lang:ENG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"English"@en .
+lang:EST	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Estonian"@en .
+lang:FIN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Finnish"@en .
+lang:FRA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"French"@en .
+lang:GLE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Irish"@en .
+lang:HRV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Croatian"@en .
+lang:HUN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Hungarian"@en .
+lang:ITA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Italian"@en .
+lang:LAV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Latvian"@en .
+lang:LIT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lithuanian"@en .
+lang:MLT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Maltese"@en .
+lang:NLD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dutch"@en .
+lang:NOR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Norwegian"@en .
+lang:POL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Polish"@en .
+lang:POR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Portuguese"@en .
+lang:RON	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Romanian"@en .
+lang:SLK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Slovak"@en .
+lang:SLV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Slovenian"@en .
+lang:SPA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Spanish"@en .
+lang:SWE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Swedish"@en .
+lang:ISL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Icelandic"@en .
+lang:SRP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Serbian"@en .
+lang:MKD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Macedonian"@en .
+lang:RUS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Russian"@en .
+lang:UKR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ukrainian"@en .
+lang:KOR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Korean"@en .
+lang:EUS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Basque"@en .
+lang:JPN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Japanese"@en .
+lang:BEN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bengali"@en .
+lang:BOS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bosnian"@en .
+lang:LTZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Luxembourgish"@en .
+lang:HBS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Serbo-Croatian"@en .
+lang:CAT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Catalan"@en .
+lang:SQI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Albanian"@en .
+lang:HEB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Hebrew"@en .
+lang:ARA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Arabic"@en .
+lang:ZHO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chinese"@en .
+lang:TUR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Turkish"@en .
+lang:MOL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Moldavian"@en .
+lang:PUS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pashto"@en .
+lang:MSA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Malaysian"@en .
+lang:LAT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Latin"@en .
+lang:UZB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Uzbek"@en .
+lang:HYE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Armenian"@en .
+lang:KUR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kurdish"@en .
+lang:MLG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Malagasy"@en .
+lang:FAS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Persian"@en .
+lang:HIN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Hindi"@en .
+lang:VIE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Vietnamese"@en .
+lang:SIN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sinhala"@en .
+lang:URD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Urdu"@en .
+lang:LAO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lao"@en .
+lang:IND	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Indonesian"@en .
+lang:CKB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Central Kurdish"@en .
+lang:SOM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Somali"@en .
+lang:TIR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tigrinya"@en .
+lang:KAT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Georgian"@en .
+lang:MON	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mongolian"@en .
+lang:KAZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kazakh"@en .
+lang:TGK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tajik"@en .
+lang:CYM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Welsh"@en .
+lang:AZE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Azerbaijani"@en .
+lang:THA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Thai"@en .
+lang:KHM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Khmer"@en .
+lang:NEP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nepali"@en .
+lang:FAO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Faroese"@en .
+lang:TUK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Turkmen"@en .
+lang:GEM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Germanic languages"@en .
+lang:PAN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Punjabi"@en .
+lang:SWA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Swahili"@en .
+lang:TAM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tamil"@en .
+lang:WOL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wolof"@en .
+lang:BEL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Belarusian"@en .
+lang:MYA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Burmese"@en .
+lang:ROH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Romansh"@en .
+lang:DIV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dhivehi"@en .
+lang:IBO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Igbo"@en .
+<http://publications.europa.eu/resource/authority/language/0D0>	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Valencian"@en .
+<http://publications.europa.eu/resource/authority/language/0E0>	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Montenegrin"@en .
+lang:ADS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Adamorobe Sign Language"@en .
+lang:ADY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Adyghe"@en .
+lang:AED	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Argentine Sign Language"@en .
+lang:AEN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Armenian Sign Language"@en .
+lang:AFA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Afro-Asiatic languages"@en .
+lang:AFG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Afghan Sign Language"@en .
+lang:AFR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Afrikaans"@en .
+lang:AKA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Akan"@en .
+lang:ALG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Algonquian languages"@en .
+lang:AMH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Amharic"@en .
+lang:APA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Apache languages"@en .
+lang:ARO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Araona"@en .
+lang:ART	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Artificial languages"@en .
+lang:ASE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"American Sign Language"@en .
+lang:ASF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Australian Sign Language"@en .
+lang:ASP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Algerian Sign Language"@en .
+lang:ASQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Austrian Sign Language"@en .
+lang:ASW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Australian Aborigines Sign Language"@en .
+lang:ATH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Athapascan languages"@en .
+lang:AUS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Australian languages"@en .
+lang:AYM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Aymara"@en .
+lang:AYO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ayoreo"@en .
+lang:BAD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Banda languages"@en .
+lang:BAI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bamileke languages"@en .
+lang:BAT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Baltic languages"@en .
+lang:BER	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Berber languages"@en .
+lang:BFI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"British Sign Language"@en .
+lang:BFK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ban Khor Sign Language"@en .
+lang:BIS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bislama"@en .
+lang:BNT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bantu languages"@en .
+lang:BOD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tibetan"@en .
+lang:BOG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bamako Sign Language"@en .
+lang:BQN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bulgarian Sign Language"@en .
+lang:BQY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bengkala Sign Language"@en .
+lang:BRE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Breton"@en .
+lang:BRG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Baure"@en .
+lang:BTK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Batak languages"@en .
+lang:BVL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bolivian Sign Language"@en .
+lang:BZS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Brazilian Sign Language"@en .
+lang:CAI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Central American Indian languages"@en .
+lang:CAL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Carolinian"@en .
+lang:CAO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chacobo"@en .
+lang:CAS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chimane"@en .
+lang:CAU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Caucasian languages"@en .
+lang:CAV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Cavine\u00F1a"@en .
+lang:CAW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kallawaya"@en .
+lang:CAX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chiquitano"@en .
+lang:CAZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Canichana"@en .
+lang:CDO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Min Dong Chinese"@en .
+lang:CDS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chadian Sign Language"@en .
+lang:CEL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Celtic languages"@en .
+lang:CHA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chamorro"@en .
+lang:CHN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chinook jargon"@en .
+lang:CJY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Jinyu Chinese"@en .
+lang:CMC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chamic languages"@en .
+lang:CMN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mandarin Chinese"@en .
+lang:COR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Cornish"@en .
+lang:COS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Corsican"@en .
+lang:CPX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pu-Xian Chinese"@en .
+lang:CRS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Seselwa Creole French"@en .
+lang:CSB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kashubian"@en .
+lang:CSC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Catalan Sign Language"@en .
+lang:CSD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chiangmai Sign Language"@en .
+lang:CSE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Czech Sign Language"@en .
+lang:CSF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Cuban Sign Language"@en .
+lang:CSG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chilean Sign Language"@en .
+lang:CSL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chinese Sign Language"@en .
+lang:CSN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Colombian Sign Language"@en .
+lang:CSQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Croatian Sign Language"@en .
+lang:CSR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Costa Rican Sign Language"@en .
+lang:CUS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Cushitic languages"@en .
+lang:CYB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Cayubaba"@en .
+lang:CZH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Huizhou Chinese"@en .
+lang:CZO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Min Zhong Chinese"@en .
+lang:DAY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Land Dayak languages"@en .
+lang:DOQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dominican Sign Language"@en .
+lang:DRA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dravidian languages"@en .
+lang:DSB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lower Sorbian"@en .
+lang:DSE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dutch Sign Language"@en .
+lang:DSL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Danish Sign Language"@en .
+lang:DZO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dzongkha"@en .
+lang:ECS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ecuadorian Sign Language"@en .
+lang:EPO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Esperanto"@en .
+lang:ESE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ese Ejja"@en .
+lang:ESL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Egyptian Sign Language"@en .
+lang:ESN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Salvadoran Sign Language"@en .
+lang:ESO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Estonian Sign Language"@en .
+lang:ETH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ethiopian Sign Language"@en .
+lang:EWE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ewe"@en .
+lang:FCS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Quebec Sign Language"@en .
+lang:FIJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Fijian"@en .
+lang:FIL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Filipino"@en .
+lang:FIU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Finno-Ugrian languages"@en .
+lang:FRY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Frisian"@en .
+lang:FSE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Finnish Sign Language"@en .
+lang:FSL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"French Sign Language"@en .
+lang:FSS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Finland-Swedish Sign Language"@en .
+lang:FUL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Fula"@en .
+lang:FUR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Friulan"@en .
+lang:GAN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Gan Chinese"@en .
+lang:GLV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Manx"@en .
+lang:GRN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Guarani"@en .
+lang:GSE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ghanaian Sign Language"@en .
+lang:GSG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"German Sign Language"@en .
+lang:GSM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Guatemalan Sign Language"@en .
+lang:GSS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Greek Sign Language"@en .
+lang:GUG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Paraguayan Guaran\u00ED"@en .
+lang:GUS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Guinean Sign Language"@en .
+lang:GYR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Guarayu"@en .
+lang:HAB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Hanoi Sign Language"@en .
+lang:HAF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Haiphong Sign Language"@en .
+lang:HAK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Hakka Chinese"@en .
+lang:HAT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Haitian"@en .
+lang:HAU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Hausa"@en .
+lang:HCA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Andaman Creole Hindi"@en .
+lang:HDS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Honduran Sign Language"@en .
+lang:HIF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Fiji Hindi"@en .
+lang:HIO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tsoa"@en .
+lang:HKS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Hong Kong Sign Language"@en .
+lang:HMO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Hiri Motu"@en .
+lang:HOS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ho Chi Minh City Sign Language"@en .
+lang:HPS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Hawai\u2018i Pidgin Sign Language"@en .
+lang:HSB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Upper Sorbian"@en .
+lang:HSH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Hungarian Sign Language"@en .
+lang:HSL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Hausa Sign Language"@en .
+lang:HSN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Xiang Chinese"@en .
+lang:ICL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Icelandic Sign Language"@en .
+lang:IGN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ignaciano"@en .
+lang:IJO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ijo languages"@en .
+lang:INA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Interlingua"@en .
+lang:INC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Indic languages"@en .
+lang:INE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Indo-European languages"@en .
+lang:INL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Indonesian Sign Language"@en .
+lang:INS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Indian Sign Language"@en .
+lang:IRA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Iranian languages"@en .
+lang:IRO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Iroquoian languages"@en .
+lang:ISE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Italian Sign Language"@en .
+lang:ISG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Irish Sign Language"@en .
+lang:ISR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Israeli Sign Language"@en .
+lang:ITE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Itene"@en .
+lang:ITO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Itonama"@en .
+lang:JCS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Jamaican Country Sign Language"@en .
+lang:JHS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Jhankot Sign Language"@en .
+lang:JOS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Jordanian Sign Language"@en .
+lang:JPR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Judeo-Persian"@en .
+lang:JSL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Japanese Sign Language"@en .
+lang:JUS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Jumla Sign Language"@en .
+lang:KAL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Greenlandic"@en .
+lang:KAR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Karen languages"@en .
+lang:KCK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kalanga"@en .
+lang:KGI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Selangor Sign Language"@en .
+lang:KHI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Khoisan languages"@en .
+lang:KIN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kinyarwanda"@en .
+lang:KMR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Northern Kurdish"@en .
+lang:KON	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kikongo"@en .
+lang:KRO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kru languages"@en .
+lang:KVK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Korean Sign Language"@en .
+lang:KXD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Brunei Malay"@en .
+lang:LBS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Libyan Sign Language"@en .
+lang:LEC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Leco"@en .
+lang:LIN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lingala"@en .
+lang:LLS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lithuanian Sign Language"@en .
+lang:LSG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lyons Sign Language"@en .
+lang:LSL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Latvian Sign Language"@en .
+lang:LSO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Laotian Sign Language"@en .
+lang:LSP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Panamanian Sign Language"@en .
+lang:LST	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Trinidad and Tobago Sign Language"@en .
+lang:LTC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Late Middle Chinese"@en .
+lang:LUA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Luba-Lulua"@en .
+lang:LZH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Literary Chinese"@en .
+lang:MAH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Marshallese"@en .
+lang:MAN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Manding"@en .
+lang:MAP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Austronesian languages"@en .
+lang:MDL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Maltese Sign Language"@en .
+lang:MFS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mexican Sign Language"@en .
+lang:MIN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Minangkabau"@en .
+lang:MIS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Uncoded languages"@en .
+lang:MKH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mon-Khmer languages"@en .
+lang:MNK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mandinka"@en .
+lang:MNO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Manobo languages"@en .
+lang:MNP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Min Bei Chinese"@en .
+lang:MPD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Machinere"@en .
+lang:MRE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Martha\u2019s Vineyard Sign Language"@en .
+lang:MRI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"M\u0101ori"@en .
+lang:MSD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yucatec Maya Sign Language"@en .
+lang:MSR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mongolian Sign Language"@en .
+lang:MTP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wich\u00ED Lhamt\u00E9s Nocten"@en .
+lang:MUL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Multiple languages"@en .
+lang:MUN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Munda languages"@en .
+lang:MYN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mayan languages"@en .
+lang:MZC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Madagascar Sign Language"@en .
+lang:MZG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Monastic Sign Language"@en .
+lang:MZP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Movima"@en .
+lang:MZY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mozambican Sign Language"@en .
+lang:NAH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nahuatl languages"@en .
+lang:NAI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"North American Indian languages"@en .
+lang:NAN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Min Nan Chinese"@en .
+lang:NAU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nauruan"@en .
+lang:NBL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Southern Ndebele"@en .
+lang:NBS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Namibian Sign Language"@en .
+lang:NCS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nicaraguan Sign Language"@en .
+lang:NDC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ndau"@en .
+lang:NDE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"North Ndebele"@en .
+lang:NIC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Niger-Kordofanian languages"@en .
+lang:NIU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Niuean"@en .
+lang:NMQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nambya"@en .
+lang:NNO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Norwegian Nynorsk"@en .
+lang:NOB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Norwegian Bokm\u00E5l"@en .
+lang:NSI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nigerian Sign Language"@en .
+lang:NSL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Norwegian Sign Language"@en .
+lang:NSO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Northern Sotho"@en .
+lang:NSP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nepalese Sign Language"@en .
+lang:NSR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Maritime Sign Language"@en .
+lang:NUB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nubian languages"@en .
+lang:NYA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chewa"@en .
+lang:NZS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"New Zealand Sign Language"@en .
+lang:OCH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Old Chinese"@en .
+lang:OCI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Occitan"@en .
+lang:OSS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ossetic"@en .
+lang:OTO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Otomian languages"@en .
+lang:PAA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Papuan languages"@en .
+lang:PAP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Papiamento"@en .
+lang:PAU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Palauan"@en .
+lang:PCP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pacahuara"@en .
+lang:PEO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Old Persian (ca. 600-400 B.C.)"@en .
+lang:PES	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Iranian Persian"@en .
+lang:PHI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Philippine languages"@en .
+lang:PIH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pitcairn-Norfolk"@en .
+lang:PKS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pakistan Sign Language"@en .
+lang:PRA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Prakrit languages"@en .
+lang:PRL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Peruvian Sign Language"@en .
+lang:PRS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dari"@en .
+lang:PRZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Providencia Sign Language"@en .
+lang:PSC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Persian Sign Language"@en .
+lang:PSD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Plains Indian Sign Language"@en .
+lang:PSG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Penang Sign Language"@en .
+lang:PSL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Puerto Rican Sign Language"@en .
+lang:PSM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pauserna"@en .
+lang:PSO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Polish Sign Language"@en .
+lang:PSP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Philippine Sign Language"@en .
+lang:PSR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Portuguese Sign Language"@en .
+lang:PUQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Puquina"@en .
+lang:QUE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Quechua"@en .
+lang:RAR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Rarotongan"@en .
+lang:REY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Reyesano"@en .
+lang:RMS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Romanian Sign Language"@en .
+lang:ROA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Romance languages"@en .
+lang:ROM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Romani"@en .
+lang:RSI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Rennellese Sign Language"@en .
+lang:RSL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Russian Sign Language"@en .
+lang:RUN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kirundi"@en .
+lang:SAG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sango"@en .
+lang:SAI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"South American Indian languages"@en .
+lang:SAL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Salishan languages"@en .
+lang:SCO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Scots"@en .
+lang:SDH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Southern Kurdish"@en .
+lang:SDL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Saudi Arabian Sign Language"@en .
+lang:SEH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sena"@en .
+lang:SEM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Semitic languages"@en .
+lang:SFS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"South African Sign Language"@en .
+lang:SGG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Swiss-German Sign Language"@en .
+lang:SGN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sign Languages"@en .
+lang:SGX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sierra Leonean Sign Language"@en .
+lang:SIO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Siouan languages"@en .
+lang:SIP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sikkimese"@en .
+lang:SIT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sino-Tibetan languages"@en .
+lang:SJE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pite Sami"@en .
+lang:SLA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Slavic languages"@en .
+lang:SLF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Swiss-Italian Sign Language"@en .
+lang:SLS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Singapore Sign Language"@en .
+lang:SME	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Northern Sami"@en .
+lang:SMI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sami languages"@en .
+lang:SMO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Samoan"@en .
+lang:SNA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Shona"@en .
+lang:SON	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Songhai languages"@en .
+lang:SOT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Southern Sotho"@en .
+lang:SQS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sri Lankan Sign Language"@en .
+lang:SRQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sirion\u00F3"@en .
+lang:SSA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nilo-Saharan languages"@en .
+lang:SSP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Spanish Sign Language"@en .
+lang:SSR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Swiss-French Sign Language"@en .
+lang:SSW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Swazi"@en .
+lang:SVK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Slovakian Sign Language"@en .
+lang:SWB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Comorian"@en .
+lang:SWL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Swedish Sign Language"@en .
+lang:SYY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Al-Sayyid Bedouin Sign Language"@en .
+lang:SZL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Silesian"@en .
+lang:TAI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tai languages"@en .
+lang:TET	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tetum"@en .
+lang:TKL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tokelauan"@en .
+lang:TNA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tacana"@en .
+lang:TNO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Toromono"@en .
+lang:TOI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tonga (Zambia)"@en .
+lang:TON	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tongan"@en .
+lang:TPI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tok Pisin"@en .
+lang:TPJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tapiet\u00E9"@en .
+lang:TRN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Trinitario"@en .
+lang:TSE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tunisian Sign Language"@en .
+lang:TSM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Turkish Sign Language"@en .
+lang:TSN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tswana"@en .
+lang:TSO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tsonga"@en .
+lang:TSQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Thai Sign Language"@en .
+lang:TSS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Taiwanese Sign Language"@en .
+lang:TSY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tebul Sign Language"@en .
+lang:TUP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tupi languages"@en .
+lang:TUT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Altaic languages"@en .
+lang:TVL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tuvaluan"@en .
+lang:TZA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tanzanian Sign Language"@en .
+lang:TZM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Central Atlas Tamazight"@en .
+lang:UGN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ugandan Sign Language"@en .
+lang:UGY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Uruguayan Sign Language"@en .
+lang:UKL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ukrainian Sign Language"@en .
+lang:UKS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Urub\u00FA-Kaapor Sign Language"@en .
+lang:UND	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Undetermined"@en .
+lang:URE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Uru"@en .
+lang:VEN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Venda"@en .
+lang:VLS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Flemish"@en .
+lang:VSI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Moldovan Sign Language"@en .
+lang:VSL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Venezuelan Sign Language"@en .
+lang:VSV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Valencian Sign Language"@en .
+lang:WAK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wakashan languages"@en .
+lang:WEN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sorbian languages"@en .
+lang:WLN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Walloon"@en .
+lang:WUU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wu Chinese"@en .
+lang:XHO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Xhosa"@en .
+lang:XKI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kenyan Sign Language"@en .
+lang:XML	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Malaysian Sign Language"@en .
+lang:XMN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Manichaean Middle Persian"@en .
+lang:XMS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Moroccan Sign Language"@en .
+lang:YAA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yaminava"@en .
+lang:YID	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yiddish"@en .
+lang:YOR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yoruba"@en .
+lang:YPK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yupik languages"@en .
+lang:YSL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yugoslavian Sign Language"@en .
+lang:YUE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yue Chinese"@en .
+lang:YUQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yuqui"@en .
+lang:YUZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yuracare"@en .
+lang:ZIB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Zimbabwean Sign Language"@en .
+lang:ZLM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Malay"@en .
+lang:ZND	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Zande languages"@en .
+lang:ZSL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Zambian Sign Language"@en .
+lang:ZUL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Zulu"@en .
+lang:ZXX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"No linguistic content"@en .
+lang:CNR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Montenegrin"@en .
+lang:CSP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Southern Ping Chinese"@en .
+lang:EAA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Karenggapa"@en .
+lang:JOG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Jogi"@en .
+lang:OMY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Old Malay"@en .
+lang:PTQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pattapu"@en .
+lang:SQK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Albanian Sign Language"@en .
+lang:XNT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Narragansett"@en .
+lang:AZD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Eastern Durango Nahuatl"@en .
+lang:GMG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mag\u0268yi"@en .
+lang:WKY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wangkayutyuru"@en .
+lang:XYB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yandjibara"@en .
+lang:DKG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kadung"@en .
+lang:EBK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Eastern Bontok"@en .
+lang:ILM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Malaysian Iranun"@en .
+lang:OCM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Old Cham"@en .
+lang:OKG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Koko Babangk"@en .
+lang:RZH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"R\u0101zi\u1E25\u012B"@en .
+lang:UKK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Muak Sa-aak"@en .
+lang:YRY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yarluyandi"@en .
+lang:LDA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kla-Dan"@en .
+lang:XNU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nukunul"@en .
+lang:YXA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mayawali"@en .
+lang:CEY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ekai Chin"@en .
+lang:CLJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Laitu Chin"@en .
+lang:NPG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ponyo-Gongwang Naga"@en .
+lang:NTD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Northern Tidung"@en .
+lang:WNN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wunumara"@en .
+lang:WRK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Garrwa"@en .
+lang:NQQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kyan-Karyaw Naga"@en .
+lang:RNR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nari Nari"@en .
+lang:BVP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bumang"@en .
+lang:HRW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Warwar Feni"@en .
+lang:JBI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Badjiri"@en .
+lang:LVI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lavi"@en .
+lang:PND	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mpinda"@en .
+lang:DGL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dongolawi"@en .
+lang:JKM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mobwa Karen"@en .
+lang:PBM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Puebla Mazatec"@en .
+lang:XPA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pirriya"@en .
+lang:LSV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sivia Sign Language"@en .
+lang:LWS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Malawian Sign Language"@en .
+lang:ULW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ulwa"@en .
+lang:AJS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Algerian Jewish Sign Language"@en .
+lang:FIF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Faifi"@en .
+lang:NPI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nepali"@en .
+lang:WMG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Western Minyag"@en .
+lang:XDK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dharuk"@en .
+lang:XPB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pyemmairre"@en .
+lang:AQD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ampari Dogon"@en .
+lang:DJA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Djadjawurrung"@en .
+lang:DTN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Daats\u02BCi\u0301in"@en .
+lang:ILP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Philippine Iranun"@en .
+lang:IZZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Izi"@en .
+lang:JJE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Jejueo"@en .
+lang:LSW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Seychelles Sign Language"@en .
+lang:OLT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Old Lithuanian"@en .
+lang:PWI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Patwin"@en .
+lang:TGJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tagin"@en .
+lang:TKG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tesaka Malagasy"@en .
+lang:GLB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Beln\u0259ng"@en .
+lang:IQW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ikwo"@en .
+lang:JBK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Barikewa"@en .
+lang:NLM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mankiyali"@en .
+lang:NTG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ngantangarra"@en .
+lang:SZS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Solomon Islands Sign Language"@en .
+lang:BPC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mbuk"@en .
+lang:LWU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lawu"@en .
+lang:XNY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nyiyaparli"@en .
+lang:CTH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Thaiphum Chin"@en .
+lang:DHX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dhungaloo"@en .
+lang:DTO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tommo So Dogon"@en .
+lang:NQT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nteng"@en .
+lang:OLU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kuvale"@en .
+lang:SGD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Surigaonon"@en .
+lang:UBL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Buhi'non Bikol"@en .
+lang:WRO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Worrorra"@en .
+lang:XIS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kisan"@en .
+lang:JKP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Paku Karen"@en .
+lang:XPD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Paredarerme"@en .
+lang:LSY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mauritian Sign Language"@en .
+lang:SDQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Semandang"@en .
+lang:XNZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kenzi"@en .
+lang:AVM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Angkamuthi"@en .
+lang:JBM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bijim"@en .
+lang:NPL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Southeastern Puebla Nahuatl"@en .
+lang:RRT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Arritinngithigh"@en .
+lang:SUO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bouni"@en .
+lang:TXJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tarjumo"@en .
+lang:UON	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kulon"@en .
+lang:BPE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bauni"@en .
+lang:XGB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Gbin"@en .
+lang:YGI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yiningayi"@en .
+lang:LJW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yirandhali"@en .
+lang:PRF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Paranan"@en .
+lang:XUL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ngunnawal"@en .
+lang:YHS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yan-nha\u014Bu Sign Language"@en .
+lang:YXG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yagara"@en .
+lang:ZKN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kanan"@en .
+lang:IHW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bidawal"@en .
+lang:JKR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Koro"@en .
+lang:NZZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nanga Dama Dogon"@en .
+lang:OBK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Southern Bontok"@en .
+lang:XDO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kwandu"@en .
+lang:XPF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nuenonne"@en .
+lang:TGN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tandaganon"@en .
+lang:XYJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mayi-Yapi"@en .
+lang:EZA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ezaa"@en .
+lang:IBH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bih"@en .
+lang:LJX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yuru"@en .
+lang:NLQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lao Naga"@en .
+lang:NSB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lower Nossob"@en .
+lang:PNJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pinjarup"@en .
+lang:VKZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Koro Zuba"@en .
+lang:XHM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Middle Khmer"@en .
+lang:JKS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Amami Koniya Sign Language"@en .
+lang:PGZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Papua New Guinean Sign Language"@en .
+lang:XGD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Gudang"@en .
+lang:YYR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yir Yoront"@en .
+lang:CPO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kpeego"@en .
+lang:GEV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Viya"@en .
+lang:PNK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Paunaka"@en .
+lang:XUN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Unggaranggu"@en .
+lang:XYK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mayi-Kulan"@en .
+lang:XDQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kaitag"@en .
+lang:XPH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tyerrenoterpanner"@en .
+lang:AZN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Western Durango Nahuatl"@en .
+lang:NQY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Akyaung Ari Naga"@en .
+lang:PNL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Paleni"@en .
+lang:RMQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Cal\u00F3"@en .
+lang:SZY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sakizaya"@en .
+lang:WNW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wintu"@en .
+lang:DGT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ndra'ngith"@en .
+lang:ENL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Enlhet"@en .
+lang:GPE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ghanaian Pidgin English"@en .
+lang:LNW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lanima"@en .
+lang:AQK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Aninka"@en .
+lang:BVY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Baybayanon"@en .
+lang:GIU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mulao"@en .
+lang:GMR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mirning"@en .
+lang:TOK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Toki Pona"@en .
+lang:UNI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Uni"@en .
+lang:WDK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wadikali"@en .
+lang:CLT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lautu Chin"@en .
+lang:NXK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Koki Naga"@en .
+lang:RTC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Rungtu Chin"@en .
+lang:SGJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Surgujia"@en .
+lang:XPJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mpalitjanh"@en .
+lang:DRC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Minderico"@en .
+lang:NCQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Northern Katang"@en .
+lang:PMD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pallanganmiddang"@en .
+lang:SPN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sanapan\u00E1"@en .
+lang:UKV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kuku"@en .
+lang:LVS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Standard Latvian"@en .
+lang:TYY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tiyaa"@en .
+lang:WNY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Waanyi"@en .
+lang:XGG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Goreng"@en .
+lang:YXL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yardliyawarra"@en .
+lang:HKH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Khah"@en .
+lang:NSF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Northwestern Nisu"@en .
+lang:SQX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kufr Qassem Sign Language"@en .
+lang:XTH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yitha Yitha"@en .
+lang:CUY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Cuitlatec"@en .
+lang:YXM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yinwum"@en .
+lang:DGW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Daungwurrung"@en .
+lang:DWK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dawik Kui"@en .
+lang:OSN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Old Sundanese"@en .
+lang:XBB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lower Burdekin"@en .
+lang:XPL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Port Sorell Tasmanian"@en .
+lang:YSG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sonaga"@en .
+lang:CKM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chakavian"@en .
+lang:ISK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ishkashimi"@en .
+lang:KJV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kaikavian Literary Language"@en .
+lang:NOJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nonuya"@en .
+lang:WLH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Welaun"@en .
+lang:XGI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Garingbal"@en .
+lang:NLW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Walangama"@en .
+lang:WGB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wagawaga"@en .
+lang:CKN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kaang Chin"@en .
+lang:GLL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kalali"@en .
+lang:UKY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kuuk-Yak"@en .
+lang:USS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"us-Saare"@en .
+lang:WYI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Woiwurrung"@en .
+lang:YKN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kua-nsi"@en .
+lang:APF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pahanan Agta"@en .
+lang:DTY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Doteli"@en .
+lang:IKR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ikaranggal"@en .
+lang:NXO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ndambomo"@en .
+lang:PZH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pazeh"@en .
+lang:RXD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ngardi"@en .
+lang:GDS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ghandruk Sign Language"@en .
+lang:OVD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Elfdalian"@en .
+lang:XBD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bindal"@en .
+lang:DNJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dan"@en .
+lang:GKD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mag\u0268"@en .
+lang:LLJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ladji Ladji"@en .
+lang:NOL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nomlaki"@en .
+lang:SFE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Eastern Subanen"@en .
+lang:UNN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kurnai"@en .
+lang:IKS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Inuit Sign Language"@en .
+lang:JBW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yawijibaya"@en .
+lang:TJJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tjungundji"@en .
+lang:XBE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bigambal"@en .
+lang:YWG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yinhawangka"@en .
+lang:CSJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Songlai Chin"@en .
+lang:DBT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ben Tey Dogon"@en .
+lang:GDT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kungardutyi"@en .
+lang:JAN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Jandai"@en .
+lang:NWG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ngayawung"@en .
+lang:YGS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yol\u014Bu Sign Language"@en .
+lang:DMB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mombo Dogon"@en .
+lang:ESY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Eskayan"@en .
+lang:GQU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Qau"@en .
+lang:GYO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Gyalsumdo"@en .
+lang:JJR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bankal"@en .
+lang:NXQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Naxi"@en .
+lang:OIE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Okolie"@en .
+lang:HYW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Western Armenian"@en .
+lang:LQR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Logir"@en .
+lang:NKQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nkami"@en .
+lang:ZBU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bu"@en .
+lang:XGM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dharumbal"@en .
+lang:XYT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mayi-Thakurti"@en .
+lang:HKN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mel-Khaonh"@en .
+lang:NPX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Noipx"@en .
+lang:SCT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Southern Katang"@en .
+lang:SYX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Samay"@en .
+lang:TJL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tai Laing"@en .
+lang:XBG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bunganditj"@en .
+lang:XPQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mohegan-Pequot"@en .
+lang:LTG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Latgalian"@en .
+lang:TKV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mur Pano"@en .
+lang:YGU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yugul"@en .
+lang:DMD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Madhi Madhi"@en .
+lang:GMZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mgbolizhia"@en .
+lang:MJB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Makalero"@en .
+lang:OKZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Old Khmer"@en .
+lang:WYN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wyandot"@en .
+lang:XJB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Minjungbal"@en .
+lang:AQT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Angait\u00E9"@en .
+lang:DDA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dadi Dadi"@en .
+lang:DZE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Jiwarli"@en .
+lang:WTH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wathawurrung"@en .
+lang:YSM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Myanmar Sign Language"@en .
+lang:AXE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ayerrerenge"@en .
+lang:DBW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bankan Tey Dogon"@en .
+lang:LTH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Thur"@en .
+lang:SPV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sambalpuri"@en .
+lang:TGZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tagalaka"@en .
+lang:WDT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wyandot"@en .
+lang:YTW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yout Wam"@en .
+lang:SGS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Samogitian"@en .
+lang:XXM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Minkin"@en .
+lang:DMF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Medefaidrin"@en .
+lang:DNO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ndrulo"@en .
+lang:XWD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wadi Wadi"@en .
+lang:YXU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yuyu"@en .
+lang:CBQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tsucuba"@en .
+lang:NTX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tangkhul Naga"@en .
+lang:XBJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Birrpayi"@en .
+lang:XPT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Punthamara"@en .
+lang:NRF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Guern\u00E9siais"@en .
+lang:YKU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kuamasi"@en .
+lang:CTY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Moundadan Chetty"@en .
+lang:TJP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tjupany"@en .
+lang:YTY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yatay"@en .
+lang:ZHA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Zhuang"@en .
+lang:ENX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Enxet"@en .
+lang:HRC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Niwer Mil"@en .
+lang:TST	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tondi Songway Kiini"@en .
+lang:UNU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Unubahe"@en .
+lang:XYY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yorta Yorta"@en .
+lang:DWU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dhuwal"@en .
+lang:LSB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Burundian Sign Language"@en .
+lang:XPV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tommeginne"@en .
+lang:YOT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yotti"@en .
+lang:HNG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Hungu"@en .
+lang:PHJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Pahari"@en .
+lang:ZIL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Zialo"@en .
+lang:LSC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Albarradas Sign Language"@en .
+lang:EMQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Eastern Minyag"@en .
+lang:NWO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nauo"@en .
+lang:XPW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Peerapper"@en .
+lang:WDY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wadjabangayi"@en .
+lang:YXY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yabula Yabula"@en .
+lang:ZLA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Zula"@en .
+lang:AQZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Akuntsu"@en .
+lang:DSZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mardin Sign Language"@en .
+lang:LJA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Golpa"@en .
+lang:ULE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lule"@en .
+lang:XBN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kenaboi"@en .
+lang:XPX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Toogee"@en .
+lang:NZD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nzadi"@en .
+lang:RBK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Northern Bontok"@en .
+lang:RNB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Brunca Sign Language"@en .
+lang:STY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Siberian Tatar"@en .
+lang:WWB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wakabunga"@en .
+lang:XGU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Unggumi"@en .
+lang:JUI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ngadjuri"@en .
+lang:SGY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sanglechi"@en .
+lang:XTV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Thawa"@en .
+lang:AXL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lower Southern Aranda"@en .
+lang:GKO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kok-Nar"@en .
+lang:NRK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ngarla"@en .
+lang:TDE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tiranige Diga Dogon"@en .
+lang:XWJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wajuk"@en .
+lang:YDA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yanda"@en .
+lang:CBW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kinabalian"@en .
+lang:DWY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dhuwaya"@en .
+lang:LGO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lango"@en .
+lang:PGD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"G\u0101ndh\u0101r\u012B"@en .
+lang:RBL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Miraya Bikol"@en .
+lang:RTS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yurats"@en .
+lang:XBP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bibbulman"@en .
+lang:XRD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Gundungurra"@en .
+lang:YAN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mayangna"@en .
+lang:CEK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Eastern Khumi Chin"@en .
+lang:DNV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Danu"@en .
+lang:GAC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mixed Great Andamanese"@en .
+lang:LXM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Lakurumau"@en .
+lang:XPZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nuenonne"@en .
+lang:XWK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wangkumara"@en .
+lang:DWZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dewas Rai"@en .
+lang:GYZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Geji"@en .
+lang:WSG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Adilabad Gondi"@en .
+lang:XGW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Guwa"@en .
+lang:CSV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Sumtu Chin"@en .
+lang:LKM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kalaamaya"@en .
+lang:RSK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ruthenian"@en .
+lang:CNP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Northern Ping Chinese"@en .
+lang:YRM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yirrk-Mel"@en .
+lang:GTU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Aghu-Tharnggala"@en .
+lang:TJW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Djabwurrung"@en .
+lang:XNI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ngarigu"@en .
+lang:IIN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Thiin"@en .
+lang:LBK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Central Bontok"@en .
+lang:YNQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yendang"@en .
+lang:CNQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Chung"@en .
+lang:FKK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kirya-Konz\u0259l"@en .
+lang:TZL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Talossan"@en .
+lang:XNJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ngoni"@en .
+lang:XRG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Minang"@en .
+lang:CSX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Cambodian Sign Language"@en .
+lang:LBL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Libon Bikol"@en .
+lang:RSM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Miriwoong Sign Language"@en .
+lang:XAJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ararandew\u00E1ra"@en .
+lang:JKA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kaera"@en .
+lang:RBP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Barababaraba"@en .
+lang:YRO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yaroam\u00EB"@en .
+lang:AWG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Anguthimri"@en .
+lang:RSN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Rwandan Sign Language"@en .
+lang:XNK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nganakarti"@en .
+lang:ZCD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Las Delicias Zapotec"@en .
+lang:EMX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Erromintxela"@en .
+lang:XAK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"M\u00E1ku"@en .
+lang:BZC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Southern Betsimisaraka Malagasy"@en .
+lang:RIB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bribri Sign Language"@en .
+lang:RWL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ruwila"@en .
+lang:EBC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Beginci"@en .
+lang:GKU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"\u01C2Ungkue"@en .
+lang:NWW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ndwewe"@en .
+lang:EHS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Miyakubo Sign Language"@en .
+lang:WGU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wirangu"@en .
+lang:WKR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Keerray-Woorroong"@en .
+lang:XNM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ngumbarl"@en .
+lang:BJP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Fanamaket"@en .
+lang:EMZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mbessa"@en .
+lang:FNB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Fanbak"@en .
+lang:GEF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Gerai"@en .
+lang:GWM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Awngthim"@en .
+lang:ORY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Odia"@en .
+lang:YLB	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yaleba"@en .
+lang:GJM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Gunditjmara"@en .
+lang:GNJ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ngen"@en .
+lang:NVO	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nyokon"@en .
+lang:RXW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Karuwali"@en .
+lang:XDA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Darkinyung"@en .
+lang:DTD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ditidaht"@en .
+lang:FBL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"West Albay Bikol"@en .
+lang:JMW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mouwase"@en .
+lang:UTH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"ut-Hun"@en .
+lang:RKW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Arakwal"@en .
+lang:TDM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Taruma"@en .
+lang:UGH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kubachi"@en .
+lang:DLK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dahalik"@en .
+lang:GIE	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ga\u0253ogbo"@en .
+lang:LSN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tibetan Sign Language"@en .
+lang:OLK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Olkol"@en .
+lang:PGL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Primitive Irish"@en .
+lang:HRP	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nhirrpi"@en .
+lang:PYS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Paraguayan Sign Language"@en .
+lang:SVM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Slavomolisano"@en .
+lang:NJZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nyishi"@en .
+lang:TVU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tunen"@en .
+lang:DDR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Dhudhuroa"@en .
+lang:EGM	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Benamanga"@en .
+lang:LKU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kungkari"@en .
+lang:SHD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kundal Shahi"@en .
+lang:VKN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Koro Nulu"@en .
+lang:XBY	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Batyala"@en .
+lang:GOV	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Goo"@en .
+lang:NRU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Narua"@en .
+lang:OKC	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kobo"@en .
+lang:VBK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Southwestern Bontok"@en .
+lang:XWT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wotjobaluk"@en .
+lang:NEU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Neo"@en .
+lang:NQL	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ngendelengo"@en .
+lang:XJT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Jaitmatang"@en .
+lang:XNQ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Ngoni"@en .
+lang:WBS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"West Bengal Sign Language"@en .
+lang:WXW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wardandi"@en .
+lang:ZKD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kadu"@en .
+lang:DMW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Mudburra"@en .
+lang:GBW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Gabi-Gabi"@en .
+lang:ITD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Southern Tidung"@en .
+lang:JGK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Gwak"@en .
+lang:WEG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wergaia"@en .
+lang:ZBA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Balaibalan"@en .
+lang:BFX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Bantayanon"@en .
+lang:DTH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Adithinngithigh"@en .
+lang:GIH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Githabul"@en .
+lang:IMT	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Imotong"@en .
+lang:TEZ	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Tetserret"@en .
+lang:ZGH	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Standard Moroccan Tamazight"@en .
+lang:AJN	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Andajin"@en .
+lang:GJR	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Gurindji Kriol"@en .
+lang:UKI	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Kui"@en .
+lang:YGA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Malyangapa"@en .
+lang:AOU	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"A'ou"@en .
+lang:BDF	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Biage"@en .
+lang:ESG	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Aheri Gondi"@en .
+lang:GII	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Girirra"@en .
+lang:NUK	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Nuu-chah-nulth"@en .
+lang:TVX	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Taivoan"@en .
+lang:XUD	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Umiida"@en .
+lang:XYA	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Yaygir"@en .
+lang:JLS	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Jamaican Sign Language"@en .
+lang:XWW	rdf:type	skos:Concept ;
+	skos:inScheme	eu-pub:language ;
+	skos:prefLabel	"Wemba Wemba"@en .
