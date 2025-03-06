@@ -12,26 +12,6 @@
   rdfs:label "Countries Authority Table"@en ;
   ns1:prefLabel "Countries Authority Table"@en .
 
-<http://publications.europa.eu/resource/authority/country/AUT>
-  a skos:Concept ;
-  ns1:deprecated "false" ;
-  ns1:protocol.order "EU-20" ;
-  skos:inScheme ns2:country ;
-  ns1:authority-code "AUT" ;
-  ns1:op-code "AUT" ;
-  ns2:op-code "AUT" ;
-  dc11:identifier "AUT" ;
-  ns1:protocol-order "EU-20" ;
-  ns1:start.use "1950-05-09" ;
-  skos:prefLabel "Аўстрыя"@be, "Austrija"@bs, "Aвcтpия"@bg, "Àustria"@ca, "Rakousko"@cs, "Østrig"@da, "Österreich"@de, "Αυστρία"@el, "Austria"@en, "Austria"@et, "Austria"@eu, "Eysturríki"@fo, "Itävalta"@fi, "Autriche"@fr, "An Ostair"@ga, "Austria"@gl, "Austrija"@hr, "Ausztria"@hu, "Austurríki"@is, "Austria"@it, "Austrija"@lv, "Austrija"@lt, "Австрија"@mk, "L-Awstrija"@mt, "Oostenrijk"@nl, "Østerrike"@no, "Austria"@pl, "Áustria"@pt, "Austria"@rm, "Austria"@ro, "Австрия"@ru, "Rakúsko"@sk, "Avstrija"@sl, "Austria"@es, "Austria"@sq, "Аустрија"@sr, "Österrike"@sv, "Avusturya"@tr, "Австрія"@uk ;
-  skos:altLabel "Аўстрыйская Рэспубліка"@be, "Republika Austrija"@bs, "Република Австрия"@bg, "República d’Àustria"@ca, "Rakouská republika"@cs, "Republikken Østrig"@da, "Republik Österreich"@de, "Δημοκρατία της Αυστρίας"@el, "Republic of Austria"@en, "Austria Vabariik"@et, "Austriako Errepublika"@eu, "Lýðveldið Eysturríki"@fo, "Itävallan tasavalta"@fi, "République d’Autriche"@fr, "Poblacht na hOstaire"@ga, "República da Austria"@gl, "Republika Austrija"@hr, "Osztrák Köztársaság"@hu, "Lýðveldið Austurríki"@is, "Repubblica d’Austria"@it, "Austrijas Republika"@lv, "Austrijos Respublika"@lt, "Република Австрија"@mk, "Ir-Repubblika tal-Awstrija"@mt, "Republiek Oostenrijk"@nl, "Republikken Østerrike"@no, "Republika Austrii"@pl, "República da Áustria"@pt, "Republica da l’Austria"@rm, "Republica Austria"@ro, "Австрийская Республика"@ru, "Rakúska republika"@sk, "Republika Avstrija"@sl, "República de Austria"@es, "Republika e Austrisë"@sq, "Република Аустрија"@sr, "Republiken Österrike"@sv, "Avusturya Cumhuriyeti"@tr, "Австрійська Республіка"@uk ;
-  ns1:op-mapped-code [
-    a ns1:MappedCode ;
-    dc11:source "EurLex" ;
-    ns1:affected-table "FD_040" ;
-    ns1:legacy-code "AT"
-  ] .
-
 <http://publications.europa.eu/resource/authority/country/BEL>
   a skos:Concept ;
   ns1:deprecated "false" ;
@@ -52,24 +32,24 @@
     ns1:legacy-code "BE"
   ] .
 
-<http://publications.europa.eu/resource/authority/country/CYP>
+<http://publications.europa.eu/resource/authority/country/BGR>
   a skos:Concept ;
   ns1:deprecated "false" ;
-  ns1:protocol.order "EU-13" ;
+  ns1:protocol.order "EU-02" ;
   skos:inScheme ns2:country ;
-  ns1:authority-code "CYP" ;
-  ns1:op-code "CYP" ;
-  ns2:op-code "CYP" ;
-  dc11:identifier "CYP" ;
-  ns1:protocol-order "EU-13" ;
-  ns1:start.use "1960-08-16" ;
-  skos:prefLabel "Кіпр"@be, "Kipar"@bs, "Кипъp"@bg, "Xipre"@ca, "Kypr"@cs, "Cypern"@da, "Zypern"@de, "Κύπρος"@el, "Cyprus"@en, "Küpros"@et, "Zipre"@eu, "Kýpros"@fo, "Kypros"@fi, "Chypre"@fr, "An Chipir"@ga, "Chipre"@gl, "Cipar"@hr, "Ciprus"@hu, "Kýpur"@is, "Cipro"@it, "Kipra"@lv, "Kipras"@lt, "Кипар"@mk, "Ċipru"@mt, "Cyprus"@nl, "Kypros"@no, "Cypr"@pl, "Chipre"@pt, "Cipra"@rm, "Cipru"@ro, "Кипр"@ru, "Cyprus"@sk, "Ciper"@sl, "Chipre"@es, "Qipro"@sq, "Кипар"@sr, "Cypern"@sv, "Kıbrıs"@tr, "Кіпр"@uk ;
-  skos:altLabel "Рэспу́бліка Кіпр"@be, "Republika Kipar"@bs, "Република Кипър"@bg, "República de Xipre"@ca, "Kyperská republika"@cs, "Republikken Cypern"@da, "Republik Zypern"@de, "Κυπριακή Δημοκρατία"@el, "Republic of Cyprus"@en, "Küprose Vabariik"@et, "Zipreko Errepublika"@eu, "Lýðveldið Kýpros"@fo, "Kyproksen tasavalta"@fi, "République de Chypre"@fr, "Poblacht na Cipire"@ga, "República de Chipre"@gl, "Republika Cipar"@hr, "Ciprusi Köztársaság"@hu, "Lýðveldið Kýpur"@is, "Repubblica di Cipro"@it, "Kipras Republika"@lv, "Kipro Respublika"@lt, "Република Кипар"@mk, "Ir-Repubblika ta’ Ċipru"@mt, "Republiek Cyprus"@nl, "Republikken Kypros"@no, "Republika Cypryjska"@pl, "República de Chipre"@pt, "Republica da la Cipra"@rm, "Republica Cipru"@ro, "Республика Кипр"@ru, "Cyperská republika"@sk, "Republika Ciper"@sl, "República de Chipre"@es, "Republika e Qipros"@sq, "Република Кипар"@sr, "Republiken Cypern"@sv, "Kıbrıs Cumhuriyeti"@tr, "Республіка Кіпр"@uk ;
+  ns1:authority-code "BGR" ;
+  ns1:op-code "BGR" ;
+  ns2:op-code "BGR" ;
+  dc11:identifier "BGR" ;
+  ns1:protocol-order "EU-02" ;
+  ns1:start.use "1990-01-01" ;
+  skos:prefLabel "Балгарыя"@be, "Bugarska"@bs, "България"@bg, "Bulgària"@ca, "Bulharsko"@cs, "Bulgarien"@da, "Bulgarien"@de, "Βουλγαρία"@el, "Bulgaria"@en, "Bulgaaria"@et, "Bulgaria"@eu, "Bulgaria"@fo, "Bulgaria"@fi, "Bulgarie"@fr, "An Bhulgáir"@ga, "Bulgaria"@gl, "Bugarska"@hr, "Bulgária"@hu, "Búlgaría"@is, "Bulgaria"@it, "Bulgārija"@lv, "Bulgarija"@lt, "Бъгария"@mk, "Il-Bulgarija"@mt, "Bulgarije"@nl, "Bulgaria"@no, "Bułgaria"@pl, "Bulgária"@pt, "Bulgaria"@rm, "Bulgaria"@ro, "Болгария"@ru, "Bulharsko"@sk, "Bolgarija"@sl, "Bulgaria"@es, "Bullgaria"@sq, "Бугарска"@sr, "Bulgarien"@sv, "Bulgaristan"@tr, "Болгарія"@uk ;
+  skos:altLabel "Рэспу́бліка Балгарыя"@be, "Republika Bugarska"@bs, "Република България"@bg, "República de Bulgària"@ca, "Bulharská republika"@cs, "Republikken Bulgarien"@da, "Republik Bulgarien"@de, "Δημοκρατία της Βουλγαρίας"@el, "Republic of Bulgaria"@en, "Bulgaaria Vabariik"@et, "Bulgariako Errepublika"@eu, "Lýðveldið Bulgaria"@fo, "Bulgarian tasavalta"@fi, "République de Bulgarie"@fr, "Poblacht na Bulgáire"@ga, "República da Bulgaria"@gl, "Republika Bugarska"@hr, "Bolgár Köztársaság"@hu, "Lýðveldið Búlgaría"@is, "Repubblica di Bulgaria"@it, "Bulgārijas Republika"@lv, "Bulgarijos Respublika"@lt, "Република Бъгария"@mk, "Ir-Repubblika tal-Bulgarija"@mt, "Republiek Bulgarije"@nl, "Republikken Bulgaria"@no, "Republika Bułgarii"@pl, "República da Bulgária"@pt, "Republica da la Bulgaria"@rm, "Republica Bulgaria"@ro, "Республика Болгария"@ru, "Bulharská republika"@sk, "Republika Bolgarija"@sl, "República de Bulgaria"@es, "Republika e Bullgarisë"@sq, "Република Бугарска"@sr, "Republiken Bulgarien"@sv, "Bulgaristan Cumhuriyeti"@tr, "Республіка Болгарія"@uk ;
   ns1:op-mapped-code [
     a ns1:MappedCode ;
     dc11:source "EurLex" ;
-    ns1:affected-table "FD_010" ;
-    ns1:legacy-code "CY"
+    ns1:affected-table "FD_110" ;
+    ns1:legacy-code "BG"
   ] .
 
 <http://publications.europa.eu/resource/authority/country/CZE>
@@ -112,6 +92,26 @@
     ns1:legacy-code "DK"
   ] .
 
+<http://publications.europa.eu/resource/authority/country/DEU>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  ns1:protocol.order "EU-05" ;
+  skos:inScheme ns2:country ;
+  ns1:authority-code "DEU" ;
+  ns1:op-code "DEU" ;
+  ns2:op-code "DEU" ;
+  dc11:identifier "DEU" ;
+  ns1:protocol-order "EU-05" ;
+  ns1:start.use "1949-05-23" ;
+  skos:prefLabel "Германія"@be, "Njemačka"@bs, "Гepмaния"@bg, "Alemanya"@ca, "Německo"@cs, "Tyskland"@da, "Deutschland"@de, "Γερμανία"@el, "Germany"@en, "Saksamaa"@et, "Alemania"@eu, "Týskland"@fo, "Saksa"@fi, "Allemagne"@fr, "An Ghearmáin"@ga, "Alemaña"@gl, "Njemačka"@hr, "Németország"@hu, "Þyskaland"@is, "Germania"@it, "Vācija"@lv, "Vokietija"@lt, "Германија"@mk, "Il-Ġermanja"@mt, "Duitsland"@nl, "Tyskland"@no, "Niemcy"@pl, "Alemanha"@pt, "Germania"@rm, "Germania"@ro, "Германия"@ru, "Nemecko"@sk, "Nemčija"@sl, "Alemania"@es, "Gjermania"@sq, "Немачка"@sr, "Tyskland"@sv, "Almanya"@tr, "Німеччина"@uk ;
+  skos:altLabel "Федэратыўная Рэспу́бліка Германія"@be, "Savezna Republika Njemačka"@bs, "Федерална република Германия"@bg, "República Federal d'Alemanya"@ca, "Spolková republika Německo"@cs, "Forbundsrepublikken Tyskland"@da, "Bundesrepublik Deutschland"@de, "Ομοσπονδιακή Δημοκρατία της Γερμανίας"@el, "Federal Republic of Germany"@en, "Saksamaa Liitvabariik"@et, "Alemaniako Errepublika Federal"@eu, "Samveldislýðveldið Týskland"@fo, "Saksan liittotasavalta"@fi, "République fédérale d'Allemagne"@fr, "Poblacht Chónaidhme na Gearmáine"@ga, "República Federal de Alemaña"@gl, "Savezna Republika Njemačka"@hr, "Németországi Szövetségi Köztársaság"@hu, "Sambandslýðveldið Þyskaland"@is, "Repubblica federale di Germania"@it, "Vācijas Federatīvā Republika"@lv, "Vokietijos Federacin- Respublika"@lt, "Сојузна Република Германија"@mk, "Ir-Repubblika Federali tal-Ġermanja"@mt, "Bondsrepubliek Duitsland"@nl, "Forbondrepublikken Tyskland"@no, "Republika Federalna Niemiec"@pl, "República Federal da Alemanha"@pt, "Republica federal da la Germania"@rm, "Republica Federală Germania"@ro, "Федеративная Республика Германия"@ru, "Spolková republika Nemecko"@sk, "Zvezna republika Nemčija"@sl, "República Federal de Alemania"@es, "Republika Federale e Gjermanisë"@sq, "Савезна Република Немачка"@sr, "Förbundsrepubliken Tyskland"@sv, "Almanya Federal Cumhuriyeti"@tr, "Федеративна Республіка Німеччина"@uk ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_110" ;
+    ns1:legacy-code "DE"
+  ] .
+
 <http://publications.europa.eu/resource/authority/country/EST>
   a skos:Concept ;
   ns1:deprecated "false" ;
@@ -130,6 +130,26 @@
     dc11:source "EurLex" ;
     ns1:affected-table "FD_110" ;
     ns1:legacy-code "EE"
+  ] .
+
+<http://publications.europa.eu/resource/authority/country/IRL>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  ns1:protocol.order "EU-07" ;
+  skos:inScheme ns2:country ;
+  ns1:authority-code "IRL" ;
+  ns1:op-code "IRL" ;
+  ns2:op-code "IRL" ;
+  dc11:identifier "IRL" ;
+  ns1:protocol-order "EU-07" ;
+  ns1:start.use "1950-05-09" ;
+  skos:prefLabel "Ірландыя"@be, "Irska"@bs, "Иpлaндия"@bg, "Irlanda"@ca, "Irsko"@cs, "Irland"@da, "Irland"@de, "Ιρλανδία"@el, "Ireland"@en, "Iirimaa"@et, "Irlanda"@eu, "Írland"@fo, "Irlanti"@fi, "Irlande"@fr, "Éire"@ga, "Irska"@gl, "Irlanda"@hr, "Írország"@hu, "Írland"@is, "Irlanda"@it, "Īrija"@lv, "Airija"@lt, "Ирска"@mk, "L-Irlanda"@mt, "Ierland"@nl, "Irland"@no, "Irlandia"@pl, "Irlanda"@pt, "Irlanda"@rm, "Irlanda"@ro, "Ирландия"@ru, "Írsko"@sk, "Irska"@sl, "Irlanda"@es, "Irlanda"@sq, "Ирска"@sr, "Irland"@sv, "İrlanda"@tr, "Ірландія"@uk ;
+  skos:altLabel "Република Ирска"@mk, "Republica da l'Irlanda"@rm ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_110" ;
+    ns1:legacy-code "IE"
   ] .
 
 <http://publications.europa.eu/resource/authority/country/GRC>
@@ -172,26 +192,6 @@
     ns1:legacy-code "ES"
   ] .
 
-<http://publications.europa.eu/resource/authority/country/FIN>
-  a skos:Concept ;
-  ns1:deprecated "false" ;
-  ns1:protocol.order "EU-26" ;
-  skos:inScheme ns2:country ;
-  ns1:authority-code "FIN" ;
-  ns1:op-code "FIN" ;
-  ns2:op-code "FIN" ;
-  dc11:identifier "FIN" ;
-  ns1:protocol-order "EU-26" ;
-  ns1:start.use "1950-05-09" ;
-  skos:prefLabel "Фінляндыя"@be, "Finska"@bs, "Финлaндия"@bg, "Finlàndia"@ca, "Finsko"@cs, "Finland"@da, "Finnland"@de, "Φινλανδία"@el, "Finland"@en, "Soome"@et, "Finlandia"@eu, "Finnland"@fo, "Suomi"@fi, "Finlande"@fr, "An Fhionlainn"@ga, "Finlandia"@gl, "Finska"@hr, "Finnország"@hu, "Finnland"@is, "Finlandia"@it, "Somija"@lv, "Suomija"@lt, "Финска"@mk, "Il-Finlandja"@mt, "Finland"@nl, "Finland"@no, "Finlandia"@pl, "Finlândia"@pt, "Finlanda"@rm, "Finlanda"@ro, "Финляндия"@ru, "Fínsko"@sk, "Finska"@sl, "Finlandia"@es, "Finlanda"@sq, "Финска"@sr, "Finland"@sv, "Finlandiya"@tr, "Фінляндія"@uk ;
-  skos:altLabel "Рэспу́бліка Фінляндыя"@be, "Republika Finska"@bs, "Република Финландия"@bg, "República de Finlàndia"@ca, "Finská republika"@cs, "Republikken Finland"@da, "Republik Finnland"@de, "Δημοκρατία της Φινλανδίας"@el, "Republic of Finland"@en, "Soome Vabariik"@et, "Finlandiako Errepublika"@eu, "Lýðveldið Finnland"@fo, "Suomen tasavalta"@fi, "République de Finlande"@fr, "Poblacht na Fionlainne"@ga, "República Finlandesa"@gl, "Republika Finska"@hr, "Finn Köztársaság"@hu, "Lýðveldið Finnland"@is, "Repubblica di Finlandia"@it, "Somijas Republika"@lv, "Suomijos Respublika"@lt, "Република Финска"@mk, "Ir-Repubblika tal-Finlandja"@mt, "Republiek Finland"@nl, "Republikken Finland"@no, "Republika Finlandii"@pl, "República da Finlândia"@pt, "Republica da la Finlanda"@rm, "Republica Finlanda"@ro, "Финляндская Республика"@ru, "Fínska republika"@sk, "Republika Finska"@sl, "República de Finlandia"@es, "Republika Finlandeze"@sq, "Република Финска"@sr, "Republiken Finland"@sv, "Finlandiya Cumhuriyeti"@tr, "Фінляндська Республіка"@uk ;
-  ns1:op-mapped-code [
-    a ns1:MappedCode ;
-    dc11:source "EurLex" ;
-    ns1:affected-table "FD_110" ;
-    ns1:legacy-code "FI"
-  ] .
-
 <http://publications.europa.eu/resource/authority/country/FRA>
   a skos:Concept ;
   ns1:deprecated "false" ;
@@ -232,26 +232,6 @@
     ns1:legacy-code "HR"
   ] .
 
-<http://publications.europa.eu/resource/authority/country/IRL>
-  a skos:Concept ;
-  ns1:deprecated "false" ;
-  ns1:protocol.order "EU-07" ;
-  skos:inScheme ns2:country ;
-  ns1:authority-code "IRL" ;
-  ns1:op-code "IRL" ;
-  ns2:op-code "IRL" ;
-  dc11:identifier "IRL" ;
-  ns1:protocol-order "EU-07" ;
-  ns1:start.use "1950-05-09" ;
-  skos:prefLabel "Ірландыя"@be, "Irska"@bs, "Иpлaндия"@bg, "Irlanda"@ca, "Irsko"@cs, "Irland"@da, "Irland"@de, "Ιρλανδία"@el, "Ireland"@en, "Iirimaa"@et, "Irlanda"@eu, "Írland"@fo, "Irlanti"@fi, "Irlande"@fr, "Éire"@ga, "Irska"@gl, "Irlanda"@hr, "Írország"@hu, "Írland"@is, "Irlanda"@it, "Īrija"@lv, "Airija"@lt, "Ирска"@mk, "L-Irlanda"@mt, "Ierland"@nl, "Irland"@no, "Irlandia"@pl, "Irlanda"@pt, "Irlanda"@rm, "Irlanda"@ro, "Ирландия"@ru, "Írsko"@sk, "Irska"@sl, "Irlanda"@es, "Irlanda"@sq, "Ирска"@sr, "Irland"@sv, "İrlanda"@tr, "Ірландія"@uk ;
-  skos:altLabel "Република Ирска"@mk, "Republica da l'Irlanda"@rm ;
-  ns1:op-mapped-code [
-    a ns1:MappedCode ;
-    dc11:source "EurLex" ;
-    ns1:affected-table "FD_110" ;
-    ns1:legacy-code "IE"
-  ] .
-
 <http://publications.europa.eu/resource/authority/country/ITA>
   a skos:Concept ;
   ns1:deprecated "false" ;
@@ -270,6 +250,46 @@
     dc11:source "EurLex" ;
     ns1:affected-table "FD_110" ;
     ns1:legacy-code "IT"
+  ] .
+
+<http://publications.europa.eu/resource/authority/country/CYP>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  ns1:protocol.order "EU-13" ;
+  skos:inScheme ns2:country ;
+  ns1:authority-code "CYP" ;
+  ns1:op-code "CYP" ;
+  ns2:op-code "CYP" ;
+  dc11:identifier "CYP" ;
+  ns1:protocol-order "EU-13" ;
+  ns1:start.use "1960-08-16" ;
+  skos:prefLabel "Кіпр"@be, "Kipar"@bs, "Кипъp"@bg, "Xipre"@ca, "Kypr"@cs, "Cypern"@da, "Zypern"@de, "Κύπρος"@el, "Cyprus"@en, "Küpros"@et, "Zipre"@eu, "Kýpros"@fo, "Kypros"@fi, "Chypre"@fr, "An Chipir"@ga, "Chipre"@gl, "Cipar"@hr, "Ciprus"@hu, "Kýpur"@is, "Cipro"@it, "Kipra"@lv, "Kipras"@lt, "Кипар"@mk, "Ċipru"@mt, "Cyprus"@nl, "Kypros"@no, "Cypr"@pl, "Chipre"@pt, "Cipra"@rm, "Cipru"@ro, "Кипр"@ru, "Cyprus"@sk, "Ciper"@sl, "Chipre"@es, "Qipro"@sq, "Кипар"@sr, "Cypern"@sv, "Kıbrıs"@tr, "Кіпр"@uk ;
+  skos:altLabel "Рэспу́бліка Кіпр"@be, "Republika Kipar"@bs, "Република Кипър"@bg, "República de Xipre"@ca, "Kyperská republika"@cs, "Republikken Cypern"@da, "Republik Zypern"@de, "Κυπριακή Δημοκρατία"@el, "Republic of Cyprus"@en, "Küprose Vabariik"@et, "Zipreko Errepublika"@eu, "Lýðveldið Kýpros"@fo, "Kyproksen tasavalta"@fi, "République de Chypre"@fr, "Poblacht na Cipire"@ga, "República de Chipre"@gl, "Republika Cipar"@hr, "Ciprusi Köztársaság"@hu, "Lýðveldið Kýpur"@is, "Repubblica di Cipro"@it, "Kipras Republika"@lv, "Kipro Respublika"@lt, "Република Кипар"@mk, "Ir-Repubblika ta’ Ċipru"@mt, "Republiek Cyprus"@nl, "Republikken Kypros"@no, "Republika Cypryjska"@pl, "República de Chipre"@pt, "Republica da la Cipra"@rm, "Republica Cipru"@ro, "Республика Кипр"@ru, "Cyperská republika"@sk, "Republika Ciper"@sl, "República de Chipre"@es, "Republika e Qipros"@sq, "Република Кипар"@sr, "Republiken Cypern"@sv, "Kıbrıs Cumhuriyeti"@tr, "Республіка Кіпр"@uk ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "CY"
+  ] .
+
+<http://publications.europa.eu/resource/authority/country/LVA>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  ns1:protocol.order "EU-14" ;
+  skos:inScheme ns2:country ;
+  ns1:authority-code "LVA" ;
+  ns1:op-code "LVA" ;
+  ns2:op-code "LVA" ;
+  dc11:identifier "LVA" ;
+  ns1:protocol-order "EU-14" ;
+  ns1:start.use "1991-09-06" ;
+  skos:prefLabel "Ла́твія"@be, "Latvija"@bs, "Лaтвия"@bg, "Letònia"@ca, "Lotyšsko"@cs, "Letland"@da, "Lettland"@de, "Λετονία"@el, "Latvia"@en, "Läti"@et, "Letonia"@eu, "Lettland"@fo, "Latvia"@fi, "Lettonie"@fr, "An Laitvia"@ga, "Letonia"@gl, "Letonija"@hr, "Lettország"@hu, "Lettland"@is, "Lettonia"@it, "Latvija"@lv, "Latvija"@lt, "Латвија"@mk, "Il-Latvja"@mt, "Letland"@nl, "Latvia"@no, "Łotwa"@pl, "Letónia"@pt, "Lettonia"@rm, "Letonia"@ro, "Латвия"@ru, "Lotyšsko"@sk, "Latvija"@sl, "Letonia"@es, "Letonia"@sq, "Летонија"@sr, "Lettland"@sv, "Letonya"@tr, "Латвія"@uk ;
+  skos:altLabel "Латвійская Рэспу́бліка"@be, "Republika Latvija"@bs, "Република Латвия"@bg, "República de Letònia"@ca, "Lotyšská republika"@cs, "Republikken Letland"@da, "Republik Lettland"@de, "Δημοκρατία της Λετονίας"@el, "Republic of Latvia"@en, "Läti Vabariik"@et, "Letoniako Errepublika"@eu, "Lýðveldið Lettland"@fo, "Latvian tasavalta"@fi, "République de Lettonie"@fr, "Poblacht na Laitvia"@ga, "República de Letonia"@gl, "Republika Letonija"@hr, "Lett Köztársaság"@hu, "Lýðveldið Lettland"@is, "Repubblica di Lettonia"@it, "Latvijas Republika"@lv, "Latvijos Respublika"@lt, "Република Латвија"@mk, "Ir-Repubblika tal-Latvja"@mt, "Republiek Letland"@nl, "Republikken Latvia"@no, "Republika Łotewska"@pl, "República da Letónia"@pt, "Republica da la Lettonia"@rm, "Republica Letonia"@ro, "Латвийская Республика"@ru, "Lotyšská republika"@sk, "Republika Latvija"@sl, "República de Letonia"@es, "Republika e Letonisë"@sq, "Република Летонија"@sr, "Republiken Lettland"@sv, "Letonya Cumhuriyeti"@tr, "Латвійська Республіка"@uk ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_110" ;
+    ns1:legacy-code "LV"
   ] .
 
 <http://publications.europa.eu/resource/authority/country/LTU>
@@ -312,26 +332,25 @@
     ns1:legacy-code "LU"
   ] .
 
-<http://publications.europa.eu/resource/authority/country/LVA>
+<http://publications.europa.eu/resource/authority/country/HUN>
   a skos:Concept ;
   ns1:deprecated "false" ;
-  ns1:protocol.order "EU-14" ;
+  ns1:protocol.order "EU-17" ;
   skos:inScheme ns2:country ;
-  ns1:authority-code "LVA" ;
-  ns1:op-code "LVA" ;
-  ns2:op-code "LVA" ;
-  dc11:identifier "LVA" ;
-  ns1:protocol-order "EU-14" ;
-  ns1:start.use "1991-09-06" ;
-  skos:prefLabel "Ла́твія"@be, "Latvija"@bs, "Лaтвия"@bg, "Letònia"@ca, "Lotyšsko"@cs, "Letland"@da, "Lettland"@de, "Λετονία"@el, "Latvia"@en, "Läti"@et, "Letonia"@eu, "Lettland"@fo, "Latvia"@fi, "Lettonie"@fr, "An Laitvia"@ga, "Letonia"@gl, "Letonija"@hr, "Lettország"@hu, "Lettland"@is, "Lettonia"@it, "Latvija"@lv, "Latvija"@lt, "Латвија"@mk, "Il-Latvja"@mt, "Letland"@nl, "Latvia"@no, "Łotwa"@pl, "Letónia"@pt, "Lettonia"@rm, "Letonia"@ro, "Латвия"@ru, "Lotyšsko"@sk, "Latvija"@sl, "Letonia"@es, "Letonia"@sq, "Летонија"@sr, "Lettland"@sv, "Letonya"@tr, "Латвія"@uk ;
-  skos:altLabel "Латвійская Рэспу́бліка"@be, "Republika Latvija"@bs, "Република Латвия"@bg, "República de Letònia"@ca, "Lotyšská republika"@cs, "Republikken Letland"@da, "Republik Lettland"@de, "Δημοκρατία της Λετονίας"@el, "Republic of Latvia"@en, "Läti Vabariik"@et, "Letoniako Errepublika"@eu, "Lýðveldið Lettland"@fo, "Latvian tasavalta"@fi, "République de Lettonie"@fr, "Poblacht na Laitvia"@ga, "República de Letonia"@gl, "Republika Letonija"@hr, "Lett Köztársaság"@hu, "Lýðveldið Lettland"@is, "Repubblica di Lettonia"@it, "Latvijas Republika"@lv, "Latvijos Respublika"@lt, "Република Латвија"@mk, "Ir-Repubblika tal-Latvja"@mt, "Republiek Letland"@nl, "Republikken Latvia"@no, "Republika Łotewska"@pl, "República da Letónia"@pt, "Republica da la Lettonia"@rm, "Republica Letonia"@ro, "Латвийская Республика"@ru, "Lotyšská republika"@sk, "Republika Latvija"@sl, "República de Letonia"@es, "Republika e Letonisë"@sq, "Република Летонија"@sr, "Republiken Lettland"@sv, "Letonya Cumhuriyeti"@tr, "Латвійська Республіка"@uk ;
+  ns1:authority-code "HUN" ;
+  ns1:op-code "HUN" ;
+  ns2:op-code "HUN" ;
+  dc11:identifier "HUN" ;
+  ns1:protocol-order "EU-17" ;
+  ns1:start.use "2012-01-01" ;
+  skos:prefLabel "Венгрыя"@be, "Mađarska"@bs, "Унгapия"@bg, "Hongria"@ca, "Maďarsko"@cs, "Ungarn"@da, "Ungarn"@de, "Ουγγαρία"@el, "Hungary"@en, "Ungari"@et, "Hungaria"@eu, "Ungarn"@fo, "Unkari"@fi, "Hongrie"@fr, "An Ungáir"@ga, "Hungría"@gl, "Mađarska"@hr, "Magyarország"@hu, "Ungverjaland"@is, "Ungheria"@it, "Ungārija"@lv, "Vengrija"@lt, "Унгарија"@mk, "L-Ungerija"@mt, "Hongarije"@nl, "Ungarn"@no, "Węgry"@pl, "Hungria"@pt, "Ungaria"@rm, "Ungaria"@ro, "Венгрия"@ru, "Maďarsko"@sk, "Madžarska"@sl, "Hungría"@es, "Hungaria"@sq, "Мађарска"@sr, "Ungern"@sv, "Macaristan"@tr, "Уго́рщина"@uk ;
   ns1:op-mapped-code [
     a ns1:MappedCode ;
     dc11:source "EurLex" ;
     ns1:affected-table "FD_110" ;
-    ns1:legacy-code "LV"
+    ns1:legacy-code "HU"
   ] .
-
+  
 <http://publications.europa.eu/resource/authority/country/MLT>
   a skos:Concept ;
   ns1:deprecated "false" ;
@@ -370,6 +389,26 @@
     dc11:source "EurLex" ;
     ns1:affected-table "FD_110" ;
     ns1:legacy-code "NL"
+  ] .
+
+<http://publications.europa.eu/resource/authority/country/AUT>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  ns1:protocol.order "EU-20" ;
+  skos:inScheme ns2:country ;
+  ns1:authority-code "AUT" ;
+  ns1:op-code "AUT" ;
+  ns2:op-code "AUT" ;
+  dc11:identifier "AUT" ;
+  ns1:protocol-order "EU-20" ;
+  ns1:start.use "1950-05-09" ;
+  skos:prefLabel "Аўстрыя"@be, "Austrija"@bs, "Aвcтpия"@bg, "Àustria"@ca, "Rakousko"@cs, "Østrig"@da, "Österreich"@de, "Αυστρία"@el, "Austria"@en, "Austria"@et, "Austria"@eu, "Eysturríki"@fo, "Itävalta"@fi, "Autriche"@fr, "An Ostair"@ga, "Austria"@gl, "Austrija"@hr, "Ausztria"@hu, "Austurríki"@is, "Austria"@it, "Austrija"@lv, "Austrija"@lt, "Австрија"@mk, "L-Awstrija"@mt, "Oostenrijk"@nl, "Østerrike"@no, "Austria"@pl, "Áustria"@pt, "Austria"@rm, "Austria"@ro, "Австрия"@ru, "Rakúsko"@sk, "Avstrija"@sl, "Austria"@es, "Austria"@sq, "Аустрија"@sr, "Österrike"@sv, "Avusturya"@tr, "Австрія"@uk ;
+  skos:altLabel "Аўстрыйская Рэспубліка"@be, "Republika Austrija"@bs, "Република Австрия"@bg, "República d’Àustria"@ca, "Rakouská republika"@cs, "Republikken Østrig"@da, "Republik Österreich"@de, "Δημοκρατία της Αυστρίας"@el, "Republic of Austria"@en, "Austria Vabariik"@et, "Austriako Errepublika"@eu, "Lýðveldið Eysturríki"@fo, "Itävallan tasavalta"@fi, "République d’Autriche"@fr, "Poblacht na hOstaire"@ga, "República da Austria"@gl, "Republika Austrija"@hr, "Osztrák Köztársaság"@hu, "Lýðveldið Austurríki"@is, "Repubblica d’Austria"@it, "Austrijas Republika"@lv, "Austrijos Respublika"@lt, "Република Австрија"@mk, "Ir-Repubblika tal-Awstrija"@mt, "Republiek Oostenrijk"@nl, "Republikken Østerrike"@no, "Republika Austrii"@pl, "República da Áustria"@pt, "Republica da l’Austria"@rm, "Republica Austria"@ro, "Австрийская Республика"@ru, "Rakúska republika"@sk, "Republika Avstrija"@sl, "República de Austria"@es, "Republika e Austrisë"@sq, "Република Аустрија"@sr, "Republiken Österrike"@sv, "Avusturya Cumhuriyeti"@tr, "Австрійська Республіка"@uk ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_040" ;
+    ns1:legacy-code "AT"
   ] .
 
 <http://publications.europa.eu/resource/authority/country/POL>
@@ -432,26 +471,6 @@
     ns1:legacy-code "RO"
   ] .
 
-<http://publications.europa.eu/resource/authority/country/SWE>
-  a skos:Concept ;
-  ns1:deprecated "false" ;
-  ns1:protocol.order "EU-27" ;
-  skos:inScheme ns2:country ;
-  ns1:authority-code "SWE" ;
-  ns1:op-code "SWE" ;
-  ns2:op-code "SWE" ;
-  dc11:identifier "SWE" ;
-  ns1:protocol-order "EU-27" ;
-  ns1:start.use "1950-05-09" ;
-  skos:prefLabel "Швецыя"@be, "Švedska"@bs, "Швeция"@bg, "Suècia"@ca, "Švédsko"@cs, "Sverige"@da, "Schweden"@de, "Σουηδία"@el, "Sweden"@en, "Rootsi"@et, "Suedia"@eu, "Svøríki"@fo, "Ruotsi"@fi, "Suède"@fr, "An tSualainn"@ga, "Suecia"@gl, "Švedska"@hr, "Svédország"@hu, "Svíþjóð"@is, "Svezia"@it, "Zviedrija"@lv, "Švedija"@lt, "Шведска"@mk, "L-Isvezja"@mt, "Zweden"@nl, "Sverige"@no, "Szwecja"@pl, "Suécia"@pt, "Svezia"@rm, "Suedia"@ro, "Швеция"@ru, "Švédsko"@sk, "Švedska"@sl, "Suecia"@es, "Suedia"@sq, "Шведска"@sr, "Sverige"@sv, "İsveç"@tr, "Швеція"@uk ;
-  skos:altLabel "Каралеўства Швецыя"@be, "Kraljevina Švedska"@bs, "Кралство Швеция"@bg, "Regne de Suècia"@ca, "Švédské království"@cs, "Kongeriget Sverige"@da, "Königreich Schweden"@de, "Βασίλειο της Σουηδίας"@el, "Kingdom of Sweden"@en, "Rootsi Kuningriik"@et, "Suediako Erresuma"@eu, "Kongsríki Svøríki"@fo, "Ruotsin kuningaskunta"@fi, "Royaume de Suède"@fr, "Ríocht na Sualainne"@ga, "Reino de Suecia"@gl, "Kraljevina Švedska"@hr, "Svéd Királyság"@hu, "Konungsríkið Svíþjóð"@is, "Regno di Svezia"@it, "Zviedrijas Karaliste"@lv, "Švedijos Karalystė"@lt, "Кралство Шведска"@mk, "Ir-Renju tal-Isvezja"@mt, "Koninkrijk Zweden"@nl, "Kongeriket Sverige"@no, "Królestwo Szwecji"@pl, "Reino da Suécia"@pt, "Reginavel da la Svezia"@rm, "Regatul Suediei"@ro, "Королевство Швеция"@ru, "Švédske kráľovstvo"@sk, "Kraljevina Švedska"@sl, "Reino de Suecia"@es, "Mbretëria e Suedisë"@sq, "Краљевина Шведска"@sr, "Konungariket Sverige"@sv, "İsveç Krallığı"@tr, "Королівство Швеція"@uk ;
-  ns1:op-mapped-code [
-    a ns1:MappedCode ;
-    dc11:source "EurLex" ;
-    ns1:affected-table "FD_110" ;
-    ns1:legacy-code "SE"
-  ] .
-
 <http://publications.europa.eu/resource/authority/country/SVN>
   a skos:Concept ;
   ns1:deprecated "false" ;
@@ -492,61 +511,43 @@
     ns1:legacy-code "SK"
   ] .
 
-<http://publications.europa.eu/resource/authority/country/BGR>
+
+<http://publications.europa.eu/resource/authority/country/FIN>
   a skos:Concept ;
   ns1:deprecated "false" ;
-  ns1:protocol.order "EU-02" ;
+  ns1:protocol.order "EU-26" ;
   skos:inScheme ns2:country ;
-  ns1:authority-code "BGR" ;
-  ns1:op-code "BGR" ;
-  ns2:op-code "BGR" ;
-  dc11:identifier "BGR" ;
-  ns1:protocol-order "EU-02" ;
-  ns1:start.use "1990-01-01" ;
-  skos:prefLabel "Балгарыя"@be, "Bugarska"@bs, "България"@bg, "Bulgària"@ca, "Bulharsko"@cs, "Bulgarien"@da, "Bulgarien"@de, "Βουλγαρία"@el, "Bulgaria"@en, "Bulgaaria"@et, "Bulgaria"@eu, "Bulgaria"@fo, "Bulgaria"@fi, "Bulgarie"@fr, "An Bhulgáir"@ga, "Bulgaria"@gl, "Bugarska"@hr, "Bulgária"@hu, "Búlgaría"@is, "Bulgaria"@it, "Bulgārija"@lv, "Bulgarija"@lt, "Бъгария"@mk, "Il-Bulgarija"@mt, "Bulgarije"@nl, "Bulgaria"@no, "Bułgaria"@pl, "Bulgária"@pt, "Bulgaria"@rm, "Bulgaria"@ro, "Болгария"@ru, "Bulharsko"@sk, "Bolgarija"@sl, "Bulgaria"@es, "Bullgaria"@sq, "Бугарска"@sr, "Bulgarien"@sv, "Bulgaristan"@tr, "Болгарія"@uk ;
-  skos:altLabel "Рэспу́бліка Балгарыя"@be, "Republika Bugarska"@bs, "Република България"@bg, "República de Bulgària"@ca, "Bulharská republika"@cs, "Republikken Bulgarien"@da, "Republik Bulgarien"@de, "Δημοκρατία της Βουλγαρίας"@el, "Republic of Bulgaria"@en, "Bulgaaria Vabariik"@et, "Bulgariako Errepublika"@eu, "Lýðveldið Bulgaria"@fo, "Bulgarian tasavalta"@fi, "République de Bulgarie"@fr, "Poblacht na Bulgáire"@ga, "República da Bulgaria"@gl, "Republika Bugarska"@hr, "Bolgár Köztársaság"@hu, "Lýðveldið Búlgaría"@is, "Repubblica di Bulgaria"@it, "Bulgārijas Republika"@lv, "Bulgarijos Respublika"@lt, "Република Бъгария"@mk, "Ir-Repubblika tal-Bulgarija"@mt, "Republiek Bulgarije"@nl, "Republikken Bulgaria"@no, "Republika Bułgarii"@pl, "República da Bulgária"@pt, "Republica da la Bulgaria"@rm, "Republica Bulgaria"@ro, "Республика Болгария"@ru, "Bulharská republika"@sk, "Republika Bolgarija"@sl, "República de Bulgaria"@es, "Republika e Bullgarisë"@sq, "Република Бугарска"@sr, "Republiken Bulgarien"@sv, "Bulgaristan Cumhuriyeti"@tr, "Республіка Болгарія"@uk ;
+  ns1:authority-code "FIN" ;
+  ns1:op-code "FIN" ;
+  ns2:op-code "FIN" ;
+  dc11:identifier "FIN" ;
+  ns1:protocol-order "EU-26" ;
+  ns1:start.use "1950-05-09" ;
+  skos:prefLabel "Фінляндыя"@be, "Finska"@bs, "Финлaндия"@bg, "Finlàndia"@ca, "Finsko"@cs, "Finland"@da, "Finnland"@de, "Φινλανδία"@el, "Finland"@en, "Soome"@et, "Finlandia"@eu, "Finnland"@fo, "Suomi"@fi, "Finlande"@fr, "An Fhionlainn"@ga, "Finlandia"@gl, "Finska"@hr, "Finnország"@hu, "Finnland"@is, "Finlandia"@it, "Somija"@lv, "Suomija"@lt, "Финска"@mk, "Il-Finlandja"@mt, "Finland"@nl, "Finland"@no, "Finlandia"@pl, "Finlândia"@pt, "Finlanda"@rm, "Finlanda"@ro, "Финляндия"@ru, "Fínsko"@sk, "Finska"@sl, "Finlandia"@es, "Finlanda"@sq, "Финска"@sr, "Finland"@sv, "Finlandiya"@tr, "Фінляндія"@uk ;
+  skos:altLabel "Рэспу́бліка Фінляндыя"@be, "Republika Finska"@bs, "Република Финландия"@bg, "República de Finlàndia"@ca, "Finská republika"@cs, "Republikken Finland"@da, "Republik Finnland"@de, "Δημοκρατία της Φινλανδίας"@el, "Republic of Finland"@en, "Soome Vabariik"@et, "Finlandiako Errepublika"@eu, "Lýðveldið Finnland"@fo, "Suomen tasavalta"@fi, "République de Finlande"@fr, "Poblacht na Fionlainne"@ga, "República Finlandesa"@gl, "Republika Finska"@hr, "Finn Köztársaság"@hu, "Lýðveldið Finnland"@is, "Repubblica di Finlandia"@it, "Somijas Republika"@lv, "Suomijos Respublika"@lt, "Република Финска"@mk, "Ir-Repubblika tal-Finlandja"@mt, "Republiek Finland"@nl, "Republikken Finland"@no, "Republika Finlandii"@pl, "República da Finlândia"@pt, "Republica da la Finlanda"@rm, "Republica Finlanda"@ro, "Финляндская Республика"@ru, "Fínska republika"@sk, "Republika Finska"@sl, "República de Finlandia"@es, "Republika Finlandeze"@sq, "Република Финска"@sr, "Republiken Finland"@sv, "Finlandiya Cumhuriyeti"@tr, "Фінляндська Республіка"@uk ;
   ns1:op-mapped-code [
     a ns1:MappedCode ;
     dc11:source "EurLex" ;
     ns1:affected-table "FD_110" ;
-    ns1:legacy-code "BG"
+    ns1:legacy-code "FI"
   ] .
 
-<http://publications.europa.eu/resource/authority/country/DEU>
+<http://publications.europa.eu/resource/authority/country/SWE>
   a skos:Concept ;
   ns1:deprecated "false" ;
-  ns1:protocol.order "EU-05" ;
+  ns1:protocol.order "EU-27" ;
   skos:inScheme ns2:country ;
-  ns1:authority-code "DEU" ;
-  ns1:op-code "DEU" ;
-  ns2:op-code "DEU" ;
-  dc11:identifier "DEU" ;
-  ns1:protocol-order "EU-05" ;
-  ns1:start.use "1949-05-23" ;
-  skos:prefLabel "Германія"@be, "Njemačka"@bs, "Гepмaния"@bg, "Alemanya"@ca, "Německo"@cs, "Tyskland"@da, "Deutschland"@de, "Γερμανία"@el, "Germany"@en, "Saksamaa"@et, "Alemania"@eu, "Týskland"@fo, "Saksa"@fi, "Allemagne"@fr, "An Ghearmáin"@ga, "Alemaña"@gl, "Njemačka"@hr, "Németország"@hu, "Þyskaland"@is, "Germania"@it, "Vācija"@lv, "Vokietija"@lt, "Германија"@mk, "Il-Ġermanja"@mt, "Duitsland"@nl, "Tyskland"@no, "Niemcy"@pl, "Alemanha"@pt, "Germania"@rm, "Germania"@ro, "Германия"@ru, "Nemecko"@sk, "Nemčija"@sl, "Alemania"@es, "Gjermania"@sq, "Немачка"@sr, "Tyskland"@sv, "Almanya"@tr, "Німеччина"@uk ;
-  skos:altLabel "Федэратыўная Рэспу́бліка Германія"@be, "Savezna Republika Njemačka"@bs, "Федерална република Германия"@bg, "República Federal d'Alemanya"@ca, "Spolková republika Německo"@cs, "Forbundsrepublikken Tyskland"@da, "Bundesrepublik Deutschland"@de, "Ομοσπονδιακή Δημοκρατία της Γερμανίας"@el, "Federal Republic of Germany"@en, "Saksamaa Liitvabariik"@et, "Alemaniako Errepublika Federal"@eu, "Samveldislýðveldið Týskland"@fo, "Saksan liittotasavalta"@fi, "République fédérale d'Allemagne"@fr, "Poblacht Chónaidhme na Gearmáine"@ga, "República Federal de Alemaña"@gl, "Savezna Republika Njemačka"@hr, "Németországi Szövetségi Köztársaság"@hu, "Sambandslýðveldið Þyskaland"@is, "Repubblica federale di Germania"@it, "Vācijas Federatīvā Republika"@lv, "Vokietijos Federacin- Respublika"@lt, "Сојузна Република Германија"@mk, "Ir-Repubblika Federali tal-Ġermanja"@mt, "Bondsrepubliek Duitsland"@nl, "Forbondrepublikken Tyskland"@no, "Republika Federalna Niemiec"@pl, "República Federal da Alemanha"@pt, "Republica federal da la Germania"@rm, "Republica Federală Germania"@ro, "Федеративная Республика Германия"@ru, "Spolková republika Nemecko"@sk, "Zvezna republika Nemčija"@sl, "República Federal de Alemania"@es, "Republika Federale e Gjermanisë"@sq, "Савезна Република Немачка"@sr, "Förbundsrepubliken Tyskland"@sv, "Almanya Federal Cumhuriyeti"@tr, "Федеративна Республіка Німеччина"@uk ;
+  ns1:authority-code "SWE" ;
+  ns1:op-code "SWE" ;
+  ns2:op-code "SWE" ;
+  dc11:identifier "SWE" ;
+  ns1:protocol-order "EU-27" ;
+  ns1:start.use "1950-05-09" ;
+  skos:prefLabel "Швецыя"@be, "Švedska"@bs, "Швeция"@bg, "Suècia"@ca, "Švédsko"@cs, "Sverige"@da, "Schweden"@de, "Σουηδία"@el, "Sweden"@en, "Rootsi"@et, "Suedia"@eu, "Svøríki"@fo, "Ruotsi"@fi, "Suède"@fr, "An tSualainn"@ga, "Suecia"@gl, "Švedska"@hr, "Svédország"@hu, "Svíþjóð"@is, "Svezia"@it, "Zviedrija"@lv, "Švedija"@lt, "Шведска"@mk, "L-Isvezja"@mt, "Zweden"@nl, "Sverige"@no, "Szwecja"@pl, "Suécia"@pt, "Svezia"@rm, "Suedia"@ro, "Швеция"@ru, "Švédsko"@sk, "Švedska"@sl, "Suecia"@es, "Suedia"@sq, "Шведска"@sr, "Sverige"@sv, "İsveç"@tr, "Швеція"@uk ;
+  skos:altLabel "Каралеўства Швецыя"@be, "Kraljevina Švedska"@bs, "Кралство Швеция"@bg, "Regne de Suècia"@ca, "Švédské království"@cs, "Kongeriget Sverige"@da, "Königreich Schweden"@de, "Βασίλειο της Σουηδίας"@el, "Kingdom of Sweden"@en, "Rootsi Kuningriik"@et, "Suediako Erresuma"@eu, "Kongsríki Svøríki"@fo, "Ruotsin kuningaskunta"@fi, "Royaume de Suède"@fr, "Ríocht na Sualainne"@ga, "Reino de Suecia"@gl, "Kraljevina Švedska"@hr, "Svéd Királyság"@hu, "Konungsríkið Svíþjóð"@is, "Regno di Svezia"@it, "Zviedrijas Karaliste"@lv, "Švedijos Karalystė"@lt, "Кралство Шведска"@mk, "Ir-Renju tal-Isvezja"@mt, "Koninkrijk Zweden"@nl, "Kongeriket Sverige"@no, "Królestwo Szwecji"@pl, "Reino da Suécia"@pt, "Reginavel da la Svezia"@rm, "Regatul Suediei"@ro, "Королевство Швеция"@ru, "Švédske kráľovstvo"@sk, "Kraljevina Švedska"@sl, "Reino de Suecia"@es, "Mbretëria e Suedisë"@sq, "Краљевина Шведска"@sr, "Konungariket Sverige"@sv, "İsveç Krallığı"@tr, "Королівство Швеція"@uk ;
   ns1:op-mapped-code [
     a ns1:MappedCode ;
     dc11:source "EurLex" ;
     ns1:affected-table "FD_110" ;
-    ns1:legacy-code "DE"
-  ] .
-
-<http://publications.europa.eu/resource/authority/country/HUN>
-  a skos:Concept ;
-  ns1:deprecated "false" ;
-  ns1:protocol.order "EU-17" ;
-  skos:inScheme ns2:country ;
-  ns1:authority-code "HUN" ;
-  ns1:op-code "HUN" ;
-  ns2:op-code "HUN" ;
-  dc11:identifier "HUN" ;
-  ns1:protocol-order "EU-17" ;
-  ns1:start.use "2012-01-01" ;
-  skos:prefLabel "Венгрыя"@be, "Mađarska"@bs, "Унгapия"@bg, "Hongria"@ca, "Maďarsko"@cs, "Ungarn"@da, "Ungarn"@de, "Ουγγαρία"@el, "Hungary"@en, "Ungari"@et, "Hungaria"@eu, "Ungarn"@fo, "Unkari"@fi, "Hongrie"@fr, "An Ungáir"@ga, "Hungría"@gl, "Mađarska"@hr, "Magyarország"@hu, "Ungverjaland"@is, "Ungheria"@it, "Ungārija"@lv, "Vengrija"@lt, "Унгарија"@mk, "L-Ungerija"@mt, "Hongarije"@nl, "Ungarn"@no, "Węgry"@pl, "Hungria"@pt, "Ungaria"@rm, "Ungaria"@ro, "Венгрия"@ru, "Maďarsko"@sk, "Madžarska"@sl, "Hungría"@es, "Hungaria"@sq, "Мађарска"@sr, "Ungern"@sv, "Macaristan"@tr, "Уго́рщина"@uk ;
-  ns1:op-mapped-code [
-    a ns1:MappedCode ;
-    dc11:source "EurLex" ;
-    ns1:affected-table "FD_110" ;
-    ns1:legacy-code "HU"
+    ns1:legacy-code "SE"
   ] .
