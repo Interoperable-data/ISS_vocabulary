@@ -39,7 +39,7 @@ iss-rs:RecordStatuses a skos:ConceptScheme ;
 #    Concept instances
 #
 #################################################################
-iss-rs:Pulished  rdf:type  skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
+iss-rs:Published  rdf:type  skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
         skos:prefLabel  "Published"@en .
 
 iss-rs:New  rdf:type  skos:Concept; skos:inScheme iss-rs:RecordStatuses;         skos:topConceptOf iss-rs:RecordStatuses;
