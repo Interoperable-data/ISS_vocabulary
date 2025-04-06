@@ -551,3 +551,809 @@
     ns1:affected-table "FD_110" ;
     ns1:legacy-code "SE"
   ] .
+
+## Countries with special relation with EU countries 
+
+  <http://publications.europa.eu/resource/authority/country/LIE>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "ليختنشتاين"@ar, "Ліхтэнштэйн"@be, "Лихтенщайн"@bg, "Lihtenštajn"@bs, "Liechtenstein"@ca, "Lichtenštejnsko"@cs, "Liechtenstein"@da, "Liechtenstein"@de, "Λιχτενστάιν"@el, "Liechtenstein"@en, "Liechtenstein"@es, "Liechtenstein"@et, "Liechtenstein"@eu, "Liechtenstein"@fi, "Liktinstein"@fo, "Liechtenstein"@fr, "Lichtinstéin"@ga, "Liechtenstein"@gl, "Lihtenštajn"@hr, "Liechtenstein"@hu, "Liechtenstein"@is, "Liechtenstein"@it, "リヒテンシュタイン"@ja, "Liechtenstein"@lb, "Lichtenšteinas"@lt, "Lihtenšteina"@lv, "Лихтенштајн"@mk, "Il-Liechtenstein"@mt, "Liechtenstein"@nl, "Liechtenstein"@no, "Liechtenstein"@pl, "Liechtenstein"@pt, "Liechtenstein"@rm, "Liechtenstein"@ro, "Лихтенштейн"@ru, "Lichtenštajnsko"@sk, "Líhtenštajn"@sl, "Lihtenshtajni"@sq, "Лихтенштајн"@sr, "Liechtenstein"@sv, "Lihtenştayn"@tr, "Ліхтенштейн"@uk, "列支敦士登"@zh ;
+  ns1:authority-code "LIE" ;
+  ns1:op-code "LIE" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "LI"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_050" ;
+    ns1:legacy-code "LCH"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_140" ;
+    ns1:legacy-code "LI"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_160" ;
+    ns1:legacy-code "FL"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_140" ;
+    ns1:legacy-code "FL"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "LI"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_160" ;
+    ns1:legacy-code "LI"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_400" ;
+    ns1:legacy-code "LIE"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "FL"
+  ] ;
+  ns1:start.use "1950-05-09" ;
+  ns2:op-code "LIE" ;
+  dc11:identifier "LIE" ;
+  skos:altLabel "إمارة ليختنشتاين"@ar, "Княства Ліхтэнштэйн"@be, "Княжество Лихтенщайн"@bg, "Kneževina Lihtenštajn"@bs, "Principat de Liechtenstein"@ca, "Lichtenštejnské knížectví"@cs, "Fyrstendømmet Liechtenstein"@da, "Fürstentum Liechtenstein"@de, "Πριγκηπάτο του Λιχτενστάιν"@el, "Principality of Liechtenstein"@en, "Principado de Liechtenstein"@es, "Liechtensteini Vürstiriik"@et, "Liechtensteingo Printzerria"@eu, "Liechtensteinin ruhtinaskunta"@fi, "Fúrstadømi Liktinstein"@fo, "Principauté de Liechtenstein"@fr, "Prionsacht Lichtinstéin"@ga, "Principado do Liechtenstein"@gl, "Kneževina Lihtenštajn"@hr, "Liechtensteini Hercegség"@hu, "Furstadæmið Liechtenstein"@is, "Principato del Liechtenstein"@it, "リヒテンシュタイン公国"@ja, "Fürstentum Liechtenstein"@lb, "Lichtenšteino Kunigaikštystė"@lt, "Lihtenšteinas Firstisti"@lv, "Кнежевство Лихтенштајн"@mk, "Il-Prinċipat tal-Liechtenstein"@mt, "Vorstendom Liechtenstein"@nl, "Fyrstedømmet Liechtenstein"@no, "Księstwo Liechtenstein"@pl, "Principado do Liechtenstein"@pt, "Principadi da Liechtenstein"@rm, "Principatul Liechtenstein"@ro, "Княжество Лихтенштейн"@ru, "Lichtenštajnské kniežatstvo"@sk, "Kneževina Líhtenštajn"@sl, "Principata e Lihtenshtajnit"@sq, "Кнежевина Лихтенштајн"@sr, "Furstendömet Liechtenstein"@sv, "Lihtenştayn Prensliği"@tr, "Князівство Ліхтенштейн"@uk, "列支敦士登公国"@zh ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Western Europe"^^ns3:UNSD_GEOSCHEME, "103"^^ns3:EP, "FL"^^ns3:FD_010, "LCH"^^ns3:FD_050, "FL"^^ns3:FD_140, "LI"^^ns3:FD_140, "FL"^^ns3:FD_160, "LI"^^ns3:FD_160, "LIE"^^ns3:FD_400, ".li"^^ns3:IANA_DOMAIN, "LI"^^ns3:IBAN_COU, "LI"^^ns3:ISG_COU, "LI"^^ns3:ISO_3166_1_ALPHA_2, "LIE"^^ns3:ISO_3166_1_ALPHA_3, "438"^^ns3:ISO_3166_1_NUM, "LIE"^^ns3:NAC, "423"^^ns3:PHONE_PREFIX, "LI"^^ns3:TED, "LI"^^ns3:TED_SCHEMA, "FL"^^ns3:TIR, "438"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "Πριγκιπάτο του Λιχτενστάιν"@el, "Lichtenšteino"@lt, "Lihtenšteinas"@lv, "Lihtenšteinas Firstiste"@lv, "il-Liechtenstein"@mt, "il-il-Prinċipat tal-Liechtenstein"@mt, "Księstwo Liechtensteinu"@pl, "liechtensteińskie"@pl, "Listenstaine"@pt, "Principado do Listenstaine"@pt, "Lichtenštajsko"@sk, "Kneževina Lihtenštajn"@sl, "Lihtenštajn"@sl .
+
+<http://publications.europa.eu/resource/authority/country/NOR>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "النرويج"@ar, "Нарвегі"@be, "Норвегия"@bg, "Norveška"@bs, "Noruega"@ca, "Norsko"@cs, "Norge"@da, "Norwegen"@de, "Νορβηγία"@el, "Norway"@en, "Noruega"@es, "Norra"@et, "Norvegia"@eu, "Norja"@fi, "Noreg"@fo, "Norvège"@fr, "An Iorua"@ga, "Noruega"@gl, "Norveška"@hr, "Norvégia"@hu, "Noregur"@is, "Norvegia"@it, "ノルウェー"@ja, "Norwegen"@lb, "Norvegija"@lt, "Norvēģija"@lv, "Норвешка"@mk, "In-Norveġja"@mt, "Noorwegen"@nl, "Norge"@no, "Norwegia"@pl, "Noruega"@pt, "Norvegia"@rm, "Norvegia"@ro, "Норвегия"@ru, "Nórsko"@sk, "Norveška"@sl, "Norvegjia"@sq, "Норвешка"@sr, "Norge"@sv, "Norveç"@tr, "Норвегія"@uk, "挪威"@zh ;
+  ns1:authority-code "NOR" ;
+  ns1:op-code "NOR" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "NO"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "PUB" ;
+    ns1:affected-table "PUB_LOC" ;
+    ns1:legacy-code "{NOR}"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "NO"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_050" ;
+    ns1:legacy-code "N"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_160" ;
+    ns1:legacy-code "NO"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_400" ;
+    ns1:legacy-code "N"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "N"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_140" ;
+    ns1:legacy-code "NO"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "PUB" ;
+    ns1:affected-table "PUB_LOC" ;
+    ns1:legacy-code "NO"
+  ] ;
+  ns1:start.use "1950-05-09" ;
+  ns2:op-code "NOR" ;
+  dc11:identifier "NOR" ;
+  skos:altLabel "مملكة النرويج"@ar, "Скандынаўскім паўвостраве"@be, "Кралство Норвегия"@bg, "Kraljevina Norveška"@bs, "Regne de Noruega"@ca, "Norské království"@cs, "Kongeriget Norge"@da, "Königreich Norwegen"@de, "Βασίλειο της Νορβηγίας"@el, "Kingdom of Norway"@en, "Reino de Noruega"@es, "Norra Kuningriik"@et, "Norvegiako Erresuma"@eu, "Norjan kunungaskunta"@fi, "Kongsríki Noreg"@fo, "Royaume de Norvège"@fr, "Ríocht na hIorua"@ga, "Reino de Noruega"@gl, "Kraljevina Norveška"@hr, "Norvég Királyság"@hu, "Konungsríkið Noregur"@is, "Repubblica di Norvegia"@it, "ノルウェー王国"@ja, "Kinnekräich Norwegen"@lb, "Norvegijos Karalystė"@lt, "Norvēģijas Karaliste"@lv, "Кралство Норвешка"@mk, "Ir-Renju tan-Norveġja"@mt, "Noreg"@nb, "Koninkrĳk Noorwegen"@nl, "Norga"@nn, "Kongeriket Norge"@no, "Królestwo Norwegii"@pl, "Reino da Noruega"@pt, "Reginavel da la Norvegia"@rm, "Regatul Norvegiei"@ro, "Королевство Норвегия"@ru, "Nórske kraľovstvo"@sk, "Kraljevina Norveška"@sl, "Mbretëria e Norvegjisë"@sq, "Краљевина Норвешка"@sr, "Konungariket Norge"@sv, "Norveç Krallığı"@tr, "Королівство Норвегія"@uk, "挪威王国"@zh ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Northern Europe"^^ns3:UNSD_GEOSCHEME, "132"^^ns3:EP, "N"^^ns3:FD_010, "N"^^ns3:FD_050, "NO"^^ns3:FD_140, "NO"^^ns3:FD_160, "N"^^ns3:FD_400, ".no"^^ns3:IANA_DOMAIN, "NO"^^ns3:IBAN_COU, "NO"^^ns3:ISG_COU, "NO"^^ns3:ISO_3166_1_ALPHA_2, "NOR"^^ns3:ISO_3166_1_ALPHA_3, "578"^^ns3:ISO_3166_1_NUM, "NOR"^^ns3:NAC, "47"^^ns3:PHONE_PREFIX, "NO"^^ns3:PUB_LOC, "{NOR}"^^ns3:PUB_LOC, "NO"^^ns3:TED, "NO"^^ns3:TED_SCHEMA, "N"^^ns3:TIR, "578"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "Norjan kuningaskunta"@fi, "an Iorua"@ga, "Regno di Norvegia"@it, "Norvegijos"@lt, "Norvēģijas"@lv, "in-Norveġja"@mt, "ir-Renju tan-Norveġja"@mt, "Nórske kráľovstvo"@sk ;
+  skos:narrower <http://publications.europa.eu/resource/authority/country/ATN>, <http://publications.europa.eu/resource/authority/country/BVT>, <http://publications.europa.eu/resource/authority/country/SJM> .
+
+<http://publications.europa.eu/resource/authority/country/CHE>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "سويسرا"@ar, "Швейцарыя"@be, "Швейцария"@bg, "Švicarska"@bs, "Suïssa"@ca, "Švýcarsko"@cs, "Schweiz"@da, "Schweiz"@de, "Ελβετία"@el, "Switzerland"@en, "Suiza"@es, "Šveits"@et, "Suiza"@eu, "Sveitsi"@fi, "Sveis"@fo, "Suisse"@fr, "An Eilvéis"@ga, "Suíza"@gl, "Švicarska"@hr, "Svájc"@hu, "Sviss"@is, "Svizzera"@it, "スイス"@ja, "Schwäiz"@lb, "Šveicarija"@lt, "Šveice"@lv, "Швајцарија"@mk, "L-Iżvizzera"@mt, "Zwitserland"@nl, "Sveits"@no, "Szwajcaria"@pl, "Suíça"@pt, "Svizra"@rm, "Elveţia"@ro, "Швейцария"@ru, "Švajčiarsko"@sk, "Švica"@sl, "Zvicra"@sq, "Швајцарска"@sr, "Schweiz"@sv, "İsviçre"@tr, "Швейцарія"@uk, "瑞士"@zh ;
+  ns1:authority-code "CHE" ;
+  ns1:op-code "CHE" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_160" ;
+    ns1:legacy-code "CH"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "CH"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "PUB" ;
+    ns1:affected-table "PUB_LOC" ;
+    ns1:legacy-code "{SWI}"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "CH"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "CH"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_400" ;
+    ns1:legacy-code "CH"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_140" ;
+    ns1:legacy-code "CH"
+  ] ;
+  ns1:start.use "1950-05-09" ;
+  ns2:op-code "CHE" ;
+  dc11:identifier "CHE" ;
+  skos:altLabel "الاتحاد السويسري (الكونفيدرالي)"@ar, "Швейцарская Канфедэрацыя"@be, "Конфедерация Швейцария"@bg, "Švicarska konfederacija"@bs, "Confederació Suïssa"@ca, "Švýcarská konfederace"@cs, "Det Schweiziske Forbund"@da, "Schweizerische Eidgenossenschaft"@de, "Ελβετική Συνομοσπονδία"@el, "Swiss Confederation"@en, "Confederación Suiza"@es, "Šveitsi Konföderatsioon"@et, "Suitzar Konfederazioa"@eu, "Sveitsin valaliito"@fi, "Confédération suisse"@fr, "Cónaidhm na hEilvéise"@ga, "Confederación suíza"@gl, "Švicarska Konfederacija"@hr, "Svájci Konföderáció"@hu, "Svissneska ríkjasambandið"@is, "Confederazione Svizzera"@it, "スイス連邦"@ja, "Schwäizeresch Eidgenossenschaft"@lb, "Šveicarijos Konfederacija"@lt, "Šveices Konfederācijas"@lv, "Швајцарската Конфедерачија"@mk, "Il-Konfederazzjoni Żvizzera"@mt, "Zwitserse Bondsstaat"@nl, "Konføderasjonen Sveits"@no, "Konfederacja Szwajcarska"@pl, "Konfederação suíça"@pt, "Confederaziun svizra"@rm, "Confederaţia Elveţiană"@ro, "Швейцарская Конфедерация"@ru, "Švajčiarska konfederácia"@sk, "Švicarska konfederacija"@sl, "Konfederata Zviceriane"@sq, "Швајцарска Конфедерација"@sr, "Schweiziska Edsförbundet"@sv, "İsviçre Konfederasyonu"@tr, "Швейцарська Конфедерація"@uk, "瑞士联邦"@zh ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Western Europe"^^ns3:UNSD_GEOSCHEME, "32"^^ns3:EP, "CH"^^ns3:FD_010, "CH"^^ns3:FD_140, "CH"^^ns3:FD_160, "CH"^^ns3:FD_400, ".ch"^^ns3:IANA_DOMAIN, "CH"^^ns3:IBAN_COU, "CH"^^ns3:ISG_COU, "CH"^^ns3:ISO_3166_1_ALPHA_2, "CHE"^^ns3:ISO_3166_1_ALPHA_3, "756"^^ns3:ISO_3166_1_NUM, "CHE"^^ns3:NAC, "41"^^ns3:PHONE_PREFIX, "{SWI}"^^ns3:PUB_LOC, "CH"^^ns3:TED, "CH"^^ns3:TED_SCHEMA, "CH"^^ns3:TIR, "756"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "Schweizerische Eidgenoossenschaft"@de, "Šveitsi"@et, "Sveitsin valaliitto"@fi, "an Eilvéis"@ga, "Svájci Államszövetség"@hu, "Šveicarijos"@lt, "Šveices"@lv, "Šveices Konfederācija"@lv, "il-Konfederazzjoni Żvizzera"@mt, "l-Iżvizzera"@mt, "Confederação Suíça"@pt, "Confederația Elvețiană"@ro, "Elveția"@ro, "elvețiană"@ro .
+
+  <http://publications.europa.eu/resource/authority/country/BIH>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "البوسنة والهرسك"@ar, "Боснія і Герцагавіна"@be, "Босна и Херцеговина"@bg, "Bosna i Hercegovina"@bs, "Bòsnia i Hercegovina"@ca, "Bosna a Hercegovina"@cs, "Bosnien-Hercegovina"@da, "Bosnien und Herzegowina"@de, "Βοσνία και Ερζεγοβίνη"@el, "Bosnia and Herzegovina"@en, "Bosnia y Herzegovina"@es, "Bosnia ja Hertsegoviina"@et, "Bosnia-Herzegovina"@eu, "Bosnia ja Hertsegovina"@fi, "Bosnia-Hersegovina"@fo, "Bosnie-Herzégovine"@fr, "An Bhoisnia agus an Heirseagaivéin"@ga, "Bosnia e Hercegovina"@gl, "Bosna i Hercegovina"@hr, "Bosznia-Hercegovina"@hu, "Bosnía og Hersegóvína"@is, "Bosnia-Erzegovina"@it, "ボスニア・ヘルツェゴビナ"@ja, "Bosnien-Herzegowina"@lb, "Bosnija ir Hercegovina"@lt, "Bosnija un Hercegovina"@lv, "Босна и Херцеговина"@mk, "Il-Bożnija-Ħerzegovina"@mt, "Bosnië en Herzegovina"@nl, "Bosnia og Herzegovina"@no, "Bośnia i Hercegowina"@pl, "Bósnia-Herzegovina"@pt, "Bosnia-Erzegovina"@rm, "Bosnia şi Herţegovina"@ro, "Босния и Герцеговина"@ru, "Bosna a Hercegovina"@sk, "Bosna in Hercegovina"@sl, "Bosnja dhe Hercegovina"@sq, "Босна и Херцеговина"@sr, "Bosnien och Hercegovina"@sv, "Bosna Hersek"@tr, "Боснія і Герцеговина"@uk, "波斯尼亚和黑塞哥维那"@zh ;
+  ns1:authority-code "BIH" ;
+  ns1:op-code "BIH" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "BA"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "BOHE"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "BA"
+  ] ;
+  ns1:start.use "1992-03-01" ;
+  ns2:op-code "BIH" ;
+  dc11:identifier "BIH" ;
+  skos:altLabel "Bosnie-et-Herzégovine"@fr, "Bosnia-Hercegovina"@no ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Southern Europe"^^ns3:UNSD_GEOSCHEME, "227"^^ns3:EP, "268"^^ns3:EP, "BOHE"^^ns3:FD_010, ".ba"^^ns3:IANA_DOMAIN, "BA"^^ns3:IBAN_COU, "BA"^^ns3:ISG_COU, "BA"^^ns3:ISO_3166_1_ALPHA_2, "BIH"^^ns3:ISO_3166_1_ALPHA_3, "070"^^ns3:ISO_3166_1_NUM, "BIH"^^ns3:NAC, "387"^^ns3:PHONE_PREFIX, "BA"^^ns3:TED, "BA"^^ns3:TED_SCHEMA, "BA"^^ns3:TIR, "070"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:changeNote "Nationality ‘of Bosnia and Herzegovinia’ follows the ‘Interinstitutional Style Guide’, which gives the official name of citizenship or adjective validated by the Council in order to cover with one adjective the whole territory. In fact see Wikipedia, there are 2 nationalities in Bosnia and Herzegovina: Bosnian and Herzegovinian."@en, "Opening event: Splitting of the ‘Socialist Federal Republic of Yugoslavia’ COU0060 into Republic of Slovenia COU0051, Republic of Croatia COU0026, Federal Republic of Yugoslavia COU0061, Bosnia and Herzegovina COU0004, Former Yugoslav Republic of Macedonia COU0040."@en ;
+  skos:hiddenLabel "Bosna a Herzegovina"@cs, "Republika Bosna a Hercegovina"@cs, "fra Bosnien-Hercegovina, bosnisk-hercegovinsk"@da, "Republik Bosnien und Herzegowina"@de, "Βοσνίας και Ερζεγοβίνης"@el, "Δημοκρατία Βοσνίας και Ερζεγοβίνης"@el, "Republic of Bosnia and Herzegowina"@en, "Bosnia ja Hertsegoviina Vabariik"@et, "de Bosnie-et-Herzégovine"@fr, "an Bhoisnia agus an Heirseagaivéin"@ga, "duine ón mBoisnia agus an Heirseagaivéin"@ga, "Republika Bosna i Hercegovina"@hr, "Bosznia és Hercegovina"@hu, "Bosznia-hercegovinai Köztársaság"@hu, "Bosnijas un Hercegovinas Republika"@lv, "il-Bożnija-Ħerzegovina"@mt, "bośniacko-hercegowińskie"@pl, "Bosnia și Herțegovina"@ro, "din Bosnia și Herțegovina"@ro, "Republika Bosna a Hercegovina"@sk, "Republika Bosna in Hercegovina"@sl .
+
+  <http://publications.europa.eu/resource/authority/country/MNE>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "مونتينيغرو"@ar, "Чарнагорыя"@be, "Черна гора"@bg, "Crna Gora"@bs, "Montenegro"@ca, "Černá Hora"@cs, "Montenegro"@da, "Montenegro"@de, "Μαυροβούνιο"@el, "Montenegro"@en, "Montenegro"@es, "Montenegro"@et, "Montenegro"@eu, "Montenegro"@fi, "Montenegro"@fo, "Monténégro"@fr, "Montainéagró"@ga, "Montenegro"@gl, "Crna Gora"@hr, "Montenegró"@hu, "Montenegró"@is, "Montenegro"@it, "モンテネグロ"@ja, "Montenegro"@lb, "Juodkalnija"@lt, "Melnkalne"@lv, "Црна Гора"@mk, "Il-Montenegro"@mt, "Montenegro"@nl, "Montenegro"@no, "Czarnogóra"@pl, "Montenegro"@pt, "Montenegro"@rm, "Muntenegru"@ro, "Черногория"@ru, "Čierna Hora"@sk, "Črna gora"@sl, "Mali i Zi"@sq, "Црна Гора"@sr, "Montenegro"@sv, "Karadağ"@tr, "Чорногорія"@uk, "黑山"@zh ;
+  ns1:authority-code "MNE" ;
+  ns1:op-code "MNE" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "ME"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "ME"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "MONTENEGRO"
+  ] ;
+  ns1:start.use "2006-06-03" ;
+  ns2:op-code "MNE" ;
+  dc11:identifier "MNE" ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Southern Europe"^^ns3:UNSD_GEOSCHEME, "284"^^ns3:EP, "MONTENEGRO"^^ns3:FD_010, ".me"^^ns3:IANA_DOMAIN, "ME"^^ns3:IBAN_COU, "ME"^^ns3:ISG_COU, "ME"^^ns3:ISO_3166_1_ALPHA_2, "MNE"^^ns3:ISO_3166_1_ALPHA_3, "499"^^ns3:ISO_3166_1_NUM, "MNE"^^ns3:NAC, "382"^^ns3:PHONE_PREFIX, "ME"^^ns3:TED, "ME"^^ns3:TED_SCHEMA, "MNE"^^ns3:TIR, "499"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:changeNote "Opening event: Splitting of the country State Union of Serbia and Montenegro COU0011 into Republic of Serbia COU0048 and Republic of Montenegro COU0039."@en, "Oficiul pentru Publicatii: Muntenegru: în urma adoptării, la 19 octombrie 2007, a noii constituții, numele oficial al statului este Muntenegru."@ro ;
+  skos:hiddenLabel "Δημοκρατία του Μαυροβουνίου"@el, "Μαυροβουνίου"@el, "Republic of Montenegro"@en, "Montenegro Vabariik"@et, "République du Monténégro"@fr, "Poblacht Mhontainéagró"@ga, "Republika Crna Gora"@hr, "Juodkalnijos"@lt, "Melnkalnes"@lv, "Melnkalnes Republika"@lv, "il-Montenegro"@mt, "Republika Črna gora"@sl, "Republiken Montenegro"@sv .
+
+  <http://publications.europa.eu/resource/authority/country/MDA>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "مولدوفا"@ar, "Малдова"@be, "Молдова"@bg, "Moldavija"@bs, "Moldàvia"@ca, "Moldavsko"@cs, "Moldova"@da, "Moldau"@de, "Μολδαβία"@el, "Moldova"@en, "Moldavia"@es, "Moldova"@et, "Moldavia"@eu, "Moldova"@fi, "Moldova"@fo, "Moldavie"@fr, "An Mholdóiv"@ga, "Moldova"@gl, "Moldova"@hr, "Moldova"@hu, "Moldóva"@is, "Moldavia"@it, "モルドバ"@ja, "Moldavien"@lb, "Moldavija"@lt, "Moldova"@lv, "Молдавија"@mk, "Il-Moldova"@mt, "Moldavië"@nl, "Moldova"@no, "Mołdawia"@pl, "Moldávia"@pt, "Moldova"@rm, "Moldova"@ro, "Молдова"@ru, "Moldavsko"@sk, "Moldavija"@sl, "Moldavia"@sq, "Молдавија"@sr, "Moldavien"@sv, "Moldova"@tr, "Молдова"@uk, "摩尔多瓦"@zh ;
+  ns1:authority-code "MDA" ;
+  ns1:op-code "MDA" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "MD"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "MOL"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "MD"
+  ] ;
+  ns1:start.use "1991-08-27" ;
+  ns2:op-code "MDA" ;
+  dc11:identifier "MDA" ;
+  skos:altLabel "جمهورية مولدوفا"@ar, "Рэспу́бліка Малдова"@be, "Република Молдова"@bg, "Republika Moldavija"@bs, "República de Moldàvia"@ca, "Moldavská republika"@cs, "Republikken Moldova"@da, "Moldawien"@de, "Republik Moldau"@de, "Δημοκρατία της Μολδαβίας"@el, "Republic of Moldova"@en, "República de Moldavia"@es, "Moldova Vabariik"@et, "Moldaviako Errepublika"@eu, "Moldovan tasavalta"@fi, "Lýðveldið Moldova"@fo, "République de Moldavie"@fr, "Poblacht na Moldóive"@ga, "República Moldova"@gl, "Republika Moldova"@hr, "Moldovai Köztársaság"@hu, "Lýðveldið Moldóva"@is, "Repubblica di Moldova"@it, "モルドバ共和国"@ja, "Republik Moldavien"@lb, "Moldovos Respublika"@lt, "Moldovas republika"@lv, "Република Молдавија"@mk, "Ir-Repubblika tal-Moldova"@mt, "Republiek Moldavië"@nl, "Republikken Moldova"@no, "Republika Mołdawii"@pl, "República da Moldávia"@pt, "Republica da la Moldova"@rm, "Republica Moldova"@ro, "Республика Молдова"@ru, "Moldavská republika"@sk, "Republika Moldavija"@sl, "Republika e Moldavisë"@sq, "Република Молдавија"@sr, "Republiken Moldavien"@sv, "Moldova Cumhuriyeti"@tr, "Республіка Молдова"@uk, "摩尔多瓦共和国"@zh ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Eastern Europe"^^ns3:UNSD_GEOSCHEME, "112"^^ns3:EP, "MOL"^^ns3:FD_010, ".md"^^ns3:IANA_DOMAIN, "MD"^^ns3:IBAN_COU, "MD"^^ns3:ISG_COU, "MD"^^ns3:ISO_3166_1_ALPHA_2, "MDA"^^ns3:ISO_3166_1_ALPHA_3, "498"^^ns3:ISO_3166_1_NUM, "MDA"^^ns3:NAC, "373"^^ns3:PHONE_PREFIX, "MD"^^ns3:TED, "MD"^^ns3:TED_SCHEMA, "MD"^^ns3:TIR, "498"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:changeNote "A strip of Moldova’s internationally recognized territory on the east bank of the river Dniester has been under the de facto control of the breakaway government of Transnistria since 1990."@en ;
+  skos:hiddenLabel "Μολδαβίας"@el, "an Mholdóiv"@ga, "Moldavija"@hr, "Moldova"@it, "Moldova"@lt, "Moldovos"@lt, "Moldovas"@lv, "il-Moldova"@mt, "ir-Repubblika tal-Moldova"@mt, "moldavijsko"@sl .
+
+  <http://publications.europa.eu/resource/authority/country/MKD>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "مقدونيا الشمالية"@ar, "Северна Македония"@bg, "Macedònia del Nord"@ca, "Severní Makedonie"@cs, "Nordmakedonien"@da, "Nordmazedonien"@de, "Βόρεια Μακεδονία"@el, "North Macedonia"@en, "Macedonia del Norte"@es, "Põhja-Makedoonia"@et, "Pohjois-Makedonia"@fi, "Macédoine du Nord"@fr, "An Mhacadóin Thuaidh"@ga, "Sjeverna Makedonija"@hr, "Észak-Macedónia"@hu, "Norður-Makedónía"@is, "Macedonia del Nord"@it, "北マケドニア"@ja, "Nordmazedonien"@lb, "Šiaurės Makedonija"@lt, "Ziemeļmaķedonija"@lv, "Il-Maċedonja ta’ Fuq"@mt, "Noord-Macedonië"@nl, "Nord-Makedonia"@no, "Macedonia Północna"@pl, "Macedónia do Norte"@pt, "Macedonia de Nord"@ro, "Северная Македония"@ru, "Severné Macedónsko"@sk, "Severna Makedonija"@sl, "Nordmakedonien"@sv, "Kuzey Makedonya"@tr, "Північна Македонія"@uk, "北马其顿"@zh ;
+  ns1:authority-code "MKD" ;
+  ns1:op-code "MKD" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "MAC"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_050" ;
+    ns1:legacy-code "MAC"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "MCD"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "MK"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "MK"
+  ] ;
+  ns1:start.use "1993-04-08" ;
+  ns2:op-code "MKD" ;
+  dc11:identifier "MKD" ;
+  skos:altLabel "جمهورية مقدونيا الشمالية"@ar, "Република Северна Македония"@bg, "República de Macedònia del Nord"@ca, "Republika Severní Makedonie"@cs, "Republikken Nordmakedonien"@da, "Republik Nordmazedonien"@de, "Δημοκρατία της Βόρειας Μακεδονίας"@el, "Republic of North Macedonia"@en, "República de Macedonia del Norte"@es, "Põhja-Makedoonia Vabariik"@et, "Pohjois-Makedonian tasavalta"@fi, "République de Macédoine du Nord"@fr, "Poblacht na Macadóine Thuaidh"@ga, "Republika Sjeverna Makedonija"@hr, "Észak-macedón Köztársaság"@hu, "Lýðveldið Norður-Makedónía"@is, "Repubblica di Macedonia del Nord"@it, "北マケドニア共和国"@ja, "Republik Nordmazedonien"@lb, "Šiaurės Makedonijos Respublika"@lt, "Ziemeļmaķedonijas Republika"@lv, "Република Северна Македонија"@mk, "Северна Македонија"@mk, "Ir-Repubblika tal-Maċedonja ta’ Fuq"@mt, "Republiek Noord-Macedonië"@nl, "Republikken Nord-Makedonia"@no, "Republika Macedonii Północnej"@pl, "República da Macedónia do Norte"@pt, "Republica Macedonia de Nord"@ro, "Республика Северная Македония"@ru, "Severomacedónska republika"@sk, "Republika Severna Makedonija"@sl, "Republiken Nordmakedonien"@sv, "Kuzey Makedonya Cumhuriyeti"@tr, "Республіка Північна Македонія"@uk, "北马其顿共和国"@zh ;
+  skos:historyNote "Comment of the Interinstitutional Style Guide, added on 1.9.2017 in all language versions to point 7.1.1 and annexes 5 and 6: ‘Country code: FY. Code recommended by the legal service of the Council for EU documents (do not use ISO code MK).’"@en, "Following United Nations facilitation, Greece and the former Yugoslav Republic of Macedonia ratified a bilateral agreement according to which the latter country will be named the Republic of North Macedonia. On 15.2.2019, North Macedonia formally notified the EU about the entry into force of this agreement."@en, "Interinstitutional Style Guide: North Macedonia: ‘the adjectival reference to the State, its official organs, and other public entities as well as private entities and actors that are related to the State, are established by law, and enjoy financial support from State for activities abroad shall be in line with its official name or its short name, that is “of the Republic of North Macedonia” or “of North Macedonia”. Other adjectival references, including “North Macedonian” and “Macedonian” may not be used in all of the above cases. Other adjectival usages, including those referring to private entities and actors, that are not related to the State and public entities, are not established by law and do not enjoy financial support from the State for activities abroad may be “Macedonian”. The adjectival usage for activities may also be “Macedonian”. This is without prejudice to the process established by the Prespa Agreement regarding commercial names, trademarks and brand names and to the compound names of cities that exist at the date of the signature of the Prespa Agreement.’"@en, "Commentaire du Code de redaction interinstitutionnel, ajouté le 1.9.2017 dans toutes les versions linguistiques au point 7.1.1 et aux annexes 5 et 6: «Code pays: FY. Code recommandé par le service juridique du Conseil pour les documents de l’Union européenne (ne pas utiliser le code ISO MK).»"@fr ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Southern Europe"^^ns3:UNSD_GEOSCHEME, "243"^^ns3:EP, "MAC"^^ns3:FD_010, "MCD"^^ns3:FD_010, "MAC"^^ns3:FD_050, ".mk"^^ns3:IANA_DOMAIN, "MK"^^ns3:IBAN_COU, "MK"^^ns3:ISG_COU, "MK"^^ns3:ISO_3166_1_ALPHA_2, "MKD"^^ns3:ISO_3166_1_ALPHA_3, "807"^^ns3:ISO_3166_1_NUM, "MKD"^^ns3:NAC, "389"^^ns3:PHONE_PREFIX, "MK"^^ns3:TED, "MK"^^ns3:TED_SCHEMA, "MK"^^ns3:TIR, "807"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:changeNote "Opening event: Splitting of the ‘Socialist Federal Republic of Yugoslavia’ COU0060 into Republic of Slovenia COU0051, Republic of Croatia COU0026, Federal Republic of Yugoslavia COU0061, Bosnia and Herzegovina COU0004, Former Yugoslav Republic of Macedonia COU0040."@en ;
+  skos:hiddenLabel "Põhja-Makedoonia Vabariigi"@et, "an Mhacadóin Thuaidh"@ga, "ón/as an Macadóin Thuaidh"@ga, "il-Maċedonja ta’ Fuq"@mt, "ir-Repubblika tal-Maċedonja ta’ Fuq"@mt, "severomacedónsky"@sk .
+
+  <http://publications.europa.eu/resource/authority/country/GEO>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "جورجيا"@ar, "Грузия"@bg, "Geòrgia"@ca, "Gruzie"@cs, "Georgien"@da, "Georgien"@de, "Γεωργία"@el, "Georgia"@en, "Georgia"@es, "Gruusia"@et, "Georgia"@fi, "Géorgie"@fr, "An tSeoirsia"@ga, "Gruzija"@hr, "Grúzia"@hu, "Georgía"@is, "Georgia"@it, "グルジア"@ja, "Georgien"@lb, "Sakartvelas"@lt, "Gruzija"@lv, "Il-Georgia"@mt, "Georgië"@nl, "Georgia"@no, "Gruzja"@pl, "Geórgia"@pt, "Georgia"@ro, "Грузия"@ru, "Gruzínsko"@sk, "Gruzija"@sl, "Georgien"@sv, "Gürcistan"@tr, "Грузія"@uk, "格鲁吉亚"@zh ;
+  ns1:authority-code "GEO" ;
+  ns1:op-code "GEO" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "GE"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_050" ;
+    ns1:legacy-code "GEORGIE"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "GG"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "GE"
+  ] ;
+  ns1:start.use "1991-04-09" ;
+  ns2:op-code "GEO" ;
+  dc11:identifier "GEO" ;
+  skos:altLabel "Georgia"@hu, "Grúz Köztársaság"@hu, "საქართველო"@ka, "Republika Gruzija"@sl ;
+  skos:historyNote "The ‘GE’ ISO code was formerly used for ‘Gilbert and Ellice Islands’, now Tuvalu, TV."@en, "Le code ISO «GE» a été précédemment assigné aux «Îles Gilbert et Ellice», maintenant Tuvalu, TV."@fr ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Western Asia"^^ns3:UNSD_GEOSCHEME, "GE"^^ns3:ISO_3166_1_ALPHA_2, "63"^^ns3:EP, "GG"^^ns3:FD_010, "GEORGIE"^^ns3:FD_050, ".ge"^^ns3:IANA_DOMAIN, "GE"^^ns3:IBAN_COU, "GE"^^ns3:ISG_COU, "GEO"^^ns3:ISO_3166_1_ALPHA_3, "268"^^ns3:ISO_3166_1_NUM, "GEO"^^ns3:NAC, "995"^^ns3:PHONE_PREFIX, "GE"^^ns3:TED, "GE"^^ns3:TED_SCHEMA, "GE"^^ns3:TIR, "268"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "an tSeoirsia"@ga, "Republika Gruzija"@hr, "Gruzija"@lt, "Gruzijos"@lt, "Gruzijas"@lv, "il-Georgia"@mt .
+
+  <http://publications.europa.eu/resource/authority/country/ALB>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "البانيا"@ar, "Албанія"@be, "Албания"@bg, "Albanija"@bs, "Albània"@ca, "Albánie"@cs, "Albanien"@da, "Albanien"@de, "Αλβανία"@el, "Albania"@en, "Albania"@es, "Albaania"@et, "Albania"@eu, "Albania"@fi, "Albania"@fo, "Albanie"@fr, "An Albáin"@ga, "Albania"@gl, "Albanija"@hr, "Albánia"@hu, "Albanía"@is, "Albania"@it, "アルバニア"@ja, "Albanien"@lb, "Albanija"@lt, "Albānija"@lv, "Албанија"@mk, "L-Albanija"@mt, "Albanië"@nl, "Albania"@no, "Albania"@pl, "Albânia"@pt, "Albania"@rm, "Albania"@ro, "Албания"@ru, "Albánsko"@sk, "Albanija"@sl, "Shqipëria"@sq, "Албанија"@sr, "Albanien"@sv, "Arnavutluk"@tr, "Албанія"@uk, "阿尔巴尼亚"@zh ;
+  ns1:authority-code "ALB" ;
+  ns1:op-code "ALB" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "AL"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "AL"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "AL"
+  ] ;
+  ns1:start.use "1912-11-18" ;
+  ns2:op-code "ALB" ;
+  dc11:identifier "ALB" ;
+  skos:altLabel "جمهورية ألبانيا"@ar, "Рэспу́бліка Албанія"@be, "Република Албания"@bg, "Republika Albanija"@bs, "República d'Albània"@ca, "Albánská republika"@cs, "Republikken Albanien"@da, "Republik Albanien"@de, "Δημοκρατία της Αλβανίας"@el, "Republic of Albania"@en, "República de Albania"@es, "Albaania Vabariik"@et, "Albaniako Errepublika"@eu, "Albanian tasavalta"@fi, "Lýðveldið Albaniu"@fo, "République d’Albanie"@fr, "Poblacht na hAlbáine"@ga, "República de Albania"@gl, "Republika Albanija"@hr, "Albán Köztársaság"@hu, "Lýðveldið Albanía"@is, "Repubblica di Albania"@it, "アルバニア共和国"@ja, "Republik Albanien"@lb, "Albanijos Respublika"@lt, "Albānijas Republika"@lv, "Република Албанија"@mk, "Ir-Repubblika tal-Albanija"@mt, "Republiek Albanië"@nl, "Republikken Albania"@no, "Republika Albanii"@pl, "República da Albânia"@pt, "Republica da l’Albania"@rm, "Republica Albania"@ro, "Республика Албания"@ru, "Albánska republika"@sk, "Republika Albanija"@sl, "Republika e Shqipërisë"@sq, "Република Албанија"@sr, "Republiken Albanien"@sv, "Arnavutluk Cumhuriyeti"@tr, "Республіка Албанія"@uk, "阿尔巴尼亚共和国"@zh ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "4"^^ns3:EP, "AL"^^ns3:FD_010, ".al"^^ns3:IANA_DOMAIN, "AL"^^ns3:IBAN_COU, "AL"^^ns3:ISG_COU, "AL"^^ns3:ISO_3166_1_ALPHA_2, "ALB"^^ns3:ISO_3166_1_ALPHA_3, "008"^^ns3:ISO_3166_1_NUM, "ALB"^^ns3:NAC, "355"^^ns3:PHONE_PREFIX, "AL"^^ns3:TED, "AL"^^ns3:TED_SCHEMA, "AL"^^ns3:TIR, "Southern Europe"^^ns3:UNSD_GEOSCHEME, "008"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "République d'Albanie"@fr, "an Albáin"@ga, "Repubblica d'Albania"@it, "Albanijos"@lt, "Albānijas"@lv, "ir-Repubblika tal-Albanija"@mt, "l-Albanija"@mt, "Albanese"@nl .
+
+  <http://publications.europa.eu/resource/authority/country/SRB>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "Serbia"@es, "صربيا"@ar, "Сербія"@be, "Сърбия"@bg, "Srbija"@bs, "Sèrbia"@ca, "Srbsko"@cs, "Serbien"@da, "Serbien"@de, "Σερβία"@el, "Serbia"@en, "Serbia"@et, "Serbia"@eu, "Serbia"@fi, "Serbia"@fo, "Serbie"@fr, "An tSeirbia"@ga, "Serbia"@gl, "Srbija"@hr, "Szerbia"@hu, "Serbía"@is, "Serbia"@it, "セルビア"@ja, "Serbien"@lb, "Serbija"@lt, "Serbija"@lv, "Србија"@mk, "Is-Serbja"@mt, "Servië"@nl, "Serbia"@no, "Serbia"@pl, "Sérvia"@pt, "Serbia"@rm, "Serbia"@ro, "Сербия"@ru, "Srbsko"@sk, "Sŕbija"@sl, "Serbia"@sq, "Србија"@sr, "Serbien"@sv, "Sırbistan"@tr, "Сербія"@uk, "塞尔维亚"@zh ;
+  ns1:authority-code "SRB" ;
+  ns1:op-code "SRB" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "RS"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "RS"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "REPSER"
+  ] ;
+  ns1:start.use "2006-06-05" ;
+  ns2:op-code "SRB" ;
+  dc11:identifier "SRB" ;
+  skos:altLabel "República de Serbia"@es, "جمهورية صربيا"@ar, "Рэспу́бліка Сербія"@be, "Република Сърбия"@bg, "Republika Srbija"@bs, "República de Sèrbia"@ca, "Republika Srbsko"@cs, "Republikken Serbien"@da, "Republik Serbien"@de, "Δημοκρατία της Σερβίας"@el, "Republic of Serbia"@en, "Serbia Vabariik"@et, "Serbiako Errepublika"@eu, "Serbian tasavalta"@fi, "Lýðveldið Serbia"@fo, "République de Serbie"@fr, "Poblacht na Seirbia"@ga, "República de Serbia"@gl, "Republika Srbija"@hr, "Szerb Köztársaság"@hu, "Lýðveldið Serbía"@is, "Repubblica di Serbia"@it, "セルビア共和国"@ja, "Republik Serbien"@lb, "Serbijos Respublika"@lt, "Serbijas Republika"@lv, "Република Србија"@mk, "Ir-Repubblika tas-Serbja"@mt, "Republiek Servië"@nl, "Republikken Serbia"@no, "Republika Serbii"@pl, "República da Sérvia"@pt, "Republica da la Serbia"@rm, "Republica Serbia"@ro, "Республика Сербия"@ru, "Srbská republika"@sk, "Republika Srbija"@sl, "Republika e Serbisë"@sq, "Република Србија"@sr, "Republiken Serbien"@sv, "Sırbistan Cumhuriyeti"@tr, "Республіка Сербія"@uk, "塞尔维亚共和国"@zh ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Southern Europe"^^ns3:UNSD_GEOSCHEME, "285"^^ns3:EP, "REPSER"^^ns3:FD_010, ".rs"^^ns3:IANA_DOMAIN, "RS"^^ns3:IBAN_COU, "RS"^^ns3:ISG_COU, "RS"^^ns3:ISO_3166_1_ALPHA_2, "SRB"^^ns3:ISO_3166_1_ALPHA_3, "688"^^ns3:ISO_3166_1_NUM, "SRB"^^ns3:NAC, "381"^^ns3:PHONE_PREFIX, "RS"^^ns3:TED, "RS"^^ns3:TED_SCHEMA, "688"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:changeNote "Opening event: Splitting of the country State Union of Serbia and Montenegro COU0011 into Republic of Serbia COU0048 and Republic of Montenegro COU0039."@en ;
+  skos:hiddenLabel "an tSeirbia"@ga, "srbijansko"@hr, "Serbijos"@lt, "Serbijas"@lv, "ir-Repubblika tas-Serbja"@mt, "is-Serbja"@mt, "Srbija"@sl .
+
+<http://publications.europa.eu/resource/authority/country/TUR>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "تركيا"@ar, "Турцыя"@be, "Typция"@bg, "Turska"@bs, "Turquia"@ca, "Turecko"@cs, "Tyrkiet"@da, "Türkei"@de, "Τουρκία"@el, "Türkiye"@en, "Turquía"@es, "Türgi"@et, "Turkia"@eu, "Turkki"@fi, "Turkaland"@fo, "Turquie"@fr, "An Tuirc"@ga, "Turquía"@gl, "Turska"@hr, "Törökország"@hu, "Tyrkland"@is, "Turchia"@it, "トルコ"@ja, "Tierkei"@lb, "Turkija"@lt, "Turcija"@lv, "Турција"@mk, "It-Turkija"@mt, "Turkije"@nl, "Tyrkia"@no, "Turcja"@pl, "Turquia"@pt, "Tirchia"@rm, "Turcia"@ro, "Турция"@ru, "Turecko"@sk, "Turčja"@sl, "Turqia"@sq, "Турска"@sr, "Turkiet"@sv, "Türkiye"@tr, "Туреччина"@uk, "土耳其"@zh ;
+  ns1:authority-code "TUR" ;
+  ns1:op-code "TUR" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_140" ;
+    ns1:legacy-code "TR"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "TR"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_050" ;
+    ns1:legacy-code "TR"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_400" ;
+    ns1:legacy-code "TR"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "TR"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "TR"
+  ] ;
+  ns1:start.use "1950-05-09" ;
+  ns2:op-code "TUR" ;
+  dc11:identifier "TUR" ;
+  skos:altLabel "جمهورية تركيا"@ar, "Рэспу́бліка Турцыя"@be, "Република Турция"@bg, "Republika Turska"@bs, "República de Turquia"@ca, "Turecká republika"@cs, "Republikken Tyrkiet"@da, "Republik Türkei"@de, "Δημοκρατία της Τουρκίας"@el, "Republic of Turkey"@en, "Republic of Türkiye"@en, "Turkey"@en, "República de Turquía"@es, "Türgi Vabariik"@et, "Turkiako Errepublika"@eu, "Turkin tasavalta"@fi, "Lýðveldið Turkaland"@fo, "République de Turquie"@fr, "Poblacht na Tuirce"@ga, "República de Turquía"@gl, "Republika Turska"@hr, "Török Köztársaság"@hu, "Lýðveldið Tyrkland"@is, "Repubblica di Turchia"@it, "トルコ共和国"@ja, "Republik Tierkei"@lb, "Turkijos Respublika"@lt, "Turcijas Republika"@lv, "Република Турција"@mk, "Ir-Repubblika tat-Turkija"@mt, "Republiek Turkije"@nl, "Republikken Tyrkia"@no, "Republika Turcji"@pl, "República da Turquia"@pt, "Republica da la Tirchia"@rm, "Republica Turcia"@ro, "Турецкая Республика"@ru, "Turecká republika"@sk, "Republika Turčija"@sl, "Republika e Turqisë"@sq, "Република Турска"@sr, "Republiken Turkiet"@sv, "Türkiye Cumhuriyeti"@tr, "Турецька Республіка"@uk, "土耳其共和国"@zh ;
+  skos:historyNote "Country name in English modified according to the Interinstitutional Style Guide. Following the name change notified by the Republic of Türkiye in June 2022, ‘Türkiye’ is the preferred short form and ‘Republic of Türkiye’ is the preferred full form in English in EU documents and texts."@en ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Western Asia"^^ns3:UNSD_GEOSCHEME, "179"^^ns3:EP, "TR"^^ns3:FD_010, "TR"^^ns3:FD_050, "TR"^^ns3:FD_140, "TR"^^ns3:FD_400, ".tr"^^ns3:IANA_DOMAIN, "TR"^^ns3:IBAN_COU, "TR"^^ns3:ISG_COU, "TR"^^ns3:ISO_3166_1_ALPHA_2, "TUR"^^ns3:ISO_3166_1_ALPHA_3, "792"^^ns3:ISO_3166_1_NUM, "TUR"^^ns3:NAC, "90"^^ns3:PHONE_PREFIX, "TR"^^ns3:TED, "TR"^^ns3:TED_SCHEMA, "TR"^^ns3:TIR, "792"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "Турция"@bg, "an Tuirc"@ga, "Turkijos"@lt, "Turcijas"@lv, "ir-Repubblika tat-Turkija"@mt, "it-Turkija"@mt, "Turčija"@sl .
+
+  <http://publications.europa.eu/resource/authority/country/UKR>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "أوكرانيا"@ar, "Украі́на"@be, "Украйна"@bg, "Ukrajina"@bs, "Ucraïna"@ca, "Ukrajina"@cs, "Ukraine"@da, "Ukraine"@de, "Ουκρανία"@el, "Ukraine"@en, "Ucrania"@es, "Ukraina"@et, "Ukraina"@eu, "Ukraina"@fi, "Ukraina"@fo, "Ukraine"@fr, "An Úcráin"@ga, "Ucraína"@gl, "Ukrajina"@hr, "Ukrajna"@hu, "Úkraína"@is, "Ucraina"@it, "ウクライナ"@ja, "Ukrain"@lb, "Ukraina"@lt, "Ukraina"@lv, "Украина"@mk, "L-Ukrajna"@mt, "Oekraïne"@nl, "Ukraina"@no, "Ukraina"@pl, "Ucrânia"@pt, "Ucraina"@rm, "Ucraina"@ro, "Украина"@ru, "Ukrajina"@sk, "Ukrajina"@sl, "Ukraina"@sq, "Украјина"@sr, "Ukraina"@sv, "Ukrayna"@tr, "Україна"@uk, "乌克兰"@zh ;
+  ns1:authority-code "UKR" ;
+  ns1:op-code "UKR" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "UA"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "UA"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "UKR"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_140" ;
+    ns1:legacy-code "UA"
+  ] ;
+  ns1:start.use "1991-08-24" ;
+  ns2:op-code "UKR" ;
+  dc11:identifier "UKR" ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Eastern Europe"^^ns3:UNSD_GEOSCHEME, "183"^^ns3:EP, "UKR"^^ns3:FD_010, "UA"^^ns3:FD_140, ".ua"^^ns3:IANA_DOMAIN, "UA"^^ns3:IBAN_COU, "UA"^^ns3:ISG_COU, "UA"^^ns3:ISO_3166_1_ALPHA_2, "UKR"^^ns3:ISO_3166_1_ALPHA_3, "804"^^ns3:ISO_3166_1_NUM, "UKR"^^ns3:NAC, "380"^^ns3:PHONE_PREFIX, "UA"^^ns3:TED, "UA"^^ns3:TED_SCHEMA, "UA"^^ns3:TIR, "804"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "an Úcráin"@ga, "Ukrainos"@lt, "Ukrainas"@lv, "l-Ukrajna"@mt .
+
+  <http://publications.europa.eu/resource/authority/country/DZA>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "الجزائر"@ar, "Алжир"@bg, "Algèria"@ca, "Alžírsko"@cs, "Algeriet"@da, "Algerien"@de, "Αλγερία"@el, "Algeria"@en, "Argelia"@es, "Alžeeria"@et, "Algeria"@fi, "Algérie"@fr, "An Ailgéir"@ga, "Alžir"@hr, "Algéria"@hu, "Alsír"@is, "Algeria"@it, "アルジェリア"@ja, "Algerien"@lb, "Alžyras"@lt, "Alžīrija"@lv, "L-Alġerija"@mt, "Algerije"@nl, "Algerie"@no, "Algieria"@pl, "Argélia"@pt, "Algeria"@ro, "Алжир"@ru, "Alžírsko"@sk, "Alžirija"@sl, "Algeriet"@sv, "Cezayir"@tr, "Алжир"@uk, "阿尔及利亚"@zh ;
+  ns1:authority-code "DZA" ;
+  ns1:op-code "DZA" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "DZ"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_050" ;
+    ns1:legacy-code "DZ"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "DZ"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "DZ"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_400" ;
+    ns1:legacy-code "DZ"
+  ] ;
+  ns1:start.use "1962-07-05" ;
+  ns2:op-code "DZA" ;
+  dc11:identifier "DZA" ;
+  skos:altLabel "جمهورية الجزائر الديمقراطية الشعبية"@ar, "Алжирска народнодемократична република"@bg, "República Democràtica Popular d'Algèria"@ca, "Alžírská demokratická a lidová republika"@cs, "Den Demokratiske Folkerepublik Algeriet"@da, "Demokratische Volksrepublik Algerien"@de, "Λαϊκή Δημοκρατία της Αλγερίας"@el, "People’s Democratic Republic of Algeria"@en, "República Argelina Democrática y Popular"@es, "Alžeeria Demokraatlik Rahvavabariik"@et, "Algerian demokraattinen kansantasavalta"@fi, "République algérienne démocratique et populaire"@fr, "Daon-Phoblacht Dhaonlathach na hAilgéire"@ga, "Demokratska Narodna Republika Alžir"@hr, "Algériai Demokratikus és Népi Köztársaság"@hu, "Alþýðulýðveldið Alsír"@is, "Repubblica algerina democratica e popolare"@it, "アルジェリア民主人民共和国"@ja, "Demokratesch Volleksrepublik Algerien"@lb, "Alžyro Liaudies Demokratinė Respublika"@lt, "Alžīrijas Tautas Demokrātiskā Republika"@lv, "Ir-Repubblika Demokratika tal-Poplu tal-Alġerija"@mt, "Democratische Volksrepubliek Algerije"@nl, "Den demokratiske folkerepublikk Algerie"@no, "Algierska Republika Ludowo-Demokratyczna"@pl, "República Democrática e Popular da Argélia"@pt, "Republica Algeriană Democratică şi Populară"@ro, "Алжирская Народная Демократическая Республика"@ru, "Alžírska demokratická ľudová republika"@sk, "Ljudska demokratična republika Alžirija"@sl, "Demokratiska folkrepubliken Algeriet"@sv, "Cezayir Demokratik Halk Cumhuriyeti"@tr, "Алжирська Народна Демократична Республіка"@uk, "阿尔及利亚民主人民共和国"@zh ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "49"^^ns3:EP, "DZ"^^ns3:FD_010, "DZ"^^ns3:FD_050, "DZ"^^ns3:FD_400, ".dz"^^ns3:IANA_DOMAIN, "DZ"^^ns3:ISG_COU, "DZ"^^ns3:ISO_3166_1_ALPHA_2, "DZA"^^ns3:ISO_3166_1_ALPHA_3, "012"^^ns3:ISO_3166_1_NUM, "DZA"^^ns3:NAC, "213"^^ns3:PHONE_PREFIX, "DZ"^^ns3:TED, "DZ"^^ns3:TED_SCHEMA, "DZ"^^ns3:TIR, "Northern Africa"^^ns3:UNSD_GEOSCHEME, "012"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "Алжирска демократична народна република"@bg, "People's Democratic Republic of Algeria"@en, "an Ailgéir"@ga, "Alžirska Narodna Demokratska Republika"@hr, "Alžyro"@lt, "Alžīrijas"@lv, "ir-Repubblika Demokratika tal-Poplu tal-Alġerija"@mt, "l-Alġerija"@mt, "República Argelina Democrática e Popular"@pt, "Republica Algeriană Democratică și Populară"@ro .
+
+  <http://publications.europa.eu/resource/authority/country/ARM>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "أرمينيا"@ar, "Армения"@bg, "Armènia"@ca, "Arménie"@cs, "Armenien"@da, "Armenien"@de, "Αρμενία"@el, "Armenia"@en, "Armenia"@es, "Armeenia"@et, "Armenia"@fi, "Arménie"@fr, "An Airméin"@ga, "Armenija"@hr, "Örményország"@hu, "Armenía"@is, "Armenia"@it, "アルメニア"@ja, "Armenien"@lb, "Armėnija"@lt, "Armēnija"@lv, "L-Armenja"@mt, "Armenië"@nl, "Armenia"@no, "Armenia"@pl, "Arménia"@pt, "Armenia"@ro, "Армения"@ru, "Arménsko"@sk, "Armenija"@sl, "Armenien"@sv, "Ermenistan"@tr, "Вірменія"@uk, "亚美尼亚"@zh ;
+  ns1:authority-code "ARM" ;
+  ns1:op-code "ARM" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "AM"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "AM"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "AM"
+  ] ;
+  ns1:start.use "1991-09-21" ;
+  ns2:op-code "ARM" ;
+  dc11:identifier "ARM" ;
+  skos:altLabel "جمهورية أرمينيا"@ar, "Република Армения"@bg, "República d'Armènia"@ca, "Arménská republika"@cs, "Republikken Armenien"@da, "Republik Armenien"@de, "Δημοκρατία της Αρμενίας"@el, "Republic of Armenia"@en, "República de Armenia"@es, "Armeenia Vabariik"@et, "Armenian tasavalta"@fi, "République d’Arménie"@fr, "Poblacht na hAirméine"@ga, "Republika Armenija"@hr, "Örmény Köztársaság"@hu, "Հայաստան"@hy, "Lýðveldið Armenía"@is, "Repubblica d’Armenia"@it, "アルメニア共和国"@ja, "Republik Armenien"@lb, "Armėnijos Respublika"@lt, "Armēnijas Republika"@lv, "Ir-Repubblika tal-Armenja"@mt, "Republiek Armenië"@nl, "Republikken Armenia"@no, "Republika Armenii"@pl, "República da Arménia"@pt, "Republica Armenia"@ro, "Республика Армения"@ru, "Arménska republika"@sk, "Republika Armenija"@sl, "Republiken Armenien"@sv, "Ermenistan Cumhuriyeti"@tr, "Республіка Вірменія"@uk, "亚美尼亚共和国"@zh ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Western Asia"^^ns3:UNSD_GEOSCHEME, "5"^^ns3:EP, "AM"^^ns3:FD_010, ".am"^^ns3:IANA_DOMAIN, "AM"^^ns3:ISG_COU, "AM"^^ns3:ISO_3166_1_ALPHA_2, "ARM"^^ns3:ISO_3166_1_ALPHA_3, "051"^^ns3:ISO_3166_1_NUM, "ARM"^^ns3:NAC, "374"^^ns3:PHONE_PREFIX, "AM"^^ns3:TED, "AM"^^ns3:TED_SCHEMA, "AM"^^ns3:TIR, "051"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "αρμενική"@el, "République d'Arménie"@fr, "an Airméin"@ga, "Repubblica d'Armenia"@it, "Armėnijos"@lt, "Armēnijas"@lv, "ir-Repubblika tal-Armenja"@mt, "l-Armenja"@mt .
+
+  <http://publications.europa.eu/resource/authority/country/AZE>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "أذربيدجان"@ar, "Азербайджан"@bg, "Azerbaidjan"@ca, "Ázerbájdžán"@cs, "Aserbajdsjan"@da, "Aserbaidschan"@de, "Αζερμπαϊτζάν"@el, "Azerbaijan"@en, "Azerbaiyán"@es, "Aserbaidžaan"@et, "Azerbaidžan"@fi, "Azerbaïdjan"@fr, "An Asarbaiseáin"@ga, "Azerbajdžan"@hr, "Azerbajdzsán"@hu, "Aserbaísjan"@is, "Azerbaigian"@it, "アゼルバジャン"@ja, "Aserbaidjan"@lb, "Azerbaidžanas"@lt, "Azerbaidžāna"@lv, "L-Ażerbajġan"@mt, "Azerbeidzjan"@nl, "Azerbaijan"@no, "Azerbejdżan"@pl, "Azerbaijão"@pt, "Azerbaidjan"@ro, "Азербайджан"@ru, "Azerbajdžan"@sk, "Azerbajdžan"@sl, "Azerbajdzjan"@sv, "Azerbaycan"@tr, "Азербайджан"@uk, "阿塞拜疆"@zh ;
+  ns1:authority-code "AZE" ;
+  ns1:op-code "AZE" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "AZ"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "AZR"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "AZ"
+  ] ;
+  ns1:start.use "1991-10-18" ;
+  ns2:op-code "AZE" ;
+  dc11:identifier "AZE" ;
+  skos:altLabel "جمهورية أذربيدجان"@ar, "Azərbaycan"@az, "Република Азербайджан"@bg, "República de l'Azerbaidjan"@ca, "Ázerbájdžánská republika"@cs, "Republikken Aserbajdsjan"@da, "Republik Aserbaidschan"@de, "Δημοκρατία του Αζερμπαϊτζάν"@el, "Republic of Azerbaijan"@en, "República de Azerbaiyán"@es, "Aserbaidžaani Vabariik"@et, "Azerbaidžanin tasavalta"@fi, "République d’Azerbaïdjan"@fr, "Poblacht na hAsarbaiseáine"@ga, "Republika Azerbajdžan"@hr, "Azerbajdzsán Köztársaság"@hu, "Lýðveldið Aserbaísjan"@is, "Repubblica dell’Azerbaigian"@it, "アゼルバイジャン共和国"@ja, "Republik Aserbaidjan"@lb, "Azerbaidžano Respublika"@lt, "Azerbaidžānas Republika"@lv, "Ir-Repubblika tal-Ażerbajġan"@mt, "Republiek Azerbeidzjan"@nl, "Republikken Aserbajdsjan"@no, "Republika Azerbejdżanu"@pl, "República do Azerbaijão"@pt, "Republica Azerbaidjan"@ro, "Республика Азербайджан"@ru, "Azerbajdžanská republika"@sk, "Republika Azerbajdžan"@sl, "Republiken Azerbajdzjan"@sv, "Azerbaycan Cumhuriyeti"@tr, "Республіка Азербайджан"@uk, "阿塞拜疆共和国"@zh ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Western Asia"^^ns3:UNSD_GEOSCHEME, "13"^^ns3:EP, "AZR"^^ns3:FD_010, ".az"^^ns3:IANA_DOMAIN, "AZ"^^ns3:IBAN_COU, "AZ"^^ns3:ISG_COU, "AZ"^^ns3:ISO_3166_1_ALPHA_2, "AZE"^^ns3:ISO_3166_1_ALPHA_3, "031"^^ns3:ISO_3166_1_NUM, "AZE"^^ns3:NAC, "994"^^ns3:PHONE_PREFIX, "AZ"^^ns3:TED, "AZ"^^ns3:TED_SCHEMA, "AZ"^^ns3:TIR, "031"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "Азербайджанска република"@bg, "Azerbájdžán"@cs, "Ázerbajdžánská republika"@cs, "Aserbaidžaani"@et, "République d'Azerbaïdjan"@fr, "an Asarbaiseáin"@ga, "Repubblica dell'Azerbaigian"@it, "azerbaigiana, azera"@it, "Azerbaidžano"@lt, "Azerbaidžānas"@lv, "Ażerbajġana"@mt, "ir-Repubblika ta’ Ażerbajġan"@mt, "l-Azerbajġan"@mt, "azerbaijana"@pt, "azerisk"@sv .
+
+  <http://publications.europa.eu/resource/authority/country/IRN>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "إيران"@ar, "Иран"@bg, "Iran"@ca, "Írán"@cs, "Iran"@da, "Iran"@de, "Ιράν"@el, "Iran"@en, "Irán"@es, "Iraan"@et, "Iran"@fi, "Iran"@fr, "An Iaráin"@ga, "Iran"@hr, "Irán"@hu, "Íran"@is, "Iran"@it, "イラン"@ja, "Iran"@lb, "Iranas"@lt, "Irāna"@lv, "L-Iran"@mt, "Iran"@nl, "Iran"@no, "Iran"@pl, "Irão"@pt, "Iran"@ro, "Иран"@ru, "Irán"@sk, "Iran"@sl, "Iran"@sv, "İran"@tr, "Іран"@uk, "伊朗"@zh ;
+  ns1:authority-code "IRN" ;
+  ns1:op-code "IRN" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "IR"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "IR"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_140" ;
+    ns1:legacy-code "IR"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_400" ;
+    ns1:legacy-code "IR"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "IR"
+  ] ;
+  ns1:start.use "1950-05-09" ;
+  ns2:op-code "IRN" ;
+  dc11:identifier "IRN" ;
+  skos:altLabel "جمهورية إيران الإسلامية"@ar, "Ислямска република Иран"@bg, "República Islàmica d’Iran"@ca, "Íránská islámská republika"@cs, "Den Islamiske Republik Iran"@da, "Islamische Republik Iran"@de, "Ισλαμική Δημοκρατία του Ιράν"@el, "Islamic Republic of Iran"@en, "República Islámica de Irán"@es, "Iraani Islamivabariik"@et, "ایران"@fa, "Iranin islamilainen tasavalta"@fi, "République islamique d’Iran"@fr, "Poblacht Ioslamach na hIaráine"@ga, "Islamska Republika Iran"@hr, "Iráni Iszlám Köztársaság"@hu, "Íslamska lýðveldið Íran"@is, "Repubblica islamica dell’Iran"@it, "イラン・イスラム共和国"@ja, "Islamesch Republik Iran"@lb, "Irano Islamo Respublika"@lt, "Irānas Islāma Republika"@lv, "Ir-Repubblika Iżlamika tal-Iran"@mt, "Islamitische Republiek Iran"@nl, "Den islamske republikken Iran"@no, "Islamska Republika Iranu"@pl, "República Islâmica do Irão"@pt, "Republica Islamică Iran"@ro, "Исламская Республика Иран"@ru, "Iránska islamská republika"@sk, "Islamska republika Iran"@sl, "Islamiska republiken Iran"@sv, "İran İslam Cumhuriyeti"@tr, "Ісламська Республіка Іран"@uk, "伊朗伊斯兰共和国"@zh ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Southern Asia"^^ns3:UNSD_GEOSCHEME, "87"^^ns3:EP, "IR"^^ns3:FD_010, "IR"^^ns3:FD_140, "IR"^^ns3:FD_400, ".ir"^^ns3:IANA_DOMAIN, "IR"^^ns3:ISG_COU, "IR"^^ns3:ISO_3166_1_ALPHA_2, "IRN"^^ns3:ISO_3166_1_ALPHA_3, "364"^^ns3:ISO_3166_1_NUM, "IRN"^^ns3:NAC, "98"^^ns3:PHONE_PREFIX, "IR"^^ns3:TED, "IR"^^ns3:TED_SCHEMA, "IR"^^ns3:TIR, "364"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "République islamique d'Iran"@fr, "an Iaráin"@ga, "Repubblica islamica dell'Iran"@it, "Irano"@lt, "Irānas"@lv, "ir-Repubblika Iżlamika tal-Iran"@mt, "l-Iran"@mt .
+
+<http://publications.europa.eu/resource/authority/country/MCO>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "موناكو"@ar, "Манака"@be, "Монако"@bg, "Monako"@bs, "Mònaco"@ca, "Monako"@cs, "Monaco"@da, "Monaco"@de, "Μονακό"@el, "Monaco"@en, "Mónaco"@es, "Monaco"@et, "Monako"@eu, "Monaco"@fi, "Monako"@fo, "Monaco"@fr, "Monacó"@ga, "Mónaco"@gl, "Monako"@hr, "Monaco"@hu, "Mónakó"@is, "Monaco"@it, "モナコ"@ja, "Monaco"@lb, "Monakas"@lt, "Monako"@lv, "Монако"@mk, "Monaco"@mt, "Monaco"@nl, "Monaco"@no, "Monako"@pl, "Mónaco"@pt, "Monaco"@rm, "Monaco"@ro, "Монако"@ru, "Monako"@sk, "Monako"@sl, "Monako"@sq, "Монако"@sr, "Monaco"@sv, "Monako"@tr, "Монако"@uk, "摩纳哥"@zh ;
+  ns1:authority-code "MCO" ;
+  ns1:op-code "MCO" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "MC"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "MC"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "MC"
+  ] ;
+  ns1:start.use "1950-05-09" ;
+  ns2:op-code "MCO" ;
+  dc11:identifier "MCO" ;
+  skos:altLabel "إمارة موناكو"@ar, "Княства Манака"@be, "Княжество Монако"@bg, "Kneževina Monako"@bs, "Principat de Mònaco"@ca, "Monacké knížectví"@cs, "Fyrstendømmet Monaco"@da, "Fürstentum Monaco"@de, "Πριγκηπάτο του Μονακό"@el, "Principality of Monaco"@en, "Principado de Mónaco"@es, "Monaco Vürstiriik"@et, "Monakoko Printzerria"@eu, "Monacon ruhtinaskunta"@fi, "Fúrstadømi Monako"@fo, "Principauté de Monaco"@fr, "Prionsacht Mhonacó"@ga, "Principado de Mónaco"@gl, "Kneževina Monako"@hr, "Monacói Hercegség"@hu, "Furstadæmið Mónakó"@is, "Principato di Monaco"@it, "モナコ公国"@ja, "Fürstentum Monaco"@lb, "Monako Kunigaikštystė"@lt, "Monako Firstiste"@lv, "Кнежевство Монако"@mk, "Il-Prinċipat ta’ Monaco"@mt, "Prinsdom Monaco"@nl, "Fyrstedømmet Monaco"@no, "Księstwo Monako"@pl, "Principado de Mónaco"@pt, "Principadi dal Monaco"@rm, "Principatul Monaco"@ro, "Княжество Монако"@ru, "Monacké kniežatstvo"@sk, "Kneževína Monáko"@sl, "Principata e Monakos"@sq, "Кнежевина Монако"@sr, "Furstendömet Monaco"@sv, "Monako Prensliği"@tr, "Князівство Монако"@uk, "摩纳哥公国"@zh ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Western Europe"^^ns3:UNSD_GEOSCHEME, "111"^^ns3:EP, "MC"^^ns3:FD_010, ".mc"^^ns3:IANA_DOMAIN, "MC"^^ns3:IBAN_COU, "MC"^^ns3:ISG_COU, "MC"^^ns3:ISO_3166_1_ALPHA_2, "MCO"^^ns3:ISO_3166_1_ALPHA_3, "492"^^ns3:ISO_3166_1_NUM, "MCO"^^ns3:NAC, "377"^^ns3:PHONE_PREFIX, "MC"^^ns3:TED, "MC"^^ns3:TED_SCHEMA, "MC"^^ns3:TIR, "492"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "Πριγκιπάτο του Μονακό"@el, "monegaško"@hr, "Monako"@lt, "il-Prinċipat ta' Monaco"@mt, "Vorstendom Monaco"@nl, "Principado do Mónaco"@pt, "Kneževina Monako"@sl .
+
+  <http://publications.europa.eu/resource/authority/country/MAR>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "المغرب"@ar, "Мароко"@bg, "Marroc, el"@ca, "Maroko"@cs, "Marokko"@da, "Marokko"@de, "Μαρόκο"@el, "Morocco"@en, "Marruecos"@es, "Maroko"@et, "Marokko"@fi, "Maroc"@fr, "Maracó"@ga, "Maroko"@hr, "Marokkó"@hu, "Marokkó"@is, "Marocco"@it, "モロッコ"@ja, "Marokko"@lb, "Marokas"@lt, "Maroka"@lv, "Il-Marokk"@mt, "Marokko"@nl, "Marokko"@no, "Maroko"@pl, "Marrocos"@pt, "Maroc"@ro, "Марокко"@ru, "Maroko"@sk, "Maroko"@sl, "Marocko"@sv, "Fas"@tr, "Марокко"@uk, "摩洛哥"@zh ;
+  ns1:authority-code "MAR" ;
+  ns1:op-code "MAR" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "MA"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "MA"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_140" ;
+    ns1:legacy-code "MA"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "MA"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_400" ;
+    ns1:legacy-code "MA"
+  ] ;
+  ns1:start.use "1956-03-02" ;
+  ns2:op-code "MAR" ;
+  dc11:identifier "MAR" ;
+  skos:altLabel "مملكة المغرب"@ar, "Кралство Мароко"@bg, "Regne del Marroc"@ca, "Marocké království"@cs, "Kongeriget Marokko"@da, "Königreich Marokko"@de, "Βασίλειο του Μαρόκου"@el, "Kingdom of Morocco"@en, "Reino de Marruecos"@es, "Maroko Kuningriik"@et, "Marokon kuningaskunta"@fi, "Royaume du Maroc"@fr, "Ríocht Mharacó"@ga, "Kraljevina Maroko"@hr, "Marokkói Királyság"@hu, "Konungsríkið Marokkó"@is, "Regno del Marocco"@it, "モロッコ王国"@ja, "Kinnekräich Marokko"@lb, "Maroko Karalystė"@lt, "Marokas Karaliste"@lv, "Ir-Renju tal-Marokk"@mt, "Koninkrijk Marokko"@nl, "Kongeriket Marokko"@no, "Królestwo Marokańskie"@pl, "Reino de Marrocos"@pt, "Regatul Maroc"@ro, "Королевство Марокко"@ru, "Marocké kráľovstvo"@sk, "Kraljevina Maroko"@sl, "Konungariket Marocko"@sv, "Fas Krallığı"@tr, "Королівство Марокко"@uk, "摩洛哥王国"@zh ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Northern Africa"^^ns3:UNSD_GEOSCHEME, "110"^^ns3:EP, "MA"^^ns3:FD_010, "MA"^^ns3:FD_140, "MA"^^ns3:FD_400, ".ma"^^ns3:IANA_DOMAIN, "MA"^^ns3:ISG_COU, "MA"^^ns3:ISO_3166_1_ALPHA_2, "MAR"^^ns3:ISO_3166_1_ALPHA_3, "504"^^ns3:ISO_3166_1_NUM, "MAR"^^ns3:NAC, "212"^^ns3:PHONE_PREFIX, "MA"^^ns3:TED, "MA"^^ns3:TED_SCHEMA, "MAL"^^ns3:TIR, "504"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "Maroko"@lt, "Marokas"@lv, "il-Marokk"@mt, "ir-Renju tal-Marokk"@mt .
+
+  <http://publications.europa.eu/resource/authority/country/TUN>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "تونس"@ar, "Тунис"@bg, "Tunísia"@ca, "Tunisko"@cs, "Tunesien"@da, "Tunesien"@de, "Τυνησία"@el, "Tunisia"@en, "Túnez"@es, "Tuneesia"@et, "Tunisia"@fi, "Tunisie"@fr, "An Túinéis"@ga, "Tunis"@hr, "Tunézia"@hu, "Túnis"@is, "Tunisia"@it, "チュニジア"@ja, "Tunesien"@lb, "Tunisas"@lt, "Tunisija"@lv, "It-Tuneżija"@mt, "Tunesië"@nl, "Tunisia"@no, "Tunezja"@pl, "Tunísia"@pt, "Tunisia"@ro, "Тунис"@ru, "Tunisko"@sk, "Tunizija"@sl, "Tunisien"@sv, "Tunus"@tr, "Туніс"@uk, "突尼斯"@zh ;
+  ns1:authority-code "TUN" ;
+  ns1:op-code "TUN" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "TN"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "TN"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "TN"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_400" ;
+    ns1:legacy-code "TN"
+  ] ;
+  ns1:start.use "1956-03-20" ;
+  ns2:op-code "TUN" ;
+  dc11:identifier "TUN" ;
+  skos:altLabel "جمهورية تونس"@ar, "Република Тунис"@bg, "República de Tunísia"@ca, "Tuniská republika"@cs, "Den Tunesiske Republik"@da, "Tunesische Republik"@de, "Δημοκρατία της Τυνησίας"@el, "Republic of Tunisia"@en, "República de Túnez"@es, "Tuneesia Vabariik"@et, "Tunisian tasavalta"@fi, "République tunisienne"@fr, "Poblacht na Túinéise"@ga, "Republika Tunis"@hr, "Tunéziai Köztársaság"@hu, "Lýðveldið Túnis"@is, "Repubblica tunisina"@it, "チュニジア共和国"@ja, "Republik Tunesien"@lb, "Tuniso Respublika"@lt, "Tunisijas Republika"@lv, "Ir-Repubblika tat-Tuneżija"@mt, "Republiek Tunesië"@nl, "Republikken Tunisia"@no, "Republika Tunezyjska"@pl, "República da Tunísia"@pt, "Republica Tunisiană"@ro, "Тунисская Республика"@ru, "Tuniská republika"@sk, "Republika Tunizija"@sl, "Republiken Tunisien"@sv, "Tunus Cumhuriyeti"@tr, "Туніська Республіка"@uk, "突尼斯共和国"@zh ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Northern Africa"^^ns3:UNSD_GEOSCHEME, "177"^^ns3:EP, "TN"^^ns3:FD_010, "TN"^^ns3:FD_400, ".tn"^^ns3:IANA_DOMAIN, "TN"^^ns3:IBAN_COU, "TN"^^ns3:ISG_COU, "TN"^^ns3:ISO_3166_1_ALPHA_2, "TUN"^^ns3:ISO_3166_1_ALPHA_3, "788"^^ns3:ISO_3166_1_NUM, "TUN"^^ns3:NAC, "216"^^ns3:PHONE_PREFIX, "TN"^^ns3:TED, "TN"^^ns3:TED_SCHEMA, "TN"^^ns3:TIR, "788"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "Тунизийска република"@bg, "an Túinéis"@ga, "tuniško"@hr, "Tuniso"@lt, "Tunisijas"@lv, "ir-Repubblika tat-Tuneżija"@mt, "it-Tuneżija"@mt, "República Tunisina"@pt .
+
+<http://publications.europa.eu/resource/authority/country/GBR>
+  a skos:Concept ;
+  ns1:deprecated "false" ;
+  skos:prefLabel "المملكة المتحدة"@ar, "Вялікабрытанія"@be, "Обединено кралство"@bg, "Ujedinjeno Kraljevstvo"@bs, "Regne Unit"@ca, "Spojené království"@cs, "Det Forenede Kongerige"@da, "Vereinigtes Königreich"@de, "Ηνωμένο Βασίλειο"@el, "United Kingdom"@en, "Reino Unido"@es, "Ühendkuningriik"@et, "Erresuma Batu"@eu, "Yhdistynyt kuningaskunta"@fi, "Stóra Bretland"@fo, "Royaume-Uni"@fr, "An Ríocht Aontaithe"@ga, "Reino Unido"@gl, "Ujedinjena Kraljevina"@hr, "Egyesült Királyság"@hu, "Bretland"@is, "Regno Unito"@it, "イギリス"@ja, "Groussbritannien"@lb, "Jungtinė Karalystė"@lt, "Apvienotā Karaliste"@lv, "Обединето кралство"@mk, "Ir-Renju Unit"@mt, "Verenigd Koninkrijk"@nl, "Storbritannia"@no, "Zjednoczone Królestwo"@pl, "Reino Unido"@pt, "Reginavel Unì"@rm, "Regatul Unit"@ro, "Соединённое Королевство"@ru, "Spojené kráľovstvo"@sk, "Združeno kraljestvo"@sl, "Britania e Madhe"@sq, "Уједињено Краљевство"@sr, "Förenade kungariket"@sv, "Birleşik Krallık"@tr, "Сполучене Королівство"@uk, "英国"@zh ;
+  ns1:authority-code "GBR" ;
+  ns1:op-code "GBR" ;
+  ns1:op-mapped-code [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_380" ;
+    ns1:legacy-code "UK"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "PUB" ;
+    ns1:affected-table "PUB_LOC" ;
+    ns1:legacy-code "UK"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "PROCAT" ;
+    ns1:affected-table "VOLET_MNE" ;
+    ns1:legacy-code "UK"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED" ;
+    ns1:legacy-code "UK"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "TED_SCHEMA" ;
+    ns1:legacy-code "UK"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_110" ;
+    ns1:legacy-code "UK"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "PUB" ;
+    ns1:affected-table "PUB_LOC" ;
+    ns1:legacy-code "{GBR}"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_010" ;
+    ns1:legacy-code "GB"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_375" ;
+    ns1:legacy-code "UK"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_375" ;
+    ns1:legacy-code "GB"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_361" ;
+    ns1:legacy-code "GB"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_290" ;
+    ns1:legacy-code "GB"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_050" ;
+    ns1:legacy-code "GB"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_140" ;
+    ns1:legacy-code "UK"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_160" ;
+    ns1:legacy-code "UK"
+  ], [
+    a ns1:MappedCode ;
+    dc11:source "EurLex" ;
+    ns1:affected-table "FD_400" ;
+    ns1:legacy-code "GB"
+  ] ;
+  ns1:start.use "1950-05-09" ;
+  ns2:op-code "GBR" ;
+  dc11:identifier "GBR" ;
+  skos:altLabel "المملكة المتحدة لبريطانيا العظمى و أيرلندا الشمالية"@ar, "Злучанае Каралеўства Вялікабрытаніі і Паўночнай Ірландыі"@be, "Обединено кралство Великобритания и Северна Ирландия"@bg, "Ujedinjeno Kraljevstvo Velike Britanije i Sjeverne Irske"@bs, "Regne Unit de la Gran Bretanya i Irlanda del Nord"@ca, "Spojené království Velké Británie a Severního Irska"@cs, "Det Forenede Kongerige Storbritannien og Nordirland"@da, "Vereinigtes Königreich Großbritanien und Nordirland"@de, "Ηνωμένο Βασίλειο της Μεγάλης Βρετανίας και της Βόρειας Ιρλανδίας"@el, "UK"@en, "United Kingdom of Great Britain and Northern Ireland"@en, "Reino Unido de Gran Bretaña e Irlanda del Norte"@es, "Suurbritannia ja Põhja-Iiri Ühendkuningriik"@et, "ÜK"@et, "Britainia Handiko eta Ipar Iralndako Erresuma Batu"@eu, "Ison-Britannian ja Pohjois-Irlannin yhdistynyt kuningaskunta"@fi, "Hitt Sameinada Kongsríki Bretlands og Norðurírlands"@fo, "Royaume-Uni de Grande-Bretagne et d’Irlande du Nord"@fr, "RA"@ga, "Ríocht Aontaithe na Breataine Móire agus Thuaisceart Éireann"@ga, "Reino Unido da Gran Bretaña e Irlanda do Norte"@gl, "Ujedinjena Kraljevina Velike Britanije i Sjeverne Irske"@hr, "Nagy-Britannia és Észak-Írország Egyesült Királysága"@hu, "Sameinaða konungsríkið Stóra-Bretland og Norður-Írland"@is, "Regno Unito di Gran Bretagna e Irlanda del Nord"@it, "グレートブリテン及びアイルランド連合王国"@ja, "Vereenegt Kinnekräich vu Groussbritannien an Nordirland"@lb, "Jungtinė Didžiosios Britanijos ir Šiaurės Airijos Karalystė"@lt, "Lielbritānijas un Ziemeļīrijas Apvienotā Karaliste"@lv, "Обединето Кралство на Велика Британија и Северна Ирска"@mk, "Ir-Renju Unit tal-Gran Brittanja u l-Irlanda ta’ Fuq"@mt, "Verenigd Koninkrijk van Groot-Brittannië en Noord-Ierland"@nl, "Storbritannia og Nord-Irland"@no, "Zjednoczone Królestwo Wielkiej Brytanii i Irlandii Północnej"@pl, "Reino Unido da Grã-Bretanha e da Irlanda do Norte"@pt, "Reginavel Unì da la Gronda Britannia ed Irlanda dal Nord"@rm, "Regatul Unit al Marii Britanii şi Irlandei de Nord"@ro, "Соединённое Королевство Великобритании и Северной Ирландии"@ru, "Spojené kráľovstvo Veľkej Británie a Severného Írska"@sk, "Združeno kraljestvo Velike Britanije in Severne Irske"@sl, "Mbretëria e Bashkuar e Britanisë së Madhe dhe Irlandës Veriore"@sq, "Уједињено Краљевство Велике Британије и Северне Ирске"@sr, "Förenade konungariket Storbritannien och Nordirland"@sv, "Büyük Britanya ve Kuzey İrlanda Birleşik Krallığı"@tr, "Сполучене Королівство Великої Британії та Північної Ірландії"@uk, "大不列颠及北爱尔兰联合王国"@zh ;
+  skos:historyNote "Slovene entries have been aligned with the latest Slovene standard (KSZI 2023) and the Interinstitutional Style Guide and IATE."@en, "The Interinstitutional Style Guide generally uses the code ISO 3166 alpha-2 see element ‘code-3166-1-alpha-2’, except for United Kingdom where it uses ‘UK’ instead of ‘GB’ see element ‘op-styleguide’."@en, "The country membership classification was updated due to the withdrawal of the United Kingdom from the European Union."@en, "Le code de rédaction interinstitutionnel utilise généralement le code ISO 3166 alpha-2 voir élément «code-3166-1-alpha-2», sauf pour le Royaume-Uni où il utilise le code «UK» au lieu du code «GB» voir élément «op-styleguide»."@fr ;
+  skos:inScheme ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:notation "Northern Europe"^^ns3:UNSD_GEOSCHEME, "62"^^ns3:EP, "GB"^^ns3:FD_010, "GB"^^ns3:FD_050, "UK"^^ns3:FD_110, "UK"^^ns3:FD_140, "UK"^^ns3:FD_160, "GB"^^ns3:FD_290, "GB"^^ns3:FD_361, "GB"^^ns3:FD_375, "UK"^^ns3:FD_375, "UK"^^ns3:FD_380, "GB"^^ns3:FD_400, ".gb"^^ns3:IANA_DOMAIN, "GB"^^ns3:IBAN_COU, "UK"^^ns3:ISG_COU, "GB"^^ns3:ISO_3166_1_ALPHA_2, "GBR"^^ns3:ISO_3166_1_ALPHA_3, "826"^^ns3:ISO_3166_1_NUM, "UK"^^ns3:MNE, "GBR"^^ns3:NAC, "44"^^ns3:PHONE_PREFIX, "UK"^^ns3:PUB_LOC, "{GBR}"^^ns3:PUB_LOC, "UK"^^ns3:TED, "UK"^^ns3:TED_SCHEMA, "GB"^^ns3:TIR, "826"^^ns3:UNSD_M49 ;
+  skos:topConceptOf ns2:country, <http://publications.europa.eu/resource/authority/country/0001> ;
+  skos:hiddenLabel "Vereinigtes Königreich Großbritannien und Nordirland"@de, "Ühendkuningriigi"@et, "britti"@fi, "an Ríocht Aontaithe"@ga, "brit"@hu, "Jungtinės Karalystės"@lt, "Brittanika"@mt, "ir-Renju Unit"@mt, "ir-Renju Unit tal-Gran Brittanja u l-Irlanda ta' Fuq"@mt, "Wielka Brytania"@pl, "Regatul Unit al Marii Britanii și al Irlandei de Nord"@ro, "britanică/din Marea Britanie"@ro ;
+  skos:narrower <http://publications.europa.eu/resource/authority/country/AIA>, <http://publications.europa.eu/resource/authority/country/ATB>, <http://publications.europa.eu/resource/authority/country/BMU>, <http://publications.europa.eu/resource/authority/country/CYM>, <http://publications.europa.eu/resource/authority/country/FLK>, <http://publications.europa.eu/resource/authority/country/GIB>, <http://publications.europa.eu/resource/authority/country/IOT>, <http://publications.europa.eu/resource/authority/country/MSR>, <http://publications.europa.eu/resource/authority/country/PCN>, <http://publications.europa.eu/resource/authority/country/SGS>, <http://publications.europa.eu/resource/authority/country/SHN>, <http://publications.europa.eu/resource/authority/country/TCA>, <http://publications.europa.eu/resource/authority/country/VGB>, <http://publications.europa.eu/resource/authority/country/XAD>, <http://publications.europa.eu/resource/authority/country/XBA>, <http://publications.europa.eu/resource/authority/country/XNY>, <http://publications.europa.eu/resource/authority/country/XXI> .
