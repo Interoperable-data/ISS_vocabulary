@@ -22,7 +22,7 @@
 
 iss-pec:PersonCategories a skos:ConceptScheme ; 
     dct:issued "2024-04-04"^^xsd:date ;
-    dct:modified "2024-09-03"^^xsd:date ;
+    dct:modified "2024-09-03"^^xsd:date, "2025-04-07"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
     rdfs:label "Person Categories"@en ;
@@ -37,14 +37,58 @@ iss-pec:PersonCategories a skos:ConceptScheme ;
 #
 #################################################################
 iss-pec:Passenger
-        rdf:type        skos:Concept ;         skos:inScheme iss-pec:PersonCategories;         skos:topConceptOf iss-pec:PersonCategories;
-        skos:prefLabel  "Passenger"@en .
+        rdf:type        skos:Concept ;         
+         skos:inScheme iss-pec:PersonCategories;        
+         skos:topConceptOf iss-pec:PersonCategories;
+         skos:definition "Any person, excluding a member of the train crew, who makes a trip by rail, including a
+passenger trying to embark onto or disembark from a moving train for accident statistics only"@en ;
+         skos:prefLabel  "Passenger"@en .
 
 iss-pec:Employee
-        rdf:type        skos:Concept ;         skos:inScheme iss-pec:PersonCategories;         skos:topConceptOf iss-pec:PersonCategories;
+        rdf:type        skos:Concept ;         
+        skos:inScheme iss-pec:PersonCategories; 
+        skos:altLabel "Contractor"@en ;        
+        skos:topConceptOf iss-pec:PersonCategories;
+        skos:definition """
+        Any person whose employment is in connection with a railway and is at work at the time of the accident, including the staff of contractors, self-employed contractors, the crew of the train and
+persons handling rolling stock and infrastructure installations """@en ;
         skos:prefLabel  "Employee"@en .
 
 iss-pec:Trespasser
-        rdf:type        skos:Concept ;         skos:inScheme iss-pec:PersonCategories;         skos:topConceptOf iss-pec:PersonCategories;
+        rdf:type        skos:Concept ;         
+        skos:inScheme iss-pec:PersonCategories; 
+        skos:definition "Any person present on railway premises where such presence is forbidden, with the exception
+of a level crossing user"@en ;         
+        skos:topConceptOf iss-pec:PersonCategories;
         skos:prefLabel  "Trespasser"@en .
 
+
+iss-pec:LevelCrossingUser
+        rdf:type        skos:Concept ;         
+        skos:inScheme iss-pec:PersonCategories;
+        skos:definition "Any person using a level crossing to cross the railway line by any means of transport
+or by foot"@en ;         
+        skos:topConceptOf iss-pec:PersonCategories;
+        skos:prefLabel  "Level crossing user"@en .
+
+
+iss-pec:OtherPersonAtAPlatform
+        rdf:type        skos:Concept ;         
+        skos:inScheme iss-pec:PersonCategories;
+        skos:definition """
+        Any person at a railway platform who is not defined as 'passenger', 'employee
+or contractor', 'level crossing user', 'other person not at a platform' or 'trespasser'
+        """@en ;         
+        skos:topConceptOf iss-pec:PersonCategories;
+        skos:prefLabel  "Other person at a platform "@en .
+
+
+iss-pec:OtherPersonNotAtAPlatform
+        rdf:type        skos:Concept ;         
+        skos:inScheme iss-pec:PersonCategories;
+        skos:definition """
+        Any person not at a railway platform who is not defined as 'passenger',
+'employee or contractor', 'level crossing user', 'other person at a platform' or 'trespasser'
+        """@en ;         
+        skos:topConceptOf iss-pec:PersonCategories;
+        skos:prefLabel  "Other person not at a platform "@en .
