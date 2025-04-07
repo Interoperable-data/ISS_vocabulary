@@ -4,6 +4,7 @@
 @prefix ns1: <http://publications.europa.eu/ontology/authority/> .
 @prefix ns2: <http://publications.europa.eu/resource/authority/> .
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://publications.europa.eu/ontology/euvoc#> .
 
 <http://publications.europa.eu/resource/authority/country>
   a skos:ConceptScheme ;
