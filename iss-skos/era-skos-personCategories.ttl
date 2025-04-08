@@ -40,8 +40,8 @@ iss-pec:Passenger
         rdf:type        skos:Concept ;         
          skos:inScheme iss-pec:PersonCategories;        
          skos:topConceptOf iss-pec:PersonCategories;
-         skos:definition "Any person, excluding a member of the train crew, who makes a trip by rail, including a
-passenger trying to embark onto or disembark from a moving train for accident statistics only"@en ;
+         skos:definition """Any person, excluding a member of the train crew, who makes a trip by rail, including a
+passenger trying to embark onto or disembark from a moving train for accident statistics only"""@en ;
          skos:prefLabel  "Passenger"@en .
 
 iss-pec:Employee
@@ -57,8 +57,8 @@ persons handling rolling stock and infrastructure installations """@en ;
 iss-pec:Trespasser
         rdf:type        skos:Concept ;         
         skos:inScheme iss-pec:PersonCategories; 
-        skos:definition "Any person present on railway premises where such presence is forbidden, with the exception
-of a level crossing user"@en ;         
+        skos:definition """Any person present on railway premises where such presence is forbidden, with the exception
+of a level crossing user"""@en ;         
         skos:topConceptOf iss-pec:PersonCategories;
         skos:prefLabel  "Trespasser"@en .
 
@@ -66,8 +66,8 @@ of a level crossing user"@en ;
 iss-pec:LevelCrossingUser
         rdf:type        skos:Concept ;         
         skos:inScheme iss-pec:PersonCategories;
-        skos:definition "Any person using a level crossing to cross the railway line by any means of transport
-or by foot"@en ;         
+        skos:definition """Any person using a level crossing to cross the railway line by any means of transport
+or by foot"""@en ;         
         skos:topConceptOf iss-pec:PersonCategories;
         skos:prefLabel  "Level crossing user"@en .
 
