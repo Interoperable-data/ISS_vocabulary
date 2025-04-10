@@ -37,54 +37,54 @@ iss-rcmf:10  rdf:type  skos:Concept ;
        skos:topConceptOf iss-rcmf:RiskControlMeasureFunctions ;
        skos:notation "RCMF.1.0."^^xsd:string ; 
        skos:narrower iss-rcmf:11, iss-rcmf:12 ;
-       skos:prefLabel  " Detect function - None"@en .
+       skos:prefLabel  "RCMF.1.0. - Detect function - None"@en .
 
 iss-rcmf:11  rdf:type  skos:Concept ;         
        skos:inScheme  iss-rcmf:RiskControlMeasureFunctions ;         
        skos:notation "RCMF.1.1."^^xsd:string ; 
        skos:broader iss-rcmf:10 ;
-       skos:prefLabel  "Detect function - Technical system"@en .
+       skos:prefLabel  "RCMF.1.1. - Detect function - Technical system"@en .
 
 iss-rcmf:12  rdf:type  skos:Concept ;         
        skos:inScheme  iss-rcmf:RiskControlMeasureFunctions ;         
        skos:notation "RCMF.1.2."^^xsd:string ; 
        skos:broader iss-rcmf:10 ;
-       skos:prefLabel  "Detect function - Human"@en .
+       skos:prefLabel  "RCMF.1.2. - Detect function - Human"@en .
 
 iss-rcmf:20  rdf:type  skos:Concept ;         
        skos:inScheme  iss-rcmf:RiskControlMeasureFunctions ;         
        skos:topConceptOf iss-rcmf:RiskControlMeasureFunctions ;
        skos:notation "RCMF.2.0."^^xsd:string ; 
        skos:narrower iss-rcmf:21, iss-rcmf:22 ;
-       skos:prefLabel  "Diagnose function - None"@en .
+       skos:prefLabel  "RCMF.2.0. - Diagnose function - None"@en .
 
 iss-rcmf:21  rdf:type  skos:Concept ;         
        skos:inScheme  iss-rcmf:RiskControlMeasureFunctions ;         
        skos:notation "RCMF.2.1."^^xsd:string ; 
        skos:broader iss-rcmf:20 ;
-       skos:prefLabel  "Diagnose function - Technical system"@en .
+       skos:prefLabel  "RCMF.2.1. - Diagnose function - Technical system"@en .
 
 iss-rcmf:22  rdf:type  skos:Concept ;         
        skos:inScheme  iss-rcmf:RiskControlMeasureFunctions ;         
        skos:notation "RCMF.2.2."^^xsd:string ; 
        skos:broader iss-rcmf:20 ;
-       skos:prefLabel  "Diagnose function - Human"@en .
+       skos:prefLabel  "RCMF.2.2. - Diagnose function - Human"@en .
 
 iss-rcmf:30  rdf:type  skos:Concept ;         
        skos:inScheme  iss-rcmf:RiskControlMeasureFunctions ;         
        skos:topConceptOf iss-rcmf:RiskControlMeasureFunctions ;
        skos:notation "RCMF.3.0."^^xsd:string ; 
        skos:narrower iss-rcmf:31, iss-rcmf:32 ;
-       skos:prefLabel  "Act function - None"@en .
+       skos:prefLabel  "RCMF.3.0. - Act function - None"@en .
 
 iss-rcmf:31  rdf:type  skos:Concept ;         
        skos:inScheme  iss-rcmf:RiskControlMeasureFunctions ;         
        skos:notation "RCMF.3.1."^^xsd:string ; 
        skos:broader iss-rcmf:30 ;
-       skos:prefLabel  "Act function - Technical system"@en .
+       skos:prefLabel  "RCMF.3.1. - Act function - Technical system"@en .
 	   
 iss-rcmf:32  rdf:type  skos:Concept ;         
        skos:inScheme  iss-rcmf:RiskControlMeasureFunctions ;         
        skos:notation "RCMF.3.2."^^xsd:string ; 
        skos:broader iss-rcmf:30 ;
-       skos:prefLabel  "Act function - Human"@en .
+       skos:prefLabel  "RCMF.3.2. - Act function - Human"@en .
