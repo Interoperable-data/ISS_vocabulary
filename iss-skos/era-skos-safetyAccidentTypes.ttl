@@ -5,7 +5,6 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-
 @prefix iss-sat: <http://data.europa.eu/949/iss/concepts/safety-accident-types/> .
 
 
@@ -31,47 +30,38 @@ iss-sat:A
 		    skos:inScheme iss-sat:SafetyEventTypes;         
 		    skos:topConceptOf iss-sat:SafetyEventTypes;
         skos:prefLabel  "Accident types"@en .
-		
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A5.2>
-        rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A5> ;
-        skos:definition  "A fire or explosion that occurs in a rail vehicle (including its load)."@en ;
-        skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A5.2"^^xsd:token ;
-        skos:prefLabel   "A5.2-Fire (or explosion) involving one or more rail vehicle"@en .
 
-
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A6.1>
-        rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A6> ;
-        skos:definition  "Any accident caused by electric current passing through the body"@en ;
-        skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A6.1"^^xsd:token ;
-        skos:prefLabel   "A6.1-Electric shock"@en .
-
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A5>
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A1>
         rdf:type         skos:Concept ;
         skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A> ;
-        skos:definition  "A fire or explosion that occurs in a railway vehicle (including its load) when it is running between the departure station and the destination, including when stopped at the departure station, the destination or intermediate stops, as well as during re-marshalling operations"@en ;
+        skos:definition  "A collision event falling within the A.1 sub-categories for which detailed information is not (yet) available."@en ;
         skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A5"^^xsd:token ;
-        skos:prefLabel   "A5-Fire (or explosion) in rolling stock"@en .
+        skos:notation    "A1"^^xsd:token ;
+        skos:prefLabel   "A1-Collisions"@en .
 
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A4.2>
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A1.1>
         rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A4> ;
-        skos:definition  "Accidents to one or more persons who are either hit by a railway vehicle or by an object attached to, or that has become detached from the vehicle; this includes persons who fall from railway vehicles as well as persons who fall or are hit by loose objects when travelling on board vehicles."@en ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A1> ;
+        skos:definition  "A front to front, front to end or a side collision between a part of a train and a part of another train or rail vehicle, or with shunting rolling stock"@en ;
         skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A4.2"^^xsd:token ;
-        skos:prefLabel   "A4.2-Accidents to persons involving rail vehicle in motion"@en .
+        skos:notation    "A1.1"^^xsd:token ;
+        skos:prefLabel   "A1.1-Collision of train with train/rail vehicle"@en .
 
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A5.1>
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A1.2>
         rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A5> ;
-        skos:definition  "A fire or explosion that occurs in a train (including its load). "@en ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A1> ;
+        skos:definition  "A collision between a part of a train and objects fixed or temporarily present on or near the track (except at level crossings if lost by a crossing vehicle or user), including collision with overhead contact lines"@en ;
         skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A5.1"^^xsd:token ;
-        skos:prefLabel   "A5.1-Fire (or explosion) in a train"@en .
+        skos:notation    "A1.2"^^xsd:token ;
+        skos:prefLabel   "A1.2-Collision of train with obstacle within the clearance gauge"@en .
+
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A1.3>
+        rdf:type         skos:Concept ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A1> ;
+        skos:definition  "Same as A1.1 but concerning more rails vehicle not forming a train."@en ;
+        skos:inScheme    iss-sat:SafetyAccidentTypes ;
+        skos:notation    "A1.3"^^xsd:token ;
+        skos:prefLabel   "A1.3-Collision of one or more rail vehicles with another rail vehicle"@en .
 
 <http://data.europa.eu/949/iss/concepts/safety-accident-types/A1.4>
         rdf:type         skos:Concept ;
@@ -80,6 +70,62 @@ iss-sat:A
         skos:inScheme    iss-sat:SafetyAccidentTypes ;
         skos:notation    "A1.4"^^xsd:token ;
         skos:prefLabel   "A1.4-Collision of one or more rail vehicles with obstacle within the clearance gauge"@en .
+
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A2>
+        rdf:type         skos:Concept ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A> ;
+        skos:definition  "A derailment event falling within the A.2 sub-categories for which detailed information is not (yet) available."@en ;
+        skos:inScheme    iss-sat:SafetyAccidentTypes ;
+        skos:notation    "A2"^^xsd:token ;
+        skos:prefLabel   "A2-Derailments"@en .
+
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A2.1>
+        rdf:type         skos:Concept ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A2> ;
+        skos:definition  "Any case in which at least one wheel of a train leaves the rails"@en ;
+        skos:inScheme    iss-sat:SafetyAccidentTypes ;
+        skos:notation    "A2.1"^^xsd:token ;
+        skos:prefLabel   "A2.1-Derailment of train"@en .
+
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A2.2>
+        rdf:type         skos:Concept ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A2> ;
+        skos:definition  "Same as A2.1 but concerning one or more rail vehicle not forming a train."@en ;
+        skos:inScheme    iss-sat:SafetyAccidentTypes ;
+        skos:notation    "A2.2"^^xsd:token ;
+        skos:prefLabel   "A2.2-Derailment of one or more rail vehicle"@en .
+
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A3>
+        rdf:type         skos:Concept ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A> ;
+        skos:definition  "A level crossing accident falling within the A.3 sub-categories for which detailed information is not (yet) available."@en ;
+        skos:inScheme    iss-sat:SafetyAccidentTypes ;
+        skos:notation    "A3"^^xsd:token ;
+        skos:prefLabel   "A3-Level Crossing Accident"@en .
+
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A3.1>
+        rdf:type         skos:Concept ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A3> ;
+        skos:definition  "A level crossing accident involving a train and falling within the A.3.1 sub-categories for which detailed information is not (yet) available."@en ;
+        skos:inScheme    iss-sat:SafetyAccidentTypes ;
+        skos:notation    "A3.1"^^xsd:token ;
+        skos:prefLabel   "A3.1-Level Crossing Accident involving a train"@en .
+
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A3.1.1>
+        rdf:type         skos:Concept ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A3.1> ;
+        skos:definition  "Any accident at level crossings involving at least one train and crossing pedestrians. Note: pedestrians also include people crossing with bicycles (or other similar small vehicles normally allowed on pedestrian/bike paths)"@en ;
+        skos:inScheme    iss-sat:SafetyAccidentTypes ;
+        skos:notation    "A3.1.1"^^xsd:token ;
+        skos:prefLabel   "A3.1.1-Level Crossing Accident involving a train and pedestrians"@en .
+
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A3.1.2>
+        rdf:type         skos:Concept ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A3.1> ;
+        skos:definition  "Any accident at level crossings involving at least one train and one or more crossing vehicles or objects temporarily present on or near the track if lost by a crossing vehicle or user."@en ;
+        skos:inScheme    iss-sat:SafetyAccidentTypes ;
+        skos:notation    "A3.1.2"^^xsd:token ;
+        skos:prefLabel   "A3.1.2-Level Crossing Accident involving a train and crossing vehicles"@en .
 
 <http://data.europa.eu/949/iss/concepts/safety-accident-types/A3.2>
         rdf:type         skos:Concept ;
@@ -105,77 +151,53 @@ iss-sat:A
         skos:notation    "A4.1"^^xsd:token ;
         skos:prefLabel   "A4.1-Accidents to persons involving a train in motion"@en .
 
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A3.1.2>
+		
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A4.2>
         rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A3.1> ;
-        skos:definition  "Any accident at level crossings involving at least one train and one or more crossing vehicles or objects temporarily present on or near the track if lost by a crossing vehicle or user."@en ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A4> ;
+        skos:definition  "Accidents to one or more persons who are either hit by a railway vehicle or by an object attached to, or that has become detached from the vehicle; this includes persons who fall from railway vehicles as well as persons who fall or are hit by loose objects when travelling on board vehicles."@en ;
         skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A3.1.2"^^xsd:token ;
-        skos:prefLabel   "A3.1.2-Level Crossing Accident involving a train and crossing vehicles"@en .
+        skos:notation    "A4.2"^^xsd:token ;
+        skos:prefLabel   "A4.2-Accidents to persons involving rail vehicle in motion"@en .
 
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A1.3>
-        rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A1> ;
-        skos:definition  "Same as A1.1 but concerning more rails vehicle not forming a train."@en ;
-        skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A1.3"^^xsd:token ;
-        skos:prefLabel   "A1.3-Collision of one or more rail vehicles with another rail vehicle"@en .
-
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A2.2>
-        rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A2> ;
-        skos:definition  "Same as A2.1 but concerning one or more rail vehicle not forming a train."@en ;
-        skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A2.2"^^xsd:token ;
-        skos:prefLabel   "A2.2-Derailment of one or more rail vehicle"@en .
-
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A3.1>
-        rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A3> ;
-        skos:definition  "A level crossing accident involving a train and falling within the A.3.1 sub-categories for which detailed information is not (yet) available."@en ;
-        skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A3.1"^^xsd:token ;
-        skos:prefLabel   "A3.1-Level Crossing Accident involving a train"@en .
-
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A3>
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A5>
         rdf:type         skos:Concept ;
         skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A> ;
-        skos:definition  "A level crossing accident falling within the A.3 sub-categories for which detailed information is not (yet) available."@en ;
+        skos:definition  "A fire or explosion that occurs in a railway vehicle (including its load) when it is running between the departure station and the destination, including when stopped at the departure station, the destination or intermediate stops, as well as during re-marshalling operations"@en ;
         skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A3"^^xsd:token ;
-        skos:prefLabel   "A3-Level Crossing Accident"@en .
+        skos:notation    "A5"^^xsd:token ;
+        skos:prefLabel   "A5-Fire (or explosion) in rolling stock"@en .
 
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A3.1.1>
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A5.1>
         rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A3.1> ;
-        skos:definition  "Any accident at level crossings involving at least one train and crossing pedestrians. Note: pedestrians also include people crossing with bicycles (or other similar small vehicles normally allowed on pedestrian/bike paths)"@en ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A5> ;
+        skos:definition  "A fire or explosion that occurs in a train (including its load). "@en ;
         skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A3.1.1"^^xsd:token ;
-        skos:prefLabel   "A3.1.1-Level Crossing Accident involving a train and pedestrians"@en .
+        skos:notation    "A5.1"^^xsd:token ;
+        skos:prefLabel   "A5.1-Fire (or explosion) in a train"@en .
 
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A1.2>
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A5.2>
         rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A1> ;
-        skos:definition  "A collision between a part of a train and objects fixed or temporarily present on or near the track (except at level crossings if lost by a crossing vehicle or user), including collision with overhead contact lines"@en ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A5> ;
+        skos:definition  "A fire or explosion that occurs in a rail vehicle (including its load)."@en ;
         skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A1.2"^^xsd:token ;
-        skos:prefLabel   "A1.2-Collision of train with obstacle within the clearance gauge"@en .
+        skos:notation    "A5.2"^^xsd:token ;
+        skos:prefLabel   "A5.2-Fire (or explosion) involving one or more rail vehicle"@en .
 
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A2.1>
-        rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A2> ;
-        skos:definition  "Any case in which at least one wheel of a train leaves the rails"@en ;
-        skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A2.1"^^xsd:token ;
-        skos:prefLabel   "A2.1-Derailment of train"@en .
-
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A2>
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A6>
         rdf:type         skos:Concept ;
         skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A> ;
-        skos:definition  "A derailment event falling within the A.2 sub-categories for which detailed information is not (yet) available."@en ;
+        skos:definition  "Any accident other than a collision, derailment, level crossing accident, an accident to person involving rolling stock in motion or a fire in rolling stock, not falling within any other category and for which detailed information is not (yet) available"@en ;
         skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A2"^^xsd:token ;
-        skos:prefLabel   "A2-Derailments"@en .
+        skos:notation    "A6"^^xsd:token ;
+        skos:prefLabel   "A6-Other accident"@en .
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A6.1>
+        rdf:type         skos:Concept ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A6> ;
+        skos:definition  "Any accident caused by electric current passing through the body"@en ;
+        skos:inScheme    iss-sat:SafetyAccidentTypes ;
+        skos:notation    "A6.1"^^xsd:token ;
+        skos:prefLabel   "A6.1-Electric shock"@en .
 
 <http://data.europa.eu/949/iss/concepts/safety-accident-types/A6.3>
         rdf:type         skos:Concept ;
@@ -185,30 +207,6 @@ iss-sat:A
         skos:notation    "A6.3"^^xsd:token ;
         skos:prefLabel   "A6.3-Dangerous goods accident not covered by another accident type"@en .
 
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A1.1>
-        rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A1> ;
-        skos:definition  "A front to front, front to end or a side collision between a part of a train and a part of another train or rail vehicle, or with shunting rolling stock"@en ;
-        skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A1.1"^^xsd:token ;
-        skos:prefLabel   "A1.1-Collision of train with train/rail vehicle"@en .
-
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A7.2>
-        rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A7> ;
-        skos:definition  "An act to deliberately injure oneself resulting in serious injury, as recorded and classified by the competent national authority"@en ;
-        skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A7.2"^^xsd:token ;
-        skos:prefLabel   "A7.2-Attempted suicide (voluntary reporting)"@en .
-
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A1>
-        rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A> ;
-        skos:definition  "A collision event falling within the A.1 sub-categories for which detailed information is not (yet) available."@en ;
-        skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A1"^^xsd:token ;
-        skos:prefLabel   "A1-Collisions"@en .
-
 <http://data.europa.eu/949/iss/concepts/safety-accident-types/A7>
         rdf:type         skos:Concept ;
         skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A> ;
@@ -217,10 +215,10 @@ iss-sat:A
         skos:notation    "A7"^^xsd:token ;
         skos:prefLabel   "A7-Suicides and attempted suicides (voluntary reporting)"@en .
 
-<http://data.europa.eu/949/iss/concepts/safety-accident-types/A6>
+<http://data.europa.eu/949/iss/concepts/safety-accident-types/A7.2>
         rdf:type         skos:Concept ;
-        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A> ;
-        skos:definition  "Any accident other than a collision, derailment, level crossing accident, an accident to person involving rolling stock in motion or a fire in rolling stock, not falling within any other category and for which detailed information is not (yet) available"@en ;
+        skos:broader     <http://data.europa.eu/949/iss/concepts/safety-accident-types/A7> ;
+        skos:definition  "An act to deliberately injure oneself resulting in serious injury, as recorded and classified by the competent national authority"@en ;
         skos:inScheme    iss-sat:SafetyAccidentTypes ;
-        skos:notation    "A6"^^xsd:token ;
-        skos:prefLabel   "A6-Other accident"@en .
+        skos:notation    "A7.2"^^xsd:token ;
+        skos:prefLabel   "A7.2-Attempted suicide (voluntary reporting)"@en .
