@@ -1,482 +1,622 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix iss-spae: <http://data.europa.eu/949/iss/concepts/safety-performance-assessment-elements/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix cc: <http://creativecommons.org/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-@prefix iss-spae: <http://data.europa.eu/949/iss/concepts/safety-performance-assessment-elements/> .
-
-
-#################################################################
-#
-#    Concept Schemes
-#
-#################################################################
-
-
-
-iss-spae:SafetyPerformanceAssessmentElements a skos:ConceptScheme ; 
-    dct:issued "2025-04-07"^^xsd:date ;
+iss-spae:SafetyPerformanceAssessmentElements
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:issued "2025-04-07"^^xsd:date ;
+    dct:title "Concept scheme grouping safety performance assessement elements "@en ;
+    rdf:type skos:ConceptScheme ;
     rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
     rdfs:label "Safety Performance Assessement Elements "@en ;
-    skos:prefLabel "Safety Performance Assessement Elements "@en ;
-    dct:title "Concept scheme grouping safety performance assessement elements "@en .
+    skos:prefLabel "Safety Performance Assessement Elements "@en .
 
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1>
+    rdf:type skos:Concept ;
+    skos:definition "PLAN"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P" ;
+    skos:prefLabel "PLAN"@en .
 
-#################################################################
-#
-#    Concept instances
-#
-#################################################################
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1> ;
+    skos:definition "PLAN-L2"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L2" ;
+    skos:prefLabel "Level 2"@en .
 
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2> ;
+    skos:definition "The hazard record includes all hazards, together with all related RCM and system assumptions identified during the risk assessment process. It contains a clear reference to the origin of the hazards and to the selected risk acceptance principles."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L2-E.1" ;
+    skos:prefLabel "P-L2-E.1-The hazard record includes all hazards, together with all related RCM and system assumptions identified during the risk assessment process. It contains a clear reference to the origin of the hazards and to the selected risk acceptance principles."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/C-L4-E.41>
-        rdf:type           skos:Concept ;
-        skos:definition    "Best practices stemming from other industries are sought after and incorporated, if relevant. "@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "C-L4-E.41" ;
-        skos:prefLabel     "C-L4-E.41-Best practices stemming from other industries are sought after and incorporated, if relevant. "@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2> ;
+    skos:definition "Process for risk assessment documented."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L2-E.2" ;
+    skos:prefLabel "P-L2-E.2-Process for risk assessment documented."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L2-E.4>
-        rdf:type           skos:Concept ;
-        skos:definition    "Process for change management documented."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L2-E.4" ;
-        skos:prefLabel     "P-L2-E.4-Process for change management documented."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2> ;
+    skos:definition "Overview of training of staff members with regard to risk assessment."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L2-E.3" ;
+    skos:prefLabel "P-L2-E.3-Overview of training of staff members with regard to risk assessment."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/D-L2-E.24>
-        rdf:type           skos:Concept ;
-        skos:definition    "The competence management system ensures staff has the competences needed to implement, operate and maintain risk control measures."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "D-L2-E.24" ;
-        skos:prefLabel     "D-L2-E.24-The competence management system ensures staff has the competences needed to implement, operate and maintain risk control measures."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2.4>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2> ;
+    skos:definition "Process for change management documented."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L2-E.4" ;
+    skos:prefLabel "P-L2-E.4-Process for change management documented."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/C-L5-E.42>
-        rdf:type           skos:Concept ;
-        skos:definition    "Where possible, the railway operator has put in place a system for real-time automated data collection and monitoring with regard to monitoring of RCM’s."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "C-L5-E.42" ;
-        skos:prefLabel     "C-L5-E.42-Where possible, the railway operator has put in place a system for real-time automated data collection and monitoring with regard to monitoring of RCM’s."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2.5>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2> ;
+    skos:definition "Overview of assessed risk scenarios (serious risks for safety)."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L2-E.5" ;
+    skos:prefLabel "P-L2-E.5-Overview of assessed risk scenarios (serious risks for safety)."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/A-L4-E.52>
-        rdf:type           skos:Concept ;
-        skos:definition    "Planning of reviews of risk assessments is risk-based and considers reported accident and incident occurrences rates."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "A-L4-E.52" ;
-        skos:prefLabel     "A-L4-E.52-Planning of reviews of risk assessments is risk-based and considers reported accident and incident occurrences rates."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2.6>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2> ;
+    skos:definition "Risk assessment of operational processes is performed by staff together knowledgeable of risk assessment as well as the assessed operational process."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L2-E.6" ;
+    skos:prefLabel "P-L2-E.6-Risk assessment of operational processes is performed by staff together knowledgeable of risk assessment as well as the assessed operational process."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/C-L4-E.39>
-        rdf:type           skos:Concept ;
-        skos:definition    "The majority of important risks are monitored using leading indicators."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "C-L4-E.39" ;
-        skos:prefLabel     "C-L4-E.39-The majority of important risks are monitored using leading indicators."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2.7>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2> ;
+    skos:definition "The company deploys staff with knowledge of Human and Organisational Factors concepts that can be mobilized in risk management processes."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L2-E.7" ;
+    skos:prefLabel "P-L2-E.7-The company deploys staff with knowledge of Human and Organisational Factors concepts that can be mobilized in risk management processes."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/D-L4-E.32>
-        rdf:type           skos:Concept ;
-        skos:definition    "Management systems for different topics (such as safety) are integrated."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "D-L4-E.32" ;
-        skos:prefLabel     "D-L4-E.32-Management systems for different topics (such as safety) are integrated."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2.8>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2> ;
+    skos:definition "Evidence that the change management process systematically involves a risk management process."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L2-E.8" ;
+    skos:prefLabel "P-L2-E.8-Evidence that the change management process systematically involves a risk management process."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/D-L3-E.29>
-        rdf:type           skos:Concept ;
-        skos:definition    "A method exists that considers both the effort as well as the benefits of the risk control measures to be able to prioritize measures based on resource-effectiveness. (Goal: Resources for risk reduction are allocated to maximize the resulting risk reduction)."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "D-L3-E.29" ;
-        skos:prefLabel     "D-L3-E.29-A method exists that considers both the effort as well as the benefits of the risk control measures to be able to prioritize measures based on resource-effectiveness. (Goal: Resources for risk reduction are allocated to maximize the resulting risk reduction)."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2.9>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.2> ;
+    skos:definition "The 10 most important risk control measures described in accordance with the part 1 and the part 2 of the applicable dataset in section 2.2 of Appendix B – Part B and limited to the prevented events."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L2-E.9" ;
+    skos:prefLabel "P-L2-E.9-The 10 most important risk control measures described in accordance with the part 1 and the part 2 of the applicable dataset in section 2.2 of Appendix B – Part B and limited to the prevented events."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L2-E.9>
-        rdf:type           skos:Concept ;
-        skos:definition    "The 10 most important risk control measures described in accordance with the part 1 and the part 2 of the applicable dataset in section 2.2 of Appendix B – Part B and limited to the prevented events."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L2-E.9" ;
-        skos:prefLabel     "P-L2-E.9-The 10 most important risk control measures described in accordance with the part 1 and the part 2 of the applicable dataset in section 2.2 of Appendix B – Part B and limited to the prevented events."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1> ;
+    skos:definition "PLAN-L3"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L3" ;
+    skos:prefLabel "Level 3"@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L3-E.14>
-        rdf:type           skos:Concept ;
-        skos:definition    "The 10 most important risk control measures described in accordance with the parts 1, 2 and 3 of the applicable dataset in section 2.2 of Appendix B – Part B."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L3-E.14" ;
-        skos:prefLabel     "P-L3-E.14-The 10 most important risk control measures described in accordance with the parts 1, 2 and 3 of the applicable dataset in section 2.2 of Appendix B – Part B."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.3.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.3> ;
+    skos:definition "Operator uses acceptance criteria in risk-based decision-making."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L3-E.10" ;
+    skos:prefLabel "P-L3-E.10-Operator uses acceptance criteria in risk-based decision-making."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/C-L4-E.40>
-        rdf:type           skos:Concept ;
-        skos:definition    "Reporting is available on the coherent and correct application of the risk assessment process and the change management process."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "C-L4-E.40" ;
-        skos:prefLabel     "C-L4-E.40-Reporting is available on the coherent and correct application of the risk assessment process and the change management process."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.3.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.3> ;
+    skos:definition "Process for the identification of risks associated with human and organisational factors during the risk assessment process."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L3-E.11" ;
+    skos:prefLabel "P-L3-E.11-Process for the identification of risks associated with human and organisational factors during the risk assessment process."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L2-E.3>
-        rdf:type           skos:Concept ;
-        skos:definition    "Overview of training of staff members with regard to risk assessment."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L2-E.3" ;
-        skos:prefLabel     "P-L2-E.3-Overview of training of staff members with regard to risk assessment."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.3.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.3> ;
+    skos:definition "Elements exist that human and organisational factors are taken into consideration in the risk assessment process and the change management process (evidence of application of process – see 11.)."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L3-E.12" ;
+    skos:prefLabel "P-L3-E.12-Elements exist that human and organisational factors are taken into consideration in the risk assessment process and the change management process (evidence of application of process – see 11.)."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/D-L2-E.23>
-        rdf:type           skos:Concept ;
-        skos:definition    "The demonstration is made that the risk control measures in place have an assigned responsible(s) in charge of operating and maintaining them."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "D-L2-E.23" ;
-        skos:prefLabel     "D-L2-E.23-The demonstration is made that the risk control measures in place have an assigned responsible(s) in charge of operating and maintaining them."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.3.4>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.3> ;
+    skos:definition "Overview of assessed risk scenario’s concerning all the risks for safety that are identified the railway operator."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L3-E.13" ;
+    skos:prefLabel "P-L3-E.13-Overview of assessed risk scenario’s concerning all the risks for safety that are identified the railway operator."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/C-L4-E.38>
-        rdf:type           skos:Concept ;
-        skos:definition    "The management supports a culture in which both positive and negative experiences on the perception of risk levels are openly shared and discussed for learning."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "C-L4-E.38" ;
-        skos:prefLabel     "C-L4-E.38-The management supports a culture in which both positive and negative experiences on the perception of risk levels are openly shared and discussed for learning."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.3.5>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.3> ;
+    skos:definition "The 10 most important risk control measures described in accordance with the parts 1, 2 and 3 of the applicable dataset in section 2.2 of Appendix B – Part B."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L3-E.14" ;
+    skos:prefLabel "P-L3-E.14-The 10 most important risk control measures described in accordance with the parts 1, 2 and 3 of the applicable dataset in section 2.2 of Appendix B – Part B."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/D-L4-E.31>
-        rdf:type           skos:Concept ;
-        skos:definition    "The method for assessing the resource effectiveness of RCM is systematically applied."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "D-L4-E.31" ;
-        skos:prefLabel     "D-L4-E.31-The method for assessing the resource effectiveness of RCM is systematically applied."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.4>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1> ;
+    skos:definition "PLAN-L4"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L4" ;
+    skos:prefLabel "Level 4"@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/D-L3-E.28>
-        rdf:type           skos:Concept ;
-        skos:definition    "A distinction is made between the type of risk control measure: RCMs that prevent occurrences, RCMs that reduce the severity of consequences."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "D-L3-E.28" ;
-        skos:prefLabel     "D-L3-E.28-A distinction is made between the type of risk control measure: RCMs that prevent occurrences, RCMs that reduce the severity of consequences."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.4.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.4> ;
+    skos:definition "Performance indicators are measured regarding the risk assessment process."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L4-E.15" ;
+    skos:prefLabel "P-L4-E.15-Performance indicators are measured regarding the risk assessment process."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/A-L3-E.51>
-        rdf:type           skos:Concept ;
-        skos:definition    "Learnings from monitoring process are used in the risk analyses. Risk analyses (risk calculations and/or risk identification) are updated in function of the learnings from monitoring. "@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "A-L3-E.51" ;
-        skos:prefLabel     "A-L3-E.51-Learnings from monitoring process are used in the risk analyses. Risk analyses (risk calculations and/or risk identification) are updated in function of the learnings from monitoring. "@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.4.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.4> ;
+    skos:definition "Periodic review meetings regarding the risk assessment process take place."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L4-E.16" ;
+    skos:prefLabel "P-L4-E.16-Periodic review meetings regarding the risk assessment process take place."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/A-L2-E.48>
-        rdf:type           skos:Concept ;
-        skos:definition    "The interface between the process(es) for risk assessment and the process(es) decision-making is documented. "@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "A-L2-E.48" ;
-        skos:prefLabel     "A-L2-E.48-The interface between the process(es) for risk assessment and the process(es) decision-making is documented. "@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.4.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.4> ;
+    skos:definition "Reviews are undertaken of the expertise present during risk analyses with respect to the topics under analysis."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L4-E.17" ;
+    skos:prefLabel "P-L4-E.17-Reviews are undertaken of the expertise present during risk analyses with respect to the topics under analysis."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L2-E.8>
-        rdf:type           skos:Concept ;
-        skos:definition    "Evidence that the change management process systematically involves a risk management process."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L2-E.8" ;
-        skos:prefLabel     "P-L2-E.8-Evidence that the change management process systematically involves a risk management process."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.4.4>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.4> ;
+    skos:definition "The 10 most important risk control measures described in accordance with the parts 1, 2, 3 and 4 of the applicable dataset in section 2.2 of Appendix B – Part B."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L4-E.18" ;
+    skos:prefLabel "P-L4-E.18-The 10 most important risk control measures described in accordance with the parts 1, 2, 3 and 4 of the applicable dataset in section 2.2 of Appendix B – Part B."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/A-L3-E.49>
-        rdf:type           skos:Concept ;
-        skos:definition    "Planning of review of risk assessments."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "A-L3-E.49" ;
-        skos:prefLabel     "A-L3-E.49-Planning of review of risk assessments."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.5>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1> ;
+    skos:definition "PLAN-L5"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L5" ;
+    skos:prefLabel "Level 5"@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L3-E.13>
-        rdf:type           skos:Concept ;
-        skos:definition    "Overview of assessed risk scenario’s concerning all the risks for safety that are identified the railway operator."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L3-E.13" ;
-        skos:prefLabel     "P-L3-E.13-Overview of assessed risk scenario’s concerning all the risks for safety that are identified the railway operator."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.5.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.5> ;
+    skos:definition "The railway operator regularly conducts in-depth reviews of its risk assessment methods and adapts them in function of these findings."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L5-E.19" ;
+    skos:prefLabel "P-L5-E.19-The railway operator regularly conducts in-depth reviews of its risk assessment methods and adapts them in function of these findings."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L2-E.2>
-        rdf:type           skos:Concept ;
-        skos:definition    "Process for risk assessment documented."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L2-E.2" ;
-        skos:prefLabel     "P-L2-E.2-Process for risk assessment documented."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.5.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.5> ;
+    skos:definition "Human and organisational factors issues are fully integrated in the risk assessment process and the change management process and are continuously reviewed."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L5-E.20" ;
+    skos:prefLabel "P-L5-E.20-Human and organisational factors issues are fully integrated in the risk assessment process and the change management process and are continuously reviewed."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/D-L2-E.22>
-        rdf:type           skos:Concept ;
-        skos:definition    "The railway operator informs its staff (and external staff concerned) of the risks and RCM relevant for their activities."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "D-L2-E.22" ;
-        skos:prefLabel     "D-L2-E.22-The railway operator informs its staff (and external staff concerned) of the risks and RCM relevant for their activities."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.5.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/1.5> ;
+    skos:definition "The 20 most important risk control measures described in accordance with the parts 1, 2, 3 and 4 of the applicable dataset in section 2.2 of Appendix B – Part B. "@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "P-L5-E.21" ;
+    skos:prefLabel "P-L5-E.21-The 20 most important risk control measures described in accordance with the parts 1, 2, 3 and 4 of the applicable dataset in section 2.2 of Appendix B – Part B. "@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L5-E.21>
-        rdf:type           skos:Concept ;
-        skos:definition    "The 20 most important risk control measures described in accordance with the parts 1, 2, 3 and 4 of the applicable dataset in section 2.2 of Appendix B – Part B. "@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L5-E.21" ;
-        skos:prefLabel     "P-L5-E.21-The 20 most important risk control measures described in accordance with the parts 1, 2, 3 and 4 of the applicable dataset in section 2.2 of Appendix B – Part B. "@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2>
+    rdf:type skos:Concept ;
+    skos:definition "DO"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D" ;
+    skos:prefLabel "DO"@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L4-E.18>
-        rdf:type           skos:Concept ;
-        skos:definition    "The 10 most important risk control measures described in accordance with the parts 1, 2, 3 and 4 of the applicable dataset in section 2.2 of Appendix B – Part B."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L4-E.18" ;
-        skos:prefLabel     "P-L4-E.18-The 10 most important risk control measures described in accordance with the parts 1, 2, 3 and 4 of the applicable dataset in section 2.2 of Appendix B – Part B."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2> ;
+    skos:definition "DO-L2"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L2" ;
+    skos:prefLabel "Level 2"@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/D-L4-E.30>
-        rdf:type           skos:Concept ;
-        skos:definition    "There is evidence to estimate the effects of risk control measures across multiple risks (e.g. risks identified in multiple risk assessments)."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "D-L4-E.30" ;
-        skos:prefLabel     "D-L4-E.30-There is evidence to estimate the effects of risk control measures across multiple risks (e.g. risks identified in multiple risk assessments)."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.2.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.2> ;
+    skos:definition "The railway operator informs its staff (and external staff concerned) of the risks and RCM relevant for their activities."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L2-E.22" ;
+    skos:prefLabel "D-L2-E.22-The railway operator informs its staff (and external staff concerned) of the risks and RCM relevant for their activities."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L5-E.19>
-        rdf:type           skos:Concept ;
-        skos:definition    "The railway operator regularly conducts in-depth reviews of its risk assessment methods and adapts them in function of these findings."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L5-E.19" ;
-        skos:prefLabel     "P-L5-E.19-The railway operator regularly conducts in-depth reviews of its risk assessment methods and adapts them in function of these findings."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.2.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.2> ;
+    skos:definition "The demonstration is made that the risk control measures in place have an assigned responsible(s) in charge of operating and maintaining them."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L2-E.23" ;
+    skos:prefLabel "D-L2-E.23-The demonstration is made that the risk control measures in place have an assigned responsible(s) in charge of operating and maintaining them."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/D-L3-E.27>
-        rdf:type           skos:Concept ;
-        skos:definition    "Arrangements exist on managing shared risks and responsibilities."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "D-L3-E.27" ;
-        skos:prefLabel     "D-L3-E.27-Arrangements exist on managing shared risks and responsibilities."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.2.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.2> ;
+    skos:definition "The competence management system ensures staff has the competences needed to implement, operate and maintain risk control measures."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L2-E.24" ;
+    skos:prefLabel "D-L2-E.24-The competence management system ensures staff has the competences needed to implement, operate and maintain risk control measures."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/A-L3-E.50>
-        rdf:type           skos:Concept ;
-        skos:definition    "Records of top level management decisions clearly show the risks involved and the decision whether to accept/mitigate them."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "A-L3-E.50" ;
-        skos:prefLabel     "A-L3-E.50-Records of top level management decisions clearly show the risks involved and the decision whether to accept/mitigate them."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.2.4>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.2> ;
+    skos:definition "The operation of risk control measures and expected performance refers clearly to the system assumptions identified during the risk assessment process and contains a clear reference to the origin of the hazards."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L2-E.25" ;
+    skos:prefLabel "D-L2-E.25-The operation of risk control measures and expected performance refers clearly to the system assumptions identified during the risk assessment process and contains a clear reference to the origin of the hazards."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/C-L3-E.37>
-        rdf:type           skos:Concept ;
-        skos:definition    "The railway operator systematically monitors the risk control measures and identifies their weaknesses."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "C-L3-E.37" ;
-        skos:prefLabel     "C-L3-E.37-The railway operator systematically monitors the risk control measures and identifies their weaknesses."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.2.5>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.2> ;
+    skos:definition "The demonstration is made that records of decisions taken by the railway operator take safety into consideration."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L2-E.26" ;
+    skos:prefLabel "D-L2-E.26-The demonstration is made that records of decisions taken by the railway operator take safety into consideration."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/A-L2-E.47>
-        rdf:type           skos:Concept ;
-        skos:definition    "Reports showing that relevant incidents and accidents are taken into account in the review (of risk assessment)."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "A-L2-E.47" ;
-        skos:prefLabel     "A-L2-E.47-Reports showing that relevant incidents and accidents are taken into account in the review (of risk assessment)."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2> ;
+    skos:definition "DO-L3"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L3" ;
+    skos:prefLabel "Level 3"@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L2-E.7>
-        rdf:type           skos:Concept ;
-        skos:definition    "The company deploys staff with knowledge of Human and Organisational Factors concepts that can be mobilized in risk management processes."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L2-E.7" ;
-        skos:prefLabel     "P-L2-E.7-The company deploys staff with knowledge of Human and Organisational Factors concepts that can be mobilized in risk management processes."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.3.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.3> ;
+    skos:definition "Arrangements exist on managing shared risks and responsibilities."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L3-E.27" ;
+    skos:prefLabel "D-L3-E.27-Arrangements exist on managing shared risks and responsibilities."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/C-L5-E.45>
-        rdf:type           skos:Concept ;
-        skos:definition    "Reporting is available on the coherent and systematic application of risk based decision making criteria and decision making process."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "C-L5-E.45" ;
-        skos:prefLabel     "C-L5-E.45-Reporting is available on the coherent and systematic application of risk based decision making criteria and decision making process."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.3.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.3> ;
+    skos:definition "A distinction is made between the type of risk control measure: RCMs that prevent occurrences, RCMs that reduce the severity of consequences."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L3-E.28" ;
+    skos:prefLabel "D-L3-E.28-A distinction is made between the type of risk control measure: RCMs that prevent occurrences, RCMs that reduce the severity of consequences."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L3-E.12>
-        rdf:type           skos:Concept ;
-        skos:definition    "Elements exist that human and organisational factors are taken into consideration in the risk assessment process and the change management process (evidence of application of process – see 11.)."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L3-E.12" ;
-        skos:prefLabel     "P-L3-E.12-Elements exist that human and organisational factors are taken into consideration in the risk assessment process and the change management process (evidence of application of process – see 11.)."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.3.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.3> ;
+    skos:definition "A method exists that considers both the effort as well as the benefits of the risk control measures to be able to prioritize measures based on resource-effectiveness. (Goal: Resources for risk reduction are allocated to maximize the resulting risk reduction)."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L3-E.29" ;
+    skos:prefLabel "D-L3-E.29-A method exists that considers both the effort as well as the benefits of the risk control measures to be able to prioritize measures based on resource-effectiveness. (Goal: Resources for risk reduction are allocated to maximize the resulting risk reduction)."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L2-E.1>
-        rdf:type           skos:Concept ;
-        skos:definition    "The hazard record includes all hazards, together with all related RCM and system assumptions identified during the risk assessment process. It contains a clear reference to the origin of the hazards and to the selected risk acceptance principles."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L2-E.1" ;
-        skos:prefLabel     "P-L2-E.1-The hazard record includes all hazards, together with all related RCM and system assumptions identified during the risk assessment process. It contains a clear reference to the origin of the hazards and to the selected risk acceptance principles."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.4>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2> ;
+    skos:definition "DO-L4"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L4" ;
+    skos:prefLabel "Level 4"@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/A-L5-E.56>
-        rdf:type           skos:Concept ;
-        skos:definition    "The way risks are managed is constantly challenged. The interface between the monitoring processes and the risk assessment processes ensures an improvement initiative in the applied risk management methods (continuous improvement of risk management activities). "@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "A-L5-E.56" ;
-        skos:prefLabel     "A-L5-E.56-The way risks are managed is constantly challenged. The interface between the monitoring processes and the risk assessment processes ensures an improvement initiative in the applied risk management methods (continuous improvement of risk management activities). "@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.4.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.4> ;
+    skos:definition "There is evidence to estimate the effects of risk control measures across multiple risks (e.g. risks identified in multiple risk assessments)."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L4-E.30" ;
+    skos:prefLabel "D-L4-E.30-There is evidence to estimate the effects of risk control measures across multiple risks (e.g. risks identified in multiple risk assessments)."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L5-E.20>
-        rdf:type           skos:Concept ;
-        skos:definition    "Human and organisational factors issues are fully integrated in the risk assessment process and the change management process and are continuously reviewed."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L5-E.20" ;
-        skos:prefLabel     "P-L5-E.20-Human and organisational factors issues are fully integrated in the risk assessment process and the change management process and are continuously reviewed."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.4.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.4> ;
+    skos:definition "The method for assessing the resource effectiveness of RCM is systematically applied."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L4-E.31" ;
+    skos:prefLabel "D-L4-E.31-The method for assessing the resource effectiveness of RCM is systematically applied."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L4-E.17>
-        rdf:type           skos:Concept ;
-        skos:definition    "Reviews are undertaken of the expertise present during risk analyses with respect to the topics under analysis."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L4-E.17" ;
-        skos:prefLabel     "P-L4-E.17-Reviews are undertaken of the expertise present during risk analyses with respect to the topics under analysis."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.4.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.4> ;
+    skos:definition "Management systems for different topics (such as safety) are integrated."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L4-E.32" ;
+    skos:prefLabel "D-L4-E.32-Management systems for different topics (such as safety) are integrated."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/C-L3-E.36>
-        rdf:type           skos:Concept ;
-        skos:definition    "The performance of each RCMs is monitored using pre-defined indicators that give information regarding its effectiveness. "@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "C-L3-E.36" ;
-        skos:prefLabel     "C-L3-E.36-The performance of each RCMs is monitored using pre-defined indicators that give information regarding its effectiveness. "@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.5>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2> ;
+    skos:definition "DO-L5"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L5" ;
+    skos:prefLabel "Level 5"@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/A-L2-E.46>
-        rdf:type           skos:Concept ;
-        skos:definition    "Reports of ad-hoc reviews of risk assessments following the results of the monitoring activities."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "A-L2-E.46" ;
-        skos:prefLabel     "A-L2-E.46-Reports of ad-hoc reviews of risk assessments following the results of the monitoring activities."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.5.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/2.5> ;
+    skos:definition "Description of the decision making process at strategic level that includes a risk-based approach. "@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "D-L5-E.33" ;
+    skos:prefLabel "D-L5-E.33-Description of the decision making process at strategic level that includes a risk-based approach. "@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L2-E.6>
-        rdf:type           skos:Concept ;
-        skos:definition    "Risk assessment of operational processes is performed by staff together knowledgeable of risk assessment as well as the assessed operational process."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L2-E.6" ;
-        skos:prefLabel     "P-L2-E.6-Risk assessment of operational processes is performed by staff together knowledgeable of risk assessment as well as the assessed operational process."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3>
+    rdf:type skos:Concept ;
+    skos:definition "CHECK"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C" ;
+    skos:prefLabel "CHECK"@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/D-L2-E.26>
-        rdf:type           skos:Concept ;
-        skos:definition    "The demonstration is made that records of decisions taken by the railway operator take safety into consideration."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "D-L2-E.26" ;
-        skos:prefLabel     "D-L2-E.26-The demonstration is made that records of decisions taken by the railway operator take safety into consideration."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3> ;
+    skos:definition "CHECK-L2"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L2" ;
+    skos:prefLabel "Level 2"@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/C-L5-E.44>
-        rdf:type           skos:Concept ;
-        skos:definition    "The railway operator proactively organizes the sharing of lessons learned on the efficiency or effectiveness of risk control measures with external stakeholders (such as peers)."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "C-L5-E.44" ;
-        skos:prefLabel     "C-L5-E.44-The railway operator proactively organizes the sharing of lessons learned on the efficiency or effectiveness of risk control measures with external stakeholders (such as peers)."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.2.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.2> ;
+    skos:definition "The monitoring plan considers the risk control measures in areas that give rise to serious risks and if these measures are not monitored effectively, this could lead to adverse consequences for safety."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L2-E.34" ;
+    skos:prefLabel "C-L2-E.34-The monitoring plan considers the risk control measures in areas that give rise to serious risks and if these measures are not monitored effectively, this could lead to adverse consequences for safety."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L3-E.11>
-        rdf:type           skos:Concept ;
-        skos:definition    "Process for the identification of risks associated with human and organisational factors during the risk assessment process."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L3-E.11" ;
-        skos:prefLabel     "P-L3-E.11-Process for the identification of risks associated with human and organisational factors during the risk assessment process."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3> ;
+    skos:definition "CHECK-L3"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L3" ;
+    skos:prefLabel "Level 3"@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/A-L5-E.55>
-        rdf:type           skos:Concept ;
-        skos:definition    "The top management takes a proactive role in developing, maintaining and improving the Safety Management System through regular review of internal measures, including staff communication as well as horizon scanning to identify new improvement opportunities."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "A-L5-E.55" ;
-        skos:prefLabel     "A-L5-E.55-The top management takes a proactive role in developing, maintaining and improving the Safety Management System through regular review of internal measures, including staff communication as well as horizon scanning to identify new improvement opportunities."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.3.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.3> ;
+    skos:definition "The monitoring plan considers all monitorable and necessary risk control measures. The monitoring plan yields robust and reproducible results."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L3-E.35" ;
+    skos:prefLabel "C-L3-E.35-The monitoring plan considers all monitorable and necessary risk control measures. The monitoring plan yields robust and reproducible results."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L4-E.16>
-        rdf:type           skos:Concept ;
-        skos:definition    "Periodic review meetings regarding the risk assessment process take place."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L4-E.16" ;
-        skos:prefLabel     "P-L4-E.16-Periodic review meetings regarding the risk assessment process take place."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.3.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.3> ;
+    skos:definition "The performance of each RCMs is monitored using pre-defined indicators that give information regarding its effectiveness. "@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L3-E.36" ;
+    skos:prefLabel "C-L3-E.36-The performance of each RCMs is monitored using pre-defined indicators that give information regarding its effectiveness. "@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/C-L2-E.34>
-        rdf:type           skos:Concept ;
-        skos:definition    "The monitoring plan considers the risk control measures in areas that give rise to serious risks and if these measures are not monitored effectively, this could lead to adverse consequences for safety."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "C-L2-E.34" ;
-        skos:prefLabel     "C-L2-E.34-The monitoring plan considers the risk control measures in areas that give rise to serious risks and if these measures are not monitored effectively, this could lead to adverse consequences for safety."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.3.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.3> ;
+    skos:definition "The railway operator systematically monitors the risk control measures and identifies their weaknesses."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L3-E.37" ;
+    skos:prefLabel "C-L3-E.37-The railway operator systematically monitors the risk control measures and identifies their weaknesses."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/C-L3-E.35>
-        rdf:type           skos:Concept ;
-        skos:definition    "The monitoring plan considers all monitorable and necessary risk control measures. The monitoring plan yields robust and reproducible results."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "C-L3-E.35" ;
-        skos:prefLabel     "C-L3-E.35-The monitoring plan considers all monitorable and necessary risk control measures. The monitoring plan yields robust and reproducible results."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.4>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3> ;
+    skos:definition "CHECK-L4"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L4" ;
+    skos:prefLabel "Level 4"@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L2-E.5>
-        rdf:type           skos:Concept ;
-        skos:definition    "Overview of assessed risk scenarios (serious risks for safety)."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L2-E.5" ;
-        skos:prefLabel     "P-L2-E.5-Overview of assessed risk scenarios (serious risks for safety)."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.4.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.4> ;
+    skos:definition "The management supports a culture in which both positive and negative experiences on the perception of risk levels are openly shared and discussed for learning."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L4-E.38" ;
+    skos:prefLabel "C-L4-E.38-The management supports a culture in which both positive and negative experiences on the perception of risk levels are openly shared and discussed for learning."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/D-L2-E.25>
-        rdf:type           skos:Concept ;
-        skos:definition    "The operation of risk control measures and expected performance refers clearly to the system assumptions identified during the risk assessment process and contains a clear reference to the origin of the hazards."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "D-L2-E.25" ;
-        skos:prefLabel     "D-L2-E.25-The operation of risk control measures and expected performance refers clearly to the system assumptions identified during the risk assessment process and contains a clear reference to the origin of the hazards."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.4.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.4> ;
+    skos:definition "The majority of important risks are monitored using leading indicators."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L4-E.39" ;
+    skos:prefLabel "C-L4-E.39-The majority of important risks are monitored using leading indicators."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/D-L5-E.33>
-        rdf:type           skos:Concept ;
-        skos:definition    "Description of the decision making process at strategic level that includes a risk-based approach. "@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "D-L5-E.33" ;
-        skos:prefLabel     "D-L5-E.33-Description of the decision making process at strategic level that includes a risk-based approach. "@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.4.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.4> ;
+    skos:definition "Reporting is available on the coherent and correct application of the risk assessment process and the change management process."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L4-E.40" ;
+    skos:prefLabel "C-L4-E.40-Reporting is available on the coherent and correct application of the risk assessment process and the change management process."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L3-E.10>
-        rdf:type           skos:Concept ;
-        skos:definition    "Operator uses acceptance criteria in risk-based decision-making."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L3-E.10" ;
-        skos:prefLabel     "P-L3-E.10-Operator uses acceptance criteria in risk-based decision-making."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.4.4>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.4> ;
+    skos:definition "Best practices stemming from other industries are sought after and incorporated, if relevant. "@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L4-E.41" ;
+    skos:prefLabel "C-L4-E.41-Best practices stemming from other industries are sought after and incorporated, if relevant. "@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/C-L5-E.43>
-        rdf:type           skos:Concept ;
-        skos:definition    "The system ensures that the data is available when needed."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "C-L5-E.43" ;
-        skos:prefLabel     "C-L5-E.43-The system ensures that the data is available when needed."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.5>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3> ;
+    skos:definition "CHECK-L5"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L5" ;
+    skos:prefLabel "Level 5"@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/A-L4-E.53>
-        rdf:type           skos:Concept ;
-        skos:definition    "The interface between the monitoring processes and the risk assessment processes guarantees a quick adjustment in the operational processes in case of predictive trends pointing towards a decline in safety performance. "@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "A-L4-E.53" ;
-        skos:prefLabel     "A-L4-E.53-The interface between the monitoring processes and the risk assessment processes guarantees a quick adjustment in the operational processes in case of predictive trends pointing towards a decline in safety performance. "@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.5.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.5> ;
+    skos:definition "Where possible, the railway operator has put in place a system for real-time automated data collection and monitoring with regard to monitoring of RCM’s."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L5-E.42" ;
+    skos:prefLabel "C-L5-E.42-Where possible, the railway operator has put in place a system for real-time automated data collection and monitoring with regard to monitoring of RCM’s."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/A-L5-E.54>
-        rdf:type           skos:Concept ;
-        skos:definition    "The organisation tracks continuously the evolution of its risk profile, which shows continuous improvement."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "A-L5-E.54" ;
-        skos:prefLabel     "A-L5-E.54-The organisation tracks continuously the evolution of its risk profile, which shows continuous improvement."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.5.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.5> ;
+    skos:definition "The system ensures that the data is available when needed."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L5-E.43" ;
+    skos:prefLabel "C-L5-E.43-The system ensures that the data is available when needed."@en .
 
-<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/P-L4-E.15>
-        rdf:type           skos:Concept ;
-        skos:definition    "Performance indicators are measured regarding the risk assessment process."@en ;
-        skos:inScheme      iss-spae:SafetyPerformanceAssessmentElements ;
-        skos:notation      "P-L4-E.15" ;
-        skos:prefLabel     "P-L4-E.15-Performance indicators are measured regarding the risk assessment process."@en ;
-        skos:topConceptOf  iss-spae:SafetyPerformanceAssessmentElements .
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.5.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.5> ;
+    skos:definition "The railway operator proactively organizes the sharing of lessons learned on the efficiency or effectiveness of risk control measures with external stakeholders (such as peers)."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L5-E.44" ;
+    skos:prefLabel "C-L5-E.44-The railway operator proactively organizes the sharing of lessons learned on the efficiency or effectiveness of risk control measures with external stakeholders (such as peers)."@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.5.4>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/3.5> ;
+    skos:definition "Reporting is available on the coherent and systematic application of risk based decision making criteria and decision making process."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "C-L5-E.45" ;
+    skos:prefLabel "C-L5-E.45-Reporting is available on the coherent and systematic application of risk based decision making criteria and decision making process."@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4>
+    rdf:type skos:Concept ;
+    skos:definition "ACT"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A" ;
+    skos:prefLabel "ACT"@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4> ;
+    skos:definition "ACT-L2"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L2" ;
+    skos:prefLabel "Level 2"@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.2.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.2> ;
+    skos:definition "Reports of ad-hoc reviews of risk assessments following the results of the monitoring activities."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L2-E.46" ;
+    skos:prefLabel "A-L2-E.46-Reports of ad-hoc reviews of risk assessments following the results of the monitoring activities."@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.2.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.2> ;
+    skos:definition "Reports showing that relevant incidents and accidents are taken into account in the review (of risk assessment)."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L2-E.47" ;
+    skos:prefLabel "A-L2-E.47-Reports showing that relevant incidents and accidents are taken into account in the review (of risk assessment)."@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.2.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.2> ;
+    skos:definition "The interface between the process(es) for risk assessment and the process(es) decision-making is documented. "@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L2-E.48" ;
+    skos:prefLabel "A-L2-E.48-The interface between the process(es) for risk assessment and the process(es) decision-making is documented. "@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4> ;
+    skos:definition "ACT-L3"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L3" ;
+    skos:prefLabel "Level 3"@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.3.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.3> ;
+    skos:definition "Planning of review of risk assessments."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L3-E.49" ;
+    skos:prefLabel "A-L3-E.49-Planning of review of risk assessments."@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.3.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.3> ;
+    skos:definition "Records of top level management decisions clearly show the risks involved and the decision whether to accept/mitigate them."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L3-E.50" ;
+    skos:prefLabel "A-L3-E.50-Records of top level management decisions clearly show the risks involved and the decision whether to accept/mitigate them."@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.3.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.3> ;
+    skos:definition "Learnings from monitoring process are used in the risk analyses. Risk analyses (risk calculations and/or risk identification) are updated in function of the learnings from monitoring. "@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L3-E.51" ;
+    skos:prefLabel "A-L3-E.51-Learnings from monitoring process are used in the risk analyses. Risk analyses (risk calculations and/or risk identification) are updated in function of the learnings from monitoring. "@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.4>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4> ;
+    skos:definition "ACT-L4"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L4" ;
+    skos:prefLabel "Level 4"@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.4.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.4> ;
+    skos:definition "Planning of reviews of risk assessments is risk-based and considers reported accident and incident occurrences rates."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L4-E.52" ;
+    skos:prefLabel "A-L4-E.52-Planning of reviews of risk assessments is risk-based and considers reported accident and incident occurrences rates."@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.4.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.4> ;
+    skos:definition "The interface between the monitoring processes and the risk assessment processes guarantees a quick adjustment in the operational processes in case of predictive trends pointing towards a decline in safety performance. "@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L4-E.53" ;
+    skos:prefLabel "A-L4-E.53-The interface between the monitoring processes and the risk assessment processes guarantees a quick adjustment in the operational processes in case of predictive trends pointing towards a decline in safety performance. "@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.5>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4> ;
+    skos:definition "ACT-L5"@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L5" ;
+    skos:prefLabel "Level 5"@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.5.1>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.5> ;
+    skos:definition "The organisation tracks continuously the evolution of its risk profile, which shows continuous improvement."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L5-E.54" ;
+    skos:prefLabel "A-L5-E.54-The organisation tracks continuously the evolution of its risk profile, which shows continuous improvement."@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.5.2>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.5> ;
+    skos:definition "The top management takes a proactive role in developing, maintaining and improving the Safety Management System through regular review of internal measures, including staff communication as well as horizon scanning to identify new improvement opportunities."@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L5-E.55" ;
+    skos:prefLabel "A-L5-E.55-The top management takes a proactive role in developing, maintaining and improving the Safety Management System through regular review of internal measures, including staff communication as well as horizon scanning to identify new improvement opportunities."@en .
+
+<http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.5.3>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/concepts/safety-performance-assessment-elements/4.5> ;
+    skos:definition "The way risks are managed is constantly challenged. The interface between the monitoring processes and the risk assessment processes ensures an improvement initiative in the applied risk management methods (continuous improvement of risk management activities). "@en ;
+    skos:inScheme iss-spae:SafetyPerformanceAssessmentElements ;
+    skos:notation "A-L5-E.56" ;
+    skos:prefLabel "A-L5-E.56-The way risks are managed is constantly challenged. The interface between the monitoring processes and the risk assessment processes ensures an improvement initiative in the applied risk management methods (continuous improvement of risk management activities). "@en .
+
