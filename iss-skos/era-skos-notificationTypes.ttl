@@ -22,11 +22,19 @@
 
 iss-ntt:NotificationTypes a skos:ConceptScheme ; 
     dct:issued "2024-04-04"^^xsd:date ;
-    dct:modified "2024-09-03"^^xsd:date ;
+    dct:modified "2024-09-03"^^xsd:date, "2025-05-12"^^xsd:date ; 
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
     rdfs:label "Notification Types"@en ;
+	skos:hasTopConcept iss-ntt:NTF.1, iss-ntt:NTF.2, iss-ntt:NTF.3, iss-ntt:NTF.4, iss-ntt:NTF.5, iss-ntt:NTF.6, iss-ntt:NTF.7 ; 
     skos:prefLabel "Notification Types"@en ;
+	skos:changeNote """
+		- Updated the values of SKOS 
+		- Added skos:broader relations
+		- Renamed the URI patterns for the concepts 
+
+	"""@en ; 
+
     dct:title "Concept scheme grouping notification types"@en .
 
 
@@ -38,26 +46,99 @@ iss-ntt:NotificationTypes a skos:ConceptScheme ;
 #################################################################
 
 
-iss-ntt:Alert  rdf:type  skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
-        skos:prefLabel  "Alert"@en .
+iss-ntt:NTF.1 a skos:Concept ;
+	skos:inScheme iss-ntt:NotificationTypes;         
+	skos:topConceptOf iss-ntt:NotificationTypes;
+	skos:prefLabel "NTF.1-Administrative notification from ERA"@en ;
+	skos:notation "NTF.1"^^xsd:token ;
+	skos:definition "Administrative notification from ERA"@en ;
+	.
+	
+	
+iss-ntt:NTF.2 a skos:Concept ;
+	skos:inScheme iss-ntt:NotificationTypes;         
+	skos:topConceptOf iss-ntt:NotificationTypes;
+	skos:prefLabel "NTF.2-Notification of a review request"@en ;
+	skos:notation "NTF.2"^^xsd:token ;
+	skos:definition "Notification of a review request"@en ;
+	.
 
-iss-ntt:Administration
-        rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
-        skos:prefLabel  "Administrative request"@en .
+iss-ntt:NTF.3 a skos:Concept ;
+	skos:inScheme iss-ntt:NotificationTypes;         
+	skos:topConceptOf iss-ntt:NotificationTypes;
+	skos:prefLabel "NTF.3-Notification of a request for a complete occurrence report"@en ;
+	skos:notation "NTF.3"^^xsd:token ;
+	skos:definition "Notification of a request for a complete occurrence report"@en ;
+	.
 
-iss-ntt:JNSRequest
-        rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
-        skos:prefLabel  "Joint Network Secretariat"@en .
+iss-ntt:NTF.4 a skos:Concept ;
+	skos:inScheme iss-ntt:NotificationTypes;         
+	skos:topConceptOf iss-ntt:NotificationTypes;
+	skos:prefLabel "NTF.4-Notification of a correction request"@en ;
+	skos:notation "NTF.4"^^xsd:token ;
+	skos:definition "Notification of a correction request"@en ;
+	.
 
-iss-ntt:SharingRequestGeneric
-        rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
-        skos:prefLabel  "Sharing request type (generic)"@en .
+iss-ntt:NTF.5 a skos:Concept ;
+	skos:inScheme iss-ntt:NotificationTypes;         
+	skos:topConceptOf iss-ntt:NotificationTypes;
+	skos:prefLabel "NTF.5-Notification from an NIB"@en ;
+	skos:notation "NTF.5"^^xsd:token ;
+	skos:definition "Notification from an NIB"@en ;
+	.
 
-iss-ntt:Publication
-        rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
-        skos:prefLabel  "Publication"@en .
+iss-ntt:NTF.5.1 a skos:Concept ;
+	skos:inScheme iss-ntt:NotificationTypes;         
+	skos:broader iss-ntt:NTF.5 ;
+	skos:prefLabel "NTF.5.1-Notification of decision to investigate"@en ;
+	skos:notation "NTF.5.1"^^xsd:token ;
+	skos:definition "Notification of decision to investigate"@en ;
+	.
 
-iss-ntt:PredefinedNotification
-        rdf:type        skos:Concept ;         skos:inScheme iss-ntt:NotificationTypes;         skos:topConceptOf iss-ntt:NotificationTypes;
-        skos:prefLabel  "Predefined Notification"@en .
+iss-ntt:NTF.5.2 a skos:Concept ;
+	skos:inScheme iss-ntt:NotificationTypes;         
+	skos:broader iss-ntt:NTF.5 ;
+	skos:prefLabel "NTF.5.2-Notification of interim statement(s)"@en ;
+	skos:notation "NTF.5.2"^^xsd:token ;
+	skos:definition "Notification of interim statement(s)"@en ;
+	.
 
+iss-ntt:NTF.5.3 a skos:Concept ;
+	skos:inScheme iss-ntt:NotificationTypes;         
+	skos:broader iss-ntt:NTF.5 ;
+	skos:prefLabel "NTF.5.3-Notification of investigation recommendations"@en ;
+	skos:notation "NTF.5.3"^^xsd:token ;
+	skos:definition "Notification of investigation recommendations"@en ;
+	.
+
+iss-ntt:NTF.5.4 a skos:Concept ;
+	skos:inScheme iss-ntt:NotificationTypes;         
+	skos:broader iss-ntt:NTF.5 ;
+	skos:prefLabel "NTF.5.4-Notification of a final investigation report"@en ;
+	skos:notation "NTF.5.4"^^xsd:token ;
+	skos:definition "Notification of a final investigation report"@en ;
+	.
+
+iss-ntt:NTF.5.5 a skos:Concept ;
+	skos:inScheme iss-ntt:NotificationTypes;         
+	skos:broader iss-ntt:NTF.5 ;
+	skos:prefLabel "NTF.5.5-Notification of investigation closure"@en ;
+	skos:notation "NTF.5.5"^^xsd:token ;
+	skos:definition "Notification of investigation closure"@en ;
+	.
+
+iss-ntt:NTF.6 a skos:Concept ;
+	skos:inScheme iss-ntt:NotificationTypes;         
+	skos:topConceptOf iss-ntt:NotificationTypes;
+	skos:prefLabel "NTF.6-Notification of an Alert"@en ;
+	skos:notation "NTF.6"^^xsd:token ;
+	skos:definition "Notification of an Alert"@en ;
+	.
+
+iss-ntt:NTF.7 a skos:Concept ;
+	skos:inScheme iss-ntt:NotificationTypes;         
+	skos:topConceptOf iss-ntt:NotificationTypes;
+	skos:prefLabel "NTF.7-Informal message"@en ;
+	skos:notation "NTF.7"^^xsd:token ;
+	skos:definition "Informal message"@en ;
+	.
