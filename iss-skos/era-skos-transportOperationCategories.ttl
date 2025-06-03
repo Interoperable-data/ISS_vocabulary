@@ -1,244 +1,216 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix iss-toc: <http://data.europa.eu/949/iss/concepts/transport-operation-categories/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix cc: <http://creativecommons.org/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-@prefix iss-toc: <http://data.europa.eu/949/iss/concepts/transport-operation-categories/> .
-@prefix iss-enc: <http://data.europa.eu/949/iss/concepts/entity-categories/> .
-
-
-
-
-
-#################################################################
-#
-#    Concept Schemes
-#
-#################################################################
-
-
-
-iss-toc:TransportOperationCategories a skos:ConceptScheme ; 
-    dct:issued "2024-04-04"^^xsd:date ;
-    dct:modified "2024-09-03"^^xsd:date , "2025-05-16"^^xsd:date ;
-    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
-    rdfs:label "Transport Operation Categories"@en ;
-    skos:prefLabel "Transport Operation Categories"@en ;
-    skos:hasTopConcept  iss-toc:RU.1 , iss-toc:RU.2, iss-toc:RU.3, iss-toc:RU.4, iss-toc:RU.5, iss-toc:IM.1, iss-toc:IM.2, iss-toc:OT.1 ;
-    skos:changeNote """
+iss-toc:TransportOperationCategories a skos:ConceptScheme;
+  rdfs:label "Transport Operation Categories"@en;
+  dct:title "Concept scheme grouping transport operation categories"@en;
+  cc:license <https://creativecommons.org/licenses/by/4.0/>;
+  dct:issued "2024-04-04"^^xsd:date;
+  dct
+  :modified "2024-09-03"^^xsd:date,
+    "2025-05-16"^^xsd:date;
+  rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en;
+  skos:changeNote """
           - updates with new concepts
           - added skos:hasTopConcept property
-         """@en ;
-    dct:title "Concept scheme grouping transport operation categories"@en .
+         """@en;
+  skos:hasTopConcept iss-toc:RU.1,
+    iss-toc:RU.2,
+    iss-toc:RU.3,
+    iss-toc:RU.4,
+    iss-toc:RU.5,
+    iss-toc:IM.1,
+    iss-toc:IM.2,
+    iss-toc:OT.1;
+  skos:prefLabel "Transport Operation Categories"@en .
+  
+iss-toc:IM.1.1 a skos:Concept;
+  skos:broader iss-toc:IM.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "IM.1.1 - Infrastructure works train"@en .
 
-#################################################################
-#
-#    Concept instances
-#
-#################################################################
+iss-toc:IM.1.2 a skos:Concept;
+  skos:broader iss-toc:IM.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "IM.1.2 - Infrastructure works with on track machines"@en .
 
-iss-toc:RU.1  rdf:type  skos:Concept ;
-        skos:topConceptOf    iss-toc:TransportOperationCategories ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.1 - Railway Undertaking, operating passenger trains"@en .
+iss-toc:IM2.1 a skos:Concept;
+  skos:broader iss-toc:IM.2;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "IM.2.1 - Operating service in terminals - Shunting operation in a marshalling yard"@en .
 
-iss-toc:RU.1.1  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.1.1 - Railway Undertaking, operating long distance passenger trains"@en .
-iss-toc:RU.1.2  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.1.2 - Railway Undertaking, operating regional passenger trains"@en .
+iss-toc:IM2.2 a skos:Concept;
+  skos:broader iss-toc:IM.2;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "IM.2.2 - Operating service in terminals - Operation in multimodal platforms"@en .
 
-iss-toc:RU.1.3  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.1.3 - Railway Undertaking, operating commuter trains"@en .
+iss-toc:OT.1.1 a skos:Concept;
+  skos:broader iss-toc:OT.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "OT.1.1 - Operating service in Terminals - Loading"@en .
 
-iss-toc:RU.1.4  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.1.4 - Operating in a Station - Boarding/Unboarding passengers"@en .
-iss-toc:RU.1.5  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.1.5 - Railway Undertaking, locomotive running solo"@en .
-iss-toc:RU.1.6  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.1.6 - Heritage railway service"@en .
-iss-toc:RU.1.7  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.1.7 - Tramway/ Light rail service"@en .
+iss-toc:OT.1.2 a skos:Concept;
+  skos:broader iss-toc:OT.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "OT.1.2 - Operating service in Terminals - Unloading"@en .
 
-iss-toc:RU.1.8  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.1.8 - Metro service"@en .
-iss-toc:RU.2  rdf:type  skos:Concept ;
-        skos:topConceptOf    iss-toc:TransportOperationCategories ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.2 - Railway Undertaking, operating high speed passenger trains"@en .
+iss-toc:OT.1.3 a skos:Concept;
+  skos:broader iss-toc:OT.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "OT.1.3 - Operating service in Terminals - Filling tanks"@en .
 
-iss-toc:RU.3  rdf:type  skos:Concept ;
-        skos:topConceptOf    iss-toc:TransportOperationCategories ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.3 - Railway Undertaking, operating freight trains"@en .
-iss-toc:RU.3.1  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.3 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.3.1 - Freight train service - Operating on a line"@en .
+iss-toc:OT.1.4 a skos:Concept;
+  skos:broader iss-toc:OT.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "OT.1.4 - Operating service in Terminals - Emptying tanks"@en .
 
-iss-toc:RU.3.2.2  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.3.2 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.3.2.2 - Freight train service  - Temporary stop in sidings"@en .
-iss-toc:RU.4  rdf:type  skos:Concept ;
-        skos:topConceptOf    iss-toc:TransportOperationCategories ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.4 - Railway Undertaking, operating dangerous goods freight trains"@en .  
+iss-toc:RU.1.1 a skos:Concept;
+  skos:broader iss-toc:RU.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.1.1 - Railway Undertaking, operating long distance passenger trains"@en .
 
-iss-toc:RU.4.2.2  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.4.2 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.4.2.2 - TDG Freight train service  - Temporary stop in sidings"@en .
+iss-toc:RU.1.2 a skos:Concept;
+  skos:broader iss-toc:RU.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.1.2 - Railway Undertaking, operating regional passenger trains"@en .
 
-iss-toc:RU.4.2.1  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.4.2 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.4.2.1 - TDG Freight train service  - Maneuvering in sidings"@en .
+iss-toc:RU.1.3 a skos:Concept;
+  skos:broader iss-toc:RU.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.1.3 - Railway Undertaking, operating commuter trains"@en .
 
-iss-toc:RU.4.2  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.4 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.4.2 - TDG Freight train service - Operating in a siding"@en .
-iss-toc:RU.5  rdf:type  skos:Concept ;
-        skos:topConceptOf    iss-toc:TransportOperationCategories ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.5 - Railway Undertaking, operating terminals"@en .
+iss-toc:RU.1.4 a skos:Concept;
+  skos:broader iss-toc:RU.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.1.4 - Operating in a Station - Boarding/Unboarding passengers"@en .
 
-iss-toc:RU.5.3  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.5 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU5.3 - Operating service in terminals - Maneuvering "@en .
+iss-toc:RU.1.5 a skos:Concept;
+  skos:broader iss-toc:RU.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.1.5 - Railway Undertaking, locomotive running solo"@en .
 
-iss-toc:IM.1  rdf:type  skos:Concept ;
-        skos:topConceptOf    iss-toc:TransportOperationCategories ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "IM.1 - Infrastructure Manager, operating railway lines (including sidings and stations operations)"@en .
+iss-toc:RU.1.6 a skos:Concept;
+  skos:broader iss-toc:RU.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.1.6 - Heritage railway service"@en .
 
+iss-toc:RU.1.7 a skos:Concept;
+  skos:broader iss-toc:RU.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.1.7 - Tramway/ Light rail service"@en .
 
-iss-toc:RU.2  rdf:type  skos:Concept ;
-        skos:topConceptOf    iss-toc:TransportOperationCategories ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.2 - Railway Undertaking, operating high speed passenger trains"@en .
+iss-toc:RU.1.8 a skos:Concept;
+  skos:broader iss-toc:RU.1;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.1.8 - Metro service"@en .
 
+iss-toc:RU.3.1 a skos:Concept;
+  skos:broader iss-toc:RU.3;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.3.1 - Freight train service - Operating on a line"@en .
 
-iss-toc:RU.5.1  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.5 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU5.1 - Operating service in terminals - Shunting in a marshalling yard"@en .
+iss-toc:RU.3.2.1 a skos:Concept;
+  skos:broader iss-toc:RU.3.2;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.3.2.1 - Freight train service  - Maneuvering in sidings"@en .
 
+iss-toc:RU.3.2.2 a skos:Concept;
+  skos:broader iss-toc:RU.3.2;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.3.2.2 - Freight train service  - Temporary stop in sidings"@en .
 
-iss-toc:RU.3.2.1  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.3.2 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.3.2.1 - Freight train service  - Maneuvering in sidings"@en .
+iss-toc:RU.3.3 a skos:Concept;
+  skos:broader iss-toc:RU.3;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.3.3 - Freight train service - Boarding/Unborading persons"@en .
 
-iss-toc:RU.3  rdf:type  skos:Concept ;
-        skos:topConceptOf    iss-toc:TransportOperationCategories ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.3 - Railway Undertaking, operating freight trains"@en .
-iss-toc:RU.3.3  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.3 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.3.3 - Freight train service - Boarding/Unborading persons"@en .
+iss-toc:RU.4.1 a skos:Concept;
+  skos:broader iss-toc:RU.4;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.4.1 - TDG Freight train service - Operating on a line"@en .
 
-iss-toc:RU.4.1  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.4 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.4.1 - TDG Freight train service - Operating on a line"@en .
-iss-toc:RU.5.2  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.5 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU5.2 - Operating service in terminals - Temporary stop "@en .
+iss-toc:RU.4.2.1 a skos:Concept;
+  skos:broader iss-toc:RU.4.2;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.4.2.1 - TDG Freight train service  - Maneuvering in sidings"@en .
 
-iss-toc:RU.4.3  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.4 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.4.3 - TDG freight train service - Boarding/Unborading persons"@en .
+iss-toc:RU.4.2.2 a skos:Concept;
+  skos:broader iss-toc:RU.4.2;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.4.2.2 - TDG Freight train service  - Temporary stop in sidings"@en .
 
-iss-toc:OT.1.2  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:OT.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "OT.1.2 - Operating service in Terminals - Unloading"@en .
+iss-toc:RU.4.3 a skos:Concept;
+  skos:broader iss-toc:RU.4;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.4.3 - TDG freight train service - Boarding/Unborading persons"@en .
 
+iss-toc:RU.5.1 a skos:Concept;
+  skos:broader iss-toc:RU.5;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU5.1 - Operating service in terminals - Shunting in a marshalling yard"@en .
 
+iss-toc:RU.5.2 a skos:Concept;
+  skos:broader iss-toc:RU.5;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU5.2 - Operating service in terminals - Temporary stop "@en .
 
-iss-toc:IM2.2  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:IM.2 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "IM.2.2 - Operating service in terminals - Operation in multimodal platforms"@en .
+iss-toc:RU.5.3 a skos:Concept;
+  skos:broader iss-toc:RU.5;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU5.3 - Operating service in terminals - Maneuvering "@en .
 
+iss-toc:RU.2 a skos:Concept;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.2 - Railway Undertaking, operating high speed passenger trains"@en;
+  skos:topConceptOf iss-toc:TransportOperationCategories .
 
+iss-toc:RU.3.2 a skos:Concept;
+  skos:broader iss-toc:RU.3;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.3.2 - Freight train service - Operating in a siding"@en .
 
-iss-toc:IM2.1  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:IM.2 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "IM.2.1 - Operating service in terminals - Shunting operation in a marshalling yard"@en .
+iss-toc:RU.4.2 a skos:Concept;
+  skos:broader iss-toc:RU.4;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.4.2 - TDG Freight train service - Operating in a siding"@en .
 
-iss-toc:IM.1.1  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:IM.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "IM.1.1 - Infrastructure works train"@en .
+iss-toc:IM.1 a skos:Concept;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "IM.1 - Infrastructure Manager, operating railway lines (including sidings and stations operations)"@en;
+  skos:topConceptOf iss-toc:TransportOperationCategories .
 
+iss-toc:IM.2 a skos:Concept;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "IM.2 - Infrastructure Manager, operating terminals (including shunting yards)"@en;
+  skos:topConceptOf iss-toc:TransportOperationCategories .
 
-iss-toc:IM.2  rdf:type  skos:Concept ;
-        skos:topConceptOf    iss-toc:TransportOperationCategories ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "IM.2 - Infrastructure Manager, operating terminals (including shunting yards)"@en .
+iss-toc:RU.3 a skos:Concept;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.3 - Railway Undertaking, operating freight trains"@en;
+  skos:topConceptOf iss-toc:TransportOperationCategories .
 
+iss-toc:RU.4 a skos:Concept;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.4 - Railway Undertaking, operating dangerous goods freight trains"@en;
+  skos:topConceptOf iss-toc:TransportOperationCategories .
 
-iss-toc:OT.1.1  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:OT.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "OT.1.1 - Operating service in Terminals - Loading"@en .
+iss-toc:RU.5 a skos:Concept;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.5 - Railway Undertaking, operating terminals"@en;
+  skos:topConceptOf iss-toc:TransportOperationCategories .
 
+iss-toc:OT.1 a skos:Concept;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "OT.1- Operating service in Terminals"@en;
+  skos:topConceptOf iss-toc:TransportOperationCategories .
 
-
-iss-toc:RU.3.2  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:RU.3 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "RU.3.2 - Freight train service - Operating in a siding"@en .
-
-
-iss-toc:IM.1.2  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:IM.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "IM.1.2 - Infrastructure works with on track machines"@en .
-        
-
-iss-toc:OT.1.4  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:OT.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "OT.1.4 - Operating service in Terminals - Emptying tanks"@en .
-iss-toc:OT.1  rdf:type  skos:Concept ;
-        skos:topConceptOf    iss-toc:TransportOperationCategories ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "OT.1- Operating service in Terminals"@en .
-
-
-
-iss-toc:OT.1.3  rdf:type  skos:Concept ;
-        skos:broader    iss-toc:OT.1 ;
-        skos:inScheme   iss-toc:TransportOperationCategories ;
-        skos:prefLabel  "OT.1.3 - Operating service in Terminals - Filling tanks"@en .
-
-
+iss-toc:RU.1 a skos:Concept;
+  skos:inScheme iss-toc:TransportOperationCategories;
+  skos:prefLabel "RU.1 - Railway Undertaking, operating passenger trains"@en;
+  skos:topConceptOf iss-toc:TransportOperationCategories .
 
