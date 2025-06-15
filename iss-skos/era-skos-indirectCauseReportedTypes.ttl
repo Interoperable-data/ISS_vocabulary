@@ -22,7 +22,7 @@ iss-sicr:IndirectCauseReportedTypes
     rdfs:comment "Controlled SKOS-based vocabulary defined by the European Union Agency for Railways to describe concepts related to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation."@en ;
     rdfs:label "Safety indirect cause event Types"@en ;
     skos:hasTopConcept iss-sicr:C ;
-    skos:prefLabel "Safety direct cause of event Types"@en .
+    skos:prefLabel "Safety indirect cause of event Types"@en .
 
 <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C> 
     a skos:Concept ;
