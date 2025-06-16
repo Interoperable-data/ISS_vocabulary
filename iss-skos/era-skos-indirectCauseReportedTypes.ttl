@@ -11,6 +11,13 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+
+#################################################################
+#
+#    Concept Schemes
+#
+#################################################################
+
 iss-sicr:IndirectCauseReportedTypes
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:issued "2024-04-04"^^xsd:date ;
@@ -23,6 +30,13 @@ iss-sicr:IndirectCauseReportedTypes
     rdfs:label "Safety indirect cause event Types"@en ;
     skos:hasTopConcept iss-sicr:C ;
     skos:prefLabel "Safety indirect cause of event Types"@en .
+
+
+#################################################################
+#
+#    Concept instances
+#
+#################################################################
 
 <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C> 
     a skos:Concept ;
