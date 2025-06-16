@@ -32,11 +32,13 @@ iss-sicr:IndirectCauseReportedTypes
     skos:prefLabel "Safety indirect cause of event Types"@en .
 
 
+
 #################################################################
 #
 #    Concept instances
 #
 #################################################################
+
 
 <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C> 
     a skos:Concept ;
