@@ -1,9 +1,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix era: <http://data.europa.eu/949/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix fx: <http://sparql.xyz/facade-x/ns/> .
 @prefix iss-sicr: <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/> .
-@prefix locn: <http://w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -803,6 +801,61 @@ iss-sicr:IndirectCauseReportedTypes
 	skos:prefLabel "C.2-External events - Environmental"@en ;
 	.
 
+<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.1>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
+	skos:notation "C.2.1"^^xsd:token ;
+	skos:prefLabel "C.2.1-Earthquake"@en ;
+	.
+
+<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.2>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
+	skos:notation "C.2.2"^^xsd:token ;
+	skos:prefLabel "C.2.2-Flooding"@en ;
+	.
+
+<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.3>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
+	skos:notation "C.2.3"^^xsd:token ;
+	skos:prefLabel "C.2.3-Landslide"@en ;
+	.
+
+<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.4>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
+	skos:notation "C.2.4"^^xsd:token ;
+	skos:prefLabel "C.2.4-Vegetation"@en ;
+	.
+
+<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.5>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
+	skos:notation "C.2.5"^^xsd:token ;
+	skos:prefLabel "C.2.5-Crosswinds"@en ;
+	.
+
+<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.6>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
+	skos:notation "C.2.6"^^xsd:token ;
+	skos:prefLabel "C.2.6-Extreme temperatures"@en ;
+	.
+
+<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.7>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
+	skos:notation "C.2.7"^^xsd:token ;
+	skos:prefLabel "C.2.7-Snow"@en ;
+	.
 <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3>
 	a skos:Concept ;
 	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C> ;
@@ -811,4 +864,50 @@ iss-sicr:IndirectCauseReportedTypes
 	skos:notation "C.3"^^xsd:token ;
 	skos:prefLabel "C.3-External events - Security"@en ;
 	.
+<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3.1>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3> ;
+	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
+	skos:notation "C.3.1"^^xsd:token ;
+	skos:prefLabel "C.3.1-Terrorism"@en ;
+	.
 
+<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3.2>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3> ;
+	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
+	skos:notation "C.3.2"^^xsd:token ;
+	skos:prefLabel "C.3.2-Assault"@en ;
+	.
+
+<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3.3>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3> ;
+	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
+	skos:notation "C.3.3"^^xsd:token ;
+	skos:prefLabel "C.3.3-Theft"@en ;
+	.
+
+<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3.4>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3> ;
+	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
+	skos:notation "C.3.4"^^xsd:token ;
+	skos:prefLabel "C.3.4-Arson"@en ;
+	.
+
+<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3.5>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3> ;
+	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
+	skos:notation "C.3.5"^^xsd:token ;
+	skos:prefLabel "C.3.5-Vandalism"@en ;
+	.
+
+<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3.6>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3> ;
+	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
+	skos:notation "C.3.6"^^xsd:token ;
+	skos:prefLabel "C.3.6-Cyber attack"@en ;
+	.
