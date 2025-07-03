@@ -11,11 +11,13 @@
 
 era-organisation-roles:OrgRoles a skos:ConceptScheme ;
 	dct:issued "2024-07-31"^^xsd:date ;
-    dct:modified "2024-09-04"^^xsd:date , "2024-10-07"^^xsd:date , "2024-01-14"^^xsd:date, "2025-02-20"^^xsd:date ;
+    dct:modified "2024-09-04"^^xsd:date , "2024-10-07"^^xsd:date , "2024-01-14"^^xsd:date, 
+	"2025-02-20"^^xsd:date , "2025-07-03"^^xsd:date ;
    	cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "Organisation roles used in different domains at ERA"@en ;
     rdfs:label "Organisation roles"@en ;
 	skos:changeNote """ 
+	  - Revision 03-07-2025: Added ERA working party concept narrower of ERA as per request
       - Revision 20-02-2025: Added EU Body, ERA and EC as requested by ISS business use cases
 	"""@en ; 
     skos:prefLabel "Organisation roles"@en ;
@@ -335,6 +337,14 @@ era-organisation-roles:ERA a skos:Concept ;
 		skos:broader era-organisation-roles:EC ;
 		dct:source <http://data.europa.eu/eli/reg/2016/796/oj> ; 
 		skos:exactMatch <http://publications.europa.eu/resource/authority/corporate-body/ERA> ;
+		.
+
+era-organisation-roles:ERAWorkingParty a skos:Concept ;
+		skos:inScheme era-organisation-roles:OrgRoles ;	
+		skos:notation "ERA Working Party"^^xsd:string ;
+		skos:prefLabel "European Union Agency for Railways Working Party"@en ;
+		skos:broader era-organisation-roles:ERA ;
+		
 		.
 
 era-organisation-roles:EC a skos:Concept ;
