@@ -39,874 +39,874 @@ iss-sicr:IndirectCauseReportedTypes
 #################################################################
 
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C> 
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C> 
     a skos:Concept ;
     skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
     skos:prefLabel "indirect cause reported types"@en ;
     skos:topConceptOf iss-sicr:DirectCauseReportedTypes .
 	
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C> ;
 	skos:definition "An event falling within the C.1 sub-categories for which detailed information is not (yet) available. This category covers both human and technical variations"@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1"^^xsd:token ;
 	skos:prefLabel "C.1-Railway system performance variation"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1> ;
 	skos:definition "An event falling within the C.1.1 sub-categories for which detailed information is not (yet) available."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.1"^^xsd:token ;
 	skos:prefLabel "C.1.1-Performance variation to provide power for train (or vehicle) operations in normal operations, or situations where there are disruptions or engineering work"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1.2>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1.2>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of assessing the status of power sources in order to ensure that they are safe and available to provide optimum power to train services."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.1.2"^^xsd:token ;
 	skos:prefLabel "C.1.1.2-Variation in function 'Monitor power'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1.3>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1.3>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of maintaining the smooth provision of traction supply."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.1.3"^^xsd:token ;
 	skos:prefLabel "C.1.1.3-Variation in function 'Provision of traction supply'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1.4>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1.4>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that the power supply provision is achieved without any abnormality and ensuring continuity despite irregularities. The controller needs to identify and prioritise irregularity as presented as alarms via control systems."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.1.4"^^xsd:token ;
 	skos:prefLabel "C.1.1.4-Variation in function 'Detect irregularity'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1.5>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1.5>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that track isolations are conducted in a safe and timely manner. "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.1.5"^^xsd:token ;
 	skos:prefLabel "C.1.1.5-Variation in function 'Agreement of isolation'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1.6>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1.6>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of enabling the power supply to be switched off to safeguard staff or others who may be in the vicinity of electrical power conductors. This also includes to specifically confirm with trackwork when/where they will have formal control of the line, and manage isolation accordingly"@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.1.6"^^xsd:token ;
 	skos:prefLabel "C.1.1.6-Variation in function 'Formal agreement for control of the line'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1.7>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1.7>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of cutting off the electrical power in a specific location, for an agreed period of time, in circumstances where work or third parties intervention is to be carried out in the vicinity of the electrical power sources and there is a risk of injury to staff "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.1.7"^^xsd:token ;
 	skos:prefLabel "C.1.1.7-Variation in function 'Apply isolation'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1.8>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1.8>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.1> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.1> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of returning power at a specific location at the completion of the work or after an incident."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.1.8"^^xsd:token ;
 	skos:prefLabel "C.1.1.8-Variation in function 'Return of power / remove isolation'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.10.1>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.10.1>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.10> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.10> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) manufacture the subsystems and components; b) establish and apply safety-centred assurance arrangements."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.10.1"^^xsd:token ;
 	skos:prefLabel "C.1.10.1-Variation in function 'Manufacture'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.10.2>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.10.2>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.10> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.10> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) assemble and install the integrated system, total combination of subsystems and components required to form the complete system; b) demonstrate that integrated system, subsystems and components work together as defined by the interfaces; c) demonstrate that integrated system, subsystems and components meet their safety requirements; d) initiate system support arrangements."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.10.2"^^xsd:token ;
 	skos:prefLabel "C.1.10.2-Variation in function 'Integration'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.10.3>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.10.3>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.10> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.10> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) confirm by examination and provision of objective evidence that the system under consideration in combination with its Safety-Related Application Conditions complies with the safety requirements; b) confirm or update the safety case for the system under consideration, according to the results of the validation."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.10.3"^^xsd:token ;
 	skos:prefLabel "C.1.10.3-Variation in function 'Validate (incl. safety acceptance and commissioning)'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.10.4>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.10.4>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.10> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.10> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) assess compliance of the total combination of subsystems, components, their interfaces and Safety-Related Application Conditions with the overall safety requirements; b) accept the system for entry into service."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.10.4"^^xsd:token ;
 	skos:prefLabel "C.1.10.4-Variation in function 'Accept system (incl. entry in service)'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.10.5>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.10.5>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.10> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.10> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of controlling safety implication of system decommissioning and disposal tasks."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.10.5"^^xsd:token ;
 	skos:prefLabel "C.1.10.5-Variation in function ‘Decommissioning’"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2.1>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2.1>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of enabling staff to achieve timely and accurate detection of irregularities or an incident, minimising the response time and harm to passengers or staff."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.2.1"^^xsd:token ;
 	skos:prefLabel "C.1.2.1-Variation in function 'Detect irregularity'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2.10>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2.10>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring safety while re-planning traffic flow after an incident or other disruption."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.2.10"^^xsd:token ;
 	skos:prefLabel "C.1.2.10-Variation in function 'Re-planning train service'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2.11>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2.11>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that passengers are safe in their current location, or that they can be moved safely to another location (e.g. calculate trade-off between remaining in vehicle and evacuation)."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.2.11"^^xsd:token ;
 	skos:prefLabel "C.1.2.11-Variation in function 'Ensure passenger and personnel safety'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2.12>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2.12>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that an incident cause and any secondary damage is rectified."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.2.12"^^xsd:token ;
 	skos:prefLabel "C.1.2.12-Variation in function 'Rectifying the incident'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2.13>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2.13>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that evidence is preserved for future detection, diagnosis and prevention."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.2.13"^^xsd:token ;
 	skos:prefLabel "C.1.2.13-Variation in function 'Protect evidence'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2.2>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2.2>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of initiating on-the-ground incident response and containment."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.2.2"^^xsd:token ;
 	skos:prefLabel "C.1.2.2-Variation in function 'Conduct immediate mitigation, containment'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2.3>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2.3>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of identifying the most relevant and current information and establish a shared understanding of the incident, the location and potential implications of the incident, across all relevant operational staff."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.2.3"^^xsd:token ;
 	skos:prefLabel "C.1.2.3-Variation in function 'Gather and communicate incident information'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2.4>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2.4>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of protecting an area from traffic movement and power, in order to maintain safety during an incident or unexpected event. "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.2.4"^^xsd:token ;
 	skos:prefLabel "C.1.2.4-Variation in function 'Protect incident/event area'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2.5>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2.5>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of exchanging information, in order to establish a shared understanding between different parties (of location and timing of work and protection, in case of remedial actions) through communication and documentation."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.2.5"^^xsd:token ;
 	skos:prefLabel "C.1.2.5-Variation in function 'Verify work arrangements'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2.6>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2.6>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of monitoring the locations of trains and supply of power to specific parts of the network."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.2.6"^^xsd:token ;
 	skos:prefLabel "C.1.2.6-Variation in function 'Ensure status of infrastructure'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2.7>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2.7>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of transferring the control of an agreed part of the railway line for movement of traffic or other activities (requiring shared understanding of location and responsibilities). It covers also the return of the line for normal operational use."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.2.7"^^xsd:token ;
 	skos:prefLabel "C.1.2.7-Variation in function 'Formal agreement for control of the line'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2.8>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2.8>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of minimising the time delay in response to an incident. "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.2.8"^^xsd:token ;
 	skos:prefLabel "C.1.2.8-Variation in function 'Coordinating failure and incident response'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2.9>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2.9>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.2> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of anticipating delays and being proactive in decision making."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.2.9"^^xsd:token ;
 	skos:prefLabel "C.1.2.9-Variation in function 'Anticipate delay'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3.1>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3.1>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of identifying what engineering works are needed, in order to prioritise and determine the arrangements for carrying them out."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.3.1"^^xsd:token ;
 	skos:prefLabel "C.1.3.1-Variation in function 'Identify engineering work requirements'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3.10>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3.10>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring safe movement of engineering trains, machines and plant on the track, within and outside areas that are protected for work. "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.3.10"^^xsd:token ;
 	skos:prefLabel "C.1.3.10-Variation in function 'Using trains, plant and machinery for engineering work'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3.11>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3.11>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of preparing the site of work for return to operational use, including all relevant checks on the work and integrity of the railway and removal of all protection in readiness for transfer of the site back to the control of operational staff."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.3.11"^^xsd:token ;
 	skos:prefLabel "C.1.3.11-Variation in function 'Close down site on completion of work'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3.12>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3.12>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that work and workers are supervised in a range of different circumstances. "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.3.12"^^xsd:token ;
 	skos:prefLabel "C.1.3.12-Variation in function 'Supervision of teams and individuals'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3.13>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3.13>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of completing a wide range of work items during the trackside work, in a changing work environment, with various influencing factors and pressures."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.3.13"^^xsd:token ;
 	skos:prefLabel "C.1.3.13-Variation in function 'Carrying out trackside work'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3.2>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3.2>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of establishing a sufficient period of time, potentially free from train movements, to carry out the proposed engineering work."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.3.2"^^xsd:token ;
 	skos:prefLabel "C.1.3.2-Variation in function 'Establish network access'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3.3>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3.3>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of producing detailed work plans for the successful completion of the work."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.3.3"^^xsd:token ;
 	skos:prefLabel "C.1.3.3-Variation in function 'Formulate work plans'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3.4>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3.4>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that appropriate resources (people, equipment, materials, plant) are available for the completion of the work that is required. "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.3.4"^^xsd:token ;
 	skos:prefLabel "C.1.3.4-Variation in function 'Allocate resources'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3.5>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3.5>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of transferring the control of the line (i) from the control of the signaller to the engineering function for the purpose of engineering work; (ii) from the engineering function back to the signaller at the completion of the work, to return the railway to operational use."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.3.5"^^xsd:token ;
 	skos:prefLabel "C.1.3.5-Variation in function 'Formal agreement for control of the line'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3.6>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3.6>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of exchanging information, in order to establish a shared understanding between different parties on the work arrangements, local circumstances and operational context of the work. "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.3.6"^^xsd:token ;
 	skos:prefLabel "C.1.3.6-Variation in function 'Verify work arrangements'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3.7>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3.7>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of protecting the work area from trains and power sources in order to maintain safety (through signalling, isolation, physical barriers, or human barriers."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.3.7"^^xsd:token ;
 	skos:prefLabel "C.1.3.7-Variation in function 'Protect work area'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3.8>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3.8>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of supplying materials, tools, equipment to the site of work, in a timely manner, with minimal interference to the work at the site, other work sites in the vicinity or other train services. "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.3.8"^^xsd:token ;
 	skos:prefLabel "C.1.3.8-Variation in function 'Supply of resources to work site’"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3.9>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3.9>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.3> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of identifying site related hazards and setting up safe systems of working to minimise the risk of injury to staff and impacts on the operational train service.  "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.3.9"^^xsd:token ;
 	skos:prefLabel "C.1.3.9-Variation in function 'Establish safe working environment'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4.1>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4.1>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of confirming that there is authority to proceed (typically given through the signaller though may be given by other members of staff, e.g. during engineering)"@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.4.1"^^xsd:token ;
 	skos:prefLabel "C.1.4.1-Variation in function 'Ensure authority'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4.10>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4.10>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of enabling safe stabling of a vehicle (train needs to be stopped at an appropriate place in an appropriate condition)."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.4.10"^^xsd:token ;
 	skos:prefLabel "C.1.4.10-Variation in function 'Stabling of vehicles'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4.11>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4.11>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that passengers are safe and kept informed of relevant safety information on their journey (applicable to passenger services during driver only operation, or in conjunction with train crew; it includes door operation)."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.4.11"^^xsd:token ;
 	skos:prefLabel "C.1.4.11-Variation in function 'Provide information and support to passengers'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4.2>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4.2>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of despatching a train from the platform, safely and on-time."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.4.2"^^xsd:token ;
 	skos:prefLabel "C.1.4.2-Variation in function 'Despatch train'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4.3>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4.3>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring movements at a speed that is safe for the vehicle in the current conditions and in accordance with the timetable."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.4.3"^^xsd:token ;
 	skos:prefLabel "C.1.4.3-Variation in function 'Maintain appropriate speed'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4.4>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4.4>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that the integrity is maintained for the train and the load, without any detached vehicles (greater relevance for freight trains and loco-hauled passenger services)"@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.4.4"^^xsd:token ;
 	skos:prefLabel "C.1.4.4-Variation in function 'Ensure train integrity and load integrity on journey'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4.5>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4.5>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of bringing the train to a safe standpoint, either in a planned or unplanned manner."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.4.5"^^xsd:token ;
 	skos:prefLabel "C.1.4.5-Variation in function 'Stopping train'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4.6>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4.6>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of achieving safe and timely operation of control systems (includes responding to automatic warning system and train protection warning system and may also involve interaction with ERTMS)."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.4.6"^^xsd:token ;
 	skos:prefLabel "C.1.4.6-Variation in function 'Management of train control systems'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4.7>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4.7>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that the infrastructure is open and safe for own use and for others (e.g. identifying faults such as signal failures or line blockages on own or adjacent track)."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.4.7"^^xsd:token ;
 	skos:prefLabel "C.1.4.7-Variation in function 'Ensure status of infrastructure'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4.8>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4.8>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of operating level crossings manually on site, to maintain separation between road and rail traffic."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.4.8"^^xsd:token ;
 	skos:prefLabel "C.1.4.8-Variation in function 'Operate level crossing'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4.9>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4.9>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.4> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.4> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of alerting people to potential risks from trains."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.4.9"^^xsd:token ;
 	skos:prefLabel "C.1.4.9-Variation in function 'Warnings to other rail users'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5.1>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5.1>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of developing an understanding of the area that will be under the signallers’ control and assure staff awareness of relevant information on change of control of train movement duties."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.5.1"^^xsd:token ;
 	skos:prefLabel "C.1.5.1-Variation in function 'Take up control of train movement duties'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5.10>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5.10>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of imposing speed restrictions in a number of operating scenarios."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.5.10"^^xsd:token ;
 	skos:prefLabel "C.1.5.10-Variation in function 'Manage implementation of emergency / temporary speed restrictions'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5.11>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5.11>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of assimilating and sharing incoming information so that relevant staff have a common understanding of the network and the control of traffic."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.5.11"^^xsd:token ;
 	skos:prefLabel "C.1.5.11-Variation in function 'Gather and communicate information'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5.12>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5.12>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of controlling level crossings, to separate road and rail traffic, ensure safety of the public and safety of the railway service."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.5.12"^^xsd:token ;
 	skos:prefLabel "C.1.5.12-Variation in function 'Control level crossing'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5.13>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5.13>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that a second person (e.g. team member) can have an overview of the status of the system and the decisions/actions of individuals who are controlling the system (so that a team member can provide support if necessary, also supervisors)"@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.5.13"^^xsd:token ;
 	skos:prefLabel "C.1.5.13-Variation in function 'Supervision of teams and individuals'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5.2>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5.2>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of responding to scenarios that require the handing over of responsibility for the control of movements (could include engineering, or to regional control centre)."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.5.2"^^xsd:token ;
 	skos:prefLabel "C.1.5.2-Variation in function 'Handover of responsibility'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5.3>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5.3>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of obtaining, recalling and regularly updating information, to maintain an accurate overview of the railway system status."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.5.3"^^xsd:token ;
 	skos:prefLabel "C.1.5.3-Variation in function 'Monitor rail network'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5.4>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5.4>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of giving permission to the operator of a train (or rail vehicle) to move within the infrastructure."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.5.4"^^xsd:token ;
 	skos:prefLabel "C.1.5.4-Variation in function 'Authorise train movements'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5.5>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5.5>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of responding to scenarios that require trains to be re-routed or travel to a different (unplanned) destination."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.5.5"^^xsd:token ;
 	skos:prefLabel "C.1.5.5-Variation in function 'Route / re-route passenger or freight service'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5.6>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5.6>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of keeping track of/recording train movements, in order to help updating a person's awareness of a situation, location, traffic, delays and disruptions and providing formal documentation of relevant details "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.5.6"^^xsd:token ;
 	skos:prefLabel "C.1.5.6-Variation in function 'Record train movements'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5.7>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5.7>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of anticipating and being proactive regarding decision making, in order to minimise time pressure and ensure decision making is effective."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.5.7"^^xsd:token ;
 	skos:prefLabel "C.1.5.7-Variation in function 'Anticipate delays or poor traffic flow'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5.8>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5.8>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of managing train movements in circumstances in which they fall outside of typical or routine patterns (includes scenarios such as requiring train to pass signal at danger, movements not protected by standard safety systems or train rescue)"@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.5.8"^^xsd:token ;
 	skos:prefLabel "C.1.5.8-Variation in function 'Deal with irregular train movements'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5.9>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5.9>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.5> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.5> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of enabling operational staff to identify operational characteristics of a train. This is achieved through provision of an identification number, which may need to be entered or altered in signalling / control systems in certain scenarios"@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.5.9"^^xsd:token ;
 	skos:prefLabel "C.1.5.9-Variation in function 'Provide train identification'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.6.1>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.6.1>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.6> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.6> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that the correct vehicle configuration has been built (can apply to any type of vehicle (loco hauled, EMU, DMU) and to passenger or freight)."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.6.1"^^xsd:token ;
 	skos:prefLabel "C.1.6.1-Variation in function 'Assembling vehicle formation'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.6.3>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.6.3>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.6> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.6> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of confirming that drivers are aware of service requirements and conditions that can affect service (drivers need to understand local or temporary operating conditions)."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.6.3"^^xsd:token ;
 	skos:prefLabel "C.1.6.3-Variation in function 'Take up driving duties'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.6.4>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.6.4>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.6> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.6> ;
 	skos:definition "An event falling within the C.1.6 sub-categories for which detailed information is not (yet) available."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.6.4"^^xsd:token ;
 	skos:prefLabel "C.1.6.4-Variation to prepare trains for service"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.7>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.7>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1> ;
 	skos:definition "An event falling within the C.1.7 sub-categories for which detailed information is not (yet) available."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.7"^^xsd:token ;
 	skos:prefLabel "C.1.7-Performance variation to support passenger movements and well-being at stations"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.7.2>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.7.2>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.7> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.7> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of facilitating timely despatch of the train by assisting passengers (platform-train interface can be hazardous particularly for mobility impaired and / or high capacity / short dwell-time stations)."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.7.2"^^xsd:token ;
 	skos:prefLabel "C.1.7.2-Variation in function 'to support assisting passengers'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.7.3>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.7.3>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.7> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.7> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of maintaining safe movement of crowds in a range of operational circumstances. "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.7.3"^^xsd:token ;
 	skos:prefLabel "C.1.7.3-Variation in function 'to support control of crowds'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1> ;
 	skos:definition "An event falling within the C.1.8 sub-categories for which detailed information is not (yet) available."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.8"^^xsd:token ;
 	skos:prefLabel "C.1.8-Performance variation to check, inspect, maintain and repair rolling stock for service"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8.2>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8.2>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that appropriate resources (people, equipment, materials, plant) are available for inspection/maintenance/repair of rolling stock."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.8.2"^^xsd:token ;
 	skos:prefLabel "C.1.8.2-Variation in function 'Allocate resources'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8.3>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8.3>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of preparing to undertake inspection/maintenance/repair of rolling stock (it includes for example dismantling to gain access for inspection, lifting and recovery of rolling stock). It also includes returning rolling stock after inspections/maintenance/repair."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.8.3"^^xsd:token ;
 	skos:prefLabel "C.1.8.3-Variation in function 'Prepare rolling stock for inspection/intervention and return rolling stock after inspections/intervention'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8.4>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8.4>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of carrying out inspection of rolling stock."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.8.4"^^xsd:token ;
 	skos:prefLabel "C.1.8.4-Variation in function 'Inspect rolling stock'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8.5>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8.5>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of ensuring that appropriate action is taken on the basis of findings from an inspection. "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.8.5"^^xsd:token ;
 	skos:prefLabel "C.1.8.5-Variation in function 'Handover of responsibility'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8.6>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8.6>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of installing components onto rolling stock."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.8.6"^^xsd:token ;
 	skos:prefLabel "C.1.8.6-Variation in function 'Installation of components onto vehicles normally in service'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8.7>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8.7>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of undertaking maintenance/repair of components on rolling stock. "@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.8.7"^^xsd:token ;
 	skos:prefLabel "C.1.8.7-Variation in function 'Maintenance/repair of components on vehicles normally in service'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8.8>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8.8>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.8> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.8> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of undertaking service of rolling stock. This includes fuelling, cleaning, restocking of consumables, providing water, examination, emptying of controlled emissions e.g. toilets, loading/unloading of commodities for vehicles."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.8.8"^^xsd:token ;
 	skos:prefLabel "C.1.8.8-Variation in function 'Servicing of rolling stock'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.9.1>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.9.1>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.9> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.9> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goal of developing a sufficient understanding of the system to ensure a proper performance of all subsequent safety life cycle activities."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.9.1"^^xsd:token ;
 	skos:prefLabel "C.1.9.1-Variation in function 'Define scope and purpose'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.9.2>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.9.2>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.9> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.9> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) define the system, its mission profile and b) its boundary; c) establish the operational requirements influencing its characteristics; d) define the functions to be provided by the system; e) define the scope of system risk analysis; f) the initial Safety plan and g) the organisation for safety management of the system."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.9.2"^^xsd:token ;
 	skos:prefLabel "C.1.9.2-Variation in function 'Establish system definition and application conditions '"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.9.3>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.9.3>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.9> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.9> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) identify and classify hazards associated with the system; b) select risk acceptance principles (RAP); c) define and apply risk acceptance criteria (RAC); d) assess risks; e) establish a process for on-going risk management."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.9.3"^^xsd:token ;
 	skos:prefLabel "C.1.9.3-Variation in function 'Identify risks'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.9.4>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.9.4>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.9> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.9> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) specify the overall safety requirements for the system under consideration; b) specify the overall demonstration process and criteria for acceptance of safety of the system; c) provide a comprehensive and identified set of requirements for the subsequent life cycle phases; d) specify necessary monitoring requirements according to the process for analysing operation and maintenance performance arranged in the Safety Plan."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.9.4"^^xsd:token ;
 	skos:prefLabel "C.1.9.4-Variation in function 'Specify system requirements'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.9.5>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.9.5>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.1.9> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.1.9> ;
 	skos:definition "Any variation leading to the non or partial achievement of the goals of the function: a) apportion the system safety requirements to the designated subsystems and/or components; b) design subsystems and components that work together as a system which fulfils the required functions at the system level; c) describe the safety requirements and specify the interfaces for all subsystems and components derived from the safety requirements; d) define the acceptance criteria to demonstrate fulfilment of the safety requirements for the system, subsystem, equipment in subsequent lifecycle phases; e) identify and evaluate the significance of the interactions between the subsystems."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.1.9.5"^^xsd:token ;
 	skos:prefLabel "C.1.9.5-Variation in function 'Apportion system requirements (sub-system and component level)'"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C> ;
 	skos:definition "An event falling within the C.2 sub-categories for which detailed information is not (yet) available"@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.2"^^xsd:token ;
 	skos:prefLabel "C.2-External events - Environmental"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.1>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2.1>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2> ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.2.1"^^xsd:token ;
 	skos:prefLabel "C.2.1-Earthquake"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.2>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2.2>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2> ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.2.2"^^xsd:token ;
 	skos:prefLabel "C.2.2-Flooding"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.3>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2.3>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2> ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.2.3"^^xsd:token ;
 	skos:prefLabel "C.2.3-Landslide"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.4>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2.4>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2> ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.2.4"^^xsd:token ;
 	skos:prefLabel "C.2.4-Vegetation"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.5>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2.5>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2> ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.2.5"^^xsd:token ;
 	skos:prefLabel "C.2.5-Crosswinds"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.6>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2.6>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2> ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.2.6"^^xsd:token ;
 	skos:prefLabel "C.2.6-Extreme temperatures"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2.7>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2.7>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.2> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.2> ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.2.7"^^xsd:token ;
 	skos:prefLabel "C.2.7-Snow"@en ;
 	.
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.3>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C> ;
 	skos:definition "An event falling within the C.3 sub-categories for which detailed information is not (yet) available."@en ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.3"^^xsd:token ;
 	skos:prefLabel "C.3-External events - Security"@en ;
 	.
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3.1>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.3.1>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.3> ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.3.1"^^xsd:token ;
 	skos:prefLabel "C.3.1-Terrorism"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3.2>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.3.2>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.3> ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.3.2"^^xsd:token ;
 	skos:prefLabel "C.3.2-Assault"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3.3>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.3.3>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.3> ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.3.3"^^xsd:token ;
 	skos:prefLabel "C.3.3-Theft"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3.4>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.3.4>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.3> ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.3.4"^^xsd:token ;
 	skos:prefLabel "C.3.4-Arson"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3.5>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.3.5>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.3> ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.3.5"^^xsd:token ;
 	skos:prefLabel "C.3.5-Vandalism"@en ;
 	.
 
-<http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3.6>
+<http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.3.6>
 	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/concepts/safety-indirect-cause-reported-types/C.3> ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/safety-indirect-cause-reported-types/C.3> ;
 	skos:inScheme iss-sicr:IndirectCauseReportedTypes ;
 	skos:notation "C.3.6"^^xsd:token ;
 	skos:prefLabel "C.3.6-Cyber attack"@en ;
