@@ -59,126 +59,6 @@ iss-rsys:RailwaySystemFunctions
 	skos:prefLabel "RSYS.1.1.3 - Train Control and Monitoring System (TCMS)"@en ;
 	.
 
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.10>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.10"^^xsd:token ;
-	skos:prefLabel "RSYS.1.10 - Railway vehicle superstructure"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.10.1>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.10> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.10.1"^^xsd:token ;
-	skos:prefLabel "RSYS.1.10.1 - Crash energy absorption"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.11"^^xsd:token ;
-	skos:prefLabel "RSYS.1.11 - Railway vehicle car body"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11.1>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.11.1"^^xsd:token ;
-	skos:prefLabel "RSYS.1.11.1 - Car Body Shell"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11.2>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.11.2"^^xsd:token ;
-	skos:prefLabel "RSYS.1.11.2 - Aerodynamic System"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11.3>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.11.3"^^xsd:token ;
-	skos:prefLabel "RSYS.1.11.3 - Windows"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11.4>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.11.4"^^xsd:token ;
-	skos:prefLabel "RSYS.1.11.4 - Windscreen"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11.5>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.11.5"^^xsd:token ;
-	skos:prefLabel "RSYS.1.11.5 - Gangway"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.12>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.12"^^xsd:token ;
-	skos:prefLabel "RSYS.1.12 - Lighting"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.12.1>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.12> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.12.1"^^xsd:token ;
-	skos:prefLabel "RSYS.1.12.1 - Interior Lighting"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.12.2>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.12> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.12.2"^^xsd:token ;
-	skos:prefLabel "RSYS.1.12.2 - Exterior Lighting"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.13"^^xsd:token ;
-	skos:prefLabel "RSYS.1.13 - Communication and information"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13.1>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.13.1"^^xsd:token ;
-	skos:prefLabel "RSYS.1.13.1 - On-board train communication"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13.2>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.13.2"^^xsd:token ;
-	skos:prefLabel "RSYS.1.13.2 - On-board train information"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13.3>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.1.13.3"^^xsd:token ;
-	skos:prefLabel "RSYS.1.13.3 - Train external communication"@en ;
-	.
-
 <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.2>
 	a skos:Concept ;
 	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1> ;
@@ -409,6 +289,127 @@ iss-rsys:RailwaySystemFunctions
 	skos:inScheme iss-rsys:RailwaySystemFunctions ;
 	skos:notation "RSYS.1.9.6"^^xsd:token ;
 	skos:prefLabel "RSYS.1.9.6 - Catering/Gallery"@en ;
+	.
+
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.10>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.10"^^xsd:token ;
+	skos:prefLabel "RSYS.1.10 - Railway vehicle superstructure"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.10.1>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.10> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.10.1"^^xsd:token ;
+	skos:prefLabel "RSYS.1.10.1 - Crash energy absorption"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.11"^^xsd:token ;
+	skos:prefLabel "RSYS.1.11 - Railway vehicle car body"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11.1>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.11.1"^^xsd:token ;
+	skos:prefLabel "RSYS.1.11.1 - Car Body Shell"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11.2>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.11.2"^^xsd:token ;
+	skos:prefLabel "RSYS.1.11.2 - Aerodynamic System"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11.3>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.11.3"^^xsd:token ;
+	skos:prefLabel "RSYS.1.11.3 - Windows"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11.4>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.11.4"^^xsd:token ;
+	skos:prefLabel "RSYS.1.11.4 - Windscreen"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11.5>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.11> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.11.5"^^xsd:token ;
+	skos:prefLabel "RSYS.1.11.5 - Gangway"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.12>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.12"^^xsd:token ;
+	skos:prefLabel "RSYS.1.12 - Lighting"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.12.1>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.12> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.12.1"^^xsd:token ;
+	skos:prefLabel "RSYS.1.12.1 - Interior Lighting"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.12.2>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.12> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.12.2"^^xsd:token ;
+	skos:prefLabel "RSYS.1.12.2 - Exterior Lighting"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.13"^^xsd:token ;
+	skos:prefLabel "RSYS.1.13 - Communication and information"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13.1>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.13.1"^^xsd:token ;
+	skos:prefLabel "RSYS.1.13.1 - On-board train communication"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13.2>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.13.2"^^xsd:token ;
+	skos:prefLabel "RSYS.1.13.2 - On-board train information"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13.3>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.1.13> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.1.13.3"^^xsd:token ;
+	skos:prefLabel "RSYS.1.13.3 - Train external communication"@en ;
 	.
 
 <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.2>
@@ -659,37 +660,6 @@ iss-rsys:RailwaySystemFunctions
 	skos:prefLabel "RSYS.3.3.1 - Transformer"@en ;
 	.
 
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3.10>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.3.3.10"^^xsd:token ;
-	skos:prefLabel "RSYS.3.3.10 - Low voltage Limiter"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3.11>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.3.3.11"^^xsd:token ;
-	skos:prefLabel "RSYS.3.3.11 - Cable"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3.12>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.3.3.12"^^xsd:token ;
-	skos:prefLabel "RSYS.3.3.12 - Surge Arrester"@en ;
-	.
-
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3.13>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.3.3.13"^^xsd:token ;
-	skos:prefLabel "RSYS.3.3.13 - SCADA System"@en ;
-	.
 
 <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3.2>
 	a skos:Concept ;
@@ -755,6 +725,38 @@ iss-rsys:RailwaySystemFunctions
 	skos:prefLabel "RSYS.3.3.9 - Insulator"@en ;
 	.
 
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3.10>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.3.3.10"^^xsd:token ;
+	skos:prefLabel "RSYS.3.3.10 - Low voltage Limiter"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3.11>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.3.3.11"^^xsd:token ;
+	skos:prefLabel "RSYS.3.3.11 - Cable"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3.12>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.3.3.12"^^xsd:token ;
+	skos:prefLabel "RSYS.3.3.12 - Surge Arrester"@en ;
+	.
+
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3.13>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.3.3.13"^^xsd:token ;
+	skos:prefLabel "RSYS.3.3.13 - SCADA System"@en ;
+	.
+	
 <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.4>
 	a skos:Concept ;
 	skos:inScheme iss-rsys:RailwaySystemFunctions ;
