@@ -90,29 +90,7 @@ iss-sdcr:DirectCauseReportedTypes
     skos:notation "B.1.2.1"^^xsd:token ;
     skos:prefLabel "B.1.2.1-Signal passed at danger with passing of a danger point"@en .
 
-<http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.1.2.10>
-    rdf:type skos:Concept ;
-    skos:broader <http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.1.2> ;
-    skos:definition "Any occasion when a passenger train is stopped in a tunnel for more than 10 minutes. Stops in underground stations should be excluded."@en ;
-    skos:inScheme iss-sdcr:DirectCauseReportedTypes ;
-    skos:notation "B.1.2.10"^^xsd:token ;
-    skos:prefLabel "B.1.2.10-Long stop in tunnel"@en .
 
-<http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.1.2.11>
-    rdf:type skos:Concept ;
-    skos:broader <http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.1.2> ;
-    skos:definition "Any situation in which a brake application by the driver is exceeding applicable limits"@en ;
-    skos:inScheme iss-sdcr:DirectCauseReportedTypes ;
-    skos:notation "B.1.2.11"^^xsd:token ;
-    skos:prefLabel "B.1.2.11-Severe brake"@en .
-
-<http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.1.2.12>
-    rdf:type skos:Concept ;
-    skos:broader <http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.1.2> ;
-    skos:definition "Any situation in which the brake system is not set correctly in relation with the load"@en ;
-    skos:inScheme iss-sdcr:DirectCauseReportedTypes ;
-    skos:notation "B.1.2.12"^^xsd:token ;
-    skos:prefLabel "B.1.2.12-Brake not correctly set for load"@en .
 
 <http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.1.2.2>
     rdf:type skos:Concept ;
@@ -177,6 +155,30 @@ iss-sdcr:DirectCauseReportedTypes
     skos:inScheme iss-sdcr:DirectCauseReportedTypes ;
     skos:notation "B.1.2.9"^^xsd:token ;
     skos:prefLabel "B.1.2.9-Train running with open door"@en .
+
+<http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.1.2.10>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.1.2> ;
+    skos:definition "Any occasion when a passenger train is stopped in a tunnel for more than 10 minutes. Stops in underground stations should be excluded."@en ;
+    skos:inScheme iss-sdcr:DirectCauseReportedTypes ;
+    skos:notation "B.1.2.10"^^xsd:token ;
+    skos:prefLabel "B.1.2.10-Long stop in tunnel"@en .
+
+<http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.1.2.11>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.1.2> ;
+    skos:definition "Any situation in which a brake application by the driver is exceeding applicable limits"@en ;
+    skos:inScheme iss-sdcr:DirectCauseReportedTypes ;
+    skos:notation "B.1.2.11"^^xsd:token ;
+    skos:prefLabel "B.1.2.11-Severe brake"@en .
+
+<http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.1.2.12>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.1.2> ;
+    skos:definition "Any situation in which the brake system is not set correctly in relation with the load"@en ;
+    skos:inScheme iss-sdcr:DirectCauseReportedTypes ;
+    skos:notation "B.1.2.12"^^xsd:token ;
+    skos:prefLabel "B.1.2.12-Brake not correctly set for load"@en .
 
 <http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.2>
     rdf:type skos:Concept ;
@@ -266,13 +268,6 @@ iss-sdcr:DirectCauseReportedTypes
     skos:notation "B.2.3.1"^^xsd:token ;
     skos:prefLabel "B.2.3.1-Wrong side signalling (on-board) failure"@en .
 
-<http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.2.3.10>
-    rdf:type skos:Concept ;
-    skos:broader <http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.2.3> ;
-    skos:definition "Any situation in which the underframe is twisted in excess of the operating design tolerance"@en ;
-    skos:inScheme iss-sdcr:DirectCauseReportedTypes ;
-    skos:notation "B.2.3.10"^^xsd:token ;
-    skos:prefLabel "B.2.3.10-Twisted underframe"@en .
 
 <http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.2.3.2>
     rdf:type skos:Concept ;
@@ -338,6 +333,15 @@ iss-sdcr:DirectCauseReportedTypes
     skos:notation "B.2.3.9"^^xsd:token ;
     skos:prefLabel "B.2.3.9-Loss of ventilation"@en .
 
+
+<http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.2.3.10>
+    rdf:type skos:Concept ;
+    skos:broader <http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.2.3> ;
+    skos:definition "Any situation in which the underframe is twisted in excess of the operating design tolerance"@en ;
+    skos:inScheme iss-sdcr:DirectCauseReportedTypes ;
+    skos:notation "B.2.3.10"^^xsd:token ;
+    skos:prefLabel "B.2.3.10-Twisted underframe"@en .
+    
 <http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B.3>
     rdf:type skos:Concept ;
     skos:broader <http://data.europa.eu/949/iss/concepts/safety-direct-cause-reported-types/B> ;

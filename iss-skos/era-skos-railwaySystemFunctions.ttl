@@ -580,13 +580,6 @@ iss-rsys:RailwaySystemFunctions
 	skos:prefLabel "RSYS.3.2.1 - Mast"@en ;
 	.
 
-<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.2.10>
-	a skos:Concept ;
-	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.2> ;
-	skos:inScheme iss-rsys:RailwaySystemFunctions ;
-	skos:notation "RSYS.3.2.10"^^xsd:token ;
-	skos:prefLabel "RSYS.3.2.10 - Clamp"@en ;
-	.
 
 <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.2.2>
 	a skos:Concept ;
@@ -652,6 +645,14 @@ iss-rsys:RailwaySystemFunctions
 	skos:prefLabel "RSYS.3.2.9 - Low Voltage Limiter"@en ;
 	.
 
+<http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.2.10>
+	a skos:Concept ;
+	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.2> ;
+	skos:inScheme iss-rsys:RailwaySystemFunctions ;
+	skos:notation "RSYS.3.2.10"^^xsd:token ;
+	skos:prefLabel "RSYS.3.2.10 - Clamp"@en ;
+	.
+	
 <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3.1>
 	a skos:Concept ;
 	skos:broader <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.3.3> ;
@@ -756,7 +757,7 @@ iss-rsys:RailwaySystemFunctions
 	skos:notation "RSYS.3.3.13"^^xsd:token ;
 	skos:prefLabel "RSYS.3.3.13 - SCADA System"@en ;
 	.
-	
+
 <http://data.europa.eu/949/iss/concepts/railway-system-functions/RSYS.4>
 	a skos:Concept ;
 	skos:inScheme iss-rsys:RailwaySystemFunctions ;
