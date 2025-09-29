@@ -1,5 +1,8 @@
 # ISS vocabulary
-
+> [!WARNING]
+> **We are migrating this repository to our new Gitlab instance. We will archive this repository in the coming weeks.**
+> **The URI for our public Gitlab is https://gitlab.com/era-europa-eu/public/interoperable-data-programme**. **Sorry for the inconvenience.**
+> 
 This is the repository where the ISS vocabulary (ontology) governed by the European Union Agency for Railways is being developed and released. It represents the concepts and relationships linked to the Information Sharing System (ISS) in accordance with the draft delegated act of the future CSM ASLP Regulation (hereinafter the ‘CSM’ or ‘CSM ASLP). The online documentation for this vocabulary is available at [https://dev.ld4rail.fpfis.tech.ec.europa.eu/iss-vocabulary](https://dev.ld4rail.fpfis.tech.ec.europa.eu/iss-vocabulary), and its URI is http://data.europa.eu/949/iss. All ontology components (classes, properties) use this base URI and are dereferenceable (e.g., http://data.europa.eu/949/iss/SafetyRelatedEvent).
 
 The repository is organised as in the following folders:
