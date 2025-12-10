@@ -12,7 +12,7 @@ Thank you for your interest in **ISS_vocabulary**. As of **December 10th, 2025**
 ---
 
 ## 🔍 New GITLAB repository
-The new repository is available **[on GitLab here]( https://gitlab.com/era-europa-eu/public/interoperable-data-programme/era-ontology)** 
+The new repository is available **[on GitLab here](https://gitlab.com/era-europa-eu/public/interoperable-data-programme/era-ontology/iss_ontology)** 
 
 ---
 > [!WARNING]
