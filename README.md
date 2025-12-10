@@ -1,4 +1,20 @@
 # ISS vocabulary
+
+> [!CAUTION] 
+> ##  This repository is archived and no longer maintained.
+
+Thank you for your interest in **ISS_vocabulary**. As of **December 10th, 2025**, this project is no longer actively maintained in Github, and the repository has been archived. This means:
+
+✅ The repository is now **read-only**.  
+❌ No further updates, bug fixes, or new features will be added.  
+❌ Issues and pull requests will **not** be reviewed or accepted.  
+
+---
+
+## 🔍 New GITLAB repository
+The new repository is available **[on GitLab here]( https://gitlab.com/era-europa-eu/public/interoperable-data-programme/era-ontology)** 
+
+---
 > [!WARNING]
 > **We are migrating this repository to our new Gitlab instance. We will archive this repository in the coming weeks.**
 > **The URI for our public Gitlab is https://gitlab.com/era-europa-eu/public/interoperable-data-programme**. **Sorry for the inconvenience.**
